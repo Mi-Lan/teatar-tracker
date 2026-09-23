@@ -23,6 +23,7 @@ class State:
     health: dict[str, dict] = field(default_factory=dict)
     telegram_offset: int = 0
     last_digest: str = ""  # ISO date of the last scheduled report
+    season: dict = field(default_factory=dict)  # yesterday's next-month counts for the 20th–27th check
 
     # --- persistence -------------------------------------------------------------------------
     @classmethod

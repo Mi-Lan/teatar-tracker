@@ -8,7 +8,7 @@ import time as _time
 from dataclasses import dataclass, field
 from datetime import date, datetime, time, timedelta
 
-from . import commands, lookups
+from . import commands, lookups, season
 from . import diff as diffmod
 from . import format as fmt
 from . import releases as rel
@@ -264,6 +264,9 @@ def run(ctx: Ctx, allow_burst: bool = True) -> None:
     elif digest_due(ctx):
         ctx.state.last_digest = now().date().isoformat()
         send_report(ctx)
+    if not first and season.due(ctx):
+        ctx.state.mark_notified(f"season:{now().date().isoformat()}")
+        ctx.tg.send_all(season.report(ctx))
 
     ctx.state.prune()
     ctx.save()

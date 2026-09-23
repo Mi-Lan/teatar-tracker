@@ -5,6 +5,7 @@
 #   bdp_webflow_sixtix  Webflow HTML catalog + Sixtix on-sale API
 #   jdp_wp_ajax         WordPress AJAX month feed
 #   tickets_rs          tickets.rs JSON API (any venue: just set its slug)
+#   kupikartu_pos       "Kupi kartu" box-office JSON API (bilet.*/blagajna.* sites): set base_url
 #   madlenianum_html    Madlenianum own site, catalog only
 #
 # To add another tickets.rs venue, copy a tickets_rs block and change slug + name.
@@ -24,6 +25,13 @@ bdp:
 jdp:
   adapter: jdp_wp_ajax
   name: JDP
+  months_ahead: 2
+
+terazije:
+  adapter: kupikartu_pos
+  name: Pozorište na Terazijama
+  base_url: https://bilet.pozoristeterazije.com
+  site_url: https://pozoristeterazije.com/repertoar/
   months_ahead: 2
 
 sava_centar:

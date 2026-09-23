@@ -2,7 +2,7 @@ import json
 from datetime import date, datetime
 from pathlib import Path
 
-from teatar.adapters import bdp, jdp, madlenianum, narodno, tickets_rs
+from teatar.adapters import bdp, jdp, kupikartu, madlenianum, narodno, tickets_rs
 from teatar.models import TZ, Status
 
 FIX = Path(__file__).parent / "fixtures"
@@ -99,3 +99,16 @@ def test_madlenianum_expands_dates():
         datetime(2026, 10, 10, 19, 30, tzinfo=TZ),
     ]
     assert ema[0].subtitle == "Tatjana Mandić Rigonat"
+
+
+def test_kupikartu_box_office():
+    base = "https://bilet.pozoristeterazije.com"
+    perfs = {p.start.day: p for p in kupikartu.parse_month(read("kupikartu_terazije_2026_09.json"), "terazije", base)}
+    assert perfs[25].title == "MAMMA MIA!" and perfs[25].status == Status.SOLD_OUT  # rasprodato = 1
+    assert perfs[26].title == "БАЛКАН ЕКСПРЕС" and perfs[26].status == Status.LOW  # rasprodato = 10
+    assert perfs[27].status == Status.ON_SALE
+    assert perfs[27].start == datetime(2026, 9, 27, 19, 30, tzinfo=TZ)
+    assert perfs[27].buy_url == f"{base}/scena.php?prostorterminid=1248"
+    assert perfs[16].status == Status.UNKNOWN  # finished
+    # an unpublished month is a placeholder row, not a performance
+    assert kupikartu.parse_month(read("kupikartu_terazije_2026_10.json"), "terazije", base) == []

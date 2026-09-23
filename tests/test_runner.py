@@ -18,7 +18,7 @@ def test_parse_when():
 def test_quiet_week_then_monday_report(make_ctx, clock):
     # START is Tuesday 22.09. 12:00
     a = FakeAdapter("jdp", [perf(venue="jdp")])
-    ctx = make_ctx([a])
+    ctx = make_ctx([a], settings={"release_season": {"days": [1, 1]}})
     run(ctx, allow_burst=False)
     assert ctx.state.initialized
     assert any("Tracker is live" in m for m in ctx.tg.sent)
@@ -48,7 +48,7 @@ def test_quiet_week_then_monday_report(make_ctx, clock):
 
 def test_watched_plays_are_messaged_immediately(make_ctx, clock):
     a = FakeAdapter("jdp", [perf(venue="jdp", status=Status.NOT_ON_SALE)])
-    ctx = make_ctx([a], watchlist=[{"query": "divlje meso"}])
+    ctx = make_ctx([a], watchlist=[{"query": "divlje meso"}], settings={"release_season": {"days": [1, 1]}})
     run(ctx, allow_burst=False)
     ctx.tg.sent.clear()
     a.perfs = [perf(venue="jdp", status=Status.ON_SALE, available=40)]
@@ -196,3 +196,35 @@ def test_monthly_reminders_on_21st_and_22nd_then_midnight_burst(make_ctx, clock)
     # the all-day fallback on the 23rd stands down because tickets already came out at midnight
     clock.t = datetime(2026, 10, 23, 7, 4, tzinfo=TZ)
     assert rel.active_windows(ctx.state, ctx.cfg) == []
+
+
+def test_season_check_each_morning_20th_to_27th(make_ctx, clock):
+    clock.t = datetime(2026, 9, 19, 12, 0, tzinfo=TZ)
+    oct_show = perf(venue="jdp", sid="oct", title="Sirano", days=0)
+    oct_show.start = datetime(2026, 10, 5, 20, 0, tzinfo=TZ)
+    feed = [perf(venue="jdp", sid="1", days=0)]
+    ctx = make_ctx([FakeAdapter("jdp", fn=lambda: list(feed)), FakeAdapter("bdp", [])])
+    run(ctx, allow_burst=False)  # baseline on the 19th
+    ctx.tg.sent.clear()
+
+    def season_msgs():
+        return [m for m in ctx.tg.sent if m.startswith("🎟")]
+
+    for day, hour in [(19, 10), (20, 8), (20, 9), (20, 15)]:
+        clock.t = datetime(2026, 9, day, hour, 7, tzinfo=TZ)
+        run(ctx, allow_burst=False)
+    assert len(season_msgs()) == 1  # once, on the 20th after 09:00
+    assert "Tickets for October" in season_msgs()[0] and "JDP</b>: nothing for October yet" in season_msgs()[0]
+
+    feed.append(oct_show)  # JDP publishes October on the 21st
+    clock.t = datetime(2026, 9, 21, 9, 7, tzinfo=TZ)
+    run(ctx, allow_burst=False)
+    latest = season_msgs()[-1]
+    assert "JDP</b>: tickets for 1 of 1 dates 🆕" in latest
+    assert "BDP</b>: nothing for October yet" in latest
+
+    for day in range(22, 30):
+        clock.t = datetime(2026, 9, day, 9, 7, tzinfo=TZ)
+        run(ctx, allow_burst=False)
+    assert len(season_msgs()) == 8  # 20th … 27th, one per morning
+    assert "🆕" not in season_msgs()[-1]  # nothing new after the 21st

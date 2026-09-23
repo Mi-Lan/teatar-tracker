@@ -20,11 +20,13 @@ log = logging.getLogger(__name__)
 
 HELP = """🎭 <b>Theatre tracker</b>
 I check every hour and write only when it matters: a weekly overview on Monday morning,
+a "tickets for next month?" check every morning from the 20th to the 27th,
 ticket-release reminders and alerts, and news about plays you /watch.
 Replies to commands arrive within the hour (faster around releases).
 
 <b>Browse</b>
 /month — everything until the end of next month
+/tickets — is next month out yet, per theatre
 /today · /tomorrow · /week — shorter ranges
 /overview — everything that's announced
 /theatre <i>name</i> — one theatre, e.g. <code>/theatre jdp</code>
@@ -92,6 +94,12 @@ def cmd_month(ctx, arg):
     today = now().date()
     end = end_of_next_month(today)
     return _days(ctx, 0, (end - today).days + 1, f"Until {end:%d.%m.} (end of next month)")
+
+
+def cmd_tickets(ctx, arg):
+    from . import season
+
+    return season.report(ctx, remember=False)
 
 
 def cmd_overview(ctx, arg):
@@ -219,6 +227,7 @@ COMMANDS = {
     "/tomorrow": cmd_tomorrow, "/sutra": cmd_tomorrow,
     "/week": cmd_week, "/nedelja": cmd_week,
     "/month": cmd_month, "/mesec": cmd_month,
+    "/tickets": cmd_tickets, "/karte": cmd_tickets, "/season": cmd_tickets,
     "/overview": cmd_overview, "/all": cmd_overview, "/pregled": cmd_overview,
     "/theatre": cmd_theatre, "/theater": cmd_theatre, "/pozoriste": cmd_theatre,
     "/search": cmd_search, "/trazi": cmd_search,

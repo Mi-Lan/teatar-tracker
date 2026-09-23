@@ -17,6 +17,7 @@ It checks hourly on GitHub Actions (free), silently: you only hear from it when 
 | `jdp` | jdp.rs | WordPress AJAX API | on sale / <10% left / sold out |
 | `sava_centar`, `madlenianum_tickets`, `kolarac` | tickets.rs | JSON API | listed = on sale |
 | `madlenianum` | operatheatremadlenianum.com | HTML scrape | dates only (shop needs login) |
+| `terazije` | pozoristeterazije.com box office | "Kupi kartu" JSON API | on sale / <10% left / sold out / not yet |
 
 Configuration is in `config/`:
 - `venues.yaml`: which sources to track and their options (BDP stage filter, JDP months ahead…)
@@ -33,6 +34,7 @@ Replies come on the next check (within the hour; faster during release bursts).
 | Command | |
 |---|---|
 | `/month` | everything until the end of next month, by date → theatre, with tickets left (tap a title to buy) |
+| `/tickets` | is next month out yet, per theatre |
 | `/today` `/tomorrow` `/week` | shorter ranges |
 | `/overview` | everything announced |
 | `/theatre jdp` | one theatre |
@@ -44,6 +46,7 @@ Replies come on the next check (within the hour; faster during release bursts).
 
 **What it sends you (and nothing else):**
 - **Weekly overview, Monday 09:00:** everything on until the end of next month, by date and theatre, with tickets left.
+- **Every morning from the 20th to the 27th, 09:00:** one message saying, per theatre, whether next month's programme and tickets are out (🆕 = since yesterday). Most theatres release in that window.
 - **Right away:** known ticket releases (reminders, the moment tickets appear), plays on your `/watch` list, and a warning if a site stops responding.
 
 Change the day/time or switch to instant alerts for everything in `config/settings.yaml` (`digest`, `alerts.instant`).
