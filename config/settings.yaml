@@ -1,0 +1,19 @@
+# Timezone for everything below: Europe/Belgrade.
+
+digest:
+  time: "08:00"  # daily overview is sent on the first run after this time
+  days: 7  # how many days ahead the daily overview covers
+
+alerts:
+  low_threshold: 20  # watched plays: warn when fewer tickets than this are left (where counts exist)
+
+releases:
+  remind_before: ["24h", "1h"]  # reminders before a known ticket release
+  lookahead_minutes: 75  # a run starting this long before a release switches into burst mode
+  start_before_minutes: 10  # burst polling starts this long before the release time
+  stop_after_minutes: 45  # ...and ends this long after it
+  poll_seconds: 30  # how often the release venue is re-checked during a burst
+  full_scan_minutes: 10  # full scan of all venues during a burst
+
+health:
+  failures_before_alert: 3  # consecutive failed/empty scans before warning that a site may have changed

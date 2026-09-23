@@ -1,0 +1,46 @@
+# Every source the tracker checks. Keys are the short venue ids used in commands and state.
+#
+# adapter: which lookup method to use (see src/teatar/adapters/*):
+#   narodno_html        HTML scrape, exact ticket counts
+#   bdp_webflow_sixtix  Webflow HTML catalog + Sixtix on-sale API
+#   jdp_wp_ajax         WordPress AJAX month feed
+#   tickets_rs          tickets.rs JSON API (any venue: just set its slug)
+#   madlenianum_html    Madlenianum own site, catalog only
+#
+# To add another tickets.rs venue, copy a tickets_rs block and change slug + name.
+# To disable a source temporarily, add `enabled: false`.
+
+narodno:
+  adapter: narodno_html
+  name: Narodno pozorište
+
+bdp:
+  adapter: bdp_webflow_sixtix
+  name: BDP
+  stages: ["Велика сцена"]  # only Velika scena "Olivera i Rade"; remove to track all stages
+  include_guest: false  # skip guest performances in other cities
+  sixtix_iframe: 22c6e158  # BDP "Main website" on-sale list on Sixtix
+
+jdp:
+  adapter: jdp_wp_ajax
+  name: JDP
+  months_ahead: 2
+
+sava_centar:
+  adapter: tickets_rs
+  name: Sava Centar
+  slug: sava_centar_3
+
+madlenianum_tickets:
+  adapter: tickets_rs
+  name: Madlenianum (tickets.rs)
+  slug: opera_i_teatar_madlenianum_53
+
+kolarac:
+  adapter: tickets_rs
+  name: Kolarac
+  slug: kolarceva_zaduzbina_55
+
+madlenianum:
+  adapter: madlenianum_html
+  name: Madlenianum

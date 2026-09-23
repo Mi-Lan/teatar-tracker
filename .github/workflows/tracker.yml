@@ -1,0 +1,61 @@
+name: tracker
+
+on:
+  schedule:
+    # Every 15 min, off the top of the hour (GitHub delays :00 runs the most).
+    - cron: "4,19,34,49 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "run = normal check · overview = send everything · test = Telegram test message"
+        type: choice
+        default: run
+        options: [run, overview, test]
+
+permissions:
+  contents: write  # commit data/state.json
+
+concurrency:
+  group: tracker  # one run at a time; a burst keeps the lock and later runs wait
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - run: pip install -e .
+
+      - name: Run tracker
+        timeout-minutes: 225  # leave time to commit state even after a long release burst
+        run: |
+          case "${{ inputs.mode || 'run' }}" in
+            run)      teatar run ;;
+            overview) teatar overview --days 0 --send ;;
+            test)     teatar telegram-test ;;
+          esac
+
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name "theatre-tracker[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json 2>/dev/null || exit 0
+          git diff --cached --quiet && { echo "state unchanged"; exit 0; }
+          git commit -q -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull -q --rebase && git push -q && exit 0
+            sleep 5
+          done
+          exit 1

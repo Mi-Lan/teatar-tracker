@@ -1,0 +1,16 @@
+# Plays you care about most. Matching ignores Cyrillic/Latin, case and diacritics,
+# so "divlje meso" matches "Дивље месо" and "DIVLjE MESO". You can also manage the list
+# from Telegram with /watch and /unwatch (entries added here are imported once).
+#
+# Optional per entry:
+#   venue: only match at this venue key (see venues.yaml)
+#   low_threshold: override the "few tickets left" warning level
+#   lookup: a custom direct check for this play, polled every run in addition to the venue scan
+#     lookup: {sixtix: e6871527f088}                       # Sixtix event API (sales state + start time)
+#     lookup: {page: "https://example.rs/show", pattern: "Kupi kartu"}  # scrape: on sale when pattern appears
+
+watch: []
+# watch:
+#   - query: Divlje meso
+#   - query: Tramvaj zvani želja
+#     venue: bdp

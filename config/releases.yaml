@@ -1,0 +1,10 @@
+# Ticket release times you know about. The tracker reminds you before each one and
+# polls the venue every 30 s around the release time. You can also add them from Telegram:
+#   /release jdp 2026-10-01 10:00 oktobarski repertoar
+#
+# releases:
+#   - venue: jdp
+#     at: "2026-10-01 10:00"
+#     note: Oktobarski repertoar
+
+releases: []
