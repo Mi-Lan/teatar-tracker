@@ -20,7 +20,9 @@ It runs free on GitHub Actions every 15 minutes. State lives in `data/state.json
 Configuration is in `config/`:
 - `venues.yaml`: which sources to track and their options (BDP stage filter, JDP months ahead…)
 - `watchlist.yaml`: plays you care about (⭐, extra alerts: back in stock, running low, sold out)
-- `releases.yaml`: known ticket release times
+- `releases.yaml`: known ticket release times, plus **monthly patterns**. Narodno is set up to put next
+  month's tickets on sale at midnight between the 22nd and 23rd: reminders at 09:00 on the 21st and 22nd,
+  checks every 30 s from 23:50 to 00:45, and every minute on the 23rd if nothing appeared at midnight.
 - `settings.yaml`: digest time, reminder times, burst timing
 
 ## Telegram commands

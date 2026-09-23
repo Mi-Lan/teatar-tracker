@@ -99,6 +99,8 @@ def process(ctx: Ctx, results: dict[str, list[Performance]], header: str = "🔔
         for c in fresh:
             if c.kind in diffmod.ONCE:
                 ctx.state.mark_notified(c.key)
+    for venue in {c.perf.venue for c in fresh if c.kind in diffmod.ONCE}:
+        rel.mark_released(ctx.state, ctx.cfg, venue)
     log.info("%d change(s), %d notified", len(changes), len(fresh))
     return fresh
 
@@ -118,10 +120,21 @@ def import_watchlist(ctx: Ctx) -> None:
 def send_reminders(ctx: Ctx) -> None:
     for r, label in rel.due_reminders(ctx.state, ctx.cfg):
         w = rel.window(r, ctx.cfg)
-        ctx.tg.send(
-            f"⏰ <b>Ticket release in {label}</b>\n{fmt.release_line(r, ctx.names())}\n"
-            f"I'll check every {w.poll_seconds}s from {w.start_poll:%H:%M} and message you the moment tickets appear."
-        )
+        at = datetime.fromisoformat(r["at"])
+        phrase = fmt.when_phrase(at, now()) if "remind_at" in r else f"in {label}"
+        lines = [
+            f"⏰ <b>Ticket release {phrase}</b>",
+            fmt.release_line(r, ctx.names()),
+            f"I'll check every {w.poll_seconds}s from {w.start_poll:%d.%m. %H:%M} and message you the moment tickets appear.",
+        ]
+        # a companion all-day window on the same date (recurring releases with also_all_day)
+        for other in ctx.state.releases:
+            if other is not r and other.get("all_day") and other["venue"] == r["venue"] and other["at"][:10] == r["at"][:10]:
+                ow = rel.window(other, ctx.cfg)
+                lines.append(f"If they're not out by then, I keep checking every {ow.poll_seconds}s on {ow.start_poll:%d.%m.} {ow.start_poll:%H:%M}–{ow.end:%H:%M}.")
+        if r.get("link"):
+            lines.append(f'<a href="{fmt.escape(r["link"], quote=True)}">Open the repertoire</a>')
+        ctx.tg.send("\n".join(lines))
 
 
 def digest_due(ctx: Ctx) -> bool:
@@ -150,6 +163,9 @@ def burst(ctx: Ctx, windows: list[rel.Window]) -> None:
     last_full = now()
     log.info("burst mode until %s for %s", end, [(w.release["venue"], w.release["at"]) for w in windows])
     while (t := now()) < end:
+        windows = [w for w in windows if not (w.release.get("all_day") and rel.released_key(w.release) in ctx.state.notified)]
+        if not windows:
+            break
         polling = [w for w in windows if w.start_poll <= t < w.end]
         if not polling:
             nxt = min((w.start_poll for w in windows if w.start_poll > t), default=end)

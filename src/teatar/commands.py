@@ -177,7 +177,7 @@ def cmd_releases(ctx, arg):
     if not ctx.state.releases:
         return ["No known ticket releases. Add one with /release."]
     lines = ["🗓 <b>Known ticket releases</b>"]
-    lines += [f"{i}. {fmt.release_line(r, _names(ctx))}{' (auto)' if r.get('source') == 'auto' else ''}" for i, r in enumerate(ctx.state.releases, 1)]
+    lines += [f"{i}. {fmt.release_line(r, _names(ctx))}{' (auto)' if r.get('source') == 'auto' else ' (monthly)' if r.get('source') == 'recurring' else ''}" for i, r in enumerate(ctx.state.releases, 1)]
     return ["\n".join(lines)]
 
 

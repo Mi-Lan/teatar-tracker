@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import timedelta
 from pathlib import Path
 
@@ -25,6 +25,7 @@ class Config:
     watchlist: list[dict]
     releases: list[dict]
     state_path: Path
+    recurring: list[dict] = field(default_factory=list)
 
     def venue_name(self, key: str) -> str:
         return (self.venues.get(key) or {}).get("name", key)
@@ -45,4 +46,5 @@ def load(root: Path = ROOT) -> Config:
         watchlist=_yaml(cfg_dir / "watchlist.yaml").get("watch") or [],
         releases=_yaml(cfg_dir / "releases.yaml").get("releases") or [],
         state_path=root / "data" / "state.json",
+        recurring=_yaml(cfg_dir / "releases.yaml").get("recurring") or [],
     )

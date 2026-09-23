@@ -1,5 +1,5 @@
 # Ticket release times you know about. The tracker reminds you before each one and
-# polls the venue every 30 s around the release time. You can also add them from Telegram:
+# polls the venue every 30 s around the release time. You can also add one-offs from Telegram:
 #   /release jdp 2026-10-01 10:00 oktobarski repertoar
 #
 # releases:
@@ -8,3 +8,18 @@
 #     note: Oktobarski repertoar
 
 releases: []
+
+# Monthly patterns. Each is scheduled for this month and next, automatically.
+#   day / time      when tickets usually go on sale
+#   also_all_day    keep checking every minute through that day, in case they're late
+#   remind          Telegram reminders: N days before the release day, at a time
+recurring:
+  - venue: narodno
+    note: next month's tickets go on sale
+    day: 23
+    time: "00:00"  # midnight between the 22nd and the 23rd → checks every 30 s 23:50–00:45
+    also_all_day: true  # …and every minute 08:00–22:00 on the 23rd
+    remind:
+      - {days_before: 2, at: "09:00"}  # 21st, morning
+      - {days_before: 1, at: "09:00"}  # 22nd, morning
+    link: https://www.narodnopozoriste.rs/repertoar

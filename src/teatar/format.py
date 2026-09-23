@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from collections import defaultdict
-from datetime import date, datetime
+from datetime import date, datetime, time, timedelta
 from html import escape
 
 from .diff import Change, Kind
@@ -131,3 +131,17 @@ def release_line(r: dict, venue_names: dict[str, str]) -> str:
     when_s = f"{day_label(at.date())} (all day)" if r.get("all_day") else f"{day_label(at.date())} {at:%H:%M}"
     note = f" — {escape(r['note'])}" if r.get("note") else ""
     return f"<b>{escape(venue_names.get(r['venue'], r['venue']))}</b> · {when_s}{note}"
+
+
+def when_phrase(at: datetime, ref: datetime) -> str:
+    """Human wording for a release time relative to `ref`, e.g. 'tonight at midnight (22.→23.10.)'."""
+    days = (at.date() - ref.date()).days
+    if at.time() == time(0) and days in (1, 2):  # midnight: name the night it falls in
+        night = "tonight" if days == 1 else "tomorrow night"
+        return f"{night} at midnight ({at.date() - timedelta(days=1):%d.}→{at:%d.%m.})"
+    hm = f"{at:%H:%M}"
+    if days == 0:
+        return f"today at {hm}"
+    if days == 1:
+        return f"tomorrow at {hm}"
+    return f"on {day_label(at.date())} at {hm}"

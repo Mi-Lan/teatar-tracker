@@ -106,3 +106,62 @@ def test_telegram_commands(make_ctx, clock):
     clock.sleep(900)
     run(ctx, allow_burst=False)
     assert ctx.tg.sent == []  # commands are not answered twice
+
+
+NARODNO_MONTHLY = {
+    "venue": "jdp", "note": "next month's tickets", "day": 23, "time": "00:00", "also_all_day": True,
+    "remind": [{"days_before": 2, "at": "09:00"}, {"days_before": 1, "at": "09:00"}],
+    "link": "https://www.narodnopozoriste.rs/repertoar",
+}
+
+
+def test_recurring_instances_skip_a_release_that_already_happened():
+    now = datetime(2026, 9, 23, 10, 0, tzinfo=TZ)  # September's midnight release is past
+    inst = rel.recurring_instances(NARODNO_MONTHLY, now.date(), now)
+    assert [(r["at"], r["all_day"]) for r in inst] == [("2026-10-23T00:00:00+02:00", False), ("2026-10-23T00:00:00+02:00", True)]
+    assert inst[0]["remind_at"] == ["2026-10-21T09:00:00+02:00", "2026-10-22T09:00:00+02:00"]
+    assert inst[0]["id"] != inst[1]["id"]
+
+
+def test_monthly_reminders_on_21st_and_22nd_then_midnight_burst(make_ctx, clock):
+    clock.t = datetime(2026, 10, 20, 12, 0, tzinfo=TZ)
+
+    def feed():  # tickets for November appear at 00:02 on the 23rd
+        items = [perf(venue="jdp", sid="1", days=3)]
+        if clock() >= datetime(2026, 10, 23, 0, 2, tzinfo=TZ):
+            items.append(perf(venue="jdp", sid="nov", title="Tosca", days=20))
+        return items
+
+    ctx = make_ctx([FakeAdapter("jdp", fn=feed)])
+    ctx.cfg.recurring = [NARODNO_MONTHLY]
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+
+    def reminders():
+        return [m for m in ctx.tg.sent if m.startswith("⏰")]
+
+    for when, expected in [
+        (datetime(2026, 10, 21, 8, 49, tzinfo=TZ), 0),
+        (datetime(2026, 10, 21, 9, 4, tzinfo=TZ), 1),
+        (datetime(2026, 10, 21, 9, 19, tzinfo=TZ), 1),  # not repeated
+        (datetime(2026, 10, 22, 9, 4, tzinfo=TZ), 2),
+    ]:
+        clock.t = when
+        run(ctx, allow_burst=False)
+        assert len(reminders()) == expected, when
+    first, second = reminders()
+    assert "tomorrow night at midnight (22.→23.10.)" in first
+    assert "tonight at midnight (22.→23.10.)" in second
+    assert "every 30s from 22.10. 23:50" in second and "08:00–22:00" in second and "repertoire" in second
+
+    ctx.tg.sent.clear()
+    clock.t = datetime(2026, 10, 22, 22, 49, tzinfo=TZ)  # a cron run inside the 75-min lookahead
+    ctx.started = clock()
+    run(ctx)
+    alert = next(m for m in ctx.tg.sent if "Release watch" in m)
+    assert "Tosca" in alert
+    assert ctx.state.notified["new_show:jdp:nov"] <= "2026-10-23T00:03:00+02:00"
+
+    # the all-day fallback on the 23rd stands down because tickets already came out at midnight
+    clock.t = datetime(2026, 10, 23, 7, 4, tzinfo=TZ)
+    assert rel.active_windows(ctx.state, ctx.cfg) == []
