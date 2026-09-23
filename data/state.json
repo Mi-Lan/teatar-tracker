@@ -171,6 +171,11 @@
    "zeljko samardzic",
    "zeljko vasic",
    "zvonko bogdan"
+  ],
+  "terazije": [
+   "balkan ekspres",
+   "mamma mia",
+   "zene na ivici nervnog sloma"
   ]
  },
  "last_digest": "2026-09-23",
@@ -1166,12 +1171,24 @@
   "sava_centar:27136": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "terazije:1246": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T14:35:11+02:00"
+  },
+  "terazije:1247": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T14:35:11+02:00"
+  },
+  "terazije:1248": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T14:35:11+02:00"
   }
  },
  "notified": {
-  "new_date:sava_centar:27109": "2026-09-23T11:31:07+02:00"
+  "new_date:sava_centar:27109": "2026-09-23T11:31:07+02:00",
+  "season:2026-09-23": "2026-09-23T14:35:11+02:00"
  },
- "pending": [],
  "performances": {
   "bdp:202609261930-divlje-meso": {
    "available": null,
@@ -2770,7 +2787,7 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": 176,
+   "available": 173,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
     "repid": "6367"
@@ -2855,7 +2872,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 144,
+   "available": 140,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -3025,7 +3042,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 250,
+   "available": 249,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -3042,7 +3059,7 @@
    "venue": "narodno"
   },
   "narodno:6383": {
-   "available": 13,
+   "available": 11,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6383",
    "extra": {
     "repid": "6383"
@@ -3059,7 +3076,7 @@
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 90,
+   "available": 70,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -3161,7 +3178,7 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 74,
+   "available": 73,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
@@ -3212,7 +3229,7 @@
    "venue": "narodno"
   },
   "narodno:6393": {
-   "available": 40,
+   "available": 38,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6393",
    "extra": {
     "repid": "6393"
@@ -3280,7 +3297,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 143,
+   "available": 141,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -3314,7 +3331,7 @@
    "venue": "narodno"
   },
   "narodno:6400": {
-   "available": 361,
+   "available": 359,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6400",
    "extra": {
     "repid": "6400"
@@ -3331,7 +3348,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 264,
+   "available": 254,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -3399,7 +3416,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 369,
+   "available": 363,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -3450,7 +3467,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 380,
+   "available": 376,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -3467,7 +3484,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 366,
+   "available": 365,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -3484,7 +3501,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 364,
+   "available": 356,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -3518,7 +3535,7 @@
    "venue": "narodno"
   },
   "narodno:6414": {
-   "available": 271,
+   "available": 270,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6414",
    "extra": {
     "repid": "6414"
@@ -3552,7 +3569,7 @@
    "venue": "narodno"
   },
   "narodno:6416": {
-   "available": 273,
+   "available": 274,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6416",
    "extra": {
     "repid": "6416"
@@ -3671,7 +3688,7 @@
    "venue": "narodno"
   },
   "narodno:6423": {
-   "available": 246,
+   "available": 216,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6423",
    "extra": {
     "repid": "6423"
@@ -3688,7 +3705,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 216,
+   "available": 214,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -3705,7 +3722,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 214,
+   "available": 206,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
@@ -5618,6 +5635,60 @@
    "title": "The Nutcracker",
    "url": "https://tickets.rs/event/the_nutcracker_28581",
    "venue": "sava_centar"
+  },
+  "terazije:1246": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1246",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1246"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1246",
+   "stage": "Велика сцена",
+   "start": "2026-09-25T19:30:00+02:00",
+   "status": "sold_out",
+   "subtitle": "Mјузикл у режији Југа Радивојевића",
+   "title": "MAMMA MIA!",
+   "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
+   "venue": "terazije"
+  },
+  "terazije:1247": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1247",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1247"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1247",
+   "stage": "Велика сцена",
+   "start": "2026-09-26T19:30:00+02:00",
+   "status": "low",
+   "subtitle": "Мјузикл у режији Даријана Михајловића",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "url": "https://pozoristeterazije.com/repertoar/",
+   "venue": "terazije"
+  },
+  "terazije:1248": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1248",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1248"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1248",
+   "stage": "Велика сцена",
+   "start": "2026-09-27T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Небојше Брадића",
+   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
+   "url": "https://pozoristeterazije.com/predstave/zene-na-ivici-nervnog-sloma/",
+   "venue": "terazije"
   }
  },
  "releases": [
@@ -5644,6 +5715,67 @@
    "venue": "narodno"
   }
  ],
+ "season": {
+  "month": "2026-10",
+  "venues": {
+   "bdp": {
+    "buyable": 14,
+    "listed": 15,
+    "not_yet": 1,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "jdp": {
+    "buyable": 0,
+    "listed": 0,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "kolarac": {
+    "buyable": 1,
+    "listed": 1,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "madlenianum": {
+    "buyable": 0,
+    "listed": 2,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 2
+   },
+   "madlenianum_tickets": {
+    "buyable": 0,
+    "listed": 0,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "narodno": {
+    "buyable": 41,
+    "listed": 43,
+    "not_yet": 2,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "sava_centar": {
+    "buyable": 54,
+    "listed": 54,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "terazije": {
+    "buyable": 0,
+    "listed": 0,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   }
+  }
+ },
  "telegram_offset": 597987113,
  "watch_imported": [],
  "watchlist": []
