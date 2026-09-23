@@ -42,7 +42,7 @@ jobs:
         run: |
           case "${{ inputs.mode || 'run' }}" in
             run)      teatar run ;;
-            overview) teatar overview --days 0 --send ;;
+            overview) teatar overview --all --send ;;
             test)     teatar telegram-test ;;
           esac
 

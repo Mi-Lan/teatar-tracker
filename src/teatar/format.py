@@ -4,12 +4,14 @@ from __future__ import annotations
 
 from collections import defaultdict
 from datetime import date, datetime, time, timedelta
-from html import escape
+import re
+from html import escape, unescape
 
 from .diff import Change, Kind
 from .models import Performance, Status
 
-LIMIT = 3900  # Telegram max is 4096; leave room
+LIMIT = 3900  # Telegram max is 4096 visible characters (after HTML parsing); leave room
+MAX_ENTITIES = 90  # keep well under Telegram's per-message formatting-entity limit
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 
@@ -44,24 +46,56 @@ def link(p: Performance) -> str:
     return ""
 
 
-def perf_line(p: Performance, show_date: bool = False, star: bool = False) -> str:
-    stage = f" <i>({escape(p.stage)})</i>" if p.stage else ""
+def short_badge(p: Performance) -> str:
+    s = p.status
+    if s in (Status.ON_SALE, Status.LOW) and p.available is not None:
+        return f"{'🟢' if s == Status.ON_SALE else '🟡'} {p.available}"
+    return {
+        Status.ON_SALE: "🟢", Status.LOW: "🟡 few left", Status.SOLD_OUT: "🔴 sold out",
+        Status.NOT_ON_SALE: f"⏳ from {p.sales_start:%d.%m.}" if p.sales_start else "⏳ not on sale",
+        Status.CANCELLED: "❌ cancelled", Status.UNKNOWN: "❔",
+    }[s]
+
+
+def titled(p: Performance) -> str:
+    """The title, linked to the ticket page when buyable (else the info page)."""
+    href = p.buy_url if (p.status.buyable and p.buy_url) else p.url or p.buy_url
+    t = escape(p.title)
+    return f'<a href="{escape(href, quote=True)}">{t}</a>' if href else f"<b>{t}</b>"
+
+
+def perf_line(p: Performance, show_date: bool = False, star: bool = False, show_stage: bool = True) -> str:
+    """Compact line: '20:30 Божји људи · Раша Плаовић 🟢 271' (title links to tickets)."""
     head = when(p) if show_date else f"{p.start:%H:%M}"
-    return f"{'⭐ ' if star else ''}{head} <b>{escape(p.title)}</b>{stage} — {badge(p)}{link(p)}"
+    stage = f" · {escape(p.stage)}" if p.stage and show_stage else ""
+    return f"{'⭐' if star else ''}{head} {titled(p)}{stage} {short_badge(p)}"
+
+
+def visible_len(html: str) -> int:
+    return len(unescape(re.sub(r"<[^>]+>", "", html)))
+
+
+def entities(html: str) -> int:
+    return len(re.findall(r"<(?:a|b|i|u|code)\b", html))
 
 
 def pack(blocks: list[str], header: str = "") -> list[str]:
-    """Join blocks into as few messages as possible under the Telegram size limit."""
+    """Join blocks into as few messages as possible under Telegram's size and entity limits."""
     messages, cur = [], header
+
+    def fits(text: str) -> bool:
+        return visible_len(text) <= LIMIT and entities(text) <= MAX_ENTITIES
+
     for block in blocks:
-        pieces = [block] if len(block) <= LIMIT else block.split("\n")
+        pieces = [block] if fits(block) else block.split("\n")
         for piece in pieces:
             sep = "\n\n" if cur and piece is block else "\n"
-            if len(cur) + len(sep) + len(piece) > LIMIT and cur:
+            candidate = f"{cur}{sep}{piece}" if cur else piece
+            if cur and not fits(candidate):
                 messages.append(cur)
                 cur = piece
             else:
-                cur = f"{cur}{sep}{piece}" if cur else piece
+                cur = candidate
     if cur:
         messages.append(cur)
     return messages
@@ -73,16 +107,20 @@ def overview(perfs: list[Performance], venue_names: dict[str, str], title: str, 
     if not perfs:
         return [f"🎭 <b>{escape(title)}</b>\n\nNothing found."]
     by_day: dict[date, dict[str, list[Performance]]] = defaultdict(lambda: defaultdict(list))
+    stages: dict[str, set[str]] = defaultdict(set)
     for p in sorted(perfs, key=lambda p: (p.start, p.venue, p.title)):
         by_day[p.start.date()][p.venue].append(p)
+        stages[p.venue].add(p.stage)
     blocks = []
     for d, venues in by_day.items():
         lines = [f"📅 <b>{day_label(d)}</b>"]
         for v, ps in venues.items():
-            lines.append(f"<u>{escape(venue_names.get(v, v))}</u>")
-            lines += [perf_line(p, star=p.uid in watched) for p in ps]
+            lines.append(f"<i>{escape(venue_names.get(v, v))}</i>")
+            # a venue that only uses one stage (e.g. BDP filtered to Velika scena) needn't repeat it
+            lines += [perf_line(p, star=p.uid in watched, show_stage=len(stages[v]) > 1) for p in ps]
         blocks.append("\n".join(lines))
-    return pack(blocks, header=f"🎭 <b>{escape(title)}</b> · {len(perfs)} performances")
+    head = f"🎭 <b>{escape(title)}</b> · {len(perfs)} performances\n🟢 N = tickets left · tap a title to buy"
+    return pack(blocks, header=head)
 
 
 def by_title(perfs: list[Performance], venue_names: dict[str, str], title: str) -> list[str]:

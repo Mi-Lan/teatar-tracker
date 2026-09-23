@@ -2,7 +2,8 @@
 
 digest:
   time: "08:00"  # daily overview is sent on the first run after this time
-  days: 7  # how many days ahead the daily overview covers
+  until: next_month  # covers today → end of next month; set to "days" to use `days` instead
+  days: 7
 
 alerts:
   low_threshold: 20  # watched plays: warn when fewer tickets than this are left (where counts exist)

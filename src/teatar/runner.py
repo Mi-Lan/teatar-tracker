@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
+import calendar
 import logging
 import time as _time
 from dataclasses import dataclass, field
-from datetime import datetime, time, timedelta
+from datetime import date, datetime, time, timedelta
 
 from . import commands, lookups
 from . import diff as diffmod
@@ -143,11 +144,26 @@ def digest_due(ctx: Ctx) -> bool:
     return t.time() >= at and ctx.state.last_digest != t.date().isoformat()
 
 
-def send_overview(ctx: Ctx, days: int | None, title: str) -> None:
+def end_of_next_month(d: date) -> date:
+    year, month = (d.year + 1, 1) if d.month == 12 else (d.year, d.month + 1)
+    return date(year, month, calendar.monthrange(year, month)[1])
+
+
+def digest_range(ctx: Ctx) -> tuple[date, str]:
+    """Last day covered by the scheduled overview, and its title."""
+    today = now().date()
+    if ctx.cfg.get("digest", "until", "next_month") == "next_month":
+        end = end_of_next_month(today)
+        return end, f"Until {end:%d.%m.} (end of next month)"
+    days = int(ctx.cfg.get("digest", "days", 7))
+    return today + timedelta(days=days - 1), f"Next {days} days"
+
+
+def send_overview(ctx: Ctx, until: date | None, title: str) -> None:
+    """Send everything from now through `until` (inclusive; None = everything announced)."""
     perfs = [p for p in ctx.state.perfs() if p.venue != lookups.VENUE and p.start >= now() - timedelta(hours=3)]
-    if days is not None:
-        limit = now().date() + timedelta(days=days)
-        perfs = [p for p in perfs if p.start.date() < limit]
+    if until is not None:
+        perfs = [p for p in perfs if p.start.date() <= until]
     watched = {p.uid for p in perfs if diffmod.watch_entry(p, ctx.state.watchlist)}
     ctx.tg.send_all(fmt.overview(perfs, ctx.names(), title, watched))
 
@@ -213,13 +229,12 @@ def run(ctx: Ctx, allow_burst: bool = True) -> None:
         n = len(ctx.state.performances)
         ctx.tg.send(
             f"✅ <b>Tracker is live.</b> Found {n} upcoming performances across {len(results)} sources. "
-            f"Here's the next week; send /overview for everything.\n\n" + commands.HELP
+            f"Here's what's on until the end of next month; send /overview for everything.\n\n" + commands.HELP
         )
-        send_overview(ctx, ctx.cfg.get("digest", "days", 7), "Next 7 days")
+        send_overview(ctx, *digest_range(ctx))
     elif digest_due(ctx):
         ctx.state.last_digest = now().date().isoformat()
-        days = ctx.cfg.get("digest", "days", 7)
-        send_overview(ctx, days, f"Next {days} days")
+        send_overview(ctx, *digest_range(ctx))
 
     ctx.state.prune()
     ctx.save()

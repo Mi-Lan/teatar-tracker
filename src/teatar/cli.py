@@ -72,13 +72,23 @@ def cmd_run(args) -> None:
 
 
 def cmd_overview(args) -> None:
-    """Scan now and send (or print) the overview for the next N days."""
-    ctx = make_ctx(args, make_tg(not args.send))
-    from .runner import send_overview
-    from .diff import apply
+    """Scan now and send (or print) the overview: to the end of next month, N days, or everything."""
+    from datetime import timedelta
 
+    from .diff import apply
+    from .models import now
+    from .runner import end_of_next_month, send_overview
+
+    ctx = make_ctx(args, make_tg(not args.send))
     apply(ctx.state, scan(ctx))  # in-memory only, not saved
-    send_overview(ctx, args.days, f"Next {args.days} days" if args.days else "Everything announced")
+    today = now().date()
+    if args.all:
+        send_overview(ctx, None, "Everything announced")
+    elif args.days:
+        send_overview(ctx, today + timedelta(days=args.days - 1), f"Next {args.days} days")
+    else:
+        end = end_of_next_month(today)
+        send_overview(ctx, end, f"Until {end:%d.%m.} (end of next month)")
 
 
 def cmd_telegram_test(args) -> None:
@@ -124,7 +134,8 @@ def main(argv: list[str] | None = None) -> None:
     p.set_defaults(fn=cmd_run)
 
     p = sub.add_parser("overview", help="scan and show the overview")
-    p.add_argument("--days", type=int, default=7, help="days ahead (0 = everything)")
+    p.add_argument("--days", type=int, default=0, help="days ahead (default: until the end of next month)")
+    p.add_argument("--all", action="store_true", help="everything announced")
     p.add_argument("--send", action="store_true", help="send to Telegram instead of printing")
     p.set_defaults(fn=cmd_overview)
 
@@ -132,6 +143,4 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("whoami", help="find your Telegram chat id").set_defaults(fn=cmd_whoami)
 
     args = parser.parse_args(argv)
-    if getattr(args, "days", None) == 0:
-        args.days = None
     args.fn(args)

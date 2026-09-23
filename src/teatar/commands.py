@@ -22,7 +22,8 @@ HELP = """🎭 <b>Theatre tracker</b>
 Replies arrive on the next check (≤15 min, faster around ticket releases).
 
 <b>Browse</b>
-/today · /tomorrow · /week — shows by date and theatre
+/month — everything until the end of next month
+/today · /tomorrow · /week — shorter ranges
 /overview — everything that's announced
 /theatre <i>name</i> — one theatre, e.g. <code>/theatre jdp</code>
 /search <i>title</i> — or just type a title
@@ -81,6 +82,14 @@ def cmd_tomorrow(ctx, arg):
 
 def cmd_week(ctx, arg):
     return _days(ctx, 0, 7, "Next 7 days")
+
+
+def cmd_month(ctx, arg):
+    from .runner import end_of_next_month
+
+    today = now().date()
+    end = end_of_next_month(today)
+    return _days(ctx, 0, (end - today).days + 1, f"Until {end:%d.%m.} (end of next month)")
 
 
 def cmd_overview(ctx, arg):
@@ -207,6 +216,7 @@ COMMANDS = {
     "/today": cmd_today, "/danas": cmd_today,
     "/tomorrow": cmd_tomorrow, "/sutra": cmd_tomorrow,
     "/week": cmd_week, "/nedelja": cmd_week,
+    "/month": cmd_month, "/mesec": cmd_month,
     "/overview": cmd_overview, "/all": cmd_overview, "/pregled": cmd_overview,
     "/theatre": cmd_theatre, "/theater": cmd_theatre, "/pozoriste": cmd_theatre,
     "/search": cmd_search, "/trazi": cmd_search,

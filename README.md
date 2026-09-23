@@ -31,7 +31,8 @@ Replies come on the next check (≤15 min; faster during release bursts).
 
 | Command | |
 |---|---|
-| `/today` `/tomorrow` `/week` | shows by date → theatre, with availability and buy links |
+| `/month` | everything until the end of next month, by date → theatre, with tickets left (tap a title to buy) |
+| `/today` `/tomorrow` `/week` | shorter ranges |
 | `/overview` | everything announced |
 | `/theatre jdp` | one theatre |
 | `/search tramvaj`, or just type a title | find a play (Cyrillic/Latin/diacritics don't matter) |
@@ -40,7 +41,7 @@ Replies come on the next check (≤15 min; faster during release bursts).
 | `/release narodno 2026-10-05` | date only: polls every 60 s from 08:00 to 22:00 that day |
 | `/releases` · `/unrelease 1` · `/status` | |
 
-Automatic messages: one batched alert per check (new shows/dates, tickets on sale), a daily overview of the next 7 days at 08:00, release reminders, and a warning if a site stops responding (layout change).
+Automatic messages: one batched alert per check (new shows/dates, tickets on sale), a daily overview at 08:00 covering everything until the end of next month, release reminders, and a warning if a site stops responding (layout change).
 
 ## Setup
 
@@ -63,7 +64,7 @@ uv venv .venv && uv pip install -e ".[dev]"
 .venv/bin/teatar scan                     # live tables for every venue (no state, no messages)
 .venv/bin/teatar scan --venue narodno
 .venv/bin/teatar run --dry-run            # full run, messages printed instead of sent
-.venv/bin/teatar overview --days 7        # print the overview (add --send to send it)
+.venv/bin/teatar overview                # print the overview to end of next month (--send to send it)
 .venv/bin/pytest
 ```
 
