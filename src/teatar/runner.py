@@ -212,9 +212,13 @@ def burst(ctx: Ctx, windows: list[rel.Window]) -> None:
             commands.handle(ctx, ctx.tg.updates(ctx.state.telegram_offset))
             continue
         venues = {w.release["venue"] for w in polling}
-        process(ctx, scan(ctx, keys=venues, include_custom=False), header="🚨 <b>Release watch</b>")
+        results = scan(ctx, keys=venues, include_custom=False)
+        process(ctx, results, header="🚨 <b>Release watch</b>")
+        season.track(ctx, set(results))
         if now() - last_full >= full_every:
-            process(ctx, scan(ctx))
+            results = scan(ctx)
+            process(ctx, results)
+            season.track(ctx, set(results))
             last_full = now()
         commands.handle(ctx, ctx.tg.updates(ctx.state.telegram_offset))
         ctx.save()
@@ -248,6 +252,7 @@ def run(ctx: Ctx, allow_burst: bool = True) -> None:
 
     results = scan(ctx)
     process(ctx, results)
+    season.track(ctx, set(results))
     rel.sync(ctx.state, ctx.cfg, [p for ps in results.values() for p in ps])
     send_reminders(ctx)
     commands.handle(ctx, updates, skip_start=first)
@@ -264,9 +269,8 @@ def run(ctx: Ctx, allow_burst: bool = True) -> None:
     elif digest_due(ctx):
         ctx.state.last_digest = now().date().isoformat()
         send_report(ctx)
-    if not first and season.due(ctx):
-        ctx.state.mark_notified(f"season:{now().date().isoformat()}")
-        ctx.tg.send_all(season.report(ctx))
+    if not first and (slot := season.due(ctx)):
+        ctx.tg.send_all(season.report(ctx, slot=slot))
 
     ctx.state.prune()
     ctx.save()

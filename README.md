@@ -5,7 +5,7 @@ Watches Belgrade theatre and venue sites, and on Telegram it:
 - shows **what's playing, by date and theatre, with availability**,
 - catches **ticket releases**: a reminder before, then checks every 30 s around the release time.
 
-It checks hourly on GitHub Actions (free), silently: you only hear from it when it matters. State lives in
+It checks hourly (at :05) on GitHub Actions (free), silently: you only hear from it when it matters. State lives in
 `data/state.json`, committed by the workflow.
 
 ## Sources
@@ -23,7 +23,7 @@ Configuration is in `config/`:
 - `venues.yaml`: which sources to track and their options (BDP stage filter, JDP months ahead…)
 - `watchlist.yaml`: plays you care about (⭐, extra alerts: back in stock, running low, sold out)
 - `releases.yaml`: known ticket release times, plus **monthly patterns**. Narodno is set up to put next
-  month's tickets on sale at midnight between the 22nd and 23rd: reminders at 09:00 on the 21st and 22nd,
+  month's tickets on sale at midnight between the 22nd and 23rd: reminders at 08:00 on the 21st and 22nd,
   checks every 30 s from 23:50 to 00:45, and every minute on the 23rd if nothing appeared at midnight.
 - `settings.yaml`: digest time, reminder times, burst timing
 
@@ -45,8 +45,8 @@ Replies come on the next check (within the hour; faster during release bursts).
 | `/releases` · `/unrelease 1` · `/status` | |
 
 **What it sends you (and nothing else):**
-- **Weekly overview, Monday 09:00:** everything on until the end of next month, by date and theatre, with tickets left.
-- **Every morning from the 20th to the 27th, 09:00:** one message saying, per theatre, whether next month's programme and tickets are out (🆕 = since yesterday). Most theatres release in that window.
+- **Weekly overview, Monday 08:00:** everything on until the end of next month, by date and theatre, with tickets left.
+- **From the 20th to the 27th, at 00:05 and 08:00:** one message saying, per theatre, whether next month's programme and tickets are out (🆕 = since the previous check), and **when** each theatre released: the first check that saw the tickets and the last one that didn't. Most theatres release in that window.
 - **Right away:** known ticket releases (reminders, the moment tickets appear), plays on your `/watch` list, and a warning if a site stops responding.
 
 Change the day/time or switch to instant alerts for everything in `config/settings.yaml` (`digest`, `alerts.instant`).

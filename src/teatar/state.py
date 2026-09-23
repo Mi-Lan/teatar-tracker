@@ -23,7 +23,8 @@ class State:
     health: dict[str, dict] = field(default_factory=dict)
     telegram_offset: int = 0
     last_digest: str = ""  # ISO date of the last scheduled report
-    season: dict = field(default_factory=dict)  # yesterday's next-month counts for the 20th–27th check
+    season: dict = field(default_factory=dict)  # next-month status for the 20th–27th checks (see season.py)
+    release_log: list[dict] = field(default_factory=list)  # when each theatre released each month
 
     # --- persistence -------------------------------------------------------------------------
     @classmethod

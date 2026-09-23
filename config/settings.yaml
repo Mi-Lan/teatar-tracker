@@ -3,13 +3,13 @@
 digest:  # the scheduled overview: everything until the end of next month
   every: weekly  # weekly | daily
   weekday: monday
-  time: "09:00"
+  time: "08:00"
   until: next_month  # covers today → end of next month; set to "days" to use `days` instead
   days: 7
 
 release_season:  # most theatres publish next month and open sales between these days
-  days: [20, 27]  # every morning in this range: one "tickets for next month" status per theatre
-  time: "09:00"
+  days: [20, 27]  # on each of these days: a "tickets for next month" status per theatre…
+  times: ["00:05", "08:00"]  # …at these times. The status also says when each theatre released.
 
 alerts:
   # What is messaged immediately. "releases_and_watchlist": known ticket releases (reminders, the

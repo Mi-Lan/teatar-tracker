@@ -228,3 +228,31 @@ def test_season_check_each_morning_20th_to_27th(make_ctx, clock):
         run(ctx, allow_burst=False)
     assert len(season_msgs()) == 8  # 20th … 27th, one per morning
     assert "🆕" not in season_msgs()[-1]  # nothing new after the 21st
+
+
+def test_midnight_check_and_release_time(make_ctx, clock):
+    clock.t = datetime(2026, 9, 23, 20, 5, tzinfo=TZ)
+    oct_show = perf(venue="jdp", sid="oct", title="Sirano")
+    oct_show.start = datetime(2026, 10, 5, 20, 0, tzinfo=TZ)
+    feed = [perf(venue="jdp", sid="1", days=3)]
+    ctx = make_ctx([FakeAdapter("jdp", fn=lambda: list(feed))])
+    run(ctx, allow_burst=False)  # baseline
+    ctx.tg.sent.clear()
+
+    for hour in (21, 22, 23):  # hourly checks at :05 — nothing for October yet
+        clock.t = datetime(2026, 9, 23, hour, 5, tzinfo=TZ)
+        run(ctx, allow_burst=False)
+    feed.append(oct_show)  # JDP publishes at 23:40
+    clock.t = datetime(2026, 9, 24, 0, 5, 30, tzinfo=TZ)
+    run(ctx, allow_burst=False)
+
+    midnight = [m for m in ctx.tg.sent if m.startswith("🎟")][-1]
+    assert "Thu 24.09. · 00:05 check" in midnight
+    assert "JDP</b>: tickets for 1 of 1 dates 🆕 · out 24.09. 00:05 (not yet at 23:05)" in midnight
+    assert ctx.state.release_log == [{"venue": "jdp", "month": "2026-10", "after": "2026-09-23T23:05:00+02:00", "by": "2026-09-24T00:05:30+02:00"}]
+
+    clock.t = datetime(2026, 9, 24, 8, 5, tzinfo=TZ)
+    run(ctx, allow_burst=False)
+    morning = [m for m in ctx.tg.sent if m.startswith("🎟")][-1]
+    assert "08:00 check" in morning and "🆕" not in morning  # already reported at midnight
+    assert "out 24.09. 00:05 (not yet at 23:05)" in morning  # the release time stays in the status
