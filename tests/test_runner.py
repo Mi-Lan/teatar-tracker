@@ -15,24 +15,46 @@ def test_parse_when():
     assert rel.parse_when("3.2.", today)[0].year == 2027  # past day/month rolls to next year
 
 
-def test_first_run_is_baseline_then_alerts(make_ctx, clock):
+def test_quiet_week_then_monday_report(make_ctx, clock):
+    # START is Tuesday 22.09. 12:00
     a = FakeAdapter("jdp", [perf(venue="jdp")])
     ctx = make_ctx([a])
     run(ctx, allow_burst=False)
     assert ctx.state.initialized
     assert any("Tracker is live" in m for m in ctx.tg.sent)
-    assert not any("Theatre update" in m for m in ctx.tg.sent)
 
     ctx.tg.sent.clear()
     a.perfs.append(perf(venue="jdp", sid="2", title="Gubitnik", days=12))
-    clock.sleep(900)
-    run(ctx, allow_burst=False)
-    assert len(ctx.tg.sent) == 1 and "New shows" in ctx.tg.sent[0] and "Gubitnik" in ctx.tg.sent[0]
+    a.perfs.append(perf(venue="jdp", sid="3", title="Gubitnik", days=13))
+    for _ in range(24 * 5):  # hourly checks through Sunday: new shows are found but not messaged
+        clock.sleep(3600)
+        run(ctx, allow_burst=False)
+    assert ctx.tg.sent == []
+    assert len(ctx.state.pending) == 2
+
+    while clock().weekday() != 0 or clock().hour < 9:  # Monday 09:xx
+        clock.sleep(3600)
+        run(ctx, allow_burst=False)
+    report = "\n".join(ctx.tg.sent)
+    assert "Weekly theatre report" in report and "Gubitnik" in report and "(+1 dates)" in report
+    assert "Until 31.10." in report  # followed by the overview to the end of next month
+    assert ctx.state.pending == []
 
     ctx.tg.sent.clear()
-    clock.sleep(900)
+    clock.sleep(3600)
     run(ctx, allow_burst=False)
-    assert ctx.tg.sent == []  # nothing changed, nothing sent
+    assert ctx.tg.sent == []  # once a week
+
+
+def test_watched_plays_are_messaged_immediately(make_ctx, clock):
+    a = FakeAdapter("jdp", [perf(venue="jdp", status=Status.NOT_ON_SALE)])
+    ctx = make_ctx([a], watchlist=[{"query": "divlje meso"}])
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+    a.perfs = [perf(venue="jdp", status=Status.ON_SALE, available=40)]
+    clock.sleep(3600)
+    run(ctx, allow_burst=False)
+    assert len(ctx.tg.sent) == 1 and "Tickets now on sale" in ctx.tg.sent[0] and "⭐" in ctx.tg.sent[0]
 
 
 def test_failing_venue_keeps_data_and_warns(make_ctx, clock):
@@ -79,8 +101,17 @@ def test_release_burst_catches_tickets_within_a_minute(make_ctx, clock):
     assert "Ričard Drugi" in alert
     # alert went out on the first poll after publication (poll every 30 s)
     assert ctx.state.notified[f"new_show:jdp:oct1"] <= (release_at + timedelta(seconds=60)).isoformat()
-    assert any("Release window closed" in m for m in ctx.tg.sent)
+    assert not any("No new tickets yet" in m for m in ctx.tg.sent)  # you were alerted; no extra message
     assert clock() >= release_at + timedelta(minutes=45)  # polled until the window closed
+
+
+def test_release_with_nothing_published_says_so_once(make_ctx, clock):
+    ctx = make_ctx([FakeAdapter("jdp", [perf(venue="jdp")])], releases=[{"venue": "jdp", "at": "2026-09-22 12:40"}])
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+    clock.sleep(60)
+    run(ctx)
+    assert sum("No new tickets yet" in m for m in ctx.tg.sent) == 1
 
 
 def test_telegram_commands(make_ctx, clock):

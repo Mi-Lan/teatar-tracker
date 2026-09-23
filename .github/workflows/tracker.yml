@@ -2,8 +2,9 @@ name: tracker
 
 on:
   schedule:
-    # Every 15 min, off the top of the hour (GitHub delays :00 runs the most).
-    - cron: "7,22,37,52 * * * *"
+    # Hourly, off the top of the hour (GitHub delays :00 runs the most). Checks are silent unless
+    # something needs your attention; release windows keep a run alive to poll every 30 s.
+    - cron: "7 * * * *"
   workflow_dispatch:
     inputs:
       mode:

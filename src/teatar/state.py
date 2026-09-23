@@ -22,7 +22,8 @@ class State:
     notified: dict[str, str] = field(default_factory=dict)  # dedupe key -> when sent
     health: dict[str, dict] = field(default_factory=dict)
     telegram_offset: int = 0
-    last_digest: str = ""  # ISO date of the last daily overview
+    last_digest: str = ""  # ISO date of the last scheduled report
+    pending: list[dict] = field(default_factory=list)  # changes saved for the next weekly report
 
     # --- persistence -------------------------------------------------------------------------
     @classmethod

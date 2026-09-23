@@ -19,10 +19,13 @@ if TYPE_CHECKING:
 log = logging.getLogger(__name__)
 
 HELP = """🎭 <b>Theatre tracker</b>
-Replies arrive on the next check (≤15 min, faster around ticket releases).
+I check every hour and write only when it matters: a weekly report on Monday morning,
+ticket-release reminders and alerts, and news about plays you /watch.
+Replies to commands arrive within the hour (faster around releases).
 
 <b>Browse</b>
 /month — everything until the end of next month
+/new — what's new since the last weekly report
 /today · /tomorrow · /week — shorter ranges
 /overview — everything that's announced
 /theatre <i>name</i> — one theatre, e.g. <code>/theatre jdp</code>
@@ -90,6 +93,16 @@ def cmd_month(ctx, arg):
     today = now().date()
     end = end_of_next_month(today)
     return _days(ctx, 0, (end - today).days + 1, f"Until {end:%d.%m.} (end of next month)")
+
+
+def cmd_new(ctx, arg):
+    from .diff import Kind
+
+    items = [(Kind(d["kind"]), Performance.from_dict(d["perf"])) for d in ctx.state.pending]
+    items = [(k, p) for k, p in items if p.start >= now()]
+    msgs = fmt.weekly_summary(items, [], _names(ctx), "New since the last report")
+    msgs[-1] = msgs[-1].replace("Everything until the end of next month is below · /month any time", "/month for the full list")
+    return msgs
 
 
 def cmd_overview(ctx, arg):
@@ -217,6 +230,7 @@ COMMANDS = {
     "/tomorrow": cmd_tomorrow, "/sutra": cmd_tomorrow,
     "/week": cmd_week, "/nedelja": cmd_week,
     "/month": cmd_month, "/mesec": cmd_month,
+    "/new": cmd_new, "/novo": cmd_new,
     "/overview": cmd_overview, "/all": cmd_overview, "/pregled": cmd_overview,
     "/theatre": cmd_theatre, "/theater": cmd_theatre, "/pozoriste": cmd_theatre,
     "/search": cmd_search, "/trazi": cmd_search,

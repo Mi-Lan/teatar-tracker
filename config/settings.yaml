@@ -1,16 +1,22 @@
 # Timezone for everything below: Europe/Belgrade.
 
-digest:
-  time: "08:00"  # daily overview is sent on the first run after this time
+digest:  # the scheduled report: what's new + everything until the end of next month
+  every: weekly  # weekly | daily
+  weekday: monday
+  time: "09:00"
   until: next_month  # covers today → end of next month; set to "days" to use `days` instead
   days: 7
 
 alerts:
+  # What is messaged immediately. "releases_and_watchlist": known ticket releases (reminders, the
+  # moment tickets appear) and plays on your /watch list; everything else waits for the weekly
+  # report. "all": every new show/date/sale as soon as it's found.
+  instant: releases_and_watchlist
   low_threshold: 20  # watched plays: warn when fewer tickets than this are left (where counts exist)
 
 releases:
   remind_before: ["24h", "1h"]  # reminders before a known ticket release
-  lookahead_minutes: 75  # a run starting this long before a release switches into burst mode
+  lookahead_minutes: 150  # a run starting this long before a release switches into burst mode (checks are hourly)
   start_before_minutes: 10  # burst polling starts this long before the release time
   stop_after_minutes: 45  # ...and ends this long after it
   poll_seconds: 30  # how often the release venue is re-checked during a burst

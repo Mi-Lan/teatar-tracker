@@ -5,7 +5,8 @@ Watches Belgrade theatre and venue sites, and on Telegram it:
 - shows **what's playing, by date and theatre, with availability**,
 - catches **ticket releases**: a reminder before, then checks every 30 s around the release time.
 
-It runs free on GitHub Actions every 15 minutes. State lives in `data/state.json`, committed by the workflow.
+It checks hourly on GitHub Actions (free), silently: you only hear from it when it matters. State lives in
+`data/state.json`, committed by the workflow.
 
 ## Sources
 
@@ -27,12 +28,13 @@ Configuration is in `config/`:
 
 ## Telegram commands
 
-Replies come on the next check (≤15 min; faster during release bursts).
+Replies come on the next check (within the hour; faster during release bursts).
 
 | Command | |
 |---|---|
 | `/month` | everything until the end of next month, by date → theatre, with tickets left (tap a title to buy) |
 | `/today` `/tomorrow` `/week` | shorter ranges |
+| `/new` | what's new since the last weekly report |
 | `/overview` | everything announced |
 | `/theatre jdp` | one theatre |
 | `/search tramvaj`, or just type a title | find a play (Cyrillic/Latin/diacritics don't matter) |
@@ -41,7 +43,11 @@ Replies come on the next check (≤15 min; faster during release bursts).
 | `/release narodno 2026-10-05` | date only: polls every 60 s from 08:00 to 22:00 that day |
 | `/releases` · `/unrelease 1` · `/status` | |
 
-Automatic messages: one batched alert per check (new shows/dates, tickets on sale), a daily overview at 08:00 covering everything until the end of next month, release reminders, and a warning if a site stops responding (layout change).
+**What it sends you (and nothing else):**
+- **Weekly report, Monday 09:00:** new shows, new dates and tickets that went on sale that week, then everything until the end of next month.
+- **Right away:** known ticket releases (reminders, the moment tickets appear), plays on your `/watch` list, and a warning if a site stops responding.
+
+Change the day/time or switch to instant alerts for everything in `config/settings.yaml` (`digest`, `alerts.instant`).
 
 ## Setup
 

@@ -183,3 +183,38 @@ def when_phrase(at: datetime, ref: datetime) -> str:
     if days == 1:
         return f"tomorrow at {hm}"
     return f"on {day_label(at.date())} at {hm}"
+
+
+def weekly_summary(items: list[tuple[Kind, Performance]], releases: list[dict], venue_names: dict[str, str], title: str = "Weekly theatre report") -> list[str]:
+    """What changed since the last report: sales opened, new shows (one line per play), new dates (counts)."""
+    def counts(ps: list[Performance]) -> str:
+        c: dict[str, int] = defaultdict(int)
+        for p in ps:
+            c[venue_names.get(p.venue, p.venue)] += 1
+        return " · ".join(f"{escape(v)} {n}" for v, n in sorted(c.items(), key=lambda x: -x[1]))
+
+    lines = [f"📰 <b>{escape(title)}</b>"]
+    opened = [p for k, p in items if k == Kind.SALES_OPENED]
+    shows = [p for k, p in items if k == Kind.NEW_SHOW]
+    dates = [p for k, p in items if k == Kind.NEW_DATE]
+    if not items:
+        lines.append("Nothing new since the last report.")
+    if opened:
+        lines += ["", f"🎟 <b>Tickets went on sale</b> ({len(opened)}): {counts(opened)}"]
+    if shows:
+        plays: dict[tuple[str, str], list[Performance]] = defaultdict(list)
+        for p in sorted(shows, key=lambda p: p.start):
+            plays[(p.venue, p.title_norm)].append(p)
+        lines += ["", f"🆕 <b>New shows</b> ({len(plays)})"]
+        for i, ((venue, _), ps) in enumerate(plays.items()):
+            if i == 30:
+                lines.append(f"…and {len(plays) - 30} more")
+                break
+            more = f" (+{len(ps) - 1} dates)" if len(ps) > 1 else ""
+            lines.append(f"{titled(ps[0])} · <i>{escape(venue_names.get(venue, venue))}</i> · {when(ps[0])}{more} {short_badge(ps[0])}")
+    if dates:
+        lines += ["", f"📅 <b>New dates</b> ({len(dates)}): {counts(dates)}"]
+    if releases:
+        lines += ["", "⏰ <b>Coming up</b>"] + [release_line(r, venue_names) for r in releases[:3]]
+    lines += ["", "Everything until the end of next month is below · /month any time"]
+    return pack(["\n".join(lines)])

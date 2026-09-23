@@ -91,18 +91,26 @@ def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True) ->
 
 
 def process(ctx: Ctx, results: dict[str, list[Performance]], header: str = "🔔 <b>Theatre update</b>") -> list[diffmod.Change]:
+    """Detect changes. Watched plays and venues around a known release are messaged right away;
+    everything else is saved for the weekly report (unless alerts.instant is "all")."""
     low = ctx.cfg.get("alerts", "low_threshold", 20)
     changes = diffmod.compute(ctx.state, results, ctx.state.watchlist, low)
     diffmod.apply(ctx.state, results)
     fresh = [c for c in changes if c.reportable and not (c.kind in diffmod.ONCE and ctx.state.was_notified(c.key))]
-    if fresh:
-        ctx.tg.send_all(fmt.alerts(fresh, ctx.names(), header))
-        for c in fresh:
-            if c.kind in diffmod.ONCE:
-                ctx.state.mark_notified(c.key)
+    hot = rel.hot_venues(ctx.state, ctx.cfg)
+    send_all = ctx.cfg.get("alerts", "instant", "releases_and_watchlist") == "all"
+    instant = [c for c in fresh if send_all or c.watched or c.perf.venue in hot]
+    later = [c for c in fresh if c not in instant]
+    if instant:
+        ctx.tg.send_all(fmt.alerts(instant, ctx.names(), header))
+    for c in later:
+        ctx.state.pending.append({"kind": str(c.kind), "perf": c.perf.to_dict()})
+    for c in fresh:
+        if c.kind in diffmod.ONCE:
+            ctx.state.mark_notified(c.key)
     for venue in {c.perf.venue for c in fresh if c.kind in diffmod.ONCE}:
         rel.mark_released(ctx.state, ctx.cfg, venue)
-    log.info("%d change(s), %d notified", len(changes), len(fresh))
+    log.info("%d change(s): %d sent now, %d saved for the weekly report", len(changes), len(instant), len(later))
     return fresh
 
 
@@ -138,10 +146,30 @@ def send_reminders(ctx: Ctx) -> None:
         ctx.tg.send("\n".join(lines))
 
 
+WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+
 def digest_due(ctx: Ctx) -> bool:
-    at = time.fromisoformat(ctx.cfg.get("digest", "time", "08:00"))
+    """Weekly (default) or daily report: due once the latest scheduled slot has passed."""
+    at = time.fromisoformat(ctx.cfg.get("digest", "time", "09:00"))
     t = now()
-    return t.time() >= at and ctx.state.last_digest != t.date().isoformat()
+    slot = t.date()
+    if ctx.cfg.get("digest", "every", "weekly") == "weekly":
+        weekday = WEEKDAYS.index(str(ctx.cfg.get("digest", "weekday", "monday")).lower())
+        slot -= timedelta(days=(t.weekday() - weekday) % 7)
+    if t < datetime.combine(slot, at, t.tzinfo):
+        slot -= timedelta(days=7 if ctx.cfg.get("digest", "every", "weekly") == "weekly" else 1)
+    return ctx.state.last_digest < slot.isoformat()
+
+
+def send_report(ctx: Ctx) -> None:
+    """The scheduled report: what changed since the last one, then the overview."""
+    items = [(diffmod.Kind(d["kind"]), Performance.from_dict(d["perf"])) for d in ctx.state.pending]
+    items = [(k, p) for k, p in items if p.start >= now()]
+    upcoming = [r for r in ctx.state.releases if not r.get("all_day")]
+    ctx.tg.send_all(fmt.weekly_summary(items, upcoming, ctx.names()))
+    ctx.state.pending = []
+    send_overview(ctx, *digest_range(ctx))
 
 
 def end_of_next_month(d: date) -> date:
@@ -201,12 +229,18 @@ def burst(ctx: Ctx, windows: list[rel.Window]) -> None:
         key = f"burst-done:{w.release['id']}"
         if now() >= w.end and not ctx.state.was_notified(key):
             ctx.state.mark_notified(key)
-            venue = w.release["venue"]
-            on_sale = [p for p in ctx.state.perfs() if p.venue == venue and p.status.buyable]
-            ctx.tg.send(
-                f"🏁 Release window closed: {fmt.release_line(w.release, ctx.names())}\n"
-                f"{len(on_sale)} performance(s) at {ctx.names().get(venue, venue)} are on sale now. /theatre {venue}"
+            if rel.released_key(w.release) in ctx.state.notified:
+                continue  # tickets came out and you were already alerted
+            later = [
+                o for o in ctx.state.releases
+                if o is not w.release and o["venue"] == w.release["venue"] and rel.window(o, ctx.cfg).end > now()
+                and o["at"][:10] == w.release["at"][:10]
+            ]
+            follow = (
+                f"I'll keep checking {rel.window(later[0], ctx.cfg).start_poll:%d.%m. %H:%M}–{rel.window(later[0], ctx.cfg).end:%H:%M}."
+                if later else "They may come later; the weekly report will show them."
             )
+            ctx.tg.send(f"🕛 No new tickets yet: {fmt.release_line(w.release, ctx.names())}\n{follow}")
 
 
 # --- one run -------------------------------------------------------------------------------------------
@@ -234,7 +268,7 @@ def run(ctx: Ctx, allow_burst: bool = True) -> None:
         send_overview(ctx, *digest_range(ctx))
     elif digest_due(ctx):
         ctx.state.last_digest = now().date().isoformat()
-        send_overview(ctx, *digest_range(ctx))
+        send_report(ctx)
 
     ctx.state.prune()
     ctx.save()

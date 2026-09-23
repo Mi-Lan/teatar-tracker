@@ -130,6 +130,13 @@ def released_key(r: dict) -> str:
     return f"released:{r['venue']}:{r['at'][:10]}"
 
 
+def hot_venues(state: State, cfg: Config, at: datetime | None = None) -> set[str]:
+    """Venues with a known release from a day before its window until the window closes.
+    Changes there are sent immediately instead of waiting for the weekly report."""
+    at = at or now()
+    return {r["venue"] for r in state.releases if (w := window(r, cfg)).start_poll - timedelta(days=1) <= at < w.end}
+
+
 def mark_released(state: State, cfg: Config, venue: str, at: datetime | None = None) -> None:
     """Tickets appeared at `venue`: flag releases around now so all-day fallback windows stand down."""
     at = at or now()
