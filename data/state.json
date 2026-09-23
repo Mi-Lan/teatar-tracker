@@ -1187,7 +1187,9 @@
  },
  "notified": {
   "new_date:sava_centar:27109": "2026-09-23T11:31:07+02:00",
-  "season:2026-09-23": "2026-09-23T14:35:11+02:00"
+  "season:2026-09-23": "2026-09-23T14:35:11+02:00",
+  "season:2026-09-23:00:05": "2026-09-23T14:40:37+02:00",
+  "season:2026-09-23:08:00": "2026-09-23T14:40:37+02:00"
  },
  "performances": {
   "bdp:202609261930-divlje-meso": {
@@ -3178,7 +3180,7 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 73,
+   "available": 74,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
@@ -3280,7 +3282,7 @@
    "venue": "narodno"
   },
   "narodno:6396": {
-   "available": 102,
+   "available": 99,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6396",
    "extra": {
     "repid": "6396"
@@ -3399,7 +3401,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 367,
+   "available": 365,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -3535,7 +3537,7 @@
    "venue": "narodno"
   },
   "narodno:6414": {
-   "available": 270,
+   "available": 271,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6414",
    "extra": {
     "repid": "6414"
@@ -5691,6 +5693,7 @@
    "venue": "terazije"
   }
  },
+ "release_log": [],
  "releases": [
   {
    "all_day": false,
@@ -5716,8 +5719,38 @@
   }
  ],
  "season": {
+  "live": {
+   "bdp": {
+    "out": true
+   },
+   "jdp": {
+    "checked": "2026-09-23T14:40:37+02:00",
+    "out": false
+   },
+   "kolarac": {
+    "out": true
+   },
+   "madlenianum": {
+    "out": true
+   },
+   "madlenianum_tickets": {
+    "checked": "2026-09-23T14:40:37+02:00",
+    "out": false
+   },
+   "narodno": {
+    "out": true
+   },
+   "sava_centar": {
+    "out": true
+   },
+   "terazije": {
+    "checked": "2026-09-23T14:40:37+02:00",
+    "out": false
+   }
+  },
   "month": "2026-10",
-  "venues": {
+  "released": {},
+  "reported": {
    "bdp": {
     "buyable": 14,
     "listed": 15,
