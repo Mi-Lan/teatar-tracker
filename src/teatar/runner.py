@@ -92,7 +92,7 @@ def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True) ->
 
 def process(ctx: Ctx, results: dict[str, list[Performance]], header: str = "🔔 <b>Theatre update</b>") -> list[diffmod.Change]:
     """Detect changes. Watched plays and venues around a known release are messaged right away;
-    everything else is saved for the weekly report (unless alerts.instant is "all")."""
+    everything else simply shows up in the next weekly overview (unless alerts.instant is "all")."""
     low = ctx.cfg.get("alerts", "low_threshold", 20)
     changes = diffmod.compute(ctx.state, results, ctx.state.watchlist, low)
     diffmod.apply(ctx.state, results)
@@ -100,17 +100,14 @@ def process(ctx: Ctx, results: dict[str, list[Performance]], header: str = "🔔
     hot = rel.hot_venues(ctx.state, ctx.cfg)
     send_all = ctx.cfg.get("alerts", "instant", "releases_and_watchlist") == "all"
     instant = [c for c in fresh if send_all or c.watched or c.perf.venue in hot]
-    later = [c for c in fresh if c not in instant]
     if instant:
         ctx.tg.send_all(fmt.alerts(instant, ctx.names(), header))
-    for c in later:
-        ctx.state.pending.append({"kind": str(c.kind), "perf": c.perf.to_dict()})
     for c in fresh:
         if c.kind in diffmod.ONCE:
             ctx.state.mark_notified(c.key)
     for venue in {c.perf.venue for c in fresh if c.kind in diffmod.ONCE}:
         rel.mark_released(ctx.state, ctx.cfg, venue)
-    log.info("%d change(s): %d sent now, %d saved for the weekly report", len(changes), len(instant), len(later))
+    log.info("%d change(s), %d sent now", len(changes), len(instant))
     return fresh
 
 
@@ -163,13 +160,11 @@ def digest_due(ctx: Ctx) -> bool:
 
 
 def send_report(ctx: Ctx) -> None:
-    """The scheduled report: what changed since the last one, then the overview."""
-    items = [(diffmod.Kind(d["kind"]), Performance.from_dict(d["perf"])) for d in ctx.state.pending]
-    items = [(k, p) for k, p in items if p.start >= now()]
-    upcoming = [r for r in ctx.state.releases if not r.get("all_day")]
-    ctx.tg.send_all(fmt.weekly_summary(items, upcoming, ctx.names()))
-    ctx.state.pending = []
-    send_overview(ctx, *digest_range(ctx))
+    """The scheduled report: a self-contained overview until the end of next month."""
+    until, title = digest_range(ctx)
+    upcoming = [r for r in ctx.state.releases if not r.get("all_day")][:2]
+    note = "\n".join(f"⏰ Next ticket release: {fmt.release_line(r, ctx.names())}" for r in upcoming)
+    send_overview(ctx, until, f"Weekly overview · {title}", note)
 
 
 def end_of_next_month(d: date) -> date:
@@ -187,13 +182,13 @@ def digest_range(ctx: Ctx) -> tuple[date, str]:
     return today + timedelta(days=days - 1), f"Next {days} days"
 
 
-def send_overview(ctx: Ctx, until: date | None, title: str) -> None:
+def send_overview(ctx: Ctx, until: date | None, title: str, note: str = "") -> None:
     """Send everything from now through `until` (inclusive; None = everything announced)."""
     perfs = [p for p in ctx.state.perfs() if p.venue != lookups.VENUE and p.start >= now() - timedelta(hours=3)]
     if until is not None:
         perfs = [p for p in perfs if p.start.date() <= until]
     watched = {p.uid for p in perfs if diffmod.watch_entry(p, ctx.state.watchlist)}
-    ctx.tg.send_all(fmt.overview(perfs, ctx.names(), title, watched))
+    ctx.tg.send_all(fmt.overview(perfs, ctx.names(), title, watched, note))
 
 
 # --- burst mode --------------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 # Timezone for everything below: Europe/Belgrade.
 
-digest:  # the scheduled report: what's new + everything until the end of next month
+digest:  # the scheduled overview: everything until the end of next month
   every: weekly  # weekly | daily
   weekday: monday
   time: "09:00"
@@ -9,8 +9,8 @@ digest:  # the scheduled report: what's new + everything until the end of next m
 
 alerts:
   # What is messaged immediately. "releases_and_watchlist": known ticket releases (reminders, the
-  # moment tickets appear) and plays on your /watch list; everything else waits for the weekly
-  # report. "all": every new show/date/sale as soon as it's found.
+  # moment tickets appear) and plays on your /watch list; everything else just appears in the
+  # weekly overview. "all": every new show/date/sale as soon as it's found.
   instant: releases_and_watchlist
   low_threshold: 20  # watched plays: warn when fewer tickets than this are left (where counts exist)
 

@@ -30,15 +30,15 @@ def test_quiet_week_then_monday_report(make_ctx, clock):
         clock.sleep(3600)
         run(ctx, allow_burst=False)
     assert ctx.tg.sent == []
-    assert len(ctx.state.pending) == 2
 
     while clock().weekday() != 0 or clock().hour < 9:  # Monday 09:xx
         clock.sleep(3600)
         run(ctx, allow_burst=False)
     report = "\n".join(ctx.tg.sent)
-    assert "Weekly theatre report" in report and "Gubitnik" in report and "(+1 dates)" in report
-    assert "Until 31.10." in report  # followed by the overview to the end of next month
-    assert ctx.state.pending == []
+    # a self-contained overview until the end of next month, not a list of changes
+    assert report.startswith("🎭 <b>Weekly overview · Until 31.10.")
+    assert report.count("Gubitnik") == 2  # (the Sunday show before the report is correctly gone)
+    assert "New shows" not in report
 
     ctx.tg.sent.clear()
     clock.sleep(3600)

@@ -34,7 +34,6 @@ Replies come on the next check (within the hour; faster during release bursts).
 |---|---|
 | `/month` | everything until the end of next month, by date → theatre, with tickets left (tap a title to buy) |
 | `/today` `/tomorrow` `/week` | shorter ranges |
-| `/new` | what's new since the last weekly report |
 | `/overview` | everything announced |
 | `/theatre jdp` | one theatre |
 | `/search tramvaj`, or just type a title | find a play (Cyrillic/Latin/diacritics don't matter) |
@@ -44,7 +43,7 @@ Replies come on the next check (within the hour; faster during release bursts).
 | `/releases` · `/unrelease 1` · `/status` | |
 
 **What it sends you (and nothing else):**
-- **Weekly report, Monday 09:00:** new shows, new dates and tickets that went on sale that week, then everything until the end of next month.
+- **Weekly overview, Monday 09:00:** everything on until the end of next month, by date and theatre, with tickets left.
 - **Right away:** known ticket releases (reminders, the moment tickets appear), plays on your `/watch` list, and a warning if a site stops responding.
 
 Change the day/time or switch to instant alerts for everything in `config/settings.yaml` (`digest`, `alerts.instant`).
