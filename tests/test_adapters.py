@@ -13,8 +13,24 @@ def read(name: str) -> str:
     return (FIX / name).read_text(encoding="utf-8")
 
 
-def test_narodno_counts_and_dates():
-    perfs = narodno.parse(read("narodno_repertoar.html"), today=TODAY)
+def test_narodno_agenda_layout():
+    perfs = narodno.parse(read("narodno_repertoar.html"), today=date(2026, 9, 23))
+    assert len(perfs) == 90
+    by_id = {p.source_id: p for p in perfs}
+    bozji = by_id["6414"]
+    assert bozji.title == "Божји људи" and bozji.stage == "Сцена „Раша Плаовић”"
+    assert bozji.start == datetime(2026, 10, 2, 20, 30, tzinfo=TZ)
+    assert bozji.status == Status.ON_SALE and bozji.available == 271
+    assert bozji.buy_url.endswith("/ulaznice/odabir-ulaznica?p=6414")
+    assert bozji.subtitle == "по мотивима прозе Борисава Станковића"
+    assert by_id["6343"].status == Status.SOLD_OUT  # explicit РАСПРОДАТО button
+    counts = {s: sum(p.status == s for p in perfs) for s in Status}
+    assert counts[Status.ON_SALE] == 85 and counts[Status.SOLD_OUT] == 1 and counts[Status.NOT_ON_SALE] == 4
+    assert {p.start.year for p in perfs} == {2026, 2027}
+
+
+def test_narodno_legacy_layout():
+    perfs = narodno.parse(read("narodno_repertoar_legacy.html"), today=TODAY)
     assert len(perfs) == 93
     by_id = {p.source_id: p for p in perfs}
     vaskrsle = by_id["6381"]

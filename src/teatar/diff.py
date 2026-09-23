@@ -55,7 +55,7 @@ def compute(state: State, scanned: dict[str, list[Performance]], watchlist: list
     """Changes between state and fresh results. Venues seen for the first time are a silent baseline."""
     changes = []
     for venue, perfs in scanned.items():
-        if venue not in state.known_titles:
+        if not state.known_titles.get(venue):  # first real results for this venue: silent baseline
             continue
         known = set(state.known_titles[venue])
         for p in perfs:
@@ -95,4 +95,5 @@ def apply(state: State, scanned: dict[str, list[Performance]]) -> None:
             meta = state.meta.setdefault(p.uid, {"first_seen": stamp, "ever_on_sale": False})
             meta["ever_on_sale"] = meta["ever_on_sale"] or p.status.buyable
             titles.add(p.title_norm)
-        state.known_titles[venue] = sorted(titles)
+        if titles:
+            state.known_titles[venue] = sorted(titles)

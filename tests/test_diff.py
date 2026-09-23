@@ -73,3 +73,11 @@ def test_apply_replaces_only_scanned_venues(clock):
     s = baseline(perf(venue="a", sid="1"), perf(venue="b", sid="1"))
     apply(s, {"a": []})
     assert set(s.performances) == {"b:1"}
+
+
+def test_empty_first_scan_does_not_poison_baseline(clock):
+    s = State()
+    apply(s, {"v": []})  # site broken on the very first run
+    assert "v" not in s.known_titles
+    # when it recovers, its whole catalog is a silent baseline, not 90 "new shows"
+    assert compute(s, {"v": [perf(sid=str(i)) for i in range(5)]}, []) == []
