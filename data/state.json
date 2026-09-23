@@ -1,0 +1,3663 @@
+{
+ "health": {},
+ "initialized": true,
+ "known_titles": {
+  "bdp": [
+   "1984",
+   "besi mgl",
+   "bogojavljenska noc",
+   "bozanstvena komedija",
+   "buha u uhu dramski teatar skoplje",
+   "crno zlato",
+   "divlje meso",
+   "kralj ibi",
+   "kus petlic",
+   "laz",
+   "ljubavnice kamerni teatar 55",
+   "na cijoj strani ulysses",
+   "pra faust",
+   "prljave ruke czk tivat",
+   "sarlota kasteli",
+   "svaka ptica svome jatu",
+   "vise od igre 1 2 3 deo"
+  ],
+  "jdp": [
+   "edip",
+   "heda gabler",
+   "mihael kolhas",
+   "moj muz",
+   "preobrazaj",
+   "ricard drugi",
+   "sirano",
+   "sveti georgije ubiva azdahu"
+  ],
+  "kolarac": [
+   "ekstravagancije i ludosti",
+   "marija gulegina",
+   "nikolaj kuznjecov"
+  ],
+  "madlenianum": [
+   "ja ema"
+  ],
+  "madlenianum_tickets": [
+   "gospodin u cizmama od dima",
+   "the sassoon experience"
+  ],
+  "narodno": [],
+  "sava_centar": [
+   "100 violina budapest gipsy symphony orchestra",
+   "abba symphonic tribute show",
+   "aleksandar sofronijevic i majstori za dusu",
+   "aleksandra radovic",
+   "amira medunjanin",
+   "bajaga instruktori",
+   "barcelona guitar trio flamenco",
+   "boban rajovic",
+   "buildup 2026",
+   "ceo summit beograd",
+   "emeli sande",
+   "emina jahovic",
+   "fashion masterclass",
+   "fest 2026 500 milja",
+   "fest 2026 breme",
+   "fest 2026 budi bog sa nama",
+   "fest 2026 bunker",
+   "fest 2026 cudovisna mia",
+   "fest 2026 debi",
+   "fest 2026 dobro dosli u houp",
+   "fest 2026 film iznenadjenja",
+   "fest 2026 gejl dotri i seks propusnica za slavne",
+   "fest 2026 harmonija",
+   "fest 2026 ja sam roki",
+   "fest 2026 jedini zivi dzeparos u njujorku",
+   "fest 2026 legenda o beloj zmiji",
+   "fest 2026 ljubavnik od pruca",
+   "fest 2026 oni koje volimo",
+   "fest 2026 otpisana",
+   "fest 2026 papirni tigar",
+   "fest 2026 pobuna",
+   "fest 2026 prolece u parizu",
+   "fest 2026 rok balada",
+   "fest 2026 svecano otvaranje zlatni rez 42 djeca kozare",
+   "fest 2026 svecano zatvaranje razum i osecajnost",
+   "fest 2026 talenat za ubistvo",
+   "fest 2026 toni",
+   "fest 2026 udarni termin",
+   "fest 2026 zivotinjice iz snova",
+   "fest 2026 zlatni rez 42 djeca kozare",
+   "fest 2026 zuta kravata",
+   "fest 2026 zuta slova",
+   "fmcg summit beograd",
+   "from opera to hollywood tamara radjenovic",
+   "garou the best of",
+   "goca trzan",
+   "halid muslimovic",
+   "haris dzinovic",
+   "k pop forever",
+   "kengur se vraca kuci",
+   "lexington",
+   "luca minnelli",
+   "magla bend",
+   "mira skoric",
+   "musical moliere",
+   "nikola rokvic",
+   "novi fosili",
+   "parni valjak",
+   "perpetuum jazzile",
+   "premijera filma bozicna avantura",
+   "rock simphony",
+   "sarah brightman a winter symphony",
+   "sarah brightman a winter symphony loze",
+   "sarah brightman a winter symphony vip",
+   "sergej cetkovic",
+   "the nutcracker",
+   "tijana bogicevic",
+   "toma zdravkovic koncert secanja",
+   "tommy emmanuel",
+   "uriah heep",
+   "valery meladze",
+   "vlatko stefanovski",
+   "yasmin levy",
+   "zeljko samardzic",
+   "zeljko vasic",
+   "zvonko bogdan"
+  ]
+ },
+ "last_digest": "2026-09-23",
+ "meta": {
+  "bdp:202609261930-divlje-meso": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202609271930-divlje-meso": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610011930-sarlota-kasteli": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610021930-svaka-ptica-svome-jatu": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610031930-vise-od-igre-1-2-3-deo": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610041930-1984": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610051930-pra-faust": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610061930-kralj-ibi": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610071930-kralj-ibi": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610121930-crno-zlato": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610131930-crno-zlato": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610151930-bogojavljenska-noc": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610161930-bogojavljenska-noc": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610181800-bozanstvena-komedija": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610291930-laz": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610301930-laz": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202610311930-laz": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611011930-bogojavljenska-noc": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611021930-bogojavljenska-noc": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611031930-crno-zlato": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611041930-crno-zlato": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611131930-kralj-ibi": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611141930-kralj-ibi": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611151930-kralj-ibi": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611171930-laz": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611181930-laz": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611191930-laz": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202611301930-kus-petlic": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612011930-kus-petlic": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612021930-prljave-ruke-czk-tivat": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612031930-besi-mgl": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612041930-na-cijoj-strani-ulysses": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612061930-ljubavnice-kamerni-teatar-55": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612081930-kus-petlic": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612091930-kus-petlic": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612111930-kus-petlic": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612121930-kus-petlic": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612131930-kus-petlic": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612141930-vise-od-igre-1-2-3-deo": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612151930-svaka-ptica-svome-jatu": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612161930-sarlota-kasteli": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612171930-1984": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612181930-pra-faust": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612201930-bogojavljenska-noc": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "bdp:202612221930-crno-zlato": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609232000-heda-gabler": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609242000-sveti-georgije-ubiva-azdahu": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609252030-moj-muz": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609262000-mihael-kolhas": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609262030-preobrazaj": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609272000-ricard-drugi": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609292000-edip": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "jdp:202609302000-sirano": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "kolarac:24462": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "kolarac:26836": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "kolarac:27040": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "madlenianum:ja-ema-202609291930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "madlenianum:ja-ema-202610021930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "madlenianum:ja-ema-202610101930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "madlenianum_tickets:26309": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "madlenianum_tickets:26870": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:22502": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:22507": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:22516": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:22517": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:22518": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:22769": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:23110": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:23197": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:23230": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:23965": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:23972": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:24288": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:24367": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:24450": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:24680": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:24685": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:24782": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:24874": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25049": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25363": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25388": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25395": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25483": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25489": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25493": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25918": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25919": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25921": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25927": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:25932": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26002": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26011": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26024": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26040": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26045": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26079": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26192": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26230": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26231": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26241": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26303": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26323": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26325": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26326": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26703": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26706": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26837": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26957": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26958": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26959": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26960": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26961": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26962": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26963": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26964": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26965": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26966": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26967": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26968": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26969": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26970": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26971": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26972": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26973": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26974": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26975": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26976": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26977": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26978": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26979": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26980": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26981": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26982": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26983": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26984": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26985": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26986": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26987": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26988": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26989": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26990": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26991": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26992": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26993": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26994": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26995": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26996": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26997": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26998": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:26999": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:27033": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:27034": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:27074": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:27077": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "sava_centar:27136": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-23T11:27:59+02:00"
+  }
+ },
+ "notified": {},
+ "performances": {
+  "bdp:202609261930-divlje-meso": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/e6871527f088",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/e6871527f088",
+    "sixtix": "e6871527f088"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609261930-divlje-meso",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-09-26T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Дивље месо",
+   "url": "https://www.bdp.rs/cir/predstave-cir/divlje-meso",
+   "venue": "bdp"
+  },
+  "bdp:202609271930-divlje-meso": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/9e717af6016d",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/9e717af6016d",
+    "sixtix": "9e717af6016d"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609271930-divlje-meso",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-09-27T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Дивље месо",
+   "url": "https://www.bdp.rs/cir/predstave-cir/divlje-meso",
+   "venue": "bdp"
+  },
+  "bdp:202610011930-sarlota-kasteli": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/ad22d6b79fa0",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/ad22d6b79fa0",
+    "sixtix": "ad22d6b79fa0"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610011930-sarlota-kasteli",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-01T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Шарлота Кастели",
+   "url": "https://www.bdp.rs/cir/predstave-cir/sharlota-kasteli",
+   "venue": "bdp"
+  },
+  "bdp:202610021930-svaka-ptica-svome-jatu": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/99b156121c41",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/99b156121c41",
+    "sixtix": "99b156121c41"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610021930-svaka-ptica-svome-jatu",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-02T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Свака птица своме јату",
+   "url": "https://www.bdp.rs/cir/predstave-cir/svaka-ptica-svome-jatu",
+   "venue": "bdp"
+  },
+  "bdp:202610031930-vise-od-igre-1-2-3-deo": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/ee571ee9da0c",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/ee571ee9da0c",
+    "sixtix": "ee571ee9da0c"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610031930-vise-od-igre-1-2-3-deo",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-03T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Више од игре 1./2./3. део",
+   "url": "https://www.bdp.rs/cir/predstave-cir/vishe-od-igre-1-2-3-deo",
+   "venue": "bdp"
+  },
+  "bdp:202610041930-1984": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/c3f372a73818",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/c3f372a73818",
+    "sixtix": "c3f372a73818"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610041930-1984",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-04T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "1984",
+   "url": "https://www.bdp.rs/cir/predstave-cir/1984",
+   "venue": "bdp"
+  },
+  "bdp:202610051930-pra-faust": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/18ef657fccdd",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/18ef657fccdd",
+    "sixtix": "18ef657fccdd"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610051930-pra-faust",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-05T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "(Пра)фауст",
+   "url": "https://www.bdp.rs/cir/predstave-cir/pra-faust",
+   "venue": "bdp"
+  },
+  "bdp:202610061930-kralj-ibi": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/31cb85eb3349",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/31cb85eb3349",
+    "sixtix": "31cb85eb3349"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610061930-kralj-ibi",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-06T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Краљ Иби",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
+   "venue": "bdp"
+  },
+  "bdp:202610071930-kralj-ibi": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/ee3a19c4e1cf",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.com/events/ee3a19c4e1cf",
+    "sixtix": "ee3a19c4e1cf"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610071930-kralj-ibi",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-07T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Краљ Иби",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
+   "venue": "bdp"
+  },
+  "bdp:202610121930-crno-zlato": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/b6c4a6928125",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "b6c4a6928125"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610121930-crno-zlato",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-12T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Црно злато",
+   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
+   "venue": "bdp"
+  },
+  "bdp:202610131930-crno-zlato": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/80e2caa53ebe",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "80e2caa53ebe"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610131930-crno-zlato",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-13T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Црно злато",
+   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
+   "venue": "bdp"
+  },
+  "bdp:202610151930-bogojavljenska-noc": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/e9c6bf1671e2",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "",
+    "sixtix": "e9c6bf1671e2"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610151930-bogojavljenska-noc",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-15T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Богојављенска ноћ",
+   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
+   "venue": "bdp"
+  },
+  "bdp:202610161930-bogojavljenska-noc": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/f1c5584df6fe",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "",
+    "sixtix": "f1c5584df6fe"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610161930-bogojavljenska-noc",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-16T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Богојављенска ноћ",
+   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
+   "venue": "bdp"
+  },
+  "bdp:202610181800-bozanstvena-komedija": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610181800-bozanstvena-komedija",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-18T18:00:00+02:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "Божанствена комедија",
+   "url": "https://www.bdp.rs/cir/predstave-cir/bozanstvena-komedija",
+   "venue": "bdp"
+  },
+  "bdp:202610291930-laz": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/4b9238e2847d",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "4b9238e2847d"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610291930-laz",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-29T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Лаж",
+   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
+   "venue": "bdp"
+  },
+  "bdp:202610301930-laz": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/1888d5340cf2",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "1888d5340cf2"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610301930-laz",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-30T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Лаж",
+   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
+   "venue": "bdp"
+  },
+  "bdp:202610311930-laz": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/8db9826343e3",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "8db9826343e3"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610311930-laz",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-10-31T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Лаж",
+   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
+   "venue": "bdp"
+  },
+  "bdp:202611011930-bogojavljenska-noc": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/9b768eb9aecd",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "",
+    "sixtix": "9b768eb9aecd"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611011930-bogojavljenska-noc",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-01T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Богојављенска ноћ",
+   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
+   "venue": "bdp"
+  },
+  "bdp:202611021930-bogojavljenska-noc": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/ca7055bf284d",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "",
+    "sixtix": "ca7055bf284d"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611021930-bogojavljenska-noc",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-02T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Богојављенска ноћ",
+   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
+   "venue": "bdp"
+  },
+  "bdp:202611031930-crno-zlato": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/427ec989bdad",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "427ec989bdad"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611031930-crno-zlato",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-03T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Црно злато",
+   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
+   "venue": "bdp"
+  },
+  "bdp:202611041930-crno-zlato": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/0c52a6a5ae38",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "0c52a6a5ae38"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611041930-crno-zlato",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-04T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Црно злато",
+   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
+   "venue": "bdp"
+  },
+  "bdp:202611131930-kralj-ibi": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/222de67acea2",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "222de67acea2"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611131930-kralj-ibi",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-13T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Краљ Иби",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
+   "venue": "bdp"
+  },
+  "bdp:202611141930-kralj-ibi": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/2bcbe9082da2",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "2bcbe9082da2"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611141930-kralj-ibi",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-14T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Краљ Иби",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
+   "venue": "bdp"
+  },
+  "bdp:202611151930-kralj-ibi": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/bdddf3f0f2a5",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "bdddf3f0f2a5"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611151930-kralj-ibi",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-15T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Краљ Иби",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
+   "venue": "bdp"
+  },
+  "bdp:202611171930-laz": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/94cd7450a746",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "94cd7450a746"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611171930-laz",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-17T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Лаж",
+   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
+   "venue": "bdp"
+  },
+  "bdp:202611181930-laz": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/bd99cf453067",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "bd99cf453067"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611181930-laz",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-18T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Лаж",
+   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
+   "venue": "bdp"
+  },
+  "bdp:202611191930-laz": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/41d94edd06dd",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "41d94edd06dd"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611191930-laz",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-19T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Лаж",
+   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
+   "venue": "bdp"
+  },
+  "bdp:202611301930-kus-petlic": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/1bd8a1592c0a",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "1bd8a1592c0a"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202611301930-kus-petlic",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-11-30T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Кус петлић",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
+   "venue": "bdp"
+  },
+  "bdp:202612011930-kus-petlic": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612011930-kus-petlic",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-01T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "Премијера",
+   "title": "Кус петлић",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
+   "venue": "bdp"
+  },
+  "bdp:202612021930-prljave-ruke-czk-tivat": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": ""
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612021930-prljave-ruke-czk-tivat",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-02T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "Прљаве руке (ЦЗК Тиват)",
+   "url": "https://www.bdp.rs/cir/predstave-cir/prljave-ruke-czk-tivat",
+   "venue": "bdp"
+  },
+  "bdp:202612031930-besi-mgl": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": ""
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612031930-besi-mgl",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-03T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "Беси (МГЛ)",
+   "url": "https://www.bdp.rs/cir/predstave-cir/besi-mgl",
+   "venue": "bdp"
+  },
+  "bdp:202612041930-na-cijoj-strani-ulysses": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": ""
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612041930-na-cijoj-strani-ulysses",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-04T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "На чијој страни (Ulysses)",
+   "url": "https://www.bdp.rs/cir/predstave-cir/na-chijoj-strani-ulysses",
+   "venue": "bdp"
+  },
+  "bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": ""
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612051930-buha-u-uhu-dramski-teatar-skoplje",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-05T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "Буха у уху (Драмски театар Скопље)",
+   "url": "https://www.bdp.rs/cir/predstave-cir/buha-u-uhu-dramski-teatar-skoplje",
+   "venue": "bdp"
+  },
+  "bdp:202612061930-ljubavnice-kamerni-teatar-55": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": ""
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612061930-ljubavnice-kamerni-teatar-55",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-06T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "Љубавнице (Камерни театар 55)",
+   "url": "https://www.bdp.rs/cir/predstave-cir/ljubavnice-kamerni-teatar-55",
+   "venue": "bdp"
+  },
+  "bdp:202612081930-kus-petlic": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/d96d3cd72266",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "d96d3cd72266"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612081930-kus-petlic",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-08T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Кус петлић",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
+   "venue": "bdp"
+  },
+  "bdp:202612091930-kus-petlic": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/1780e2754e63",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "1780e2754e63"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612091930-kus-petlic",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-09T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Кус петлић",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
+   "venue": "bdp"
+  },
+  "bdp:202612111930-kus-petlic": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/a834421da66c",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "a834421da66c"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612111930-kus-petlic",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-11T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Кус петлић",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
+   "venue": "bdp"
+  },
+  "bdp:202612121930-kus-petlic": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/b0283c09f6e9",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "b0283c09f6e9"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612121930-kus-petlic",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-12T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Кус петлић",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
+   "venue": "bdp"
+  },
+  "bdp:202612131930-kus-petlic": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/2ec27ef87590",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "2ec27ef87590"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612131930-kus-petlic",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-13T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Кус петлић",
+   "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
+   "venue": "bdp"
+  },
+  "bdp:202612141930-vise-od-igre-1-2-3-deo": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/05e417ecc830",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "",
+    "sixtix": "05e417ecc830"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612141930-vise-od-igre-1-2-3-deo",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-14T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Више од игре 1./2./3. део",
+   "url": "https://www.bdp.rs/cir/predstave-cir/vishe-od-igre-1-2-3-deo",
+   "venue": "bdp"
+  },
+  "bdp:202612151930-svaka-ptica-svome-jatu": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/8b7880a1ed4a",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "8b7880a1ed4a"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612151930-svaka-ptica-svome-jatu",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-15T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Свака птица своме јату",
+   "url": "https://www.bdp.rs/cir/predstave-cir/svaka-ptica-svome-jatu",
+   "venue": "bdp"
+  },
+  "bdp:202612161930-sarlota-kasteli": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/fd8bae0bb0db",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "fd8bae0bb0db"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612161930-sarlota-kasteli",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-16T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Шарлота Кастели",
+   "url": "https://www.bdp.rs/cir/predstave-cir/sharlota-kasteli",
+   "venue": "bdp"
+  },
+  "bdp:202612171930-1984": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/7e4f081e525f",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "7e4f081e525f"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612171930-1984",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-17T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "1984",
+   "url": "https://www.bdp.rs/cir/predstave-cir/1984",
+   "venue": "bdp"
+  },
+  "bdp:202612181930-pra-faust": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/08f7b4ff4931",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "08f7b4ff4931"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612181930-pra-faust",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-18T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "(Пра)фауст",
+   "url": "https://www.bdp.rs/cir/predstave-cir/pra-faust",
+   "venue": "bdp"
+  },
+  "bdp:202612201930-bogojavljenska-noc": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/af6233dfe14e",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "",
+    "sixtix": "af6233dfe14e"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612201930-bogojavljenska-noc",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-20T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Богојављенска ноћ",
+   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
+   "venue": "bdp"
+  },
+  "bdp:202612221930-crno-zlato": {
+   "available": null,
+   "buy_url": "https://app.sixtix.com/events/5323ddcc597a",
+   "extra": {
+    "guest": false,
+    "guest_place": "",
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "5323ddcc597a"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202612221930-crno-zlato",
+   "stage": "Velika scena \"Olivera i Rade\"",
+   "start": "2026-12-22T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Црно злато",
+   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
+   "venue": "bdp"
+  },
+  "jdp:202609232000-heda-gabler": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1179",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1179"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609232000-heda-gabler",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-09-23T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Henrik Ibzen",
+   "title": "Heda Gabler",
+   "url": "https://www.jdp.rs/rs/performance/hedda-gabler/",
+   "venue": "jdp"
+  },
+  "jdp:202609242000-sveti-georgije-ubiva-azdahu": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1180",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1180"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609242000-sveti-georgije-ubiva-azdahu",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-09-24T20:00:00+02:00",
+   "status": "low",
+   "subtitle": "Dušan Kovačević",
+   "title": "Sveti Georgije ubiva aždahu",
+   "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
+   "venue": "jdp"
+  },
+  "jdp:202609252030-moj-muz": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "label": "Rasprodato"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609252030-moj-muz",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-09-25T20:30:00+02:00",
+   "status": "sold_out",
+   "subtitle": "Rumena Bužarovska",
+   "title": "Moj muž",
+   "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
+   "venue": "jdp"
+  },
+  "jdp:202609262000-mihael-kolhas": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1181",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1181"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609262000-mihael-kolhas",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-09-26T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Hajnrih fon Klajst",
+   "title": "Mihael Kolhas",
+   "url": "https://www.jdp.rs/performance/mihael-kolhas/",
+   "venue": "jdp"
+  },
+  "jdp:202609262030-preobrazaj": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1187",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1187"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609262030-preobrazaj",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-09-26T20:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Franc Kafka",
+   "title": "Preobražaj",
+   "url": "https://www.jdp.rs/performance/preobrazaj/",
+   "venue": "jdp"
+  },
+  "jdp:202609272000-ricard-drugi": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "label": "Rasprodato"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609272000-ricard-drugi",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-09-27T20:00:00+02:00",
+   "status": "sold_out",
+   "subtitle": "Vilijam Šekspir",
+   "title": "Ričard Drugi",
+   "url": "https://www.jdp.rs/performance/ricard-drugi/",
+   "venue": "jdp"
+  },
+  "jdp:202609292000-edip": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "label": "Rasprodato"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609292000-edip",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-09-29T20:00:00+02:00",
+   "status": "sold_out",
+   "subtitle": "Sofokle",
+   "title": "Edip",
+   "url": "https://www.jdp.rs/performance/edip/",
+   "venue": "jdp"
+  },
+  "jdp:202609302000-sirano": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1184",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1184"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202609302000-sirano",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-09-30T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Edmon Rostan",
+   "title": "Sirano",
+   "url": "https://www.jdp.rs/rs/performance/sirano/",
+   "venue": "jdp"
+  },
+  "kolarac:24462": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/marija_gulegina_25864",
+   "extra": {
+    "end_date": "2026-10-06",
+    "event_status": ""
+   },
+   "price": "od 3300 RSD",
+   "sales_start": null,
+   "source_id": "24462",
+   "stage": "",
+   "start": "2026-10-06T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "MARIJA GULEGINA",
+   "url": "https://tickets.rs/event/marija_gulegina_25864",
+   "venue": "kolarac"
+  },
+  "kolarac:26836": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/ekstravagancije_i_ludosti_28273",
+   "extra": {
+    "end_date": "2026-11-28",
+    "event_status": ""
+   },
+   "price": "od 4600 RSD",
+   "sales_start": null,
+   "source_id": "26836",
+   "stage": "",
+   "start": "2026-11-28T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "EKSTRAVAGANCIJE I LUDOSTI",
+   "url": "https://tickets.rs/event/ekstravagancije_i_ludosti_28273",
+   "venue": "kolarac"
+  },
+  "kolarac:27040": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
+   "extra": {
+    "end_date": "2026-12-13",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "27040",
+   "stage": "",
+   "start": "2026-12-13T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "NIKOLAJ KUZNJECOV",
+   "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
+   "venue": "kolarac"
+  },
+  "madlenianum:ja-ema-202609291930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "ja-ema-202609291930",
+   "stage": "",
+   "start": "2026-09-29T19:30:00+02:00",
+   "status": "unknown",
+   "subtitle": "Tatjana Mandić Rigonat",
+   "title": "JA, EMA",
+   "url": "https://operatheatremadlenianum.com/ja-ema",
+   "venue": "madlenianum"
+  },
+  "madlenianum:ja-ema-202610021930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "ja-ema-202610021930",
+   "stage": "",
+   "start": "2026-10-02T19:30:00+02:00",
+   "status": "unknown",
+   "subtitle": "Tatjana Mandić Rigonat",
+   "title": "JA, EMA",
+   "url": "https://operatheatremadlenianum.com/ja-ema",
+   "venue": "madlenianum"
+  },
+  "madlenianum:ja-ema-202610101930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "ja-ema-202610101930",
+   "stage": "",
+   "start": "2026-10-10T19:30:00+02:00",
+   "status": "unknown",
+   "subtitle": "Tatjana Mandić Rigonat",
+   "title": "JA, EMA",
+   "url": "https://operatheatremadlenianum.com/ja-ema",
+   "venue": "madlenianum"
+  },
+  "madlenianum_tickets:26309": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/the_sassoon_experience_27733",
+   "extra": {
+    "end_date": "2026-11-26",
+    "event_status": ""
+   },
+   "price": "od 12000 RSD",
+   "sales_start": null,
+   "source_id": "26309",
+   "stage": "",
+   "start": "2026-11-26T09:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "THE SASSOON EXPERIENCE",
+   "url": "https://tickets.rs/event/the_sassoon_experience_27733",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:26870": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28312",
+   "extra": {
+    "end_date": "2026-09-30",
+    "event_status": ""
+   },
+   "price": "od 1900 RSD",
+   "sales_start": null,
+   "source_id": "26870",
+   "stage": "",
+   "start": "2026-09-30T19:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "GOSPODIN U ČIZMAMA OD DIMA",
+   "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28312",
+   "venue": "madlenianum_tickets"
+  },
+  "sava_centar:22502": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/kpop_forever_23884",
+   "extra": {
+    "end_date": "2026-12-09",
+    "event_status": ""
+   },
+   "price": "od 4000 RSD",
+   "sales_start": null,
+   "source_id": "22502",
+   "stage": "Plava dvorana",
+   "start": "2026-12-09T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "K-POP FOREVER!",
+   "url": "https://tickets.rs/event/kpop_forever_23884",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22507": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/emeli_sande_23885",
+   "extra": {
+    "end_date": "2026-12-05",
+    "event_status": ""
+   },
+   "price": "od 4900 RSD",
+   "sales_start": null,
+   "source_id": "22507",
+   "stage": "Plava dvorana",
+   "start": "2026-12-05T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Emeli Sandé",
+   "url": "https://tickets.rs/event/emeli_sande_23885",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22516": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_23883",
+   "extra": {
+    "end_date": "2026-11-24",
+    "event_status": ""
+   },
+   "price": "od 4400 RSD",
+   "sales_start": null,
+   "source_id": "22516",
+   "stage": "Plava dvorana",
+   "start": "2026-11-24T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Sarah Brightman - “A Winter Symphony”",
+   "url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_23883",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22517": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_loze_23893",
+   "extra": {
+    "end_date": "2026-11-24",
+    "event_status": ""
+   },
+   "price": "od 18500 RSD",
+   "sales_start": null,
+   "source_id": "22517",
+   "stage": "Plava dvorana",
+   "start": "2026-11-24T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Sarah Brightman - “A Winter Symphony” - Lože",
+   "url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_loze_23893",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22518": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_vip_23894",
+   "extra": {
+    "end_date": "2026-11-24",
+    "event_status": ""
+   },
+   "price": "od 30100 RSD",
+   "sales_start": null,
+   "source_id": "22518",
+   "stage": "Plava dvorana",
+   "start": "2026-11-24T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Sarah Brightman - “A Winter Symphony” - VIP",
+   "url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_vip_23894",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22769": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/yasmin_levy_24152",
+   "extra": {
+    "end_date": "2026-11-06",
+    "event_status": ""
+   },
+   "price": "od 4000 RSD",
+   "sales_start": null,
+   "source_id": "22769",
+   "stage": "",
+   "start": "2026-11-06T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Yasmin Levy",
+   "url": "https://tickets.rs/event/yasmin_levy_24152",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23110": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/mira_skoric_24498",
+   "extra": {
+    "end_date": "2026-11-19",
+    "event_status": ""
+   },
+   "price": "od 2000 RSD",
+   "sales_start": null,
+   "source_id": "23110",
+   "stage": "Plava dvorana",
+   "start": "2026-11-19T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Mira Škorić",
+   "url": "https://tickets.rs/event/mira_skoric_24498",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23197": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/musical_moliere_24302",
+   "extra": {
+    "end_date": "2026-10-30",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "23197",
+   "stage": "Plava dvorana",
+   "start": "2026-10-30T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "musical MOLIÈRE",
+   "url": "https://tickets.rs/event/musical_moliere_24302",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23230": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/musical_moliere_24619",
+   "extra": {
+    "end_date": "2026-10-31",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "23230",
+   "stage": "Plava dvorana",
+   "start": "2026-10-31T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "musical MOLIÈRE",
+   "url": "https://tickets.rs/event/musical_moliere_24619",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23965": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/garou_the_best_of_25329",
+   "extra": {
+    "end_date": "2026-09-26",
+    "event_status": ""
+   },
+   "price": "od 2300 RSD",
+   "sales_start": null,
+   "source_id": "23965",
+   "stage": "Plava dvorana",
+   "start": "2026-09-26T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Garou. The Best Of.",
+   "url": "https://tickets.rs/event/garou_the_best_of_25329",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23972": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/zvonko_bogdan_25347",
+   "extra": {
+    "end_date": "2026-10-21",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "23972",
+   "stage": "Plava dvorana",
+   "start": "2026-10-21T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Zvonko Bogdan",
+   "url": "https://tickets.rs/event/zvonko_bogdan_25347",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24288": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/barcelona_guitar_trio_flamenco_25666",
+   "extra": {
+    "end_date": "2026-09-25",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "24288",
+   "stage": "",
+   "start": "2026-09-25T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "BARCELONA GUITAR TRIO & Flamenco",
+   "url": "https://tickets.rs/event/barcelona_guitar_trio_flamenco_25666",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24367": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/novogodisnji_koncert_tamare_radenovic_25769",
+   "extra": {
+    "end_date": "2026-12-28",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "24367",
+   "stage": "Plava dvorana",
+   "start": "2026-12-28T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "From Opera to Hollywood -Tamara Radjenović",
+   "url": "https://tickets.rs/event/novogodisnji_koncert_tamare_radenovic_25769",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24450": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/novi_fosili_25852",
+   "extra": {
+    "end_date": "2026-12-06",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "24450",
+   "stage": "",
+   "start": "2026-12-06T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "NOVI FOSILI",
+   "url": "https://tickets.rs/event/novi_fosili_25852",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24680": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/abba_symphonic_tribute_show_26082",
+   "extra": {
+    "end_date": "2026-12-23",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "24680",
+   "stage": "",
+   "start": "2026-12-23T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "ABBA symphonic tribute show",
+   "url": "https://tickets.rs/event/abba_symphonic_tribute_show_26082",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24685": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/rock_simphony_26086",
+   "extra": {
+    "end_date": "2026-11-25",
+    "event_status": ""
+   },
+   "price": "od 4500 RSD",
+   "sales_start": null,
+   "source_id": "24685",
+   "stage": "Plava dvorana",
+   "start": "2026-11-25T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Rock Simphony",
+   "url": "https://tickets.rs/event/rock_simphony_26086",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24782": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/tommy_emmanuel_26182",
+   "extra": {
+    "end_date": "2026-11-08",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "24782",
+   "stage": "Plava dvorana",
+   "start": "2026-11-08T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Tommy Emmanuel",
+   "url": "https://tickets.rs/event/tommy_emmanuel_26182",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24874": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/amira_medunjanin_26279",
+   "extra": {
+    "end_date": "2026-12-04",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "24874",
+   "stage": "Plava dvorana",
+   "start": "2026-12-04T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Amira Medunjanin",
+   "url": "https://tickets.rs/event/amira_medunjanin_26279",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25049": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/zeljko_samardzic_26455",
+   "extra": {
+    "end_date": "2026-12-12",
+    "event_status": ""
+   },
+   "price": "od 2900 RSD",
+   "sales_start": null,
+   "source_id": "25049",
+   "stage": "Plava dvorana",
+   "start": "2026-12-12T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "ŽELJKO SAMARDŽIĆ",
+   "url": "https://tickets.rs/event/zeljko_samardzic_26455",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25363": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/luca_minnelli_26773",
+   "extra": {
+    "end_date": "2026-11-18",
+    "event_status": ""
+   },
+   "price": "od 3500 RSD",
+   "sales_start": null,
+   "source_id": "25363",
+   "stage": "",
+   "start": "2026-11-18T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "LUCA MINNELLI",
+   "url": "https://tickets.rs/event/luca_minnelli_26773",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25388": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/aleksandra_radovic_26798",
+   "extra": {
+    "end_date": "2026-11-14",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "25388",
+   "stage": "",
+   "start": "2026-11-14T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Aleksandra Radović",
+   "url": "https://tickets.rs/event/aleksandra_radovic_26798",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25395": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/nikola_rokvic_26806",
+   "extra": {
+    "end_date": "2026-11-13",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "25395",
+   "stage": "",
+   "start": "2026-11-13T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Nikola Rokvić",
+   "url": "https://tickets.rs/event/nikola_rokvic_26806",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25483": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/boban_rajovic_26898",
+   "extra": {
+    "end_date": "2026-12-16",
+    "event_status": ""
+   },
+   "price": "od 2800 RSD",
+   "sales_start": null,
+   "source_id": "25483",
+   "stage": "",
+   "start": "2026-12-16T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "BOBAN RAJOVIĆ",
+   "url": "https://tickets.rs/event/boban_rajovic_26898",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25489": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/valery_meladze_26902",
+   "extra": {
+    "end_date": "2027-02-12",
+    "event_status": ""
+   },
+   "price": "od 7000 RSD",
+   "sales_start": null,
+   "source_id": "25489",
+   "stage": "",
+   "start": "2027-02-12T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "VALERY MELADZE",
+   "url": "https://tickets.rs/event/valery_meladze_26902",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25493": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/parni_valjak_26908",
+   "extra": {
+    "end_date": "2027-03-17",
+    "event_status": ""
+   },
+   "price": "od 2900 RSD",
+   "sales_start": null,
+   "source_id": "25493",
+   "stage": "Plava dvorana",
+   "start": "2027-03-17T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Parni Valjak",
+   "url": "https://tickets.rs/event/parni_valjak_26908",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25918": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/premijera_filma_bozicna_avantura_27332",
+   "extra": {
+    "end_date": "2026-12-03",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "25918",
+   "stage": "Plava dvorana",
+   "start": "2026-12-03T20:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "PREMIJERA FILMA \"BOŽIĆNA AVANTURA\"",
+   "url": "https://tickets.rs/event/premijera_filma_bozicna_avantura_27332",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25919": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/uriah_heep_27331",
+   "extra": {
+    "end_date": "2026-11-10",
+    "event_status": ""
+   },
+   "price": "od 4000 RSD",
+   "sales_start": null,
+   "source_id": "25919",
+   "stage": "",
+   "start": "2026-11-10T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "URIAH HEEP",
+   "url": "https://tickets.rs/event/uriah_heep_27331",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25921": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/buildup_2026_27335",
+   "extra": {
+    "end_date": "2026-10-29",
+    "event_status": ""
+   },
+   "price": "od 10000 RSD",
+   "sales_start": null,
+   "source_id": "25921",
+   "stage": "Immersive Hall",
+   "start": "2026-10-29T09:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "BUILDUP 2026",
+   "url": "https://tickets.rs/event/buildup_2026_27335",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25927": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/haris_dzinovic_27343",
+   "extra": {
+    "end_date": "2026-12-24",
+    "event_status": ""
+   },
+   "price": "od 2900 RSD",
+   "sales_start": null,
+   "source_id": "25927",
+   "stage": "Plava dvorana",
+   "start": "2026-12-24T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Haris Džinović",
+   "url": "https://tickets.rs/event/haris_dzinovic_27343",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25932": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/the_nutcracker_27347",
+   "extra": {
+    "end_date": "2026-12-20",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "25932",
+   "stage": "Plava dvorana",
+   "start": "2026-12-20T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "The Nutcracker",
+   "url": "https://tickets.rs/event/the_nutcracker_27347",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26002": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/kengur_se_vraca_kuci_27415",
+   "extra": {
+    "end_date": "2026-09-23",
+    "event_status": ""
+   },
+   "price": "od 800 RSD",
+   "sales_start": null,
+   "source_id": "26002",
+   "stage": "",
+   "start": "2026-09-23T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "KENGUR SE VRAĆA KUĆI",
+   "url": "https://tickets.rs/event/kengur_se_vraca_kuci_27415",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26011": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/perpetuum_jazzile_27425",
+   "extra": {
+    "end_date": "2026-12-07",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "26011",
+   "stage": "Plava dvorana",
+   "start": "2026-12-07T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "PERPETUUM JAZZILE",
+   "url": "https://tickets.rs/event/perpetuum_jazzile_27425",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26024": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/halid_muslimovic_27437",
+   "extra": {
+    "end_date": "2026-11-12",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26024",
+   "stage": "",
+   "start": "2026-11-12T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Halid Muslimović",
+   "url": "https://tickets.rs/event/halid_muslimovic_27437",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26040": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/sergej_cetkovic_27456",
+   "extra": {
+    "end_date": "2026-12-25",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26040",
+   "stage": "",
+   "start": "2026-12-25T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "SERGEJ ĆETKOVIĆ",
+   "url": "https://tickets.rs/event/sergej_cetkovic_27456",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26045": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/bajaga_instruktori_27463",
+   "extra": {
+    "end_date": "2026-10-22",
+    "event_status": ""
+   },
+   "price": "od 3400 RSD",
+   "sales_start": null,
+   "source_id": "26045",
+   "stage": "Plava dvorana",
+   "start": "2026-10-22T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Bajaga & Instruktori",
+   "url": "https://tickets.rs/event/bajaga_instruktori_27463",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26079": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/tijana_bogicevic_27498",
+   "extra": {
+    "end_date": "2026-12-17",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26079",
+   "stage": "",
+   "start": "2026-12-17T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "TIJANA BOGIĆEVIĆ",
+   "url": "https://tickets.rs/event/tijana_bogicevic_27498",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26192": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/aleksandar_sofronijevic_i_majstori_za_dusu_27529",
+   "extra": {
+    "end_date": "2026-12-08",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26192",
+   "stage": "Plava dvorana",
+   "start": "2026-12-08T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Aleksandar Sofronijević i Majstori za dušu",
+   "url": "https://tickets.rs/event/aleksandar_sofronijevic_i_majstori_za_dusu_27529",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26230": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/100_violina_budapest_gipsy_symphony_orchestra_27653",
+   "extra": {
+    "end_date": "2027-02-02",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "26230",
+   "stage": "Plava dvorana",
+   "start": "2027-02-02T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "100 violina - Budapest Gipsy Symphony Orchestra",
+   "url": "https://tickets.rs/event/100_violina_budapest_gipsy_symphony_orchestra_27653",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26231": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/vlatko_stefanovski_27654",
+   "extra": {
+    "end_date": "2026-12-21",
+    "event_status": ""
+   },
+   "price": "od 3400 RSD",
+   "sales_start": null,
+   "source_id": "26231",
+   "stage": "",
+   "start": "2026-12-21T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Vlatko Stefanovski",
+   "url": "https://tickets.rs/event/vlatko_stefanovski_27654",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26241": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/goca_trzan_27664",
+   "extra": {
+    "end_date": "2026-11-04",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26241",
+   "stage": "Plava dvorana",
+   "start": "2026-11-04T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Goca Tržan",
+   "url": "https://tickets.rs/event/goca_trzan_27664",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26303": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/zeljko_vasic_27731",
+   "extra": {
+    "end_date": "2026-11-07",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26303",
+   "stage": "Plava dvorana",
+   "start": "2026-11-07T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Željko Vasić",
+   "url": "https://tickets.rs/event/zeljko_vasic_27731",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26323": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fmcg_summit_beograd_27756",
+   "extra": {
+    "end_date": "2026-10-12",
+    "event_status": ""
+   },
+   "price": "od 21100 RSD",
+   "sales_start": null,
+   "source_id": "26323",
+   "stage": "",
+   "start": "2026-10-12T09:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FMCG SUMMIT BEOGRAD",
+   "url": "https://tickets.rs/event/fmcg_summit_beograd_27756",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26325": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/ceo_summit_beograd_27758",
+   "extra": {
+    "end_date": "2026-12-01",
+    "event_status": ""
+   },
+   "price": "od 21100 RSD",
+   "sales_start": null,
+   "source_id": "26325",
+   "stage": "",
+   "start": "2026-12-01T09:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "CEO SUMMIT BEOGRAD",
+   "url": "https://tickets.rs/event/ceo_summit_beograd_27758",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26326": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/bajaga_instruktori_27759",
+   "extra": {
+    "end_date": "2026-10-23",
+    "event_status": ""
+   },
+   "price": "od 3400 RSD",
+   "sales_start": null,
+   "source_id": "26326",
+   "stage": "Plava dvorana",
+   "start": "2026-10-23T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Bajaga & Instruktori",
+   "url": "https://tickets.rs/event/bajaga_instruktori_27759",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26703": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/emina_jahovic_28146",
+   "extra": {
+    "end_date": "2026-11-22",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26703",
+   "stage": "",
+   "start": "2026-11-22T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Emina Jahović",
+   "url": "https://tickets.rs/event/emina_jahovic_28146",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26706": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/lexington_28148",
+   "extra": {
+    "end_date": "2026-12-30",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "26706",
+   "stage": "Plava dvorana",
+   "start": "2026-12-30T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "LEXINGTON",
+   "url": "https://tickets.rs/event/lexington_28148",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26837": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fashion_masterclass_28272",
+   "extra": {
+    "end_date": "2026-10-11",
+    "event_status": ""
+   },
+   "price": "od 23500 RSD",
+   "sales_start": null,
+   "source_id": "26837",
+   "stage": "Amfiteatar",
+   "start": "2026-10-11T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FASHION MASTERCLASS",
+   "url": "https://tickets.rs/event/fashion_masterclass_28272",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26957": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_legenda_o_beloj_zmiji_28398",
+   "extra": {
+    "end_date": "2026-10-03",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26957",
+   "stage": "Plava dvorana",
+   "start": "2026-10-03T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - LEGENDA O BELOJ ZMIJI",
+   "url": "https://tickets.rs/event/fest_2026_legenda_o_beloj_zmiji_28398",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26958": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_svecano_otvaranje_zlatni_rez_42_djeca_kozare_28403",
+   "extra": {
+    "end_date": "2026-10-02",
+    "event_status": ""
+   },
+   "price": "od 1500 RSD",
+   "sales_start": null,
+   "source_id": "26958",
+   "stage": "Plava dvorana",
+   "start": "2026-10-02T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - SVEČANO OTVARANJE - ZLATNI REZ '42: DJECA KOZARE",
+   "url": "https://tickets.rs/event/fest_2026_svecano_otvaranje_zlatni_rez_42_djeca_kozare_28403",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26959": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_zlatni_rez_42_djeca_kozare_28405",
+   "extra": {
+    "end_date": "2026-10-03",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26959",
+   "stage": "Plava dvorana",
+   "start": "2026-10-03T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ZLATNI REZ '42: DJECA KOZARE",
+   "url": "https://tickets.rs/event/fest_2026_zlatni_rez_42_djeca_kozare_28405",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26960": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_zuta_kravata_28406",
+   "extra": {
+    "end_date": "2026-10-03",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26960",
+   "stage": "Plava dvorana",
+   "start": "2026-10-03T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ŽUTA KRAVATA",
+   "url": "https://tickets.rs/event/fest_2026_zuta_kravata_28406",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26961": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_jedini_zivi_dzeparos_u_njujorku_28407",
+   "extra": {
+    "end_date": "2026-10-03",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26961",
+   "stage": "Plava dvorana",
+   "start": "2026-10-03T22:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - JEDINI ŽIVI DŽEPAROŠ U NJUJORKU",
+   "url": "https://tickets.rs/event/fest_2026_jedini_zivi_dzeparos_u_njujorku_28407",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26962": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_zivotinjice_iz_snova_28408",
+   "extra": {
+    "end_date": "2026-10-04",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26962",
+   "stage": "Plava dvorana",
+   "start": "2026-10-04T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ŽIVOTINJICE IZ SNOVA",
+   "url": "https://tickets.rs/event/fest_2026_zivotinjice_iz_snova_28408",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26963": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_jedini_zivi_dzeparos_u_njujorku_28409",
+   "extra": {
+    "end_date": "2026-10-04",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26963",
+   "stage": "Plava dvorana",
+   "start": "2026-10-04T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - JEDINI ŽIVI DŽEPAROŠ U NJUJORKU",
+   "url": "https://tickets.rs/event/fest_2026_jedini_zivi_dzeparos_u_njujorku_28409",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26964": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_zuta_kravata_28410",
+   "extra": {
+    "end_date": "2026-10-04",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26964",
+   "stage": "Plava dvorana",
+   "start": "2026-10-04T16:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ŽUTA KRAVATA",
+   "url": "https://tickets.rs/event/fest_2026_zuta_kravata_28410",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26965": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_pobuna_28411",
+   "extra": {
+    "end_date": "2026-10-04",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26965",
+   "stage": "Plava dvorana",
+   "start": "2026-10-04T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - POBUNA",
+   "url": "https://tickets.rs/event/fest_2026_pobuna_28411",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26966": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_bunker_28412",
+   "extra": {
+    "end_date": "2026-10-04",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26966",
+   "stage": "Plava dvorana",
+   "start": "2026-10-04T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - BUNKER",
+   "url": "https://tickets.rs/event/fest_2026_bunker_28412",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26967": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_pobuna_28413",
+   "extra": {
+    "end_date": "2026-10-05",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26967",
+   "stage": "Plava dvorana",
+   "start": "2026-10-05T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - POBUNA",
+   "url": "https://tickets.rs/event/fest_2026_pobuna_28413",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26968": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_bunker_28414",
+   "extra": {
+    "end_date": "2026-10-05",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26968",
+   "stage": "Plava dvorana",
+   "start": "2026-10-05T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - BUNKER",
+   "url": "https://tickets.rs/event/fest_2026_bunker_28414",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26969": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_oni_koje_volimo_28415",
+   "extra": {
+    "end_date": "2026-10-05",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26969",
+   "stage": "Plava dvorana",
+   "start": "2026-10-05T16:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ONI KOJE VOLIMO",
+   "url": "https://tickets.rs/event/fest_2026_oni_koje_volimo_28415",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26970": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_talenat_za_ubistvo_28416",
+   "extra": {
+    "end_date": "2026-10-05",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26970",
+   "stage": "Plava dvorana",
+   "start": "2026-10-05T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - TALENAT ZA UBISTVO",
+   "url": "https://tickets.rs/event/fest_2026_talenat_za_ubistvo_28416",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26971": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_papirni_tigar_28417",
+   "extra": {
+    "end_date": "2026-10-05",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26971",
+   "stage": "Plava dvorana",
+   "start": "2026-10-05T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - PAPIRNI TIGAR",
+   "url": "https://tickets.rs/event/fest_2026_papirni_tigar_28417",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26972": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_talenat_za_ubistvo_28418",
+   "extra": {
+    "end_date": "2026-10-06",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26972",
+   "stage": "Plava dvorana",
+   "start": "2026-10-06T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - TALENAT ZA UBISTVO",
+   "url": "https://tickets.rs/event/fest_2026_talenat_za_ubistvo_28418",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26973": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_papirni_tigar_28419",
+   "extra": {
+    "end_date": "2026-10-06",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26973",
+   "stage": "Plava dvorana",
+   "start": "2026-10-06T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - PAPIRNI TIGAR",
+   "url": "https://tickets.rs/event/fest_2026_papirni_tigar_28419",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26974": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_zuta_slova_28420",
+   "extra": {
+    "end_date": "2026-10-06",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26974",
+   "stage": "Plava dvorana",
+   "start": "2026-10-06T16:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ŽUTA SLOVA",
+   "url": "https://tickets.rs/event/fest_2026_zuta_slova_28420",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26975": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_udarni_termin_28421",
+   "extra": {
+    "end_date": "2026-10-06",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26975",
+   "stage": "Plava dvorana",
+   "start": "2026-10-06T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - UDARNI TERMIN",
+   "url": "https://tickets.rs/event/fest_2026_udarni_termin_28421",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26976": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_dobro_dosli_u_houp_28422",
+   "extra": {
+    "end_date": "2026-10-06",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26976",
+   "stage": "Plava dvorana",
+   "start": "2026-10-06T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - DOBRO DOŠLI U HOUP",
+   "url": "https://tickets.rs/event/fest_2026_dobro_dosli_u_houp_28422",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26977": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_udarni_termin_28423",
+   "extra": {
+    "end_date": "2026-10-07",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26977",
+   "stage": "Plava dvorana",
+   "start": "2026-10-07T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - UDARNI TERMIN",
+   "url": "https://tickets.rs/event/fest_2026_udarni_termin_28423",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26978": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_dobro_dosli_u_houp_28424",
+   "extra": {
+    "end_date": "2026-10-07",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26978",
+   "stage": "Plava dvorana",
+   "start": "2026-10-07T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - DOBRO DOŠLI U HOUP",
+   "url": "https://tickets.rs/event/fest_2026_dobro_dosli_u_houp_28424",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26979": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_rok_balada_28425",
+   "extra": {
+    "end_date": "2026-10-07",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26979",
+   "stage": "Plava dvorana",
+   "start": "2026-10-07T16:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ROK BALADA",
+   "url": "https://tickets.rs/event/fest_2026_rok_balada_28425",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26980": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_debi_28426",
+   "extra": {
+    "end_date": "2026-10-07",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26980",
+   "stage": "Plava dvorana",
+   "start": "2026-10-07T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - DEBI",
+   "url": "https://tickets.rs/event/fest_2026_debi_28426",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26981": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_toni_28427",
+   "extra": {
+    "end_date": "2026-10-07",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26981",
+   "stage": "Plava dvorana",
+   "start": "2026-10-07T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - TONI",
+   "url": "https://tickets.rs/event/fest_2026_toni_28427",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26982": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_debi_28428",
+   "extra": {
+    "end_date": "2026-10-08",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26982",
+   "stage": "Plava dvorana",
+   "start": "2026-10-08T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - DEBI",
+   "url": "https://tickets.rs/event/fest_2026_debi_28428",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26983": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_toni_28429",
+   "extra": {
+    "end_date": "2026-10-08",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26983",
+   "stage": "Plava dvorana",
+   "start": "2026-10-08T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - TONI",
+   "url": "https://tickets.rs/event/fest_2026_toni_28429",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26984": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_500_milja_28430",
+   "extra": {
+    "end_date": "2026-10-08",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26984",
+   "stage": "Plava dvorana",
+   "start": "2026-10-08T16:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - 500 MILJA",
+   "url": "https://tickets.rs/event/fest_2026_500_milja_28430",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26985": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28431",
+   "extra": {
+    "end_date": "2026-10-08",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26985",
+   "stage": "Plava dvorana",
+   "start": "2026-10-08T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - BUDI BOG SA NAMA",
+   "url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28431",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26986": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_breme_28432",
+   "extra": {
+    "end_date": "2026-10-08",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26986",
+   "stage": "Plava dvorana",
+   "start": "2026-10-08T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - BREME",
+   "url": "https://tickets.rs/event/fest_2026_breme_28432",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26987": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28433",
+   "extra": {
+    "end_date": "2026-10-09",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26987",
+   "stage": "Plava dvorana",
+   "start": "2026-10-09T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - BUDI BOG SA NAMA",
+   "url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28433",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26988": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_breme_28434",
+   "extra": {
+    "end_date": "2026-10-09",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26988",
+   "stage": "Plava dvorana",
+   "start": "2026-10-09T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - BREME",
+   "url": "https://tickets.rs/event/fest_2026_breme_28434",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26989": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_gejl_dotri_i_seks_propusnica_za_slavne_28435",
+   "extra": {
+    "end_date": "2026-10-09",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26989",
+   "stage": "Plava dvorana",
+   "start": "2026-10-09T16:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - GEJL DOTRI I SEKS - PROPUSNICA ZA SLAVNE",
+   "url": "https://tickets.rs/event/fest_2026_gejl_dotri_i_seks_propusnica_za_slavne_28435",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26990": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_ja_sam_roki_28436",
+   "extra": {
+    "end_date": "2026-10-09",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26990",
+   "stage": "Plava dvorana",
+   "start": "2026-10-09T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - JA SAM ROKI",
+   "url": "https://tickets.rs/event/fest_2026_ja_sam_roki_28436",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26991": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_otpisana_28437",
+   "extra": {
+    "end_date": "2026-10-09",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26991",
+   "stage": "Plava dvorana",
+   "start": "2026-10-09T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - OTPISANA",
+   "url": "https://tickets.rs/event/fest_2026_otpisana_28437",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26992": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_cudovisna_mia_28438",
+   "extra": {
+    "end_date": "2026-10-10",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26992",
+   "stage": "Plava dvorana",
+   "start": "2026-10-10T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - ČUDOVIŠNA MIA",
+   "url": "https://tickets.rs/event/fest_2026_cudovisna_mia_28438",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26993": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_ja_sam_roki_28439",
+   "extra": {
+    "end_date": "2026-10-10",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26993",
+   "stage": "Plava dvorana",
+   "start": "2026-10-10T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - JA SAM ROKI",
+   "url": "https://tickets.rs/event/fest_2026_ja_sam_roki_28439",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26994": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_otpisana_28440",
+   "extra": {
+    "end_date": "2026-10-10",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26994",
+   "stage": "Plava dvorana",
+   "start": "2026-10-10T16:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - OTPISANA",
+   "url": "https://tickets.rs/event/fest_2026_otpisana_28440",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26995": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_harmonija_28441",
+   "extra": {
+    "end_date": "2026-10-10",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26995",
+   "stage": "Plava dvorana",
+   "start": "2026-10-10T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - HARMONIJA",
+   "url": "https://tickets.rs/event/fest_2026_harmonija_28441",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26996": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_prolece_u_parizu_28442",
+   "extra": {
+    "end_date": "2026-10-11",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "26996",
+   "stage": "Plava dvorana",
+   "start": "2026-10-11T11:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - PROLEĆE U PARIZU",
+   "url": "https://tickets.rs/event/fest_2026_prolece_u_parizu_28442",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26997": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_harmonija_28443",
+   "extra": {
+    "end_date": "2026-10-11",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26997",
+   "stage": "Plava dvorana",
+   "start": "2026-10-11T16:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - HARMONIJA",
+   "url": "https://tickets.rs/event/fest_2026_harmonija_28443",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26998": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_svecano_zatvaranje_razum_i_osecajnost_28444",
+   "extra": {
+    "end_date": "2026-10-11",
+    "event_status": ""
+   },
+   "price": "od 1500 RSD",
+   "sales_start": null,
+   "source_id": "26998",
+   "stage": "Plava dvorana",
+   "start": "2026-10-11T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - SVEČANO ZATVARANJE - RAZUM I OSEĆAJNOST",
+   "url": "https://tickets.rs/event/fest_2026_svecano_zatvaranje_razum_i_osecajnost_28444",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26999": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_ljubavnik_od_pruca_28445",
+   "extra": {
+    "end_date": "2026-10-11",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "26999",
+   "stage": "Plava dvorana",
+   "start": "2026-10-11T21:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - LJUBAVNIK OD PRUĆA",
+   "url": "https://tickets.rs/event/fest_2026_ljubavnik_od_pruca_28445",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27033": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_film_iznenadenja_28479",
+   "extra": {
+    "end_date": "2026-10-10",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "27033",
+   "stage": "Plava dvorana",
+   "start": "2026-10-10T19:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - FILM IZNENAĐENJA",
+   "url": "https://tickets.rs/event/fest_2026_film_iznenadenja_28479",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27034": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/fest_2026_film_iznenadenja_28480",
+   "extra": {
+    "end_date": "2026-10-11",
+    "event_status": ""
+   },
+   "price": "od 700 RSD",
+   "sales_start": null,
+   "source_id": "27034",
+   "stage": "Plava dvorana",
+   "start": "2026-10-11T13:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FEST 2026 - FILM IZNENAĐENJA",
+   "url": "https://tickets.rs/event/fest_2026_film_iznenadenja_28480",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27074": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/magla_bend_28520",
+   "extra": {
+    "end_date": "2026-11-26",
+    "event_status": ""
+   },
+   "price": "od 2300 RSD",
+   "sales_start": null,
+   "source_id": "27074",
+   "stage": "Plava dvorana",
+   "start": "2026-11-26T20:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Magla bend",
+   "url": "https://tickets.rs/event/magla_bend_28520",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27077": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/toma_zdravkovic_koncert_secanja_28522",
+   "extra": {
+    "end_date": "2026-09-30",
+    "event_status": ""
+   },
+   "price": "od 2550 RSD",
+   "sales_start": null,
+   "source_id": "27077",
+   "stage": "",
+   "start": "2026-09-30T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "TOMA ZDRAVKOVIĆ - KONCERT SEĆANJA",
+   "url": "https://tickets.rs/event/toma_zdravkovic_koncert_secanja_28522",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27136": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/the_nutcracker_28581",
+   "extra": {
+    "end_date": "2026-12-20",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "27136",
+   "stage": "Plava dvorana",
+   "start": "2026-12-20T15:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "The Nutcracker",
+   "url": "https://tickets.rs/event/the_nutcracker_28581",
+   "venue": "sava_centar"
+  }
+ },
+ "releases": [],
+ "telegram_offset": 597987113,
+ "watch_imported": [],
+ "watchlist": []
+}
