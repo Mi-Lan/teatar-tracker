@@ -1584,7 +1584,8 @@
   "season:2026-09-24:00:05": "2026-09-24T08:03:52+02:00",
   "season:2026-09-24:08:00": "2026-09-24T08:03:52+02:00",
   "season:2026-09-25:00:05": "2026-09-25T12:08:05+02:00",
-  "season:2026-09-25:08:00": "2026-09-25T12:08:05+02:00"
+  "season:2026-09-25:08:00": "2026-09-25T12:08:05+02:00",
+  "season:2026-09-26:00:05": "2026-09-26T01:14:07+02:00"
  },
  "performances": {
   "bdp:202609261930-divlje-meso": {
@@ -2500,23 +2501,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202609252030-moj-muz": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202609252030-moj-muz",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-09-25T20:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Rumena Bužarovska",
-   "title": "Moj muž",
-   "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
-   "venue": "jdp"
-  },
   "jdp:202609262000-mihael-kolhas": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1181",
@@ -2914,7 +2898,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1200",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1200"
    },
    "price": "",
@@ -2922,7 +2906,7 @@
    "source_id": "202610172000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-17T20:00:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -3233,17 +3217,16 @@
   },
   "jdp:202610312000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1211",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1211"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610312000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-31T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -4324,7 +4307,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 199,
+   "available": 197,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4443,7 +4426,7 @@
    "venue": "narodno"
   },
   "narodno:6393": {
-   "available": 20,
+   "available": 17,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6393",
    "extra": {
     "repid": "6393"
@@ -4511,7 +4494,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 111,
+   "available": 109,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -4545,7 +4528,7 @@
    "venue": "narodno"
   },
   "narodno:6400": {
-   "available": 285,
+   "available": 281,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6400",
    "extra": {
     "repid": "6400"
@@ -4562,7 +4545,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 184,
+   "available": 182,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -4596,7 +4579,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 315,
+   "available": 313,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4647,7 +4630,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 281,
+   "available": 278,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4715,7 +4698,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 311,
+   "available": 305,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4766,7 +4749,7 @@
    "venue": "narodno"
   },
   "narodno:6415": {
-   "available": 247,
+   "available": 245,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6415",
    "extra": {
     "repid": "6415"
@@ -5318,24 +5301,6 @@
    "subtitle": "",
    "title": "Zvonko Bogdan",
    "url": "https://tickets.rs/event/zvonko_bogdan_25347",
-   "venue": "sava_centar"
-  },
-  "sava_centar:24288": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/barcelona_guitar_trio_flamenco_25666",
-   "extra": {
-    "end_date": "2026-09-25",
-    "event_status": ""
-   },
-   "price": "od 3000 RSD",
-   "sales_start": null,
-   "source_id": "24288",
-   "stage": "",
-   "start": "2026-09-25T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "BARCELONA GUITAR TRIO & Flamenco",
-   "url": "https://tickets.rs/event/barcelona_guitar_trio_flamenco_25666",
    "venue": "sava_centar"
   },
   "sava_centar:24367": {
@@ -6868,24 +6833,6 @@
    "url": "https://tickets.rs/event/crvena_jabuka_28679",
    "venue": "sava_centar"
   },
-  "terazije:1246": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1246",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1246"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1246",
-   "stage": "Велика сцена",
-   "start": "2026-09-25T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Mјузикл у режији Југа Радивојевића",
-   "title": "MAMMA MIA!",
-   "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
-   "venue": "terazije"
-  },
   "terazije:1247": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1247",
@@ -7363,10 +7310,10 @@
     "unknown": 0
    },
    "jdp": {
-    "buyable": 0,
-    "listed": 0,
+    "buyable": 31,
+    "listed": 36,
     "not_yet": 0,
-    "sold_out": 0,
+    "sold_out": 5,
     "unknown": 0
    },
    "kolarac": {
@@ -7378,10 +7325,10 @@
    },
    "madlenianum": {
     "buyable": 0,
-    "listed": 2,
+    "listed": 3,
     "not_yet": 0,
     "sold_out": 0,
-    "unknown": 2
+    "unknown": 3
    },
    "madlenianum_tickets": {
     "buyable": 8,
@@ -7391,17 +7338,17 @@
     "unknown": 0
    },
    "narodno": {
-    "buyable": 41,
+    "buyable": 40,
     "listed": 43,
     "not_yet": 2,
-    "sold_out": 0,
+    "sold_out": 1,
     "unknown": 0
    },
    "sava_centar": {
-    "buyable": 54,
+    "buyable": 53,
     "listed": 54,
     "not_yet": 0,
-    "sold_out": 0,
+    "sold_out": 1,
     "unknown": 0
    },
    "terazije": {
