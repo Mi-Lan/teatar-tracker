@@ -23,14 +23,29 @@
    "vise od igre 1 2 3 deo"
   ],
   "jdp": [
+   "audijencija",
+   "beogradska trilogija",
    "edip",
+   "eldorado",
+   "garderober",
+   "gospodjica",
+   "gubitnik",
    "heda gabler",
+   "hotel slobodan promet",
+   "limeni dobos",
+   "mama",
    "mihael kolhas",
    "moj muz",
+   "narodni poslanik",
    "preobrazaj",
+   "pucina",
+   "putujuce pozoriste sopalovic",
+   "razvojni put bore snajdera",
    "ricard drugi",
    "sirano",
-   "sveti georgije ubiva azdahu"
+   "slika dorijana greja",
+   "sveti georgije ubiva azdahu",
+   "vrat od stakla"
   ],
   "kolarac": [
    "ekstravagancije i ludosti",
@@ -38,7 +53,9 @@
    "nikolaj kuznjecov"
   ],
   "madlenianum": [
-   "ja ema"
+   "gospodin u cizmama od dima",
+   "ja ema",
+   "x y 0"
   ],
   "madlenianum_tickets": [
    "feliks i doris",
@@ -419,6 +436,150 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
+  "jdp:202610012030-gubitnik": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610022030-preobrazaj": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610032000-edip": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610042000-gospodjica": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610042030-audijencija": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610062000-garderober": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610072000-narodni-poslanik": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610082030-moj-muz": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610092000-eldorado": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610102000-garderober": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610112000-narodni-poslanik": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610122000-mihael-kolhas": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610132000-vrat-od-stakla": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610132030-slika-dorijana-greja": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610142000-edip": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610152000-razvojni-put-bore-snajdera": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610162000-garderober": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610172000-edip": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610172030-mama": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610202000-vrat-od-stakla": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610202030-mama": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610212000-heda-gabler": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610212030-preobrazaj": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610222000-limeni-dobos": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610232000-pucina": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610232030-slika-dorijana-greja": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610242000-hotel-slobodan-promet": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610242030-gubitnik": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610272000-ricard-drugi": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610272030-beogradska-trilogija": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610282000-ricard-drugi": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610292000-sirano": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610292030-moj-muz": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610302030-mama": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "jdp:202610312000-putujuce-pozoriste-sopalovic": {
+   "ever_on_sale": true,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
   "kolarac:24462": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -431,6 +592,14 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
+  "madlenianum:gospodin-u-cizmama-od-dima-202609301930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-25T17:47:32+02:00"
+  },
   "madlenianum:ja-ema-202609291930": {
    "ever_on_sale": false,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -442,6 +611,10 @@
   "madlenianum:ja-ema-202610101930": {
    "ever_on_sale": false,
    "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "madlenianum:x-y-0-0-202610042000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-09-25T17:47:32+02:00"
   },
   "madlenianum_tickets:26309": {
    "ever_on_sale": true,
@@ -1329,6 +1502,19 @@
   }
  },
  "notified": {
+  "new_date:jdp:202610022030-preobrazaj": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610032000-edip": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610082030-moj-muz": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610122000-mihael-kolhas": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610142000-edip": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610172000-edip": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610182000-sveti-georgije-ubiva-azdahu": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610212000-heda-gabler": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610212030-preobrazaj": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610272000-ricard-drugi": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610282000-ricard-drugi": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610292000-sirano": "2026-09-25T17:47:32+02:00",
+  "new_date:jdp:202610292030-moj-muz": "2026-09-25T17:47:32+02:00",
   "new_date:madlenianum_tickets:27220": "2026-09-24T13:37:37+02:00",
   "new_date:sava_centar:27109": "2026-09-23T11:31:07+02:00",
   "new_date:terazije:1259": "2026-09-25T01:50:54+02:00",
@@ -1337,6 +1523,32 @@
   "new_date:terazije:1267": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1269": "2026-09-25T01:50:54+02:00",
   "new_show:bdp:202609231930-filomena-maturano-czk-tivat": "2026-09-23T19:49:06+02:00",
+  "new_show:jdp:202610012030-gubitnik": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610042000-gospodjica": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610042030-audijencija": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610062000-garderober": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610072000-narodni-poslanik": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610092000-eldorado": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610102000-garderober": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610112000-narodni-poslanik": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610132000-vrat-od-stakla": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610132030-slika-dorijana-greja": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610152000-razvojni-put-bore-snajdera": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610162000-garderober": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610172030-mama": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610202000-vrat-od-stakla": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610202030-mama": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610222000-limeni-dobos": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610232000-pucina": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610232030-slika-dorijana-greja": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610242000-hotel-slobodan-promet": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610242030-gubitnik": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610272030-beogradska-trilogija": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610302030-mama": "2026-09-25T17:47:32+02:00",
+  "new_show:jdp:202610312000-putujuce-pozoriste-sopalovic": "2026-09-25T17:47:32+02:00",
+  "new_show:madlenianum:gospodin-u-cizmama-od-dima-202609301930": "2026-09-25T17:47:32+02:00",
+  "new_show:madlenianum:gospodin-u-cizmama-od-dima-202611101930": "2026-09-25T17:47:32+02:00",
+  "new_show:madlenianum:x-y-0-0-202610042000": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum_tickets:27217": "2026-09-24T13:37:37+02:00",
   "new_show:madlenianum_tickets:27218": "2026-09-24T13:37:37+02:00",
   "new_show:madlenianum_tickets:27219": "2026-09-24T13:37:37+02:00",
@@ -2285,17 +2497,16 @@
   },
   "jdp:202609252030-moj-muz": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1186",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1186"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202609252030-moj-muz",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-09-25T20:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Rumena Bužarovska",
    "title": "Moj muž",
    "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
@@ -2339,16 +2550,17 @@
   },
   "jdp:202609272000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1182",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1182"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202609272000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-09-27T20:00:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -2387,6 +2599,652 @@
    "subtitle": "Edmon Rostan",
    "title": "Sirano",
    "url": "https://www.jdp.rs/rs/performance/sirano/",
+   "venue": "jdp"
+  },
+  "jdp:202610012030-gubitnik": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1212",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1212"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610012030-gubitnik",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-01T20:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Tomas Bernhard / Aleksandar Sergejevič Puškin",
+   "title": "Gubitnik",
+   "url": "https://www.jdp.rs/performance/gubitnik/",
+   "venue": "jdp"
+  },
+  "jdp:202610022030-preobrazaj": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1213",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1213"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610022030-preobrazaj",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-02T20:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Franc Kafka",
+   "title": "Preobražaj",
+   "url": "https://www.jdp.rs/performance/preobrazaj/",
+   "venue": "jdp"
+  },
+  "jdp:202610032000-edip": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1188",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1188"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610032000-edip",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-03T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Sofokle",
+   "title": "Edip",
+   "url": "https://www.jdp.rs/performance/edip/",
+   "venue": "jdp"
+  },
+  "jdp:202610042000-gospodjica": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1189",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1189"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610042000-gospodjica",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-04T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Ivo Andrić",
+   "title": "Gospođica",
+   "url": "https://www.jdp.rs/performance/gospodjica/",
+   "venue": "jdp"
+  },
+  "jdp:202610042030-audijencija": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1214",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1214"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610042030-audijencija",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-04T20:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Vaclav Havel",
+   "title": "Audijencija",
+   "url": "https://www.jdp.rs/performance/audijencija/",
+   "venue": "jdp"
+  },
+  "jdp:202610062000-garderober": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1190",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1190"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610062000-garderober",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-06T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Ronald Harvud",
+   "title": "Garderober",
+   "url": "https://www.jdp.rs/en/performance/the-dresser/",
+   "venue": "jdp"
+  },
+  "jdp:202610072000-narodni-poslanik": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1191",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1191"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610072000-narodni-poslanik",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-07T20:00:00+02:00",
+   "status": "low",
+   "subtitle": "Branislav Nušić",
+   "title": "Narodni poslanik",
+   "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
+   "venue": "jdp"
+  },
+  "jdp:202610082030-moj-muz": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "label": "Rasprodato"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610082030-moj-muz",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-08T20:30:00+02:00",
+   "status": "sold_out",
+   "subtitle": "Rumena Bužarovska",
+   "title": "Moj muž",
+   "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
+   "venue": "jdp"
+  },
+  "jdp:202610092000-eldorado": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1210",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1210"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610092000-eldorado",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-09T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Marijus fon Majenburg",
+   "title": "Eldorado",
+   "url": "https://www.jdp.rs/performance/eldorado/",
+   "venue": "jdp"
+  },
+  "jdp:202610102000-garderober": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1193",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1193"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610102000-garderober",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-10T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Ronald Harvud",
+   "title": "Garderober",
+   "url": "https://www.jdp.rs/en/performance/the-dresser/",
+   "venue": "jdp"
+  },
+  "jdp:202610112000-narodni-poslanik": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1194",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1194"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610112000-narodni-poslanik",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-11T20:00:00+02:00",
+   "status": "low",
+   "subtitle": "Branislav Nušić",
+   "title": "Narodni poslanik",
+   "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
+   "venue": "jdp"
+  },
+  "jdp:202610122000-mihael-kolhas": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1195",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1195"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610122000-mihael-kolhas",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-12T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Hajnrih fon Klajst",
+   "title": "Mihael Kolhas",
+   "url": "https://www.jdp.rs/performance/mihael-kolhas/",
+   "venue": "jdp"
+  },
+  "jdp:202610132000-vrat-od-stakla": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1196",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1196"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610132000-vrat-od-stakla",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-13T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Biljana Srbljanovic",
+   "title": "Vrat od stakla",
+   "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
+   "venue": "jdp"
+  },
+  "jdp:202610132030-slika-dorijana-greja": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1216",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1216"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610132030-slika-dorijana-greja",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-13T20:30:00+02:00",
+   "status": "low",
+   "subtitle": "Oskar Vajld",
+   "title": "Slika Dorijana Greja",
+   "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
+   "venue": "jdp"
+  },
+  "jdp:202610142000-edip": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1197",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1197"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610142000-edip",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-14T20:00:00+02:00",
+   "status": "low",
+   "subtitle": "Sofokle",
+   "title": "Edip",
+   "url": "https://www.jdp.rs/performance/edip/",
+   "venue": "jdp"
+  },
+  "jdp:202610152000-razvojni-put-bore-snajdera": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1198",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1198"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610152000-razvojni-put-bore-snajdera",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-15T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Aleksandar Popović",
+   "title": "Razvojni put Bore šnajdera",
+   "url": "https://www.jdp.rs/performance/razvojni-put-bore-snajdera/",
+   "venue": "jdp"
+  },
+  "jdp:202610162000-garderober": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1199",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1199"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610162000-garderober",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-16T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Ronald Harvud",
+   "title": "Garderober",
+   "url": "https://www.jdp.rs/en/performance/the-dresser/",
+   "venue": "jdp"
+  },
+  "jdp:202610172000-edip": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1200",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1200"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610172000-edip",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-17T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Sofokle",
+   "title": "Edip",
+   "url": "https://www.jdp.rs/performance/edip/",
+   "venue": "jdp"
+  },
+  "jdp:202610172030-mama": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "label": "Rasprodato"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610172030-mama",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-17T20:30:00+02:00",
+   "status": "sold_out",
+   "subtitle": "Mega Magazinović",
+   "title": "MaMa",
+   "url": "https://www.jdp.rs/performance/mama/",
+   "venue": "jdp"
+  },
+  "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1201"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-18T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Dušan Kovačević",
+   "title": "Sveti Georgije ubiva aždahu",
+   "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
+   "venue": "jdp"
+  },
+  "jdp:202610202000-vrat-od-stakla": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1202",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1202"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610202000-vrat-od-stakla",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-20T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Biljana Srbljanovic",
+   "title": "Vrat od stakla",
+   "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
+   "venue": "jdp"
+  },
+  "jdp:202610202030-mama": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1223",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1223"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610202030-mama",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-20T20:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Mega Magazinović",
+   "title": "MaMa",
+   "url": "https://www.jdp.rs/performance/mama/",
+   "venue": "jdp"
+  },
+  "jdp:202610212000-heda-gabler": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1203",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1203"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610212000-heda-gabler",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-21T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Henrik Ibzen",
+   "title": "Heda Gabler",
+   "url": "https://www.jdp.rs/rs/performance/hedda-gabler/",
+   "venue": "jdp"
+  },
+  "jdp:202610212030-preobrazaj": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1217",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1217"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610212030-preobrazaj",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-21T20:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Franc Kafka",
+   "title": "Preobražaj",
+   "url": "https://www.jdp.rs/performance/preobrazaj/",
+   "venue": "jdp"
+  },
+  "jdp:202610222000-limeni-dobos": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1204",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1204"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610222000-limeni-dobos",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-22T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Po motivima romana Gintera Grasa",
+   "title": "Limeni doboš",
+   "url": "https://www.jdp.rs/performance/limeni-dobos/",
+   "venue": "jdp"
+  },
+  "jdp:202610232000-pucina": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1205",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1205"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610232000-pucina",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-23T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Branislav Nušić",
+   "title": "Pučina",
+   "url": "https://www.jdp.rs/rs/performance/%d0%bf%d1%83%d1%87%d0%b8%d0%bd%d0%b0/",
+   "venue": "jdp"
+  },
+  "jdp:202610232030-slika-dorijana-greja": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1218",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1218"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610232030-slika-dorijana-greja",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-23T20:30:00+02:00",
+   "status": "low",
+   "subtitle": "Oskar Vajld",
+   "title": "Slika Dorijana Greja",
+   "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
+   "venue": "jdp"
+  },
+  "jdp:202610242000-hotel-slobodan-promet": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1206",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1206"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610242000-hotel-slobodan-promet",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-24T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Žorž Fejdo",
+   "title": "Hotel Slobodan promet",
+   "url": "https://www.jdp.rs/performance/hotel-slobodan-promet/",
+   "venue": "jdp"
+  },
+  "jdp:202610242030-gubitnik": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1219",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1219"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610242030-gubitnik",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-24T20:30:00+02:00",
+   "status": "on_sale",
+   "subtitle": "Tomas Bernhard / Aleksandar Sergejevič Puškin",
+   "title": "Gubitnik",
+   "url": "https://www.jdp.rs/performance/gubitnik/",
+   "venue": "jdp"
+  },
+  "jdp:202610272000-ricard-drugi": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1207",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1207"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610272000-ricard-drugi",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-27T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Vilijam Šekspir",
+   "title": "Ričard Drugi",
+   "url": "https://www.jdp.rs/performance/ricard-drugi/",
+   "venue": "jdp"
+  },
+  "jdp:202610272030-beogradska-trilogija": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1220",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1220"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610272030-beogradska-trilogija",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-27T20:30:00+01:00",
+   "status": "low",
+   "subtitle": "Biljana Srbljanović",
+   "title": "Beogradska trilogija",
+   "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
+   "venue": "jdp"
+  },
+  "jdp:202610282000-ricard-drugi": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1208"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610282000-ricard-drugi",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-28T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Vilijam Šekspir",
+   "title": "Ričard Drugi",
+   "url": "https://www.jdp.rs/performance/ricard-drugi/",
+   "venue": "jdp"
+  },
+  "jdp:202610292000-sirano": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1209",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1209"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610292000-sirano",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-29T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Edmon Rostan",
+   "title": "Sirano",
+   "url": "https://www.jdp.rs/rs/performance/sirano/",
+   "venue": "jdp"
+  },
+  "jdp:202610292030-moj-muz": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1221",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1221"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610292030-moj-muz",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-29T20:30:00+01:00",
+   "status": "low",
+   "subtitle": "Rumena Bužarovska",
+   "title": "Moj muž",
+   "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
+   "venue": "jdp"
+  },
+  "jdp:202610302030-mama": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1224",
+   "extra": {
+    "label": "",
+    "prostorterminid": "1224"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610302030-mama",
+   "stage": "STUDIO ĆIRILOV",
+   "start": "2026-10-30T20:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Mega Magazinović",
+   "title": "MaMa",
+   "url": "https://www.jdp.rs/performance/mama/",
+   "venue": "jdp"
+  },
+  "jdp:202610312000-putujuce-pozoriste-sopalovic": {
+   "available": null,
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1211",
+   "extra": {
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1211"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "202610312000-putujuce-pozoriste-sopalovic",
+   "stage": "SCENA LJUBA TADIĆ",
+   "start": "2026-10-31T20:00:00+01:00",
+   "status": "low",
+   "subtitle": "Ljubomir Simović",
+   "title": "Putujuće pozorište Šopalović",
+   "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
    "venue": "jdp"
   },
   "kolarac:24462": {
@@ -2443,6 +3301,36 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
+  "madlenianum:gospodin-u-cizmama-od-dima-202609301930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "gospodin-u-cizmama-od-dima-202609301930",
+   "stage": "",
+   "start": "2026-09-30T19:30:00+02:00",
+   "status": "unknown",
+   "subtitle": "Fjodor Mihajlovič Dostojevski",
+   "title": "GOSPODIN U ČIZMAMA OD DIMA",
+   "url": "https://operatheatremadlenianum.com/gospodin-u-cizmama-od-dima",
+   "venue": "madlenianum"
+  },
+  "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "gospodin-u-cizmama-od-dima-202611101930",
+   "stage": "",
+   "start": "2026-11-10T19:30:00+01:00",
+   "status": "unknown",
+   "subtitle": "Fjodor Mihajlovič Dostojevski",
+   "title": "GOSPODIN U ČIZMAMA OD DIMA",
+   "url": "https://operatheatremadlenianum.com/gospodin-u-cizmama-od-dima",
+   "venue": "madlenianum"
+  },
   "madlenianum:ja-ema-202609291930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -2486,6 +3374,21 @@
    "subtitle": "Tatjana Mandić Rigonat",
    "title": "JA, EMA",
    "url": "https://operatheatremadlenianum.com/ja-ema",
+   "venue": "madlenianum"
+  },
+  "madlenianum:x-y-0-0-202610042000": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "x-y-0-0-202610042000",
+   "stage": "",
+   "start": "2026-10-04T20:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Borislav Pekić",
+   "title": "X + Y = 0",
+   "url": "https://operatheatremadlenianum.com/x-y-0-0",
    "venue": "madlenianum"
   },
   "madlenianum_tickets:26309": {
@@ -2790,7 +3693,7 @@
    "venue": "narodno"
   },
   "narodno:6349": {
-   "available": 283,
+   "available": 276,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6349",
    "extra": {
     "repid": "6349"
@@ -2892,7 +3795,7 @@
    "venue": "narodno"
   },
   "narodno:6355": {
-   "available": 253,
+   "available": 251,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6355",
    "extra": {
     "repid": "6355"
@@ -2943,7 +3846,7 @@
    "venue": "narodno"
   },
   "narodno:6358": {
-   "available": 322,
+   "available": 320,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6358",
    "extra": {
     "repid": "6358"
@@ -2960,7 +3863,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 243,
+   "available": 241,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -2994,7 +3897,7 @@
    "venue": "narodno"
   },
   "narodno:6361": {
-   "available": 258,
+   "available": 255,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6361",
    "extra": {
     "repid": "6361"
@@ -3062,7 +3965,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 231,
+   "available": 230,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -3113,7 +4016,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 122,
+   "available": 116,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -3181,7 +4084,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 134,
+   "available": 133,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -3198,7 +4101,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 265,
+   "available": 264,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -3266,7 +4169,7 @@
    "venue": "narodno"
   },
   "narodno:6377": {
-   "available": 319,
+   "available": 318,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6377",
    "extra": {
     "repid": "6377"
@@ -3317,7 +4220,7 @@
    "venue": "narodno"
   },
   "narodno:6380": {
-   "available": 314,
+   "available": 309,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6380",
    "extra": {
     "repid": "6380"
@@ -3368,8 +4271,8 @@
    "venue": "narodno"
   },
   "narodno:6383": {
-   "available": 3,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6383",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6383"
    },
@@ -3378,14 +4281,14 @@
    "source_id": "6383",
    "stage": "Велика сцена",
    "start": "2026-10-07T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "опера Петра Иљича Чајковског",
    "title": "Евгеније Оњегин",
    "url": "https://www.narodnopozoriste.rs/predstave/evgenije-onjegin-3?m=xa82a1a15508d7d7b79fc2b1954bdeb93",
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 46,
+   "available": 39,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -3402,7 +4305,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 267,
+   "available": 264,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -3419,7 +4322,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 198,
+   "available": 199,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -3453,7 +4356,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 323,
+   "available": 322,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -3470,7 +4373,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 63,
+   "available": 58,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -3487,7 +4390,7 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 10,
+   "available": 5,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
@@ -3538,7 +4441,7 @@
    "venue": "narodno"
   },
   "narodno:6393": {
-   "available": 24,
+   "available": 22,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6393",
    "extra": {
     "repid": "6393"
@@ -3555,7 +4458,7 @@
    "venue": "narodno"
   },
   "narodno:6394": {
-   "available": 64,
+   "available": 121,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6394",
    "extra": {
     "repid": "6394"
@@ -3606,7 +4509,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 117,
+   "available": 115,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -3640,7 +4543,7 @@
    "venue": "narodno"
   },
   "narodno:6400": {
-   "available": 301,
+   "available": 287,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6400",
    "extra": {
     "repid": "6400"
@@ -3657,7 +4560,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 209,
+   "available": 189,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -3674,7 +4577,7 @@
    "venue": "narodno"
   },
   "narodno:6402": {
-   "available": 299,
+   "available": 296,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6402",
    "extra": {
     "repid": "6402"
@@ -3691,7 +4594,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 319,
+   "available": 317,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -3708,7 +4611,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 342,
+   "available": 338,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -3725,7 +4628,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 309,
+   "available": 312,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -3742,7 +4645,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 291,
+   "available": 281,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -3759,7 +4662,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 307,
+   "available": 301,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -3776,7 +4679,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 358,
+   "available": 354,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -3810,7 +4713,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 314,
+   "available": 311,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -3861,7 +4764,7 @@
    "venue": "narodno"
   },
   "narodno:6415": {
-   "available": 250,
+   "available": 247,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6415",
    "extra": {
     "repid": "6415"
@@ -3878,7 +4781,7 @@
    "venue": "narodno"
   },
   "narodno:6416": {
-   "available": 268,
+   "available": 266,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6416",
    "extra": {
     "repid": "6416"
@@ -3912,7 +4815,7 @@
    "venue": "narodno"
   },
   "narodno:6418": {
-   "available": 270,
+   "available": 264,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6418",
    "extra": {
     "repid": "6418"
@@ -3946,7 +4849,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 141,
+   "available": 139,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -3980,7 +4883,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 272,
+   "available": 270,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4014,7 +4917,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 122,
+   "available": 114,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4031,7 +4934,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 149,
+   "available": 142,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
@@ -4065,7 +4968,7 @@
    "venue": "narodno"
   },
   "narodno:6427": {
-   "available": 272,
+   "available": 268,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
    "extra": {
     "repid": "6427"
@@ -4082,7 +4985,7 @@
    "venue": "narodno"
   },
   "narodno:6428": {
-   "available": 255,
+   "available": 253,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
    "extra": {
     "repid": "6428"
@@ -5068,14 +5971,14 @@
    "buy_url": "https://tickets.rs/event/fest_2026_svecano_otvaranje_zlatni_rez_42_djeca_kozare_28403",
    "extra": {
     "end_date": "2026-10-02",
-    "event_status": "Trenutno nedostupno"
+    "event_status": "Rasprodat"
    },
    "price": "od 1500 RSD",
    "sales_start": null,
    "source_id": "26958",
    "stage": "Plava dvorana",
    "start": "2026-10-02T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "FEST 2026 - SVEČANO OTVARANJE - ZLATNI REZ '42: DJECA KOZARE",
    "url": "https://tickets.rs/event/fest_2026_svecano_otvaranje_zlatni_rez_42_djeca_kozare_28403",
@@ -6354,6 +7257,12 @@
    "by": "2026-09-25T01:50:54+02:00",
    "month": "2026-10",
    "venue": "terazije"
+  },
+  {
+   "after": "2026-09-25T12:08:05+02:00",
+   "by": "2026-09-25T17:47:32+02:00",
+   "month": "2026-10",
+   "venue": "jdp"
   }
  ],
  "releases": [
@@ -6387,7 +7296,7 @@
    },
    "jdp": {
     "checked": "2026-09-25T12:08:05+02:00",
-    "out": false
+    "out": true
    },
    "kolarac": {
     "out": true
@@ -6412,6 +7321,10 @@
   },
   "month": "2026-10",
   "released": {
+   "jdp": {
+    "after": "2026-09-25T12:08:05+02:00",
+    "by": "2026-09-25T17:47:32+02:00"
+   },
    "madlenianum_tickets": {
     "after": "2026-09-24T08:03:52+02:00",
     "by": "2026-09-24T13:37:37+02:00"
