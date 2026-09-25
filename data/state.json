@@ -4023,7 +4023,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 162,
+   "available": 156,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
@@ -6360,7 +6360,7 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-09-25T01:50:54+02:00",
+    "checked": "2026-09-25T06:44:02+02:00",
     "out": false
    },
    "kolarac": {
