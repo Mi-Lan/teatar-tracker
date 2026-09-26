@@ -2630,7 +2630,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1188",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1188"
    },
    "price": "",
@@ -2638,7 +2638,7 @@
    "source_id": "202610032000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-03T20:00:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -2923,7 +2923,7 @@
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-17T20:30:00+02:00",
    "status": "sold_out",
-   "subtitle": "Mega Magazinović",
+   "subtitle": "Maga Magazinović",
    "title": "MaMa",
    "url": "https://www.jdp.rs/performance/mama/",
    "venue": "jdp"
@@ -2977,7 +2977,7 @@
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-20T20:30:00+02:00",
    "status": "on_sale",
-   "subtitle": "Mega Magazinović",
+   "subtitle": "Maga Magazinović",
    "title": "MaMa",
    "url": "https://www.jdp.rs/performance/mama/",
    "venue": "jdp"
@@ -3127,17 +3127,16 @@
   },
   "jdp:202610272030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1220",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1220"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-27T20:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -3209,7 +3208,7 @@
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-30T20:30:00+01:00",
    "status": "on_sale",
-   "subtitle": "Mega Magazinović",
+   "subtitle": "Maga Magazinović",
    "title": "MaMa",
    "url": "https://www.jdp.rs/performance/mama/",
    "venue": "jdp"
@@ -3745,7 +3744,7 @@
    "venue": "narodno"
   },
   "narodno:6353": {
-   "available": 322,
+   "available": 320,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6353",
    "extra": {
     "repid": "6353"
@@ -3847,7 +3846,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 239,
+   "available": 228,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -3881,7 +3880,7 @@
    "venue": "narodno"
   },
   "narodno:6361": {
-   "available": 255,
+   "available": 252,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6361",
    "extra": {
     "repid": "6361"
@@ -3966,7 +3965,7 @@
    "venue": "narodno"
   },
   "narodno:6366": {
-   "available": 236,
+   "available": 234,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
    "extra": {
     "repid": "6366"
@@ -3983,7 +3982,7 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": 173,
+   "available": 171,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
     "repid": "6367"
@@ -4000,7 +3999,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 113,
+   "available": 111,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -4051,7 +4050,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 160,
+   "available": 155,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -4068,7 +4067,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 133,
+   "available": 132,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -4221,7 +4220,7 @@
    "venue": "narodno"
   },
   "narodno:6381": {
-   "available": 55,
+   "available": 53,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6381",
    "extra": {
     "repid": "6381"
@@ -4238,7 +4237,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 250,
+   "available": 248,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -4272,7 +4271,7 @@
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 30,
+   "available": 27,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -4289,7 +4288,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 264,
+   "available": 261,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4323,7 +4322,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 125,
+   "available": 121,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4340,7 +4339,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 322,
+   "available": 313,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4442,7 +4441,7 @@
    "venue": "narodno"
   },
   "narodno:6394": {
-   "available": 116,
+   "available": 108,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6394",
    "extra": {
     "repid": "6394"
@@ -4493,7 +4492,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 109,
+   "available": 102,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -4510,7 +4509,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 304,
+   "available": 302,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4527,7 +4526,7 @@
    "venue": "narodno"
   },
   "narodno:6400": {
-   "available": 277,
+   "available": 275,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6400",
    "extra": {
     "repid": "6400"
@@ -4578,7 +4577,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 310,
+   "available": 308,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4595,7 +4594,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 335,
+   "available": 333,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4612,7 +4611,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 305,
+   "available": 303,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4629,7 +4628,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 276,
+   "available": 275,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4646,7 +4645,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 296,
+   "available": 295,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4663,7 +4662,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 352,
+   "available": 350,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4731,7 +4730,7 @@
    "venue": "narodno"
   },
   "narodno:6414": {
-   "available": 264,
+   "available": 262,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6414",
    "extra": {
     "repid": "6414"
@@ -4748,7 +4747,7 @@
    "venue": "narodno"
   },
   "narodno:6415": {
-   "available": 245,
+   "available": 239,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6415",
    "extra": {
     "repid": "6415"
@@ -4799,7 +4798,7 @@
    "venue": "narodno"
   },
   "narodno:6418": {
-   "available": 264,
+   "available": 263,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6418",
    "extra": {
     "repid": "6418"
@@ -4867,7 +4866,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 270,
+   "available": 268,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4901,7 +4900,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 108,
+   "available": 106,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4952,7 +4951,7 @@
    "venue": "narodno"
   },
   "narodno:6427": {
-   "available": 268,
+   "available": 266,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
    "extra": {
     "repid": "6427"
@@ -5054,7 +5053,7 @@
    "venue": "narodno"
   },
   "narodno:6433": {
-   "available": 272,
+   "available": 271,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6433",
    "extra": {
     "repid": "6433"
@@ -5088,7 +5087,7 @@
    "venue": "narodno"
   },
   "narodno:6435": {
-   "available": 250,
+   "available": 246,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6435",
    "extra": {
     "repid": "6435"
@@ -7078,7 +7077,7 @@
    "source_id": "1263",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:30:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Mјузикл у режији Југа Радивојевића",
    "title": "MAMMA MIA!",
    "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
