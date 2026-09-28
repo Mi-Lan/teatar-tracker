@@ -214,7 +214,7 @@
    "zona zamfirova"
   ]
  },
- "last_digest": "2026-09-23",
+ "last_digest": "2026-09-28",
  "meta": {
   "bdp:202609231930-filomena-maturano-czk-tivat": {
    "ever_on_sale": true,
@@ -2749,17 +2749,16 @@
   },
   "jdp:202610142000-edip": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1197",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1197"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610142000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-14T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -2840,7 +2839,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1201"
    },
    "price": "",
@@ -2848,7 +2847,7 @@
    "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-18T20:00:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -3805,7 +3804,7 @@
    "venue": "narodno"
   },
   "narodno:6362": {
-   "available": 211,
+   "available": 209,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6362",
    "extra": {
     "repid": "6362"
@@ -4111,7 +4110,7 @@
    "venue": "narodno"
   },
   "narodno:6380": {
-   "available": 309,
+   "available": 307,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6380",
    "extra": {
     "repid": "6380"
@@ -4349,7 +4348,7 @@
    "venue": "narodno"
   },
   "narodno:6394": {
-   "available": 11,
+   "available": 9,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6394",
    "extra": {
     "repid": "6394"
@@ -4553,7 +4552,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 295,
+   "available": 293,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4638,7 +4637,7 @@
    "venue": "narodno"
   },
   "narodno:6414": {
-   "available": 259,
+   "available": 258,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6414",
    "extra": {
     "repid": "6414"
@@ -4859,7 +4858,7 @@
    "venue": "narodno"
   },
   "narodno:6427": {
-   "available": 264,
+   "available": 262,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
    "extra": {
     "repid": "6427"
