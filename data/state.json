@@ -2740,7 +2740,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1216",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1216"
    },
    "price": "",
@@ -2748,7 +2748,7 @@
    "source_id": "202610132030-slika-dorijana-greja",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-13T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Oskar Vajld",
    "title": "Slika Dorijana Greja",
    "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
@@ -3760,7 +3760,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 217,
+   "available": 213,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -3930,7 +3930,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 133,
+   "available": 134,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -4151,7 +4151,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 240,
+   "available": 241,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -4389,7 +4389,7 @@
    "venue": "narodno"
   },
   "narodno:6396": {
-   "available": 29,
+   "available": 26,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6396",
    "extra": {
     "repid": "6396"
@@ -4593,7 +4593,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 310,
+   "available": 312,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -4831,7 +4831,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 107,
+   "available": 103,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
