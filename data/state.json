@@ -2731,17 +2731,16 @@
   },
   "jdp:202610132030-slika-dorijana-greja": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1216",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1216"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610132030-slika-dorijana-greja",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-13T20:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Oskar Vajld",
    "title": "Slika Dorijana Greja",
    "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
@@ -3994,7 +3993,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 259,
+   "available": 257,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -4249,7 +4248,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 302,
+   "available": 300,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4385,8 +4384,8 @@
    "venue": "narodno"
   },
   "narodno:6396": {
-   "available": 1,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6396",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6396"
    },
@@ -4395,7 +4394,7 @@
    "source_id": "6396",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-22T17:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "опера за децу Драгана Каролића,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Снежана и седам патуљака",
    "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=xa0efe677c83e1d2457e66e6d49063f5e",
@@ -4827,7 +4826,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 94,
+   "available": 95,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
