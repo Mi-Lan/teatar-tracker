@@ -1,10 +1,5 @@
 {
- "health": {
-  "jdp": {
-   "fails": 1,
-   "last_error": "ConnectTimeout: timed out"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -59,7 +54,10 @@
   ],
   "madlenianum": [
    "gospodin u cizmama od dima",
+   "ivica i marica",
    "ja ema",
+   "pluca",
+   "the belgrade dixieland orchestra",
    "x y 0"
   ],
   "madlenianum_tickets": [
@@ -598,6 +596,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
+  "madlenianum:belgrade-dixieland-orchestra-202610012000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T00:58:47+02:00"
+  },
   "madlenianum:gospodin-u-cizmama-od-dima-202609301930": {
    "ever_on_sale": false,
    "first_seen": "2026-09-25T17:47:32+02:00"
@@ -605,6 +607,10 @@
   "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
    "ever_on_sale": false,
    "first_seen": "2026-09-25T17:47:32+02:00"
+  },
+  "madlenianum:ivica-i-marica-202610041100": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T00:58:47+02:00"
   },
   "madlenianum:ja-ema-202609291930": {
    "ever_on_sale": false,
@@ -617,6 +623,10 @@
   "madlenianum:ja-ema-202610101930": {
    "ever_on_sale": false,
    "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "madlenianum:pluca-202610052000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T00:58:47+02:00"
   },
   "madlenianum:x-y-0-0-202610042000": {
    "ever_on_sale": false,
@@ -1581,8 +1591,11 @@
   "new_show:jdp:202610272030-beogradska-trilogija": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610302030-mama": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610312000-putujuce-pozoriste-sopalovic": "2026-09-25T17:47:32+02:00",
+  "new_show:madlenianum:belgrade-dixieland-orchestra-202610012000": "2026-10-01T00:58:47+02:00",
   "new_show:madlenianum:gospodin-u-cizmama-od-dima-202609301930": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum:gospodin-u-cizmama-od-dima-202611101930": "2026-09-25T17:47:32+02:00",
+  "new_show:madlenianum:ivica-i-marica-202610041100": "2026-10-01T00:58:47+02:00",
+  "new_show:madlenianum:pluca-202610052000": "2026-10-01T00:58:47+02:00",
   "new_show:madlenianum:x-y-0-0-202610042000": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum_tickets:27217": "2026-09-24T13:37:37+02:00",
   "new_show:madlenianum_tickets:27218": "2026-09-24T13:37:37+02:00",
@@ -2495,24 +2508,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202609302000-sirano": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1184",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1184"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202609302000-sirano",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-09-30T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Edmon Rostan",
-   "title": "Sirano",
-   "url": "https://www.jdp.rs/rs/performance/sirano/",
-   "venue": "jdp"
-  },
   "jdp:202610012030-gubitnik": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1212",
@@ -2551,17 +2546,16 @@
   },
   "jdp:202610032000-edip": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1188",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1188"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610032000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-03T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -2976,17 +2970,16 @@
   },
   "jdp:202610232030-slika-dorijana-greja": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1218",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1218"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610232030-slika-dorijana-greja",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-23T20:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Oskar Vajld",
    "title": "Slika Dorijana Greja",
    "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
@@ -3205,19 +3198,19 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
-  "madlenianum:gospodin-u-cizmama-od-dima-202609301930": {
+  "madlenianum:belgrade-dixieland-orchestra-202610012000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
    "extra": {},
    "price": "",
    "sales_start": null,
-   "source_id": "gospodin-u-cizmama-od-dima-202609301930",
+   "source_id": "belgrade-dixieland-orchestra-202610012000",
    "stage": "",
-   "start": "2026-09-30T19:30:00+02:00",
+   "start": "2026-10-01T20:00:00+02:00",
    "status": "unknown",
-   "subtitle": "Fjodor Mihajlovič Dostojevski",
-   "title": "GOSPODIN U ČIZMAMA OD DIMA",
-   "url": "https://operatheatremadlenianum.com/gospodin-u-cizmama-od-dima",
+   "subtitle": "Koncert",
+   "title": "THE BELGRADE DIXIELAND ORCHESTRA",
+   "url": "https://operatheatremadlenianum.com/belgrade-dixieland-orchestra",
    "venue": "madlenianum"
   },
   "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
@@ -3233,6 +3226,21 @@
    "subtitle": "Fjodor Mihajlovič Dostojevski",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "url": "https://operatheatremadlenianum.com/gospodin-u-cizmama-od-dima",
+   "venue": "madlenianum"
+  },
+  "madlenianum:ivica-i-marica-202610041100": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "ivica-i-marica-202610041100",
+   "stage": "",
+   "start": "2026-10-04T11:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "",
+   "title": "IVICA I MARICA",
+   "url": "https://operatheatremadlenianum.com/ivica-i-marica",
    "venue": "madlenianum"
   },
   "madlenianum:ja-ema-202610021930": {
@@ -3263,6 +3271,21 @@
    "subtitle": "Tatjana Mandić Rigonat",
    "title": "JA, EMA",
    "url": "https://operatheatremadlenianum.com/ja-ema",
+   "venue": "madlenianum"
+  },
+  "madlenianum:pluca-202610052000": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "pluca-202610052000",
+   "stage": "",
+   "start": "2026-10-05T20:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Dankan Mekmilan",
+   "title": "PLUĆA",
+   "url": "https://operatheatremadlenianum.com/pluca",
    "venue": "madlenianum"
   },
   "madlenianum:x-y-0-0-202610042000": {
@@ -3296,24 +3319,6 @@
    "subtitle": "",
    "title": "THE SASSOON EXPERIENCE",
    "url": "https://tickets.rs/event/the_sassoon_experience_27733",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:26870": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28312",
-   "extra": {
-    "end_date": "2026-09-30",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1900 RSD",
-   "sales_start": null,
-   "source_id": "26870",
-   "stage": "",
-   "start": "2026-09-30T19:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "GOSPODIN U ČIZMAMA OD DIMA",
-   "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28312",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27217": {
@@ -3600,7 +3605,7 @@
    "venue": "narodno"
   },
   "narodno:6349": {
-   "available": 266,
+   "available": 264,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6349",
    "extra": {
     "repid": "6349"
@@ -3804,7 +3809,7 @@
    "venue": "narodno"
   },
   "narodno:6361": {
-   "available": 238,
+   "available": 236,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6361",
    "extra": {
     "repid": "6361"
@@ -3923,7 +3928,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 98,
+   "available": 96,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -3940,7 +3945,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 123,
+   "available": 121,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3957,7 +3962,7 @@
    "venue": "narodno"
   },
   "narodno:6370": {
-   "available": 307,
+   "available": 305,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
    "extra": {
     "repid": "6370"
@@ -4076,7 +4081,7 @@
    "venue": "narodno"
   },
   "narodno:6377": {
-   "available": 318,
+   "available": 316,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6377",
    "extra": {
     "repid": "6377"
@@ -4110,7 +4115,7 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 151,
+   "available": 152,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
     "repid": "6379"
@@ -4127,7 +4132,7 @@
    "venue": "narodno"
   },
   "narodno:6380": {
-   "available": 273,
+   "available": 269,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6380",
    "extra": {
     "repid": "6380"
@@ -4161,7 +4166,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 186,
+   "available": 184,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -4195,7 +4200,7 @@
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 2,
+   "available": 1,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -4212,7 +4217,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 224,
+   "available": 223,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4229,7 +4234,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 180,
+   "available": 178,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4246,7 +4251,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 64,
+   "available": 62,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4263,7 +4268,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 292,
+   "available": 290,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4433,7 +4438,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 289,
+   "available": 287,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4467,7 +4472,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 116,
+   "available": 112,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -4518,7 +4523,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 300,
+   "available": 296,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4535,7 +4540,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 252,
+   "available": 250,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4569,7 +4574,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 250,
+   "available": 249,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4620,7 +4625,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 246,
+   "available": 239,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4688,7 +4693,7 @@
    "venue": "narodno"
   },
   "narodno:6416": {
-   "available": 151,
+   "available": 149,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6416",
    "extra": {
     "repid": "6416"
@@ -4722,7 +4727,7 @@
    "venue": "narodno"
   },
   "narodno:6418": {
-   "available": 247,
+   "available": 245,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6418",
    "extra": {
     "repid": "6418"
@@ -4807,7 +4812,7 @@
    "venue": "narodno"
   },
   "narodno:6423": {
-   "available": 184,
+   "available": 182,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6423",
    "extra": {
     "repid": "6423"
@@ -4824,7 +4829,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 55,
+   "available": 53,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4841,7 +4846,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 79,
+   "available": 77,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
@@ -4858,7 +4863,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 223,
+   "available": 221,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -6665,24 +6670,6 @@
    "url": "https://tickets.rs/event/magla_bend_28520",
    "venue": "sava_centar"
   },
-  "sava_centar:27077": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/toma_zdravkovic_koncert_secanja_28522",
-   "extra": {
-    "end_date": "2026-09-30",
-    "event_status": ""
-   },
-   "price": "od 2550 RSD",
-   "sales_start": null,
-   "source_id": "27077",
-   "stage": "",
-   "start": "2026-09-30T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "TOMA ZDRAVKOVIĆ - KONCERT SEĆANJA",
-   "url": "https://tickets.rs/event/toma_zdravkovic_koncert_secanja_28522",
-   "venue": "sava_centar"
-  },
   "sava_centar:27109": {
    "available": null,
    "buy_url": "https://tickets.rs/event/bajaga_instruktori_28554",
@@ -6821,7 +6808,7 @@
    "source_id": "1253",
    "stage": "Велика сцена",
    "start": "2026-10-02T19:30:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Владимира Лазића",
    "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
    "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
@@ -7176,6 +7163,28 @@
    "remind_at": [],
    "source": "recurring",
    "venue": "narodno"
+  },
+  {
+   "all_day": false,
+   "at": "2026-11-23T00:00:00+01:00",
+   "id": "356771dc",
+   "link": "https://www.narodnopozoriste.rs/repertoar",
+   "note": "next month's tickets go on sale",
+   "remind_at": [
+    "2026-11-21T08:00:00+01:00",
+    "2026-11-22T08:00:00+01:00"
+   ],
+   "source": "recurring",
+   "venue": "narodno"
+  },
+  {
+   "all_day": true,
+   "at": "2026-11-23T00:00:00+01:00",
+   "id": "ffbaa0b6",
+   "note": "next month's tickets go on sale",
+   "remind_at": [],
+   "source": "recurring",
+   "venue": "narodno"
   }
  ],
  "season": {
@@ -7184,103 +7193,30 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-09-25T12:08:05+02:00",
-    "out": true
-   },
-   "kolarac": {
     "out": false
    },
-   "madlenianum": {
-    "out": true
-   },
-   "madlenianum_tickets": {
-    "checked": "2026-09-24T08:03:52+02:00",
-    "out": true
-   },
-   "narodno": {
-    "out": true
-   },
-   "sava_centar": {
-    "out": true
-   },
-   "terazije": {
-    "checked": "2026-09-24T22:23:00+02:00",
-    "out": true
-   }
-  },
-  "month": "2026-10",
-  "released": {
-   "jdp": {
-    "after": "2026-09-25T12:08:05+02:00",
-    "by": "2026-09-25T17:47:32+02:00"
-   },
-   "madlenianum_tickets": {
-    "after": "2026-09-24T08:03:52+02:00",
-    "by": "2026-09-24T13:37:37+02:00"
-   },
-   "terazije": {
-    "after": "2026-09-24T22:23:00+02:00",
-    "by": "2026-09-25T01:50:54+02:00"
-   }
-  },
-  "reported": {
-   "bdp": {
-    "buyable": 14,
-    "listed": 15,
-    "not_yet": 1,
-    "sold_out": 0,
-    "unknown": 0
-   },
-   "jdp": {
-    "buyable": 27,
-    "listed": 36,
-    "not_yet": 0,
-    "sold_out": 9,
-    "unknown": 0
-   },
    "kolarac": {
-    "buyable": 1,
-    "listed": 1,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 0
+    "out": true
    },
    "madlenianum": {
-    "buyable": 0,
-    "listed": 3,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 3
+    "out": true
    },
    "madlenianum_tickets": {
-    "buyable": 8,
-    "listed": 8,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 0
+    "out": true
    },
    "narodno": {
-    "buyable": 40,
-    "listed": 43,
-    "not_yet": 2,
-    "sold_out": 1,
-    "unknown": 0
+    "out": true
    },
    "sava_centar": {
-    "buyable": 53,
-    "listed": 54,
-    "not_yet": 0,
-    "sold_out": 1,
-    "unknown": 0
+    "out": true
    },
    "terazije": {
-    "buyable": 18,
-    "listed": 18,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 0
+    "out": true
    }
-  }
+  },
+  "month": "2026-11",
+  "released": {},
+  "reported": {}
  },
  "telegram_offset": 597987113,
  "watch_imported": [],
