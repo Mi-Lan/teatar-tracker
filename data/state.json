@@ -53,11 +53,19 @@
    "nikolaj kuznjecov"
   ],
   "madlenianum": [
+   "carmen suite bolero",
+   "cvrcak i mrav",
+   "feliks i doris",
    "gospodin u cizmama od dima",
    "ivica i marica",
    "ja ema",
+   "kazanova protiv don zuana",
    "pluca",
+   "posle pada",
+   "staklena menazerija",
    "the belgrade dixieland orchestra",
+   "tvoje tajno oruzje u borbi protiv neukrotivog celulita",
+   "vesela udovica",
    "x y 0"
   ],
   "madlenianum_tickets": [
@@ -600,6 +608,22 @@
    "ever_on_sale": false,
    "first_seen": "2026-10-01T00:58:47+02:00"
   },
+  "madlenianum:carmen-suite-bolero-202610131930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:cvrcak-i-mrav-202610061000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:cvrcak-i-mrav-202610061200": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:feliks-i-doris-202610142000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
   "madlenianum:gospodin-u-cizmama-od-dima-202609301930": {
    "ever_on_sale": false,
    "first_seen": "2026-09-25T17:47:32+02:00"
@@ -624,9 +648,37 @@
    "ever_on_sale": false,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
+  "madlenianum:kazanova-protiv-don-zuana-202610092000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
   "madlenianum:pluca-202610052000": {
    "ever_on_sale": false,
    "first_seen": "2026-10-01T00:58:47+02:00"
+  },
+  "madlenianum:posle-pada-202610311930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:posle-pada-202611021930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:posle-pada-202611031930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:staklena-menazerija-202610232000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202610212000": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:vesela-udovica-202610121930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-01T04:00:45+02:00"
   },
   "madlenianum:x-y-0-0-202610042000": {
    "ever_on_sale": false,
@@ -1592,10 +1644,21 @@
   "new_show:jdp:202610302030-mama": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610312000-putujuce-pozoriste-sopalovic": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum:belgrade-dixieland-orchestra-202610012000": "2026-10-01T00:58:47+02:00",
+  "new_show:madlenianum:carmen-suite-bolero-202610131930": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:cvrcak-i-mrav-202610061000": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:cvrcak-i-mrav-202610061200": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:feliks-i-doris-202610142000": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:gospodin-u-cizmama-od-dima-202609301930": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum:gospodin-u-cizmama-od-dima-202611101930": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum:ivica-i-marica-202610041100": "2026-10-01T00:58:47+02:00",
+  "new_show:madlenianum:kazanova-protiv-don-zuana-202610092000": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:pluca-202610052000": "2026-10-01T00:58:47+02:00",
+  "new_show:madlenianum:posle-pada-202610311930": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:posle-pada-202611021930": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:posle-pada-202611031930": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:staklena-menazerija-202610232000": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202610212000": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:vesela-udovica-202610121930": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:x-y-0-0-202610042000": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum_tickets:27217": "2026-09-24T13:37:37+02:00",
   "new_show:madlenianum_tickets:27218": "2026-09-24T13:37:37+02:00",
@@ -3213,6 +3276,66 @@
    "url": "https://operatheatremadlenianum.com/belgrade-dixieland-orchestra",
    "venue": "madlenianum"
   },
+  "madlenianum:carmen-suite-bolero-202610131930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "carmen-suite-bolero-202610131930",
+   "stage": "",
+   "start": "2026-10-13T19:30:00+02:00",
+   "status": "unknown",
+   "subtitle": "Ž. Bize / R. Ščedrin / M. Ravel",
+   "title": "CARMEN SUITE & BOLERO",
+   "url": "https://operatheatremadlenianum.com/carmen-suite-bolero",
+   "venue": "madlenianum"
+  },
+  "madlenianum:cvrcak-i-mrav-202610061000": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "cvrcak-i-mrav-202610061000",
+   "stage": "",
+   "start": "2026-10-06T10:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Visoko C",
+   "title": "CVRČAK I MRAV",
+   "url": "https://operatheatremadlenianum.com/cvrcak-i-mrav",
+   "venue": "madlenianum"
+  },
+  "madlenianum:cvrcak-i-mrav-202610061200": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "cvrcak-i-mrav-202610061200",
+   "stage": "",
+   "start": "2026-10-06T12:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Visoko C",
+   "title": "CVRČAK I MRAV",
+   "url": "https://operatheatremadlenianum.com/cvrcak-i-mrav",
+   "venue": "madlenianum"
+  },
+  "madlenianum:feliks-i-doris-202610142000": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "feliks-i-doris-202610142000",
+   "stage": "",
+   "start": "2026-10-14T20:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Bil Menhof",
+   "title": "FELIKS I DORIS",
+   "url": "https://operatheatremadlenianum.com/feliks-i-doris",
+   "venue": "madlenianum"
+  },
   "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3273,6 +3396,21 @@
    "url": "https://operatheatremadlenianum.com/ja-ema",
    "venue": "madlenianum"
   },
+  "madlenianum:kazanova-protiv-don-zuana-202610092000": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "kazanova-protiv-don-zuana-202610092000",
+   "stage": "",
+   "start": "2026-10-09T20:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Miodrag Ilić",
+   "title": "KAZANOVA PROTIV DON ŽUANA",
+   "url": "https://operatheatremadlenianum.com/kazanova-protiv-don-zuana",
+   "venue": "madlenianum"
+  },
   "madlenianum:pluca-202610052000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3286,6 +3424,96 @@
    "subtitle": "Dankan Mekmilan",
    "title": "PLUĆA",
    "url": "https://operatheatremadlenianum.com/pluca",
+   "venue": "madlenianum"
+  },
+  "madlenianum:posle-pada-202610311930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "posle-pada-202610311930",
+   "stage": "",
+   "start": "2026-10-31T19:30:00+01:00",
+   "status": "unknown",
+   "subtitle": "Artur Miler",
+   "title": "POSLE PADA",
+   "url": "https://operatheatremadlenianum.com/posle-pada",
+   "venue": "madlenianum"
+  },
+  "madlenianum:posle-pada-202611021930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "posle-pada-202611021930",
+   "stage": "",
+   "start": "2026-11-02T19:30:00+01:00",
+   "status": "unknown",
+   "subtitle": "Artur Miler",
+   "title": "POSLE PADA",
+   "url": "https://operatheatremadlenianum.com/posle-pada",
+   "venue": "madlenianum"
+  },
+  "madlenianum:posle-pada-202611031930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "posle-pada-202611031930",
+   "stage": "",
+   "start": "2026-11-03T19:30:00+01:00",
+   "status": "unknown",
+   "subtitle": "Artur Miler",
+   "title": "POSLE PADA",
+   "url": "https://operatheatremadlenianum.com/posle-pada",
+   "venue": "madlenianum"
+  },
+  "madlenianum:staklena-menazerija-202610232000": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "staklena-menazerija-202610232000",
+   "stage": "",
+   "start": "2026-10-23T20:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Tenesi Vilijams",
+   "title": "STAKLENA MENAŽERIJA",
+   "url": "https://operatheatremadlenianum.com/staklena-menazerija",
+   "venue": "madlenianum"
+  },
+  "madlenianum:tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202610212000": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202610212000",
+   "stage": "",
+   "start": "2026-10-21T20:00:00+02:00",
+   "status": "unknown",
+   "subtitle": "Injigo Ramires de Aro",
+   "title": "TVOJE TAJNO ORUŽJE U BORBI PROTIV NEUKROTIVOG CELULITA",
+   "url": "https://operatheatremadlenianum.com/tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita",
+   "venue": "madlenianum"
+  },
+  "madlenianum:vesela-udovica-202610121930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "vesela-udovica-202610121930",
+   "stage": "",
+   "start": "2026-10-12T19:30:00+02:00",
+   "status": "unknown",
+   "subtitle": "Franc Lehar",
+   "title": "VESELA UDOVICA",
+   "url": "https://operatheatremadlenianum.com/vesela-udovica",
    "venue": "madlenianum"
   },
   "madlenianum:x-y-0-0-202610042000": {
@@ -4200,7 +4428,7 @@
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 1,
+   "available": 2,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -4455,7 +4683,7 @@
    "venue": "narodno"
   },
   "narodno:6400": {
-   "available": 219,
+   "available": 217,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6400",
    "extra": {
     "repid": "6400"
@@ -4693,7 +4921,7 @@
    "venue": "narodno"
   },
   "narodno:6416": {
-   "available": 149,
+   "available": 147,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6416",
    "extra": {
     "repid": "6416"
