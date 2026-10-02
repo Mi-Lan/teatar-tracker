@@ -1698,26 +1698,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610021930-svaka-ptica-svome-jatu": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/99b156121c41",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.com/events/99b156121c41",
-    "sixtix": "99b156121c41"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610021930-svaka-ptica-svome-jatu",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-02T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Свака птица своме јату",
-   "url": "https://www.bdp.rs/cir/predstave-cir/svaka-ptica-svome-jatu",
-   "venue": "bdp"
-  },
   "bdp:202610031930-vise-od-igre-1-2-3-deo": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/ee571ee9da0c",
@@ -2551,37 +2531,18 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610022030-preobrazaj": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1213",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1213"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610022030-preobrazaj",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-02T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Franc Kafka",
-   "title": "Preobražaj",
-   "url": "https://www.jdp.rs/performance/preobrazaj/",
-   "venue": "jdp"
-  },
   "jdp:202610032000-edip": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1188",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1188"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610032000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-03T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -2603,24 +2564,6 @@
    "subtitle": "Ivo Andrić",
    "title": "Gospođica",
    "url": "https://www.jdp.rs/performance/gospodjica/",
-   "venue": "jdp"
-  },
-  "jdp:202610042030-audijencija": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1214",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1214"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610042030-audijencija",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-04T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Vaclav Havel",
-   "title": "Audijencija",
-   "url": "https://www.jdp.rs/performance/audijencija/",
    "venue": "jdp"
   },
   "jdp:202610062000-garderober": {
@@ -3313,21 +3256,6 @@
    "url": "https://operatheatremadlenianum.com/ivica-i-marica",
    "venue": "madlenianum"
   },
-  "madlenianum:ja-ema-202610021930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "ja-ema-202610021930",
-   "stage": "",
-   "start": "2026-10-02T19:30:00+02:00",
-   "status": "unknown",
-   "subtitle": "Tatjana Mandić Rigonat",
-   "title": "JA, EMA",
-   "url": "https://operatheatremadlenianum.com/ja-ema",
-   "venue": "madlenianum"
-  },
   "madlenianum:ja-ema-202610101930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3643,24 +3571,6 @@
    "url": "https://tickets.rs/event/staklena_menadzerija_28672",
    "venue": "madlenianum_tickets"
   },
-  "madlenianum_tickets:27300": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/ja_ema_28745",
-   "extra": {
-    "end_date": "2026-10-02",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1900 RSD",
-   "sales_start": null,
-   "source_id": "27300",
-   "stage": "",
-   "start": "2026-10-02T19:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "JA EMA",
-   "url": "https://tickets.rs/event/ja_ema_28745",
-   "venue": "madlenianum_tickets"
-  },
   "narodno:6344": {
    "available": 287,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6344",
@@ -3781,7 +3691,7 @@
    "venue": "narodno"
   },
   "narodno:6351": {
-   "available": 272,
+   "available": 273,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6351",
    "extra": {
     "repid": "6351"
@@ -3832,7 +3742,7 @@
    "venue": "narodno"
   },
   "narodno:6354": {
-   "available": 262,
+   "available": 257,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6354",
    "extra": {
     "repid": "6354"
@@ -3951,7 +3861,7 @@
    "venue": "narodno"
   },
   "narodno:6361": {
-   "available": 234,
+   "available": 233,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6361",
    "extra": {
     "repid": "6361"
@@ -4002,7 +3912,7 @@
    "venue": "narodno"
   },
   "narodno:6364": {
-   "available": 279,
+   "available": 276,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6364",
    "extra": {
     "repid": "6364"
@@ -4019,7 +3929,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 226,
+   "available": 224,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -4036,7 +3946,7 @@
    "venue": "narodno"
   },
   "narodno:6366": {
-   "available": 224,
+   "available": 221,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
    "extra": {
     "repid": "6366"
@@ -4087,7 +3997,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 111,
+   "available": 107,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -4257,7 +4167,7 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 143,
+   "available": 137,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
     "repid": "6379"
@@ -4291,7 +4201,7 @@
    "venue": "narodno"
   },
   "narodno:6381": {
-   "available": 15,
+   "available": 9,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6381",
    "extra": {
     "repid": "6381"
@@ -4308,7 +4218,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 151,
+   "available": 150,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -4342,7 +4252,7 @@
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 18,
+   "available": 5,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -4359,7 +4269,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 214,
+   "available": 211,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4376,7 +4286,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 183,
+   "available": 178,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4393,7 +4303,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 75,
+   "available": 77,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4410,7 +4320,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 238,
+   "available": 235,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4427,7 +4337,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 17,
+   "available": 15,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -4478,7 +4388,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 190,
+   "available": 188,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4563,7 +4473,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 44,
+   "available": 41,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -4597,7 +4507,7 @@
    "venue": "narodno"
   },
   "narodno:6400": {
-   "available": 181,
+   "available": 178,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6400",
    "extra": {
     "repid": "6400"
@@ -4614,7 +4524,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 99,
+   "available": 93,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -4648,7 +4558,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 248,
+   "available": 244,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4665,7 +4575,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 288,
+   "available": 286,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4699,7 +4609,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 273,
+   "available": 271,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4716,7 +4626,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 232,
+   "available": 227,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4733,7 +4643,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 320,
+   "available": 316,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4784,7 +4694,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 345,
+   "available": 344,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4801,8 +4711,8 @@
    "venue": "narodno"
   },
   "narodno:6414": {
-   "available": 138,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6414",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6414"
    },
@@ -4811,14 +4721,14 @@
    "source_id": "6414",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-02T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "по мотивима прозе Борисава Станковића",
    "title": "Божји људи",
    "url": "https://www.narodnopozoriste.rs/predstave/bozji-ljudi?m=x66be047fd8b8964d6b14e3e9fe11e199",
    "venue": "narodno"
   },
   "narodno:6415": {
-   "available": 216,
+   "available": 208,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6415",
    "extra": {
     "repid": "6415"
@@ -4835,7 +4745,7 @@
    "venue": "narodno"
   },
   "narodno:6416": {
-   "available": 135,
+   "available": 134,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6416",
    "extra": {
     "repid": "6416"
@@ -4903,7 +4813,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 144,
+   "available": 142,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4971,7 +4881,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 35,
+   "available": 29,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4988,7 +4898,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 52,
+   "available": 46,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
@@ -5022,7 +4932,7 @@
    "venue": "narodno"
   },
   "narodno:6427": {
-   "available": 247,
+   "available": 246,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
    "extra": {
     "repid": "6427"
@@ -5039,7 +4949,7 @@
    "venue": "narodno"
   },
   "narodno:6428": {
-   "available": 249,
+   "available": 246,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
    "extra": {
     "repid": "6428"
@@ -5056,7 +4966,7 @@
    "venue": "narodno"
   },
   "narodno:6429": {
-   "available": 213,
+   "available": 212,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6429",
    "extra": {
     "repid": "6429"
@@ -5073,7 +4983,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 156,
+   "available": 154,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -5124,7 +5034,7 @@
    "venue": "narodno"
   },
   "narodno:6433": {
-   "available": 269,
+   "available": 268,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6433",
    "extra": {
     "repid": "6433"
@@ -5141,7 +5051,7 @@
    "venue": "narodno"
   },
   "narodno:6434": {
-   "available": 275,
+   "available": 274,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6434",
    "extra": {
     "repid": "6434"
@@ -6000,24 +5910,6 @@
    "subtitle": "",
    "title": "FEST 2026 - LEGENDA O BELOJ ZMIJI",
    "url": "https://tickets.rs/event/fest_2026_legenda_o_beloj_zmiji_28398",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26958": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_svecano_otvaranje_zlatni_rez_42_djeca_kozare_28403",
-   "extra": {
-    "end_date": "2026-10-02",
-    "event_status": ""
-   },
-   "price": "od 1500 RSD",
-   "sales_start": null,
-   "source_id": "26958",
-   "stage": "Plava dvorana",
-   "start": "2026-10-02T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - SVEČANO OTVARANJE - ZLATNI REZ '42: DJECA KOZARE",
-   "url": "https://tickets.rs/event/fest_2026_svecano_otvaranje_zlatni_rez_42_djeca_kozare_28403",
    "venue": "sava_centar"
   },
   "sava_centar:26959": {
@@ -6919,24 +6811,6 @@
    "title": "ŽELJKO SAMARDŽIĆ",
    "url": "https://tickets.rs/event/zeljko_samardzic_28753",
    "venue": "sava_centar"
-  },
-  "terazije:1253": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1253",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1253"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1253",
-   "stage": "Велика сцена",
-   "start": "2026-10-02T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Владимира Лазића",
-   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
-   "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
-   "venue": "terazije"
   },
   "terazije:1254": {
    "available": null,
