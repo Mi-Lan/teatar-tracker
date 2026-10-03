@@ -1698,25 +1698,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610031930-vise-od-igre-1-2-3-deo": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.com/events/ee571ee9da0c"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610031930-vise-od-igre-1-2-3-deo",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-03T19:30:00+02:00",
-   "status": "cancelled",
-   "subtitle": "",
-   "title": "Више од игре 1./2./3. део",
-   "url": "https://www.bdp.rs/cir/predstave-cir/vishe-od-igre-1-2-3-deo",
-   "venue": "bdp"
-  },
   "bdp:202610041930-1984": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/c3f372a73818",
@@ -2529,23 +2510,6 @@
    "title": "Црно злато",
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
-  },
-  "jdp:202610032000-edip": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610032000-edip",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-03T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Sofokle",
-   "title": "Edip",
-   "url": "https://www.jdp.rs/performance/edip/",
-   "venue": "jdp"
   },
   "jdp:202610042000-gospodjica": {
    "available": null,
@@ -3605,7 +3569,7 @@
    "venue": "narodno"
   },
   "narodno:6346": {
-   "available": 296,
+   "available": 294,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6346",
    "extra": {
     "repid": "6346"
@@ -3673,7 +3637,7 @@
    "venue": "narodno"
   },
   "narodno:6350": {
-   "available": 286,
+   "available": 284,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6350",
    "extra": {
     "repid": "6350"
@@ -3707,7 +3671,7 @@
    "venue": "narodno"
   },
   "narodno:6352": {
-   "available": 298,
+   "available": 296,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6352",
    "extra": {
     "repid": "6352"
@@ -3758,7 +3722,7 @@
    "venue": "narodno"
   },
   "narodno:6355": {
-   "available": 244,
+   "available": 240,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6355",
    "extra": {
     "repid": "6355"
@@ -3826,7 +3790,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 213,
+   "available": 211,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -3860,7 +3824,7 @@
    "venue": "narodno"
   },
   "narodno:6361": {
-   "available": 233,
+   "available": 231,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6361",
    "extra": {
     "repid": "6361"
@@ -3962,7 +3926,7 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": 148,
+   "available": 144,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
     "repid": "6367"
@@ -4166,7 +4130,7 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 135,
+   "available": 132,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
     "repid": "6379"
@@ -4197,23 +4161,6 @@
    "subtitle": "опера Ђузепа Вердија",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
-   "venue": "narodno"
-  },
-  "narodno:6381": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6381"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6381",
-   "stage": "Велика сцена",
-   "start": "2026-10-03T19:00:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "балет на музику академика Светислава Божића · Премијера",
-   "title": "Васкрсле сени",
-   "url": "https://www.narodnopozoriste.rs/predstave/vaskrsle-seni?m=x5597a540cf538c00d89204a61ea00984",
    "venue": "narodno"
   },
   "narodno:6382": {
@@ -4302,7 +4249,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 69,
+   "available": 67,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4336,7 +4283,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 10,
+   "available": 9,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -4472,7 +4419,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 29,
+   "available": 28,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -4489,7 +4436,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 278,
+   "available": 276,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4506,7 +4453,7 @@
    "venue": "narodno"
   },
   "narodno:6400": {
-   "available": 156,
+   "available": 152,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6400",
    "extra": {
     "repid": "6400"
@@ -4523,7 +4470,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 69,
+   "available": 63,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -4608,7 +4555,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 271,
+   "available": 270,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4659,7 +4606,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 317,
+   "available": 315,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -4710,7 +4657,7 @@
    "venue": "narodno"
   },
   "narodno:6415": {
-   "available": 197,
+   "available": 194,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6415",
    "extra": {
     "repid": "6415"
@@ -4744,7 +4691,7 @@
    "venue": "narodno"
   },
   "narodno:6417": {
-   "available": 162,
+   "available": 160,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6417",
    "extra": {
     "repid": "6417"
@@ -4795,7 +4742,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 141,
+   "available": 139,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4863,7 +4810,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 28,
+   "available": 26,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -5876,24 +5823,6 @@
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
    "venue": "sava_centar"
   },
-  "sava_centar:26960": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_zuta_kravata_28406",
-   "extra": {
-    "end_date": "2026-10-03",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26960",
-   "stage": "Plava dvorana",
-   "start": "2026-10-03T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - ŽUTA KRAVATA",
-   "url": "https://tickets.rs/event/fest_2026_zuta_kravata_28406",
-   "venue": "sava_centar"
-  },
   "sava_centar:26961": {
    "available": null,
    "buy_url": "https://tickets.rs/event/fest_2026_jedini_zivi_dzeparos_u_njujorku_28407",
@@ -6757,24 +6686,6 @@
    "title": "ŽELJKO SAMARDŽIĆ",
    "url": "https://tickets.rs/event/zeljko_samardzic_28753",
    "venue": "sava_centar"
-  },
-  "terazije:1254": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1254",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1254"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1254",
-   "stage": "Велика сцена",
-   "start": "2026-10-03T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "ФАНТОМ ИЗ ОПЕРЕ",
-   "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
-   "venue": "terazije"
   },
   "terazije:1255": {
    "available": null,
