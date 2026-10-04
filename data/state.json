@@ -4011,7 +4011,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 105,
+   "available": 103,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -4164,7 +4164,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 127,
+   "available": 125,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -4470,7 +4470,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 63,
+   "available": 61,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -5821,24 +5821,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26961": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_jedini_zivi_dzeparos_u_njujorku_28407",
-   "extra": {
-    "end_date": "2026-10-03",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26961",
-   "stage": "Plava dvorana",
-   "start": "2026-10-03T22:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - JEDINI ŽIVI DŽEPAROŠ U NJUJORKU",
-   "url": "https://tickets.rs/event/fest_2026_jedini_zivi_dzeparos_u_njujorku_28407",
    "venue": "sava_centar"
   },
   "sava_centar:26962": {
