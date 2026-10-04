@@ -1698,26 +1698,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610041930-1984": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/c3f372a73818",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.com/events/c3f372a73818",
-    "sixtix": "c3f372a73818"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610041930-1984",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-04T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "1984",
-   "url": "https://www.bdp.rs/cir/predstave-cir/1984",
-   "venue": "bdp"
-  },
   "bdp:202610051930-pra-faust": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/18ef657fccdd",
@@ -2510,24 +2490,6 @@
    "title": "Црно злато",
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
-  },
-  "jdp:202610042000-gospodjica": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1189",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1189"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610042000-gospodjica",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-04T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Ivo Andrić",
-   "title": "Gospođica",
-   "url": "https://www.jdp.rs/performance/gospodjica/",
-   "venue": "jdp"
   },
   "jdp:202610062000-garderober": {
    "available": null,
@@ -3324,21 +3286,6 @@
    "url": "https://operatheatremadlenianum.com/tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita",
    "venue": "madlenianum"
   },
-  "madlenianum:x-y-0-0-202610042000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "x-y-0-0-202610042000",
-   "stage": "",
-   "start": "2026-10-04T20:00:00+02:00",
-   "status": "unknown",
-   "subtitle": "Borislav Pekić",
-   "title": "X + Y = 0",
-   "url": "https://operatheatremadlenianum.com/x-y-0-0",
-   "venue": "madlenianum"
-  },
   "madlenianum_tickets:26309": {
    "available": null,
    "buy_url": "https://tickets.rs/event/the_sassoon_experience_27733",
@@ -3409,24 +3356,6 @@
    "subtitle": "",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27221": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/xy0_28667",
-   "extra": {
-    "end_date": "2026-10-04",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27221",
-   "stage": "",
-   "start": "2026-10-04T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "X+Y=0",
-   "url": "https://tickets.rs/event/xy0_28667",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27222": {
@@ -3537,7 +3466,7 @@
    "venue": "narodno"
   },
   "narodno:6345": {
-   "available": 331,
+   "available": 329,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6345",
    "extra": {
     "repid": "6345"
@@ -3622,7 +3551,7 @@
    "venue": "narodno"
   },
   "narodno:6350": {
-   "available": 282,
+   "available": 279,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6350",
    "extra": {
     "repid": "6350"
@@ -3945,7 +3874,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 99,
+   "available": 96,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3996,7 +3925,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 101,
+   "available": 103,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -4149,7 +4078,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 123,
+   "available": 118,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -4200,7 +4129,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 196,
+   "available": 193,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4217,7 +4146,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 164,
+   "available": 162,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4234,7 +4163,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 62,
+   "available": 59,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4437,25 +4366,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6400": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6400"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6400",
-   "stage": "Велика сцена",
-   "start": "2026-10-04T19:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Синише Ковачевића",
-   "title": "Године врана",
-   "url": "https://www.narodnopozoriste.rs/predstave/godine-vrana?m=xf834e328ad60cf4b52088b49d8193374",
-   "venue": "narodno"
-  },
   "narodno:6401": {
-   "available": 54,
+   "available": 52,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -4489,7 +4401,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 228,
+   "available": 222,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4523,7 +4435,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 234,
+   "available": 230,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4540,7 +4452,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 269,
+   "available": 264,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4642,8 +4554,8 @@
    "venue": "narodno"
   },
   "narodno:6415": {
-   "available": 184,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6415",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6415"
    },
@@ -4652,14 +4564,14 @@
    "source_id": "6415",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-04T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драматизација Ђорђа Косића по роману Лоренца Маронеа",
    "title": "Ситнице које живот значе",
    "url": "https://www.narodnopozoriste.rs/predstave/sitnice-koje-zivot-znace?m=xc110b9c8e754df1caa8d82ba46ae6f45",
    "venue": "narodno"
   },
   "narodno:6416": {
-   "available": 124,
+   "available": 123,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6416",
    "extra": {
     "repid": "6416"
@@ -4693,7 +4605,7 @@
    "venue": "narodno"
   },
   "narodno:6418": {
-   "available": 231,
+   "available": 229,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6418",
    "extra": {
     "repid": "6418"
@@ -4761,7 +4673,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 248,
+   "available": 244,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4795,7 +4707,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 20,
+   "available": 18,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4812,7 +4724,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 33,
+   "available": 28,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
@@ -4863,7 +4775,7 @@
    "venue": "narodno"
   },
   "narodno:6428": {
-   "available": 245,
+   "available": 244,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
    "extra": {
     "repid": "6428"
@@ -4897,7 +4809,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 150,
+   "available": 148,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -5808,24 +5720,6 @@
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
    "venue": "sava_centar"
   },
-  "sava_centar:26965": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_pobuna_28411",
-   "extra": {
-    "end_date": "2026-10-04",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26965",
-   "stage": "Plava dvorana",
-   "start": "2026-10-04T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - POBUNA",
-   "url": "https://tickets.rs/event/fest_2026_pobuna_28411",
-   "venue": "sava_centar"
-  },
   "sava_centar:26966": {
    "available": null,
    "buy_url": "https://tickets.rs/event/fest_2026_bunker_28412",
@@ -6599,24 +6493,6 @@
    "title": "ŽELJKO SAMARDŽIĆ",
    "url": "https://tickets.rs/event/zeljko_samardzic_28753",
    "venue": "sava_centar"
-  },
-  "terazije:1255": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1255",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1255"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1255",
-   "stage": "Велика сцена",
-   "start": "2026-10-04T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "ФАНТОМ ИЗ ОПЕРЕ",
-   "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
-   "venue": "terazije"
   },
   "terazije:1256": {
    "available": null,
