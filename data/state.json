@@ -1705,26 +1705,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610051930-pra-faust": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/18ef657fccdd",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.com/events/18ef657fccdd",
-    "sixtix": "18ef657fccdd"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610051930-pra-faust",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-05T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "(Пра)фауст",
-   "url": "https://www.bdp.rs/cir/predstave-cir/pra-faust",
-   "venue": "bdp"
-  },
   "bdp:202610061930-kralj-ibi": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/31cb85eb3349",
@@ -3203,21 +3183,6 @@
    "url": "https://operatheatremadlenianum.com/kazanova-protiv-don-zuana",
    "venue": "madlenianum"
   },
-  "madlenianum:pluca-202610052000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "pluca-202610052000",
-   "stage": "",
-   "start": "2026-10-05T20:00:00+02:00",
-   "status": "unknown",
-   "subtitle": "Dankan Mekmilan",
-   "title": "PLUĆA",
-   "url": "https://operatheatremadlenianum.com/pluca",
-   "venue": "madlenianum"
-  },
   "madlenianum:posle-pada-202610311930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3365,24 +3330,6 @@
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
    "venue": "madlenianum_tickets"
   },
-  "madlenianum_tickets:27222": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/pluca_28668",
-   "extra": {
-    "end_date": "2026-10-05",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27222",
-   "stage": "",
-   "start": "2026-10-05T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "PLUĆA",
-   "url": "https://tickets.rs/event/pluca_28668",
-   "venue": "madlenianum_tickets"
-  },
   "madlenianum_tickets:27223": {
    "available": null,
    "buy_url": "https://tickets.rs/event/kazanova_protiv_don_zuana_28669",
@@ -3456,7 +3403,7 @@
    "venue": "madlenianum_tickets"
   },
   "narodno:6344": {
-   "available": 285,
+   "available": 272,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6344",
    "extra": {
     "repid": "6344"
@@ -3541,7 +3488,7 @@
    "venue": "narodno"
   },
   "narodno:6349": {
-   "available": 252,
+   "available": 246,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6349",
    "extra": {
     "repid": "6349"
@@ -3592,7 +3539,7 @@
    "venue": "narodno"
   },
   "narodno:6352": {
-   "available": 296,
+   "available": 293,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6352",
    "extra": {
     "repid": "6352"
@@ -3711,7 +3658,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 211,
+   "available": 209,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -3779,7 +3726,7 @@
    "venue": "narodno"
   },
   "narodno:6363": {
-   "available": 103,
+   "available": 101,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6363",
    "extra": {
     "repid": "6363"
@@ -3796,7 +3743,7 @@
    "venue": "narodno"
   },
   "narodno:6364": {
-   "available": 270,
+   "available": 267,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6364",
    "extra": {
     "repid": "6364"
@@ -3813,7 +3760,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 220,
+   "available": 217,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -3881,7 +3828,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 96,
+   "available": 95,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3898,7 +3845,7 @@
    "venue": "narodno"
   },
   "narodno:6370": {
-   "available": 294,
+   "available": 286,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
    "extra": {
     "repid": "6370"
@@ -3949,7 +3896,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 247,
+   "available": 242,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -4051,7 +3998,7 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 127,
+   "available": 118,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
     "repid": "6379"
@@ -4084,25 +4031,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
    "venue": "narodno"
   },
-  "narodno:6382": {
-   "available": 84,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
-   "extra": {
-    "repid": "6382"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6382",
-   "stage": "Велика сцена",
-   "start": "2026-10-05T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "балет на музику академика Светислава Божића",
-   "title": "Васкрсле сени",
-   "url": "https://www.narodnopozoriste.rs/predstave/vaskrsle-seni?m=xc679787098a1868440c050e5fccfa77c",
-   "venue": "narodno"
-  },
   "narodno:6383": {
-   "available": 23,
+   "available": 22,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6383",
    "extra": {
     "repid": "6383"
@@ -4153,7 +4083,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 163,
+   "available": 158,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4187,7 +4117,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 235,
+   "available": 233,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4221,7 +4151,7 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 14,
+   "available": 11,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
@@ -4272,8 +4202,8 @@
    "venue": "narodno"
   },
   "narodno:6393": {
-   "available": 1,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6393",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6393"
    },
@@ -4282,7 +4212,7 @@
    "source_id": "6393",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-17T17:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=xeb2d1b7a10bb4e028f75fbc2efda534e",
@@ -4340,7 +4270,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 20,
+   "available": 17,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -4357,7 +4287,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 274,
+   "available": 272,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4374,7 +4304,7 @@
    "venue": "narodno"
   },
   "narodno:6401": {
-   "available": 43,
+   "available": 38,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
    "extra": {
     "repid": "6401"
@@ -4391,7 +4321,7 @@
    "venue": "narodno"
   },
   "narodno:6402": {
-   "available": 123,
+   "available": 121,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6402",
    "extra": {
     "repid": "6402"
@@ -4408,7 +4338,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 224,
+   "available": 216,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4425,7 +4355,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 265,
+   "available": 255,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4459,7 +4389,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 277,
+   "available": 273,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4476,7 +4406,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 217,
+   "available": 216,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4493,7 +4423,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 328,
+   "available": 325,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4527,7 +4457,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 188,
+   "available": 186,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4544,7 +4474,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 337,
+   "available": 335,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4560,25 +4490,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
    "venue": "narodno"
   },
-  "narodno:6416": {
-   "available": 103,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6416",
-   "extra": {
-    "repid": "6416"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6416",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-05T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "комедија Ж. Б. П. Молијера",
-   "title": "Уображени болесник",
-   "url": "https://www.narodnopozoriste.rs/predstave/uobrazeni-bolesnik?m=x47eb9132802deba9801af8fb5bf3bc86",
-   "venue": "narodno"
-  },
   "narodno:6417": {
-   "available": 152,
+   "available": 150,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6417",
    "extra": {
     "repid": "6417"
@@ -4646,7 +4559,7 @@
    "venue": "narodno"
   },
   "narodno:6421": {
-   "available": 261,
+   "available": 259,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
    "extra": {
     "repid": "6421"
@@ -4663,7 +4576,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 242,
+   "available": 240,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4697,7 +4610,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 17,
+   "available": 9,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4714,7 +4627,7 @@
    "venue": "narodno"
   },
   "narodno:6425": {
-   "available": 19,
+   "available": 6,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
@@ -4731,7 +4644,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 215,
+   "available": 213,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -4799,7 +4712,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 146,
+   "available": 144,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -4816,7 +4729,7 @@
    "venue": "narodno"
   },
   "narodno:6431": {
-   "available": 52,
+   "available": 51,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
@@ -5708,60 +5621,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26969": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_oni_koje_volimo_28415",
-   "extra": {
-    "end_date": "2026-10-05",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26969",
-   "stage": "Plava dvorana",
-   "start": "2026-10-05T16:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - ONI KOJE VOLIMO",
-   "url": "https://tickets.rs/event/fest_2026_oni_koje_volimo_28415",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26970": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_talenat_za_ubistvo_28416",
-   "extra": {
-    "end_date": "2026-10-05",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26970",
-   "stage": "Plava dvorana",
-   "start": "2026-10-05T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - TALENAT ZA UBISTVO",
-   "url": "https://tickets.rs/event/fest_2026_talenat_za_ubistvo_28416",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26971": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_papirni_tigar_28417",
-   "extra": {
-    "end_date": "2026-10-05",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26971",
-   "stage": "Plava dvorana",
-   "start": "2026-10-05T21:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - PAPIRNI TIGAR",
-   "url": "https://tickets.rs/event/fest_2026_papirni_tigar_28417",
    "venue": "sava_centar"
   },
   "sava_centar:26972": {
