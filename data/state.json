@@ -226,7 +226,7 @@
    "zona zamfirova"
   ]
  },
- "last_digest": "2026-09-28",
+ "last_digest": "2026-10-05",
  "meta": {
   "bdp:202609231930-filomena-maturano-czk-tivat": {
    "ever_on_sale": true,
@@ -3772,7 +3772,7 @@
    "venue": "narodno"
   },
   "narodno:6363": {
-   "available": 105,
+   "available": 103,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6363",
    "extra": {
     "repid": "6363"
@@ -4078,7 +4078,7 @@
    "venue": "narodno"
   },
   "narodno:6382": {
-   "available": 118,
+   "available": 116,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6382",
    "extra": {
     "repid": "6382"
@@ -4146,7 +4146,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 162,
+   "available": 160,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4214,7 +4214,7 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 17,
+   "available": 10,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
@@ -4469,7 +4469,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 209,
+   "available": 208,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4571,7 +4571,7 @@
    "venue": "narodno"
   },
   "narodno:6417": {
-   "available": 158,
+   "available": 157,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6417",
    "extra": {
     "repid": "6417"
