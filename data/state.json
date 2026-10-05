@@ -3534,7 +3534,7 @@
    "venue": "narodno"
   },
   "narodno:6349": {
-   "available": 254,
+   "available": 252,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6349",
    "extra": {
     "repid": "6349"
@@ -3636,7 +3636,7 @@
    "venue": "narodno"
   },
   "narodno:6355": {
-   "available": 240,
+   "available": 238,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6355",
    "extra": {
     "repid": "6355"
@@ -3806,7 +3806,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 222,
+   "available": 220,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -3959,7 +3959,7 @@
    "venue": "narodno"
   },
   "narodno:6374": {
-   "available": 231,
+   "available": 230,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6374",
    "extra": {
     "repid": "6374"
@@ -4129,7 +4129,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 193,
+   "available": 191,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4401,7 +4401,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 222,
+   "available": 220,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4469,7 +4469,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 211,
+   "available": 209,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4486,7 +4486,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 312,
+   "available": 311,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4551,23 +4551,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6415": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6415"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6415",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-04T20:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "драматизација Ђорђа Косића по роману Лоренца Маронеа",
-   "title": "Ситнице које живот значе",
-   "url": "https://www.narodnopozoriste.rs/predstave/sitnice-koje-zivot-znace?m=xc110b9c8e754df1caa8d82ba46ae6f45",
    "venue": "narodno"
   },
   "narodno:6416": {
@@ -4775,7 +4758,7 @@
    "venue": "narodno"
   },
   "narodno:6428": {
-   "available": 244,
+   "available": 245,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
    "extra": {
     "repid": "6428"
@@ -4809,7 +4792,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 148,
+   "available": 146,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -5718,24 +5701,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26966": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_bunker_28412",
-   "extra": {
-    "end_date": "2026-10-04",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26966",
-   "stage": "Plava dvorana",
-   "start": "2026-10-04T21:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - BUNKER",
-   "url": "https://tickets.rs/event/fest_2026_bunker_28412",
    "venue": "sava_centar"
   },
   "sava_centar:26967": {
