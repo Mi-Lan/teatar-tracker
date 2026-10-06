@@ -1705,26 +1705,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610061930-kralj-ibi": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/31cb85eb3349",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.com/events/31cb85eb3349",
-    "sixtix": "31cb85eb3349"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610061930-kralj-ibi",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-06T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Краљ Иби",
-   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
-   "venue": "bdp"
-  },
   "bdp:202610071930-kralj-ibi": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/ee3a19c4e1cf",
@@ -2478,24 +2458,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610062000-garderober": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1190",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1190"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610062000-garderober",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-06T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Ronald Harvud",
-   "title": "Garderober",
-   "url": "https://www.jdp.rs/en/performance/the-dresser/",
-   "venue": "jdp"
-  },
   "jdp:202610072000-narodni-poslanik": {
    "available": null,
    "buy_url": "",
@@ -3024,24 +2986,6 @@
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
    "venue": "jdp"
   },
-  "kolarac:24462": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/marija_gulegina_25864",
-   "extra": {
-    "end_date": "2026-10-06",
-    "event_status": "Otkazano uz povrat sredstava"
-   },
-   "price": "od 3300 RSD",
-   "sales_start": null,
-   "source_id": "24462",
-   "stage": "",
-   "start": "2026-10-06T20:00:00+02:00",
-   "status": "cancelled",
-   "subtitle": "",
-   "title": "MARIJA GULEGINA",
-   "url": "https://tickets.rs/event/marija_gulegina_25864",
-   "venue": "kolarac"
-  },
   "kolarac:26836": {
    "available": null,
    "buy_url": "https://tickets.rs/event/ekstravagancije_i_ludosti_28273",
@@ -3373,7 +3317,7 @@
    "venue": "madlenianum_tickets"
   },
   "narodno:6344": {
-   "available": 270,
+   "available": 272,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6344",
    "extra": {
     "repid": "6344"
@@ -3390,7 +3334,7 @@
    "venue": "narodno"
   },
   "narodno:6345": {
-   "available": 329,
+   "available": 323,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6345",
    "extra": {
     "repid": "6345"
@@ -3407,7 +3351,7 @@
    "venue": "narodno"
   },
   "narodno:6346": {
-   "available": 294,
+   "available": 293,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6346",
    "extra": {
     "repid": "6346"
@@ -3458,7 +3402,7 @@
    "venue": "narodno"
   },
   "narodno:6349": {
-   "available": 239,
+   "available": 233,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6349",
    "extra": {
     "repid": "6349"
@@ -3475,7 +3419,7 @@
    "venue": "narodno"
   },
   "narodno:6350": {
-   "available": 276,
+   "available": 274,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6350",
    "extra": {
     "repid": "6350"
@@ -3492,7 +3436,7 @@
    "venue": "narodno"
   },
   "narodno:6351": {
-   "available": 269,
+   "available": 267,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6351",
    "extra": {
     "repid": "6351"
@@ -3509,7 +3453,7 @@
    "venue": "narodno"
   },
   "narodno:6352": {
-   "available": 291,
+   "available": 289,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6352",
    "extra": {
     "repid": "6352"
@@ -3560,7 +3504,7 @@
    "venue": "narodno"
   },
   "narodno:6355": {
-   "available": 236,
+   "available": 233,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6355",
    "extra": {
     "repid": "6355"
@@ -3747,7 +3691,7 @@
    "venue": "narodno"
   },
   "narodno:6366": {
-   "available": 217,
+   "available": 215,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
    "extra": {
     "repid": "6366"
@@ -3781,7 +3725,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 78,
+   "available": 71,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -3832,7 +3776,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 111,
+   "available": 107,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -3849,7 +3793,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 94,
+   "available": 92,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -3866,7 +3810,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 208,
+   "available": 205,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -3968,7 +3912,7 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 118,
+   "available": 111,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
     "repid": "6379"
@@ -4002,8 +3946,8 @@
    "venue": "narodno"
   },
   "narodno:6383": {
-   "available": 1,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6383",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6383"
    },
@@ -4012,7 +3956,7 @@
    "source_id": "6383",
    "stage": "Велика сцена",
    "start": "2026-10-07T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "опера Петра Иљича Чајковског",
    "title": "Евгеније Оњегин",
    "url": "https://www.narodnopozoriste.rs/predstave/evgenije-onjegin-3?m=xa82a1a15508d7d7b79fc2b1954bdeb93",
@@ -4036,7 +3980,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 189,
+   "available": 180,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4053,7 +3997,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 153,
+   "available": 151,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4104,7 +4048,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 9,
+   "available": 6,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -4155,7 +4099,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 219,
+   "available": 217,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4257,7 +4201,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 267,
+   "available": 266,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4273,25 +4217,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6401": {
-   "available": 3,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6401",
-   "extra": {
-    "repid": "6401"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6401",
-   "stage": "Велика сцена",
-   "start": "2026-10-06T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "драма Синише Ковачевића · 300. представа",
-   "title": "Велика драма",
-   "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=x2b10d378a694754af8c7c0e00d61531b",
-   "venue": "narodno"
-  },
   "narodno:6402": {
-   "available": 104,
+   "available": 102,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6402",
    "extra": {
     "repid": "6402"
@@ -4308,7 +4235,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 194,
+   "available": 191,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4325,7 +4252,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 249,
+   "available": 245,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4376,7 +4303,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 228,
+   "available": 220,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4393,7 +4320,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 319,
+   "available": 317,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4410,7 +4337,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 310,
+   "available": 306,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -4444,7 +4371,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 333,
+   "available": 331,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4458,23 +4385,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6417": {
-   "available": 95,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6417",
-   "extra": {
-    "repid": "6417"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6417",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-06T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "драма Ђорђа Косића · енглески титл",
-   "title": "Успаванка за Алексију Рајчић",
-   "url": "https://www.narodnopozoriste.rs/predstave/uspavanka-za-aleksiju-rajcic?m=x07f45b177387ca0590101c92b4ea148f",
    "venue": "narodno"
   },
   "narodno:6418": {
@@ -4512,7 +4422,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 129,
+   "available": 125,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4529,7 +4439,7 @@
    "venue": "narodno"
   },
   "narodno:6421": {
-   "available": 259,
+   "available": 250,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
    "extra": {
     "repid": "6421"
@@ -4580,7 +4490,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 6,
+   "available": 4,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4614,7 +4524,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 211,
+   "available": 207,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -4648,7 +4558,7 @@
    "venue": "narodno"
   },
   "narodno:6428": {
-   "available": 245,
+   "available": 238,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
    "extra": {
     "repid": "6428"
@@ -4733,7 +4643,7 @@
    "venue": "narodno"
   },
   "narodno:6433": {
-   "available": 268,
+   "available": 266,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6433",
    "extra": {
     "repid": "6433"
@@ -5591,42 +5501,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26974": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_zuta_slova_28420",
-   "extra": {
-    "end_date": "2026-10-06",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26974",
-   "stage": "Plava dvorana",
-   "start": "2026-10-06T16:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - ŽUTA SLOVA",
-   "url": "https://tickets.rs/event/fest_2026_zuta_slova_28420",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26975": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_udarni_termin_28421",
-   "extra": {
-    "end_date": "2026-10-06",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26975",
-   "stage": "Plava dvorana",
-   "start": "2026-10-06T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - UDARNI TERMIN",
-   "url": "https://tickets.rs/event/fest_2026_udarni_termin_28421",
    "venue": "sava_centar"
   },
   "sava_centar:26976": {
