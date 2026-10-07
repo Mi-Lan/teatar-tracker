@@ -48,6 +48,16 @@
    "vrat od stakla"
   ],
   "kolarac": [
+   "58 bemus arkadij volodos klavir",
+   "58 bemus beogradska filharmonija",
+   "58 bemus danijel lozakovic violina i david fre klavir",
+   "58 bemus drzavni simfonijski orkestar iz soluna",
+   "58 bemus kamerni orkestar franc list",
+   "58 bemus niski simfonijski orkestar",
+   "58 bemus sofijska filharmonija",
+   "58 bemus svecano otvaranje gala koncert zvezda ruske operske scene simfonijski orkestar i hor rts",
+   "58 bemus trio korda",
+   "58 bemus zlatni jubilej akademskog hora kolegijum muzikum",
    "ekstravagancije i ludosti",
    "marija gulegina",
    "nikolaj kuznjecov"
@@ -606,6 +616,46 @@
   "kolarac:27040": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
+  },
+  "kolarac:27386": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27389": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27390": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27391": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27392": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27393": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27394": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27395": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27396": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
+  },
+  "kolarac:27397": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T18:19:44+02:00"
   },
   "madlenianum:belgrade-dixieland-orchestra-202610012000": {
    "ever_on_sale": false,
@@ -1654,6 +1704,16 @@
   "new_show:jdp:202610272030-beogradska-trilogija": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610302030-mama": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610312000-putujuce-pozoriste-sopalovic": "2026-09-25T17:47:32+02:00",
+  "new_show:kolarac:27386": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27389": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27390": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27391": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27392": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27393": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27394": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27395": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27396": "2026-10-07T18:19:44+02:00",
+  "new_show:kolarac:27397": "2026-10-07T18:19:44+02:00",
   "new_show:madlenianum:belgrade-dixieland-orchestra-202610012000": "2026-10-01T00:58:47+02:00",
   "new_show:madlenianum:carmen-suite-bolero-202610131930": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:cvrcak-i-mrav-202610061000": "2026-10-01T04:00:45+02:00",
@@ -2571,16 +2631,17 @@
   },
   "jdp:202610132000-vrat-od-stakla": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1196",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1196"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610132000-vrat-od-stakla",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-13T20:00:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Biljana Srbljanovic",
    "title": "Vrat od stakla",
    "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
@@ -3028,6 +3089,186 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
+  "kolarac:27386": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_svecano_otvaranje_gala_koncert_zvezda_ruske_operske_scene_simfonijski_orkestar_i_hor_rts_28836",
+   "extra": {
+    "end_date": "2026-10-17",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "27386",
+   "stage": "",
+   "start": "2026-10-17T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Svečano otvaranje - Gala koncert zvezda ruske operske scene Simfonijski orkestar i Hor RTS",
+   "url": "https://tickets.rs/event/58_bemus_svecano_otvaranje_gala_koncert_zvezda_ruske_operske_scene_simfonijski_orkestar_i_hor_rts_28836",
+   "venue": "kolarac"
+  },
+  "kolarac:27389": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_drzavni_simfonijski_orkestar_iz_soluna_28837",
+   "extra": {
+    "end_date": "2026-10-18",
+    "event_status": ""
+   },
+   "price": "od 1500 RSD",
+   "sales_start": null,
+   "source_id": "27389",
+   "stage": "",
+   "start": "2026-10-18T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Državni simfonijski orkestar iz Soluna",
+   "url": "https://tickets.rs/event/58_bemus_drzavni_simfonijski_orkestar_iz_soluna_28837",
+   "venue": "kolarac"
+  },
+  "kolarac:27390": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_danijel_lozakovic_violina_i_david_fre_klavir_28838",
+   "extra": {
+    "end_date": "2026-10-19",
+    "event_status": ""
+   },
+   "price": "od 1500 RSD",
+   "sales_start": null,
+   "source_id": "27390",
+   "stage": "",
+   "start": "2026-10-19T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Danijel Lozakovič, violina i David Fre, klavir",
+   "url": "https://tickets.rs/event/58_bemus_danijel_lozakovic_violina_i_david_fre_klavir_28838",
+   "venue": "kolarac"
+  },
+  "kolarac:27391": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_kamerni_orkestar_franc_list_28839",
+   "extra": {
+    "end_date": "2026-10-20",
+    "event_status": ""
+   },
+   "price": "od 1500 RSD",
+   "sales_start": null,
+   "source_id": "27391",
+   "stage": "",
+   "start": "2026-10-20T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Kamerni orkestar Franc List",
+   "url": "https://tickets.rs/event/58_bemus_kamerni_orkestar_franc_list_28839",
+   "venue": "kolarac"
+  },
+  "kolarac:27392": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_trio_korda_28840",
+   "extra": {
+    "end_date": "2026-10-21",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "27392",
+   "stage": "",
+   "start": "2026-10-21T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Trio Korda",
+   "url": "https://tickets.rs/event/58_bemus_trio_korda_28840",
+   "venue": "kolarac"
+  },
+  "kolarac:27393": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
+   "extra": {
+    "end_date": "2026-10-24",
+    "event_status": ""
+   },
+   "price": "od 1500 RSD",
+   "sales_start": null,
+   "source_id": "27393",
+   "stage": "",
+   "start": "2026-10-24T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Sofijska filharmonija",
+   "url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
+   "venue": "kolarac"
+  },
+  "kolarac:27394": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_niski_simfonijski_orkestar_28842",
+   "extra": {
+    "end_date": "2026-10-26",
+    "event_status": ""
+   },
+   "price": "od 1500 RSD",
+   "sales_start": null,
+   "source_id": "27394",
+   "stage": "",
+   "start": "2026-10-26T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Niški simfonijski orkestar",
+   "url": "https://tickets.rs/event/58_bemus_niski_simfonijski_orkestar_28842",
+   "venue": "kolarac"
+  },
+  "kolarac:27395": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_arkadij_volodos_klavir_28843",
+   "extra": {
+    "end_date": "2026-10-28",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "27395",
+   "stage": "",
+   "start": "2026-10-28T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Arkadij Volodos, klavir",
+   "url": "https://tickets.rs/event/58_bemus_arkadij_volodos_klavir_28843",
+   "venue": "kolarac"
+  },
+  "kolarac:27396": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_zlatni_jubilej_akademskog_hora_kolegijum_muzikum_28844",
+   "extra": {
+    "end_date": "2026-10-29",
+    "event_status": ""
+   },
+   "price": "od 1000 RSD",
+   "sales_start": null,
+   "source_id": "27396",
+   "stage": "",
+   "start": "2026-10-29T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Zlatni jubilej Akademskog hora Kolegijum muzikum",
+   "url": "https://tickets.rs/event/58_bemus_zlatni_jubilej_akademskog_hora_kolegijum_muzikum_28844",
+   "venue": "kolarac"
+  },
+  "kolarac:27397": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/58_bemus_beogradska_filharmonija_28845",
+   "extra": {
+    "end_date": "2026-10-30",
+    "event_status": ""
+   },
+   "price": "od 2000 RSD",
+   "sales_start": null,
+   "source_id": "27397",
+   "stage": "",
+   "start": "2026-10-30T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "58. BEMUS - Beogradska filharmonija",
+   "url": "https://tickets.rs/event/58_bemus_beogradska_filharmonija_28845",
+   "venue": "kolarac"
+  },
   "madlenianum:carmen-suite-bolero-202610131930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3323,7 +3564,7 @@
    "venue": "madlenianum_tickets"
   },
   "narodno:6344": {
-   "available": 272,
+   "available": 268,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6344",
    "extra": {
     "repid": "6344"
@@ -3408,7 +3649,7 @@
    "venue": "narodno"
   },
   "narodno:6349": {
-   "available": 233,
+   "available": 231,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6349",
    "extra": {
     "repid": "6349"
@@ -3476,7 +3717,7 @@
    "venue": "narodno"
   },
   "narodno:6353": {
-   "available": 307,
+   "available": 304,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6353",
    "extra": {
     "repid": "6353"
@@ -3510,7 +3751,7 @@
    "venue": "narodno"
   },
   "narodno:6355": {
-   "available": 233,
+   "available": 231,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6355",
    "extra": {
     "repid": "6355"
@@ -3527,7 +3768,7 @@
    "venue": "narodno"
   },
   "narodno:6356": {
-   "available": 320,
+   "available": 318,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6356",
    "extra": {
     "repid": "6356"
@@ -3578,7 +3819,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 204,
+   "available": 198,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -3680,7 +3921,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 215,
+   "available": 213,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -3697,7 +3938,7 @@
    "venue": "narodno"
   },
   "narodno:6366": {
-   "available": 212,
+   "available": 204,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
    "extra": {
     "repid": "6366"
@@ -3731,7 +3972,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 71,
+   "available": 68,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -3748,7 +3989,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 90,
+   "available": 87,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3765,7 +4006,7 @@
    "venue": "narodno"
   },
   "narodno:6370": {
-   "available": 286,
+   "available": 285,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
    "extra": {
     "repid": "6370"
@@ -3782,7 +4023,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 107,
+   "available": 105,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -3799,7 +4040,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 92,
+   "available": 90,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -3816,7 +4057,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 205,
+   "available": 196,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -3833,7 +4074,7 @@
    "venue": "narodno"
   },
   "narodno:6374": {
-   "available": 226,
+   "available": 224,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6374",
    "extra": {
     "repid": "6374"
@@ -3935,7 +4176,7 @@
    "venue": "narodno"
   },
   "narodno:6380": {
-   "available": 260,
+   "available": 255,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6380",
    "extra": {
     "repid": "6380"
@@ -3952,8 +4193,8 @@
    "venue": "narodno"
   },
   "narodno:6383": {
-   "available": null,
-   "buy_url": "",
+   "available": 4,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6383",
    "extra": {
     "repid": "6383"
    },
@@ -3962,14 +4203,14 @@
    "source_id": "6383",
    "stage": "Велика сцена",
    "start": "2026-10-07T19:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "опера Петра Иљича Чајковског",
    "title": "Евгеније Оњегин",
    "url": "https://www.narodnopozoriste.rs/predstave/evgenije-onjegin-3?m=xa82a1a15508d7d7b79fc2b1954bdeb93",
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 1,
+   "available": 17,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -4003,7 +4244,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 151,
+   "available": 141,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4020,7 +4261,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 38,
+   "available": 35,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4037,7 +4278,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 231,
+   "available": 226,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4054,7 +4295,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 6,
+   "available": 5,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -4105,7 +4346,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 215,
+   "available": 210,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4190,8 +4431,8 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": null,
-   "buy_url": "",
+   "available": 6,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
    },
@@ -4200,14 +4441,14 @@
    "source_id": "6397",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-08T20:30:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "драма Ф. М. Достојевског · гостује Никшићко позориште",
    "title": "Беле ноћи",
    "url": "https://www.narodnopozoriste.rs/predstave/bele-noci?m=xd7726162640fad4a2de9a61867ec689e",
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 264,
+   "available": 255,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4224,7 +4465,7 @@
    "venue": "narodno"
   },
   "narodno:6402": {
-   "available": 102,
+   "available": 95,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6402",
    "extra": {
     "repid": "6402"
@@ -4241,7 +4482,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 191,
+   "available": 177,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4258,7 +4499,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 247,
+   "available": 239,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4275,7 +4516,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 224,
+   "available": 221,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4292,7 +4533,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 270,
+   "available": 243,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4309,7 +4550,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 220,
+   "available": 211,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4326,7 +4567,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 315,
+   "available": 309,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4360,7 +4601,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 174,
+   "available": 164,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4377,7 +4618,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 331,
+   "available": 329,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4394,7 +4635,7 @@
    "venue": "narodno"
   },
   "narodno:6418": {
-   "available": 217,
+   "available": 95,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6418",
    "extra": {
     "repid": "6418"
@@ -4428,7 +4669,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 119,
+   "available": 96,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4445,7 +4686,7 @@
    "venue": "narodno"
   },
   "narodno:6421": {
-   "available": 249,
+   "available": 246,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
    "extra": {
     "repid": "6421"
@@ -4479,7 +4720,7 @@
    "venue": "narodno"
   },
   "narodno:6423": {
-   "available": 163,
+   "available": 156,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6423",
    "extra": {
     "repid": "6423"
@@ -4547,7 +4788,7 @@
    "venue": "narodno"
   },
   "narodno:6427": {
-   "available": 235,
+   "available": 234,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
    "extra": {
     "repid": "6427"
@@ -4564,7 +4805,7 @@
    "venue": "narodno"
   },
   "narodno:6428": {
-   "available": 238,
+   "available": 236,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
    "extra": {
     "repid": "6428"
@@ -4615,7 +4856,7 @@
    "venue": "narodno"
   },
   "narodno:6431": {
-   "available": 48,
+   "available": 43,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
@@ -4632,7 +4873,7 @@
    "venue": "narodno"
   },
   "narodno:6432": {
-   "available": 268,
+   "available": 266,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6432",
    "extra": {
     "repid": "6432"
@@ -4649,7 +4890,7 @@
    "venue": "narodno"
   },
   "narodno:6433": {
-   "available": 266,
+   "available": 265,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6433",
    "extra": {
     "repid": "6433"
@@ -4666,7 +4907,7 @@
    "venue": "narodno"
   },
   "narodno:6434": {
-   "available": 271,
+   "available": 251,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6434",
    "extra": {
     "repid": "6434"
@@ -4683,7 +4924,7 @@
    "venue": "narodno"
   },
   "narodno:6435": {
-   "available": 242,
+   "available": 238,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6435",
    "extra": {
     "repid": "6435"
@@ -5507,42 +5748,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26977": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_udarni_termin_28423",
-   "extra": {
-    "end_date": "2026-10-07",
-    "event_status": ""
-   },
-   "price": "od 700 RSD",
-   "sales_start": null,
-   "source_id": "26977",
-   "stage": "Plava dvorana",
-   "start": "2026-10-07T11:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - UDARNI TERMIN",
-   "url": "https://tickets.rs/event/fest_2026_udarni_termin_28423",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26978": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_dobro_dosli_u_houp_28424",
-   "extra": {
-    "end_date": "2026-10-07",
-    "event_status": ""
-   },
-   "price": "od 700 RSD",
-   "sales_start": null,
-   "source_id": "26978",
-   "stage": "Plava dvorana",
-   "start": "2026-10-07T13:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - DOBRO DOŠLI U HOUP",
-   "url": "https://tickets.rs/event/fest_2026_dobro_dosli_u_houp_28424",
    "venue": "sava_centar"
   },
   "sava_centar:26979": {
