@@ -1771,26 +1771,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610071930-kralj-ibi": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/ee3a19c4e1cf",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.com/events/ee3a19c4e1cf",
-    "sixtix": "ee3a19c4e1cf"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610071930-kralj-ibi",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-07T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Краљ Иби",
-   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
-   "venue": "bdp"
-  },
   "bdp:202610121930-crno-zlato": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/b6c4a6928125",
@@ -2524,23 +2504,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610072000-narodni-poslanik": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610072000-narodni-poslanik",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-07T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Branislav Nušić",
-   "title": "Narodni poslanik",
-   "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
-   "venue": "jdp"
-  },
   "jdp:202610082030-moj-muz": {
    "available": null,
    "buy_url": "",
@@ -2631,17 +2594,16 @@
   },
   "jdp:202610132000-vrat-od-stakla": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1196",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1196"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610132000-vrat-od-stakla",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-13T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Biljana Srbljanovic",
    "title": "Vrat od stakla",
    "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
@@ -3615,7 +3577,7 @@
    "venue": "narodno"
   },
   "narodno:6347": {
-   "available": 301,
+   "available": 298,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6347",
    "extra": {
     "repid": "6347"
@@ -3853,7 +3815,7 @@
    "venue": "narodno"
   },
   "narodno:6361": {
-   "available": 213,
+   "available": 207,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6361",
    "extra": {
     "repid": "6361"
@@ -3870,7 +3832,7 @@
    "venue": "narodno"
   },
   "narodno:6362": {
-   "available": 189,
+   "available": 187,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6362",
    "extra": {
     "repid": "6362"
@@ -4023,7 +3985,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 105,
+   "available": 103,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -4074,7 +4036,7 @@
    "venue": "narodno"
   },
   "narodno:6374": {
-   "available": 224,
+   "available": 219,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6374",
    "extra": {
     "repid": "6374"
@@ -4125,7 +4087,7 @@
    "venue": "narodno"
   },
   "narodno:6377": {
-   "available": 315,
+   "available": 313,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6377",
    "extra": {
     "repid": "6377"
@@ -4176,7 +4138,7 @@
    "venue": "narodno"
   },
   "narodno:6380": {
-   "available": 255,
+   "available": 253,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6380",
    "extra": {
     "repid": "6380"
@@ -4192,25 +4154,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
    "venue": "narodno"
   },
-  "narodno:6383": {
-   "available": 4,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6383",
-   "extra": {
-    "repid": "6383"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6383",
-   "stage": "Велика сцена",
-   "start": "2026-10-07T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "опера Петра Иљича Чајковског",
-   "title": "Евгеније Оњегин",
-   "url": "https://www.narodnopozoriste.rs/predstave/evgenije-onjegin-3?m=xa82a1a15508d7d7b79fc2b1954bdeb93",
-   "venue": "narodno"
-  },
   "narodno:6384": {
-   "available": 17,
+   "available": 13,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -4278,7 +4223,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 226,
+   "available": 224,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4295,7 +4240,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 5,
+   "available": 3,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -4346,7 +4291,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 210,
+   "available": 208,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4431,7 +4376,7 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 6,
+   "available": 2,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
    "extra": {
     "repid": "6397"
@@ -4482,7 +4427,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 177,
+   "available": 165,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4499,7 +4444,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 239,
+   "available": 236,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4550,7 +4495,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 211,
+   "available": 207,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4567,7 +4512,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 309,
+   "available": 308,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4584,7 +4529,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 304,
+   "available": 302,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -4632,23 +4577,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6418": {
-   "available": 95,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6418",
-   "extra": {
-    "repid": "6418"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6418",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-07T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "комедија Карла Голдонија",
-   "title": "Рибарске свађе",
-   "url": "https://www.narodnopozoriste.rs/predstave/ribarske-svadje-1?m=xa643b165dd0d286cee8ce8b0cfdbe0a0",
    "venue": "narodno"
   },
   "narodno:6419": {
@@ -4703,7 +4631,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 236,
+   "available": 233,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4805,7 +4733,7 @@
    "venue": "narodno"
   },
   "narodno:6428": {
-   "available": 236,
+   "available": 235,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
    "extra": {
     "repid": "6428"
@@ -4822,7 +4750,7 @@
    "venue": "narodno"
   },
   "narodno:6429": {
-   "available": 206,
+   "available": 205,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6429",
    "extra": {
     "repid": "6429"
@@ -4839,7 +4767,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 135,
+   "available": 133,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -5750,42 +5678,6 @@
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
    "venue": "sava_centar"
   },
-  "sava_centar:26979": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_rok_balada_28425",
-   "extra": {
-    "end_date": "2026-10-07",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26979",
-   "stage": "Plava dvorana",
-   "start": "2026-10-07T16:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - ROK BALADA",
-   "url": "https://tickets.rs/event/fest_2026_rok_balada_28425",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26980": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_debi_28426",
-   "extra": {
-    "end_date": "2026-10-07",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26980",
-   "stage": "Plava dvorana",
-   "start": "2026-10-07T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - DEBI",
-   "url": "https://tickets.rs/event/fest_2026_debi_28426",
-   "venue": "sava_centar"
-  },
   "sava_centar:26981": {
    "available": null,
    "buy_url": "https://tickets.rs/event/fest_2026_toni_28427",
@@ -5860,7 +5752,7 @@
   },
   "sava_centar:26985": {
    "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28431",
+   "buy_url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28431",
    "extra": {
     "end_date": "2026-10-08",
     "event_status": ""
@@ -5873,7 +5765,7 @@
    "status": "on_sale",
    "subtitle": "",
    "title": "FEST 2026 - BUDI BOG SA NAMA",
-   "url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28431",
+   "url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28431",
    "venue": "sava_centar"
   },
   "sava_centar:26986": {
@@ -5896,7 +5788,7 @@
   },
   "sava_centar:26987": {
    "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28433",
+   "buy_url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28433",
    "extra": {
     "end_date": "2026-10-09",
     "event_status": ""
@@ -5909,7 +5801,7 @@
    "status": "on_sale",
    "subtitle": "",
    "title": "FEST 2026 - BUDI BOG SA NAMA",
-   "url": "https://tickets.rs/event/fest_2026_budi_bog_sa_nama_28433",
+   "url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28433",
    "venue": "sava_centar"
   },
   "sava_centar:26988": {
