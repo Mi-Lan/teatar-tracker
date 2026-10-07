@@ -190,6 +190,7 @@
    "lexington",
    "luca minnelli",
    "magla bend",
+   "marko milosevic",
    "mira skoric",
    "musical moliere",
    "nikola rokvic",
@@ -1510,6 +1511,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-30T15:35:23+02:00"
   },
+  "sava_centar:27369": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-07T10:32:04+02:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -1678,6 +1683,7 @@
   "new_show:madlenianum_tickets:27300": "2026-09-29T17:39:49+02:00",
   "new_show:sava_centar:27234": "2026-09-25T12:08:05+02:00",
   "new_show:sava_centar:27298": "2026-10-05T17:52:14+02:00",
+  "new_show:sava_centar:27369": "2026-10-07T10:32:04+02:00",
   "new_show:terazije:1252": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1253": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1254": "2026-09-25T01:50:54+02:00",
@@ -3487,7 +3493,7 @@
    "venue": "narodno"
   },
   "narodno:6354": {
-   "available": 255,
+   "available": 249,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6354",
    "extra": {
     "repid": "6354"
@@ -3691,7 +3697,7 @@
    "venue": "narodno"
   },
   "narodno:6366": {
-   "available": 214,
+   "available": 212,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
    "extra": {
     "repid": "6366"
@@ -3742,7 +3748,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 92,
+   "available": 90,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -4014,7 +4020,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 44,
+   "available": 38,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4099,7 +4105,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 217,
+   "available": 215,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4201,7 +4207,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 266,
+   "available": 264,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4252,7 +4258,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 245,
+   "available": 247,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4269,7 +4275,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 226,
+   "available": 224,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4337,7 +4343,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 306,
+   "available": 304,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -4354,7 +4360,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 179,
+   "available": 174,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4388,7 +4394,7 @@
    "venue": "narodno"
   },
   "narodno:6418": {
-   "available": 219,
+   "available": 217,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6418",
    "extra": {
     "repid": "6418"
@@ -4422,7 +4428,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 125,
+   "available": 119,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4439,7 +4445,7 @@
    "venue": "narodno"
   },
   "narodno:6421": {
-   "available": 250,
+   "available": 249,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
    "extra": {
     "repid": "6421"
@@ -4524,7 +4530,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 207,
+   "available": 205,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -4592,7 +4598,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 140,
+   "available": 135,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -4609,7 +4615,7 @@
    "venue": "narodno"
   },
   "narodno:6431": {
-   "available": 50,
+   "available": 48,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
@@ -6095,6 +6101,24 @@
    "subtitle": "",
    "title": "ŽELJKO SAMARDŽIĆ",
    "url": "https://tickets.rs/event/zeljko_samardzic_28753",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27369": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/marko_milosevic_28813",
+   "extra": {
+    "end_date": "2027-10-07",
+    "event_status": ""
+   },
+   "price": "od 3400 RSD",
+   "sales_start": null,
+   "source_id": "27369",
+   "stage": "Plava dvorana",
+   "start": "2027-10-07T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Marko Milošević",
+   "url": "https://tickets.rs/event/marko_milosevic_28813",
    "venue": "sava_centar"
   },
   "terazije:1256": {
