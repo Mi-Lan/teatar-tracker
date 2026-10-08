@@ -2522,23 +2522,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610082030-moj-muz": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610082030-moj-muz",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-08T20:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Rumena Bužarovska",
-   "title": "Moj muž",
-   "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
-   "venue": "jdp"
-  },
   "jdp:202610092000-eldorado": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1210",
@@ -2561,7 +2544,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1193",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1193"
    },
    "price": "",
@@ -2569,7 +2552,7 @@
    "source_id": "202610102000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-10T20:00:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -2577,17 +2560,16 @@
   },
   "jdp:202610112000-narodni-poslanik": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1194",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1194"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610112000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-11T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -2700,17 +2682,16 @@
   },
   "jdp:202610172000-edip": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1200",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1200"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610172000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-17T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -2735,17 +2716,16 @@
   },
   "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1201"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-18T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -2914,17 +2894,16 @@
   },
   "jdp:202610272000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1207",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1207"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-27T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3648,7 +3627,7 @@
    "venue": "narodno"
   },
   "narodno:6350": {
-   "available": 274,
+   "available": 271,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6350",
    "extra": {
     "repid": "6350"
@@ -3937,7 +3916,7 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": 136,
+   "available": 133,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
     "repid": "6367"
@@ -3954,7 +3933,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 60,
+   "available": 56,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -3988,7 +3967,7 @@
    "venue": "narodno"
   },
   "narodno:6370": {
-   "available": 284,
+   "available": 280,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
    "extra": {
     "repid": "6370"
@@ -4022,7 +4001,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 90,
+   "available": 88,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -4039,7 +4018,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 193,
+   "available": 191,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -4209,7 +4188,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 130,
+   "available": 126,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4260,7 +4239,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 9,
+   "available": 5,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -4311,7 +4290,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 207,
+   "available": 206,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4395,25 +4374,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=xa0efe677c83e1d2457e66e6d49063f5e",
    "venue": "narodno"
   },
-  "narodno:6397": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6397"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6397",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-08T20:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "драма Ф. М. Достојевског · гостује Никшићко позориште",
-   "title": "Беле ноћи",
-   "url": "https://www.narodnopozoriste.rs/predstave/bele-noci?m=xd7726162640fad4a2de9a61867ec689e",
-   "venue": "narodno"
-  },
   "narodno:6398": {
-   "available": 248,
+   "available": 242,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4429,25 +4391,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6402": {
-   "available": 78,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6402",
-   "extra": {
-    "repid": "6402"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6402",
-   "stage": "Велика сцена",
-   "start": "2026-10-08T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "драма Хенрика Ибзена",
-   "title": "Нора - луткина кућа",
-   "url": "https://www.narodnopozoriste.rs/predstave/nora-lutkina-kuca?m=xd546c0ef9fef0b7d9b3678d166205d71",
-   "venue": "narodno"
-  },
   "narodno:6403": {
-   "available": 150,
+   "available": 144,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4464,7 +4409,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 224,
+   "available": 221,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4515,7 +4460,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 204,
+   "available": 200,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4583,7 +4528,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 329,
+   "available": 327,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4617,7 +4562,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 90,
+   "available": 88,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4719,7 +4664,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 202,
+   "available": 203,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -4736,7 +4681,7 @@
    "venue": "narodno"
   },
   "narodno:6427": {
-   "available": 234,
+   "available": 233,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
    "extra": {
     "repid": "6427"
@@ -4770,7 +4715,7 @@
    "venue": "narodno"
   },
   "narodno:6429": {
-   "available": 203,
+   "available": 200,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6429",
    "extra": {
     "repid": "6429"
@@ -4804,7 +4749,7 @@
    "venue": "narodno"
   },
   "narodno:6431": {
-   "available": 42,
+   "available": 40,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
@@ -5698,42 +5643,6 @@
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
    "venue": "sava_centar"
   },
-  "sava_centar:26984": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_500_milja_28430",
-   "extra": {
-    "end_date": "2026-10-08",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26984",
-   "stage": "Plava dvorana",
-   "start": "2026-10-08T16:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - 500 MILJA",
-   "url": "https://tickets.rs/event/fest_2026_500_milja_28430",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26985": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28431",
-   "extra": {
-    "end_date": "2026-10-08",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26985",
-   "stage": "Plava dvorana",
-   "start": "2026-10-08T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - BUDI BOG S NAMA",
-   "url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28431",
-   "venue": "sava_centar"
-  },
   "sava_centar:26986": {
    "available": null,
    "buy_url": "https://tickets.rs/event/fest_2026_breme_28432",
@@ -6238,24 +6147,6 @@
    "url": "https://tickets.rs/event/roger_waters_presents_legacy_28816",
    "venue": "sava_centar"
   },
-  "terazije:1256": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1256",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1256"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1256",
-   "stage": "Велика сцена",
-   "start": "2026-10-08T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
-   "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
-   "venue": "terazije"
-  },
   "terazije:1257": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1257",
@@ -6502,7 +6393,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
