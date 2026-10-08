@@ -3934,7 +3934,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 68,
+   "available": 66,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -4172,7 +4172,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 180,
+   "available": 178,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4189,7 +4189,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 141,
+   "available": 136,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4410,7 +4410,7 @@
    "venue": "narodno"
   },
   "narodno:6402": {
-   "available": 95,
+   "available": 93,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6402",
    "extra": {
     "repid": "6402"
@@ -4461,7 +4461,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 221,
+   "available": 219,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4597,7 +4597,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 96,
+   "available": 94,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4818,7 +4818,7 @@
    "venue": "narodno"
   },
   "narodno:6433": {
-   "available": 265,
+   "available": 263,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6433",
    "extra": {
     "repid": "6433"
@@ -5676,24 +5676,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26981": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_toni_28427",
-   "extra": {
-    "end_date": "2026-10-07",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26981",
-   "stage": "Plava dvorana",
-   "start": "2026-10-07T21:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - TONI",
-   "url": "https://tickets.rs/event/fest_2026_toni_28427",
    "venue": "sava_centar"
   },
   "sava_centar:26982": {
