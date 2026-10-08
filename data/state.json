@@ -161,6 +161,7 @@
    "fashion masterclass",
    "fest 2026 500 milja",
    "fest 2026 breme",
+   "fest 2026 budi bog s nama",
    "fest 2026 budi bog sa nama",
    "fest 2026 bunker",
    "fest 2026 cudovisna mia",
@@ -3951,7 +3952,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 87,
+   "available": 85,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3985,7 +3986,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 103,
+   "available": 101,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -4036,7 +4037,7 @@
    "venue": "narodno"
   },
   "narodno:6374": {
-   "available": 219,
+   "available": 217,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6374",
    "extra": {
     "repid": "6374"
@@ -4155,7 +4156,7 @@
    "venue": "narodno"
   },
   "narodno:6384": {
-   "available": 13,
+   "available": 7,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6384",
    "extra": {
     "repid": "6384"
@@ -4189,7 +4190,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 136,
+   "available": 134,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4240,7 +4241,7 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 3,
+   "available": 16,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
@@ -4257,7 +4258,7 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 8,
+   "available": 21,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
@@ -4291,7 +4292,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 208,
+   "available": 207,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4376,8 +4377,8 @@
    "venue": "narodno"
   },
   "narodno:6397": {
-   "available": 2,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6397",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6397"
    },
@@ -4386,7 +4387,7 @@
    "source_id": "6397",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-08T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "драма Ф. М. Достојевског · гостује Никшићко позориште",
    "title": "Беле ноћи",
    "url": "https://www.narodnopozoriste.rs/predstave/bele-noci?m=xd7726162640fad4a2de9a61867ec689e",
@@ -4427,7 +4428,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 165,
+   "available": 162,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4461,7 +4462,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 219,
+   "available": 204,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4478,7 +4479,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 243,
+   "available": 223,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4546,7 +4547,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 164,
+   "available": 162,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4597,7 +4598,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 94,
+   "available": 92,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4614,7 +4615,7 @@
    "venue": "narodno"
   },
   "narodno:6421": {
-   "available": 246,
+   "available": 245,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
    "extra": {
     "repid": "6421"
@@ -4648,7 +4649,7 @@
    "venue": "narodno"
   },
   "narodno:6423": {
-   "available": 156,
+   "available": 153,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6423",
    "extra": {
     "repid": "6423"
@@ -4767,7 +4768,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 133,
+   "available": 130,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -4784,7 +4785,7 @@
    "venue": "narodno"
   },
   "narodno:6431": {
-   "available": 43,
+   "available": 42,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
@@ -5746,7 +5747,7 @@
    "start": "2026-10-08T19:00:00+02:00",
    "status": "on_sale",
    "subtitle": "",
-   "title": "FEST 2026 - BUDI BOG SA NAMA",
+   "title": "FEST 2026 - BUDI BOG S NAMA",
    "url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28431",
    "venue": "sava_centar"
   },
@@ -5782,7 +5783,7 @@
    "start": "2026-10-09T11:00:00+02:00",
    "status": "on_sale",
    "subtitle": "",
-   "title": "FEST 2026 - BUDI BOG SA NAMA",
+   "title": "FEST 2026 - BUDI BOG S NAMA",
    "url": "https://tickets.rs/event/fest_2026_budi_bog_s_nama_28433",
    "venue": "sava_centar"
   },
@@ -6428,7 +6429,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
