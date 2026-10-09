@@ -2527,24 +2527,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610092000-eldorado": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1210",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1210"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610092000-eldorado",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-09T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Marijus fon Majenburg",
-   "title": "Eldorado",
-   "url": "https://www.jdp.rs/performance/eldorado/",
-   "venue": "jdp"
-  },
   "jdp:202610102000-garderober": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1193",
@@ -3785,7 +3767,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 191,
+   "available": 185,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -3904,7 +3886,7 @@
    "venue": "narodno"
   },
   "narodno:6366": {
-   "available": 204,
+   "available": 202,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
    "extra": {
     "repid": "6366"
@@ -3955,7 +3937,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 63,
+   "available": 62,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3972,7 +3954,7 @@
    "venue": "narodno"
   },
   "narodno:6370": {
-   "available": 280,
+   "available": 277,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
    "extra": {
     "repid": "6370"
@@ -3989,7 +3971,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 88,
+   "available": 84,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -4125,7 +4107,7 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 105,
+   "available": 103,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
     "repid": "6379"
@@ -4142,7 +4124,7 @@
    "venue": "narodno"
   },
   "narodno:6380": {
-   "available": 253,
+   "available": 252,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6380",
    "extra": {
     "repid": "6380"
@@ -4210,7 +4192,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 24,
+   "available": 22,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4227,7 +4209,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 214,
+   "available": 213,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4396,23 +4378,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6403": {
-   "available": 107,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
-   "extra": {
-    "repid": "6403"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6403",
-   "stage": "Велика сцена",
-   "start": "2026-10-09T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "комедија Душана Ковачевића",
-   "title": "Урнебесна трагедија",
-   "url": "https://www.narodnopozoriste.rs/predstave/urnebesna-tragedija?m=x5aa4c5761ce75749546eae1eba7939d4",
-   "venue": "narodno"
-  },
   "narodno:6404": {
    "available": 177,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
@@ -4448,7 +4413,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 208,
+   "available": 205,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4465,7 +4430,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 154,
+   "available": 149,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4516,7 +4481,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 148,
+   "available": 142,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4533,7 +4498,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 325,
+   "available": 321,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4567,7 +4532,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 76,
+   "available": 74,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4618,7 +4583,7 @@
    "venue": "narodno"
   },
   "narodno:6423": {
-   "available": 147,
+   "available": 175,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6423",
    "extra": {
     "repid": "6423"
@@ -4669,7 +4634,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 203,
+   "available": 201,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -4822,7 +4787,7 @@
    "venue": "narodno"
   },
   "narodno:6435": {
-   "available": 222,
+   "available": 218,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6435",
    "extra": {
     "repid": "6435"
@@ -5648,42 +5613,6 @@
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
    "venue": "sava_centar"
   },
-  "sava_centar:26989": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_gejl_dotri_i_seks_propusnica_za_slavne_28435",
-   "extra": {
-    "end_date": "2026-10-09",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26989",
-   "stage": "Plava dvorana",
-   "start": "2026-10-09T16:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - GEJL DOTRI I SEKS - PROPUSNICA ZA SLAVNE",
-   "url": "https://tickets.rs/event/fest_2026_gejl_dotri_i_seks_propusnica_za_slavne_28435",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26990": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_ja_sam_roki_28436",
-   "extra": {
-    "end_date": "2026-10-09",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26990",
-   "stage": "Plava dvorana",
-   "start": "2026-10-09T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - JA SAM ROKI",
-   "url": "https://tickets.rs/event/fest_2026_ja_sam_roki_28436",
-   "venue": "sava_centar"
-  },
   "sava_centar:26991": {
    "available": null,
    "buy_url": "https://tickets.rs/event/fest_2026_otpisana_28437",
@@ -6115,24 +6044,6 @@
    "title": "Magla bend",
    "url": "https://tickets.rs/event/magla_bend_28865",
    "venue": "sava_centar"
-  },
-  "terazije:1257": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1257",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1257"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1257",
-   "stage": "Велика сцена",
-   "start": "2026-10-09T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
-   "title": "FLASHDANCE",
-   "url": "https://pozoristeterazije.com/predstave/fles-dens/",
-   "venue": "terazije"
   },
   "terazije:1258": {
    "available": null,
