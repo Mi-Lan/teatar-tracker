@@ -2560,16 +2560,17 @@
   },
   "jdp:202610112000-narodni-poslanik": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1194",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1194"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610112000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-11T20:00:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -2682,16 +2683,17 @@
   },
   "jdp:202610172000-edip": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1200",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1200"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610172000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-17T20:00:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -3865,7 +3867,7 @@
    "venue": "narodno"
   },
   "narodno:6364": {
-   "available": 267,
+   "available": 265,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6364",
    "extra": {
     "repid": "6364"
@@ -4392,7 +4394,7 @@
    "venue": "narodno"
   },
   "narodno:6403": {
-   "available": 144,
+   "available": 141,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6403",
    "extra": {
     "repid": "6403"
@@ -4409,7 +4411,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 221,
+   "available": 219,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4596,7 +4598,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 229,
+   "available": 227,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -5641,24 +5643,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26986": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_breme_28432",
-   "extra": {
-    "end_date": "2026-10-08",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26986",
-   "stage": "Plava dvorana",
-   "start": "2026-10-08T21:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - BREME",
-   "url": "https://tickets.rs/event/fest_2026_breme_28432",
    "venue": "sava_centar"
   },
   "sava_centar:26987": {
