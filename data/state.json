@@ -2527,23 +2527,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610102000-garderober": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610102000-garderober",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-10T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Ronald Harvud",
-   "title": "Garderober",
-   "url": "https://www.jdp.rs/en/performance/the-dresser/",
-   "venue": "jdp"
-  },
   "jdp:202610112000-narodni-poslanik": {
    "available": null,
    "buy_url": "",
@@ -2702,17 +2685,16 @@
   },
   "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1201"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-18T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -3261,21 +3243,6 @@
    "url": "https://operatheatremadlenianum.com/gospodin-u-cizmama-od-dima",
    "venue": "madlenianum"
   },
-  "madlenianum:ja-ema-202610101930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "ja-ema-202610101930",
-   "stage": "",
-   "start": "2026-10-10T19:30:00+02:00",
-   "status": "unknown",
-   "subtitle": "Tatjana Mandić Rigonat",
-   "title": "JA, EMA",
-   "url": "https://operatheatremadlenianum.com/ja-ema",
-   "venue": "madlenianum"
-  },
   "madlenianum:posle-pada-202610311930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3801,7 +3768,7 @@
    "venue": "narodno"
   },
   "narodno:6363": {
-   "available": 93,
+   "available": 88,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6363",
    "extra": {
     "repid": "6363"
@@ -3835,7 +3802,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 211,
+   "available": 212,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -3954,7 +3921,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 79,
+   "available": 78,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -3988,7 +3955,7 @@
    "venue": "narodno"
   },
   "narodno:6374": {
-   "available": 205,
+   "available": 203,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6374",
    "extra": {
     "repid": "6374"
@@ -4106,25 +4073,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
    "venue": "narodno"
   },
-  "narodno:6384": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6384"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6384",
-   "stage": "Велика сцена",
-   "start": "2026-10-10T19:00:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "опера Жоржа Бизеа",
-   "title": "Кармен",
-   "url": "https://www.narodnopozoriste.rs/predstave/karmen?m=xc8cb43eabb674a326b5b20a77d7c043b",
-   "venue": "narodno"
-  },
   "narodno:6385": {
-   "available": 144,
+   "available": 142,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4141,7 +4091,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 110,
+   "available": 108,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4158,7 +4108,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 11,
+   "available": 10,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4175,7 +4125,7 @@
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 210,
+   "available": 208,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4243,7 +4193,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 194,
+   "available": 190,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4328,7 +4278,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 240,
+   "available": 236,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4345,7 +4295,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 140,
+   "available": 138,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4362,7 +4312,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 172,
+   "available": 170,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4379,7 +4329,7 @@
    "venue": "narodno"
   },
   "narodno:6406": {
-   "available": 198,
+   "available": 197,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6406",
    "extra": {
     "repid": "6406"
@@ -4396,7 +4346,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 135,
+   "available": 130,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4413,7 +4363,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 296,
+   "available": 294,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4430,7 +4380,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 287,
+   "available": 281,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -4447,7 +4397,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 129,
+   "available": 127,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4532,7 +4482,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 213,
+   "available": 215,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4566,7 +4516,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 2,
+   "available": 1,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4600,7 +4550,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 199,
+   "available": 197,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -4668,7 +4618,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 128,
+   "available": 124,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -4719,7 +4669,7 @@
    "venue": "narodno"
   },
   "narodno:6433": {
-   "available": 253,
+   "available": 251,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6433",
    "extra": {
     "repid": "6433"
@@ -5667,24 +5617,6 @@
    "subtitle": "",
    "title": "FEST 2026 - LJUBAVNIK OD PRUĆA",
    "url": "https://tickets.rs/event/fest_2026_ljubavnik_od_pruca_28445",
-   "venue": "sava_centar"
-  },
-  "sava_centar:27033": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_film_iznenadenja_28479",
-   "extra": {
-    "end_date": "2026-10-10",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "27033",
-   "stage": "Plava dvorana",
-   "start": "2026-10-10T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - RUKA PRAVDE",
-   "url": "https://tickets.rs/event/fest_2026_film_iznenadenja_28479",
    "venue": "sava_centar"
   },
   "sava_centar:27034": {
