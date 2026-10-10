@@ -2582,17 +2582,16 @@
   },
   "jdp:202610132000-vrat-od-stakla": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1196",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1196"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610132000-vrat-od-stakla",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-13T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Biljana Srbljanovic",
    "title": "Vrat od stakla",
    "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
@@ -3277,21 +3276,6 @@
    "url": "https://operatheatremadlenianum.com/ja-ema",
    "venue": "madlenianum"
   },
-  "madlenianum:kazanova-protiv-don-zuana-202610092000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "kazanova-protiv-don-zuana-202610092000",
-   "stage": "",
-   "start": "2026-10-09T20:00:00+02:00",
-   "status": "unknown",
-   "subtitle": "Miodrag Ilić",
-   "title": "KAZANOVA PROTIV DON ŽUANA",
-   "url": "https://operatheatremadlenianum.com/kazanova-protiv-don-zuana",
-   "venue": "madlenianum"
-  },
   "madlenianum:posle-pada-202610311930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3437,24 +3421,6 @@
    "subtitle": "",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27223": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/kazanova_protiv_don_zuana_28669",
-   "extra": {
-    "end_date": "2026-10-09",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27223",
-   "stage": "",
-   "start": "2026-10-09T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "KAZANOVA PROTIV DON ŽUANA",
-   "url": "https://tickets.rs/event/kazanova_protiv_don_zuana_28669",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27224": {
@@ -3614,7 +3580,7 @@
    "venue": "narodno"
   },
   "narodno:6350": {
-   "available": 271,
+   "available": 269,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6350",
    "extra": {
     "repid": "6350"
@@ -3903,7 +3869,7 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": 129,
+   "available": 127,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
     "repid": "6367"
@@ -3920,7 +3886,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 49,
+   "available": 48,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -3954,7 +3920,7 @@
    "venue": "narodno"
   },
   "narodno:6370": {
-   "available": 277,
+   "available": 275,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
    "extra": {
     "repid": "6370"
@@ -3971,7 +3937,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 84,
+   "available": 82,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -4022,7 +3988,7 @@
    "venue": "narodno"
   },
   "narodno:6374": {
-   "available": 209,
+   "available": 207,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6374",
    "extra": {
     "repid": "6374"
@@ -4481,7 +4447,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 142,
+   "available": 140,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -5611,24 +5577,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26991": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_otpisana_28437",
-   "extra": {
-    "end_date": "2026-10-09",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26991",
-   "stage": "Plava dvorana",
-   "start": "2026-10-09T21:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - OTPISANA",
-   "url": "https://tickets.rs/event/fest_2026_otpisana_28437",
    "venue": "sava_centar"
   },
   "sava_centar:26992": {
