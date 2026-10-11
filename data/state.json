@@ -4091,7 +4091,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 108,
+   "available": 107,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4108,7 +4108,7 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": 10,
+   "available": 8,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
@@ -4159,8 +4159,8 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 4,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6390"
    },
@@ -4169,7 +4169,7 @@
    "source_id": "6390",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xb24f94b5e66431699e9539a4bd776860",
@@ -4295,7 +4295,7 @@
    "venue": "narodno"
   },
   "narodno:6404": {
-   "available": 138,
+   "available": 135,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6404",
    "extra": {
     "repid": "6404"
@@ -4482,7 +4482,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 215,
+   "available": 213,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4516,7 +4516,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 1,
+   "available": 2,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -5527,24 +5527,6 @@
    "subtitle": "",
    "title": "FASHION MASTERCLASS",
    "url": "https://tickets.rs/event/fashion_masterclass_28272",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26995": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/fest_2026_harmonija_28441",
-   "extra": {
-    "end_date": "2026-10-10",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "26995",
-   "stage": "Plava dvorana",
-   "start": "2026-10-10T21:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "FEST 2026 - HARMONIJA",
-   "url": "https://tickets.rs/event/fest_2026_harmonija_28441",
    "venue": "sava_centar"
   },
   "sava_centar:26996": {
