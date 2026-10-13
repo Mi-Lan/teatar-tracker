@@ -3376,7 +3376,7 @@
    "venue": "madlenianum_tickets"
   },
   "narodno:6344": {
-   "available": 263,
+   "available": 261,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6344",
    "extra": {
     "repid": "6344"
@@ -3563,7 +3563,7 @@
    "venue": "narodno"
   },
   "narodno:6355": {
-   "available": 226,
+   "available": 224,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6355",
    "extra": {
     "repid": "6355"
@@ -3818,7 +3818,7 @@
    "venue": "narodno"
   },
   "narodno:6370": {
-   "available": 271,
+   "available": 269,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
    "extra": {
     "repid": "6370"
@@ -3869,7 +3869,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 180,
+   "available": 179,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -4005,7 +4005,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 114,
+   "available": 115,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4022,7 +4022,7 @@
    "venue": "narodno"
   },
   "narodno:6386": {
-   "available": 77,
+   "available": 76,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4141,8 +4141,8 @@
    "venue": "narodno"
   },
   "narodno:6393": {
-   "available": null,
-   "buy_url": "",
+   "available": 1,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6393",
    "extra": {
     "repid": "6393"
    },
@@ -4151,7 +4151,7 @@
    "source_id": "6393",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-17T17:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=xeb2d1b7a10bb4e028f75fbc2efda534e",
@@ -4209,7 +4209,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 225,
+   "available": 220,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4328,7 +4328,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 302,
+   "available": 300,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4362,7 +4362,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 24,
+   "available": 23,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4413,7 +4413,7 @@
    "venue": "narodno"
   },
   "narodno:6423": {
-   "available": 165,
+   "available": 163,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6423",
    "extra": {
     "repid": "6423"
@@ -4430,7 +4430,7 @@
    "venue": "narodno"
   },
   "narodno:6424": {
-   "available": 2,
+   "available": 4,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6424",
    "extra": {
     "repid": "6424"
@@ -4532,7 +4532,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 114,
+   "available": 113,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
