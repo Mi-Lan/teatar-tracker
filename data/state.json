@@ -1811,26 +1811,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610131930-crno-zlato": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/80e2caa53ebe",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "80e2caa53ebe"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610131930-crno-zlato",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-13T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Црно злато",
-   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
-   "venue": "bdp"
-  },
   "bdp:202610151930-bogojavljenska-noc": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/e9c6bf1671e2",
@@ -2505,42 +2485,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610132000-vrat-od-stakla": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1196",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1196"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610132000-vrat-od-stakla",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-13T20:00:00+02:00",
-   "status": "low",
-   "subtitle": "Biljana Srbljanovic",
-   "title": "Vrat od stakla",
-   "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
-   "venue": "jdp"
-  },
-  "jdp:202610132030-slika-dorijana-greja": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1216",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1216"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610132030-slika-dorijana-greja",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-13T20:30:00+02:00",
-   "status": "low",
-   "subtitle": "Oskar Vajld",
-   "title": "Slika Dorijana Greja",
-   "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
-   "venue": "jdp"
-  },
   "jdp:202610142000-edip": {
    "available": null,
    "buy_url": "",
@@ -2773,7 +2717,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1206",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1206"
    },
    "price": "",
@@ -2781,7 +2725,7 @@
    "source_id": "202610242000-hotel-slobodan-promet",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-24T20:00:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Žorž Fejdo",
    "title": "Hotel Slobodan promet",
    "url": "https://www.jdp.rs/performance/hotel-slobodan-promet/",
@@ -3143,21 +3087,6 @@
    "url": "https://tickets.rs/event/58_bemus_beogradska_filharmonija_28845",
    "venue": "kolarac"
   },
-  "madlenianum:carmen-suite-bolero-202610131930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "carmen-suite-bolero-202610131930",
-   "stage": "",
-   "start": "2026-10-13T19:30:00+02:00",
-   "status": "unknown",
-   "subtitle": "Ž. Bize / R. Ščedrin / M. Ravel",
-   "title": "CARMEN SUITE & BOLERO",
-   "url": "https://operatheatremadlenianum.com/carmen-suite-bolero",
-   "venue": "madlenianum"
-  },
   "madlenianum:feliks-i-doris-202610142000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3279,24 +3208,6 @@
    "subtitle": "",
    "title": "THE SASSOON EXPERIENCE",
    "url": "https://tickets.rs/event/the_sassoon_experience_27733",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27218": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/karmen_svita_i_bolero_28664",
-   "extra": {
-    "end_date": "2026-10-13",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 2000 RSD",
-   "sales_start": null,
-   "source_id": "27218",
-   "stage": "",
-   "start": "2026-10-13T19:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "KARMEN SVITA I BOLERO",
-   "url": "https://tickets.rs/event/karmen_svita_i_bolero_28664",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27219": {
@@ -3492,7 +3403,7 @@
    "venue": "narodno"
   },
   "narodno:6350": {
-   "available": 256,
+   "available": 254,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6350",
    "extra": {
     "repid": "6350"
@@ -3645,7 +3556,7 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 175,
+   "available": 169,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
     "repid": "6359"
@@ -3696,7 +3607,7 @@
    "venue": "narodno"
   },
   "narodno:6362": {
-   "available": 181,
+   "available": 179,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6362",
    "extra": {
     "repid": "6362"
@@ -3730,7 +3641,7 @@
    "venue": "narodno"
   },
   "narodno:6364": {
-   "available": 263,
+   "available": 259,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6364",
    "extra": {
     "repid": "6364"
@@ -3747,7 +3658,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 209,
+   "available": 207,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -3798,7 +3709,7 @@
    "venue": "narodno"
   },
   "narodno:6368": {
-   "available": 49,
+   "available": 47,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
@@ -3815,7 +3726,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 54,
+   "available": 50,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3866,7 +3777,7 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 63,
+   "available": 59,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
@@ -3883,7 +3794,7 @@
    "venue": "narodno"
   },
   "narodno:6373": {
-   "available": 195,
+   "available": 191,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6373",
    "extra": {
     "repid": "6373"
@@ -3985,7 +3896,7 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 77,
+   "available": 73,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
     "repid": "6379"
@@ -4019,7 +3930,7 @@
    "venue": "narodno"
   },
   "narodno:6385": {
-   "available": 101,
+   "available": 91,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6385",
    "extra": {
     "repid": "6385"
@@ -4053,8 +3964,8 @@
    "venue": "narodno"
   },
   "narodno:6387": {
-   "available": null,
-   "buy_url": "",
+   "available": 1,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6387",
    "extra": {
     "repid": "6387"
    },
@@ -4063,14 +3974,14 @@
    "source_id": "6387",
    "stage": "Велика сцена",
    "start": "2026-10-17T19:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет Адолфа Адама · 185 година од светске премијере, гостује диригент Диан Чобанов",
    "title": "Жизела",
    "url": "https://www.narodnopozoriste.rs/predstave/zizela?m=x07c6dccf9a8d87f85348325b59d5c8eb",
    "venue": "narodno"
   },
   "narodno:6388": {
-   "available": 196,
+   "available": 189,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
    "extra": {
     "repid": "6388"
@@ -4087,8 +3998,8 @@
    "venue": "narodno"
   },
   "narodno:6389": {
-   "available": 2,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6389"
    },
@@ -4097,7 +4008,7 @@
    "source_id": "6389",
    "stage": "Велика сцена",
    "start": "2026-10-22T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xdcd5b1219e681bc196eb2719ec03425d",
@@ -4138,7 +4049,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 144,
+   "available": 142,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4155,7 +4066,7 @@
    "venue": "narodno"
   },
   "narodno:6393": {
-   "available": 2,
+   "available": 1,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6393",
    "extra": {
     "repid": "6393"
@@ -4223,7 +4134,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 214,
+   "available": 209,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4240,7 +4151,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 145,
+   "available": 137,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4274,7 +4185,7 @@
    "venue": "narodno"
   },
   "narodno:6407": {
-   "available": 98,
+   "available": 93,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
    "extra": {
     "repid": "6407"
@@ -4291,7 +4202,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 278,
+   "available": 276,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4308,7 +4219,7 @@
    "venue": "narodno"
   },
   "narodno:6411": {
-   "available": 267,
+   "available": 263,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
    "extra": {
     "repid": "6411"
@@ -4325,7 +4236,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 111,
+   "available": 113,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4342,7 +4253,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 298,
+   "available": 295,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4376,7 +4287,7 @@
    "venue": "narodno"
   },
   "narodno:6420": {
-   "available": 23,
+   "available": 21,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
    "extra": {
     "repid": "6420"
@@ -4393,7 +4304,7 @@
    "venue": "narodno"
   },
   "narodno:6421": {
-   "available": 191,
+   "available": 187,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
    "extra": {
     "repid": "6421"
@@ -4410,7 +4321,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 188,
+   "available": 186,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4495,7 +4406,7 @@
    "venue": "narodno"
   },
   "narodno:6427": {
-   "available": 215,
+   "available": 213,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
    "extra": {
     "repid": "6427"
@@ -4546,7 +4457,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 103,
+   "available": 101,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -4563,7 +4474,7 @@
    "venue": "narodno"
   },
   "narodno:6431": {
-   "available": 24,
+   "available": 22,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
@@ -5689,24 +5600,6 @@
    "title": "Magla bend",
    "url": "https://tickets.rs/event/magla_bend_28865",
    "venue": "sava_centar"
-  },
-  "terazije:1259": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1259",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1259"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1259",
-   "stage": "Велика сцена",
-   "start": "2026-10-13T19:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Mјузикл у режији Југа Радивојевића",
-   "title": "MAMMA MIA!",
-   "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
-   "venue": "terazije"
   },
   "terazije:1260": {
    "available": null,
