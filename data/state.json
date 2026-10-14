@@ -2491,23 +2491,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610142000-edip": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610142000-edip",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-14T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Sofokle",
-   "title": "Edip",
-   "url": "https://www.jdp.rs/performance/edip/",
-   "venue": "jdp"
-  },
   "jdp:202610152000-razvojni-put-bore-snajdera": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1198",
@@ -3092,21 +3075,6 @@
    "url": "https://tickets.rs/event/58_bemus_beogradska_filharmonija_28845",
    "venue": "kolarac"
   },
-  "madlenianum:feliks-i-doris-202610142000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "feliks-i-doris-202610142000",
-   "stage": "",
-   "start": "2026-10-14T20:00:00+02:00",
-   "status": "unknown",
-   "subtitle": "Bil Menhof",
-   "title": "FELIKS I DORIS",
-   "url": "https://operatheatremadlenianum.com/feliks-i-doris",
-   "venue": "madlenianum"
-  },
   "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3251,24 +3219,6 @@
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
    "venue": "madlenianum_tickets"
   },
-  "madlenianum_tickets:27224": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/feliks_i_doris_28670",
-   "extra": {
-    "end_date": "2026-10-14",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27224",
-   "stage": "",
-   "start": "2026-10-14T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "FELIKS I DORIS",
-   "url": "https://tickets.rs/event/feliks_i_doris_28670",
-   "venue": "madlenianum_tickets"
-  },
   "madlenianum_tickets:27225": {
    "available": null,
    "buy_url": "https://tickets.rs/event/tvoje_tajno_oruzje_u_borbi_protivneukrotivog_celulita_28671",
@@ -3340,7 +3290,7 @@
    "venue": "narodno"
   },
   "narodno:6346": {
-   "available": 283,
+   "available": 282,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6346",
    "extra": {
     "repid": "6346"
@@ -3629,7 +3579,7 @@
    "venue": "narodno"
   },
   "narodno:6363": {
-   "available": 82,
+   "available": 80,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6363",
    "extra": {
     "repid": "6363"
@@ -3646,7 +3596,7 @@
    "venue": "narodno"
   },
   "narodno:6364": {
-   "available": 259,
+   "available": 258,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6364",
    "extra": {
     "repid": "6364"
@@ -3663,7 +3613,7 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 203,
+   "available": 201,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
     "repid": "6365"
@@ -3697,7 +3647,7 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": 117,
+   "available": 115,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
     "repid": "6367"
@@ -3731,7 +3681,7 @@
    "venue": "narodno"
   },
   "narodno:6369": {
-   "available": 44,
+   "available": 40,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
@@ -3765,7 +3715,7 @@
    "venue": "narodno"
   },
   "narodno:6371": {
-   "available": 63,
+   "available": 61,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
@@ -3934,25 +3884,8 @@
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
    "venue": "narodno"
   },
-  "narodno:6385": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6385"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6385",
-   "stage": "Велика сцена",
-   "start": "2026-10-14T19:00:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "опера Ђакома Пучинија",
-   "title": "Тоска",
-   "url": "https://www.narodnopozoriste.rs/predstave/toska?m=x1606ffa91b876e612a3627ff561edd15",
-   "venue": "narodno"
-  },
   "narodno:6386": {
-   "available": 44,
+   "available": 42,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6386",
    "extra": {
     "repid": "6386"
@@ -4020,8 +3953,8 @@
    "venue": "narodno"
   },
   "narodno:6390": {
-   "available": 2,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
+   "available": null,
+   "buy_url": "",
    "extra": {
     "repid": "6390"
    },
@@ -4030,7 +3963,7 @@
    "source_id": "6390",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xb24f94b5e66431699e9539a4bd776860",
@@ -4054,7 +3987,7 @@
    "venue": "narodno"
   },
   "narodno:6392": {
-   "available": 136,
+   "available": 132,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
    "extra": {
     "repid": "6392"
@@ -4139,7 +4072,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 205,
+   "available": 203,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4156,7 +4089,7 @@
    "venue": "narodno"
   },
   "narodno:6405": {
-   "available": 135,
+   "available": 133,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
    "extra": {
     "repid": "6405"
@@ -4207,7 +4140,7 @@
    "venue": "narodno"
   },
   "narodno:6408": {
-   "available": 269,
+   "available": 266,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
    "extra": {
     "repid": "6408"
@@ -4241,7 +4174,7 @@
    "venue": "narodno"
   },
   "narodno:6412": {
-   "available": 109,
+   "available": 108,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6412",
    "extra": {
     "repid": "6412"
@@ -4258,7 +4191,7 @@
    "venue": "narodno"
   },
   "narodno:6413": {
-   "available": 293,
+   "available": 291,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
    "extra": {
     "repid": "6413"
@@ -4309,7 +4242,7 @@
    "venue": "narodno"
   },
   "narodno:6421": {
-   "available": 185,
+   "available": 183,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
    "extra": {
     "repid": "6421"
@@ -4394,7 +4327,7 @@
    "venue": "narodno"
   },
   "narodno:6426": {
-   "available": 189,
+   "available": 188,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
    "extra": {
     "repid": "6426"
@@ -4462,7 +4395,7 @@
    "venue": "narodno"
   },
   "narodno:6430": {
-   "available": 99,
+   "available": 93,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
    "extra": {
     "repid": "6430"
@@ -4547,7 +4480,7 @@
    "venue": "narodno"
   },
   "narodno:6435": {
-   "available": 119,
+   "available": 117,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6435",
    "extra": {
     "repid": "6435"
