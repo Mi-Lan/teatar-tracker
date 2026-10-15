@@ -2563,17 +2563,16 @@
   },
   "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1201"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-18T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -4072,7 +4071,7 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": 203,
+   "available": 205,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
     "repid": "6398"
@@ -4259,7 +4258,7 @@
    "venue": "narodno"
   },
   "narodno:6422": {
-   "available": 184,
+   "available": 182,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6422",
    "extra": {
     "repid": "6422"
@@ -4480,7 +4479,7 @@
    "venue": "narodno"
   },
   "narodno:6435": {
-   "available": 117,
+   "available": 115,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6435",
    "extra": {
     "repid": "6435"
