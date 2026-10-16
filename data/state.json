@@ -364,7 +364,7 @@
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
   "bdp:202612011930-kus-petlic": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
   "bdp:202612021930-prljave-ruke-czk-tivat": {
@@ -1804,6 +1804,7 @@
   "new_show:terazije:1266": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1268": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1270": "2026-09-25T01:50:54+02:00",
+  "sales_opened:bdp:202612011930-kus-petlic": "2026-10-16T19:19:35+02:00",
   "sales_opened:bdp:202612031930-besi-mgl": "2026-10-16T14:16:40+02:00",
   "sales_opened:bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": "2026-10-16T14:16:40+02:00",
   "sales_opened:bdp:202612061930-ljubavnice-kamerni-teatar-55": "2026-10-16T14:16:40+02:00",
@@ -2142,18 +2143,19 @@
   },
   "bdp:202612011930-kus-petlic": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://app.sixtix.com/events/9a675d163289",
    "extra": {
     "guest": false,
     "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
+    "sixtix": "9a675d163289"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202612011930-kus-petlic",
    "stage": "Velika scena \"Olivera i Rade\"",
    "start": "2026-12-01T19:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "Премијера",
    "title": "Кус петлић",
    "url": "https://www.bdp.rs/cir/predstave-cir/kus-petlitsh",
@@ -2604,7 +2606,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1217",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1217"
    },
    "price": "",
@@ -2612,7 +2614,7 @@
    "source_id": "202610212030-preobrazaj",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-21T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Franc Kafka",
    "title": "Preobražaj",
    "url": "https://www.jdp.rs/performance/preobrazaj/",
@@ -4160,7 +4162,7 @@
   },
   "narodno:6420": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6420",
+   "buy_url": "",
    "extra": {
     "repid": "6420"
    },
@@ -4169,7 +4171,7 @@
    "source_id": "6420",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-16T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=x54a9daa42e8c4d1b41b5b94d1976eae4",
@@ -4313,7 +4315,7 @@
   },
   "narodno:6429": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6429",
+   "buy_url": "",
    "extra": {
     "repid": "6429"
    },
@@ -4322,7 +4324,7 @@
    "source_id": "6429",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-28T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "драма Тадеуша Слобођанека",
    "title": "Наш разред",
    "url": "https://www.narodnopozoriste.rs/predstave/nas-razred?m=xb7a0ad08f07e626ed1cc61e35cc6b875",
@@ -5647,7 +5649,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
