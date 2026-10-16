@@ -1822,26 +1822,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610161930-bogojavljenska-noc": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/f1c5584df6fe",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "",
-    "sixtix": "f1c5584df6fe"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610161930-bogojavljenska-noc",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-16T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Богојављенска ноћ",
-   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
-   "venue": "bdp"
-  },
   "bdp:202610181800-bozanstvena-komedija": {
    "available": null,
    "buy_url": "",
@@ -2480,23 +2460,6 @@
    "title": "Црно злато",
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
-  },
-  "jdp:202610162000-garderober": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610162000-garderober",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-16T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Ronald Harvud",
-   "title": "Garderober",
-   "url": "https://www.jdp.rs/en/performance/the-dresser/",
-   "venue": "jdp"
   },
   "jdp:202610172000-edip": {
    "available": null,
@@ -4041,23 +4004,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6405": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6405",
-   "extra": {
-    "repid": "6405"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6405",
-   "stage": "Велика сцена",
-   "start": "2026-10-16T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "комедија Бранислава Нушића",
-   "title": "Ожалошћена породица",
-   "url": "https://www.narodnopozoriste.rs/predstave/ozaloscena-porodica?m=xd201a61b9eeb9e6d095e2671c4d54b57",
-   "venue": "narodno"
-  },
   "narodno:6406": {
    "available": null,
    "buy_url": "",
@@ -4171,7 +4117,7 @@
    "source_id": "6420",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-16T20:30:00+02:00",
-   "status": "sold_out",
+   "status": "not_on_sale",
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=x54a9daa42e8c4d1b41b5b94d1976eae4",
