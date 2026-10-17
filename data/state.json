@@ -2461,52 +2461,19 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610172000-edip": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610172000-edip",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-17T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Sofokle",
-   "title": "Edip",
-   "url": "https://www.jdp.rs/performance/edip/",
-   "venue": "jdp"
-  },
-  "jdp:202610172030-mama": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610172030-mama",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-17T20:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Maga Magazinović",
-   "title": "MaMa",
-   "url": "https://www.jdp.rs/performance/mama/",
-   "venue": "jdp"
-  },
   "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1201"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-18T20:00:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -2807,24 +2774,6 @@
    "subtitle": "",
    "title": "NIKOLAJ KUZNJECOV",
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
-   "venue": "kolarac"
-  },
-  "kolarac:27386": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_svecano_otvaranje_gala_koncert_zvezda_ruske_operske_scene_simfonijski_orkestar_i_hor_rts_28836",
-   "extra": {
-    "end_date": "2026-10-17",
-    "event_status": ""
-   },
-   "price": "od 3000 RSD",
-   "sales_start": null,
-   "source_id": "27386",
-   "stage": "",
-   "start": "2026-10-17T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Svečano otvaranje - Gala koncert zvezda ruske operske scene Simfonijski orkestar i Hor RTS",
-   "url": "https://tickets.rs/event/58_bemus_svecano_otvaranje_gala_koncert_zvezda_ruske_operske_scene_simfonijski_orkestar_i_hor_rts_28836",
    "venue": "kolarac"
   },
   "kolarac:27389": {
@@ -3796,23 +3745,6 @@
    "subtitle": "опера Ђузепа Вердија",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
-   "venue": "narodno"
-  },
-  "narodno:6387": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6387"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6387",
-   "stage": "Велика сцена",
-   "start": "2026-10-17T19:00:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "балет Адолфа Адама · 185 година од светске премијере, гостује диригент Диан Чобанов",
-   "title": "Жизела",
-   "url": "https://www.narodnopozoriste.rs/predstave/zizela?m=x07c6dccf9a8d87f85348325b59d5c8eb",
    "venue": "narodno"
   },
   "narodno:6388": {
@@ -5385,24 +5317,6 @@
    "title": "Premijera filma \"Ruka pravde\"",
    "url": "https://tickets.rs/event/premijera_filma_ruka_pravde_28906",
    "venue": "sava_centar"
-  },
-  "terazije:1260": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1260",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1260"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1260",
-   "stage": "Велика сцена",
-   "start": "2026-10-17T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "ПРОДУЦЕНТИ",
-   "url": "https://pozoristeterazije.com/predstave/producenti/\n",
-   "venue": "terazije"
   },
   "terazije:1261": {
    "available": null,
