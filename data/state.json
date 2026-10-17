@@ -2637,17 +2637,16 @@
   },
   "jdp:202610242000-hotel-slobodan-promet": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1206",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1206"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610242000-hotel-slobodan-promet",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-24T20:00:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Žorž Fejdo",
    "title": "Hotel Slobodan promet",
    "url": "https://www.jdp.rs/performance/hotel-slobodan-promet/",
