@@ -2442,24 +2442,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1201"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-18T20:00:00+02:00",
-   "status": "low",
-   "subtitle": "Dušan Kovačević",
-   "title": "Sveti Georgije ubiva aždahu",
-   "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
-   "venue": "jdp"
-  },
   "jdp:202610202000-vrat-od-stakla": {
    "available": null,
    "buy_url": "",
@@ -2756,24 +2738,6 @@
    "subtitle": "",
    "title": "NIKOLAJ KUZNJECOV",
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
-   "venue": "kolarac"
-  },
-  "kolarac:27389": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_drzavni_simfonijski_orkestar_iz_soluna_28837",
-   "extra": {
-    "end_date": "2026-10-18",
-    "event_status": ""
-   },
-   "price": "od 1500 RSD",
-   "sales_start": null,
-   "source_id": "27389",
-   "stage": "",
-   "start": "2026-10-18T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Državni simfonijski orkestar iz Soluna",
-   "url": "https://tickets.rs/event/58_bemus_drzavni_simfonijski_orkestar_iz_soluna_28837",
    "venue": "kolarac"
   },
   "kolarac:27390": {
@@ -3882,23 +3846,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6406": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6406"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6406",
-   "stage": "Велика сцена",
-   "start": "2026-10-18T19:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Љубомира Симовића · гостује Народно позориште Ужице",
-   "title": "?",
-   "url": "",
-   "venue": "narodno"
-  },
   "narodno:6407": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6407",
@@ -3982,23 +3929,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6421": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6421"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6421",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-18T20:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "по мотивима прозе Борисава Станковића",
-   "title": "Божји људи",
-   "url": "https://www.narodnopozoriste.rs/predstave/bozji-ljudi?m=x8aaee0f3259ab8cffcdd2f6e33d67ca4",
    "venue": "narodno"
   },
   "narodno:6422": {
@@ -5300,24 +5230,6 @@
    "url": "https://tickets.rs/event/premijera_filma_ruka_pravde_28906",
    "venue": "sava_centar"
   },
-  "terazije:1261": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1261",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1261"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1261",
-   "stage": "Велика сцена",
-   "start": "2026-10-18T19:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
-   "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
-   "venue": "terazije"
-  },
   "terazije:1262": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1262",
@@ -5553,6 +5465,7 @@
     "out": true
    },
    "jdp": {
+    "checked": "2026-10-19T00:59:00+02:00",
     "out": false
    },
    "kolarac": {
