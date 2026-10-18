@@ -1,10 +1,5 @@
 {
- "health": {
-  "jdp": {
-   "fails": 1,
-   "last_error": "returned 0 performances"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -1827,25 +1822,6 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
  },
  "performances": {
-  "bdp:202610181800-bozanstvena-komedija": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610181800-bozanstvena-komedija",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-18T18:00:00+02:00",
-   "status": "cancelled",
-   "subtitle": "",
-   "title": "Божанствена комедија",
-   "url": "https://www.bdp.rs/cir/predstave-cir/bozanstvena-komedija",
-   "venue": "bdp"
-  },
   "bdp:202610291930-laz": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/4b9238e2847d",
@@ -2468,16 +2444,17 @@
   },
   "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1201",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1201"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610182000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-18T20:00:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -2538,17 +2515,16 @@
   },
   "jdp:202610212030-preobrazaj": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1217",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1217"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610212030-preobrazaj",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-21T20:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Franc Kafka",
    "title": "Preobražaj",
    "url": "https://www.jdp.rs/performance/preobrazaj/",
@@ -2642,16 +2618,17 @@
   },
   "jdp:202610272030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1220",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1220"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-27T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -2659,16 +2636,17 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1208"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4008,7 +3986,7 @@
   },
   "narodno:6421": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6421",
+   "buy_url": "",
    "extra": {
     "repid": "6421"
    },
@@ -4017,7 +3995,7 @@
    "source_id": "6421",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-18T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "по мотивима прозе Борисава Станковића",
    "title": "Божји људи",
    "url": "https://www.narodnopozoriste.rs/predstave/bozji-ljudi?m=x8aaee0f3259ab8cffcdd2f6e33d67ca4",
