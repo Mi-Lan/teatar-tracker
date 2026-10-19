@@ -992,7 +992,7 @@
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
   "narodno:6391": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
   "narodno:6392": {
@@ -1690,6 +1690,10 @@
   "terazije:1270": {
    "ever_on_sale": true,
    "first_seen": "2026-09-25T01:50:54+02:00"
+  },
+  "terazije:1271": {
+   "ever_on_sale": false,
+   "first_seen": "2026-10-19T14:58:52+02:00"
   }
  },
  "notified": {
@@ -1721,6 +1725,7 @@
   "new_date:terazije:1264": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1267": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1269": "2026-09-25T01:50:54+02:00",
+  "new_date:terazije:1271": "2026-10-19T14:58:52+02:00",
   "new_show:bdp:202609231930-filomena-maturano-czk-tivat": "2026-09-23T19:49:06+02:00",
   "new_show:jdp:202610012030-gubitnik": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610042000-gospodjica": "2026-09-25T17:47:32+02:00",
@@ -1809,6 +1814,7 @@
   "sales_opened:bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": "2026-10-16T14:16:40+02:00",
   "sales_opened:bdp:202612061930-ljubavnice-kamerni-teatar-55": "2026-10-16T14:16:40+02:00",
   "sales_opened:bdp:202612071930-na-cijoj-strani-ulysses": "2026-10-16T14:16:40+02:00",
+  "sales_opened:narodno:6391": "2026-10-19T14:58:52+02:00",
   "season:2026-09-23": "2026-09-23T14:35:11+02:00",
   "season:2026-09-23:00:05": "2026-09-23T14:40:37+02:00",
   "season:2026-09-23:08:00": "2026-09-23T14:40:37+02:00",
@@ -3711,7 +3717,7 @@
   },
   "narodno:6389": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
    "extra": {
     "repid": "6389"
    },
@@ -3720,7 +3726,7 @@
    "source_id": "6389",
    "stage": "Велика сцена",
    "start": "2026-10-22T19:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xdcd5b1219e681bc196eb2719ec03425d",
@@ -3728,7 +3734,7 @@
   },
   "narodno:6390": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
    },
@@ -3737,7 +3743,7 @@
    "source_id": "6390",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xb24f94b5e66431699e9539a4bd776860",
@@ -3745,7 +3751,7 @@
   },
   "narodno:6391": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6391",
    "extra": {
     "repid": "6391"
    },
@@ -3754,7 +3760,7 @@
    "source_id": "6391",
    "stage": "Велика сцена",
    "start": "2026-10-28T19:00:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "опера Ђузепа Вердија · у оквиру БЕМУС-а",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=xc755094fb954ad84e68503bc8cc1ee72",
@@ -3779,7 +3785,7 @@
   },
   "narodno:6394": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6394",
    "extra": {
     "repid": "6394"
    },
@@ -3788,7 +3794,7 @@
    "source_id": "6394",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-24T12:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=x172c068931cf6b10903ea71ba958982d",
@@ -5259,7 +5265,7 @@
    "source_id": "1263",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Mјузикл у режији Југа Радивојевића",
    "title": "MAMMA MIA!",
    "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
@@ -5277,7 +5283,7 @@
    "source_id": "1264",
    "stage": "Велика сцена",
    "start": "2026-10-24T19:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Мјузикл у режији Даријана Михајловића",
    "title": "БАЛКАН ЕКСПРЕС",
    "url": "https://pozoristeterazije.com/repertoar/",
@@ -5390,6 +5396,24 @@
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
    "venue": "terazije"
+  },
+  "terazije:1271": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1271",
+   "extra": {
+    "box_office_only": true,
+    "prostorterminid": "1271"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1271",
+   "stage": "Велика сцена",
+   "start": "2026-11-07T19:00:00+01:00",
+   "status": "sold_out",
+   "subtitle": "Мјузикл у адаптацији и режији Владимира Лазића",
+   "title": "МИСТЕР ДОЛАР",
+   "url": "https://pozoristeterazije.com/predstave/mister-dolar/",
+   "venue": "terazije"
   }
  },
  "release_log": [
@@ -5464,7 +5488,7 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-10-19T08:03:51+02:00",
+    "checked": "2026-10-19T14:58:52+02:00",
     "out": false
    },
    "kolarac": {
