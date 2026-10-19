@@ -2618,17 +2618,16 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1208"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -5465,7 +5464,7 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-10-19T00:59:00+02:00",
+    "checked": "2026-10-19T03:03:25+02:00",
     "out": false
    },
    "kolarac": {
