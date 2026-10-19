@@ -1825,7 +1825,8 @@
   "season:2026-09-26:00:05": "2026-09-26T11:48:32+02:00",
   "season:2026-09-26:08:00": "2026-09-26T11:48:32+02:00",
   "season:2026-09-27:00:05": "2026-09-27T08:30:16+02:00",
-  "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00"
+  "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00",
+  "season:2026-10-20:00:05": "2026-10-20T01:31:56+02:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -2743,24 +2744,6 @@
    "subtitle": "",
    "title": "NIKOLAJ KUZNJECOV",
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
-   "venue": "kolarac"
-  },
-  "kolarac:27390": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_danijel_lozakovic_violina_i_david_fre_klavir_28838",
-   "extra": {
-    "end_date": "2026-10-19",
-    "event_status": ""
-   },
-   "price": "od 1500 RSD",
-   "sales_start": null,
-   "source_id": "27390",
-   "stage": "",
-   "start": "2026-10-19T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Danijel Lozakovič, violina i David Fre, klavir",
-   "url": "https://tickets.rs/event/58_bemus_danijel_lozakovic_violina_i_david_fre_klavir_28838",
    "venue": "kolarac"
   },
   "kolarac:27391": {
@@ -3851,23 +3834,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6407": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6407"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6407",
-   "stage": "Велика сцена",
-   "start": "2026-10-19T19:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "драматизација Кате Ђармати по роману Михаила Булгакова",
-   "title": "Мајстор и Маргарита",
-   "url": "https://www.narodnopozoriste.rs/predstave/majstor-i-margarita?m=x770f2bdbf0ca5f4343994fc7cabedcb1",
-   "venue": "narodno"
-  },
   "narodno:6408": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
@@ -3934,23 +3900,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6422": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6422"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6422",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-19T20:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "дуодрама према мотивима мемоара „Сећања“ Ане Г. Достојевски · руски титл",
-   "title": "Достојевски - мој живот",
-   "url": "https://www.narodnopozoriste.rs/predstave/dostojevski-moj-zivot?m=x8cab740f5e979b667aa835ee9005f6f9",
    "venue": "narodno"
   },
   "narodno:6423": {
@@ -5470,7 +5419,7 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-10-19T21:14:09+02:00",
+    "checked": "2026-10-20T01:31:56+02:00",
     "out": false
    },
    "kolarac": {
@@ -5494,7 +5443,64 @@
   },
   "month": "2026-11",
   "released": {},
-  "reported": {}
+  "reported": {
+   "bdp": {
+    "buyable": 11,
+    "listed": 11,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "jdp": {
+    "buyable": 0,
+    "listed": 0,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "kolarac": {
+    "buyable": 1,
+    "listed": 1,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "madlenianum": {
+    "buyable": 0,
+    "listed": 3,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 3
+   },
+   "madlenianum_tickets": {
+    "buyable": 3,
+    "listed": 3,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "narodno": {
+    "buyable": 18,
+    "listed": 22,
+    "not_yet": 2,
+    "sold_out": 2,
+    "unknown": 0
+   },
+   "sava_centar": {
+    "buyable": 21,
+    "listed": 21,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   },
+   "terazije": {
+    "buyable": 1,
+    "listed": 1,
+    "not_yet": 0,
+    "sold_out": 0,
+    "unknown": 0
+   }
+  }
  },
  "telegram_offset": 597987113,
  "watch_imported": [],
