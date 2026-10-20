@@ -1,5 +1,18 @@
 {
- "health": {},
+ "health": {
+  "kolarac": {
+   "fails": 1,
+   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+  },
+  "madlenianum_tickets": {
+   "fails": 1,
+   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+  },
+  "sava_centar": {
+   "fails": 1,
+   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
+  }
+ },
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -1826,7 +1839,8 @@
   "season:2026-09-26:08:00": "2026-09-26T11:48:32+02:00",
   "season:2026-09-27:00:05": "2026-09-27T08:30:16+02:00",
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00",
-  "season:2026-10-20:00:05": "2026-10-20T01:31:56+02:00"
+  "season:2026-10-20:00:05": "2026-10-20T11:57:21+02:00",
+  "season:2026-10-20:08:00": "2026-10-20T11:57:21+02:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -3768,7 +3782,7 @@
   },
   "narodno:6394": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6394",
    "extra": {
     "repid": "6394"
    },
@@ -3777,7 +3791,7 @@
    "source_id": "6394",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-24T12:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=x172c068931cf6b10903ea71ba958982d",
@@ -3836,7 +3850,7 @@
   },
   "narodno:6408": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6408",
+   "buy_url": "",
    "extra": {
     "repid": "6408"
    },
@@ -3845,10 +3859,10 @@
    "source_id": "6408",
    "stage": "Велика сцена",
    "start": "2026-10-20T19:30:00+02:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драматизација Федора Шилија по роману Л. Н. Толстоја · руски титл",
-   "title": "Рат и мир",
-   "url": "https://www.narodnopozoriste.rs/predstave/rat-i-mir?m=x691e0830474640fc6d251d4560781823",
+   "title": "?",
+   "url": "",
    "venue": "narodno"
   },
   "narodno:6411": {
@@ -3938,7 +3952,7 @@
   },
   "narodno:6425": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
    "extra": {
     "repid": "6425"
    },
@@ -3947,7 +3961,7 @@
    "source_id": "6425",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-22T20:30:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "трагикомедија Душана Ковачевића",
    "title": "Балкански шпијун",
    "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x4d8487781d724ab7a651fba81f708cb3",
@@ -4006,7 +4020,7 @@
   },
   "narodno:6429": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6429",
    "extra": {
     "repid": "6429"
    },
@@ -4015,7 +4029,7 @@
    "source_id": "6429",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-28T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "драма Тадеуша Слобођанека",
    "title": "Наш разред",
    "url": "https://www.narodnopozoriste.rs/predstave/nas-razred?m=xb7a0ad08f07e626ed1cc61e35cc6b875",
@@ -5232,7 +5246,7 @@
    "source_id": "1264",
    "stage": "Велика сцена",
    "start": "2026-10-24T19:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Мјузикл у режији Даријана Михајловића",
    "title": "БАЛКАН ЕКСПРЕС",
    "url": "https://pozoristeterazije.com/repertoar/",
@@ -5419,7 +5433,7 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-10-20T06:36:49+02:00",
+    "checked": "2026-10-20T11:57:21+02:00",
     "out": false
    },
    "kolarac": {
