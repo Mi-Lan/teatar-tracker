@@ -1,18 +1,5 @@
 {
- "health": {
-  "kolarac": {
-   "fails": 1,
-   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
-  },
-  "madlenianum_tickets": {
-   "fails": 1,
-   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
-  },
-  "sava_centar": {
-   "fails": 1,
-   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -2731,7 +2718,7 @@
     "end_date": "2026-11-28",
     "event_status": ""
    },
-   "price": "od 4600 RSD",
+   "price": "od 4140 RSD",
    "sales_start": null,
    "source_id": "26836",
    "stage": "",
@@ -3032,20 +3019,20 @@
   },
   "madlenianum_tickets:27225": {
    "available": null,
-   "buy_url": "https://tickets.rs/event/tvoje_tajno_oruzje_u_borbi_protivneukrotivog_celulita_28671",
+   "buy_url": "https://tickets.rs/event/tvoje_tajno_oruzje_u_borbi_protiv_neukrotivog_celulita_28671",
    "extra": {
     "end_date": "2026-10-21",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 1700 RSD",
    "sales_start": null,
    "source_id": "27225",
    "stage": "",
    "start": "2026-10-21T20:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "TVOJE TAJNO ORUŽJE U BORBI PROTIVNEUKROTIVOG CELULITA",
-   "url": "https://tickets.rs/event/tvoje_tajno_oruzje_u_borbi_protivneukrotivog_celulita_28671",
+   "url": "https://tickets.rs/event/tvoje_tajno_oruzje_u_borbi_protiv_neukrotivog_celulita_28671",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27226": {
@@ -3476,7 +3463,7 @@
   },
   "narodno:6368": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
+   "buy_url": "",
    "extra": {
     "repid": "6368"
    },
@@ -3485,7 +3472,7 @@
    "source_id": "6368",
    "stage": "Велика сцена",
    "start": "2026-11-03T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe23e1c34d919136dc670c8c51f7fb044",
@@ -3731,7 +3718,7 @@
   },
   "narodno:6390": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
+   "buy_url": "",
    "extra": {
     "repid": "6390"
    },
@@ -3740,7 +3727,7 @@
    "source_id": "6390",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xb24f94b5e66431699e9539a4bd776860",
@@ -5228,7 +5215,7 @@
    "source_id": "1263",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:30:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Mјузикл у режији Југа Радивојевића",
    "title": "MAMMA MIA!",
    "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
@@ -5246,7 +5233,7 @@
    "source_id": "1264",
    "stage": "Велика сцена",
    "start": "2026-10-24T19:30:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Мјузикл у режији Даријана Михајловића",
    "title": "БАЛКАН ЕКСПРЕС",
    "url": "https://pozoristeterazije.com/repertoar/",
@@ -5433,7 +5420,7 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-10-20T11:57:21+02:00",
+    "checked": "2026-10-20T16:55:20+02:00",
     "out": false
    },
    "kolarac": {
