@@ -2203,7 +2203,8 @@
   "season:2026-10-20:00:05": "2026-10-20T11:57:21+02:00",
   "season:2026-10-20:08:00": "2026-10-20T11:57:21+02:00",
   "season:2026-10-21:00:05": "2026-10-21T12:00:25+02:00",
-  "season:2026-10-21:08:00": "2026-10-21T12:00:25+02:00"
+  "season:2026-10-21:08:00": "2026-10-21T12:00:25+02:00",
+  "season:2026-10-22:00:05": "2026-10-22T01:10:38+02:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -2826,41 +2827,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610212000-heda-gabler": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1203",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1203"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610212000-heda-gabler",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-21T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Henrik Ibzen",
-   "title": "Heda Gabler",
-   "url": "https://www.jdp.rs/rs/performance/hedda-gabler/",
-   "venue": "jdp"
-  },
-  "jdp:202610212030-preobrazaj": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610212030-preobrazaj",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-21T20:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Franc Kafka",
-   "title": "Preobražaj",
-   "url": "https://www.jdp.rs/performance/preobrazaj/",
-   "venue": "jdp"
-  },
   "jdp:202610232000-pucina": {
    "available": null,
    "buy_url": "",
@@ -3053,17 +3019,16 @@
   },
   "jdp:202611012000-narodni-poslanik": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1225"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -3124,7 +3089,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1227"
    },
    "price": "",
@@ -3132,7 +3097,7 @@
    "source_id": "202611042000-cudo-u-sarganu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Čudo u Šarganu",
    "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
@@ -3712,24 +3677,6 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
-  "kolarac:27392": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_trio_korda_28840",
-   "extra": {
-    "end_date": "2026-10-21",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "27392",
-   "stage": "",
-   "start": "2026-10-21T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Trio Korda",
-   "url": "https://tickets.rs/event/58_bemus_trio_korda_28840",
-   "venue": "kolarac"
-  },
   "kolarac:27393": {
    "available": null,
    "buy_url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
@@ -3895,21 +3842,6 @@
    "url": "https://operatheatremadlenianum.com/staklena-menazerija",
    "venue": "madlenianum"
   },
-  "madlenianum:tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202610212000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202610212000",
-   "stage": "",
-   "start": "2026-10-21T20:00:00+02:00",
-   "status": "unknown",
-   "subtitle": "Injigo Ramires de Aro",
-   "title": "TVOJE TAJNO ORUŽJE U BORBI PROTIV NEUKROTIVOG CELULITA",
-   "url": "https://operatheatremadlenianum.com/tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita",
-   "venue": "madlenianum"
-  },
   "madlenianum_tickets:26309": {
    "available": null,
    "buy_url": "https://tickets.rs/event/the_sassoon_experience_27733",
@@ -3962,24 +3894,6 @@
    "subtitle": "",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27225": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/tvoje_tajno_oruzje_u_borbi_protiv_neukrotivog_celulita_28671",
-   "extra": {
-    "end_date": "2026-10-21",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27225",
-   "stage": "",
-   "start": "2026-10-21T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "TVOJE TAJNO ORUŽJE U BORBI PROTIVNEUKROTIVOG CELULITA",
-   "url": "https://tickets.rs/event/tvoje_tajno_oruzje_u_borbi_protiv_neukrotivog_celulita_28671",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27226": {
@@ -4461,7 +4375,7 @@
   },
   "narodno:6371": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
+   "buy_url": "",
    "extra": {
     "repid": "6371"
    },
@@ -4470,7 +4384,7 @@
    "source_id": "6371",
    "stage": "Велика сцена",
    "start": "2026-11-10T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe58b7aeb61c4cf680e10f17b4f3679df",
@@ -4627,23 +4541,6 @@
    "subtitle": "опера Ђузепа Вердија",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
-   "venue": "narodno"
-  },
-  "narodno:6388": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6388"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6388",
-   "stage": "Велика сцена",
-   "start": "2026-10-21T19:00:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "опера Ђакома Пучинија",
-   "title": "Боеми",
-   "url": "https://www.narodnopozoriste.rs/predstave/boemi?m=x2578a2858d37bcfbc980e91335d48aa4",
    "venue": "narodno"
   },
   "narodno:6389": {
@@ -4831,23 +4728,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6424": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6424"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6424",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-21T20:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "трагикомедија Душана Ковачевића",
-   "title": "Балкански шпијун",
-   "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x31b7ea6b6a0a281d531b69d8469dd44c",
    "venue": "narodno"
   },
   "narodno:6425": {
@@ -5828,24 +5708,6 @@
    "url": "https://tickets.rs/event/musical_moliere_24619",
    "venue": "sava_centar"
   },
-  "sava_centar:23972": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/zvonko_bogdan_25347",
-   "extra": {
-    "end_date": "2026-10-21",
-    "event_status": ""
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "23972",
-   "stage": "Plava dvorana",
-   "start": "2026-10-21T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Zvonko Bogdan",
-   "url": "https://tickets.rs/event/zvonko_bogdan_25347",
-   "venue": "sava_centar"
-  },
   "sava_centar:24367": {
    "available": null,
    "buy_url": "https://tickets.rs/event/novogodisnji_koncert_tamare_radenovic_25769",
@@ -6710,24 +6572,6 @@
    "url": "https://tickets.rs/event/premijera_filma_ruka_pravde_28906",
    "venue": "sava_centar"
   },
-  "terazije:1262": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1262",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1262"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1262",
-   "stage": "Велика сцена",
-   "start": "2026-10-21T19:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Мјузикл у адаптацији и режији Владимира Лазића",
-   "title": "МИСТЕР ДОЛАР",
-   "url": "https://pozoristeterazije.com/predstave/mister-dolar/",
-   "venue": "terazije"
-  },
   "terazije:1263": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1263",
@@ -6989,10 +6833,10 @@
     "unknown": 0
    },
    "jdp": {
-    "buyable": 0,
-    "listed": 0,
+    "buyable": 29,
+    "listed": 35,
     "not_yet": 0,
-    "sold_out": 0,
+    "sold_out": 6,
     "unknown": 0
    },
    "kolarac": {
@@ -7017,10 +6861,10 @@
     "unknown": 0
    },
    "narodno": {
-    "buyable": 17,
-    "listed": 22,
-    "not_yet": 2,
-    "sold_out": 3,
+    "buyable": 40,
+    "listed": 50,
+    "not_yet": 6,
+    "sold_out": 4,
     "unknown": 0
    },
    "sava_centar": {
