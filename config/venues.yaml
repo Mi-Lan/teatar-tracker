@@ -18,7 +18,7 @@ narodno:
 bdp:
   adapter: bdp_webflow_sixtix
   name: BDP
-  stages: ["Велика сцена"]  # only Velika scena "Olivera i Rade"; remove to track all stages
+  stages: ["Велика сцена", "Мала сцена"]  # Velika scena "Olivera i Rade" + Mala scena "Pepi"; remove to track all stages
   include_guest: false  # skip guest performances in other cities
   sixtix_iframe: 22c6e158  # BDP "Main website" on-sale list on Sixtix
 
