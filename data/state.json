@@ -1809,6 +1809,7 @@
   "new_show:terazije:1266": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1268": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1270": "2026-09-25T01:50:54+02:00",
+  "remind:dde60b3d:2026-10-21T09:00:00+02:00": "2026-10-21T12:00:24+02:00",
   "sales_opened:bdp:202612011930-kus-petlic": "2026-10-16T19:19:35+02:00",
   "sales_opened:bdp:202612031930-besi-mgl": "2026-10-16T14:16:40+02:00",
   "sales_opened:bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": "2026-10-16T14:16:40+02:00",
@@ -1828,7 +1829,8 @@
   "season:2026-09-27:08:00": "2026-09-27T08:30:16+02:00",
   "season:2026-10-20:00:05": "2026-10-20T11:57:21+02:00",
   "season:2026-10-20:08:00": "2026-10-20T11:57:21+02:00",
-  "season:2026-10-21:00:05": "2026-10-21T01:06:37+02:00"
+  "season:2026-10-21:00:05": "2026-10-21T12:00:25+02:00",
+  "season:2026-10-21:08:00": "2026-10-21T12:00:25+02:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -3666,7 +3668,7 @@
   },
   "narodno:6390": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6390",
    "extra": {
     "repid": "6390"
    },
@@ -3675,7 +3677,7 @@
    "source_id": "6390",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:00:00+02:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xb24f94b5e66431699e9539a4bd776860",
@@ -5334,7 +5336,7 @@
     "out": true
    },
    "jdp": {
-    "checked": "2026-10-21T06:29:56+02:00",
+    "checked": "2026-10-21T12:00:24+02:00",
     "out": false
    },
    "kolarac": {
