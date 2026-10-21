@@ -213,12 +213,12 @@ def burst(ctx: Ctx, windows: list[rel.Window]) -> None:
             continue
         venues = {w.release["venue"] for w in polling}
         results = scan(ctx, keys=venues, include_custom=False)
-        process(ctx, results, header="🚨 <b>Release watch</b>")
-        season.track(ctx, set(results))
+        fresh = process(ctx, results, header="🚨 <b>Release watch</b>")
+        season.track(ctx, set(results), fresh)
         if now() - last_full >= full_every:
             results = scan(ctx)
-            process(ctx, results)
-            season.track(ctx, set(results))
+            fresh = process(ctx, results)
+            season.track(ctx, set(results), fresh)
             last_full = now()
         commands.handle(ctx, ctx.tg.updates(ctx.state.telegram_offset))
         ctx.save()
@@ -251,8 +251,8 @@ def run(ctx: Ctx, allow_burst: bool = True) -> None:
     updates = ctx.tg.updates(ctx.state.telegram_offset)
 
     results = scan(ctx)
-    process(ctx, results)
-    season.track(ctx, set(results))
+    fresh = process(ctx, results)
+    season.track(ctx, set(results), fresh)
     rel.sync(ctx.state, ctx.cfg, [p for ps in results.values() for p in ps])
     send_reminders(ctx)
     commands.handle(ctx, updates, skip_start=first)

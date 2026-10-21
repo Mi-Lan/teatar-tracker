@@ -92,8 +92,12 @@ def apply(state: State, scanned: dict[str, list[Performance]]) -> None:
         titles = set(state.known_titles.get(venue, []))
         for p in perfs:
             state.performances[p.uid] = p.to_dict()
-            meta = state.meta.setdefault(p.uid, {"first_seen": stamp, "ever_on_sale": False})
-            meta["ever_on_sale"] = meta["ever_on_sale"] or p.status.buyable
+            meta = state.meta.get(p.uid)
+            if meta is None:
+                meta = state.meta[p.uid] = {"first_seen": stamp, "ever_on_sale": p.status.buyable}
+            elif p.status.buyable and not meta["ever_on_sale"]:
+                meta["ever_on_sale"] = True
+                meta["on_sale_since"] = stamp  # listed earlier, tickets came later
             titles.add(p.title_norm)
         if titles:
             state.known_titles[venue] = sorted(titles)

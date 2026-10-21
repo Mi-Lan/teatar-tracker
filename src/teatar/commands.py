@@ -19,12 +19,13 @@ if TYPE_CHECKING:
 log = logging.getLogger(__name__)
 
 HELP = """🎭 <b>Theatre tracker</b>
-I check every hour and write only when it matters: a weekly overview on Monday morning,
-a "tickets for next month?" check every morning from the 20th to the 27th,
-ticket-release reminders and alerts, and news about plays you /watch.
-Replies to commands arrive within the hour (faster around releases).
+I check all day and write only when it matters: the moment a theatre releases tickets
+(with the time they appeared), a weekly overview on Monday morning, a "tickets for next month?"
+check every morning from the 20th to the 27th, ticket-release reminders, and news about plays you /watch.
+Replies to commands arrive on the next check (faster around releases).
 
 <b>Browse</b>
+/new — what came out in the last 7 days and when (<code>/new 30</code> for a month)
 /month — everything until the end of next month
 /tickets — is next month out yet, per theatre
 /today · /tomorrow · /week — shorter ranges
@@ -100,6 +101,13 @@ def cmd_tickets(ctx, arg):
     from . import season
 
     return season.report(ctx, remember=False)
+
+
+def cmd_new(ctx, arg):
+    from . import season
+
+    days = min(int(arg), 90) if arg.strip().isdigit() and int(arg) > 0 else 7
+    return season.recent(ctx, days)
 
 
 def cmd_overview(ctx, arg):
@@ -228,6 +236,7 @@ COMMANDS = {
     "/week": cmd_week, "/nedelja": cmd_week,
     "/month": cmd_month, "/mesec": cmd_month,
     "/tickets": cmd_tickets, "/karte": cmd_tickets, "/season": cmd_tickets,
+    "/new": cmd_new, "/novo": cmd_new, "/recent": cmd_new,
     "/overview": cmd_overview, "/all": cmd_overview, "/pregled": cmd_overview,
     "/theatre": cmd_theatre, "/theater": cmd_theatre, "/pozoriste": cmd_theatre,
     "/search": cmd_search, "/trazi": cmd_search,

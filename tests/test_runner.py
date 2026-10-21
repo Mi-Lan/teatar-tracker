@@ -24,9 +24,9 @@ def test_quiet_week_then_monday_report(make_ctx, clock):
     assert any("Tracker is live" in m for m in ctx.tg.sent)
 
     ctx.tg.sent.clear()
-    a.perfs.append(perf(venue="jdp", sid="2", title="Gubitnik", days=12))
-    a.perfs.append(perf(venue="jdp", sid="3", title="Gubitnik", days=13))
-    for _ in range(24 * 5):  # hourly checks through Sunday: new shows are found but not messaged
+    a.perfs.append(perf(venue="jdp", sid="2", title="Gubitnik", days=6))
+    a.perfs.append(perf(venue="jdp", sid="3", title="Gubitnik", days=7))
+    for _ in range(24 * 5):  # hourly checks through Sunday: a couple of new dates are found but not messaged
         clock.sleep(3600)
         run(ctx, allow_burst=False)
     assert ctx.tg.sent == []
@@ -208,7 +208,7 @@ def test_season_check_each_morning_20th_to_27th(make_ctx, clock):
     ctx.tg.sent.clear()
 
     def season_msgs():
-        return [m for m in ctx.tg.sent if m.startswith("🎟")]
+        return [m for m in ctx.tg.sent if m.startswith("🎟 <b>Tickets for")]
 
     for day, hour in [(19, 10), (20, 8), (20, 9), (20, 15)]:
         clock.t = datetime(2026, 9, day, hour, 7, tzinfo=TZ)
@@ -219,6 +219,10 @@ def test_season_check_each_morning_20th_to_27th(make_ctx, clock):
     feed.append(oct_show)  # JDP publishes October on the 21st
     clock.t = datetime(2026, 9, 21, 9, 7, tzinfo=TZ)
     run(ctx, allow_burst=False)
+    release = [m for m in ctx.tg.sent if "tickets for <b>October</b> are out" in m]
+    assert len(release) == 1 and release[0].startswith("🎟 <b>JDP</b>")  # messaged right away…
+    assert "Appeared 21.09. between 15:07 and 09:07" not in release[0]  # (previous check was the day before)
+    assert "between 20.09. 15:07 and 21.09. 09:07" in release[0]
     latest = season_msgs()[-1]
     assert "JDP</b>: tickets for 1 of 1 dates 🆕" in latest
     assert "BDP</b>: nothing for October yet" in latest
@@ -246,13 +250,68 @@ def test_midnight_check_and_release_time(make_ctx, clock):
     clock.t = datetime(2026, 9, 24, 0, 5, 30, tzinfo=TZ)
     run(ctx, allow_burst=False)
 
-    midnight = [m for m in ctx.tg.sent if m.startswith("🎟")][-1]
+    midnight = [m for m in ctx.tg.sent if m.startswith("🎟 <b>Tickets for")][-1]
     assert "Thu 24.09. · 00:05 check" in midnight
     assert "JDP</b>: tickets for 1 of 1 dates 🆕 · out 24.09. 00:05 (not yet at 23:05)" in midnight
-    assert ctx.state.release_log == [{"venue": "jdp", "month": "2026-10", "after": "2026-09-23T23:05:00+02:00", "by": "2026-09-24T00:05:30+02:00"}]
+    assert ctx.state.release_log == [{
+        "venue": "jdp", "month": "2026-10", "after": "2026-09-23T23:05:00+02:00", "by": "2026-09-24T00:05:30+02:00",
+        "new": 1, "opened": 0, "on_sale": 1, "listed": 1, "buyable": 1, "unknown": 0,
+    }]
+    release = [m for m in ctx.tg.sent if m.startswith("🎟 <b>JDP</b>")]
+    assert len(release) == 1 and "Appeared 24.09. between 23.09. 23:05 and 24.09. 00:05" in release[0]
 
     clock.t = datetime(2026, 9, 24, 8, 5, tzinfo=TZ)
     run(ctx, allow_burst=False)
-    morning = [m for m in ctx.tg.sent if m.startswith("🎟")][-1]
+    morning = [m for m in ctx.tg.sent if m.startswith("🎟 <b>Tickets for")][-1]
     assert "08:00 check" in morning and "🆕" not in morning  # already reported at midnight
     assert "out 24.09. 00:05 (not yet at 23:05)" in morning  # the release time stays in the status
+
+
+def test_batch_release_is_messaged_once_with_its_time_window(make_ctx, clock):
+    """A theatre that puts out many dates at once (any month) is a release: one message, bracketed by checks."""
+    clock.t = datetime(2026, 10, 5, 12, 0, tzinfo=TZ)
+    feed = [perf(venue="narodno", sid="1", days=3)]
+    ctx = make_ctx([FakeAdapter("narodno", fn=lambda: list(feed)), FakeAdapter("sava", [perf(venue="sava")])], settings={"release_season": {"days": [1, 1]}})
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+
+    for hour in (13, 14):
+        clock.t = datetime(2026, 10, 5, hour, 2, tzinfo=TZ)
+        run(ctx, allow_burst=False)
+    for i in range(6):  # 6 December dates appear, two of them not on sale yet
+        p = perf(venue="narodno", sid=f"dec{i}", title=f"Play {i}", status=Status.NOT_ON_SALE if i < 2 else Status.ON_SALE)
+        p.start = datetime(2026, 12, 1 + i, 19, 30, tzinfo=TZ)
+        feed.append(p)
+    p = perf(venue="narodno", sid="jan", title="Play 9", status=Status.ON_SALE)  # plus one for January
+    p.start = datetime(2027, 1, 3, 19, 30, tzinfo=TZ)
+    feed.append(p)
+    clock.t = datetime(2026, 10, 5, 17, 2, 42, tzinfo=TZ)
+    run(ctx, allow_burst=False)
+    assert ctx.tg.sent == [
+        "🎟 <b>NARODNO</b> · new tickets out\n"
+        "December: +6 new dates → 6 listed, 4 on sale\n"
+        "January: +1 new date → 1 listed, 1 on sale\n"
+        "Appeared 05.10. between 14:02 and 17:02 · /theatre narodno · /new"
+    ]
+    assert [(e["month"], e["new"], e["on_sale"]) for e in ctx.state.release_log] == [("2026-12", 6, 4), ("2027-01", 1, 1)]
+
+    ctx.tg.sent.clear()
+    feed[1].status = feed[2].status = Status.ON_SALE  # the two remaining dates go on sale later that day: logged, not messaged again
+    feed.append(perf(venue="narodno", sid="one", title="Single", days=20))  # one more date alone is not a release
+    clock.t = datetime(2026, 10, 5, 21, 15, tzinfo=TZ)
+    run(ctx, allow_burst=False)
+    assert ctx.tg.sent == []
+    assert ctx.state.meta["narodno:dec0"]["on_sale_since"] == "2026-10-05T21:15:00+02:00"
+
+    clock.t = datetime(2026, 10, 7, 9, 0, tzinfo=TZ)
+    ctx.tg.say("/new")
+    run(ctx, allow_burst=False)
+    (reply,) = ctx.tg.sent
+    assert reply.startswith("🆕 <b>New in the last 7 days</b>")
+    assert "📅 <b>Mon 05.10.</b>\n<i>NARODNO</i> · +8 dates (Oct 1, Dec 6, Jan 1), 8 on sale; 2 went on sale (Dec 2) · between 14:02 and 17:02\n  Single, Play 0, Play 1, Play 2, Play 3, Play 4, +2 more" in reply
+    assert "SAVA" not in reply  # nothing new there
+
+    clock.t = datetime(2026, 10, 7, 10, 0, tzinfo=TZ)
+    ctx.tg.say("/new 1")
+    run(ctx, allow_burst=False)
+    assert "Nothing new" in ctx.tg.sent[-1]

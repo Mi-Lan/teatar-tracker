@@ -24,7 +24,8 @@ class State:
     telegram_offset: int = 0
     last_digest: str = ""  # ISO date of the last scheduled report
     season: dict = field(default_factory=dict)  # next-month status for the 20th–27th checks (see season.py)
-    release_log: list[dict] = field(default_factory=list)  # when each theatre released each month
+    release_log: list[dict] = field(default_factory=list)  # when each theatre released each month (see season.py)
+    scanned: dict[str, str] = field(default_factory=dict)  # venue -> time of its last successful check
 
     # --- persistence -------------------------------------------------------------------------
     @classmethod
