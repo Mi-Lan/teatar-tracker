@@ -1351,11 +1351,11 @@
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6448": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6449": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6450": {
@@ -1443,23 +1443,23 @@
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6471": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6472": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6473": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6474": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6475": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "sava_centar:22502": {
@@ -2182,6 +2182,13 @@
   "sales_opened:bdp:202612061930-ljubavnice-kamerni-teatar-55": "2026-10-16T14:16:40+02:00",
   "sales_opened:bdp:202612071930-na-cijoj-strani-ulysses": "2026-10-16T14:16:40+02:00",
   "sales_opened:narodno:6391": "2026-10-19T14:58:52+02:00",
+  "sales_opened:narodno:6448": "2026-10-21T21:15:04+02:00",
+  "sales_opened:narodno:6449": "2026-10-21T21:15:04+02:00",
+  "sales_opened:narodno:6471": "2026-10-21T21:15:04+02:00",
+  "sales_opened:narodno:6472": "2026-10-21T21:15:04+02:00",
+  "sales_opened:narodno:6473": "2026-10-21T21:15:04+02:00",
+  "sales_opened:narodno:6474": "2026-10-21T21:15:04+02:00",
+  "sales_opened:narodno:6475": "2026-10-21T21:15:04+02:00",
   "season:2026-09-23": "2026-09-23T14:35:11+02:00",
   "season:2026-09-23:00:05": "2026-09-23T14:40:37+02:00",
   "season:2026-09-23:08:00": "2026-09-23T14:40:37+02:00",
@@ -3064,17 +3071,16 @@
   },
   "jdp:202611022030-slika-dorijana-greja": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1248",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1248"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611022030-slika-dorijana-greja",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-02T20:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Oskar Vajld",
    "title": "Slika Dorijana Greja",
    "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
@@ -4625,7 +4631,7 @@
   },
   "narodno:6388": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6388",
+   "buy_url": "",
    "extra": {
     "repid": "6388"
    },
@@ -4634,7 +4640,7 @@
    "source_id": "6388",
    "stage": "Велика сцена",
    "start": "2026-10-21T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "опера Ђакома Пучинија",
    "title": "Боеми",
    "url": "https://www.narodnopozoriste.rs/predstave/boemi?m=x2578a2858d37bcfbc980e91335d48aa4",
@@ -4838,7 +4844,7 @@
    "source_id": "6424",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-21T20:30:00+02:00",
-   "status": "sold_out",
+   "status": "not_on_sale",
    "subtitle": "трагикомедија Душана Ковачевића",
    "title": "Балкански шпијун",
    "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x31b7ea6b6a0a281d531b69d8469dd44c",
@@ -5186,7 +5192,7 @@
   },
   "narodno:6448": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6448",
    "extra": {
     "repid": "6448"
    },
@@ -5195,7 +5201,7 @@
    "source_id": "6448",
    "stage": "Велика сцена",
    "start": "2026-12-04T19:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "драма Синише Ковачевића",
    "title": "Године врана",
    "url": "https://www.narodnopozoriste.rs/predstave/godine-vrana?m=x6db46a9aab21529091adcceeee4bb02a",
@@ -5203,7 +5209,7 @@
   },
   "narodno:6449": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6449",
    "extra": {
     "repid": "6449"
    },
@@ -5212,7 +5218,7 @@
    "source_id": "6449",
    "stage": "Велика сцена",
    "start": "2026-12-06T19:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "драма Синише Ковачевића",
    "title": "Велика драма",
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
@@ -5577,7 +5583,7 @@
   },
   "narodno:6471": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6471",
    "extra": {
     "repid": "6471"
    },
@@ -5586,7 +5592,7 @@
    "source_id": "6471",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-12-02T20:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "драма Биљане Србљановић · енглески титл",
    "title": "Није смрт бицикло (да ти га украду)",
    "url": "https://www.narodnopozoriste.rs/predstave/nije-smrt-biciklo-da-ti-ga-ukradu?m=x3d847df28c09064b8fbce28976754048",
@@ -5594,7 +5600,7 @@
   },
   "narodno:6472": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6472",
    "extra": {
     "repid": "6472"
    },
@@ -5603,7 +5609,7 @@
    "source_id": "6472",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-12-03T20:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "драма Милутина Бојића",
    "title": "Госпођа Олга",
    "url": "https://www.narodnopozoriste.rs/predstave/gospodja-olga?m=x15c7ea1fe6a107d891ad5c28904bf179",
@@ -5611,7 +5617,7 @@
   },
   "narodno:6473": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6473",
    "extra": {
     "repid": "6473"
    },
@@ -5620,7 +5626,7 @@
    "source_id": "6473",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-12-04T20:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "по мотивима прозе Борисава Станковића",
    "title": "Божји људи",
    "url": "https://www.narodnopozoriste.rs/predstave/bozji-ljudi?m=x306b37fe3d3e1f179a7c10b95192313b",
@@ -5628,7 +5634,7 @@
   },
   "narodno:6474": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6474",
    "extra": {
     "repid": "6474"
    },
@@ -5637,7 +5643,7 @@
    "source_id": "6474",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-12-06T20:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x74fd08b051c14401b614ca121bb07050",
@@ -5645,7 +5651,7 @@
   },
   "narodno:6475": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6475",
    "extra": {
     "repid": "6475"
    },
@@ -5654,7 +5660,7 @@
    "source_id": "6475",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-12-07T20:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "трагикомедија Душана Ковачевића",
    "title": "Балкански шпијун",
    "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x27f877a4dd778e355aa3328e143c95e2",
@@ -6734,7 +6740,7 @@
    "source_id": "1263",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:30:00+02:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Mјузикл у режији Југа Радивојевића",
    "title": "MAMMA MIA!",
    "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
