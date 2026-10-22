@@ -3167,7 +3167,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1230"
    },
    "price": "",
@@ -3175,7 +3175,7 @@
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -3307,7 +3307,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1236",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1236"
    },
    "price": "",
@@ -3315,7 +3315,7 @@
    "source_id": "202611172000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-17T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4547,7 +4547,7 @@
   },
   "narodno:6389": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
+   "buy_url": "",
    "extra": {
     "repid": "6389"
    },
@@ -4556,7 +4556,7 @@
    "source_id": "6389",
    "stage": "Велика сцена",
    "start": "2026-10-22T19:00:00+02:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
    "title": "Грк Зорба",
    "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xdcd5b1219e681bc196eb2719ec03425d",
@@ -6694,7 +6694,7 @@
    "source_id": "1269",
    "stage": "Велика сцена",
    "start": "2026-10-31T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Небојше Брадића",
    "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
    "url": "https://pozoristeterazije.com/predstave/zene-na-ivici-nervnog-sloma/",
@@ -6712,7 +6712,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -6816,7 +6816,8 @@
     "out": true
    },
    "terazije": {
-    "out": true
+    "checked": "2026-10-22T21:10:39+02:00",
+    "out": false
    }
   },
   "month": "2026-11",
