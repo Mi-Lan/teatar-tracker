@@ -1,10 +1,12 @@
 # Theatre tracker 🎭
 
 Watches Belgrade theatre and venue sites, and on Telegram it:
-- tells you **the moment a theatre releases tickets**, and **when** they appeared,
-- tells you about **new shows and dates**,
-- shows **what's playing, by date and theatre, with availability**,
-- catches **ticket releases**: a reminder before, then checks every 30 s around the release time.
+- messages you **the moment a theatre releases tickets**: how many dates, which titles, and **when** they appeared,
+- around a **known release time** checks every 30 s, so the message comes within a minute,
+- on demand shows **what came out recently** (`/new`) and **what's playing, by date and theatre, with availability**.
+
+By default that release message is the only thing it sends (plus plays you `/watch`); the weekly overview,
+the 20th–27th status, reminders and "nothing yet" notes are off in `config/settings.yaml` and can be turned on.
 
 It checks every 15 minutes on GitHub Actions (free), silently: you only hear from it when it matters. GitHub
 delays and skips scheduled runs freely (an hourly schedule ran only every 3–6 hours in practice), so the gap
@@ -26,10 +28,11 @@ Configuration is in `config/`:
 - `venues.yaml`: which sources to track and their options (BDP stage filter, JDP months ahead…)
 - `watchlist.yaml`: plays you care about (⭐, extra alerts: back in stock, running low, sold out)
 - `releases.yaml`: known ticket release times, plus **monthly patterns**. Narodno is set up to put next
-  month's tickets on sale at midnight between the 22nd and 23rd: reminders at 08:00 on the 21st and 22nd,
-  checks every 30 s from 23:50 to 00:45, and every minute on the 23rd if nothing appeared at midnight.
-- `settings.yaml`: digest time, reminder times, burst timing, and `release_season.batch_min`: how many new
-  dates (or sales openings) in one check count as a release worth a message right away (default 5)
+  month's tickets on sale at midnight between the 22nd and 23rd: checks every 30 s from 23:50 to 00:45, and
+  every minute on the 23rd if nothing appeared at midnight (reminders beforehand can be added with `remind`).
+- `settings.yaml`: what is sent on a schedule (`digest`, `release_season.times`: both off by default),
+  reminders and burst timing, and `release_season.batch_min`: how many new dates (or sales openings) in one
+  check count as a release worth a message (default 5; around a known release, any new ticket is)
 
 ## Telegram commands
 
@@ -50,16 +53,18 @@ Replies come on the next check (within the hour; faster during release bursts).
 | `/releases` · `/unrelease 1` · `/status` | |
 
 **What it sends you (and nothing else):**
-- **The moment tickets come out:** when a theatre's next month gets its first tickets, or any theatre puts out a
-  batch of new dates / opens sales for many dates in one check (`batch_min`, default 5), one message per theatre
-  per day: how many dates per month, how many on sale, and when they appeared, bracketed by the previous check
-  that didn't see them and the one that did (e.g. "between 12:00 and 17:02"). Single new dates are not messaged;
-  they show up in `/new` and the weekly overview.
-- **Weekly overview, Monday 08:00:** everything on until the end of next month, by date and theatre, with tickets left.
-- **From the 20th to the 27th, at 00:05 and 08:00:** one message saying, per theatre, whether next month's programme and tickets are out (🆕 = since the previous check), and **when** each theatre released: the first check that saw the tickets and the last one that didn't. Most theatres release in that window.
-- **Right away:** known ticket releases (reminders, the moment tickets appear), plays on your `/watch` list, and a warning if a site stops responding.
+- **The moment tickets come out:** when a theatre's next month gets its first tickets, when any theatre puts out a
+  batch of new dates / opens sales for many dates in one check (`batch_min`, default 5), or when any new ticket
+  appears at a theatre with a known release around now. One message per theatre per day: how many dates per
+  month, how many on sale, the titles, and when they appeared, bracketed by the previous check that didn't see
+  them and the one that did (e.g. "between 12:00 and 17:02"). Single new dates elsewhere are not messaged; they
+  show up in `/new`.
+- Plays on your `/watch` list (back in stock, running low, sold out), and a warning if a site stops responding.
 
-Change the day/time or switch to instant alerts for everything in `config/settings.yaml` (`digest`, `alerts.instant`).
+Optional, off by default in `config/settings.yaml`: a weekly or daily overview (`digest.every`), a "tickets for
+next month?" status per theatre on the 20th–27th (`release_season.times`), reminders before known releases
+(`releases.remind_before`, `remind` in `releases.yaml`), a note when a release window passes with nothing
+(`releases.report_misses`), and instant alerts for every new date (`alerts.instant: all`).
 
 ## Setup
 

@@ -19,10 +19,9 @@ if TYPE_CHECKING:
 log = logging.getLogger(__name__)
 
 HELP = """🎭 <b>Theatre tracker</b>
-I check all day and write only when it matters: the moment a theatre releases tickets
-(with the time they appeared), a weekly overview on Monday morning, a "tickets for next month?"
-check every morning from the 20th to the 27th, ticket-release reminders, and news about plays you /watch.
-Replies to commands arrive on the next check (faster around releases).
+I check all day and write only when tickets come out: the moment a theatre releases them,
+with the time they appeared and the titles (plus news about plays you /watch).
+Everything else is here on demand; replies arrive on the next check (faster around releases).
 
 <b>Browse</b>
 /new — what came out in the last 7 days and when (<code>/new 30</code> for a month)
@@ -38,7 +37,7 @@ Replies to commands arrive on the next check (faster around releases).
 /unwatch <i>number or title</i>
 /watchlist
 
-<b>Ticket releases</b>
+<b>Ticket releases</b> (polled every 30 s around the time; any new ticket there is messaged)
 /release <i>theatre date [time] [note]</i>
    <code>/release jdp 1.10. 10:00 oktobar</code>
    <code>/release narodno 2026-10-05</code> (date only = checks all day)

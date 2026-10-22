@@ -97,8 +97,9 @@ def test_release_burst_catches_tickets_within_a_minute(make_ctx, clock):
     run(ctx)  # 39 min before release: inside the 75-min lookahead → burst
 
     assert not any("Ticket release in" in m for m in ctx.tg.sent)  # reminder not repeated
-    alert = next(m for m in ctx.tg.sent if "Release watch" in m)
-    assert "Ričard Drugi" in alert
+    alert = next(m for m in ctx.tg.sent if m.startswith("🎟 <b>JDP</b>"))  # one date is a release at a venue with a known release
+    assert "October: +1 new date → 1 listed, 1 on sale\nRičard Drugi\nAppeared 22.09. between 12:40 and 12:40" in alert  # 30-s polls
+    assert not any("Release watch" in m for m in ctx.tg.sent)  # no separate list of dates
     # alert went out on the first poll after publication (poll every 30 s)
     assert ctx.state.notified[f"new_show:jdp:oct1"] <= (release_at + timedelta(seconds=60)).isoformat()
     assert not any("No new tickets yet" in m for m in ctx.tg.sent)  # you were alerted; no extra message
@@ -157,10 +158,13 @@ def test_recurring_instances_skip_a_release_that_already_happened():
 def test_monthly_reminders_on_21st_and_22nd_then_midnight_burst(make_ctx, clock):
     clock.t = datetime(2026, 10, 20, 12, 0, tzinfo=TZ)
 
+    nov = perf(venue="jdp", sid="nov", title="Tosca")
+    nov.start = datetime(2026, 11, 5, 20, 0, tzinfo=TZ)
+
     def feed():  # tickets for November appear at 00:02 on the 23rd
         items = [perf(venue="jdp", sid="1", days=3)]
         if clock() >= datetime(2026, 10, 23, 0, 2, tzinfo=TZ):
-            items.append(perf(venue="jdp", sid="nov", title="Tosca", days=20))
+            items.append(nov)
         return items
 
     ctx = make_ctx([FakeAdapter("jdp", fn=feed)])
@@ -189,8 +193,8 @@ def test_monthly_reminders_on_21st_and_22nd_then_midnight_burst(make_ctx, clock)
     clock.t = datetime(2026, 10, 22, 22, 49, tzinfo=TZ)  # a cron run inside the 75-min lookahead
     ctx.started = clock()
     run(ctx)
-    alert = next(m for m in ctx.tg.sent if "Release watch" in m)
-    assert "Tosca" in alert
+    alert = next(m for m in ctx.tg.sent if m.startswith("🎟 <b>JDP</b>"))
+    assert "tickets for <b>November</b> are out" in alert and "Tosca" in alert
     assert ctx.state.notified["new_show:jdp:nov"] <= "2026-10-23T00:03:00+02:00"
 
     # the all-day fallback on the 23rd stands down because tickets already came out at midnight
@@ -291,6 +295,7 @@ def test_batch_release_is_messaged_once_with_its_time_window(make_ctx, clock):
         "🎟 <b>NARODNO</b> · new tickets out\n"
         "December: +6 new dates → 6 listed, 4 on sale\n"
         "January: +1 new date → 1 listed, 1 on sale\n"
+        "Play 0, Play 1, Play 2, Play 3, Play 4, Play 5, +1 more\n"
         "Appeared 05.10. between 14:02 and 17:02 · /theatre narodno · /new"
     ]
     assert [(e["month"], e["new"], e["on_sale"]) for e in ctx.state.release_log] == [("2026-12", 6, 4), ("2027-01", 1, 1)]
@@ -315,3 +320,28 @@ def test_batch_release_is_messaged_once_with_its_time_window(make_ctx, clock):
     ctx.tg.say("/new 1")
     run(ctx, allow_burst=False)
     assert "Nothing new" in ctx.tg.sent[-1]
+
+
+def test_quiet_config_only_messages_releases(make_ctx, clock):
+    """config/settings.yaml: no weekly overview, no 20th–27th status, no reminders, no "nothing yet" note."""
+    clock.t = datetime(2026, 10, 20, 12, 0, tzinfo=TZ)
+    feed = [perf(venue="jdp", sid="1", days=3)]
+    settings = {"digest": {"every": "off"}, "release_season": {"times": []}, "releases": {"remind_before": [], "report_misses": False}}
+    ctx = make_ctx([FakeAdapter("jdp", fn=lambda: list(feed))], settings=settings, releases=[{"venue": "jdp", "at": "2026-10-22 10:00"}])
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+
+    t = clock()
+    while t < datetime(2026, 10, 28, 12, 0, tzinfo=TZ):  # a week of checks across a Monday and the 20th–27th, with a release that brings nothing
+        t += timedelta(hours=1)
+        clock.t = t
+        ctx.started = t
+        run(ctx)
+    assert ctx.tg.sent == []
+
+    p = perf(venue="jdp", sid="nov", title="Tosca")
+    p.start = datetime(2026, 11, 5, 20, 0, tzinfo=TZ)
+    feed.append(p)
+    clock.t = datetime(2026, 10, 28, 13, 0, tzinfo=TZ)
+    run(ctx, allow_burst=False)
+    assert len(ctx.tg.sent) == 1 and ctx.tg.sent[0].startswith("🎟 <b>JDP</b> · tickets for <b>November</b> are out")

@@ -1,7 +1,7 @@
 # Timezone for everything below: Europe/Belgrade.
 
 digest:  # the scheduled overview: everything until the end of next month
-  every: weekly  # weekly | daily
+  every: off  # off | weekly | daily — off: nothing scheduled, /month shows the same on demand
   weekday: monday
   time: "08:00"
   until: next_month  # covers today → end of next month; set to "days" to use `days` instead
@@ -9,20 +9,22 @@ digest:  # the scheduled overview: everything until the end of next month
 
 release_season:  # most theatres publish next month and open sales between these days
   days: [20, 27]  # on each of these days: a "tickets for next month" status per theatre…
-  times: ["00:05", "08:00"]  # …at these times. The status also says when each theatre released.
+  times: []  # …at these times, e.g. ["00:05", "08:00"]. Empty: no scheduled status; /tickets shows it on demand.
   # A release is messaged the moment it is seen, any day of the month: next month's first tickets at a
-  # theatre, or at least this many new dates / sales openings at one theatre in a single check.
+  # theatre, at least this many new dates / sales openings at one theatre in a single check, or any new
+  # tickets at a theatre with a known release around now (/release, releases.yaml).
   batch_min: 5
 
 alerts:
-  # What is messaged immediately. "releases_and_watchlist": known ticket releases (reminders, the
-  # moment tickets appear) and plays on your /watch list; everything else just appears in the
-  # weekly overview. "all": every new show/date/sale as soon as it's found.
+  # What is messaged immediately, besides releases (always). "releases_and_watchlist": only plays on
+  # your /watch list; everything else just appears in /new and /month. "all": every new show/date/sale
+  # as soon as it's found.
   instant: releases_and_watchlist
   low_threshold: 20  # watched plays: warn when fewer tickets than this are left (where counts exist)
 
 releases:
-  remind_before: ["24h", "1h"]  # reminders before a known ticket release
+  remind_before: []  # reminders before a known ticket release, e.g. ["24h", "1h"]; empty: none
+  report_misses: false  # true: a note when a release window closes with no new tickets
   lookahead_minutes: 150  # a run starting this long before a release switches into burst mode (checks are hourly)
   start_before_minutes: 10  # burst polling starts this long before the release time
   stop_after_minutes: 45  # ...and ends this long after it

@@ -91,15 +91,14 @@ def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True) ->
 
 
 def process(ctx: Ctx, results: dict[str, list[Performance]], header: str = "🔔 <b>Theatre update</b>") -> list[diffmod.Change]:
-    """Detect changes. Watched plays and venues around a known release are messaged right away;
-    everything else simply shows up in the next weekly overview (unless alerts.instant is "all")."""
+    """Detect changes. Watched plays are messaged right away (every change is, when alerts.instant is
+    "all"); releases are messaged by season.track; everything else just shows up in /new and the overview."""
     low = ctx.cfg.get("alerts", "low_threshold", 20)
     changes = diffmod.compute(ctx.state, results, ctx.state.watchlist, low)
     diffmod.apply(ctx.state, results)
     fresh = [c for c in changes if c.reportable and not (c.kind in diffmod.ONCE and ctx.state.was_notified(c.key))]
-    hot = rel.hot_venues(ctx.state, ctx.cfg)
     send_all = ctx.cfg.get("alerts", "instant", "releases_and_watchlist") == "all"
-    instant = [c for c in fresh if send_all or c.watched or c.perf.venue in hot]
+    instant = [c for c in fresh if send_all or c.watched]
     if instant:
         ctx.tg.send_all(fmt.alerts(instant, ctx.names(), header))
     for c in fresh:
@@ -147,7 +146,9 @@ WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", 
 
 
 def digest_due(ctx: Ctx) -> bool:
-    """Weekly (default) or daily report: due once the latest scheduled slot has passed."""
+    """Weekly (default) or daily report: due once the latest scheduled slot has passed. "off" = never."""
+    if str(ctx.cfg.get("digest", "every", "weekly")).lower() in ("off", "never", "none", "false"):
+        return False
     at = time.fromisoformat(ctx.cfg.get("digest", "time", "09:00"))
     t = now()
     slot = t.date()
@@ -230,6 +231,8 @@ def burst(ctx: Ctx, windows: list[rel.Window]) -> None:
             ctx.state.mark_notified(key)
             if rel.released_key(w.release) in ctx.state.notified:
                 continue  # tickets came out and you were already alerted
+            if not ctx.cfg.get("releases", "report_misses", True):
+                continue
             later = [
                 o for o in ctx.state.releases
                 if o is not w.release and o["venue"] == w.release["venue"] and rel.window(o, ctx.cfg).end > now()

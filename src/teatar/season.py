@@ -20,6 +20,7 @@ from html import escape
 from typing import TYPE_CHECKING
 
 from . import format as fmt
+from . import releases as rel
 from .diff import ONCE, Change, Kind
 from .models import Performance, Status, now
 
@@ -101,12 +102,15 @@ def _season(ctx: Ctx) -> dict:
 # --- release detection ------------------------------------------------------------------------------
 
 
-def _batches(changes: list[Change]) -> dict[str, dict[str, Counter]]:
-    """venue -> month -> {new, opened, on_sale} from this scan's fresh new-show/new-date/sales-opened changes."""
+def _batches(changes: list[Change]) -> tuple[dict[str, dict[str, Counter]], dict[str, Counter]]:
+    """From this scan's fresh new-show/new-date/sales-opened changes: venue -> month -> {new, opened, on_sale},
+    and venue -> title -> number of dates."""
     out: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
+    titles: dict[str, Counter] = defaultdict(Counter)
     for c in changes:
         if c.kind not in ONCE:
             continue
+        titles[c.perf.venue][c.perf.title] += 1
         b = out[c.perf.venue][c.perf.start.strftime("%Y-%m")]
         if c.kind == Kind.SALES_OPENED:
             b["opened"] += 1
@@ -114,21 +118,23 @@ def _batches(changes: list[Change]) -> dict[str, dict[str, Counter]]:
         else:
             b["new"] += 1
             b["on_sale"] += c.perf.status.buyable
-    return out
+    return out, titles
 
 
 def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = None) -> None:
     """Call after every scan: notices (and messages) the moment a theatre releases tickets.
 
-    A release is next month's first tickets at a theatre, or a batch of at least
-    `release_season.batch_min` new dates / sales openings in one check. The time is bracketed by
-    this check and the previous one of that venue (state.scanned).
+    A release is next month's first tickets at a theatre, a batch of at least
+    `release_season.batch_min` new dates / sales openings in one check, or any new tickets at a
+    venue with a known release around now (/release, releases.yaml). The time is bracketed by this
+    check and the previous one of that venue (state.scanned).
     """
     s = _season(ctx)
     target = s["month"]
     stamp = now().isoformat(timespec="seconds")
     batch_min = int(ctx.cfg.get("release_season", "batch_min", 5))
-    batches = _batches(changes or [])
+    hot = rel.hot_venues(ctx.state, ctx.cfg)
+    batches, titles = _batches(changes or [])
     for venue in sorted(scanned_venues & set(ctx.cfg.venues)):
         after = ctx.state.scanned.get(venue)
         c = _counts(_month_perfs(ctx, venue, target))
@@ -142,7 +148,7 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
         size = sum(b["new"] + b["opened"] for b in months.values())
         if transition and target not in months:
             months[target] = Counter()
-        if not transition and size < batch_min:
+        if not transition and size < (1 if venue in hot else batch_min):
             continue
         entries = []
         for month in sorted(months):
@@ -160,7 +166,7 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
         key = f"drop:{venue}:{stamp[:10]}"
         if not ctx.state.was_notified(key):  # one message per theatre per day; later batches are only logged
             ctx.state.mark_notified(key)
-            ctx.tg.send(release_message(ctx, venue, entries))
+            ctx.tg.send(release_message(ctx, venue, entries, titles.get(venue)))
 
 
 def span(after: str | None, by: str) -> str:
@@ -186,7 +192,14 @@ def _month_line(e: dict, show_month: bool = True) -> str:
     return f"{head}{what} → {status}"
 
 
-def release_message(ctx: Ctx, venue: str, entries: list[dict]) -> str:
+def titles_line(titles: Counter, limit: int = 6) -> str:
+    top = titles.most_common(limit)
+    shown = ", ".join(f"{escape(t)}{f' ×{n}' if n > 1 else ''}" for t, n in top)
+    more = len(titles) - len(top)
+    return f"{shown}{f', +{more} more' if more else ''}"
+
+
+def release_message(ctx: Ctx, venue: str, entries: list[dict], titles: Counter | None = None) -> str:
     name = escape(ctx.cfg.venue_name(venue))
     on_sale = sum(e["on_sale"] for e in entries)
     target = _season(ctx)["month"]
@@ -200,6 +213,8 @@ def release_message(ctx: Ctx, venue: str, entries: list[dict]) -> str:
     else:
         head = f"🎟 <b>{name}</b> · new tickets out"
     lines = [head] + [_month_line(e) for e in entries]
+    if titles:
+        lines.append(titles_line(titles))
     e = entries[0]
     lines.append(f"Appeared {datetime.fromisoformat(e['by']):%d.%m.} {span(e['after'], e['by'])} · /theatre {venue} · /new")
     return "\n".join(lines)
@@ -317,10 +332,7 @@ def recent(ctx: Ctx, days: int = 7) -> list[str]:
                 when = f"at {datetime.fromisoformat(g['last']):%H:%M}" if g.get("last") else ""
             lines.append(f"{name} · {'; '.join(parts)}" + (f" · {when}" if when else ""))
             if g["titles"]:
-                top = g["titles"].most_common(6)
-                shown = ", ".join(f"{escape(t)}{f' ×{n}' if n > 1 else ''}" for t, n in top)
-                more = len(g["titles"]) - len(top)
-                lines.append(f"  {shown}{f', +{more} more' if more else ''}")
+                lines.append(f"  {titles_line(g['titles'])}")
         blocks.append("\n".join(lines))
     head = f"🆕 <b>New in the last {days} days</b>"
     if not blocks:
