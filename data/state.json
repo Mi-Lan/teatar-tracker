@@ -231,6 +231,7 @@
    "sarah brightman a winter symphony loze",
    "sarah brightman a winter symphony vip",
    "sergej cetkovic",
+   "slobodan trkulja balkanopolis put svile iii",
    "the nutcracker",
    "tijana bogicevic",
    "toma zdravkovic koncert secanja",
@@ -1901,6 +1902,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-10-14T15:36:00+02:00"
   },
+  "sava_centar:27770": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T16:54:25+02:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2267,6 +2272,7 @@
   "new_show:sava_centar:27388": "2026-10-08T18:22:01+02:00",
   "new_show:sava_centar:27409": "2026-10-13T17:51:50+02:00",
   "new_show:sava_centar:27459": "2026-10-14T15:36:00+02:00",
+  "new_show:sava_centar:27770": "2026-10-23T16:54:25+02:00",
   "new_show:terazije:1252": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1253": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1254": "2026-09-25T01:50:54+02:00",
@@ -2941,40 +2947,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610232000-pucina": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610232000-pucina",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-23T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Branislav Nušić",
-   "title": "Pučina",
-   "url": "https://www.jdp.rs/rs/performance/%d0%bf%d1%83%d1%87%d0%b8%d0%bd%d0%b0/",
-   "venue": "jdp"
-  },
-  "jdp:202610232030-slika-dorijana-greja": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610232030-slika-dorijana-greja",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-23T20:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Oskar Vajld",
-   "title": "Slika Dorijana Greja",
-   "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
-   "venue": "jdp"
-  },
   "jdp:202610242000-hotel-slobodan-promet": {
    "available": null,
    "buy_url": "",
@@ -3030,16 +3002,17 @@
   },
   "jdp:202610272030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1220",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1220"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-27T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -3792,7 +3765,7 @@
    "buy_url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
    "extra": {
     "end_date": "2026-10-24",
-    "event_status": "Trenutno nedostupno"
+    "event_status": ""
    },
    "price": "od 1500 RSD",
    "sales_start": null,
@@ -4011,14 +3984,14 @@
    "buy_url": "https://tickets.rs/event/staklena_menadzerija_28672",
    "extra": {
     "end_date": "2026-10-23",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 1700 RSD",
    "sales_start": null,
    "source_id": "27226",
    "stage": "",
    "start": "2026-10-23T20:00:00+02:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "STAKLENA MENAŽERIJA",
    "url": "https://tickets.rs/event/staklena_menadzerija_28672",
@@ -4451,7 +4424,7 @@
   },
   "narodno:6369": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
+   "buy_url": "",
    "extra": {
     "repid": "6369"
    },
@@ -4460,7 +4433,7 @@
    "source_id": "6369",
    "stage": "Велика сцена",
    "start": "2026-11-04T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=x2ea093759eb28aa4f88a340d1bcb5d77",
@@ -6061,7 +6034,7 @@
     "end_date": "2026-10-29",
     "event_status": ""
    },
-   "price": "od 15000 RSD",
+   "price": "od 10000 RSD",
    "sales_start": null,
    "source_id": "25921",
    "stage": "Immersive Hall",
@@ -6630,6 +6603,24 @@
    "url": "https://tickets.rs/event/premijera_filma_ruka_pravde_28906",
    "venue": "sava_centar"
   },
+  "sava_centar:27770": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
+   "extra": {
+    "end_date": "2027-02-14",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "27770",
+   "stage": "Plava dvorana",
+   "start": "2027-02-14T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Slobodan Trkulja & Balkanopolis: Put svile III",
+   "url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
+   "venue": "sava_centar"
+  },
   "terazije:1263": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1263",
@@ -6642,7 +6633,7 @@
    "source_id": "1263",
    "stage": "Велика сцена",
    "start": "2026-10-23T19:30:00+02:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Mјузикл у режији Југа Радивојевића",
    "title": "MAMMA MIA!",
    "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
@@ -6732,7 +6723,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
