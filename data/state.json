@@ -226,6 +226,7 @@
    "premijera filma ruka pravde",
    "rock simphony",
    "roger waters presents legacy",
+   "roger waters presents legacy a pink floyd tribute show performed by the harry waters band the father s legacy the son s band",
    "sarah brightman a winter symphony",
    "sarah brightman a winter symphony loze",
    "sarah brightman a winter symphony vip",
@@ -2316,7 +2317,8 @@
   "season:2026-10-21:08:00": "2026-10-21T12:00:25+02:00",
   "season:2026-10-22:00:05": "2026-10-22T12:00:56+02:00",
   "season:2026-10-22:08:00": "2026-10-22T12:00:56+02:00",
-  "season:2026-10-23:00:05": "2026-10-23T01:12:55+02:00"
+  "season:2026-10-23:00:05": "2026-10-23T11:55:45+02:00",
+  "season:2026-10-23:08:00": "2026-10-23T11:55:45+02:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -3324,17 +3326,16 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1232"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -4501,7 +4502,7 @@
   },
   "narodno:6372": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
+   "buy_url": "",
    "extra": {
     "repid": "6372"
    },
@@ -4510,7 +4511,7 @@
    "source_id": "6372",
    "stage": "Велика сцена",
    "start": "2026-11-13T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xfdceb120249b6675b2d44b7f0928b461",
@@ -4909,7 +4910,7 @@
   },
   "narodno:6431": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
    },
@@ -4918,7 +4919,7 @@
    "source_id": "6431",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-31T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
@@ -6571,7 +6572,7 @@
    "start": "2027-06-05T20:00:00+02:00",
    "status": "on_sale",
    "subtitle": "",
-   "title": "ROGER WATERS PRESENTS LEGACY",
+   "title": "ROGER WATERS PRESENTS LEGACY A PINK FLOYD TRIBUTE SHOW PERFORMED BY THE HARRY WATERS BAND THE FATHER’S LEGACY, THE SON’S BAND",
    "url": "https://tickets.rs/event/roger_waters_presents_legacy_28816",
    "venue": "sava_centar"
   },
@@ -7279,10 +7280,10 @@
     "unknown": 0
    },
    "jdp": {
-    "buyable": 25,
+    "buyable": 24,
     "listed": 35,
     "not_yet": 0,
-    "sold_out": 10,
+    "sold_out": 11,
     "unknown": 0
    },
    "kolarac": {
@@ -7307,10 +7308,10 @@
     "unknown": 0
    },
    "narodno": {
-    "buyable": 41,
+    "buyable": 40,
     "listed": 50,
     "not_yet": 5,
-    "sold_out": 4,
+    "sold_out": 5,
     "unknown": 0
    },
    "sava_centar": {
