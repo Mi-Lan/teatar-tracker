@@ -2950,24 +2950,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610242030-gubitnik": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1219",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1219"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610242030-gubitnik",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-24T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Tomas Bernhard / Aleksandar Sergejevič Puškin",
-   "title": "Gubitnik",
-   "url": "https://www.jdp.rs/performance/gubitnik/",
-   "venue": "jdp"
-  },
   "jdp:202610272000-ricard-drugi": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1207",
@@ -3484,7 +3466,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1239",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1239"
    },
    "price": "",
@@ -3492,7 +3474,7 @@
    "source_id": "202611222000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-22T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4721,7 +4703,7 @@
   },
   "narodno:6427": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
+   "buy_url": "",
    "extra": {
     "repid": "6427"
    },
@@ -4730,7 +4712,7 @@
    "source_id": "6427",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-24T20:30:00+02:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драма Милутина Бојића",
    "title": "Госпођа Олга",
    "url": "https://www.narodnopozoriste.rs/predstave/gospodja-olga?m=x4b0ffd915e6d93b30ca8b2c5f148030f",
@@ -6509,24 +6491,6 @@
    "url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
    "venue": "sava_centar"
   },
-  "terazije:1264": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1264",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1264"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1264",
-   "stage": "Велика сцена",
-   "start": "2026-10-24T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Даријана Михајловића",
-   "title": "БАЛКАН ЕКСПРЕС",
-   "url": "https://pozoristeterazije.com/repertoar/",
-   "venue": "terazije"
-  },
   "terazije:1265": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1265",
@@ -6683,7 +6647,7 @@
    "source_id": "1274",
    "stage": "Велика сцена",
    "start": "2026-11-06T19:30:00+01:00",
-   "status": "low",
+   "status": "on_sale",
    "subtitle": "Мјузикл у режији Владимира Лазића",
    "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
    "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
