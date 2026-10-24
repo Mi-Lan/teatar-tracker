@@ -2327,7 +2327,8 @@
   "season:2026-10-23:00:05": "2026-10-23T11:55:45+02:00",
   "season:2026-10-23:08:00": "2026-10-23T11:55:45+02:00",
   "season:2026-10-24:00:05": "2026-10-24T12:46:44+02:00",
-  "season:2026-10-24:08:00": "2026-10-24T12:46:44+02:00"
+  "season:2026-10-24:08:00": "2026-10-24T12:46:44+02:00",
+  "season:2026-10-25:00:05": "2026-10-25T01:05:12+02:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -2987,16 +2988,17 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1208"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3269,17 +3271,16 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1232"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -3730,24 +3731,6 @@
    "subtitle": "",
    "title": "NIKOLAJ KUZNJECOV",
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
-   "venue": "kolarac"
-  },
-  "kolarac:27393": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
-   "extra": {
-    "end_date": "2026-10-24",
-    "event_status": ""
-   },
-   "price": "od 1500 RSD",
-   "sales_start": null,
-   "source_id": "27393",
-   "stage": "",
-   "start": "2026-10-24T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Sofijska filharmonija",
-   "url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
    "venue": "kolarac"
   },
   "kolarac:27394": {
@@ -4701,23 +4684,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
    "venue": "narodno"
   },
-  "narodno:6427": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6427"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6427",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-24T20:30:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Милутина Бојића",
-   "title": "Госпођа Олга",
-   "url": "https://www.narodnopozoriste.rs/predstave/gospodja-olga?m=x4b0ffd915e6d93b30ca8b2c5f148030f",
-   "venue": "narodno"
-  },
   "narodno:6428": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
@@ -4852,23 +4818,6 @@
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=x3b15e44cc7175e67f3e1ff32cf99d7aa",
-   "venue": "narodno"
-  },
-  "narodno:6438": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6438"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6438",
-   "stage": "Велика сцена",
-   "start": "2026-10-24T20:00:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Ехо две обале - 70 година успостављања дипломатских односа Туниса и Србије",
-   "url": "https://www.narodnopozoriste.rs/predstave/eho-dve-obale-70-godina-uspostavljanja-diplomatskih-odnosa-tunisa-i-srbije?m=xaf8599ecedc96a511e0f4a8bac10a73f",
    "venue": "narodno"
   },
   "narodno:6439": {
@@ -6221,24 +6170,6 @@
    "url": "https://tickets.rs/event/magla_bend_28520",
    "venue": "sava_centar"
   },
-  "sava_centar:27109": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/bajaga_instruktori_28554",
-   "extra": {
-    "end_date": "2026-10-24",
-    "event_status": ""
-   },
-   "price": "od 3400 RSD",
-   "sales_start": null,
-   "source_id": "27109",
-   "stage": "Plava dvorana",
-   "start": "2026-10-24T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Bajaga & Instruktori",
-   "url": "https://tickets.rs/event/bajaga_instruktori_28554",
-   "venue": "sava_centar"
-  },
   "sava_centar:27136": {
    "available": null,
    "buy_url": "https://tickets.rs/event/the_nutcracker_28581",
@@ -7013,28 +6944,6 @@
  "releases": [
   {
    "all_day": false,
-   "at": "2026-10-23T00:00:00+02:00",
-   "id": "dde60b3d",
-   "link": "https://www.narodnopozoriste.rs/repertoar",
-   "note": "next month's tickets go on sale",
-   "remind_at": [
-    "2026-10-21T09:00:00+02:00",
-    "2026-10-22T09:00:00+02:00"
-   ],
-   "source": "recurring",
-   "venue": "narodno"
-  },
-  {
-   "all_day": true,
-   "at": "2026-10-23T00:00:00+02:00",
-   "id": "c54abc33",
-   "note": "next month's tickets go on sale",
-   "remind_at": [],
-   "source": "recurring",
-   "venue": "narodno"
-  },
-  {
-   "all_day": false,
    "at": "2026-11-23T00:00:00+01:00",
    "id": "356771dc",
    "link": "https://www.narodnopozoriste.rs/repertoar",
@@ -7105,10 +7014,10 @@
     "unknown": 0
    },
    "jdp": {
-    "buyable": 24,
+    "buyable": 28,
     "listed": 35,
     "not_yet": 0,
-    "sold_out": 11,
+    "sold_out": 7,
     "unknown": 0
    },
    "kolarac": {
