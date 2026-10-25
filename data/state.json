@@ -226,10 +226,13 @@
    "premijera filma ruka pravde",
    "rock simphony",
    "roger waters presents legacy",
+   "roger waters presents legacy a pink floyd tribute show performed by the harry waters band",
+   "roger waters presents legacy a pink floyd tribute show performed by the harry waters band the father s legacy the son s band",
    "sarah brightman a winter symphony",
    "sarah brightman a winter symphony loze",
    "sarah brightman a winter symphony vip",
    "sergej cetkovic",
+   "slobodan trkulja balkanopolis put svile iii",
    "the nutcracker",
    "tijana bogicevic",
    "toma zdravkovic koncert secanja",
@@ -243,6 +246,7 @@
    "zvonko bogdan"
   ],
   "terazije": [
+   "a cime se ti bavis",
    "balkan ekspres",
    "brodvejske vragolije",
    "cigani lete u nebo",
@@ -252,6 +256,7 @@
    "mister dolar",
    "producenti",
    "sa druge strane jastuka",
+   "the atelier of wonder",
    "zene na ivici nervnog sloma",
    "zona zamfirova"
   ]
@@ -635,7 +640,7 @@
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "jdp:202611032000-edip": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "jdp:202611032030-moj-muz": {
@@ -1363,7 +1368,7 @@
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6451": {
-   "ever_on_sale": false,
+   "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "narodno:6452": {
@@ -1898,6 +1903,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-10-14T15:36:00+02:00"
   },
+  "sava_centar:27770": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T16:54:25+02:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -1989,6 +1998,90 @@
   "terazije:1271": {
    "ever_on_sale": false,
    "first_seen": "2026-10-19T14:58:52+02:00"
+  },
+  "terazije:1272": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1273": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1274": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1275": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1276": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1277": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1278": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1279": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1280": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1281": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1282": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1283": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1284": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1285": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1286": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1287": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1288": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1289": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1290": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1291": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
+  },
+  "terazije:1292": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-23T01:12:55+02:00"
   }
  },
  "notified": {
@@ -2079,6 +2172,25 @@
   "new_date:terazije:1267": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1269": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1271": "2026-10-19T14:58:52+02:00",
+  "new_date:terazije:1272": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1273": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1274": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1275": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1276": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1277": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1278": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1279": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1280": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1281": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1282": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1283": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1284": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1285": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1286": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1287": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1288": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1289": "2026-10-23T01:12:55+02:00",
+  "new_date:terazije:1291": "2026-10-23T01:12:55+02:00",
   "new_show:bdp:202609231930-filomena-maturano-czk-tivat": "2026-09-23T19:49:06+02:00",
   "new_show:jdp:202610012030-gubitnik": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610042000-gospodjica": "2026-09-25T17:47:32+02:00",
@@ -2161,6 +2273,7 @@
   "new_show:sava_centar:27388": "2026-10-08T18:22:01+02:00",
   "new_show:sava_centar:27409": "2026-10-13T17:51:50+02:00",
   "new_show:sava_centar:27459": "2026-10-14T15:36:00+02:00",
+  "new_show:sava_centar:27770": "2026-10-23T16:54:25+02:00",
   "new_show:terazije:1252": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1253": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1254": "2026-09-25T01:50:54+02:00",
@@ -2175,7 +2288,11 @@
   "new_show:terazije:1266": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1268": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1270": "2026-09-25T01:50:54+02:00",
-  "remind:dde60b3d:2026-10-21T09:00:00+02:00": "2026-10-21T12:00:24+02:00",
+  "new_show:terazije:1290": "2026-10-23T01:12:55+02:00",
+  "new_show:terazije:1292": "2026-10-23T01:12:55+02:00",
+  "released:narodno:2026-10-23": "2026-10-22T12:00:55+02:00",
+  "remind:dde60b3d:2026-10-21T09:00:00+02:00": "2026-10-22T12:00:55+02:00",
+  "remind:dde60b3d:2026-10-22T09:00:00+02:00": "2026-10-22T12:00:55+02:00",
   "sales_opened:bdp:202612011930-kus-petlic": "2026-10-16T19:19:35+02:00",
   "sales_opened:bdp:202612031930-besi-mgl": "2026-10-16T14:16:40+02:00",
   "sales_opened:bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": "2026-10-16T14:16:40+02:00",
@@ -2184,6 +2301,7 @@
   "sales_opened:narodno:6391": "2026-10-19T14:58:52+02:00",
   "sales_opened:narodno:6448": "2026-10-21T21:15:04+02:00",
   "sales_opened:narodno:6449": "2026-10-21T21:15:04+02:00",
+  "sales_opened:narodno:6451": "2026-10-22T12:00:55+02:00",
   "sales_opened:narodno:6471": "2026-10-21T21:15:04+02:00",
   "sales_opened:narodno:6472": "2026-10-21T21:15:04+02:00",
   "sales_opened:narodno:6473": "2026-10-21T21:15:04+02:00",
@@ -2204,7 +2322,14 @@
   "season:2026-10-20:08:00": "2026-10-20T11:57:21+02:00",
   "season:2026-10-21:00:05": "2026-10-21T12:00:25+02:00",
   "season:2026-10-21:08:00": "2026-10-21T12:00:25+02:00",
-  "season:2026-10-22:00:05": "2026-10-22T01:10:38+02:00"
+  "season:2026-10-22:00:05": "2026-10-22T12:00:56+02:00",
+  "season:2026-10-22:08:00": "2026-10-22T12:00:56+02:00",
+  "season:2026-10-23:00:05": "2026-10-23T11:55:45+02:00",
+  "season:2026-10-23:08:00": "2026-10-23T11:55:45+02:00",
+  "season:2026-10-24:00:05": "2026-10-24T12:46:44+02:00",
+  "season:2026-10-24:08:00": "2026-10-24T12:46:44+02:00",
+  "season:2026-10-25:00:05": "2026-10-25T12:12:39+01:00",
+  "season:2026-10-25:08:00": "2026-10-25T12:12:39+01:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -2827,87 +2952,19 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610232000-pucina": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610232000-pucina",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-23T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Branislav Nušić",
-   "title": "Pučina",
-   "url": "https://www.jdp.rs/rs/performance/%d0%bf%d1%83%d1%87%d0%b8%d0%bd%d0%b0/",
-   "venue": "jdp"
-  },
-  "jdp:202610232030-slika-dorijana-greja": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610232030-slika-dorijana-greja",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-23T20:30:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Oskar Vajld",
-   "title": "Slika Dorijana Greja",
-   "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
-   "venue": "jdp"
-  },
-  "jdp:202610242000-hotel-slobodan-promet": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610242000-hotel-slobodan-promet",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-24T20:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "Žorž Fejdo",
-   "title": "Hotel Slobodan promet",
-   "url": "https://www.jdp.rs/performance/hotel-slobodan-promet/",
-   "venue": "jdp"
-  },
-  "jdp:202610242030-gubitnik": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1219",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1219"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610242030-gubitnik",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-24T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "Tomas Bernhard / Aleksandar Sergejevič Puškin",
-   "title": "Gubitnik",
-   "url": "https://www.jdp.rs/performance/gubitnik/",
-   "venue": "jdp"
-  },
   "jdp:202610272000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1207",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1207"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-27T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3019,16 +3076,17 @@
   },
   "jdp:202611012000-narodni-poslanik": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1225"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -3053,16 +3111,17 @@
   },
   "jdp:202611032000-edip": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1226",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1226"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611032000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-03T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -3212,17 +3271,16 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1232"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -3230,17 +3288,16 @@
   },
   "jdp:202611132000-edip": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1233",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1233"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611132000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-13T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -3248,17 +3305,16 @@
   },
   "jdp:202611142000-narodni-poslanik": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1234",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1234"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611142000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-14T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -3411,7 +3467,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1239",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1239"
    },
    "price": "",
@@ -3419,7 +3475,7 @@
    "source_id": "202611222000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-22T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3677,24 +3733,6 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
-  "kolarac:27393": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
-   "extra": {
-    "end_date": "2026-10-24",
-    "event_status": ""
-   },
-   "price": "od 1500 RSD",
-   "sales_start": null,
-   "source_id": "27393",
-   "stage": "",
-   "start": "2026-10-24T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Sofijska filharmonija",
-   "url": "https://tickets.rs/event/58_bemus_sofijska_filharmonija_28841",
-   "venue": "kolarac"
-  },
   "kolarac:27394": {
    "available": null,
    "buy_url": "https://tickets.rs/event/58_bemus_niski_simfonijski_orkestar_28842",
@@ -3827,21 +3865,6 @@
    "url": "https://operatheatremadlenianum.com/posle-pada",
    "venue": "madlenianum"
   },
-  "madlenianum:staklena-menazerija-202610232000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "staklena-menazerija-202610232000",
-   "stage": "",
-   "start": "2026-10-23T20:00:00+02:00",
-   "status": "unknown",
-   "subtitle": "Tenesi Vilijams",
-   "title": "STAKLENA MENAŽERIJA",
-   "url": "https://operatheatremadlenianum.com/staklena-menazerija",
-   "venue": "madlenianum"
-  },
   "madlenianum_tickets:26309": {
    "available": null,
    "buy_url": "https://tickets.rs/event/the_sassoon_experience_27733",
@@ -3894,24 +3917,6 @@
    "subtitle": "",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27226": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/staklena_menadzerija_28672",
-   "extra": {
-    "end_date": "2026-10-23",
-    "event_status": ""
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27226",
-   "stage": "",
-   "start": "2026-10-23T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "STAKLENA MENAŽERIJA",
-   "url": "https://tickets.rs/event/staklena_menadzerija_28672",
    "venue": "madlenianum_tickets"
   },
   "narodno:6344": {
@@ -4341,7 +4346,7 @@
   },
   "narodno:6369": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
+   "buy_url": "",
    "extra": {
     "repid": "6369"
    },
@@ -4350,7 +4355,7 @@
    "source_id": "6369",
    "stage": "Велика сцена",
    "start": "2026-11-04T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=x2ea093759eb28aa4f88a340d1bcb5d77",
@@ -4392,7 +4397,7 @@
   },
   "narodno:6372": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
+   "buy_url": "",
    "extra": {
     "repid": "6372"
    },
@@ -4401,7 +4406,7 @@
    "source_id": "6372",
    "stage": "Велика сцена",
    "start": "2026-11-13T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xfdceb120249b6675b2d44b7f0928b461",
@@ -4543,40 +4548,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
    "venue": "narodno"
   },
-  "narodno:6389": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6389",
-   "extra": {
-    "repid": "6389"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6389",
-   "stage": "Велика сцена",
-   "start": "2026-10-22T19:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
-   "title": "Грк Зорба",
-   "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xdcd5b1219e681bc196eb2719ec03425d",
-   "venue": "narodno"
-  },
-  "narodno:6390": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6390"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6390",
-   "stage": "Велика сцена",
-   "start": "2026-10-23T19:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "балет на музику Микиса Теодоракиса, у кореографији Константина Костјукова",
-   "title": "Грк Зорба",
-   "url": "https://www.narodnopozoriste.rs/predstave/grk-zorba?m=xb24f94b5e66431699e9539a4bd776860",
-   "venue": "narodno"
-  },
   "narodno:6391": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6391",
@@ -4609,23 +4580,6 @@
    "subtitle": "опера Ђузепа Вердија",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x52233e5fc4f36ff481f8d9c7c6cbddd2",
-   "venue": "narodno"
-  },
-  "narodno:6394": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6394"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6394",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-24T12:00:00+02:00",
-   "status": "sold_out",
-   "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
-   "title": "Чаробна фрула",
-   "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=x172c068931cf6b10903ea71ba958982d",
    "venue": "narodno"
   },
   "narodno:6395": {
@@ -4730,57 +4684,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
    "venue": "narodno"
   },
-  "narodno:6425": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6425",
-   "extra": {
-    "repid": "6425"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6425",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-22T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "трагикомедија Душана Ковачевића",
-   "title": "Балкански шпијун",
-   "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x4d8487781d724ab7a651fba81f708cb3",
-   "venue": "narodno"
-  },
-  "narodno:6426": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6426",
-   "extra": {
-    "repid": "6426"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6426",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-23T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "драма Ерика Емануела Шмита",
-   "title": "Мали брачни злочини",
-   "url": "https://www.narodnopozoriste.rs/predstave/mali-bracni-zlocini?m=xe80782d42f88572b8f87fa2578ab6e2b",
-   "venue": "narodno"
-  },
-  "narodno:6427": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6427",
-   "extra": {
-    "repid": "6427"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6427",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-24T20:30:00+02:00",
-   "status": "on_sale",
-   "subtitle": "драма Милутина Бојића",
-   "title": "Госпођа Олга",
-   "url": "https://www.narodnopozoriste.rs/predstave/gospodja-olga?m=x4b0ffd915e6d93b30ca8b2c5f148030f",
-   "venue": "narodno"
-  },
   "narodno:6428": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
@@ -4834,7 +4737,7 @@
   },
   "narodno:6431": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
    },
@@ -4843,7 +4746,7 @@
    "source_id": "6431",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-31T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
@@ -4915,23 +4818,6 @@
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=x3b15e44cc7175e67f3e1ff32cf99d7aa",
-   "venue": "narodno"
-  },
-  "narodno:6438": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6438"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6438",
-   "stage": "Велика сцена",
-   "start": "2026-10-24T20:00:00+02:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Ехо две обале - 70 година успостављања дипломатских односа Туниса и Србије",
-   "url": "https://www.narodnopozoriste.rs/predstave/eho-dve-obale-70-godina-uspostavljanja-diplomatskih-odnosa-tunisa-i-srbije?m=xaf8599ecedc96a511e0f4a8bac10a73f",
    "venue": "narodno"
   },
   "narodno:6439": {
@@ -5123,7 +5009,7 @@
   },
   "narodno:6451": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6451",
    "extra": {
     "repid": "6451"
    },
@@ -5132,7 +5018,7 @@
    "source_id": "6451",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-07T19:30:00+01:00",
-   "status": "not_on_sale",
+   "status": "on_sale",
    "subtitle": "у организацији УБУС-а · такмичарски и ревијални програм",
    "title": "Фестивал кореографских минијатура",
    "url": "https://www.narodnopozoriste.rs/predstave/festival-koreografskih-minijatura?m=xd89084464b0253592d5f3606fc4d1848",
@@ -5985,7 +5871,7 @@
     "end_date": "2026-10-29",
     "event_status": ""
    },
-   "price": "od 15000 RSD",
+   "price": "od 10000 RSD",
    "sales_start": null,
    "source_id": "25921",
    "stage": "Immersive Hall",
@@ -6084,24 +5970,6 @@
    "subtitle": "",
    "title": "SERGEJ ĆETKOVIĆ",
    "url": "https://tickets.rs/event/sergej_cetkovic_27456",
-   "venue": "sava_centar"
-  },
-  "sava_centar:26045": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/bajaga_instruktori_27463",
-   "extra": {
-    "end_date": "2026-10-22",
-    "event_status": ""
-   },
-   "price": "od 3400 RSD",
-   "sales_start": null,
-   "source_id": "26045",
-   "stage": "Plava dvorana",
-   "start": "2026-10-22T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Bajaga & Instruktori",
-   "url": "https://tickets.rs/event/bajaga_instruktori_27463",
    "venue": "sava_centar"
   },
   "sava_centar:26079": {
@@ -6230,24 +6098,6 @@
    "url": "https://tickets.rs/event/ceo_summit_beograd_27758",
    "venue": "sava_centar"
   },
-  "sava_centar:26326": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/bajaga_instruktori_27759",
-   "extra": {
-    "end_date": "2026-10-23",
-    "event_status": ""
-   },
-   "price": "od 3400 RSD",
-   "sales_start": null,
-   "source_id": "26326",
-   "stage": "Plava dvorana",
-   "start": "2026-10-23T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Bajaga & Instruktori",
-   "url": "https://tickets.rs/event/bajaga_instruktori_27759",
-   "venue": "sava_centar"
-  },
   "sava_centar:26703": {
    "available": null,
    "buy_url": "https://tickets.rs/event/emina_jahovic_28146",
@@ -6318,24 +6168,6 @@
    "subtitle": "",
    "title": "Magla bend",
    "url": "https://tickets.rs/event/magla_bend_28520",
-   "venue": "sava_centar"
-  },
-  "sava_centar:27109": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/bajaga_instruktori_28554",
-   "extra": {
-    "end_date": "2026-10-24",
-    "event_status": ""
-   },
-   "price": "od 3400 RSD",
-   "sales_start": null,
-   "source_id": "27109",
-   "stage": "Plava dvorana",
-   "start": "2026-10-24T20:00:00+02:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Bajaga & Instruktori",
-   "url": "https://tickets.rs/event/bajaga_instruktori_28554",
    "venue": "sava_centar"
   },
   "sava_centar:27136": {
@@ -6514,7 +6346,7 @@
    "start": "2027-06-05T20:00:00+02:00",
    "status": "on_sale",
    "subtitle": "",
-   "title": "ROGER WATERS PRESENTS LEGACY",
+   "title": "ROGER WATERS PRESENTS LEGACY A PINK FLOYD TRIBUTE SHOW PERFORMED BY THE HARRY WATERS BAND",
    "url": "https://tickets.rs/event/roger_waters_presents_legacy_28816",
    "venue": "sava_centar"
   },
@@ -6572,41 +6404,23 @@
    "url": "https://tickets.rs/event/premijera_filma_ruka_pravde_28906",
    "venue": "sava_centar"
   },
-  "terazije:1263": {
+  "sava_centar:27770": {
    "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1263",
+   "buy_url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
    "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1263"
+    "end_date": "2027-02-14",
+    "event_status": ""
    },
-   "price": "",
+   "price": "od 2500 RSD",
    "sales_start": null,
-   "source_id": "1263",
-   "stage": "Велика сцена",
-   "start": "2026-10-23T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Mјузикл у режији Југа Радивојевића",
-   "title": "MAMMA MIA!",
-   "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
-   "venue": "terazije"
-  },
-  "terazije:1264": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1264",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1264"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1264",
-   "stage": "Велика сцена",
-   "start": "2026-10-24T19:30:00+02:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Даријана Михајловића",
-   "title": "БАЛКАН ЕКСПРЕС",
-   "url": "https://pozoristeterazije.com/repertoar/",
-   "venue": "terazije"
+   "source_id": "27770",
+   "stage": "Plava dvorana",
+   "start": "2027-02-14T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Slobodan Trkulja & Balkanopolis: Put svile III",
+   "url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
+   "venue": "sava_centar"
   },
   "terazije:1265": {
    "available": null,
@@ -6692,7 +6506,7 @@
    "source_id": "1269",
    "stage": "Велика сцена",
    "start": "2026-10-31T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Небојше Брадића",
    "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
    "url": "https://pozoristeterazije.com/predstave/zene-na-ivici-nervnog-sloma/",
@@ -6710,10 +6524,388 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
+   "venue": "terazije"
+  },
+  "terazije:1272": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1272",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1272"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1272",
+   "stage": "Велика сцена",
+   "start": "2026-11-04T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Југа Радивојевића",
+   "title": "ФАНТОМ ИЗ ОПЕРЕ",
+   "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
+   "venue": "terazije"
+  },
+  "terazije:1273": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1273",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1273"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1273",
+   "stage": "Велика сцена",
+   "start": "2026-11-05T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Mјузикл у режији Југа Радивојевића",
+   "title": "MAMMA MIA!",
+   "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
+   "venue": "terazije"
+  },
+  "terazije:1274": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1274",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1274"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1274",
+   "stage": "Велика сцена",
+   "start": "2026-11-06T19:30:00+01:00",
+   "status": "low",
+   "subtitle": "Мјузикл у режији Владимира Лазића",
+   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
+   "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
+   "venue": "terazije"
+  },
+  "terazije:1275": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1275",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1275"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1275",
+   "stage": "Велика сцена",
+   "start": "2026-11-10T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Југа Радивојевића",
+   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
+   "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
+   "venue": "terazije"
+  },
+  "terazije:1276": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1276",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1276"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1276",
+   "stage": "Велика сцена",
+   "start": "2026-11-12T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Даријана Михајловића",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "url": "https://pozoristeterazije.com/repertoar/",
+   "venue": "terazije"
+  },
+  "terazije:1277": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1277",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1277"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1277",
+   "stage": "Велика сцена",
+   "start": "2026-11-13T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Небојше Брадића",
+   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
+   "url": "https://pozoristeterazije.com/predstave/zene-na-ivici-nervnog-sloma/",
+   "venue": "terazije"
+  },
+  "terazije:1278": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1278",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1278"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1278",
+   "stage": "Велика сцена",
+   "start": "2026-11-14T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
+   "title": "FLASHDANCE",
+   "url": "https://pozoristeterazije.com/predstave/fles-dens/",
+   "venue": "terazije"
+  },
+  "terazije:1279": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1279",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1279"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1279",
+   "stage": "Велика сцена",
+   "start": "2026-11-17T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Владимира Лазића",
+   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
+   "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
+   "venue": "terazije"
+  },
+  "terazije:1280": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1280",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1280"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1280",
+   "stage": "Велика сцена",
+   "start": "2026-11-19T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Даријана Михајловића",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "url": "https://pozoristeterazije.com/repertoar/",
+   "venue": "terazije"
+  },
+  "terazije:1281": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1281",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1281"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1281",
+   "stage": "Велика сцена",
+   "start": "2026-11-20T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Југа Радивојевића",
+   "title": "ПРОДУЦЕНТИ",
+   "url": "https://pozoristeterazije.com/predstave/producenti/\n",
+   "venue": "terazije"
+  },
+  "terazije:1282": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1282",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1282"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1282",
+   "stage": "Велика сцена",
+   "start": "2026-11-22T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
+   "title": "FLASHDANCE",
+   "url": "https://pozoristeterazije.com/predstave/fles-dens/",
+   "venue": "terazije"
+  },
+  "terazije:1283": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1283",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1283"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1283",
+   "stage": "Велика сцена",
+   "start": "2026-11-24T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Небојше Брадића",
+   "title": "BRODVEJSKE VRAGOLIJE",
+   "url": "https://pozoristeterazije.com/predstave/brodvejske-vragolije/",
+   "venue": "terazije"
+  },
+  "terazije:1284": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1284",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1284"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1284",
+   "stage": "Велика сцена",
+   "start": "2026-11-25T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Небојше Брадића",
+   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
+   "url": "https://pozoristeterazije.com/predstave/zene-na-ivici-nervnog-sloma/",
+   "venue": "terazije"
+  },
+  "terazije:1285": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1285",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1285"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1285",
+   "stage": "Велика сцена",
+   "start": "2026-11-27T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Mјузикл у режији Југа Радивојевића",
+   "title": "MAMMA MIA!",
+   "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
+   "venue": "terazije"
+  },
+  "terazije:1286": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1286",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1286"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1286",
+   "stage": "Велика сцена",
+   "start": "2026-11-28T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Кокана Младеновића",
+   "title": "ЗОНА ЗАМФИРОВА",
+   "url": "https://pozoristeterazije.com/predstave/zona-zamfirova/",
+   "venue": "terazije"
+  },
+  "terazije:1287": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1287",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1287"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1287",
+   "stage": "Велика сцена",
+   "start": "2026-11-29T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Југа Радивојевића",
+   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
+   "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
+   "venue": "terazije"
+  },
+  "terazije:1288": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1288",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1288"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1288",
+   "stage": "Велика сцена",
+   "start": "2026-12-03T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у адаптацији и режији Владимира Лазића",
+   "title": "МИСТЕР ДОЛАР",
+   "url": "https://pozoristeterazije.com/predstave/mister-dolar/",
+   "venue": "terazije"
+  },
+  "terazije:1289": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1289",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1289"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1289",
+   "stage": "Велика сцена",
+   "start": "2026-12-04T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Mјузикл у режији Југа Радивојевића",
+   "title": "MAMMA MIA!",
+   "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
+   "venue": "terazije"
+  },
+  "terazije:1290": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1290",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1290"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1290",
+   "stage": "Велика сцена",
+   "start": "2026-12-05T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Плесна представа у кореографији Бранка Митровића",
+   "title": "А ЧИМЕ СЕ ТИ БАВИШ?",
+   "url": "https://pozoristeterazije.com/a-cime-se-ti-bavis/",
+   "venue": "terazije"
+  },
+  "terazije:1291": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1291",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1291"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1291",
+   "stage": "Велика сцена",
+   "start": "2026-12-06T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Мјузикл у режији Даријана Михајловића",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "url": "https://pozoristeterazije.com/repertoar/",
+   "venue": "terazije"
+  },
+  "terazije:1292": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1292",
+   "extra": {
+    "box_office_only": false,
+    "prostorterminid": "1292"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1292",
+   "stage": "Велика сцена",
+   "start": "2026-12-05T17:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "Royal Academy of Dance - ASD, Ballet School of Belgrade",
+   "title": "THE ATELIER OF WONDER",
+   "url": "https://pozoristeterazije.com/repertoar/",
    "venue": "terazije"
   }
  },
@@ -6741,31 +6933,15 @@
    "by": "2026-10-21T17:02:42+02:00",
    "month": "2026-11",
    "venue": "jdp"
+  },
+  {
+   "after": "2026-10-22T21:10:39+02:00",
+   "by": "2026-10-23T01:12:55+02:00",
+   "month": "2026-11",
+   "venue": "terazije"
   }
  ],
  "releases": [
-  {
-   "all_day": false,
-   "at": "2026-10-23T00:00:00+02:00",
-   "id": "dde60b3d",
-   "link": "https://www.narodnopozoriste.rs/repertoar",
-   "note": "next month's tickets go on sale",
-   "remind_at": [
-    "2026-10-21T09:00:00+02:00",
-    "2026-10-22T09:00:00+02:00"
-   ],
-   "source": "recurring",
-   "venue": "narodno"
-  },
-  {
-   "all_day": true,
-   "at": "2026-10-23T00:00:00+02:00",
-   "id": "c54abc33",
-   "note": "next month's tickets go on sale",
-   "remind_at": [],
-   "source": "recurring",
-   "venue": "narodno"
-  },
   {
    "all_day": false,
    "at": "2026-11-23T00:00:00+01:00",
@@ -6814,6 +6990,7 @@
     "out": true
    },
    "terazije": {
+    "checked": "2026-10-22T21:10:39+02:00",
     "out": true
    }
   },
@@ -6822,6 +6999,10 @@
    "jdp": {
     "after": "2026-10-21T12:00:24+02:00",
     "by": "2026-10-21T17:02:42+02:00"
+   },
+   "terazije": {
+    "after": "2026-10-22T21:10:39+02:00",
+    "by": "2026-10-23T01:12:55+02:00"
    }
   },
   "reported": {
@@ -6833,10 +7014,10 @@
     "unknown": 0
    },
    "jdp": {
-    "buyable": 29,
+    "buyable": 28,
     "listed": 35,
     "not_yet": 0,
-    "sold_out": 6,
+    "sold_out": 7,
     "unknown": 0
    },
    "kolarac": {
@@ -6861,10 +7042,10 @@
     "unknown": 0
    },
    "narodno": {
-    "buyable": 40,
+    "buyable": 39,
     "listed": 50,
-    "not_yet": 6,
-    "sold_out": 4,
+    "not_yet": 5,
+    "sold_out": 6,
     "unknown": 0
    },
    "sava_centar": {
@@ -6875,10 +7056,10 @@
     "unknown": 0
    },
    "terazije": {
-    "buyable": 1,
-    "listed": 1,
+    "buyable": 16,
+    "listed": 17,
     "not_yet": 0,
-    "sold_out": 0,
+    "sold_out": 1,
     "unknown": 0
    }
   }
