@@ -1,18 +1,5 @@
 {
- "health": {
-  "kolarac": {
-   "fails": 1,
-   "last_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tickets.rs/web/api/data/agnosticget'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  },
-  "madlenianum_tickets": {
-   "fails": 1,
-   "last_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tickets.rs/web/api/data/agnosticget'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  },
-  "sava_centar": {
-   "fails": 1,
-   "last_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tickets.rs/web/api/data/agnosticget'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
