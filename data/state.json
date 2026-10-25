@@ -1,5 +1,18 @@
 {
- "health": {},
+ "health": {
+  "kolarac": {
+   "fails": 1,
+   "last_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tickets.rs/web/api/data/agnosticget'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  },
+  "madlenianum_tickets": {
+   "fails": 1,
+   "last_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tickets.rs/web/api/data/agnosticget'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  },
+  "sava_centar": {
+   "fails": 1,
+   "last_error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tickets.rs/web/api/data/agnosticget'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  }
+ },
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -6578,7 +6591,7 @@
    "source_id": "1274",
    "stage": "Велика сцена",
    "start": "2026-11-06T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Владимира Лазића",
    "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
    "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
