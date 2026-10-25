@@ -2954,17 +2954,16 @@
   },
   "jdp:202610272000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1207",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1207"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-27T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3236,16 +3235,17 @@
   },
   "jdp:202611092000-edip": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1231",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1231"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611092000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-09T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -3359,7 +3359,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1236",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1236"
    },
    "price": "",
@@ -3367,7 +3367,7 @@
    "source_id": "202611172000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-17T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4735,7 +4735,7 @@
   },
   "narodno:6431": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
+   "buy_url": "",
    "extra": {
     "repid": "6431"
    },
@@ -4744,7 +4744,7 @@
    "source_id": "6431",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-31T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
@@ -6486,7 +6486,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
