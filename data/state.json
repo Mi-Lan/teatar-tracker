@@ -2974,16 +2974,17 @@
   },
   "jdp:202610272030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1220",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1220"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-27T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -2991,16 +2992,17 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1208"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3096,16 +3098,17 @@
   },
   "jdp:202611022030-slika-dorijana-greja": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1248",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1248"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611022030-slika-dorijana-greja",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-02T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Oskar Vajld",
    "title": "Slika Dorijana Greja",
    "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
@@ -3573,16 +3576,17 @@
   },
   "jdp:202611262000-vrat-od-stakla": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1243",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1243"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611262000-vrat-od-stakla",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-26T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Biljana Srbljanovic",
    "title": "Vrat od stakla",
    "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
@@ -6487,7 +6491,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
@@ -6541,7 +6545,7 @@
    "source_id": "1272",
    "stage": "Велика сцена",
    "start": "2026-11-04T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
