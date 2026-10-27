@@ -2,9 +2,12 @@ name: tracker
 
 on:
   schedule:
-    # Hourly, off the top of the hour (GitHub delays :00 runs the most). Checks are silent unless
-    # something needs your attention; release windows keep a run alive to poll every 30 s.
-    - cron: "5 * * * *"
+    # Every 15 minutes, off the top of the hour (GitHub delays :00 runs the most). GitHub often
+    # delays or skips scheduled runs (an hourly schedule here ran only every 3–6 h), so a denser
+    # schedule keeps the gaps short: the gap between checks is how precisely "when did the tickets
+    # come out" can be answered. Checks are silent unless something needs your attention; release
+    # windows keep a run alive to poll every 30 s, and `concurrency` makes later runs wait.
+    - cron: "5,20,35,50 * * * *"
   workflow_dispatch:
     inputs:
       mode:
