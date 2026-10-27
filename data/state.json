@@ -257,6 +257,7 @@
    "producenti",
    "sa druge strane jastuka",
    "the atelier of wonder",
+   "the atelier of wonders",
    "zene na ivici nervnog sloma",
    "zona zamfirova"
   ]
@@ -2332,7 +2333,8 @@
   "season:2026-10-25:08:00": "2026-10-25T12:12:39+01:00",
   "season:2026-10-26:00:05": "2026-10-26T13:46:19+01:00",
   "season:2026-10-26:08:00": "2026-10-26T13:46:19+01:00",
-  "season:2026-10-27:00:05": "2026-10-27T00:44:36+01:00"
+  "season:2026-10-27:00:05": "2026-10-27T11:22:28+01:00",
+  "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
   "bdp:202610291930-laz": {
@@ -2975,17 +2977,16 @@
   },
   "jdp:202610272030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1220",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1220"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610272030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-27T20:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -2993,17 +2994,16 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1208"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3099,17 +3099,16 @@
   },
   "jdp:202611022030-slika-dorijana-greja": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1248",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1248"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611022030-slika-dorijana-greja",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-02T20:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Oskar Vajld",
    "title": "Slika Dorijana Greja",
    "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
@@ -3872,14 +3871,14 @@
    "available": null,
    "buy_url": "https://tickets.rs/event/snovi_pod_maskama_28665",
    "extra": {
-    "end_date": "2026-11-09",
+    "end_date": "2026-11-11",
     "event_status": ""
    },
    "price": "od 2000 RSD",
    "sales_start": null,
    "source_id": "27219",
    "stage": "",
-   "start": "2026-11-09T19:30:00+01:00",
+   "start": "2026-11-11T19:30:00+01:00",
    "status": "on_sale",
    "subtitle": "",
    "title": "SNOVI POD MASKAMA",
@@ -4688,7 +4687,7 @@
   },
   "narodno:6429": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6429",
+   "buy_url": "",
    "extra": {
     "repid": "6429"
    },
@@ -4697,7 +4696,7 @@
    "source_id": "6429",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-28T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "драма Тадеуша Слобођанека",
    "title": "Наш разред",
    "url": "https://www.narodnopozoriste.rs/predstave/nas-razred?m=xb7a0ad08f07e626ed1cc61e35cc6b875",
@@ -5494,14 +5493,14 @@
    "buy_url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_vip_23894",
    "extra": {
     "end_date": "2026-11-24",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 30100 RSD",
    "sales_start": null,
    "source_id": "22518",
    "stage": "Plava dvorana",
    "start": "2026-11-24T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "Sarah Brightman - “A Winter Symphony” - VIP",
    "url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_vip_23894",
@@ -6509,7 +6508,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -6889,7 +6888,7 @@
    "start": "2026-12-05T17:00:00+01:00",
    "status": "on_sale",
    "subtitle": "Royal Academy of Dance - ASD, Ballet School of Belgrade",
-   "title": "THE ATELIER OF WONDER",
+   "title": "THE ATELIER OF WONDERS",
    "url": "https://pozoristeterazije.com/repertoar/",
    "venue": "terazije"
   }
@@ -6999,10 +6998,10 @@
     "unknown": 0
    },
    "jdp": {
-    "buyable": 26,
+    "buyable": 25,
     "listed": 35,
     "not_yet": 0,
-    "sold_out": 9,
+    "sold_out": 10,
     "unknown": 0
    },
    "kolarac": {
@@ -7034,17 +7033,17 @@
     "unknown": 0
    },
    "sava_centar": {
-    "buyable": 21,
+    "buyable": 20,
     "listed": 21,
     "not_yet": 0,
-    "sold_out": 0,
+    "sold_out": 1,
     "unknown": 0
    },
    "terazije": {
-    "buyable": 16,
+    "buyable": 17,
     "listed": 17,
     "not_yet": 0,
-    "sold_out": 1,
+    "sold_out": 0,
     "unknown": 0
    }
   }
