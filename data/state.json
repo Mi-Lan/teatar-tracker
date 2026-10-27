@@ -675,8 +675,9 @@
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
   "jdp:202611092030-beogradska-trilogija": {
-   "ever_on_sale": false,
-   "first_seen": "2026-10-21T17:02:42+02:00"
+   "ever_on_sale": true,
+   "first_seen": "2026-10-21T17:02:42+02:00",
+   "on_sale_since": "2026-10-27T22:00:45+01:00"
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "ever_on_sale": true,
@@ -3033,16 +3034,17 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1208"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3188,16 +3190,17 @@
   },
   "jdp:202611042000-cudo-u-sarganu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1227"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611042000-cudo-u-sarganu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Čudo u Šarganu",
    "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
@@ -3294,16 +3297,17 @@
   },
   "jdp:202611092030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1252",
    "extra": {
-    "label": "Rasprodato"
+    "label": "",
+    "prostorterminid": "1252"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611092030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-09T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -4833,7 +4837,7 @@
   },
   "narodno:6428": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6428",
+   "buy_url": "",
    "extra": {
     "repid": "6428"
    },
@@ -4842,7 +4846,7 @@
    "source_id": "6428",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-27T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драма Лава Николајевича Толстоја",
    "title": "Царство мрака",
    "url": "https://www.narodnopozoriste.rs/predstave/carstvo-mraka?m=x78373478827209361d2d8e230dd30a6c",
@@ -7137,14 +7141,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-27T17:44:58+01:00",
-  "jdp": "2026-10-27T17:44:58+01:00",
-  "kolarac": "2026-10-27T17:44:58+01:00",
-  "madlenianum": "2026-10-27T17:44:58+01:00",
-  "madlenianum_tickets": "2026-10-27T17:44:58+01:00",
-  "narodno": "2026-10-27T17:44:58+01:00",
-  "sava_centar": "2026-10-27T17:44:58+01:00",
-  "terazije": "2026-10-27T17:44:58+01:00"
+  "bdp": "2026-10-27T22:00:45+01:00",
+  "jdp": "2026-10-27T22:00:45+01:00",
+  "kolarac": "2026-10-27T22:00:45+01:00",
+  "madlenianum": "2026-10-27T22:00:45+01:00",
+  "madlenianum_tickets": "2026-10-27T22:00:45+01:00",
+  "narodno": "2026-10-27T22:00:45+01:00",
+  "sava_centar": "2026-10-27T22:00:45+01:00",
+  "terazije": "2026-10-27T22:00:45+01:00"
  },
  "season": {
   "live": {
@@ -7247,7 +7251,7 @@
    }
   }
  },
- "telegram_offset": 597987113,
+ "telegram_offset": 597987114,
  "watch_imported": [],
  "watchlist": []
 }
