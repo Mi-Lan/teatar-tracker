@@ -2998,16 +2998,17 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1208"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3262,7 +3263,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1252",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1252"
    },
    "price": "",
@@ -3270,7 +3271,7 @@
    "source_id": "202611092030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-09T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -3528,7 +3529,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1241",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1241"
    },
    "price": "",
@@ -3536,7 +3537,7 @@
    "source_id": "202611242000-hotel-slobodan-promet",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-24T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Žorž Fejdo",
    "title": "Hotel Slobodan promet",
    "url": "https://www.jdp.rs/performance/hotel-slobodan-promet/",
@@ -3635,7 +3636,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1245",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1245"
    },
    "price": "",
@@ -3643,7 +3644,7 @@
    "source_id": "202611282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-28T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4833,7 +4834,7 @@
   },
   "narodno:6431": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
    },
@@ -4842,7 +4843,7 @@
    "source_id": "6431",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-31T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
@@ -6602,7 +6603,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -6746,7 +6747,7 @@
    "source_id": "1279",
    "stage": "Велика сцена",
    "start": "2026-11-17T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Владимира Лазића",
    "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
    "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
@@ -7068,14 +7069,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-28T07:13:30+01:00",
-  "jdp": "2026-10-28T07:13:30+01:00",
-  "kolarac": "2026-10-28T07:13:30+01:00",
-  "madlenianum": "2026-10-28T07:13:30+01:00",
-  "madlenianum_tickets": "2026-10-28T07:13:30+01:00",
-  "narodno": "2026-10-28T07:13:30+01:00",
-  "sava_centar": "2026-10-28T07:13:30+01:00",
-  "terazije": "2026-10-28T07:13:30+01:00"
+  "bdp": "2026-10-28T14:13:08+01:00",
+  "jdp": "2026-10-28T14:13:08+01:00",
+  "kolarac": "2026-10-28T14:13:08+01:00",
+  "madlenianum": "2026-10-28T14:13:08+01:00",
+  "madlenianum_tickets": "2026-10-28T14:13:08+01:00",
+  "narodno": "2026-10-28T14:13:08+01:00",
+  "sava_centar": "2026-10-28T14:13:08+01:00",
+  "terazije": "2026-10-28T14:13:08+01:00"
  },
  "season": {
   "live": {
