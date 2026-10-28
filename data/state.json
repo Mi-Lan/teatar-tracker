@@ -2996,24 +2996,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610282000-ricard-drugi": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1208"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610282000-ricard-drugi",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-28T20:00:00+01:00",
-   "status": "low",
-   "subtitle": "Vilijam Šekspir",
-   "title": "Ričard Drugi",
-   "url": "https://www.jdp.rs/performance/ricard-drugi/",
-   "venue": "jdp"
-  },
   "jdp:202610292000-sirano": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1209",
@@ -3260,16 +3242,17 @@
   },
   "jdp:202611092030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1252",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1252"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611092030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-09T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -3735,24 +3718,6 @@
    "subtitle": "",
    "title": "NIKOLAJ KUZNJECOV",
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
-   "venue": "kolarac"
-  },
-  "kolarac:27395": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_arkadij_volodos_klavir_28843",
-   "extra": {
-    "end_date": "2026-10-28",
-    "event_status": ""
-   },
-   "price": "od 3000 RSD",
-   "sales_start": null,
-   "source_id": "27395",
-   "stage": "",
-   "start": "2026-10-28T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Arkadij Volodos, klavir",
-   "url": "https://tickets.rs/event/58_bemus_arkadij_volodos_klavir_28843",
    "venue": "kolarac"
   },
   "kolarac:27396": {
@@ -4660,23 +4625,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
    "venue": "narodno"
   },
-  "narodno:6391": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6391"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6391",
-   "stage": "Велика сцена",
-   "start": "2026-10-28T19:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "опера Ђузепа Вердија · у оквиру БЕМУС-а",
-   "title": "Травијата",
-   "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=xc755094fb954ad84e68503bc8cc1ee72",
-   "venue": "narodno"
-  },
   "narodno:6392": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
@@ -4794,23 +4742,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6429": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6429"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6429",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-28T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Тадеуша Слобођанека",
-   "title": "?",
-   "url": "",
    "venue": "narodno"
   },
   "narodno:6430": {
@@ -6517,24 +6448,6 @@
    "url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
    "venue": "sava_centar"
   },
-  "terazije:1266": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1266",
-   "extra": {
-    "box_office_only": true,
-    "prostorterminid": "1266"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1266",
-   "stage": "Велика сцена",
-   "start": "2026-10-28T19:30:00+01:00",
-   "status": "cancelled",
-   "subtitle": "Мјузикл у режији Небојше Брадића",
-   "title": "BRODVEJSKE VRAGOLIJE",
-   "url": "https://pozoristeterazije.com/predstave/brodvejske-vragolije/",
-   "venue": "terazije"
-  },
   "terazije:1267": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1267",
@@ -6565,7 +6478,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
@@ -6601,7 +6514,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -7067,14 +6980,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-28T19:55:42+01:00",
-  "jdp": "2026-10-28T19:55:42+01:00",
-  "kolarac": "2026-10-28T19:55:42+01:00",
-  "madlenianum": "2026-10-28T19:55:42+01:00",
-  "madlenianum_tickets": "2026-10-28T19:55:42+01:00",
-  "narodno": "2026-10-28T19:55:42+01:00",
-  "sava_centar": "2026-10-28T19:55:42+01:00",
-  "terazije": "2026-10-28T19:55:42+01:00"
+  "bdp": "2026-10-29T00:07:44+01:00",
+  "jdp": "2026-10-29T00:07:44+01:00",
+  "kolarac": "2026-10-29T00:07:44+01:00",
+  "madlenianum": "2026-10-29T00:07:44+01:00",
+  "madlenianum_tickets": "2026-10-29T00:07:44+01:00",
+  "narodno": "2026-10-29T00:07:44+01:00",
+  "sava_centar": "2026-10-29T00:07:44+01:00",
+  "terazije": "2026-10-29T00:07:44+01:00"
  },
  "season": {
   "live": {
