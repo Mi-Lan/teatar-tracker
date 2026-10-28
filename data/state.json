@@ -2998,17 +2998,16 @@
   },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1208"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-28T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3652,17 +3651,16 @@
   },
   "jdp:202611292000-narodni-poslanik": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1246",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1246"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611292000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-29T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -7070,14 +7068,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-28T01:26:51+01:00",
-  "jdp": "2026-10-28T01:26:51+01:00",
-  "kolarac": "2026-10-28T01:26:51+01:00",
-  "madlenianum": "2026-10-28T01:26:51+01:00",
-  "madlenianum_tickets": "2026-10-28T01:26:51+01:00",
-  "narodno": "2026-10-28T01:26:51+01:00",
-  "sava_centar": "2026-10-28T01:26:51+01:00",
-  "terazije": "2026-10-28T01:26:51+01:00"
+  "bdp": "2026-10-28T07:13:30+01:00",
+  "jdp": "2026-10-28T07:13:30+01:00",
+  "kolarac": "2026-10-28T07:13:30+01:00",
+  "madlenianum": "2026-10-28T07:13:30+01:00",
+  "madlenianum_tickets": "2026-10-28T07:13:30+01:00",
+  "narodno": "2026-10-28T07:13:30+01:00",
+  "sava_centar": "2026-10-28T07:13:30+01:00",
+  "terazije": "2026-10-28T07:13:30+01:00"
  },
  "season": {
   "live": {
