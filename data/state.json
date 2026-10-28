@@ -2996,42 +2996,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610272000-ricard-drugi": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1207",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1207"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610272000-ricard-drugi",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-27T20:00:00+01:00",
-   "status": "low",
-   "subtitle": "Vilijam Šekspir",
-   "title": "Ričard Drugi",
-   "url": "https://www.jdp.rs/performance/ricard-drugi/",
-   "venue": "jdp"
-  },
-  "jdp:202610272030-beogradska-trilogija": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1220",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1220"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610272030-beogradska-trilogija",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-27T20:30:00+01:00",
-   "status": "low",
-   "subtitle": "Biljana Srbljanović",
-   "title": "Beogradska trilogija",
-   "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
-   "venue": "jdp"
-  },
   "jdp:202610282000-ricard-drugi": {
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1208",
@@ -4835,23 +4799,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
    "venue": "narodno"
   },
-  "narodno:6428": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6428"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6428",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-27T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Лава Николајевича Толстоја",
-   "title": "Царство мрака",
-   "url": "https://www.narodnopozoriste.rs/predstave/carstvo-mraka?m=x78373478827209361d2d8e230dd30a6c",
-   "venue": "narodno"
-  },
   "narodno:6429": {
    "available": null,
    "buy_url": "",
@@ -6573,24 +6520,6 @@
    "url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
    "venue": "sava_centar"
   },
-  "terazije:1265": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1265",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1265"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1265",
-   "stage": "Велика сцена",
-   "start": "2026-10-27T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Мјузикл у режији Кокана Младеновића",
-   "title": "ЗОНА ЗАМФИРОВА",
-   "url": "https://pozoristeterazije.com/predstave/zona-zamfirova/",
-   "venue": "terazije"
-  },
   "terazije:1266": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1266",
@@ -7141,14 +7070,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-27T22:00:45+01:00",
-  "jdp": "2026-10-27T22:00:45+01:00",
-  "kolarac": "2026-10-27T22:00:45+01:00",
-  "madlenianum": "2026-10-27T22:00:45+01:00",
-  "madlenianum_tickets": "2026-10-27T22:00:45+01:00",
-  "narodno": "2026-10-27T22:00:45+01:00",
-  "sava_centar": "2026-10-27T22:00:45+01:00",
-  "terazije": "2026-10-27T22:00:45+01:00"
+  "bdp": "2026-10-28T01:26:51+01:00",
+  "jdp": "2026-10-28T01:26:51+01:00",
+  "kolarac": "2026-10-28T01:26:51+01:00",
+  "madlenianum": "2026-10-28T01:26:51+01:00",
+  "madlenianum_tickets": "2026-10-28T01:26:51+01:00",
+  "narodno": "2026-10-28T01:26:51+01:00",
+  "sava_centar": "2026-10-28T01:26:51+01:00",
+  "terazije": "2026-10-28T01:26:51+01:00"
  },
  "season": {
   "live": {
