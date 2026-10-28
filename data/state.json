@@ -3018,7 +3018,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1209",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
+    "label": "",
     "prostorterminid": "1209"
    },
    "price": "",
@@ -3026,7 +3026,7 @@
    "source_id": "202610292000-sirano",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-29T20:00:00+01:00",
-   "status": "low",
+   "status": "on_sale",
    "subtitle": "Edmon Rostan",
    "title": "Sirano",
    "url": "https://www.jdp.rs/rs/performance/sirano/",
@@ -3053,7 +3053,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1224",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1224"
    },
    "price": "",
@@ -3061,7 +3061,7 @@
    "source_id": "202610302030-mama",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-30T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Maga Magazinović",
    "title": "MaMa",
    "url": "https://www.jdp.rs/performance/mama/",
@@ -3154,17 +3154,16 @@
   },
   "jdp:202611042000-cudo-u-sarganu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1227"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611042000-cudo-u-sarganu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Čudo u Šarganu",
    "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
@@ -3261,17 +3260,16 @@
   },
   "jdp:202611092030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1252",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1252"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611092030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-09T20:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -4664,7 +4662,7 @@
   },
   "narodno:6391": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6391",
+   "buy_url": "",
    "extra": {
     "repid": "6391"
    },
@@ -4673,7 +4671,7 @@
    "source_id": "6391",
    "stage": "Велика сцена",
    "start": "2026-10-28T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "опера Ђузепа Вердија · у оквиру БЕМУС-а",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=xc755094fb954ad84e68503bc8cc1ee72",
@@ -6567,7 +6565,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
@@ -6603,7 +6601,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -7069,14 +7067,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-28T14:13:08+01:00",
-  "jdp": "2026-10-28T14:13:08+01:00",
-  "kolarac": "2026-10-28T14:13:08+01:00",
-  "madlenianum": "2026-10-28T14:13:08+01:00",
-  "madlenianum_tickets": "2026-10-28T14:13:08+01:00",
-  "narodno": "2026-10-28T14:13:08+01:00",
-  "sava_centar": "2026-10-28T14:13:08+01:00",
-  "terazije": "2026-10-28T14:13:08+01:00"
+  "bdp": "2026-10-28T19:55:42+01:00",
+  "jdp": "2026-10-28T19:55:42+01:00",
+  "kolarac": "2026-10-28T19:55:42+01:00",
+  "madlenianum": "2026-10-28T19:55:42+01:00",
+  "madlenianum_tickets": "2026-10-28T19:55:42+01:00",
+  "narodno": "2026-10-28T19:55:42+01:00",
+  "sava_centar": "2026-10-28T19:55:42+01:00",
+  "terazije": "2026-10-28T19:55:42+01:00"
  },
  "season": {
   "live": {
