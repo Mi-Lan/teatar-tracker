@@ -1,10 +1,5 @@
 {
- "health": {
-  "jdp": {
-   "fails": 1,
-   "last_error": "returned 0 performances"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -3247,17 +3242,16 @@
   },
   "jdp:202611092030-beogradska-trilogija": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1252",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1252"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611092030-beogradska-trilogija",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-11-09T20:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Biljana Srbljanović",
    "title": "Beogradska trilogija",
    "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
@@ -4428,7 +4422,7 @@
   },
   "narodno:6369": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
    },
@@ -4437,7 +4431,7 @@
    "source_id": "6369",
    "stage": "Велика сцена",
    "start": "2026-11-04T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=x2ea093759eb28aa4f88a340d1bcb5d77",
@@ -4462,7 +4456,7 @@
   },
   "narodno:6371": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
    },
@@ -4471,7 +4465,7 @@
    "source_id": "6371",
    "stage": "Велика сцена",
    "start": "2026-11-10T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe58b7aeb61c4cf680e10f17b4f3679df",
@@ -4479,7 +4473,7 @@
   },
   "narodno:6372": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
    "extra": {
     "repid": "6372"
    },
@@ -4488,7 +4482,7 @@
    "source_id": "6372",
    "stage": "Велика сцена",
    "start": "2026-11-13T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xfdceb120249b6675b2d44b7f0928b461",
@@ -4649,7 +4643,7 @@
   },
   "narodno:6395": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6395",
    "extra": {
     "repid": "6395"
    },
@@ -4658,7 +4652,7 @@
    "source_id": "6395",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-08T12:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=xb8b10a47804317cb866d3c0c780418c8",
@@ -4751,7 +4745,7 @@
   },
   "narodno:6430": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6430",
+   "buy_url": "",
    "extra": {
     "repid": "6430"
    },
@@ -4760,7 +4754,7 @@
    "source_id": "6430",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-29T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=xb8494eff38b424f2c7a5bb729c8369c0",
@@ -6985,14 +6979,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-29T03:31:05+01:00",
-  "jdp": "2026-10-29T00:07:44+01:00",
-  "kolarac": "2026-10-29T03:31:05+01:00",
-  "madlenianum": "2026-10-29T03:31:05+01:00",
-  "madlenianum_tickets": "2026-10-29T03:31:05+01:00",
-  "narodno": "2026-10-29T03:31:05+01:00",
-  "sava_centar": "2026-10-29T03:31:05+01:00",
-  "terazije": "2026-10-29T03:31:05+01:00"
+  "bdp": "2026-10-29T09:53:01+01:00",
+  "jdp": "2026-10-29T09:53:01+01:00",
+  "kolarac": "2026-10-29T09:53:01+01:00",
+  "madlenianum": "2026-10-29T09:53:01+01:00",
+  "madlenianum_tickets": "2026-10-29T09:53:01+01:00",
+  "narodno": "2026-10-29T09:53:01+01:00",
+  "sava_centar": "2026-10-29T09:53:01+01:00",
+  "terazije": "2026-10-29T09:53:01+01:00"
  },
  "season": {
   "live": {
