@@ -2383,19 +2383,18 @@
  "performances": {
   "bdp:202610291930-laz": {
    "available": null,
-   "buy_url": "https://app.sixtix.com/events/4b9238e2847d",
+   "buy_url": "",
    "extra": {
     "guest": false,
     "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "4b9238e2847d"
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610291930-laz",
    "stage": "Velika scena \"Olivera i Rade\"",
    "start": "2026-10-29T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "",
    "title": "Лаж",
    "url": "https://www.bdp.rs/cir/predstave-cir/laz",
@@ -3021,16 +3020,17 @@
   },
   "jdp:202610292030-moj-muz": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1221",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1221"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610292030-moj-muz",
    "stage": "STUDIO ĆIRILOV",
    "start": "2026-10-29T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Rumena Bužarovska",
    "title": "Moj muž",
    "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
@@ -3056,16 +3056,17 @@
   },
   "jdp:202610312000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1211",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1211"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610312000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-31T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -3073,17 +3074,16 @@
   },
   "jdp:202611012000-narodni-poslanik": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1225"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -3108,16 +3108,17 @@
   },
   "jdp:202611032000-edip": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1226",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1226"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611032000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-03T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -4479,7 +4480,7 @@
   },
   "narodno:6372": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
+   "buy_url": "",
    "extra": {
     "repid": "6372"
    },
@@ -4488,7 +4489,7 @@
    "source_id": "6372",
    "stage": "Велика сцена",
    "start": "2026-11-13T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xfdceb120249b6675b2d44b7f0928b461",
@@ -4649,7 +4650,7 @@
   },
   "narodno:6395": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6395",
+   "buy_url": "",
    "extra": {
     "repid": "6395"
    },
@@ -4658,7 +4659,7 @@
    "source_id": "6395",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-08T12:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=xb8b10a47804317cb866d3c0c780418c8",
@@ -4760,7 +4761,7 @@
    "source_id": "6430",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-29T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "not_on_sale",
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=xb8494eff38b424f2c7a5bb729c8369c0",
@@ -6483,7 +6484,7 @@
    "source_id": "1268",
    "stage": "Велика сцена",
    "start": "2026-10-30T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
@@ -6985,14 +6986,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-29T17:02:02+01:00",
-  "jdp": "2026-10-29T17:02:02+01:00",
-  "kolarac": "2026-10-29T17:02:02+01:00",
-  "madlenianum": "2026-10-29T17:02:02+01:00",
-  "madlenianum_tickets": "2026-10-29T17:02:02+01:00",
-  "narodno": "2026-10-29T17:02:02+01:00",
-  "sava_centar": "2026-10-29T17:02:02+01:00",
-  "terazije": "2026-10-29T17:02:02+01:00"
+  "bdp": "2026-10-29T22:02:37+01:00",
+  "jdp": "2026-10-29T22:02:37+01:00",
+  "kolarac": "2026-10-29T22:02:37+01:00",
+  "madlenianum": "2026-10-29T22:02:37+01:00",
+  "madlenianum_tickets": "2026-10-29T22:02:37+01:00",
+  "narodno": "2026-10-29T22:02:37+01:00",
+  "sava_centar": "2026-10-29T22:02:37+01:00",
+  "terazije": "2026-10-29T22:02:37+01:00"
  },
  "season": {
   "live": {
