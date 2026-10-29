@@ -1939,6 +1939,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-10-23T16:54:25+02:00"
   },
+  "sava_centar:27853": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-29T17:02:02+01:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2204,6 +2208,7 @@
   "new_date:sava_centar:27301": "2026-09-29T17:39:49+02:00",
   "new_date:sava_centar:27306": "2026-09-30T15:35:23+02:00",
   "new_date:sava_centar:27415": "2026-10-09T18:05:23+02:00",
+  "new_date:sava_centar:27853": "2026-10-29T17:02:02+01:00",
   "new_date:terazije:1259": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1263": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1264": "2026-09-25T01:50:54+02:00",
@@ -3068,16 +3073,17 @@
   },
   "jdp:202611012000-narodni-poslanik": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1225"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -3191,7 +3197,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1229",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1229"
    },
    "price": "",
@@ -3199,7 +3205,7 @@
    "source_id": "202611072000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-07T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -4456,7 +4462,7 @@
   },
   "narodno:6371": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
+   "buy_url": "",
    "extra": {
     "repid": "6371"
    },
@@ -4465,7 +4471,7 @@
    "source_id": "6371",
    "stage": "Велика сцена",
    "start": "2026-11-10T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe58b7aeb61c4cf680e10f17b4f3679df",
@@ -5680,7 +5686,7 @@
     "end_date": "2026-11-25",
     "event_status": ""
    },
-   "price": "od 4500 RSD",
+   "price": "od 3500 RSD",
    "sales_start": null,
    "source_id": "24685",
    "stage": "Plava dvorana",
@@ -5887,24 +5893,6 @@
    "subtitle": "",
    "title": "URIAH HEEP",
    "url": "https://tickets.rs/event/uriah_heep_27331",
-   "venue": "sava_centar"
-  },
-  "sava_centar:25921": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/buildup_2026_27335",
-   "extra": {
-    "end_date": "2026-10-29",
-    "event_status": ""
-   },
-   "price": "od 10000 RSD",
-   "sales_start": null,
-   "source_id": "25921",
-   "stage": "Immersive Hall",
-   "start": "2026-10-29T09:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "BUILDUP 2026",
-   "url": "https://tickets.rs/event/buildup_2026_27335",
    "venue": "sava_centar"
   },
   "sava_centar:25927": {
@@ -6447,6 +6435,24 @@
    "url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
    "venue": "sava_centar"
   },
+  "sava_centar:27853": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/bajaga_instruktori_29303",
+   "extra": {
+    "end_date": "2026-11-29",
+    "event_status": ""
+   },
+   "price": "od 3400 RSD",
+   "sales_start": null,
+   "source_id": "27853",
+   "stage": "Plava dvorana",
+   "start": "2026-11-29T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Bajaga & Instruktori",
+   "url": "https://tickets.rs/event/bajaga_instruktori_29303",
+   "venue": "sava_centar"
+  },
   "terazije:1267": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1267",
@@ -6549,7 +6555,7 @@
    "source_id": "1273",
    "stage": "Велика сцена",
    "start": "2026-11-05T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Mјузикл у режији Југа Радивојевића",
    "title": "MAMMA MIA!",
    "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
@@ -6979,14 +6985,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-29T09:53:01+01:00",
-  "jdp": "2026-10-29T09:53:01+01:00",
-  "kolarac": "2026-10-29T09:53:01+01:00",
-  "madlenianum": "2026-10-29T09:53:01+01:00",
-  "madlenianum_tickets": "2026-10-29T09:53:01+01:00",
-  "narodno": "2026-10-29T09:53:01+01:00",
-  "sava_centar": "2026-10-29T09:53:01+01:00",
-  "terazije": "2026-10-29T09:53:01+01:00"
+  "bdp": "2026-10-29T17:02:02+01:00",
+  "jdp": "2026-10-29T17:02:02+01:00",
+  "kolarac": "2026-10-29T17:02:02+01:00",
+  "madlenianum": "2026-10-29T17:02:02+01:00",
+  "madlenianum_tickets": "2026-10-29T17:02:02+01:00",
+  "narodno": "2026-10-29T17:02:02+01:00",
+  "sava_centar": "2026-10-29T17:02:02+01:00",
+  "terazije": "2026-10-29T17:02:02+01:00"
  },
  "season": {
   "live": {
