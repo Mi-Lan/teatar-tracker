@@ -221,6 +221,7 @@
    "musical moliere",
    "new year 2027 dzejla ramovic i dejan vrana",
    "nikola rokvic",
+   "notre dame de paris",
    "novi fosili",
    "parni valjak",
    "perpetuum jazzile",
@@ -236,6 +237,7 @@
    "sergej cetkovic",
    "slobodan trkulja balkanopolis put svile iii",
    "the nutcracker",
+   "thomas anders from modern talking",
    "tijana bogicevic",
    "toma zdravkovic koncert secanja",
    "tommy emmanuel",
@@ -1907,6 +1909,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-29T17:39:49+02:00"
   },
+  "sava_centar:27304": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-30T15:01:05+01:00"
+  },
   "sava_centar:27306": {
    "ever_on_sale": true,
    "first_seen": "2026-09-30T15:35:23+02:00"
@@ -1942,6 +1948,22 @@
   "sava_centar:27853": {
    "ever_on_sale": true,
    "first_seen": "2026-10-29T17:02:02+01:00"
+  },
+  "sava_centar:28135": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-30T15:01:05+01:00"
+  },
+  "sava_centar:28138": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-30T15:01:05+01:00"
+  },
+  "sava_centar:28139": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-30T15:01:05+01:00"
+  },
+  "sava_centar:28140": {
+   "ever_on_sale": true,
+   "first_seen": "2026-10-30T15:01:05+01:00"
   },
   "terazije:1246": {
    "ever_on_sale": true,
@@ -2122,6 +2144,7 @@
  },
  "notified": {
   "drop:madlenianum_tickets:2026-10-27": "2026-10-27T17:44:58+01:00",
+  "drop:sava_centar:2026-10-30": "2026-10-30T15:01:05+01:00",
   "new_date:bdp:202612071930-na-cijoj-strani-ulysses": "2026-10-12T19:44:13+02:00",
   "new_date:jdp:202610022030-preobrazaj": "2026-09-25T17:47:32+02:00",
   "new_date:jdp:202610032000-edip": "2026-09-25T17:47:32+02:00",
@@ -2313,12 +2336,17 @@
   "new_show:narodno:6471": "2026-10-21T17:02:42+02:00",
   "new_show:sava_centar:27234": "2026-09-25T12:08:05+02:00",
   "new_show:sava_centar:27298": "2026-10-05T17:52:14+02:00",
+  "new_show:sava_centar:27304": "2026-10-30T15:01:05+01:00",
   "new_show:sava_centar:27314": "2026-10-08T18:22:01+02:00",
   "new_show:sava_centar:27369": "2026-10-07T10:32:04+02:00",
   "new_show:sava_centar:27388": "2026-10-08T18:22:01+02:00",
   "new_show:sava_centar:27409": "2026-10-13T17:51:50+02:00",
   "new_show:sava_centar:27459": "2026-10-14T15:36:00+02:00",
   "new_show:sava_centar:27770": "2026-10-23T16:54:25+02:00",
+  "new_show:sava_centar:28135": "2026-10-30T15:01:05+01:00",
+  "new_show:sava_centar:28138": "2026-10-30T15:01:05+01:00",
+  "new_show:sava_centar:28139": "2026-10-30T15:01:05+01:00",
+  "new_show:sava_centar:28140": "2026-10-30T15:01:05+01:00",
   "new_show:terazije:1252": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1253": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1254": "2026-09-25T01:50:54+02:00",
@@ -3001,17 +3029,16 @@
   },
   "jdp:202610312000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1211",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1211"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610312000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-31T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -3019,16 +3046,17 @@
   },
   "jdp:202611012000-narodni-poslanik": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1225"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -3053,17 +3081,16 @@
   },
   "jdp:202611032000-edip": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1226",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1226"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611032000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-03T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -3088,16 +3115,17 @@
   },
   "jdp:202611042000-cudo-u-sarganu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1227"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611042000-cudo-u-sarganu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Čudo u Šarganu",
    "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
@@ -4356,7 +4384,7 @@
   },
   "narodno:6369": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
+   "buy_url": "",
    "extra": {
     "repid": "6369"
    },
@@ -4365,7 +4393,7 @@
    "source_id": "6369",
    "stage": "Велика сцена",
    "start": "2026-11-04T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=x2ea093759eb28aa4f88a340d1bcb5d77",
@@ -4679,7 +4707,7 @@
   },
   "narodno:6431": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
+   "buy_url": "",
    "extra": {
     "repid": "6431"
    },
@@ -4688,7 +4716,7 @@
    "source_id": "6431",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-31T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
@@ -6202,6 +6230,24 @@
    "url": "https://tickets.rs/event/magla_bend_28746",
    "venue": "sava_centar"
   },
+  "sava_centar:27304": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/notredame_de_paris_28750",
+   "extra": {
+    "end_date": "2027-03-11",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "27304",
+   "stage": "Plava dvorana",
+   "start": "2027-03-11T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Notre-Dame de Paris",
+   "url": "https://tickets.rs/event/notredame_de_paris_28750",
+   "venue": "sava_centar"
+  },
   "sava_centar:27306": {
    "available": null,
    "buy_url": "https://tickets.rs/event/zeljko_samardzic_28753",
@@ -6364,6 +6410,78 @@
    "url": "https://tickets.rs/event/bajaga_instruktori_29303",
    "venue": "sava_centar"
   },
+  "sava_centar:28135": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/thomas_anders_from_modern_talking_29338",
+   "extra": {
+    "end_date": "2027-02-23",
+    "event_status": ""
+   },
+   "price": "od 5300 RSD",
+   "sales_start": null,
+   "source_id": "28135",
+   "stage": "",
+   "start": "2027-02-23T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Thomas Anders from Modern Talking",
+   "url": "https://tickets.rs/event/thomas_anders_from_modern_talking_29338",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28138": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/notredame_de_paris_29588",
+   "extra": {
+    "end_date": "2027-03-12",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "28138",
+   "stage": "Plava dvorana",
+   "start": "2027-03-12T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Notre-Dame de Paris",
+   "url": "https://tickets.rs/event/notredame_de_paris_29588",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28139": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/notredame_de_paris_29589",
+   "extra": {
+    "end_date": "2027-03-13",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "28139",
+   "stage": "Plava dvorana",
+   "start": "2027-03-13T15:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Notre-Dame de Paris",
+   "url": "https://tickets.rs/event/notredame_de_paris_29589",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28140": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/notredame_de_paris_29590",
+   "extra": {
+    "end_date": "2027-03-13",
+    "event_status": ""
+   },
+   "price": "od 3000 RSD",
+   "sales_start": null,
+   "source_id": "28140",
+   "stage": "Plava dvorana",
+   "start": "2027-03-13T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Notre-Dame de Paris",
+   "url": "https://tickets.rs/event/notredame_de_paris_29590",
+   "venue": "sava_centar"
+  },
   "terazije:1268": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1268",
@@ -6412,7 +6530,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -6851,6 +6969,30 @@
    "opened": 0,
    "unknown": 0,
    "venue": "madlenianum_tickets"
+  },
+  {
+   "after": "2026-10-30T08:00:13+01:00",
+   "buyable": 4,
+   "by": "2026-10-30T15:01:05+01:00",
+   "listed": 4,
+   "month": "2027-02",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-10-30T08:00:13+01:00",
+   "buyable": 6,
+   "by": "2026-10-30T15:01:05+01:00",
+   "listed": 6,
+   "month": "2027-03",
+   "new": 4,
+   "on_sale": 4,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
   }
  ],
  "releases": [
@@ -6878,14 +7020,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-30T08:00:13+01:00",
-  "jdp": "2026-10-30T08:00:13+01:00",
-  "kolarac": "2026-10-30T08:00:13+01:00",
-  "madlenianum": "2026-10-30T08:00:13+01:00",
-  "madlenianum_tickets": "2026-10-30T08:00:13+01:00",
-  "narodno": "2026-10-30T08:00:13+01:00",
-  "sava_centar": "2026-10-30T08:00:13+01:00",
-  "terazije": "2026-10-30T08:00:13+01:00"
+  "bdp": "2026-10-30T15:01:05+01:00",
+  "jdp": "2026-10-30T15:01:05+01:00",
+  "kolarac": "2026-10-30T15:01:05+01:00",
+  "madlenianum": "2026-10-30T15:01:05+01:00",
+  "madlenianum_tickets": "2026-10-30T15:01:05+01:00",
+  "narodno": "2026-10-30T15:01:05+01:00",
+  "sava_centar": "2026-10-30T15:01:05+01:00",
+  "terazije": "2026-10-30T15:01:05+01:00"
  },
  "season": {
   "live": {
