@@ -2381,25 +2381,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202610291930-laz": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610291930-laz",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-29T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Лаж",
-   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
-   "venue": "bdp"
-  },
   "bdp:202610301930-laz": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/1888d5340cf2",
@@ -2999,42 +2980,6 @@
    "title": "Црно злато",
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
-  },
-  "jdp:202610292000-sirano": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1209",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1209"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610292000-sirano",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-29T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Edmon Rostan",
-   "title": "Sirano",
-   "url": "https://www.jdp.rs/rs/performance/sirano/",
-   "venue": "jdp"
-  },
-  "jdp:202610292030-moj-muz": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1221",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1221"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610292030-moj-muz",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-29T20:30:00+01:00",
-   "status": "low",
-   "subtitle": "Rumena Bužarovska",
-   "title": "Moj muž",
-   "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
-   "venue": "jdp"
   },
   "jdp:202610302030-mama": {
    "available": null,
@@ -3724,24 +3669,6 @@
    "subtitle": "",
    "title": "NIKOLAJ KUZNJECOV",
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
-   "venue": "kolarac"
-  },
-  "kolarac:27396": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_zlatni_jubilej_akademskog_hora_kolegijum_muzikum_28844",
-   "extra": {
-    "end_date": "2026-10-29",
-    "event_status": ""
-   },
-   "price": "od 1000 RSD",
-   "sales_start": null,
-   "source_id": "27396",
-   "stage": "",
-   "start": "2026-10-29T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Zlatni jubilej Akademskog hora Kolegijum muzikum",
-   "url": "https://tickets.rs/event/58_bemus_zlatni_jubilej_akademskog_hora_kolegijum_muzikum_28844",
    "venue": "kolarac"
   },
   "kolarac:27397": {
@@ -4748,23 +4675,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6430": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6430"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6430",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-29T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Бранислава Нушића",
-   "title": "Сумњиво лице",
-   "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=xb8494eff38b424f2c7a5bb729c8369c0",
    "venue": "narodno"
   },
   "narodno:6431": {
@@ -6454,24 +6364,6 @@
    "url": "https://tickets.rs/event/bajaga_instruktori_29303",
    "venue": "sava_centar"
   },
-  "terazije:1267": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1267",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1267"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1267",
-   "stage": "Велика сцена",
-   "start": "2026-10-29T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Даријана Михајловића",
-   "title": "БАЛКАН ЕКСПРЕС",
-   "url": "https://pozoristeterazije.com/repertoar/",
-   "venue": "terazije"
-  },
   "terazije:1268": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1268",
@@ -6986,14 +6878,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-29T22:02:37+01:00",
-  "jdp": "2026-10-29T22:02:37+01:00",
-  "kolarac": "2026-10-29T22:02:37+01:00",
-  "madlenianum": "2026-10-29T22:02:37+01:00",
-  "madlenianum_tickets": "2026-10-29T22:02:37+01:00",
-  "narodno": "2026-10-29T22:02:37+01:00",
-  "sava_centar": "2026-10-29T22:02:37+01:00",
-  "terazije": "2026-10-29T22:02:37+01:00"
+  "bdp": "2026-10-30T01:52:26+01:00",
+  "jdp": "2026-10-30T01:52:26+01:00",
+  "kolarac": "2026-10-30T01:52:26+01:00",
+  "madlenianum": "2026-10-30T01:52:26+01:00",
+  "madlenianum_tickets": "2026-10-30T01:52:26+01:00",
+  "narodno": "2026-10-30T01:52:26+01:00",
+  "sava_centar": "2026-10-30T01:52:26+01:00",
+  "terazije": "2026-10-30T01:52:26+01:00"
  },
  "season": {
   "live": {
