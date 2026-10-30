@@ -3046,17 +3046,16 @@
   },
   "jdp:202611012000-narodni-poslanik": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1225"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -3115,17 +3114,16 @@
   },
   "jdp:202611042000-cudo-u-sarganu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1227"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611042000-cudo-u-sarganu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Čudo u Šarganu",
    "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
@@ -4656,7 +4654,7 @@
   },
   "narodno:6411": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6411",
+   "buy_url": "",
    "extra": {
     "repid": "6411"
    },
@@ -4665,7 +4663,7 @@
    "source_id": "6411",
    "stage": "Велика сцена",
    "start": "2026-10-30T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "Борислав Михајловић Михиз / Егон Савин, по роману Меше Селимовића",
    "title": "Дервиш и смрт",
    "url": "https://www.narodnopozoriste.rs/predstave/dervis-i-smrt?m=x0a9b5efbe4345b8d83de59645db79180",
@@ -7020,14 +7018,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-30T15:01:05+01:00",
-  "jdp": "2026-10-30T15:01:05+01:00",
-  "kolarac": "2026-10-30T15:01:05+01:00",
-  "madlenianum": "2026-10-30T15:01:05+01:00",
-  "madlenianum_tickets": "2026-10-30T15:01:05+01:00",
-  "narodno": "2026-10-30T15:01:05+01:00",
-  "sava_centar": "2026-10-30T15:01:05+01:00",
-  "terazije": "2026-10-30T15:01:05+01:00"
+  "bdp": "2026-10-30T20:14:01+01:00",
+  "jdp": "2026-10-30T20:14:01+01:00",
+  "kolarac": "2026-10-30T20:14:01+01:00",
+  "madlenianum": "2026-10-30T20:14:01+01:00",
+  "madlenianum_tickets": "2026-10-30T20:14:01+01:00",
+  "narodno": "2026-10-30T20:14:01+01:00",
+  "sava_centar": "2026-10-30T20:14:01+01:00",
+  "terazije": "2026-10-30T20:14:01+01:00"
  },
  "season": {
   "live": {
