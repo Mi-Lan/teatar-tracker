@@ -2409,26 +2409,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202610301930-laz": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/1888d5340cf2",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "1888d5340cf2"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610301930-laz",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-30T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Лаж",
-   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
-   "venue": "bdp"
-  },
   "bdp:202610311930-laz": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/8db9826343e3",
@@ -3008,24 +2988,6 @@
    "title": "Црно злато",
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
-  },
-  "jdp:202610302030-mama": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1224",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1224"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610302030-mama",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-10-30T20:30:00+01:00",
-   "status": "low",
-   "subtitle": "Maga Magazinović",
-   "title": "MaMa",
-   "url": "https://www.jdp.rs/performance/mama/",
-   "venue": "jdp"
   },
   "jdp:202610312000-putujuce-pozoriste-sopalovic": {
    "available": null,
@@ -3695,24 +3657,6 @@
    "subtitle": "",
    "title": "NIKOLAJ KUZNJECOV",
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
-   "venue": "kolarac"
-  },
-  "kolarac:27397": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/58_bemus_beogradska_filharmonija_28845",
-   "extra": {
-    "end_date": "2026-10-30",
-    "event_status": ""
-   },
-   "price": "od 2000 RSD",
-   "sales_start": null,
-   "source_id": "27397",
-   "stage": "",
-   "start": "2026-10-30T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "58. BEMUS - Beogradska filharmonija",
-   "url": "https://tickets.rs/event/58_bemus_beogradska_filharmonija_28845",
    "venue": "kolarac"
   },
   "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
@@ -4586,7 +4530,7 @@
   },
   "narodno:6392": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6392",
+   "buy_url": "",
    "extra": {
     "repid": "6392"
    },
@@ -4595,7 +4539,7 @@
    "source_id": "6392",
    "stage": "Велика сцена",
    "start": "2026-10-31T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "опера Ђузепа Вердија",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x52233e5fc4f36ff481f8d9c7c6cbddd2",
@@ -4650,23 +4594,6 @@
    "subtitle": "балет П. И. Чајковског · на музички снимак Оркестра Народног позоришта у Беораду",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
-   "venue": "narodno"
-  },
-  "narodno:6411": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6411"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6411",
-   "stage": "Велика сцена",
-   "start": "2026-10-30T20:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "Борислав Михајловић Михиз / Егон Савин, по роману Меше Селимовића",
-   "title": "Дервиш и смрт",
-   "url": "https://www.narodnopozoriste.rs/predstave/dervis-i-smrt?m=x0a9b5efbe4345b8d83de59645db79180",
    "venue": "narodno"
   },
   "narodno:6412": {
@@ -5524,24 +5451,6 @@
    "subtitle": "",
    "title": "Mira Škorić",
    "url": "https://tickets.rs/event/mira_skoric_24498",
-   "venue": "sava_centar"
-  },
-  "sava_centar:23197": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/musical_moliere_24302",
-   "extra": {
-    "end_date": "2026-10-30",
-    "event_status": ""
-   },
-   "price": "od 3000 RSD",
-   "sales_start": null,
-   "source_id": "23197",
-   "stage": "Plava dvorana",
-   "start": "2026-10-30T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "musical MOLIÈRE",
-   "url": "https://tickets.rs/event/musical_moliere_24302",
    "venue": "sava_centar"
   },
   "sava_centar:23230": {
@@ -6480,24 +6389,6 @@
    "url": "https://tickets.rs/event/notredame_de_paris_29590",
    "venue": "sava_centar"
   },
-  "terazije:1268": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1268",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1268"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1268",
-   "stage": "Велика сцена",
-   "start": "2026-10-30T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
-   "title": "FLASHDANCE",
-   "url": "https://pozoristeterazije.com/predstave/fles-dens/",
-   "venue": "terazije"
-  },
   "terazije:1269": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1269",
@@ -7018,14 +6909,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-30T20:14:01+01:00",
-  "jdp": "2026-10-30T20:14:01+01:00",
-  "kolarac": "2026-10-30T20:14:01+01:00",
-  "madlenianum": "2026-10-30T20:14:01+01:00",
-  "madlenianum_tickets": "2026-10-30T20:14:01+01:00",
-  "narodno": "2026-10-30T20:14:01+01:00",
-  "sava_centar": "2026-10-30T20:14:01+01:00",
-  "terazije": "2026-10-30T20:14:01+01:00"
+  "bdp": "2026-10-31T00:02:26+01:00",
+  "jdp": "2026-10-31T00:02:26+01:00",
+  "kolarac": "2026-10-31T00:02:26+01:00",
+  "madlenianum": "2026-10-31T00:02:26+01:00",
+  "madlenianum_tickets": "2026-10-31T00:02:26+01:00",
+  "narodno": "2026-10-31T00:02:26+01:00",
+  "sava_centar": "2026-10-31T00:02:26+01:00",
+  "terazije": "2026-10-31T00:02:26+01:00"
  },
  "season": {
   "live": {
