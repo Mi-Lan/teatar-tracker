@@ -2991,16 +2991,17 @@
   },
   "jdp:202610312000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1211",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1211"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610312000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-31T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -3147,17 +3148,16 @@
   },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1230"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -6419,7 +6419,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -6671,7 +6671,7 @@
    "source_id": "1285",
    "stage": "Велика сцена",
    "start": "2026-11-27T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Mјузикл у режији Југа Радивојевића",
    "title": "MAMMA MIA!",
    "url": "https://pozoristeterazije.com/predstave/mamma-mia/",
@@ -6909,14 +6909,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-31T09:33:43+01:00",
-  "jdp": "2026-10-31T09:33:43+01:00",
-  "kolarac": "2026-10-31T09:33:43+01:00",
-  "madlenianum": "2026-10-31T09:33:43+01:00",
-  "madlenianum_tickets": "2026-10-31T09:33:43+01:00",
-  "narodno": "2026-10-31T09:33:43+01:00",
-  "sava_centar": "2026-10-31T09:33:43+01:00",
-  "terazije": "2026-10-31T09:33:43+01:00"
+  "bdp": "2026-10-31T15:43:53+01:00",
+  "jdp": "2026-10-31T15:43:53+01:00",
+  "kolarac": "2026-10-31T15:43:53+01:00",
+  "madlenianum": "2026-10-31T15:43:53+01:00",
+  "madlenianum_tickets": "2026-10-31T15:43:53+01:00",
+  "narodno": "2026-10-31T15:43:53+01:00",
+  "sava_centar": "2026-10-31T15:43:53+01:00",
+  "terazije": "2026-10-31T15:43:53+01:00"
  },
  "season": {
   "live": {
