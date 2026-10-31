@@ -2991,17 +2991,16 @@
   },
   "jdp:202610312000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1211",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1211"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202610312000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-10-31T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -3009,16 +3008,17 @@
   },
   "jdp:202611012000-narodni-poslanik": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1225"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -4539,7 +4539,7 @@
    "source_id": "6392",
    "stage": "Велика сцена",
    "start": "2026-10-31T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "not_on_sale",
    "subtitle": "опера Ђузепа Вердија",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x52233e5fc4f36ff481f8d9c7c6cbddd2",
@@ -4632,7 +4632,7 @@
   },
   "narodno:6431": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
    "extra": {
     "repid": "6431"
    },
@@ -4641,7 +4641,7 @@
    "source_id": "6431",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-31T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
@@ -6083,24 +6083,6 @@
    "url": "https://tickets.rs/event/crvena_jabuka_28679",
    "venue": "sava_centar"
   },
-  "sava_centar:27273": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/musical_moliere_28718",
-   "extra": {
-    "end_date": "2026-10-31",
-    "event_status": ""
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "27273",
-   "stage": "Plava dvorana",
-   "start": "2026-10-31T15:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "musical MOLIÈRE",
-   "url": "https://tickets.rs/event/musical_moliere_28718",
-   "venue": "sava_centar"
-  },
   "sava_centar:27298": {
    "available": null,
    "buy_url": "https://tickets.rs/event/bcf_forum_28744",
@@ -6909,14 +6891,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-31T15:43:53+01:00",
-  "jdp": "2026-10-31T15:43:53+01:00",
-  "kolarac": "2026-10-31T15:43:53+01:00",
-  "madlenianum": "2026-10-31T15:43:53+01:00",
-  "madlenianum_tickets": "2026-10-31T15:43:53+01:00",
-  "narodno": "2026-10-31T15:43:53+01:00",
-  "sava_centar": "2026-10-31T15:43:53+01:00",
-  "terazije": "2026-10-31T15:43:53+01:00"
+  "bdp": "2026-10-31T19:50:52+01:00",
+  "jdp": "2026-10-31T19:50:52+01:00",
+  "kolarac": "2026-10-31T19:50:52+01:00",
+  "madlenianum": "2026-10-31T19:50:52+01:00",
+  "madlenianum_tickets": "2026-10-31T19:50:52+01:00",
+  "narodno": "2026-10-31T19:50:52+01:00",
+  "sava_centar": "2026-10-31T19:50:52+01:00",
+  "terazije": "2026-10-31T19:50:52+01:00"
  },
  "season": {
   "live": {
