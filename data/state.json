@@ -1,5 +1,10 @@
 {
- "health": {},
+ "health": {
+  "jdp": {
+   "fails": 1,
+   "last_error": "returned 0 performances"
+  }
+ },
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -2409,26 +2414,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202610311930-laz": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/8db9826343e3",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "8db9826343e3"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202610311930-laz",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-10-31T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Лаж",
-   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
-   "venue": "bdp"
-  },
   "bdp:202611011930-bogojavljenska-noc": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/9b768eb9aecd",
@@ -3674,21 +3659,6 @@
    "url": "https://operatheatremadlenianum.com/gospodin-u-cizmama-od-dima",
    "venue": "madlenianum"
   },
-  "madlenianum:posle-pada-202610311930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "posle-pada-202610311930",
-   "stage": "",
-   "start": "2026-10-31T19:30:00+01:00",
-   "status": "unknown",
-   "subtitle": "Artur Miler",
-   "title": "POSLE PADA",
-   "url": "https://operatheatremadlenianum.com/posle-pada",
-   "venue": "madlenianum"
-  },
   "madlenianum:posle-pada-202611021930": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -4528,23 +4498,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
    "venue": "narodno"
   },
-  "narodno:6392": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6392"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6392",
-   "stage": "Велика сцена",
-   "start": "2026-10-31T19:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "опера Ђузепа Вердија",
-   "title": "Травијата",
-   "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x52233e5fc4f36ff481f8d9c7c6cbddd2",
-   "venue": "narodno"
-  },
   "narodno:6395": {
    "available": null,
    "buy_url": "",
@@ -4632,7 +4585,7 @@
   },
   "narodno:6431": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6431",
+   "buy_url": "",
    "extra": {
     "repid": "6431"
    },
@@ -4641,7 +4594,7 @@
    "source_id": "6431",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-10-31T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "комедија Јована Стерије Поповића",
    "title": "Покондирена тиква",
    "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
@@ -5451,24 +5404,6 @@
    "subtitle": "",
    "title": "Mira Škorić",
    "url": "https://tickets.rs/event/mira_skoric_24498",
-   "venue": "sava_centar"
-  },
-  "sava_centar:23230": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/musical_moliere_24619",
-   "extra": {
-    "end_date": "2026-10-31",
-    "event_status": ""
-   },
-   "price": "od 3000 RSD",
-   "sales_start": null,
-   "source_id": "23230",
-   "stage": "Plava dvorana",
-   "start": "2026-10-31T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "musical MOLIÈRE",
-   "url": "https://tickets.rs/event/musical_moliere_24619",
    "venue": "sava_centar"
   },
   "sava_centar:24367": {
@@ -6371,24 +6306,6 @@
    "url": "https://tickets.rs/event/notredame_de_paris_29590",
    "venue": "sava_centar"
   },
-  "terazije:1269": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1269",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1269"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1269",
-   "stage": "Велика сцена",
-   "start": "2026-10-31T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Небојше Брадића",
-   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
-   "url": "https://pozoristeterazije.com/predstave/zene-na-ivici-nervnog-sloma/",
-   "venue": "terazije"
-  },
   "terazije:1270": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1270",
@@ -6891,14 +6808,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-10-31T19:50:52+01:00",
+  "bdp": "2026-10-31T23:25:18+01:00",
   "jdp": "2026-10-31T19:50:52+01:00",
-  "kolarac": "2026-10-31T19:50:52+01:00",
-  "madlenianum": "2026-10-31T19:50:52+01:00",
-  "madlenianum_tickets": "2026-10-31T19:50:52+01:00",
-  "narodno": "2026-10-31T19:50:52+01:00",
-  "sava_centar": "2026-10-31T19:50:52+01:00",
-  "terazije": "2026-10-31T19:50:52+01:00"
+  "kolarac": "2026-10-31T23:25:18+01:00",
+  "madlenianum": "2026-10-31T23:25:18+01:00",
+  "madlenianum_tickets": "2026-10-31T23:25:18+01:00",
+  "narodno": "2026-10-31T23:25:18+01:00",
+  "sava_centar": "2026-10-31T23:25:18+01:00",
+  "terazije": "2026-10-31T23:25:18+01:00"
  },
  "season": {
   "live": {
