@@ -2463,25 +2463,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202611011930-bogojavljenska-noc": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": ""
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611011930-bogojavljenska-noc",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-11-01T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Богојављенска ноћ",
-   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
-   "venue": "bdp"
-  },
   "bdp:202611021930-bogojavljenska-noc": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/ca7055bf284d",
@@ -3022,23 +3003,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611012000-narodni-poslanik": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611012000-narodni-poslanik",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-01T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Branislav Nušić",
-   "title": "Narodni poslanik",
-   "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
-   "venue": "jdp"
-  },
   "jdp:202611022030-slika-dorijana-greja": {
    "available": null,
    "buy_url": "",
@@ -3163,17 +3127,16 @@
   },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1230"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -6455,24 +6418,6 @@
    "url": "https://tickets.rs/event/notredame_de_paris_29590",
    "venue": "sava_centar"
   },
-  "terazije:1270": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1270",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1270"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1270",
-   "stage": "Велика сцена",
-   "start": "2026-11-01T19:30:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "ФАНТОМ ИЗ ОПЕРЕ",
-   "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
-   "venue": "terazije"
-  },
   "terazije:1272": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1272",
@@ -6988,14 +6933,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-01T20:35:03+01:00",
-  "jdp": "2026-11-01T20:35:03+01:00",
-  "kolarac": "2026-11-01T20:35:03+01:00",
-  "madlenianum": "2026-11-01T20:35:03+01:00",
-  "madlenianum_tickets": "2026-11-01T20:35:03+01:00",
-  "narodno": "2026-11-01T20:35:03+01:00",
-  "sava_centar": "2026-11-01T20:35:03+01:00",
-  "terazije": "2026-11-01T20:35:03+01:00"
+  "bdp": "2026-11-02T00:04:02+01:00",
+  "jdp": "2026-11-02T00:04:02+01:00",
+  "kolarac": "2026-11-02T00:04:02+01:00",
+  "madlenianum": "2026-11-02T00:04:02+01:00",
+  "madlenianum_tickets": "2026-11-02T00:04:02+01:00",
+  "narodno": "2026-11-02T00:04:02+01:00",
+  "sava_centar": "2026-11-02T00:04:02+01:00",
+  "terazije": "2026-11-02T00:04:02+01:00"
  },
  "season": {
   "live": {
