@@ -1,10 +1,5 @@
 {
- "health": {
-  "jdp": {
-   "fails": 1,
-   "last_error": "returned 0 performances"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -2974,7 +2969,7 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202610312000-putujuce-pozoriste-sopalovic": {
+  "jdp:202611012000-narodni-poslanik": {
    "available": null,
    "buy_url": "",
    "extra": {
@@ -2982,28 +2977,10 @@
    },
    "price": "",
    "sales_start": null,
-   "source_id": "202610312000-putujuce-pozoriste-sopalovic",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-10-31T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Ljubomir Simović",
-   "title": "Putujuće pozorište Šopalović",
-   "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
-   "venue": "jdp"
-  },
-  "jdp:202611012000-narodni-poslanik": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1225",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1225"
-   },
-   "price": "",
-   "sales_start": null,
    "source_id": "202611012000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-01T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -4581,23 +4558,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6431": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6431"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6431",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-10-31T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Јована Стерије Поповића",
-   "title": "Покондирена тиква",
-   "url": "https://www.narodnopozoriste.rs/predstave/pokondirena-tikva-1?m=x30e48050c248ef9a42ae34816b448087",
    "venue": "narodno"
   },
   "narodno:6432": {
@@ -6805,17 +6765,36 @@
    "remind_at": [],
    "source": "recurring",
    "venue": "narodno"
+  },
+  {
+   "all_day": false,
+   "at": "2026-12-23T00:00:00+01:00",
+   "id": "0bb5139b",
+   "link": "https://www.narodnopozoriste.rs/repertoar",
+   "note": "next month's tickets go on sale",
+   "remind_at": [],
+   "source": "recurring",
+   "venue": "narodno"
+  },
+  {
+   "all_day": true,
+   "at": "2026-12-23T00:00:00+01:00",
+   "id": "c4eedda3",
+   "note": "next month's tickets go on sale",
+   "remind_at": [],
+   "source": "recurring",
+   "venue": "narodno"
   }
  ],
  "scanned": {
-  "bdp": "2026-10-31T23:25:18+01:00",
-  "jdp": "2026-10-31T19:50:52+01:00",
-  "kolarac": "2026-10-31T23:25:18+01:00",
-  "madlenianum": "2026-10-31T23:25:18+01:00",
-  "madlenianum_tickets": "2026-10-31T23:25:18+01:00",
-  "narodno": "2026-10-31T23:25:18+01:00",
-  "sava_centar": "2026-10-31T23:25:18+01:00",
-  "terazije": "2026-10-31T23:25:18+01:00"
+  "bdp": "2026-11-01T02:25:24+01:00",
+  "jdp": "2026-11-01T02:25:24+01:00",
+  "kolarac": "2026-11-01T02:25:24+01:00",
+  "madlenianum": "2026-11-01T02:25:24+01:00",
+  "madlenianum_tickets": "2026-11-01T02:25:24+01:00",
+  "narodno": "2026-11-01T02:25:24+01:00",
+  "sava_centar": "2026-11-01T02:25:24+01:00",
+  "terazije": "2026-11-01T02:25:24+01:00"
  },
  "season": {
   "live": {
@@ -6823,13 +6802,13 @@
     "out": true
    },
    "jdp": {
-    "out": true
+    "out": false
    },
    "kolarac": {
     "out": true
    },
    "madlenianum": {
-    "out": true
+    "out": false
    },
    "madlenianum_tickets": {
     "out": true
@@ -6844,79 +6823,9 @@
     "out": true
    }
   },
-  "month": "2026-11",
-  "released": {
-   "jdp": {
-    "after": "2026-10-21T12:00:24+02:00",
-    "by": "2026-10-21T17:02:42+02:00"
-   },
-   "madlenianum_tickets": {
-    "after": null,
-    "by": "2026-10-27T17:44:58+01:00"
-   },
-   "terazije": {
-    "after": "2026-10-22T21:10:39+02:00",
-    "by": "2026-10-23T01:12:55+02:00"
-   }
-  },
-  "reported": {
-   "bdp": {
-    "buyable": 11,
-    "listed": 11,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 0
-   },
-   "jdp": {
-    "buyable": 25,
-    "listed": 35,
-    "not_yet": 0,
-    "sold_out": 10,
-    "unknown": 0
-   },
-   "kolarac": {
-    "buyable": 1,
-    "listed": 1,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 0
-   },
-   "madlenianum": {
-    "buyable": 0,
-    "listed": 3,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 3
-   },
-   "madlenianum_tickets": {
-    "buyable": 3,
-    "listed": 3,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 0
-   },
-   "narodno": {
-    "buyable": 39,
-    "listed": 50,
-    "not_yet": 5,
-    "sold_out": 6,
-    "unknown": 0
-   },
-   "sava_centar": {
-    "buyable": 20,
-    "listed": 21,
-    "not_yet": 0,
-    "sold_out": 1,
-    "unknown": 0
-   },
-   "terazije": {
-    "buyable": 17,
-    "listed": 17,
-    "not_yet": 0,
-    "sold_out": 0,
-    "unknown": 0
-   }
-  }
+  "month": "2026-12",
+  "released": {},
+  "reported": {}
  },
  "telegram_offset": 597987114,
  "watch_imported": [],
