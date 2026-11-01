@@ -3810,21 +3810,6 @@
    "url": "https://operatheatremadlenianum.com/staklena-menazerija",
    "venue": "madlenianum"
   },
-  "madlenianum:tri-praseta-202611011100": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "tri-praseta-202611011100",
-   "stage": "",
-   "start": "2026-11-01T11:00:00+01:00",
-   "status": "unknown",
-   "subtitle": "Marija i Branislav Cvijić",
-   "title": "TRI PRASETA",
-   "url": "https://operatheatremadlenianum.com/tri-praseta",
-   "venue": "madlenianum"
-  },
   "madlenianum:tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202611222000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -6482,7 +6467,7 @@
    "source_id": "1270",
    "stage": "Велика сцена",
    "start": "2026-11-01T19:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "ФАНТОМ ИЗ ОПЕРЕ",
    "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
@@ -6770,7 +6755,7 @@
    "source_id": "1287",
    "stage": "Велика сцена",
    "start": "2026-11-29T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
    "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
@@ -7003,14 +6988,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-01T09:04:29+01:00",
-  "jdp": "2026-11-01T09:04:29+01:00",
-  "kolarac": "2026-11-01T09:04:29+01:00",
-  "madlenianum": "2026-11-01T09:04:29+01:00",
-  "madlenianum_tickets": "2026-11-01T09:04:29+01:00",
-  "narodno": "2026-11-01T09:04:29+01:00",
-  "sava_centar": "2026-11-01T09:04:29+01:00",
-  "terazije": "2026-11-01T09:04:29+01:00"
+  "bdp": "2026-11-01T16:02:13+01:00",
+  "jdp": "2026-11-01T16:02:13+01:00",
+  "kolarac": "2026-11-01T16:02:13+01:00",
+  "madlenianum": "2026-11-01T16:02:13+01:00",
+  "madlenianum_tickets": "2026-11-01T16:02:13+01:00",
+  "narodno": "2026-11-01T16:02:13+01:00",
+  "sava_centar": "2026-11-01T16:02:13+01:00",
+  "terazije": "2026-11-01T16:02:13+01:00"
  },
  "season": {
   "live": {
@@ -7043,7 +7028,7 @@
   "released": {},
   "reported": {}
  },
- "telegram_offset": 597987114,
+ "telegram_offset": 597987115,
  "watch_imported": [],
  "watchlist": []
 }
