@@ -2463,25 +2463,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202611021930-bogojavljenska-noc": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": ""
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611021930-bogojavljenska-noc",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-11-02T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Богојављенска ноћ",
-   "url": "https://www.bdp.rs/cir/predstave-cir/bogojavljenska-notsh",
-   "venue": "bdp"
-  },
   "bdp:202611031930-crno-zlato": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/427ec989bdad",
@@ -3002,23 +2983,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611022030-slika-dorijana-greja": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611022030-slika-dorijana-greja",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-11-02T20:30:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Oskar Vajld",
-   "title": "Slika Dorijana Greja",
-   "url": "https://www.jdp.rs/performance/slika-dorijana-greja/",
-   "venue": "jdp"
-  },
   "jdp:202611032000-edip": {
    "available": null,
    "buy_url": "",
@@ -3370,16 +3334,17 @@
   },
   "jdp:202611222000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1239",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1239"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611222000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-22T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3678,21 +3643,6 @@
    "subtitle": "Dankan Mekmilan",
    "title": "PLUĆA",
    "url": "https://operatheatremadlenianum.com/pluca",
-   "venue": "madlenianum"
-  },
-  "madlenianum:posle-pada-202611021930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "posle-pada-202611021930",
-   "stage": "",
-   "start": "2026-11-02T19:30:00+01:00",
-   "status": "unknown",
-   "subtitle": "Artur Miler",
-   "title": "POSLE PADA",
-   "url": "https://operatheatremadlenianum.com/posle-pada",
    "venue": "madlenianum"
   },
   "madlenianum:posle-pada-202611031930": {
@@ -4456,7 +4406,7 @@
   },
   "narodno:6371": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
+   "buy_url": "",
    "extra": {
     "repid": "6371"
    },
@@ -4465,7 +4415,7 @@
    "source_id": "6371",
    "stage": "Велика сцена",
    "start": "2026-11-10T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe58b7aeb61c4cf680e10f17b4f3679df",
@@ -4473,7 +4423,7 @@
   },
   "narodno:6372": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
+   "buy_url": "",
    "extra": {
     "repid": "6372"
    },
@@ -4482,7 +4432,7 @@
    "source_id": "6372",
    "stage": "Велика сцена",
    "start": "2026-11-13T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xfdceb120249b6675b2d44b7f0928b461",
@@ -4675,23 +4625,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6412": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6412"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6412",
-   "stage": "Велика сцена",
-   "start": "2026-11-02T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Синише Ковачевића",
-   "title": "Године врана",
-   "url": "https://www.narodnopozoriste.rs/predstave/godine-vrana?m=x0d134f7974a8b2aa90bdee218317010e",
-   "venue": "narodno"
-  },
   "narodno:6413": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
@@ -4707,23 +4640,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6432": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6432"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6432",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-02T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Жана Ануја",
-   "title": "Женски оркестар",
-   "url": "https://www.narodnopozoriste.rs/predstave/zenski-orkestar?m=xf1876769705c69a7a5bf76a81b71ee1c",
    "venue": "narodno"
   },
   "narodno:6433": {
@@ -6930,14 +6846,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-02T21:16:52+01:00",
-  "jdp": "2026-11-02T21:16:52+01:00",
-  "kolarac": "2026-11-02T21:16:52+01:00",
-  "madlenianum": "2026-11-02T21:16:52+01:00",
-  "madlenianum_tickets": "2026-11-02T21:16:52+01:00",
-  "narodno": "2026-11-02T21:16:52+01:00",
-  "sava_centar": "2026-11-02T21:16:52+01:00",
-  "terazije": "2026-11-02T21:16:52+01:00"
+  "bdp": "2026-11-03T03:28:10+01:00",
+  "jdp": "2026-11-03T03:28:10+01:00",
+  "kolarac": "2026-11-03T03:28:10+01:00",
+  "madlenianum": "2026-11-03T03:28:10+01:00",
+  "madlenianum_tickets": "2026-11-03T03:28:10+01:00",
+  "narodno": "2026-11-03T03:28:10+01:00",
+  "sava_centar": "2026-11-03T03:28:10+01:00",
+  "terazije": "2026-11-03T03:28:10+01:00"
  },
  "season": {
   "live": {
