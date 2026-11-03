@@ -3019,17 +3019,16 @@
   },
   "jdp:202611042000-cudo-u-sarganu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1227"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611042000-cudo-u-sarganu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Čudo u Šarganu",
    "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
@@ -3334,17 +3333,16 @@
   },
   "jdp:202611222000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1239",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1239"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611222000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-22T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4355,7 +4353,7 @@
   },
   "narodno:6368": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
    "extra": {
     "repid": "6368"
    },
@@ -4364,7 +4362,7 @@
    "source_id": "6368",
    "stage": "Велика сцена",
    "start": "2026-11-03T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe23e1c34d919136dc670c8c51f7fb044",
@@ -4372,7 +4370,7 @@
   },
   "narodno:6369": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
    "extra": {
     "repid": "6369"
    },
@@ -4381,7 +4379,7 @@
    "source_id": "6369",
    "stage": "Велика сцена",
    "start": "2026-11-04T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=x2ea093759eb28aa4f88a340d1bcb5d77",
@@ -4406,7 +4404,7 @@
   },
   "narodno:6371": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
    "extra": {
     "repid": "6371"
    },
@@ -4415,7 +4413,7 @@
    "source_id": "6371",
    "stage": "Велика сцена",
    "start": "2026-11-10T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe58b7aeb61c4cf680e10f17b4f3679df",
@@ -6050,7 +6048,7 @@
     "end_date": "2026-11-10",
     "event_status": ""
    },
-   "price": "od 2500 RSD",
+   "price": "od 3000 RSD",
    "sales_start": null,
    "source_id": "27298",
    "stage": "sala M13",
@@ -6613,7 +6611,7 @@
    "source_id": "1287",
    "stage": "Велика сцена",
    "start": "2026-11-29T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
    "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
@@ -6846,14 +6844,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-03T03:28:10+01:00",
-  "jdp": "2026-11-03T03:28:10+01:00",
-  "kolarac": "2026-11-03T03:28:10+01:00",
-  "madlenianum": "2026-11-03T03:28:10+01:00",
-  "madlenianum_tickets": "2026-11-03T03:28:10+01:00",
-  "narodno": "2026-11-03T03:28:10+01:00",
-  "sava_centar": "2026-11-03T03:28:10+01:00",
-  "terazije": "2026-11-03T03:28:10+01:00"
+  "bdp": "2026-11-03T10:58:41+01:00",
+  "jdp": "2026-11-03T10:58:41+01:00",
+  "kolarac": "2026-11-03T10:58:41+01:00",
+  "madlenianum": "2026-11-03T10:58:41+01:00",
+  "madlenianum_tickets": "2026-11-03T10:58:41+01:00",
+  "narodno": "2026-11-03T10:58:41+01:00",
+  "sava_centar": "2026-11-03T10:58:41+01:00",
+  "terazije": "2026-11-03T10:58:41+01:00"
  },
  "season": {
   "live": {
