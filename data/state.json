@@ -3038,7 +3038,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1228",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1228"
    },
    "price": "",
@@ -3046,7 +3046,7 @@
    "source_id": "202611052000-razvojni-put-bore-snajdera",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-05T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Aleksandar Popović",
    "title": "Razvojni put Bore šnajdera",
    "url": "https://www.jdp.rs/performance/razvojni-put-bore-snajdera/",
@@ -3067,21 +3067,22 @@
    "status": "on_sale",
    "subtitle": "Sidi Larbi  Šerkauji",
    "title": "Jesen  /  Fall",
-   "url": "",
+   "url": "https://www.jdp.rs/performance/jesen-fall/",
    "venue": "jdp"
   },
   "jdp:202611072000-garderober": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1229",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1229"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611072000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-07T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -4353,7 +4354,7 @@
   },
   "narodno:6368": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6368",
+   "buy_url": "",
    "extra": {
     "repid": "6368"
    },
@@ -4362,7 +4363,7 @@
    "source_id": "6368",
    "stage": "Велика сцена",
    "start": "2026-11-03T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe23e1c34d919136dc670c8c51f7fb044",
@@ -4370,7 +4371,7 @@
   },
   "narodno:6369": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6369",
+   "buy_url": "",
    "extra": {
     "repid": "6369"
    },
@@ -4379,7 +4380,7 @@
    "source_id": "6369",
    "stage": "Велика сцена",
    "start": "2026-11-04T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=x2ea093759eb28aa4f88a340d1bcb5d77",
@@ -4404,7 +4405,7 @@
   },
   "narodno:6371": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6371",
+   "buy_url": "",
    "extra": {
     "repid": "6371"
    },
@@ -4413,7 +4414,7 @@
    "source_id": "6371",
    "stage": "Велика сцена",
    "start": "2026-11-10T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe58b7aeb61c4cf680e10f17b4f3679df",
@@ -4676,7 +4677,7 @@
   },
   "narodno:6435": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6435",
    "extra": {
     "repid": "6435"
    },
@@ -4685,7 +4686,7 @@
    "source_id": "6435",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-05T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=x3b15e44cc7175e67f3e1ff32cf99d7aa",
@@ -6521,7 +6522,7 @@
    "source_id": "1282",
    "stage": "Велика сцена",
    "start": "2026-11-22T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
@@ -6844,14 +6845,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-03T10:58:41+01:00",
-  "jdp": "2026-11-03T10:58:41+01:00",
-  "kolarac": "2026-11-03T10:58:41+01:00",
-  "madlenianum": "2026-11-03T10:58:41+01:00",
-  "madlenianum_tickets": "2026-11-03T10:58:41+01:00",
-  "narodno": "2026-11-03T10:58:41+01:00",
-  "sava_centar": "2026-11-03T10:58:41+01:00",
-  "terazije": "2026-11-03T10:58:41+01:00"
+  "bdp": "2026-11-03T18:45:04+01:00",
+  "jdp": "2026-11-03T18:45:04+01:00",
+  "kolarac": "2026-11-03T18:45:04+01:00",
+  "madlenianum": "2026-11-03T18:45:04+01:00",
+  "madlenianum_tickets": "2026-11-03T18:45:04+01:00",
+  "narodno": "2026-11-03T18:45:04+01:00",
+  "sava_centar": "2026-11-03T18:45:04+01:00",
+  "terazije": "2026-11-03T18:45:04+01:00"
  },
  "season": {
   "live": {
