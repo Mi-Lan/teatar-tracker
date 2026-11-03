@@ -2463,26 +2463,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202611031930-crno-zlato": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/427ec989bdad",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "427ec989bdad"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611031930-crno-zlato",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-11-03T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Црно злато",
-   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
-   "venue": "bdp"
-  },
   "bdp:202611041930-crno-zlato": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/0c52a6a5ae38",
@@ -2983,40 +2963,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611032000-edip": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611032000-edip",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-03T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Sofokle",
-   "title": "Edip",
-   "url": "https://www.jdp.rs/performance/edip/",
-   "venue": "jdp"
-  },
-  "jdp:202611032030-moj-muz": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611032030-moj-muz",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-11-03T20:30:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Rumena Bužarovska",
-   "title": "Moj muž",
-   "url": "https://www.jdp.rs/rs/performance/%d0%ba%d0%b0%d1%81%d0%bf%d0%b0%d1%80-2/",
-   "venue": "jdp"
-  },
   "jdp:202611042000-cudo-u-sarganu": {
    "available": null,
    "buy_url": "",
@@ -3072,17 +3018,16 @@
   },
   "jdp:202611072000-garderober": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1229",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1229"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611072000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-07T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -3642,21 +3587,6 @@
    "subtitle": "Dankan Mekmilan",
    "title": "PLUĆA",
    "url": "https://operatheatremadlenianum.com/pluca",
-   "venue": "madlenianum"
-  },
-  "madlenianum:posle-pada-202611031930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "posle-pada-202611031930",
-   "stage": "",
-   "start": "2026-11-03T19:30:00+01:00",
-   "status": "unknown",
-   "subtitle": "Artur Miler",
-   "title": "POSLE PADA",
-   "url": "https://operatheatremadlenianum.com/posle-pada",
    "venue": "madlenianum"
   },
   "madlenianum:snezana-i-sedam-patuljaka-202611301000": {
@@ -4352,23 +4282,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x31dd84013e7a106698c690e0acde6bb2",
    "venue": "narodno"
   },
-  "narodno:6368": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6368"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6368",
-   "stage": "Велика сцена",
-   "start": "2026-11-03T19:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "балет Петра Иљича Чајковског",
-   "title": "Лабудово језеро",
-   "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xe23e1c34d919136dc670c8c51f7fb044",
-   "venue": "narodno"
-  },
   "narodno:6369": {
    "available": null,
    "buy_url": "",
@@ -4639,23 +4552,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6433": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6433",
-   "extra": {
-    "repid": "6433"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6433",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-03T20:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "драма Ђорђа Лебовића",
-   "title": "Лутка са кревета бр. 21",
-   "url": "https://www.narodnopozoriste.rs/predstave/lutka-sa-kreveta-br-21?m=xc9a420ed642f291b803ea55ae63deda5",
    "venue": "narodno"
   },
   "narodno:6434": {
@@ -6845,14 +6741,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-03T18:45:04+01:00",
-  "jdp": "2026-11-03T18:45:04+01:00",
-  "kolarac": "2026-11-03T18:45:04+01:00",
-  "madlenianum": "2026-11-03T18:45:04+01:00",
-  "madlenianum_tickets": "2026-11-03T18:45:04+01:00",
-  "narodno": "2026-11-03T18:45:04+01:00",
-  "sava_centar": "2026-11-03T18:45:04+01:00",
-  "terazije": "2026-11-03T18:45:04+01:00"
+  "bdp": "2026-11-03T23:34:58+01:00",
+  "jdp": "2026-11-03T23:34:58+01:00",
+  "kolarac": "2026-11-03T23:34:58+01:00",
+  "madlenianum": "2026-11-03T23:34:58+01:00",
+  "madlenianum_tickets": "2026-11-03T23:34:58+01:00",
+  "narodno": "2026-11-03T23:34:58+01:00",
+  "sava_centar": "2026-11-03T23:34:58+01:00",
+  "terazije": "2026-11-03T23:34:58+01:00"
  },
  "season": {
   "live": {
