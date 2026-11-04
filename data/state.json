@@ -2463,26 +2463,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202611041930-crno-zlato": {
-   "available": null,
-   "buy_url": "https://app.sixtix.com/events/0c52a6a5ae38",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "0c52a6a5ae38"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611041930-crno-zlato",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-11-04T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Црно злато",
-   "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
-   "venue": "bdp"
-  },
   "bdp:202611131930-kralj-ibi": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/222de67acea2",
@@ -2962,24 +2942,6 @@
    "title": "Црно злато",
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
-  },
-  "jdp:202611042000-cudo-u-sarganu": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1227"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611042000-cudo-u-sarganu",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-04T20:00:00+01:00",
-   "status": "low",
-   "subtitle": "Ljubomir Simović",
-   "title": "Čudo u Šarganu",
-   "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
-   "venue": "jdp"
   },
   "jdp:202611052000-razvojni-put-bore-snajdera": {
    "available": null,
@@ -4283,23 +4245,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x31dd84013e7a106698c690e0acde6bb2",
    "venue": "narodno"
   },
-  "narodno:6369": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6369"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6369",
-   "stage": "Велика сцена",
-   "start": "2026-11-04T19:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "балет Петра Иљича Чајковског",
-   "title": "Лабудово језеро",
-   "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=x2ea093759eb28aa4f88a340d1bcb5d77",
-   "venue": "narodno"
-  },
   "narodno:6370": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
@@ -4553,23 +4498,6 @@
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
-   "venue": "narodno"
-  },
-  "narodno:6434": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6434",
-   "extra": {
-    "repid": "6434"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6434",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-04T20:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "драма Љубомира Симовића",
-   "title": "Хасанагиница",
-   "url": "https://www.narodnopozoriste.rs/predstave/hasanaginica?m=xa7c072de549f3904d5dc08cac98088fc",
    "venue": "narodno"
   },
   "narodno:6435": {
@@ -5759,24 +5687,6 @@
    "url": "https://tickets.rs/event/vlatko_stefanovski_27654",
    "venue": "sava_centar"
   },
-  "sava_centar:26241": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/goca_trzan_27664",
-   "extra": {
-    "end_date": "2026-11-04",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "26241",
-   "stage": "Plava dvorana",
-   "start": "2026-11-04T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "Goca Tržan",
-   "url": "https://tickets.rs/event/goca_trzan_27664",
-   "venue": "sava_centar"
-  },
   "sava_centar:26303": {
    "available": null,
    "buy_url": "https://tickets.rs/event/zeljko_vasic_27731",
@@ -6226,24 +6136,6 @@
    "title": "Notre-Dame de Paris",
    "url": "https://tickets.rs/event/notredame_de_paris_29590",
    "venue": "sava_centar"
-  },
-  "terazije:1272": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1272",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1272"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1272",
-   "stage": "Велика сцена",
-   "start": "2026-11-04T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "ФАНТОМ ИЗ ОПЕРЕ",
-   "url": "https://pozoristeterazije.com/predstave/fantom-iz-opere/",
-   "venue": "terazije"
   },
   "terazije:1273": {
    "available": null,
@@ -6742,14 +6634,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-04T18:57:22+01:00",
-  "jdp": "2026-11-04T18:57:22+01:00",
-  "kolarac": "2026-11-04T18:57:22+01:00",
-  "madlenianum": "2026-11-04T18:57:22+01:00",
-  "madlenianum_tickets": "2026-11-04T18:57:22+01:00",
-  "narodno": "2026-11-04T18:57:22+01:00",
-  "sava_centar": "2026-11-04T18:57:22+01:00",
-  "terazije": "2026-11-04T18:57:22+01:00"
+  "bdp": "2026-11-05T00:34:47+01:00",
+  "jdp": "2026-11-05T00:34:47+01:00",
+  "kolarac": "2026-11-05T00:34:47+01:00",
+  "madlenianum": "2026-11-05T00:34:47+01:00",
+  "madlenianum_tickets": "2026-11-05T00:34:47+01:00",
+  "narodno": "2026-11-05T00:34:47+01:00",
+  "sava_centar": "2026-11-05T00:34:47+01:00",
+  "terazije": "2026-11-05T00:34:47+01:00"
  },
  "season": {
   "live": {
