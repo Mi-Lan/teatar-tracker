@@ -2965,16 +2965,17 @@
   },
   "jdp:202611042000-cudo-u-sarganu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1227",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1227"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611042000-cudo-u-sarganu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Čudo u Šarganu",
    "url": "https://www.jdp.rs/performance/cudo-u-sarganu/",
@@ -3035,16 +3036,17 @@
   },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1230"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -3210,7 +3212,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1237",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1237"
    },
    "price": "",
@@ -3218,7 +3220,7 @@
    "source_id": "202611182000-gospodjica",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-18T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Ivo Andrić",
    "title": "Gospođica",
    "url": "https://www.jdp.rs/performance/gospodjica/",
@@ -3274,7 +3276,7 @@
    "status": "on_sale",
    "subtitle": "Borisav Stanković",
    "title": "Sofka",
-   "url": "",
+   "url": "https://www.narodnopozoristenis.rs/sofka/Mina%20Zotović12:18%20(пре%200%20минута)коме%20јаhttps://www.jdp.rs/performance/sofka/",
    "venue": "jdp"
   },
   "jdp:202611222000-ricard-drugi": {
@@ -3370,7 +3372,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1242",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1242"
    },
    "price": "",
@@ -3378,7 +3380,7 @@
    "source_id": "202611252000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-25T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -4572,7 +4574,7 @@
   },
   "narodno:6435": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6435",
+   "buy_url": "",
    "extra": {
     "repid": "6435"
    },
@@ -4581,7 +4583,7 @@
    "source_id": "6435",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-05T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "комедија Бранислава Нушића",
    "title": "Сумњиво лице",
    "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=x3b15e44cc7175e67f3e1ff32cf99d7aa",
@@ -4614,11 +4616,11 @@
    "sales_start": null,
    "source_id": "6440",
    "stage": "Велика сцена",
-   "start": "2026-11-09T19:00:00+01:00",
+   "start": "2026-11-09T18:00:00+01:00",
    "status": "not_on_sale",
    "subtitle": "",
    "title": "Свечана академија поводом међународног дана борбе против фашизма и антисемитизма",
-   "url": "https://www.narodnopozoriste.rs/predstave/svecana-akademija-povodom-medjunarodnog-dana-borbe-protiv-fasizma-i-antisemitizma?m=x393c8b0d1acb25a3598304e51c33ca07",
+   "url": "https://www.narodnopozoriste.rs/predstave/svecana-akademija-povodom-medjunarodnog-dana-borbe-protiv-fasizma-i-antisemitizma?m=x68bbe450c044020bd2708b813095b5c1",
    "venue": "narodno"
   },
   "narodno:6441": {
@@ -5762,14 +5764,14 @@
    "buy_url": "https://tickets.rs/event/goca_trzan_27664",
    "extra": {
     "end_date": "2026-11-04",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 2500 RSD",
    "sales_start": null,
    "source_id": "26241",
    "stage": "Plava dvorana",
    "start": "2026-11-04T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "Goca Tržan",
    "url": "https://tickets.rs/event/goca_trzan_27664",
@@ -6435,7 +6437,7 @@
    "source_id": "1283",
    "stage": "Велика сцена",
    "start": "2026-11-24T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Небојше Брадића",
    "title": "BRODVEJSKE VRAGOLIJE",
    "url": "https://pozoristeterazije.com/predstave/brodvejske-vragolije/",
@@ -6740,14 +6742,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-04T10:58:05+01:00",
-  "jdp": "2026-11-04T10:58:05+01:00",
-  "kolarac": "2026-11-04T10:58:05+01:00",
-  "madlenianum": "2026-11-04T10:58:05+01:00",
-  "madlenianum_tickets": "2026-11-04T10:58:05+01:00",
-  "narodno": "2026-11-04T10:58:05+01:00",
-  "sava_centar": "2026-11-04T10:58:05+01:00",
-  "terazije": "2026-11-04T10:58:05+01:00"
+  "bdp": "2026-11-04T18:57:22+01:00",
+  "jdp": "2026-11-04T18:57:22+01:00",
+  "kolarac": "2026-11-04T18:57:22+01:00",
+  "madlenianum": "2026-11-04T18:57:22+01:00",
+  "madlenianum_tickets": "2026-11-04T18:57:22+01:00",
+  "narodno": "2026-11-04T18:57:22+01:00",
+  "sava_centar": "2026-11-04T18:57:22+01:00",
+  "terazije": "2026-11-04T18:57:22+01:00"
  },
  "season": {
   "live": {
