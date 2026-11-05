@@ -2945,17 +2945,16 @@
   },
   "jdp:202611052000-razvojni-put-bore-snajdera": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1228",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1228"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611052000-razvojni-put-bore-snajdera",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-05T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Aleksandar Popović",
    "title": "Razvojni put Bore šnajdera",
    "url": "https://www.jdp.rs/performance/razvojni-put-bore-snajdera/",
@@ -4484,7 +4483,7 @@
   },
   "narodno:6413": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6413",
+   "buy_url": "",
    "extra": {
     "repid": "6413"
    },
@@ -4493,7 +4492,7 @@
    "source_id": "6413",
    "stage": "Велика сцена",
    "start": "2026-11-05T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драматизација Кате Ђармати по роману Слободана Селенића · енглески титл",
    "title": "Очеви и оци",
    "url": "https://www.narodnopozoriste.rs/predstave/ocevi-i-oci?m=x23c64209aa69b5755a8f489b4b705e01",
@@ -6633,14 +6632,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-05T12:38:06+01:00",
-  "jdp": "2026-11-05T12:38:06+01:00",
-  "kolarac": "2026-11-05T12:38:06+01:00",
-  "madlenianum": "2026-11-05T12:38:06+01:00",
-  "madlenianum_tickets": "2026-11-05T12:38:06+01:00",
-  "narodno": "2026-11-05T12:38:06+01:00",
-  "sava_centar": "2026-11-05T12:38:06+01:00",
-  "terazije": "2026-11-05T12:38:06+01:00"
+  "bdp": "2026-11-05T20:04:21+01:00",
+  "jdp": "2026-11-05T20:04:21+01:00",
+  "kolarac": "2026-11-05T20:04:21+01:00",
+  "madlenianum": "2026-11-05T20:04:21+01:00",
+  "madlenianum_tickets": "2026-11-05T20:04:21+01:00",
+  "narodno": "2026-11-05T20:04:21+01:00",
+  "sava_centar": "2026-11-05T20:04:21+01:00",
+  "terazije": "2026-11-05T20:04:21+01:00"
  },
  "season": {
   "live": {
