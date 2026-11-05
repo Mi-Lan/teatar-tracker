@@ -2998,17 +2998,16 @@
   },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1230"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -5313,14 +5312,14 @@
    "available": null,
    "buy_url": "https://tickets.rs/event/rock_simphony_26086",
    "extra": {
-    "end_date": "2026-11-25",
+    "end_date": "2027-03-28",
     "event_status": ""
    },
    "price": "od 3500 RSD",
    "sales_start": null,
    "source_id": "24685",
    "stage": "Plava dvorana",
-   "start": "2026-11-25T20:00:00+01:00",
+   "start": "2027-03-28T20:00:00+02:00",
    "status": "on_sale",
    "subtitle": "",
    "title": "Rock Simphony",
@@ -6015,14 +6014,14 @@
    "available": null,
    "buy_url": "https://tickets.rs/event/premijera_filma_ruka_pravde_28906",
    "extra": {
-    "end_date": "2026-11-17",
+    "end_date": "2027-03-02",
     "event_status": ""
    },
    "price": "od 800 RSD",
    "sales_start": null,
    "source_id": "27459",
    "stage": "Plava dvorana",
-   "start": "2026-11-17T20:30:00+01:00",
+   "start": "2027-03-02T20:30:00+01:00",
    "status": "on_sale",
    "subtitle": "",
    "title": "Premijera filma \"Ruka pravde\"",
@@ -6634,14 +6633,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-05T04:43:17+01:00",
-  "jdp": "2026-11-05T04:43:17+01:00",
-  "kolarac": "2026-11-05T04:43:17+01:00",
-  "madlenianum": "2026-11-05T04:43:17+01:00",
-  "madlenianum_tickets": "2026-11-05T04:43:17+01:00",
-  "narodno": "2026-11-05T04:43:17+01:00",
-  "sava_centar": "2026-11-05T04:43:17+01:00",
-  "terazije": "2026-11-05T04:43:17+01:00"
+  "bdp": "2026-11-05T12:38:06+01:00",
+  "jdp": "2026-11-05T12:38:06+01:00",
+  "kolarac": "2026-11-05T12:38:06+01:00",
+  "madlenianum": "2026-11-05T12:38:06+01:00",
+  "madlenianum_tickets": "2026-11-05T12:38:06+01:00",
+  "narodno": "2026-11-05T12:38:06+01:00",
+  "sava_centar": "2026-11-05T12:38:06+01:00",
+  "terazije": "2026-11-05T12:38:06+01:00"
  },
  "season": {
   "live": {
