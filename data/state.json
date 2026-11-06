@@ -2969,17 +2969,16 @@
   },
   "jdp:202611072000-garderober": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1229",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1229"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611072000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-07T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -2987,17 +2986,16 @@
   },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1230"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -3039,17 +3037,16 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1232"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -4425,7 +4422,7 @@
   },
   "narodno:6395": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6395",
+   "buy_url": "",
    "extra": {
     "repid": "6395"
    },
@@ -4434,7 +4431,7 @@
    "source_id": "6395",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-08T12:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=xb8b10a47804317cb866d3c0c780418c8",
@@ -6591,14 +6588,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-06T15:57:04+01:00",
-  "jdp": "2026-11-06T15:57:04+01:00",
-  "kolarac": "2026-11-06T15:57:04+01:00",
-  "madlenianum": "2026-11-06T15:57:04+01:00",
-  "madlenianum_tickets": "2026-11-06T15:57:04+01:00",
-  "narodno": "2026-11-06T15:57:04+01:00",
-  "sava_centar": "2026-11-06T15:57:04+01:00",
-  "terazije": "2026-11-06T15:57:04+01:00"
+  "bdp": "2026-11-06T21:49:50+01:00",
+  "jdp": "2026-11-06T21:49:50+01:00",
+  "kolarac": "2026-11-06T21:49:50+01:00",
+  "madlenianum": "2026-11-06T21:49:50+01:00",
+  "madlenianum_tickets": "2026-11-06T21:49:50+01:00",
+  "narodno": "2026-11-06T21:49:50+01:00",
+  "sava_centar": "2026-11-06T21:49:50+01:00",
+  "terazije": "2026-11-06T21:49:50+01:00"
  },
  "season": {
   "live": {
