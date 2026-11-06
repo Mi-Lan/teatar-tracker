@@ -1,10 +1,5 @@
 {
- "health": {
-  "madlenianum": {
-   "fails": 1,
-   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -244,6 +239,7 @@
    "sarah brightman a winter symphony vip",
    "sergej cetkovic",
    "slobodan trkulja balkanopolis put svile iii",
+   "success day",
    "the nutcracker",
    "thomas anders from modern talking",
    "tijana bogicevic",
@@ -2013,6 +2009,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-10-30T15:01:05+01:00"
   },
+  "sava_centar:28205": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-06T15:57:04+01:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2406,6 +2406,7 @@
   "new_show:sava_centar:28138": "2026-10-30T15:01:05+01:00",
   "new_show:sava_centar:28139": "2026-10-30T15:01:05+01:00",
   "new_show:sava_centar:28140": "2026-10-30T15:01:05+01:00",
+  "new_show:sava_centar:28205": "2026-11-06T15:57:04+01:00",
   "new_show:terazije:1252": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1253": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1254": "2026-09-25T01:50:54+02:00",
@@ -2968,16 +2969,17 @@
   },
   "jdp:202611072000-garderober": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1229",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1229"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611072000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-07T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -2985,16 +2987,17 @@
   },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1230"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -3036,16 +3039,17 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1232"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -3229,16 +3233,17 @@
   },
   "jdp:202611222000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1239",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1239"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611222000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-22T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3702,14 +3707,14 @@
    "buy_url": "https://tickets.rs/event/vesela_udovica_29273",
    "extra": {
     "end_date": "2026-11-09",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 2000 RSD",
    "sales_start": null,
    "source_id": "27822",
    "stage": "",
    "start": "2026-11-09T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "VESELA UDOVICA",
    "url": "https://tickets.rs/event/vesela_udovica_29273",
@@ -4420,7 +4425,7 @@
   },
   "narodno:6395": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6395",
    "extra": {
     "repid": "6395"
    },
@@ -4429,7 +4434,7 @@
    "source_id": "6395",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-08T12:00:00+01:00",
-   "status": "sold_out",
+   "status": "on_sale",
    "subtitle": "опера за децу В. А. Моцарта,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Чаробна фрула",
    "url": "https://www.narodnopozoriste.rs/predstave/carobna-frula-1?m=xb8b10a47804317cb866d3c0c780418c8",
@@ -4828,7 +4833,7 @@
   },
   "narodno:6461": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6461",
+   "buy_url": "",
    "extra": {
     "repid": "6461"
    },
@@ -4837,7 +4842,7 @@
    "source_id": "6461",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-21T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "трагикомедија Душана Ковачевића",
    "title": "Балкански шпијун",
    "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x108c14b36ce30434e1b4cb0c283eadfa",
@@ -6089,6 +6094,24 @@
    "url": "https://tickets.rs/event/notredame_de_paris_29590",
    "venue": "sava_centar"
   },
+  "sava_centar:28205": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/success_day_29655",
+   "extra": {
+    "end_date": "2026-12-12",
+    "event_status": ""
+   },
+   "price": "od 1200 RSD",
+   "sales_start": null,
+   "source_id": "28205",
+   "stage": "",
+   "start": "2026-12-12T11:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "SUCCESS DAY",
+   "url": "https://tickets.rs/event/success_day_29655",
+   "venue": "sava_centar"
+  },
   "terazije:1274": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1274",
@@ -6317,7 +6340,7 @@
    "source_id": "1286",
    "stage": "Велика сцена",
    "start": "2026-11-28T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Кокана Младеновића",
    "title": "ЗОНА ЗАМФИРОВА",
    "url": "https://pozoristeterazije.com/predstave/zona-zamfirova/",
@@ -6568,14 +6591,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-06T07:59:35+01:00",
-  "jdp": "2026-11-06T07:59:35+01:00",
-  "kolarac": "2026-11-06T07:59:35+01:00",
-  "madlenianum": "2026-11-06T01:09:42+01:00",
-  "madlenianum_tickets": "2026-11-06T07:59:35+01:00",
-  "narodno": "2026-11-06T07:59:35+01:00",
-  "sava_centar": "2026-11-06T07:59:35+01:00",
-  "terazije": "2026-11-06T07:59:35+01:00"
+  "bdp": "2026-11-06T15:57:04+01:00",
+  "jdp": "2026-11-06T15:57:04+01:00",
+  "kolarac": "2026-11-06T15:57:04+01:00",
+  "madlenianum": "2026-11-06T15:57:04+01:00",
+  "madlenianum_tickets": "2026-11-06T15:57:04+01:00",
+  "narodno": "2026-11-06T15:57:04+01:00",
+  "sava_centar": "2026-11-06T15:57:04+01:00",
+  "terazije": "2026-11-06T15:57:04+01:00"
  },
  "season": {
   "live": {
