@@ -1,5 +1,10 @@
 {
- "health": {},
+ "health": {
+  "madlenianum": {
+   "fails": 1,
+   "last_error": "ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)"
+  }
+ },
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -6563,14 +6568,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-06T01:09:42+01:00",
-  "jdp": "2026-11-06T01:09:42+01:00",
-  "kolarac": "2026-11-06T01:09:42+01:00",
+  "bdp": "2026-11-06T07:59:35+01:00",
+  "jdp": "2026-11-06T07:59:35+01:00",
+  "kolarac": "2026-11-06T07:59:35+01:00",
   "madlenianum": "2026-11-06T01:09:42+01:00",
-  "madlenianum_tickets": "2026-11-06T01:09:42+01:00",
-  "narodno": "2026-11-06T01:09:42+01:00",
-  "sava_centar": "2026-11-06T01:09:42+01:00",
-  "terazije": "2026-11-06T01:09:42+01:00"
+  "madlenianum_tickets": "2026-11-06T07:59:35+01:00",
+  "narodno": "2026-11-06T07:59:35+01:00",
+  "sava_centar": "2026-11-06T07:59:35+01:00",
+  "terazije": "2026-11-06T07:59:35+01:00"
  },
  "season": {
   "live": {
