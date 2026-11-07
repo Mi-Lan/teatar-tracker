@@ -2949,24 +2949,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611062000-jesen-fall": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1262",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1262"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611062000-jesen-fall",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-06T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Sidi Larbi  Šerkauji",
-   "title": "Jesen  /  Fall",
-   "url": "https://www.jdp.rs/performance/jesen-fall/",
-   "venue": "jdp"
-  },
   "jdp:202611072000-garderober": {
    "available": null,
    "buy_url": "",
@@ -4641,23 +4623,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
    "venue": "narodno"
   },
-  "narodno:6450": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6450"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6450",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-06T20:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "у организацији УБУС-а · свечаност поводом обележавања 30 година Фестивала (улаз слободан)",
-   "title": "Фестивал кореографских минијатура",
-   "url": "https://www.narodnopozoriste.rs/predstave/festival-koreografskih-minijatura?m=x3df7b4b221857c10f9ed6cde381e5636",
-   "venue": "narodno"
-  },
   "narodno:6451": {
    "available": null,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6451",
@@ -5171,24 +5136,6 @@
    "subtitle": "",
    "title": "Sarah Brightman - “A Winter Symphony” - VIP",
    "url": "https://tickets.rs/event/sarah_brightman_a_winter_symphony_vip_23894",
-   "venue": "sava_centar"
-  },
-  "sava_centar:22769": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/yasmin_levy_24152",
-   "extra": {
-    "end_date": "2026-11-06",
-    "event_status": ""
-   },
-   "price": "od 4000 RSD",
-   "sales_start": null,
-   "source_id": "22769",
-   "stage": "",
-   "start": "2026-11-06T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Yasmin Levy",
-   "url": "https://tickets.rs/event/yasmin_levy_24152",
    "venue": "sava_centar"
   },
   "sava_centar:23110": {
@@ -6109,24 +6056,6 @@
    "url": "https://tickets.rs/event/success_day_29655",
    "venue": "sava_centar"
   },
-  "terazije:1274": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1274",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1274"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1274",
-   "stage": "Велика сцена",
-   "start": "2026-11-06T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Владимира Лазића",
-   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
-   "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
-   "venue": "terazije"
-  },
   "terazije:1275": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1275",
@@ -6588,14 +6517,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-06T21:49:50+01:00",
-  "jdp": "2026-11-06T21:49:50+01:00",
-  "kolarac": "2026-11-06T21:49:50+01:00",
-  "madlenianum": "2026-11-06T21:49:50+01:00",
-  "madlenianum_tickets": "2026-11-06T21:49:50+01:00",
-  "narodno": "2026-11-06T21:49:50+01:00",
-  "sava_centar": "2026-11-06T21:49:50+01:00",
-  "terazije": "2026-11-06T21:49:50+01:00"
+  "bdp": "2026-11-07T01:28:11+01:00",
+  "jdp": "2026-11-07T01:28:11+01:00",
+  "kolarac": "2026-11-07T01:28:11+01:00",
+  "madlenianum": "2026-11-07T01:28:11+01:00",
+  "madlenianum_tickets": "2026-11-07T01:28:11+01:00",
+  "narodno": "2026-11-07T01:28:11+01:00",
+  "sava_centar": "2026-11-07T01:28:11+01:00",
+  "terazije": "2026-11-07T01:28:11+01:00"
  },
  "season": {
   "live": {
