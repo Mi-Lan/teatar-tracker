@@ -2949,23 +2949,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611072000-garderober": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611072000-garderober",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-07T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Ronald Harvud",
-   "title": "Garderober",
-   "url": "https://www.jdp.rs/en/performance/the-dresser/",
-   "venue": "jdp"
-  },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
    "buy_url": "",
@@ -3019,17 +3002,16 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1232"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -4215,23 +4197,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x31dd84013e7a106698c690e0acde6bb2",
    "venue": "narodno"
   },
-  "narodno:6370": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6370"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6370",
-   "stage": "Велика сцена",
-   "start": "2026-11-07T19:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "опера Ђакома Пучинија",
-   "title": "Тоска",
-   "url": "https://www.narodnopozoriste.rs/predstave/toska?m=x3352ab555dcd8fb3ca0532749085460c",
-   "venue": "narodno"
-  },
   "narodno:6371": {
    "available": null,
    "buy_url": "",
@@ -4621,23 +4586,6 @@
    "subtitle": "драма Синише Ковачевића",
    "title": "Велика драма",
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
-   "venue": "narodno"
-  },
-  "narodno:6451": {
-   "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6451",
-   "extra": {
-    "repid": "6451"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6451",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-07T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "у организацији УБУС-а · такмичарски и ревијални програм",
-   "title": "Фестивал кореографских минијатура",
-   "url": "https://www.narodnopozoriste.rs/predstave/festival-koreografskih-minijatura?m=xd89084464b0253592d5f3606fc4d1848",
    "venue": "narodno"
   },
   "narodno:6452": {
@@ -5588,24 +5536,6 @@
    "url": "https://tickets.rs/event/vlatko_stefanovski_27654",
    "venue": "sava_centar"
   },
-  "sava_centar:26303": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/zeljko_vasic_27731",
-   "extra": {
-    "end_date": "2026-11-07",
-    "event_status": ""
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "26303",
-   "stage": "Plava dvorana",
-   "start": "2026-11-07T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Željko Vasić",
-   "url": "https://tickets.rs/event/zeljko_vasic_27731",
-   "venue": "sava_centar"
-  },
   "sava_centar:26325": {
    "available": null,
    "buy_url": "https://tickets.rs/event/ceo_summit_beograd_27758",
@@ -6055,24 +5985,6 @@
    "title": "SUCCESS DAY",
    "url": "https://tickets.rs/event/success_day_29655",
    "venue": "sava_centar"
-  },
-  "terazije:1271": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1271",
-   "extra": {
-    "box_office_only": true,
-    "prostorterminid": "1271"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1271",
-   "stage": "Велика сцена",
-   "start": "2026-11-07T19:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Мјузикл у адаптацији и режији Владимира Лазића",
-   "title": "МИСТЕР ДОЛАР",
-   "url": "https://pozoristeterazije.com/predstave/mister-dolar/",
-   "venue": "terazije"
   },
   "terazije:1275": {
    "available": null,
@@ -6535,14 +6447,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-07T19:15:46+01:00",
-  "jdp": "2026-11-07T19:15:46+01:00",
-  "kolarac": "2026-11-07T19:15:46+01:00",
-  "madlenianum": "2026-11-07T19:15:46+01:00",
-  "madlenianum_tickets": "2026-11-07T19:15:46+01:00",
-  "narodno": "2026-11-07T19:15:46+01:00",
-  "sava_centar": "2026-11-07T19:15:46+01:00",
-  "terazije": "2026-11-07T19:15:46+01:00"
+  "bdp": "2026-11-07T23:00:17+01:00",
+  "jdp": "2026-11-07T23:00:17+01:00",
+  "kolarac": "2026-11-07T23:00:17+01:00",
+  "madlenianum": "2026-11-07T23:00:17+01:00",
+  "madlenianum_tickets": "2026-11-07T23:00:17+01:00",
+  "narodno": "2026-11-07T23:00:17+01:00",
+  "sava_centar": "2026-11-07T23:00:17+01:00",
+  "terazije": "2026-11-07T23:00:17+01:00"
  },
  "season": {
   "live": {
