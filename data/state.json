@@ -3019,16 +3019,17 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1232"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -4216,7 +4217,7 @@
   },
   "narodno:6370": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6370",
+   "buy_url": "",
    "extra": {
     "repid": "6370"
    },
@@ -4225,7 +4226,7 @@
    "source_id": "6370",
    "stage": "Велика сцена",
    "start": "2026-11-07T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "опера Ђакома Пучинија",
    "title": "Тоска",
    "url": "https://www.narodnopozoriste.rs/predstave/toska?m=x3352ab555dcd8fb3ca0532749085460c",
@@ -6055,6 +6056,24 @@
    "url": "https://tickets.rs/event/success_day_29655",
    "venue": "sava_centar"
   },
+  "terazije:1271": {
+   "available": null,
+   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1271",
+   "extra": {
+    "box_office_only": true,
+    "prostorterminid": "1271"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "1271",
+   "stage": "Велика сцена",
+   "start": "2026-11-07T19:00:00+01:00",
+   "status": "sold_out",
+   "subtitle": "Мјузикл у адаптацији и режији Владимира Лазића",
+   "title": "МИСТЕР ДОЛАР",
+   "url": "https://pozoristeterazije.com/predstave/mister-dolar/",
+   "venue": "terazije"
+  },
   "terazije:1275": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1275",
@@ -6516,14 +6535,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-07T14:29:56+01:00",
-  "jdp": "2026-11-07T14:29:56+01:00",
-  "kolarac": "2026-11-07T14:29:56+01:00",
-  "madlenianum": "2026-11-07T14:29:56+01:00",
-  "madlenianum_tickets": "2026-11-07T14:29:56+01:00",
-  "narodno": "2026-11-07T14:29:56+01:00",
-  "sava_centar": "2026-11-07T14:29:56+01:00",
-  "terazije": "2026-11-07T14:29:56+01:00"
+  "bdp": "2026-11-07T19:15:46+01:00",
+  "jdp": "2026-11-07T19:15:46+01:00",
+  "kolarac": "2026-11-07T19:15:46+01:00",
+  "madlenianum": "2026-11-07T19:15:46+01:00",
+  "madlenianum_tickets": "2026-11-07T19:15:46+01:00",
+  "narodno": "2026-11-07T19:15:46+01:00",
+  "sava_centar": "2026-11-07T19:15:46+01:00",
+  "terazije": "2026-11-07T19:15:46+01:00"
  },
  "season": {
   "live": {
