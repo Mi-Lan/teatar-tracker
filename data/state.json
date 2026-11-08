@@ -2949,24 +2949,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1230"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-08T20:00:00+01:00",
-   "status": "low",
-   "subtitle": "Dušan Kovačević",
-   "title": "Sveti Georgije ubiva aždahu",
-   "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
-   "venue": "jdp"
-  },
   "jdp:202611092000-edip": {
    "available": null,
    "buy_url": "",
@@ -3125,17 +3107,16 @@
   },
   "jdp:202611182000-gospodjica": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1237",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1237"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611182000-gospodjica",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-18T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ivo Andrić",
    "title": "Gospođica",
    "url": "https://www.jdp.rs/performance/gospodjica/",
@@ -4402,23 +4383,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6439": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6439"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6439",
-   "stage": "Велика сцена",
-   "start": "2026-11-08T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Хенрика Ибзена",
-   "title": "Нора - луткина кућа",
-   "url": "https://www.narodnopozoriste.rs/predstave/nora-lutkina-kuca?m=xd5e509774aa13446dbd198b6730df8c0",
-   "venue": "narodno"
-  },
   "narodno:6440": {
    "available": null,
    "buy_url": "",
@@ -5158,24 +5122,6 @@
    "subtitle": "",
    "title": "Rock Simphony",
    "url": "https://tickets.rs/event/rock_simphony_26086",
-   "venue": "sava_centar"
-  },
-  "sava_centar:24782": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/tommy_emmanuel_26182",
-   "extra": {
-    "end_date": "2026-11-08",
-    "event_status": ""
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "24782",
-   "stage": "Plava dvorana",
-   "start": "2026-11-08T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Tommy Emmanuel",
-   "url": "https://tickets.rs/event/tommy_emmanuel_26182",
    "venue": "sava_centar"
   },
   "sava_centar:24874": {
@@ -6431,14 +6377,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-08T20:03:13+01:00",
-  "jdp": "2026-11-08T20:03:13+01:00",
-  "kolarac": "2026-11-08T20:03:13+01:00",
-  "madlenianum": "2026-11-08T20:03:13+01:00",
-  "madlenianum_tickets": "2026-11-08T20:03:13+01:00",
-  "narodno": "2026-11-08T20:03:13+01:00",
-  "sava_centar": "2026-11-08T20:03:13+01:00",
-  "terazije": "2026-11-08T20:03:13+01:00"
+  "bdp": "2026-11-08T23:49:12+01:00",
+  "jdp": "2026-11-08T23:49:12+01:00",
+  "kolarac": "2026-11-08T23:49:12+01:00",
+  "madlenianum": "2026-11-08T23:49:12+01:00",
+  "madlenianum_tickets": "2026-11-08T23:49:12+01:00",
+  "narodno": "2026-11-08T23:49:12+01:00",
+  "sava_centar": "2026-11-08T23:49:12+01:00",
+  "terazije": "2026-11-08T23:49:12+01:00"
  },
  "season": {
   "live": {
