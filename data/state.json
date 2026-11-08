@@ -2951,16 +2951,17 @@
   },
   "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1230",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1230"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611082000-sveti-georgije-ubiva-azdahu",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-08T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Dušan Kovačević",
    "title": "Sveti Georgije ubiva aždahu",
    "url": "https://www.jdp.rs/performance/sveti-georgije-ubiva-azdahu/",
@@ -4403,7 +4404,7 @@
   },
   "narodno:6439": {
    "available": null,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6439",
+   "buy_url": "",
    "extra": {
     "repid": "6439"
    },
@@ -4412,7 +4413,7 @@
    "source_id": "6439",
    "stage": "Велика сцена",
    "start": "2026-11-08T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драма Хенрика Ибзена",
    "title": "Нора - луткина кућа",
    "url": "https://www.narodnopozoriste.rs/predstave/nora-lutkina-kuca?m=xd5e509774aa13446dbd198b6730df8c0",
@@ -6430,14 +6431,14 @@
   }
  ],
  "scanned": {
-  "bdp": "2026-11-08T15:30:14+01:00",
-  "jdp": "2026-11-08T15:30:14+01:00",
-  "kolarac": "2026-11-08T15:30:14+01:00",
-  "madlenianum": "2026-11-08T15:30:14+01:00",
-  "madlenianum_tickets": "2026-11-08T15:30:14+01:00",
-  "narodno": "2026-11-08T15:30:14+01:00",
-  "sava_centar": "2026-11-08T15:30:14+01:00",
-  "terazije": "2026-11-08T15:30:14+01:00"
+  "bdp": "2026-11-08T20:03:13+01:00",
+  "jdp": "2026-11-08T20:03:13+01:00",
+  "kolarac": "2026-11-08T20:03:13+01:00",
+  "madlenianum": "2026-11-08T20:03:13+01:00",
+  "madlenianum_tickets": "2026-11-08T20:03:13+01:00",
+  "narodno": "2026-11-08T20:03:13+01:00",
+  "sava_centar": "2026-11-08T20:03:13+01:00",
+  "terazije": "2026-11-08T20:03:13+01:00"
  },
  "season": {
   "live": {
