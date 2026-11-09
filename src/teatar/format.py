@@ -9,7 +9,7 @@ from html import escape, unescape
 from urllib.parse import urlparse
 
 from .diff import Change, Kind
-from .models import Performance, Status
+from .models import Performance, Status, now
 
 LIMIT = 3900  # Telegram max is 4096 visible characters (after HTML parsing); leave room
 MAX_ENTITIES = 90  # keep well under Telegram's per-message formatting-entity limit
@@ -24,12 +24,26 @@ def when(p: Performance) -> str:
     return f"{DAYS[p.start.weekday()]} {p.start:%d.%m. %H:%M}"
 
 
+STALE = timedelta(hours=3)
+
+
+def stale(p: Performance) -> bool:
+    """A seat count carried over from an earlier check (Narodno counts about once a day)."""
+    counted = p.extra.get("counted_at")
+    return bool(counted) and now() - datetime.fromisoformat(counted) > STALE
+
+
+def left(p: Performance) -> str:
+    """Seats left: '145', or '~145' when the count is a few hours old."""
+    return f"~{p.available}" if stale(p) else str(p.available)
+
+
 def badge(p: Performance) -> str:
     s = p.status
     if s == Status.ON_SALE:
-        return f"🟢 {p.available} left" if p.available is not None else "🟢 on sale"
+        return f"🟢 {left(p)} left" if p.available is not None else "🟢 on sale"
     if s == Status.LOW:
-        return f"🟡 {p.available} left" if p.available is not None else "🟡 few left"
+        return f"🟡 {left(p)} left" if p.available is not None else "🟡 few left"
     if s == Status.SOLD_OUT:
         return "🔴 sold out"
     if s == Status.NOT_ON_SALE:
@@ -72,7 +86,7 @@ def site_link(url: str) -> str:
 def short_badge(p: Performance) -> str:
     s = p.status
     if s in (Status.ON_SALE, Status.LOW) and p.available is not None:
-        return f"{'🟢' if s == Status.ON_SALE else '🟡'} {p.available}"
+        return f"{'🟢' if s == Status.ON_SALE else '🟡'} {left(p)}"
     return {
         Status.ON_SALE: "🟢", Status.LOW: "🟡 few left", Status.SOLD_OUT: "🔴 sold out",
         Status.NOT_ON_SALE: f"⏳ from {p.sales_start:%d.%m.}" if p.sales_start else "⏳ not on sale",
@@ -172,7 +186,11 @@ def overview(
             # a venue that only uses one stage (e.g. BDP filtered to Velika scena) needn't repeat it
             lines += [perf_line(p, star=p.uid in watched, show_stage=len(stages[v]) > 1, fire=p.uid in fast) for p in ps]
         blocks.append("\n".join(lines))
-    head = f"🎭 <b>{escape(title)}</b> · {len(perfs)} performances\n🟢 N = tickets left · tap a title to buy" + (" · 🔥 sells out fast" if fast else "")
+    head = (
+        f"🎭 <b>{escape(title)}</b> · {len(perfs)} performances\n🟢 N = tickets left"
+        + (" (~N: at the last daily count)" if any(stale(p) and p.available is not None for p in perfs) else "")
+        + " · tap a title to buy" + (" · 🔥 sells out fast" if fast else "")
+    )
     if note:
         head += "\n" + note
     return pack(blocks, header=head)

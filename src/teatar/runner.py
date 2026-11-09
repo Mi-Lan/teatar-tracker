@@ -69,6 +69,10 @@ def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True, qu
         if keys is not None and key not in keys:
             continue
         t0 = _time.monotonic()
+        if adapter.uses_previous:
+            mine = {u: d for u, d in ctx.state.performances.items() if d["venue"] == key}
+            adapter.previous = {u: Performance.from_dict(d) for u, d in mine.items()}
+            adapter.first_seen = {u: ctx.state.meta.get(u, {}).get("first_seen", "") for u in mine}
         try:
             perfs = adapter.poll() if quick else adapter.fetch()
         except Exception as exc:  # one broken site must not stop the others

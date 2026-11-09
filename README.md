@@ -110,10 +110,13 @@ imports once. It needs the full history (`git fetch --unshallow` in a shallow cl
    *Actions → tracker → Run workflow → test*: everyone gets a message listing the theatres with links.
 
 5. **Narodno seat counts (optional).** Narodno shows how many seats are left only to logged-in users. Add secrets
-   `NARODNO_EMAIL` and `NARODNO_PASSWORD` for a narodnopozoriste.rs account: every check then logs in once and
-   reads the ticket page of each on-sale date (about 60 pages, GET only: no seat is ever selected or held). The
-   30-second polls around a release skip this. If the login stops working, you get the usual "failed 3 checks"
-   warning for "Narodno pozorište seat counts", and the listing (on sale / under 10% / sold out) keeps working.
+   `NARODNO_EMAIL` and `NARODNO_PASSWORD` for a narodnopozoriste.rs account. The tracker logs in only when a count
+   is due (`seat_counts` in `venues.yaml`): once a day at the first check after 09:00, for every on-sale date, and
+   for new dates at the first check 90 minutes or more after they appeared. It reads their ticket pages with GET
+   only: no seat is ever selected or held. Other checks don't log in and keep the last counts, shown as `~145` once
+   they're a few hours old; on sale / under 10% / sold out still update from the public listing every check. Each
+   count is also kept in the date's sell-out history. If the login stops working, you get the usual "failed 3
+   checks" warning for "Narodno pozorište seat counts", and everything else keeps working.
 
 The bot only answers the chat ids in `TELEGRAM_CHAT_ID` and `TELEGRAM_EXTRA_CHAT_IDS`. Keep chat ids in secrets,
 not in the repo: it's public.

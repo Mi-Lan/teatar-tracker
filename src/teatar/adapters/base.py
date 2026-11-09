@@ -18,6 +18,11 @@ class Adapter(ABC):
 
     adapter_name: ClassVar[str] = ""
     method: ClassVar[str] = "html"
+    # What the tracker knew before this check, for adapters that set uses_previous (set by the runner):
+    # uid -> Performance, and uid -> when the date was first seen.
+    uses_previous: ClassVar[bool] = False
+    previous: dict = {}
+    first_seen: dict = {}
 
     def __init__(self, key: str, http: Http, name: str | None = None, **options):
         self.key = key

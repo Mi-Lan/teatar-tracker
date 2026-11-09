@@ -18,6 +18,9 @@ narodno:
   adapter: narodno_html
   name: Narodno pozorište
   website: https://www.narodnopozoriste.rs/repertoar
+  seat_counts:  # exact seats left need a login (NARODNO_EMAIL / NARODNO_PASSWORD secrets); it logs in only for these:
+    daily_at: "09:00"  # every on-sale date, once a day, at the first check after this time
+    after_release_minutes: 90  # new dates, at the first check at least this long after they appeared
 
 bdp:
   adapter: bdp_webflow_sixtix

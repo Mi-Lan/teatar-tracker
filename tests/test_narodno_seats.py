@@ -31,11 +31,23 @@ class FakeSite:
     def __init__(self, password="secret", drop_session_after=None):
         self.password, self.logged_in, self.requests, self.posts = password, False, [], []
         self.drop_session_after = drop_session_after
+        self.listing = LISTING
+
+    def unpublish(self, rep_id: str | None) -> None:
+        """Serve the repertoire without one date (None: all of them again)."""
+        if rep_id is None:
+            self.listing = LISTING
+            return
+        from bs4 import BeautifulSoup
+
+        soup = BeautifulSoup(LISTING, "lxml")
+        soup.select_one(f"#repid{rep_id}").decompose()
+        self.listing = str(soup)
 
     def get(self, url, **kw):
         self.requests.append(url)
         if url.endswith("/repertoar"):
-            return Resp(url, LISTING)
+            return Resp(url, self.listing)
         if url.endswith("/nalog/prijavi-se"):
             return Resp(url, LOGIN)
         if "odabir-ulaznica" in url:
@@ -133,7 +145,100 @@ def test_seat_count_problems_are_reported_like_a_failing_site(make_ctx, clock):
 def test_apply_seats_marks_sold_out_and_low():
     p = narodno.parse(LISTING, today=date(2026, 11, 9))[0]
     p.status = Status.ON_SALE
-    narodno.apply_seats(p, 300, 20)
-    assert (p.available, p.status) == (20, Status.LOW)
-    narodno.apply_seats(p, 300, 0)
+    narodno.apply_seats(p, 300, 20, "2026-11-09T09:07:00+01:00")
+    assert (p.available, p.status, p.extra["counted_at"]) == (20, Status.LOW, "2026-11-09T09:07:00+01:00")
+    narodno.apply_seats(p, 300, 0, "2026-11-09T09:07:00+01:00")
     assert p.status == Status.SOLD_OUT
+
+
+class Checks:
+    """Successive checks of one Narodno adapter, feeding each result back as `previous` like the runner does."""
+
+    def __init__(self, site):
+        self.site, self.prev = site, {}
+        # dates already known from earlier days (as on the first run after this change ships)
+        self.first_seen = {p.uid: "2026-11-01T12:00:00+01:00" for p in narodno.parse(LISTING, today=date(2026, 11, 9))}
+
+    def at(self, hhmm, day=10):
+        h, m = map(int, hhmm.split(":"))
+        models.set_clock(lambda: models.datetime(2026, 11, day, h, m, tzinfo=TZ))
+        self.site.requests.clear()
+        self.site.posts.clear()
+        self.site.logged_in = False
+        a = narodno.NarodnoAdapter("narodno", self.site)
+        a.previous, a.first_seen = dict(self.prev), dict(self.first_seen)
+        perfs = a.fetch()
+        for p in perfs:
+            self.first_seen.setdefault(p.uid, models.now().isoformat())
+        self.prev = {p.uid: p for p in perfs}
+        return perfs, sum("odabir" in u for u in self.site.requests), len(self.site.posts)
+
+
+def test_logs_in_once_a_day_and_after_a_release(today, creds):
+    site = FakeSite()
+    checks = Checks(site)
+    new_id = next(p.source_id for p in narodno.parse(LISTING, today=date(2026, 11, 9)) if p.status.buyable and p.buy_url)
+    site.unpublish(new_id)  # one date isn't published yet
+    checks.first_seen.pop(f"narodno:{new_id}")
+
+    perfs, pages, logins = checks.at("08:07")  # first check with this feature: every known on-sale date is due…
+    assert logins == 1 and pages == 58
+    perfs, pages, logins = checks.at("08:47")  # …then nothing until the daily count
+    assert (pages, logins) == (0, 0)
+    assert all(p.available == 145 and p.extra["counted_at"].startswith("2026-11-10T08:07") for p in perfs if p.status.buyable)
+    perfs, pages, logins = checks.at("09:07")  # the first check after 09:00: the daily count, every on-sale date
+    assert logins == 1 and pages == 58
+    perfs, pages, logins = checks.at("11:07")  # same day: no login
+    assert (pages, logins) == (0, 0)
+
+    site.unpublish(None)  # the new date is published: messaged from the listing at once, not counted yet
+    perfs, pages, logins = checks.at("13:07")
+    assert (pages, logins) == (0, 0)
+    perfs, pages, logins = checks.at("14:07")  # only an hour later: still waiting
+    assert (pages, logins) == (0, 0)
+    perfs, pages, logins = checks.at("15:07")  # 2 hours after it appeared: just that date is counted
+    assert (pages, logins) == (1, 1)
+    perfs, pages, logins = checks.at("17:07")
+    assert (pages, logins) == (0, 0)
+    perfs, pages, logins = checks.at("09:07", day=11)  # next morning: the daily count again
+    assert logins == 1 and pages == 59
+
+
+def test_failed_daily_count_is_retried_at_the_next_check(today, creds):
+    site = FakeSite()
+    checks = Checks(site)
+    checks.at("08:07")  # counted
+    site.password = "changed"  # the daily count fails…
+    perfs, pages, logins = checks.at("09:07")
+    assert logins == 1 and pages == 0
+    site.password = "secret"
+    perfs, pages, logins = checks.at("11:07")  # …and is tried again
+    assert logins == 1 and pages == 59
+
+
+def test_carried_over_counts_are_marked_old(today, creds):
+    from teatar import format as fmt
+
+    checks = Checks(FakeSite())
+    checks.at("09:07")
+    perfs, _, _ = checks.at("10:07")
+    vlast = next(p for p in perfs if p.title == "Власт")
+    assert fmt.short_badge(vlast) == "🟡 145"  # counted an hour ago
+    perfs, _, _ = checks.at("13:07")
+    vlast = next(p for p in perfs if p.title == "Власт")
+    assert fmt.short_badge(vlast) == "🟡 ~145" and fmt.badge(vlast) == "🟡 ~145 left"
+    assert "(~N: at the last daily count)" in fmt.overview(perfs, {}, "Narodno")[0]
+
+
+def test_counts_are_kept_in_the_sell_out_history(make_ctx, clock, creds):
+    clock.t = models.datetime(2026, 11, 9, 9, 30, tzinfo=TZ)
+    site = FakeSite()
+    ctx = make_ctx([narodno.NarodnoAdapter("narodno", site)])
+    run(ctx, allow_burst=False)  # baseline check (the daily count is due)
+    clock.t = models.datetime(2026, 11, 10, 9, 15, tzinfo=TZ)
+    run(ctx, allow_burst=False)  # next day's count
+    clock.t = models.datetime(2026, 11, 10, 11, 15, tzinfo=TZ)
+    run(ctx, allow_burst=False)  # no login: the history doesn't repeat the carried-over count
+    r = next(r for r in ctx.state.sales.values() if r["title"] == "Власт")
+    assert [c[1] for c in r["counts"]] == [145, 145] and r["seats"] == 323
+    assert [c[0][:13] for c in r["counts"]] == ["2026-11-09T09", "2026-11-10T09"]
