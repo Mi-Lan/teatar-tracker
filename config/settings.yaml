@@ -22,6 +22,12 @@ alerts:
   instant: releases_and_watchlist
   low_threshold: 20  # watched plays: warn when fewer tickets than this are left (where counts exist)
 
+selling:  # sell-out tracking: which plays sell out fast (🔥, /hot, /soldout)
+  fast_hours: 48  # a date that sold out within this long after its tickets went on sale marks its play as fast…
+  min_days_before: 1  # …if it sold out at least this many days before the show (last-minute sell-outs don't count)
+  alert: true  # message right away when a fast-selling play gets new dates or goes on sale (even a single date)
+  history_days: 180  # how long sell-out history is kept after a show
+
 releases:
   remind_before: []  # reminders before a known ticket release, e.g. ["24h", "1h"]; empty: none
   report_misses: false  # true: a note when a release window closes with no new tickets

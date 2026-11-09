@@ -3,6 +3,9 @@
 Watches Belgrade theatre and venue sites, and on Telegram it:
 - messages you **the moment a theatre releases tickets**: how many dates, which titles, and **when** they appeared,
 - around a **known release time** checks every 30 s, so the message comes within a minute,
+- lists **every play and date** in that message, each date linked to its tickets, plus a link to the theatre's site,
+- remembers **which plays sell out and how fast**, flags them 🔥 the next time their tickets come out, and messages
+  you as soon as a fast seller gets new dates (`/hot` lists them),
 - on demand shows **what came out recently** (`/new`) and **what's playing, by date and theatre, with availability**.
 
 By default that release message is the only thing it sends (plus plays you `/watch`); the weekly overview,
@@ -30,6 +33,9 @@ Configuration is in `config/`:
 - `releases.yaml`: known ticket release times, plus **monthly patterns**. Narodno is set up to put next
   month's tickets on sale at midnight between the 22nd and 23rd: checks every 30 s from 23:50 to 00:45, and
   every minute on the 23rd if nothing appeared at midnight (reminders beforehand can be added with `remind`).
+- `venues.yaml` `website:`: the theatre's page linked under each release message.
+- `settings.yaml` `selling:`: what counts as a fast seller (default: sold out within 48 h of going on sale, at
+  least a day before the show), and whether fast sellers' new dates are messaged right away.
 - `settings.yaml`: what is sent on a schedule (`digest`, `release_season.times`: both off by default),
   reminders and burst timing, and `release_season.batch_min`: how many new dates (or sales openings) in one
   check count as a release worth a message (default 5; around a known release, any new ticket is)
@@ -46,7 +52,10 @@ Replies come on the next check (within the hour; faster during release bursts).
 | `/today` `/tomorrow` `/week` | shorter ranges |
 | `/overview` | everything announced |
 | `/theatre jdp` | one theatre |
-| `/search tramvaj`, or just type a title | find a play (Cyrillic/Latin/diacritics don't matter) |
+| `/theatres` | every theatre tracked, linked to its repertoire page |
+| `/search tramvaj`, or just type a title | find a play (Cyrillic/Latin/diacritics don't matter); shows 🔥/🔴 if it sells out |
+| `/hot` | plays that sell out fast: how many dates sold out, fastest and typical time, and their next dates (tap to buy); then plays that sell out more slowly |
+| `/soldout` | upcoming dates that are sold out now, and how long each took to sell out |
 | `/watch divlje meso` · `/unwatch 1` · `/watchlist` | manage watched plays |
 | `/release jdp 1.10. 10:00 oktobar` | known release: reminders at −24h and −1h, then polls every 30 s from −10 min to +45 min |
 | `/release narodno 2026-10-05` | date only: polls every 60 s from 08:00 to 22:00 that day |
@@ -56,15 +65,33 @@ Replies come on the next check (within the hour; faster during release bursts).
 - **The moment tickets come out:** when a theatre's next month gets its first tickets, when any theatre puts out a
   batch of new dates / opens sales for many dates in one check (`batch_min`, default 5), or when any new ticket
   appears at a theatre with a known release around now. One message per theatre per day: how many dates per
-  month, how many on sale, the titles, and when they appeared, bracketed by the previous check that didn't see
-  them and the one that did (e.g. "between 12:00 and 17:02"). Single new dates elsewhere are not messaged; they
-  show up in `/new`.
+  month, how many on sale, when they appeared, bracketed by the previous check that didn't see them and the one
+  that did (e.g. "between 12:00 and 17:02"), then **every play with its dates** (title → the play's page, each date
+  → its tickets, with availability), plays that sell out fast first with 🔥, and a 🌐 link to the theatre's site.
+  Single new dates elsewhere are not messaged; they show up in `/new`.
+- **New dates for a play that sells out fast** (🔥), even a single one, as soon as they're seen (`selling.alert`).
 - Plays on your `/watch` list (back in stock, running low, sold out), and a warning if a site stops responding.
 
 Optional, off by default in `config/settings.yaml`: a weekly or daily overview (`digest.every`), a "tickets for
 next month?" status per theatre on the 20th–27th (`release_season.times`), reminders before known releases
 (`releases.remind_before`, `remind` in `releases.yaml`), a note when a release window passes with nothing
 (`releases.report_misses`), and instant alerts for every new date (`alerts.instant: all`).
+
+## Sell-outs and fast sellers
+
+Every check records, per performance, when it went on sale, ran low and **first** sold out (later "sold out ↔ few
+left" flapping from returned tickets is ignored), and keeps that for `selling.history_days` after the show
+(`state.sales`, see `src/teatar/sales.py`). A play is a **fast seller** 🔥 when one of its dates sold out within
+`selling.fast_hours` of going on sale (default 48 h), or was already sold out the first time it was seen, at least
+`selling.min_days_before` before the show. 🔴 marks plays that sell out more slowly.
+
+Where sell-outs can be seen: Narodno (ticket counts, "распродато"), JDP and Terazije (sold out / under 10% left),
+BDP (sold-out flag), and the tickets.rs venues ("rasprodato"). Madlenianum's own site shows no availability. Sales
+that close on the day of the show are not counted as sell-outs. Times are only as precise as the gap between checks.
+
+History before this feature was rebuilt from the git history of `data/state.json`:
+`teatar backfill-sales` replays every committed snapshot and writes `data/sales_seed.json`, which the next run
+imports once. It needs the full history (`git fetch --unshallow` in a shallow clone).
 
 ## Setup
 
@@ -78,7 +105,13 @@ next month?" status per theatre on the 20th–27th (`release_season.times`), rem
    ```
 3. **GitHub:** push this repo (public = unlimited free Actions minutes). Under *Settings → Secrets and variables → Actions*, add `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. Then under *Actions → tracker → Run workflow*, start the first run. It saves a baseline and sends you the week ahead.
 
-The bot only answers the chat id in `TELEGRAM_CHAT_ID`.
+4. **More people (optional).** Each person opens the bot and presses **Start**; `teatar whoami` (or the bot's
+   `getUpdates`) shows their chat id. Add a secret `TELEGRAM_EXTRA_CHAT_IDS` with their ids, comma-separated.
+   They get every notification you get, and can use the commands (replies go to whoever asked). Check with
+   *Actions → tracker → Run workflow → test*: everyone gets a message listing the theatres with links.
+
+The bot only answers the chat ids in `TELEGRAM_CHAT_ID` and `TELEGRAM_EXTRA_CHAT_IDS`. Keep chat ids in secrets,
+not in the repo: it's public.
 
 ## Local use
 
@@ -88,6 +121,7 @@ uv venv .venv && uv pip install -e ".[dev]"
 .venv/bin/teatar scan --venue narodno
 .venv/bin/teatar run --dry-run            # full run, messages printed instead of sent
 .venv/bin/teatar overview                # print the overview to end of next month (--send to send it)
+.venv/bin/teatar backfill-sales          # rebuild sell-out history from git into data/sales_seed.json
 .venv/bin/pytest
 ```
 

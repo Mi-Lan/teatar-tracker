@@ -8,16 +8,21 @@
 #   kupikartu_pos       "Kupi kartu" box-office JSON API (bilet.*/blagajna.* sites): set base_url
 #   madlenianum_html    Madlenianum own site, catalog only
 #
+# website: the theatre's own repertoire page, linked at the bottom of release messages
+#   (tickets.rs venues default to their tickets.rs venue page).
+#
 # To add another tickets.rs venue, copy a tickets_rs block and change slug + name.
 # To disable a source temporarily, add `enabled: false`.
 
 narodno:
   adapter: narodno_html
   name: Narodno pozorište
+  website: https://www.narodnopozoriste.rs/repertoar
 
 bdp:
   adapter: bdp_webflow_sixtix
   name: BDP
+  website: https://www.bdp.rs/cir/repertoar
   stages: ["Велика сцена"]  # only Velika scena "Olivera i Rade"; remove to track all stages
   include_guest: false  # skip guest performances in other cities
   sixtix_iframe: 22c6e158  # BDP "Main website" on-sale list on Sixtix
@@ -25,11 +30,13 @@ bdp:
 jdp:
   adapter: jdp_wp_ajax
   name: JDP
+  website: https://www.jdp.rs/rs/repertoire-feed/
   months_ahead: 2
 
 terazije:
   adapter: kupikartu_pos
   name: Pozorište na Terazijama
+  website: https://pozoristeterazije.com/repertoar/
   base_url: https://bilet.pozoristeterazije.com
   site_url: https://pozoristeterazije.com/repertoar/
   months_ahead: 2
@@ -52,3 +59,4 @@ kolarac:
 madlenianum:
   adapter: madlenianum_html
   name: Madlenianum
+  website: https://operatheatremadlenianum.com/repertoar

@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "run = normal check · overview = send everything · test = Telegram test message"
+        description: "run = normal check · overview = send everything · test = test message with the theatres"
         type: choice
         default: run
         options: [run, overview, test]
@@ -30,6 +30,7 @@ jobs:
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      TELEGRAM_EXTRA_CHAT_IDS: ${{ secrets.TELEGRAM_EXTRA_CHAT_IDS }}  # more people who get every notification (comma-separated)
     steps:
       - uses: actions/checkout@v4
 
