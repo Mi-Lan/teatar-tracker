@@ -2971,40 +2971,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611092000-edip": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611092000-edip",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-09T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Sofokle",
-   "title": "Edip",
-   "url": "https://www.jdp.rs/performance/edip/",
-   "venue": "jdp"
-  },
-  "jdp:202611092030-beogradska-trilogija": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611092030-beogradska-trilogija",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-11-09T20:30:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Biljana Srbljanović",
-   "title": "Beogradska trilogija",
-   "url": "https://www.jdp.rs/performance/beogradska-trilogija/",
-   "venue": "jdp"
-  },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
    "buy_url": "",
@@ -3583,21 +3549,6 @@
    "url": "https://operatheatremadlenianum.com/tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita",
    "venue": "madlenianum"
   },
-  "madlenianum:vesela-udovica-202611091930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "vesela-udovica-202611091930",
-   "stage": "",
-   "start": "2026-11-09T19:30:00+01:00",
-   "status": "unknown",
-   "subtitle": "Franc Lehar",
-   "title": "VESELA UDOVICA",
-   "url": "https://operatheatremadlenianum.com/vesela-udovica",
-   "venue": "madlenianum"
-  },
   "madlenianum:x-y-0-0-202611162000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3665,24 +3616,6 @@
    "subtitle": "",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27822": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/vesela_udovica_29273",
-   "extra": {
-    "end_date": "2026-11-09",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 2000 RSD",
-   "sales_start": null,
-   "source_id": "27822",
-   "stage": "",
-   "start": "2026-11-09T19:30:00+01:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "VESELA UDOVICA",
-   "url": "https://tickets.rs/event/vesela_udovica_29273",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27825": {
@@ -6453,15 +6386,2603 @@
    "venue": "narodno"
   }
  ],
+ "sales": {
+  "bdp:202609231930-filomena-maturano-czk-tivat": {
+   "on_sale": "2026-09-23T19:49:06+02:00",
+   "start": "2026-09-23T19:30:00+02:00",
+   "title": "Филомена Матурано (ЦЗК Тиват)",
+   "venue": "bdp"
+  },
+  "bdp:202609261930-divlje-meso": {
+   "start": "2026-09-26T19:30:00+02:00",
+   "title": "Дивље месо",
+   "venue": "bdp"
+  },
+  "bdp:202609271930-divlje-meso": {
+   "start": "2026-09-27T19:30:00+02:00",
+   "title": "Дивље месо",
+   "venue": "bdp"
+  },
+  "bdp:202610011930-sarlota-kasteli": {
+   "start": "2026-10-01T19:30:00+02:00",
+   "title": "Шарлота Кастели",
+   "venue": "bdp"
+  },
+  "bdp:202610021930-svaka-ptica-svome-jatu": {
+   "start": "2026-10-02T19:30:00+02:00",
+   "title": "Свака птица своме јату",
+   "venue": "bdp"
+  },
+  "bdp:202610031930-vise-od-igre-1-2-3-deo": {
+   "start": "2026-10-03T19:30:00+02:00",
+   "title": "Више од игре 1./2./3. део",
+   "venue": "bdp"
+  },
+  "bdp:202610041930-1984": {
+   "start": "2026-10-04T19:30:00+02:00",
+   "title": "1984",
+   "venue": "bdp"
+  },
+  "bdp:202610051930-pra-faust": {
+   "start": "2026-10-05T19:30:00+02:00",
+   "title": "(Пра)фауст",
+   "venue": "bdp"
+  },
+  "bdp:202610061930-kralj-ibi": {
+   "start": "2026-10-06T19:30:00+02:00",
+   "title": "Краљ Иби",
+   "venue": "bdp"
+  },
+  "bdp:202610071930-kralj-ibi": {
+   "start": "2026-10-07T19:30:00+02:00",
+   "title": "Краљ Иби",
+   "venue": "bdp"
+  },
+  "bdp:202610121930-crno-zlato": {
+   "start": "2026-10-12T19:30:00+02:00",
+   "title": "Црно злато",
+   "venue": "bdp"
+  },
+  "bdp:202610131930-crno-zlato": {
+   "start": "2026-10-13T19:30:00+02:00",
+   "title": "Црно злато",
+   "venue": "bdp"
+  },
+  "bdp:202610151930-bogojavljenska-noc": {
+   "start": "2026-10-15T19:30:00+02:00",
+   "title": "Богојављенска ноћ",
+   "venue": "bdp"
+  },
+  "bdp:202610161930-bogojavljenska-noc": {
+   "start": "2026-10-16T19:30:00+02:00",
+   "title": "Богојављенска ноћ",
+   "venue": "bdp"
+  },
+  "bdp:202610291930-laz": {
+   "start": "2026-10-29T19:30:00+01:00",
+   "title": "Лаж",
+   "venue": "bdp"
+  },
+  "bdp:202610301930-laz": {
+   "start": "2026-10-30T19:30:00+01:00",
+   "title": "Лаж",
+   "venue": "bdp"
+  },
+  "bdp:202610311930-laz": {
+   "start": "2026-10-31T19:30:00+01:00",
+   "title": "Лаж",
+   "venue": "bdp"
+  },
+  "bdp:202611011930-bogojavljenska-noc": {
+   "start": "2026-11-01T19:30:00+01:00",
+   "title": "Богојављенска ноћ",
+   "venue": "bdp"
+  },
+  "bdp:202611021930-bogojavljenska-noc": {
+   "start": "2026-11-02T19:30:00+01:00",
+   "title": "Богојављенска ноћ",
+   "venue": "bdp"
+  },
+  "bdp:202611031930-crno-zlato": {
+   "start": "2026-11-03T19:30:00+01:00",
+   "title": "Црно злато",
+   "venue": "bdp"
+  },
+  "bdp:202611041930-crno-zlato": {
+   "start": "2026-11-04T19:30:00+01:00",
+   "title": "Црно злато",
+   "venue": "bdp"
+  },
+  "bdp:202611131930-kralj-ibi": {
+   "start": "2026-11-13T19:30:00+01:00",
+   "title": "Краљ Иби",
+   "venue": "bdp"
+  },
+  "bdp:202611141930-kralj-ibi": {
+   "start": "2026-11-14T19:30:00+01:00",
+   "title": "Краљ Иби",
+   "venue": "bdp"
+  },
+  "bdp:202611151930-kralj-ibi": {
+   "start": "2026-11-15T19:30:00+01:00",
+   "title": "Краљ Иби",
+   "venue": "bdp"
+  },
+  "bdp:202611171930-laz": {
+   "start": "2026-11-17T19:30:00+01:00",
+   "title": "Лаж",
+   "venue": "bdp"
+  },
+  "bdp:202611181930-laz": {
+   "start": "2026-11-18T19:30:00+01:00",
+   "title": "Лаж",
+   "venue": "bdp"
+  },
+  "bdp:202611191930-laz": {
+   "start": "2026-11-19T19:30:00+01:00",
+   "title": "Лаж",
+   "venue": "bdp"
+  },
+  "bdp:202611301930-kus-petlic": {
+   "start": "2026-11-30T19:30:00+01:00",
+   "title": "Кус петлић",
+   "venue": "bdp"
+  },
+  "bdp:202612011930-kus-petlic": {
+   "on_sale": "2026-10-16T19:19:35+02:00",
+   "start": "2026-12-01T19:30:00+01:00",
+   "title": "Кус петлић",
+   "venue": "bdp"
+  },
+  "bdp:202612031930-besi-mgl": {
+   "on_sale": "2026-10-16T14:16:40+02:00",
+   "start": "2026-12-03T19:30:00+01:00",
+   "title": "Беси (МГЛ)",
+   "venue": "bdp"
+  },
+  "bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": {
+   "on_sale": "2026-10-16T14:16:40+02:00",
+   "start": "2026-12-05T19:30:00+01:00",
+   "title": "Буха у уху (Драмски театар Скопље)",
+   "venue": "bdp"
+  },
+  "bdp:202612061930-ljubavnice-kamerni-teatar-55": {
+   "on_sale": "2026-10-16T14:16:40+02:00",
+   "start": "2026-12-06T19:30:00+01:00",
+   "title": "Љубавнице (Камерни театар 55)",
+   "venue": "bdp"
+  },
+  "bdp:202612071930-na-cijoj-strani-ulysses": {
+   "on_sale": "2026-10-16T14:16:40+02:00",
+   "start": "2026-12-07T19:30:00+01:00",
+   "title": "На чијој страни (Ulysses)",
+   "venue": "bdp"
+  },
+  "bdp:202612081930-kus-petlic": {
+   "start": "2026-12-08T19:30:00+01:00",
+   "title": "Кус петлић",
+   "venue": "bdp"
+  },
+  "bdp:202612091930-kus-petlic": {
+   "start": "2026-12-09T19:30:00+01:00",
+   "title": "Кус петлић",
+   "venue": "bdp"
+  },
+  "bdp:202612111930-kus-petlic": {
+   "start": "2026-12-11T19:30:00+01:00",
+   "title": "Кус петлић",
+   "venue": "bdp"
+  },
+  "bdp:202612121930-kus-petlic": {
+   "start": "2026-12-12T19:30:00+01:00",
+   "title": "Кус петлић",
+   "venue": "bdp"
+  },
+  "bdp:202612131930-kus-petlic": {
+   "start": "2026-12-13T19:30:00+01:00",
+   "title": "Кус петлић",
+   "venue": "bdp"
+  },
+  "bdp:202612141930-vise-od-igre-1-2-3-deo": {
+   "start": "2026-12-14T19:30:00+01:00",
+   "title": "Више од игре 1./2./3. део",
+   "venue": "bdp"
+  },
+  "bdp:202612151930-svaka-ptica-svome-jatu": {
+   "start": "2026-12-15T19:30:00+01:00",
+   "title": "Свака птица своме јату",
+   "venue": "bdp"
+  },
+  "bdp:202612161930-sarlota-kasteli": {
+   "start": "2026-12-16T19:30:00+01:00",
+   "title": "Шарлота Кастели",
+   "venue": "bdp"
+  },
+  "bdp:202612171930-1984": {
+   "start": "2026-12-17T19:30:00+01:00",
+   "title": "1984",
+   "venue": "bdp"
+  },
+  "bdp:202612181930-pra-faust": {
+   "start": "2026-12-18T19:30:00+01:00",
+   "title": "(Пра)фауст",
+   "venue": "bdp"
+  },
+  "bdp:202612201930-bogojavljenska-noc": {
+   "start": "2026-12-20T19:30:00+01:00",
+   "title": "Богојављенска ноћ",
+   "venue": "bdp"
+  },
+  "bdp:202612221930-crno-zlato": {
+   "start": "2026-12-22T19:30:00+01:00",
+   "title": "Црно злато",
+   "venue": "bdp"
+  },
+  "jdp:202609232000-heda-gabler": {
+   "start": "2026-09-23T20:00:00+02:00",
+   "title": "Heda Gabler",
+   "venue": "jdp"
+  },
+  "jdp:202609242000-sveti-georgije-ubiva-azdahu": {
+   "low": null,
+   "sold_out": "2026-09-23T13:45:20+02:00",
+   "start": "2026-09-24T20:00:00+02:00",
+   "title": "Sveti Georgije ubiva aždahu",
+   "venue": "jdp"
+  },
+  "jdp:202609252030-moj-muz": {
+   "low": "2026-09-25T12:08:06+02:00",
+   "sold_out": null,
+   "start": "2026-09-25T20:30:00+02:00",
+   "title": "Moj muž",
+   "venue": "jdp"
+  },
+  "jdp:202609262000-mihael-kolhas": {
+   "start": "2026-09-26T20:00:00+02:00",
+   "title": "Mihael Kolhas",
+   "venue": "jdp"
+  },
+  "jdp:202609262030-preobrazaj": {
+   "low": "2026-09-24T19:01:53+02:00",
+   "start": "2026-09-26T20:30:00+02:00",
+   "title": "Preobražaj",
+   "venue": "jdp"
+  },
+  "jdp:202609272000-ricard-drugi": {
+   "low": "2026-09-24T13:37:37+02:00",
+   "sold_out": null,
+   "start": "2026-09-27T20:00:00+02:00",
+   "title": "Ričard Drugi",
+   "venue": "jdp"
+  },
+  "jdp:202609292000-edip": {
+   "sold_out": null,
+   "start": "2026-09-29T20:00:00+02:00",
+   "title": "Edip",
+   "venue": "jdp"
+  },
+  "jdp:202609302000-sirano": {
+   "start": "2026-09-30T20:00:00+02:00",
+   "title": "Sirano",
+   "venue": "jdp"
+  },
+  "jdp:202610012030-gubitnik": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-01T20:30:00+02:00",
+   "title": "Gubitnik",
+   "venue": "jdp"
+  },
+  "jdp:202610022030-preobrazaj": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-02T20:30:00+02:00",
+   "title": "Preobražaj",
+   "venue": "jdp"
+  },
+  "jdp:202610032000-edip": {
+   "low": "2026-09-26T16:20:20+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-28T23:49:26+02:00",
+   "start": "2026-10-03T20:00:00+02:00",
+   "title": "Edip",
+   "venue": "jdp"
+  },
+  "jdp:202610042000-gospodjica": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-04T20:00:00+02:00",
+   "title": "Gospođica",
+   "venue": "jdp"
+  },
+  "jdp:202610042030-audijencija": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-04T20:30:00+02:00",
+   "title": "Audijencija",
+   "venue": "jdp"
+  },
+  "jdp:202610062000-garderober": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-06T20:00:00+02:00",
+   "title": "Garderober",
+   "venue": "jdp"
+  },
+  "jdp:202610072000-narodni-poslanik": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-26T06:45:52+02:00",
+   "start": "2026-10-07T20:00:00+02:00",
+   "title": "Narodni poslanik",
+   "venue": "jdp"
+  },
+  "jdp:202610082030-moj-muz": {
+   "instant": true,
+   "sold_out": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-08T20:30:00+02:00",
+   "title": "Moj muž",
+   "venue": "jdp"
+  },
+  "jdp:202610092000-eldorado": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-09T20:00:00+02:00",
+   "title": "Eldorado",
+   "venue": "jdp"
+  },
+  "jdp:202610102000-garderober": {
+   "low": "2026-10-08T23:58:54+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-10T08:56:19+02:00",
+   "start": "2026-10-10T20:00:00+02:00",
+   "title": "Garderober",
+   "venue": "jdp"
+  },
+  "jdp:202610112000-narodni-poslanik": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-26T20:29:48+02:00",
+   "start": "2026-10-11T20:00:00+02:00",
+   "title": "Narodni poslanik",
+   "venue": "jdp"
+  },
+  "jdp:202610122000-mihael-kolhas": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-12T20:00:00+02:00",
+   "title": "Mihael Kolhas",
+   "venue": "jdp"
+  },
+  "jdp:202610132000-vrat-od-stakla": {
+   "low": "2026-09-28T17:17:29+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-02T17:42:16+02:00",
+   "start": "2026-10-13T20:00:00+02:00",
+   "title": "Vrat od stakla",
+   "venue": "jdp"
+  },
+  "jdp:202610132030-slika-dorijana-greja": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-26T11:48:32+02:00",
+   "start": "2026-10-13T20:30:00+02:00",
+   "title": "Slika Dorijana Greja",
+   "venue": "jdp"
+  },
+  "jdp:202610142000-edip": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-28T08:39:28+02:00",
+   "start": "2026-10-14T20:00:00+02:00",
+   "title": "Edip",
+   "venue": "jdp"
+  },
+  "jdp:202610152000-razvojni-put-bore-snajdera": {
+   "low": "2026-10-13T02:31:47+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-15T20:00:00+02:00",
+   "title": "Razvojni put Bore šnajdera",
+   "venue": "jdp"
+  },
+  "jdp:202610162000-garderober": {
+   "low": "2026-10-10T20:26:05+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-15T20:12:13+02:00",
+   "start": "2026-10-16T20:00:00+02:00",
+   "title": "Garderober",
+   "venue": "jdp"
+  },
+  "jdp:202610172000-edip": {
+   "low": "2026-09-26T01:14:07+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-28T17:17:29+02:00",
+   "start": "2026-10-17T20:00:00+02:00",
+   "title": "Edip",
+   "venue": "jdp"
+  },
+  "jdp:202610172030-mama": {
+   "instant": true,
+   "sold_out": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-17T20:30:00+02:00",
+   "title": "MaMa",
+   "venue": "jdp"
+  },
+  "jdp:202610182000-sveti-georgije-ubiva-azdahu": {
+   "low": "2026-09-27T23:15:43+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-08T23:58:54+02:00",
+   "start": "2026-10-18T20:00:00+02:00",
+   "title": "Sveti Georgije ubiva aždahu",
+   "venue": "jdp"
+  },
+  "jdp:202610202000-vrat-od-stakla": {
+   "low": "2026-09-29T22:40:06+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-09T10:51:59+02:00",
+   "start": "2026-10-20T20:00:00+02:00",
+   "title": "Vrat od stakla",
+   "venue": "jdp"
+  },
+  "jdp:202610202030-mama": {
+   "low": "2026-10-19T21:14:09+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-20T20:30:00+02:00",
+   "title": "MaMa",
+   "venue": "jdp"
+  },
+  "jdp:202610212000-heda-gabler": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-21T20:00:00+02:00",
+   "title": "Heda Gabler",
+   "venue": "jdp"
+  },
+  "jdp:202610212030-preobrazaj": {
+   "low": "2026-10-16T19:19:35+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-18T22:29:47+02:00",
+   "start": "2026-10-21T20:30:00+02:00",
+   "title": "Preobražaj",
+   "venue": "jdp"
+  },
+  "jdp:202610222000-limeni-dobos": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-22T20:00:00+02:00",
+   "title": "Limeni doboš",
+   "venue": "jdp"
+  },
+  "jdp:202610232000-pucina": {
+   "low": "2026-10-02T17:42:16+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-14T15:36:00+02:00",
+   "start": "2026-10-23T20:00:00+02:00",
+   "title": "Pučina",
+   "venue": "jdp"
+  },
+  "jdp:202610232030-slika-dorijana-greja": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-25T21:58:56+02:00",
+   "start": "2026-10-23T20:30:00+02:00",
+   "title": "Slika Dorijana Greja",
+   "venue": "jdp"
+  },
+  "jdp:202610242000-hotel-slobodan-promet": {
+   "low": "2026-10-13T23:09:55+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-17T11:11:08+02:00",
+   "start": "2026-10-24T20:00:00+02:00",
+   "title": "Hotel Slobodan promet",
+   "venue": "jdp"
+  },
+  "jdp:202610242030-gubitnik": {
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-24T20:30:00+02:00",
+   "title": "Gubitnik",
+   "venue": "jdp"
+  },
+  "jdp:202610272000-ricard-drugi": {
+   "low": "2026-09-25T21:58:56+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-08T23:58:54+02:00",
+   "start": "2026-10-27T20:00:00+01:00",
+   "title": "Ričard Drugi",
+   "venue": "jdp"
+  },
+  "jdp:202610272030-beogradska-trilogija": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-26T16:20:20+02:00",
+   "start": "2026-10-27T20:30:00+01:00",
+   "title": "Beogradska trilogija",
+   "venue": "jdp"
+  },
+  "jdp:202610282000-ricard-drugi": {
+   "low": "2026-09-27T23:15:43+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-10-10T08:56:19+02:00",
+   "start": "2026-10-28T20:00:00+01:00",
+   "title": "Ričard Drugi",
+   "venue": "jdp"
+  },
+  "jdp:202610292000-sirano": {
+   "low": "2026-10-21T01:06:37+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-29T20:00:00+01:00",
+   "title": "Sirano",
+   "venue": "jdp"
+  },
+  "jdp:202610292030-moj-muz": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-25T21:58:56+02:00",
+   "start": "2026-10-29T20:30:00+01:00",
+   "title": "Moj muž",
+   "venue": "jdp"
+  },
+  "jdp:202610302030-mama": {
+   "low": "2026-10-28T19:55:42+01:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-30T20:30:00+01:00",
+   "title": "MaMa",
+   "venue": "jdp"
+  },
+  "jdp:202610312000-putujuce-pozoriste-sopalovic": {
+   "low": "2026-09-25T17:47:32+02:00",
+   "on_sale": "2026-09-25T17:47:32+02:00",
+   "sold_out": "2026-09-26T01:14:07+02:00",
+   "start": "2026-10-31T20:00:00+01:00",
+   "title": "Putujuće pozorište Šopalović",
+   "venue": "jdp"
+  },
+  "jdp:202611012000-narodni-poslanik": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-22T01:10:39+02:00",
+   "start": "2026-11-01T20:00:00+01:00",
+   "title": "Narodni poslanik",
+   "venue": "jdp"
+  },
+  "jdp:202611022030-slika-dorijana-greja": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-21T21:15:04+02:00",
+   "start": "2026-11-02T20:30:00+01:00",
+   "title": "Slika Dorijana Greja",
+   "venue": "jdp"
+  },
+  "jdp:202611032000-edip": {
+   "instant": true,
+   "low": "2026-10-24T16:25:26+02:00",
+   "sold_out": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-03T20:00:00+01:00",
+   "title": "Edip",
+   "venue": "jdp"
+  },
+  "jdp:202611032030-moj-muz": {
+   "instant": true,
+   "sold_out": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-03T20:30:00+01:00",
+   "title": "Moj muž",
+   "venue": "jdp"
+  },
+  "jdp:202611042000-cudo-u-sarganu": {
+   "low": "2026-10-22T01:10:39+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-27T17:44:58+01:00",
+   "start": "2026-11-04T20:00:00+01:00",
+   "title": "Čudo u Šarganu",
+   "venue": "jdp"
+  },
+  "jdp:202611052000-razvojni-put-bore-snajdera": {
+   "low": "2026-11-03T18:45:04+01:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-05T20:04:21+01:00",
+   "start": "2026-11-05T20:00:00+01:00",
+   "title": "Razvojni put Bore šnajdera",
+   "venue": "jdp"
+  },
+  "jdp:202611062000-jesen-fall": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-06T20:00:00+01:00",
+   "title": "Jesen  /  Fall",
+   "venue": "jdp"
+  },
+  "jdp:202611072000-garderober": {
+   "low": "2026-10-29T17:02:02+01:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-02T21:16:52+01:00",
+   "start": "2026-11-07T20:00:00+01:00",
+   "title": "Garderober",
+   "venue": "jdp"
+  },
+  "jdp:202611082000-sveti-georgije-ubiva-azdahu": {
+   "low": "2026-10-22T21:10:39+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-31T15:43:53+01:00",
+   "start": "2026-11-08T20:00:00+01:00",
+   "title": "Sveti Georgije ubiva aždahu",
+   "venue": "jdp"
+  },
+  "jdp:202611092000-edip": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-22T06:27:22+02:00",
+   "start": "2026-11-09T20:00:00+01:00",
+   "title": "Edip",
+   "venue": "jdp"
+  },
+  "jdp:202611092030-beogradska-trilogija": {
+   "instant": true,
+   "low": "2026-10-28T14:13:08+01:00",
+   "sold_out": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-09T20:30:00+01:00",
+   "title": "Beogradska trilogija",
+   "venue": "jdp"
+  },
+  "jdp:202611122000-putujuce-pozoriste-sopalovic": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-23T11:55:45+02:00",
+   "start": "2026-11-12T20:00:00+01:00",
+   "title": "Putujuće pozorište Šopalović",
+   "venue": "jdp"
+  },
+  "jdp:202611132000-edip": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-22T17:03:24+02:00",
+   "start": "2026-11-13T20:00:00+01:00",
+   "title": "Edip",
+   "venue": "jdp"
+  },
+  "jdp:202611142000-narodni-poslanik": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-22T17:03:24+02:00",
+   "start": "2026-11-14T20:00:00+01:00",
+   "title": "Narodni poslanik",
+   "venue": "jdp"
+  },
+  "jdp:202611142030-mama": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-14T20:30:00+01:00",
+   "title": "MaMa",
+   "venue": "jdp"
+  },
+  "jdp:202611152000-vatre": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-15T20:00:00+01:00",
+   "title": "Vatre",
+   "venue": "jdp"
+  },
+  "jdp:202611172000-ricard-drugi": {
+   "low": "2026-10-22T21:10:39+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-01T20:35:03+01:00",
+   "start": "2026-11-17T20:00:00+01:00",
+   "title": "Ričard Drugi",
+   "venue": "jdp"
+  },
+  "jdp:202611172030-gubitnik": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-17T20:30:00+01:00",
+   "title": "Gubitnik",
+   "venue": "jdp"
+  },
+  "jdp:202611182000-gospodjica": {
+   "low": "2026-11-04T18:57:22+01:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-08T23:49:12+01:00",
+   "start": "2026-11-18T20:00:00+01:00",
+   "title": "Gospođica",
+   "venue": "jdp"
+  },
+  "jdp:202611182030-moj-muz": {
+   "instant": true,
+   "sold_out": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-18T20:30:00+01:00",
+   "title": "Moj muž",
+   "venue": "jdp"
+  },
+  "jdp:202611192000-mihael-kolhas": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-19T20:00:00+01:00",
+   "title": "Mihael Kolhas",
+   "venue": "jdp"
+  },
+  "jdp:202611202000-sofka": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-20T20:00:00+01:00",
+   "title": "Sofka",
+   "venue": "jdp"
+  },
+  "jdp:202611222000-ricard-drugi": {
+   "low": "2026-10-23T21:04:25+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-02T21:16:52+01:00",
+   "start": "2026-11-22T20:00:00+01:00",
+   "title": "Ričard Drugi",
+   "venue": "jdp"
+  },
+  "jdp:202611222030-preobrazaj": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-22T20:30:00+01:00",
+   "title": "Preobražaj",
+   "venue": "jdp"
+  },
+  "jdp:202611232000-pucina": {
+   "low": "2026-11-02T21:16:52+01:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-23T20:00:00+01:00",
+   "title": "Pučina",
+   "venue": "jdp"
+  },
+  "jdp:202611242000-hotel-slobodan-promet": {
+   "low": "2026-10-28T14:13:08+01:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-24T20:00:00+01:00",
+   "title": "Hotel Slobodan promet",
+   "venue": "jdp"
+  },
+  "jdp:202611242030-mama": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-24T20:30:00+01:00",
+   "title": "MaMa",
+   "venue": "jdp"
+  },
+  "jdp:202611252000-garderober": {
+   "low": "2026-11-04T18:57:22+01:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-25T20:00:00+01:00",
+   "title": "Garderober",
+   "venue": "jdp"
+  },
+  "jdp:202611262000-vrat-od-stakla": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-22T06:27:22+02:00",
+   "start": "2026-11-26T20:00:00+01:00",
+   "title": "Vrat od stakla",
+   "venue": "jdp"
+  },
+  "jdp:202611262030-audijencija": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-26T20:30:00+01:00",
+   "title": "Audijencija",
+   "venue": "jdp"
+  },
+  "jdp:202611272000-heda-gabler": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-27T20:00:00+01:00",
+   "title": "Heda Gabler",
+   "venue": "jdp"
+  },
+  "jdp:202611282000-ricard-drugi": {
+   "low": "2026-10-28T14:13:08+01:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-04T03:41:26+01:00",
+   "start": "2026-11-28T20:00:00+01:00",
+   "title": "Ričard Drugi",
+   "venue": "jdp"
+  },
+  "jdp:202611292000-narodni-poslanik": {
+   "low": "2026-10-21T17:02:42+02:00",
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-10-28T07:13:30+01:00",
+   "start": "2026-11-29T20:00:00+01:00",
+   "title": "Narodni poslanik",
+   "venue": "jdp"
+  },
+  "jdp:202611292030-disko-svinje": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-29T20:30:00+01:00",
+   "title": "Disko svinje",
+   "venue": "jdp"
+  },
+  "jdp:202611302000-limeni-dobos": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-30T20:00:00+01:00",
+   "title": "Limeni doboš",
+   "venue": "jdp"
+  },
+  "kolarac:24462": {
+   "start": "2026-10-06T20:00:00+02:00",
+   "title": "MARIJA GULEGINA",
+   "venue": "kolarac"
+  },
+  "kolarac:26836": {
+   "start": "2026-11-28T20:00:00+01:00",
+   "title": "EKSTRAVAGANCIJE I LUDOSTI",
+   "venue": "kolarac"
+  },
+  "kolarac:27040": {
+   "start": "2026-12-13T20:00:00+01:00",
+   "title": "NIKOLAJ KUZNJECOV",
+   "venue": "kolarac"
+  },
+  "kolarac:27386": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-17T20:00:00+02:00",
+   "title": "58. BEMUS - Svečano otvaranje - Gala koncert zvezda ruske operske scene Simfonijski orkestar i Hor RTS",
+   "venue": "kolarac"
+  },
+  "kolarac:27389": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-18T20:00:00+02:00",
+   "title": "58. BEMUS - Državni simfonijski orkestar iz Soluna",
+   "venue": "kolarac"
+  },
+  "kolarac:27390": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-19T20:00:00+02:00",
+   "title": "58. BEMUS - Danijel Lozakovič, violina i David Fre, klavir",
+   "venue": "kolarac"
+  },
+  "kolarac:27391": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-20T20:00:00+02:00",
+   "title": "58. BEMUS - Kamerni orkestar Franc List",
+   "venue": "kolarac"
+  },
+  "kolarac:27392": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-21T20:00:00+02:00",
+   "title": "58. BEMUS - Trio Korda",
+   "venue": "kolarac"
+  },
+  "kolarac:27393": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-24T20:00:00+02:00",
+   "title": "58. BEMUS - Sofijska filharmonija",
+   "venue": "kolarac"
+  },
+  "kolarac:27394": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-26T20:00:00+01:00",
+   "title": "58. BEMUS - Niški simfonijski orkestar",
+   "venue": "kolarac"
+  },
+  "kolarac:27395": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-28T20:00:00+01:00",
+   "title": "58. BEMUS - Arkadij Volodos, klavir",
+   "venue": "kolarac"
+  },
+  "kolarac:27396": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-29T20:00:00+01:00",
+   "title": "58. BEMUS - Zlatni jubilej Akademskog hora Kolegijum muzikum",
+   "venue": "kolarac"
+  },
+  "kolarac:27397": {
+   "on_sale": "2026-10-07T18:19:44+02:00",
+   "start": "2026-10-30T20:00:00+01:00",
+   "title": "58. BEMUS - Beogradska filharmonija",
+   "venue": "kolarac"
+  },
+  "madlenianum_tickets:26309": {
+   "start": "2026-11-26T09:00:00+01:00",
+   "title": "THE SASSOON EXPERIENCE",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:26870": {
+   "sold_out": "2026-09-30T15:35:23+02:00",
+   "start": "2026-09-30T19:30:00+02:00",
+   "title": "GOSPODIN U ČIZMAMA OD DIMA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27217": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "start": "2026-10-12T19:30:00+02:00",
+   "title": "VESELA UDOVICA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27218": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-10-12T19:44:13+02:00",
+   "start": "2026-10-13T19:30:00+02:00",
+   "title": "KARMEN SVITA I BOLERO",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27219": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "start": "2026-11-11T19:30:00+01:00",
+   "title": "SNOVI POD MASKAMA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27220": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "start": "2026-11-10T19:30:00+01:00",
+   "title": "GOSPODIN U ČIZMAMA OD DIMA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27221": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-10-02T17:42:16+02:00",
+   "start": "2026-10-04T20:00:00+02:00",
+   "title": "X+Y=0",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27222": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-10-02T17:42:16+02:00",
+   "start": "2026-10-05T20:00:00+02:00",
+   "title": "PLUĆA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27223": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-10-08T18:22:01+02:00",
+   "start": "2026-10-09T20:00:00+02:00",
+   "title": "KAZANOVA PROTIV DON ŽUANA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27224": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-10-13T17:51:50+02:00",
+   "start": "2026-10-14T20:00:00+02:00",
+   "title": "FELIKS I DORIS",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27225": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-10-20T16:55:21+02:00",
+   "start": "2026-10-21T20:00:00+02:00",
+   "title": "TVOJE TAJNO ORUŽJE U BORBI PROTIVNEUKROTIVOG CELULITA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27226": {
+   "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-10-23T16:54:25+02:00",
+   "start": "2026-10-23T20:00:00+02:00",
+   "title": "STAKLENA MENAŽERIJA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27300": {
+   "on_sale": "2026-09-29T17:39:49+02:00",
+   "sold_out": "2026-10-02T17:42:16+02:00",
+   "start": "2026-10-02T19:30:00+02:00",
+   "title": "JA EMA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27822": {
+   "on_sale": "2026-10-27T17:44:58+01:00",
+   "sold_out": "2026-11-06T15:57:04+01:00",
+   "start": "2026-11-09T19:30:00+01:00",
+   "title": "VESELA UDOVICA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27825": {
+   "on_sale": "2026-10-27T17:44:58+01:00",
+   "start": "2026-12-15T19:30:00+01:00",
+   "title": "JA EMA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27826": {
+   "on_sale": "2026-10-27T17:44:58+01:00",
+   "start": "2026-11-15T20:00:00+01:00",
+   "title": "PLUĆA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27827": {
+   "on_sale": "2026-10-27T17:44:58+01:00",
+   "start": "2026-11-16T20:00:00+01:00",
+   "title": "X + Y = O",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27828": {
+   "on_sale": "2026-10-27T17:44:58+01:00",
+   "start": "2026-11-22T20:00:00+01:00",
+   "title": "TVOJE TAJNO ORUŽJE U BORBI PROTIV NEUKROTIVOG CELULITA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27829": {
+   "on_sale": "2026-10-27T17:44:58+01:00",
+   "start": "2026-11-23T20:00:00+01:00",
+   "title": "KAZANOVA PROTIV DON ŽUANA",
+   "venue": "madlenianum_tickets"
+  },
+  "madlenianum_tickets:27830": {
+   "on_sale": "2026-10-27T17:44:58+01:00",
+   "start": "2026-11-24T20:00:00+01:00",
+   "title": "STAKLENA MENAŽERIJA",
+   "venue": "madlenianum_tickets"
+  },
+  "narodno:6343": {
+   "sold_out": null,
+   "start": "2026-09-23T19:30:00+02:00",
+   "title": "Концерт хора „Глинка“",
+   "venue": "narodno"
+  },
+  "narodno:6344": {
+   "start": "2027-01-05T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6345": {
+   "start": "2027-01-09T19:00:00+01:00",
+   "title": "Севиљски берберин",
+   "venue": "narodno"
+  },
+  "narodno:6346": {
+   "start": "2027-01-13T20:00:00+01:00",
+   "title": "Новогодишњи гала концерт",
+   "venue": "narodno"
+  },
+  "narodno:6347": {
+   "start": "2027-01-14T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6348": {
+   "start": "2027-01-16T19:00:00+01:00",
+   "title": "Пепељуга",
+   "venue": "narodno"
+  },
+  "narodno:6349": {
+   "start": "2026-12-01T19:00:00+01:00",
+   "title": "Кармен",
+   "venue": "narodno"
+  },
+  "narodno:6350": {
+   "start": "2026-12-02T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6351": {
+   "start": "2026-12-03T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6352": {
+   "start": "2026-12-05T19:00:00+01:00",
+   "title": "Севиљски берберин",
+   "venue": "narodno"
+  },
+  "narodno:6353": {
+   "start": "2026-12-08T19:00:00+01:00",
+   "title": "Травијата",
+   "venue": "narodno"
+  },
+  "narodno:6354": {
+   "start": "2026-12-09T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6355": {
+   "start": "2026-12-10T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6356": {
+   "start": "2026-12-12T19:00:00+01:00",
+   "title": "Севиљски берберин",
+   "venue": "narodno"
+  },
+  "narodno:6357": {
+   "start": "2026-12-16T19:00:00+01:00",
+   "title": "Пепељуга",
+   "venue": "narodno"
+  },
+  "narodno:6358": {
+   "start": "2026-12-17T19:00:00+01:00",
+   "title": "Пепељуга",
+   "venue": "narodno"
+  },
+  "narodno:6359": {
+   "start": "2026-12-18T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6360": {
+   "start": "2026-12-22T19:00:00+01:00",
+   "title": "Пепељуга",
+   "venue": "narodno"
+  },
+  "narodno:6361": {
+   "start": "2026-12-23T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6362": {
+   "start": "2026-12-24T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6363": {
+   "start": "2026-12-25T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6364": {
+   "start": "2026-12-26T19:00:00+01:00",
+   "title": "Пепељуга",
+   "venue": "narodno"
+  },
+  "narodno:6365": {
+   "start": "2026-12-28T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6366": {
+   "start": "2026-12-29T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6367": {
+   "start": "2026-12-30T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6368": {
+   "sold_out": "2026-10-20T16:55:21+02:00",
+   "start": "2026-11-03T19:00:00+01:00",
+   "title": "Лабудово језеро",
+   "venue": "narodno"
+  },
+  "narodno:6369": {
+   "sold_out": "2026-10-23T16:54:25+02:00",
+   "start": "2026-11-04T19:00:00+01:00",
+   "title": "Лабудово језеро",
+   "venue": "narodno"
+  },
+  "narodno:6370": {
+   "start": "2026-11-07T19:00:00+01:00",
+   "title": "Тоска",
+   "venue": "narodno"
+  },
+  "narodno:6371": {
+   "sold_out": "2026-10-22T01:10:39+02:00",
+   "start": "2026-11-10T19:00:00+01:00",
+   "title": "Лабудово језеро",
+   "venue": "narodno"
+  },
+  "narodno:6372": {
+   "sold_out": "2026-10-23T11:55:45+02:00",
+   "start": "2026-11-13T19:00:00+01:00",
+   "title": "Лабудово језеро",
+   "venue": "narodno"
+  },
+  "narodno:6373": {
+   "start": "2026-11-14T19:00:00+01:00",
+   "title": "Набуко",
+   "venue": "narodno"
+  },
+  "narodno:6374": {
+   "start": "2026-11-18T19:00:00+01:00",
+   "title": "Ко то тамо пева",
+   "venue": "narodno"
+  },
+  "narodno:6376": {
+   "start": "2026-11-22T19:00:00+01:00",
+   "title": "На уранку",
+   "venue": "narodno"
+  },
+  "narodno:6377": {
+   "start": "2026-11-25T19:00:00+01:00",
+   "title": "На уранку",
+   "venue": "narodno"
+  },
+  "narodno:6379": {
+   "sold_out": "2026-11-09T21:38:59+01:00",
+   "start": "2026-11-28T14:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6380": {
+   "start": "2026-11-29T19:00:00+01:00",
+   "title": "Травијата",
+   "venue": "narodno"
+  },
+  "narodno:6381": {
+   "start": "2026-10-03T19:00:00+02:00",
+   "title": "Васкрсле сени",
+   "venue": "narodno"
+  },
+  "narodno:6382": {
+   "start": "2026-10-05T19:00:00+02:00",
+   "title": "Васкрсле сени",
+   "venue": "narodno"
+  },
+  "narodno:6383": {
+   "sold_out": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-07T19:00:00+02:00",
+   "title": "Евгеније Оњегин",
+   "venue": "narodno"
+  },
+  "narodno:6384": {
+   "sold_out": "2026-10-04T15:08:07+02:00",
+   "start": "2026-10-10T19:00:00+02:00",
+   "title": "Кармен",
+   "venue": "narodno"
+  },
+  "narodno:6385": {
+   "start": "2026-10-14T19:00:00+02:00",
+   "title": "Тоска",
+   "venue": "narodno"
+  },
+  "narodno:6386": {
+   "start": "2026-10-15T19:00:00+02:00",
+   "title": "Жизела",
+   "venue": "narodno"
+  },
+  "narodno:6387": {
+   "sold_out": "2026-10-13T17:51:50+02:00",
+   "start": "2026-10-17T19:00:00+02:00",
+   "title": "Жизела",
+   "venue": "narodno"
+  },
+  "narodno:6388": {
+   "start": "2026-10-21T19:00:00+02:00",
+   "title": "Боеми",
+   "venue": "narodno"
+  },
+  "narodno:6389": {
+   "sold_out": "2026-10-12T09:14:20+02:00",
+   "start": "2026-10-22T19:00:00+02:00",
+   "title": "Грк Зорба",
+   "venue": "narodno"
+  },
+  "narodno:6390": {
+   "sold_out": "2026-09-27T19:39:57+02:00",
+   "start": "2026-10-23T19:00:00+02:00",
+   "title": "Грк Зорба",
+   "venue": "narodno"
+  },
+  "narodno:6391": {
+   "on_sale": "2026-10-19T14:58:52+02:00",
+   "start": "2026-10-28T19:00:00+01:00",
+   "title": "Травијата",
+   "venue": "narodno"
+  },
+  "narodno:6392": {
+   "sold_out": "2026-10-31T00:02:26+01:00",
+   "start": "2026-10-31T19:00:00+01:00",
+   "title": "Травијата",
+   "venue": "narodno"
+  },
+  "narodno:6393": {
+   "sold_out": "2026-09-28T17:17:29+02:00",
+   "start": "2026-10-17T17:00:00+02:00",
+   "title": "Чаробна фрула",
+   "venue": "narodno"
+  },
+  "narodno:6394": {
+   "sold_out": "2026-09-28T17:17:29+02:00",
+   "start": "2026-10-24T12:00:00+02:00",
+   "title": "Чаробна фрула",
+   "venue": "narodno"
+  },
+  "narodno:6395": {
+   "sold_out": "2026-09-28T17:17:29+02:00",
+   "start": "2026-11-08T12:00:00+01:00",
+   "title": "Чаробна фрула",
+   "venue": "narodno"
+  },
+  "narodno:6396": {
+   "sold_out": "2026-09-30T08:35:30+02:00",
+   "start": "2026-11-22T17:00:00+01:00",
+   "title": "Снежана и седам патуљака",
+   "venue": "narodno"
+  },
+  "narodno:6397": {
+   "sold_out": "2026-10-06T18:43:57+02:00",
+   "start": "2026-10-08T20:30:00+02:00",
+   "title": "Беле ноћи",
+   "venue": "narodno"
+  },
+  "narodno:6398": {
+   "start": "2026-11-30T19:00:00+01:00",
+   "title": "Крцко Орашчић",
+   "venue": "narodno"
+  },
+  "narodno:6400": {
+   "start": "2026-10-04T19:30:00+02:00",
+   "title": "Године врана",
+   "venue": "narodno"
+  },
+  "narodno:6401": {
+   "start": "2026-10-06T19:30:00+02:00",
+   "title": "Велика драма",
+   "venue": "narodno"
+  },
+  "narodno:6402": {
+   "start": "2026-10-08T19:30:00+02:00",
+   "title": "Нора - луткина кућа",
+   "venue": "narodno"
+  },
+  "narodno:6403": {
+   "start": "2026-10-09T19:30:00+02:00",
+   "title": "Урнебесна трагедија",
+   "venue": "narodno"
+  },
+  "narodno:6404": {
+   "start": "2026-10-11T19:30:00+02:00",
+   "title": "Очеви и оци",
+   "venue": "narodno"
+  },
+  "narodno:6405": {
+   "start": "2026-10-16T19:30:00+02:00",
+   "title": "Ожалошћена породица",
+   "venue": "narodno"
+  },
+  "narodno:6406": {
+   "start": "2026-10-18T19:30:00+02:00",
+   "title": "?",
+   "venue": "narodno"
+  },
+  "narodno:6407": {
+   "start": "2026-10-19T19:30:00+02:00",
+   "title": "Мајстор и Маргарита",
+   "venue": "narodno"
+  },
+  "narodno:6408": {
+   "start": "2026-10-20T19:30:00+02:00",
+   "title": "?",
+   "venue": "narodno"
+  },
+  "narodno:6411": {
+   "start": "2026-10-30T20:00:00+01:00",
+   "title": "Дервиш и смрт",
+   "venue": "narodno"
+  },
+  "narodno:6412": {
+   "start": "2026-11-02T19:30:00+01:00",
+   "title": "Године врана",
+   "venue": "narodno"
+  },
+  "narodno:6413": {
+   "start": "2026-11-05T19:30:00+01:00",
+   "title": "Очеви и оци",
+   "venue": "narodno"
+  },
+  "narodno:6414": {
+   "start": "2026-10-02T20:30:00+02:00",
+   "title": "Божји људи",
+   "venue": "narodno"
+  },
+  "narodno:6415": {
+   "start": "2026-10-04T20:30:00+02:00",
+   "title": "Ситнице које живот значе",
+   "venue": "narodno"
+  },
+  "narodno:6416": {
+   "start": "2026-10-05T20:30:00+02:00",
+   "title": "Уображени болесник",
+   "venue": "narodno"
+  },
+  "narodno:6417": {
+   "start": "2026-10-06T20:30:00+02:00",
+   "title": "Успаванка за Алексију Рајчић",
+   "venue": "narodno"
+  },
+  "narodno:6418": {
+   "start": "2026-10-07T20:30:00+02:00",
+   "title": "Рибарске свађе",
+   "venue": "narodno"
+  },
+  "narodno:6420": {
+   "sold_out": "2026-10-15T15:19:10+02:00",
+   "start": "2026-10-16T20:30:00+02:00",
+   "title": "Сумњиво лице",
+   "venue": "narodno"
+  },
+  "narodno:6421": {
+   "start": "2026-10-18T20:30:00+02:00",
+   "title": "Божји људи",
+   "venue": "narodno"
+  },
+  "narodno:6422": {
+   "start": "2026-10-19T20:30:00+02:00",
+   "title": "Достојевски - мој живот",
+   "venue": "narodno"
+  },
+  "narodno:6423": {
+   "start": "2026-10-20T20:30:00+02:00",
+   "title": "Централа за хумор",
+   "venue": "narodno"
+  },
+  "narodno:6424": {
+   "sold_out": "2026-10-16T14:16:40+02:00",
+   "start": "2026-10-21T20:30:00+02:00",
+   "title": "Балкански шпијун",
+   "venue": "narodno"
+  },
+  "narodno:6425": {
+   "sold_out": "2026-10-13T17:51:50+02:00",
+   "start": "2026-10-22T20:30:00+02:00",
+   "title": "?",
+   "venue": "narodno"
+  },
+  "narodno:6426": {
+   "start": "2026-10-23T20:30:00+02:00",
+   "title": "Мали брачни злочини",
+   "venue": "narodno"
+  },
+  "narodno:6427": {
+   "start": "2026-10-24T20:30:00+02:00",
+   "title": "Госпођа Олга",
+   "venue": "narodno"
+  },
+  "narodno:6428": {
+   "start": "2026-10-27T20:30:00+01:00",
+   "title": "Царство мрака",
+   "venue": "narodno"
+  },
+  "narodno:6429": {
+   "sold_out": "2026-10-16T19:19:35+02:00",
+   "start": "2026-10-28T20:30:00+01:00",
+   "title": "?",
+   "venue": "narodno"
+  },
+  "narodno:6430": {
+   "sold_out": "2026-10-29T09:53:01+01:00",
+   "start": "2026-10-29T20:30:00+01:00",
+   "title": "Сумњиво лице",
+   "venue": "narodno"
+  },
+  "narodno:6431": {
+   "sold_out": "2026-10-20T21:08:28+02:00",
+   "start": "2026-10-31T20:30:00+01:00",
+   "title": "Покондирена тиква",
+   "venue": "narodno"
+  },
+  "narodno:6432": {
+   "start": "2026-11-02T20:30:00+01:00",
+   "title": "Женски оркестар",
+   "venue": "narodno"
+  },
+  "narodno:6433": {
+   "start": "2026-11-03T20:30:00+01:00",
+   "title": "Лутка са кревета бр. 21",
+   "venue": "narodno"
+  },
+  "narodno:6434": {
+   "start": "2026-11-04T20:30:00+01:00",
+   "title": "Хасанагиница",
+   "venue": "narodno"
+  },
+  "narodno:6435": {
+   "sold_out": "2026-11-02T21:16:52+01:00",
+   "start": "2026-11-05T20:30:00+01:00",
+   "title": "Сумњиво лице",
+   "venue": "narodno"
+  },
+  "narodno:6439": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-08T19:30:00+01:00",
+   "title": "Нора - луткина кућа",
+   "venue": "narodno"
+  },
+  "narodno:6441": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-15T19:30:00+01:00",
+   "title": "Дервиш и смрт",
+   "venue": "narodno"
+  },
+  "narodno:6442": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-16T19:30:00+01:00",
+   "title": "Урнебесна трагедија",
+   "venue": "narodno"
+  },
+  "narodno:6443": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-17T19:30:00+01:00",
+   "title": "Мајстор и Маргарита",
+   "venue": "narodno"
+  },
+  "narodno:6445": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-23T19:30:00+01:00",
+   "title": "Ожалошћена породица",
+   "venue": "narodno"
+  },
+  "narodno:6446": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-24T19:30:00+01:00",
+   "title": "Велика драма",
+   "venue": "narodno"
+  },
+  "narodno:6448": {
+   "on_sale": "2026-10-21T21:15:04+02:00",
+   "start": "2026-12-04T19:30:00+01:00",
+   "title": "Године врана",
+   "venue": "narodno"
+  },
+  "narodno:6449": {
+   "on_sale": "2026-10-21T21:15:04+02:00",
+   "start": "2026-12-06T19:30:00+01:00",
+   "title": "Велика драма",
+   "venue": "narodno"
+  },
+  "narodno:6451": {
+   "on_sale": "2026-10-22T12:00:57+02:00",
+   "start": "2026-11-07T19:30:00+01:00",
+   "title": "Фестивал кореографских минијатура",
+   "venue": "narodno"
+  },
+  "narodno:6452": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-10T20:30:00+01:00",
+   "title": "Власт",
+   "venue": "narodno"
+  },
+  "narodno:6453": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-12T20:30:00+01:00",
+   "title": "Наш разред",
+   "venue": "narodno"
+  },
+  "narodno:6454": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-13T20:30:00+01:00",
+   "title": "Божји људи",
+   "venue": "narodno"
+  },
+  "narodno:6455": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-09T21:38:59+01:00",
+   "start": "2026-11-14T20:30:00+01:00",
+   "title": "Сумњиво лице",
+   "venue": "narodno"
+  },
+  "narodno:6456": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-15T20:30:00+01:00",
+   "title": "Рибарске свађе",
+   "venue": "narodno"
+  },
+  "narodno:6457": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-16T20:30:00+01:00",
+   "title": "Успаванка за Алексију Рајчић",
+   "venue": "narodno"
+  },
+  "narodno:6458": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-17T20:30:00+01:00",
+   "title": "Мали брачни злочини",
+   "venue": "narodno"
+  },
+  "narodno:6459": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-18T20:30:00+01:00",
+   "title": "Централа за хумор",
+   "venue": "narodno"
+  },
+  "narodno:6460": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-19T20:30:00+01:00",
+   "title": "Није смрт бицикло (да ти га украду)",
+   "venue": "narodno"
+  },
+  "narodno:6461": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "sold_out": "2026-11-06T15:57:04+01:00",
+   "start": "2026-11-21T20:30:00+01:00",
+   "title": "Балкански шпијун",
+   "venue": "narodno"
+  },
+  "narodno:6462": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-23T20:30:00+01:00",
+   "title": "Сумњиво лице",
+   "venue": "narodno"
+  },
+  "narodno:6463": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-24T20:30:00+01:00",
+   "title": "Балкански шпијун",
+   "venue": "narodno"
+  },
+  "narodno:6464": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-25T20:30:00+01:00",
+   "title": "Царство мрака",
+   "venue": "narodno"
+  },
+  "narodno:6465": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-26T20:30:00+01:00",
+   "title": "Хасанагиница",
+   "venue": "narodno"
+  },
+  "narodno:6466": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-27T20:30:00+01:00",
+   "title": "Достојевски - мој живот",
+   "venue": "narodno"
+  },
+  "narodno:6467": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-28T20:30:00+01:00",
+   "title": "Сањао сам да сам се пробудио",
+   "venue": "narodno"
+  },
+  "narodno:6468": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-29T20:30:00+01:00",
+   "title": "Уображени болесник",
+   "venue": "narodno"
+  },
+  "narodno:6469": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-11-30T20:30:00+01:00",
+   "title": "Ситнице које живот значе",
+   "venue": "narodno"
+  },
+  "narodno:6470": {
+   "on_sale": "2026-10-21T17:02:42+02:00",
+   "start": "2026-12-01T20:30:00+01:00",
+   "title": "Покондирена тиква",
+   "venue": "narodno"
+  },
+  "narodno:6471": {
+   "on_sale": "2026-10-21T21:15:04+02:00",
+   "start": "2026-12-02T20:30:00+01:00",
+   "title": "Није смрт бицикло (да ти га украду)",
+   "venue": "narodno"
+  },
+  "narodno:6472": {
+   "on_sale": "2026-10-21T21:15:04+02:00",
+   "start": "2026-12-03T20:30:00+01:00",
+   "title": "Госпођа Олга",
+   "venue": "narodno"
+  },
+  "narodno:6473": {
+   "on_sale": "2026-10-21T21:15:04+02:00",
+   "start": "2026-12-04T20:30:00+01:00",
+   "title": "Божји људи",
+   "venue": "narodno"
+  },
+  "narodno:6474": {
+   "on_sale": "2026-10-21T21:15:04+02:00",
+   "start": "2026-12-06T20:30:00+01:00",
+   "title": "Покондирена тиква",
+   "venue": "narodno"
+  },
+  "narodno:6475": {
+   "on_sale": "2026-10-21T21:15:04+02:00",
+   "start": "2026-12-07T20:30:00+01:00",
+   "title": "Балкански шпијун",
+   "venue": "narodno"
+  },
+  "sava_centar:22502": {
+   "start": "2026-12-09T20:00:00+01:00",
+   "title": "K-POP FOREVER!",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22507": {
+   "start": "2026-12-05T20:00:00+01:00",
+   "title": "Emeli Sandé",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22516": {
+   "start": "2026-11-24T19:30:00+01:00",
+   "title": "Sarah Brightman - “A Winter Symphony”",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22517": {
+   "start": "2026-11-24T19:30:00+01:00",
+   "title": "Sarah Brightman - “A Winter Symphony” - Lože",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22518": {
+   "sold_out": "2026-10-27T11:22:29+01:00",
+   "start": "2026-11-24T19:30:00+01:00",
+   "title": "Sarah Brightman - “A Winter Symphony” - VIP",
+   "venue": "sava_centar"
+  },
+  "sava_centar:22769": {
+   "start": "2026-11-06T20:00:00+01:00",
+   "title": "Yasmin Levy",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23110": {
+   "sold_out": "2026-10-27T17:44:58+01:00",
+   "start": "2026-11-19T20:00:00+01:00",
+   "title": "Mira Škorić",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23197": {
+   "start": "2026-10-30T20:00:00+01:00",
+   "title": "musical MOLIÈRE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23230": {
+   "start": "2026-10-31T20:00:00+01:00",
+   "title": "musical MOLIÈRE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23965": {
+   "start": "2026-09-26T20:00:00+02:00",
+   "title": "Garou. The Best Of.",
+   "venue": "sava_centar"
+  },
+  "sava_centar:23972": {
+   "start": "2026-10-21T20:00:00+02:00",
+   "title": "Zvonko Bogdan",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24288": {
+   "start": "2026-09-25T20:00:00+02:00",
+   "title": "BARCELONA GUITAR TRIO & Flamenco",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24367": {
+   "start": "2026-12-28T20:00:00+01:00",
+   "title": "From Opera to Hollywood -Tamara Radjenović",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24450": {
+   "start": "2026-12-06T20:00:00+01:00",
+   "title": "NOVI FOSILI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24680": {
+   "start": "2026-12-23T20:00:00+01:00",
+   "title": "ABBA symphonic tribute show",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24685": {
+   "start": "2027-03-28T20:00:00+02:00",
+   "title": "Rock Simphony",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24782": {
+   "start": "2026-11-08T20:00:00+01:00",
+   "title": "Tommy Emmanuel",
+   "venue": "sava_centar"
+  },
+  "sava_centar:24874": {
+   "start": "2026-12-04T20:00:00+01:00",
+   "title": "Amira Medunjanin",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25049": {
+   "start": "2026-12-12T20:00:00+01:00",
+   "title": "ŽELJKO SAMARDŽIĆ",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25363": {
+   "start": "2026-11-18T20:00:00+01:00",
+   "title": "LUCA MINNELLI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25388": {
+   "start": "2026-11-14T20:00:00+01:00",
+   "title": "Aleksandra Radović",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25395": {
+   "start": "2026-11-13T20:00:00+01:00",
+   "title": "Nikola Rokvić",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25483": {
+   "start": "2026-12-16T20:00:00+01:00",
+   "title": "BOBAN RAJOVIĆ",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25489": {
+   "start": "2027-02-12T20:00:00+01:00",
+   "title": "VALERY MELADZE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25493": {
+   "start": "2027-03-17T20:00:00+01:00",
+   "title": "Parni Valjak",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25918": {
+   "start": "2026-12-03T20:30:00+01:00",
+   "title": "PREMIJERA FILMA \"BOŽIĆNA AVANTURA\"",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25919": {
+   "start": "2026-11-10T20:00:00+01:00",
+   "title": "URIAH HEEP",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25921": {
+   "start": "2026-10-29T09:00:00+01:00",
+   "title": "BUILDUP 2026",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25927": {
+   "start": "2026-12-24T20:00:00+01:00",
+   "title": "Haris Džinović",
+   "venue": "sava_centar"
+  },
+  "sava_centar:25932": {
+   "start": "2026-12-20T20:00:00+01:00",
+   "title": "The Nutcracker",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26002": {
+   "start": "2026-09-23T20:00:00+02:00",
+   "title": "KENGUR SE VRAĆA KUĆI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26011": {
+   "start": "2026-12-07T20:00:00+01:00",
+   "title": "PERPETUUM JAZZILE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26024": {
+   "start": "2026-11-12T20:00:00+01:00",
+   "title": "Halid Muslimović",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26040": {
+   "start": "2026-12-25T20:00:00+01:00",
+   "title": "SERGEJ ĆETKOVIĆ",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26045": {
+   "start": "2026-10-22T20:00:00+02:00",
+   "title": "Bajaga & Instruktori",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26079": {
+   "start": "2026-12-17T20:00:00+01:00",
+   "title": "TIJANA BOGIĆEVIĆ",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26192": {
+   "start": "2026-12-08T20:00:00+01:00",
+   "title": "Aleksandar Sofronijević i Majstori za dušu",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26230": {
+   "start": "2027-02-02T20:00:00+01:00",
+   "title": "100 violina - Budapest Gipsy Symphony Orchestra",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26231": {
+   "start": "2026-12-21T20:00:00+01:00",
+   "title": "Vlatko Stefanovski",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26241": {
+   "sold_out": "2026-11-04T18:57:22+01:00",
+   "start": "2026-11-04T20:00:00+01:00",
+   "title": "Goca Tržan",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26303": {
+   "start": "2026-11-07T20:00:00+01:00",
+   "title": "Željko Vasić",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26323": {
+   "start": "2026-10-12T09:00:00+02:00",
+   "title": "FMCG SUMMIT BEOGRAD",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26325": {
+   "start": "2026-12-01T09:00:00+01:00",
+   "title": "CEO SUMMIT BEOGRAD",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26326": {
+   "start": "2026-10-23T20:00:00+02:00",
+   "title": "Bajaga & Instruktori",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26703": {
+   "start": "2026-11-22T20:00:00+01:00",
+   "title": "Emina Jahović",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26706": {
+   "start": "2026-12-30T20:00:00+01:00",
+   "title": "LEXINGTON",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26745": {
+   "on_sale": "2026-09-25T21:58:56+02:00",
+   "start": "2026-11-23T20:00:00+01:00",
+   "title": "Emina Jahović",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26837": {
+   "start": "2026-10-11T11:00:00+02:00",
+   "title": "FASHION MASTERCLASS",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26957": {
+   "start": "2026-10-03T11:00:00+02:00",
+   "title": "FEST 2026 - LEGENDA O BELOJ ZMIJI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26958": {
+   "sold_out": "2026-09-25T17:47:32+02:00",
+   "start": "2026-10-02T19:00:00+02:00",
+   "title": "FEST 2026 - SVEČANO OTVARANJE - ZLATNI REZ '42: DJECA KOZARE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26959": {
+   "start": "2026-10-03T13:30:00+02:00",
+   "title": "FEST 2026 - ZLATNI REZ '42: DJECA KOZARE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26960": {
+   "start": "2026-10-03T19:00:00+02:00",
+   "title": "FEST 2026 - ŽUTA KRAVATA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26961": {
+   "start": "2026-10-03T22:00:00+02:00",
+   "title": "FEST 2026 - JEDINI ŽIVI DŽEPAROŠ U NJUJORKU",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26962": {
+   "start": "2026-10-04T11:00:00+02:00",
+   "title": "FEST 2026 - ŽIVOTINJICE IZ SNOVA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26963": {
+   "start": "2026-10-04T13:30:00+02:00",
+   "title": "FEST 2026 - JEDINI ŽIVI DŽEPAROŠ U NJUJORKU",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26964": {
+   "start": "2026-10-04T16:00:00+02:00",
+   "title": "FEST 2026 - ŽUTA KRAVATA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26965": {
+   "start": "2026-10-04T19:00:00+02:00",
+   "title": "FEST 2026 - POBUNA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26966": {
+   "start": "2026-10-04T21:30:00+02:00",
+   "title": "FEST 2026 - BUNKER",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26967": {
+   "start": "2026-10-05T11:00:00+02:00",
+   "title": "FEST 2026 - POBUNA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26968": {
+   "start": "2026-10-05T13:30:00+02:00",
+   "title": "FEST 2026 - BUNKER",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26969": {
+   "start": "2026-10-05T16:00:00+02:00",
+   "title": "FEST 2026 - ONI KOJE VOLIMO",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26970": {
+   "start": "2026-10-05T19:00:00+02:00",
+   "title": "FEST 2026 - TALENAT ZA UBISTVO",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26971": {
+   "start": "2026-10-05T21:30:00+02:00",
+   "title": "FEST 2026 - PAPIRNI TIGAR",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26972": {
+   "start": "2026-10-06T11:00:00+02:00",
+   "title": "FEST 2026 - TALENAT ZA UBISTVO",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26973": {
+   "start": "2026-10-06T13:30:00+02:00",
+   "title": "FEST 2026 - PAPIRNI TIGAR",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26974": {
+   "start": "2026-10-06T16:00:00+02:00",
+   "title": "FEST 2026 - ŽUTA SLOVA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26975": {
+   "start": "2026-10-06T19:00:00+02:00",
+   "title": "FEST 2026 - UDARNI TERMIN",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26976": {
+   "start": "2026-10-06T21:30:00+02:00",
+   "title": "FEST 2026 - DOBRO DOŠLI U HOUP",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26977": {
+   "start": "2026-10-07T11:00:00+02:00",
+   "title": "FEST 2026 - UDARNI TERMIN",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26978": {
+   "start": "2026-10-07T13:30:00+02:00",
+   "title": "FEST 2026 - DOBRO DOŠLI U HOUP",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26979": {
+   "start": "2026-10-07T16:30:00+02:00",
+   "title": "FEST 2026 - ROK BALADA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26980": {
+   "start": "2026-10-07T19:00:00+02:00",
+   "title": "FEST 2026 - DEBI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26981": {
+   "start": "2026-10-07T21:30:00+02:00",
+   "title": "FEST 2026 - TONI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26982": {
+   "start": "2026-10-08T11:00:00+02:00",
+   "title": "FEST 2026 - DEBI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26983": {
+   "start": "2026-10-08T13:30:00+02:00",
+   "title": "FEST 2026 - TONI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26984": {
+   "start": "2026-10-08T16:00:00+02:00",
+   "title": "FEST 2026 - 500 MILJA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26985": {
+   "start": "2026-10-08T19:00:00+02:00",
+   "title": "FEST 2026 - BUDI BOG S NAMA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26986": {
+   "start": "2026-10-08T21:30:00+02:00",
+   "title": "FEST 2026 - BREME",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26987": {
+   "start": "2026-10-09T11:00:00+02:00",
+   "title": "FEST 2026 - BUDI BOG S NAMA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26988": {
+   "start": "2026-10-09T13:30:00+02:00",
+   "title": "FEST 2026 - BREME",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26989": {
+   "start": "2026-10-09T16:00:00+02:00",
+   "title": "FEST 2026 - GEJL DOTRI I SEKS - PROPUSNICA ZA SLAVNE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26990": {
+   "start": "2026-10-09T19:00:00+02:00",
+   "title": "FEST 2026 - JA SAM ROKI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26991": {
+   "start": "2026-10-09T21:30:00+02:00",
+   "title": "FEST 2026 - OTPISANA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26992": {
+   "start": "2026-10-10T11:00:00+02:00",
+   "title": "FEST 2026 - ČUDOVIŠNA MIA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26993": {
+   "start": "2026-10-10T13:30:00+02:00",
+   "title": "FEST 2026 - JA SAM ROKI",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26994": {
+   "start": "2026-10-10T16:00:00+02:00",
+   "title": "FEST 2026 - OTPISANA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26995": {
+   "start": "2026-10-10T21:30:00+02:00",
+   "title": "FEST 2026 - HARMONIJA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26996": {
+   "start": "2026-10-11T11:00:00+02:00",
+   "title": "FEST 2026 - PROLEĆE U PARIZU",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26997": {
+   "start": "2026-10-11T16:00:00+02:00",
+   "title": "FEST 2026 - HARMONIJA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26998": {
+   "start": "2026-10-11T19:00:00+02:00",
+   "title": "FEST 2026 - SVEČANO ZATVARANJE - RAZUM I OSEĆAJNOST",
+   "venue": "sava_centar"
+  },
+  "sava_centar:26999": {
+   "start": "2026-10-11T21:30:00+02:00",
+   "title": "FEST 2026 - LJUBAVNIK OD PRUĆA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27033": {
+   "start": "2026-10-10T19:00:00+02:00",
+   "title": "FEST 2026 - RUKA PRAVDE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27034": {
+   "start": "2026-10-11T13:30:00+02:00",
+   "title": "FEST 2026 - FILM IZNENAĐENJA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27074": {
+   "start": "2026-11-26T20:30:00+01:00",
+   "title": "Magla bend",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27077": {
+   "start": "2026-09-30T20:00:00+02:00",
+   "title": "TOMA ZDRAVKOVIĆ - KONCERT SEĆANJA",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27109": {
+   "on_sale": "2026-09-23T11:31:07+02:00",
+   "start": "2026-10-24T20:00:00+02:00",
+   "title": "Bajaga & Instruktori",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27136": {
+   "start": "2026-12-20T15:00:00+01:00",
+   "title": "The Nutcracker",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27189": {
+   "on_sale": "2026-10-08T18:22:01+02:00",
+   "start": "2026-12-26T20:00:00+01:00",
+   "title": "SERGEJ ĆETKOVIĆ",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27234": {
+   "on_sale": "2026-09-25T12:08:05+02:00",
+   "start": "2027-03-20T20:00:00+01:00",
+   "title": "Crvena jabuka",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27273": {
+   "on_sale": "2026-09-28T17:17:29+02:00",
+   "start": "2026-10-31T15:00:00+01:00",
+   "title": "musical MOLIÈRE",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27298": {
+   "on_sale": "2026-10-05T17:52:14+02:00",
+   "start": "2026-11-10T10:00:00+01:00",
+   "title": "BCF Forum",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27301": {
+   "on_sale": "2026-09-29T17:39:49+02:00",
+   "start": "2026-11-11T20:30:00+01:00",
+   "title": "Magla bend",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27304": {
+   "on_sale": "2026-10-30T15:01:05+01:00",
+   "start": "2027-03-11T20:00:00+01:00",
+   "title": "Notre-Dame de Paris",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27306": {
+   "on_sale": "2026-09-30T15:35:23+02:00",
+   "start": "2026-12-14T20:00:00+01:00",
+   "title": "ŽELJKO SAMARDŽIĆ",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27314": {
+   "on_sale": "2026-10-08T18:22:01+02:00",
+   "start": "2026-12-31T21:00:00+01:00",
+   "title": "New Year 2027 - Džejla Ramović  i Dejan Vrana",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27369": {
+   "on_sale": "2026-10-07T10:32:04+02:00",
+   "start": "2027-10-07T20:00:00+02:00",
+   "title": "Marko Milošević",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27388": {
+   "on_sale": "2026-10-08T18:22:01+02:00",
+   "start": "2027-06-05T20:00:00+02:00",
+   "title": "ROGER WATERS PRESENTS LEGACY A PINK FLOYD TRIBUTE SHOW PERFORMED BY THE HARRY WATERS BAND",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27409": {
+   "on_sale": "2026-10-13T17:51:50+02:00",
+   "start": "2026-12-22T20:00:00+01:00",
+   "title": "Гала концерт Националног ансамбла „Коло\" - МЕЂА",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27415": {
+   "on_sale": "2026-10-09T18:05:22+02:00",
+   "start": "2026-11-30T20:30:00+01:00",
+   "title": "Magla bend",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27459": {
+   "on_sale": "2026-10-14T15:36:00+02:00",
+   "start": "2027-03-02T20:30:00+01:00",
+   "title": "Premijera filma \"Ruka pravde\"",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27770": {
+   "on_sale": "2026-10-23T16:54:25+02:00",
+   "start": "2027-02-14T20:00:00+01:00",
+   "title": "Slobodan Trkulja & Balkanopolis: Put svile III",
+   "venue": "sava_centar"
+  },
+  "sava_centar:27853": {
+   "on_sale": "2026-10-29T17:02:02+01:00",
+   "start": "2026-11-29T20:00:00+01:00",
+   "title": "Bajaga & Instruktori",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28135": {
+   "on_sale": "2026-10-30T15:01:05+01:00",
+   "start": "2027-02-23T20:00:00+01:00",
+   "title": "Thomas Anders from Modern Talking",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28138": {
+   "on_sale": "2026-10-30T15:01:05+01:00",
+   "start": "2027-03-12T20:00:00+01:00",
+   "title": "Notre-Dame de Paris",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28139": {
+   "on_sale": "2026-10-30T15:01:05+01:00",
+   "start": "2027-03-13T15:00:00+01:00",
+   "title": "Notre-Dame de Paris",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28140": {
+   "on_sale": "2026-10-30T15:01:05+01:00",
+   "start": "2027-03-13T20:00:00+01:00",
+   "title": "Notre-Dame de Paris",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28205": {
+   "on_sale": "2026-11-06T15:57:04+01:00",
+   "start": "2026-12-12T11:00:00+01:00",
+   "title": "SUCCESS DAY",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28221": {
+   "on_sale": "2026-11-09T21:38:59+01:00",
+   "start": "2026-12-08T09:00:00+01:00",
+   "title": "FMCG MasterClass - Da li razumemo svoj brend",
+   "venue": "sava_centar"
+  },
+  "terazije:1246": {
+   "low": "2026-09-23T19:49:06+02:00",
+   "sold_out": null,
+   "start": "2026-09-25T19:30:00+02:00",
+   "title": "MAMMA MIA!",
+   "venue": "terazije"
+  },
+  "terazije:1247": {
+   "low": null,
+   "start": "2026-09-26T19:30:00+02:00",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "venue": "terazije"
+  },
+  "terazije:1248": {
+   "start": "2026-09-27T19:30:00+02:00",
+   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
+   "venue": "terazije"
+  },
+  "terazije:1252": {
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-01T19:30:00+02:00",
+   "title": "ЗОНА ЗАМФИРОВА",
+   "venue": "terazije"
+  },
+  "terazije:1253": {
+   "low": "2026-10-01T00:58:47+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-02T19:30:00+02:00",
+   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
+   "venue": "terazije"
+  },
+  "terazije:1254": {
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-03T19:30:00+02:00",
+   "title": "ФАНТОМ ИЗ ОПЕРЕ",
+   "venue": "terazije"
+  },
+  "terazije:1255": {
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-04T19:30:00+02:00",
+   "title": "ФАНТОМ ИЗ ОПЕРЕ",
+   "venue": "terazije"
+  },
+  "terazije:1256": {
+   "low": "2026-10-06T18:43:57+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-08T19:30:00+02:00",
+   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
+   "venue": "terazije"
+  },
+  "terazije:1257": {
+   "low": "2026-10-06T18:43:57+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-09T19:30:00+02:00",
+   "title": "FLASHDANCE",
+   "venue": "terazije"
+  },
+  "terazije:1258": {
+   "low": "2026-10-04T20:05:18+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "sold_out": "2026-10-10T15:32:14+02:00",
+   "start": "2026-10-11T19:30:00+02:00",
+   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
+   "venue": "terazije"
+  },
+  "terazije:1259": {
+   "low": "2026-10-02T17:42:16+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "sold_out": "2026-10-13T17:51:50+02:00",
+   "start": "2026-10-13T19:30:00+02:00",
+   "title": "MAMMA MIA!",
+   "venue": "terazije"
+  },
+  "terazije:1260": {
+   "low": "2026-10-17T15:36:38+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-17T19:30:00+02:00",
+   "title": "ПРОДУЦЕНТИ",
+   "venue": "terazije"
+  },
+  "terazije:1261": {
+   "low": "2026-10-05T17:52:14+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "sold_out": "2026-10-17T21:12:11+02:00",
+   "start": "2026-10-18T19:30:00+02:00",
+   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
+   "venue": "terazije"
+  },
+  "terazije:1262": {
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-21T19:30:00+02:00",
+   "title": "МИСТЕР ДОЛАР",
+   "venue": "terazije"
+  },
+  "terazije:1263": {
+   "low": "2026-09-26T16:20:20+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "sold_out": "2026-10-10T20:26:05+02:00",
+   "start": "2026-10-23T19:30:00+02:00",
+   "title": "MAMMA MIA!",
+   "venue": "terazije"
+  },
+  "terazije:1264": {
+   "low": "2026-10-02T17:42:16+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "sold_out": "2026-10-19T14:58:52+02:00",
+   "start": "2026-10-24T19:30:00+02:00",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "venue": "terazije"
+  },
+  "terazije:1265": {
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-27T19:30:00+01:00",
+   "title": "ЗОНА ЗАМФИРОВА",
+   "venue": "terazije"
+  },
+  "terazije:1266": {
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-28T19:30:00+01:00",
+   "title": "BRODVEJSKE VRAGOLIJE",
+   "venue": "terazije"
+  },
+  "terazije:1267": {
+   "low": "2026-10-16T14:16:40+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-29T19:30:00+01:00",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "venue": "terazije"
+  },
+  "terazije:1268": {
+   "low": "2026-10-08T10:48:32+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "sold_out": "2026-10-13T17:51:50+02:00",
+   "start": "2026-10-30T19:30:00+01:00",
+   "title": "FLASHDANCE",
+   "venue": "terazije"
+  },
+  "terazije:1269": {
+   "low": "2026-10-22T06:27:22+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "start": "2026-10-31T19:30:00+01:00",
+   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
+   "venue": "terazije"
+  },
+  "terazije:1270": {
+   "low": "2026-10-08T23:58:54+02:00",
+   "on_sale": "2026-09-25T01:50:54+02:00",
+   "sold_out": "2026-10-22T21:10:39+02:00",
+   "start": "2026-11-01T19:30:00+01:00",
+   "title": "ФАНТОМ ИЗ ОПЕРЕ",
+   "venue": "terazije"
+  },
+  "terazije:1271": {
+   "instant": true,
+   "sold_out": "2026-10-19T14:58:52+02:00",
+   "start": "2026-11-07T19:00:00+01:00",
+   "title": "МИСТЕР ДОЛАР",
+   "venue": "terazije"
+  },
+  "terazije:1272": {
+   "low": "2026-10-26T20:09:35+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "sold_out": "2026-11-02T03:25:41+01:00",
+   "start": "2026-11-04T19:30:00+01:00",
+   "title": "ФАНТОМ ИЗ ОПЕРЕ",
+   "venue": "terazije"
+  },
+  "terazije:1273": {
+   "low": "2026-10-29T17:02:02+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-05T19:30:00+01:00",
+   "title": "MAMMA MIA!",
+   "venue": "terazije"
+  },
+  "terazije:1274": {
+   "low": "2026-10-23T21:04:25+02:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-06T19:30:00+01:00",
+   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
+   "venue": "terazije"
+  },
+  "terazije:1275": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-10T19:30:00+01:00",
+   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
+   "venue": "terazije"
+  },
+  "terazije:1276": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-12T19:30:00+01:00",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "venue": "terazije"
+  },
+  "terazije:1277": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-13T19:30:00+01:00",
+   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
+   "venue": "terazije"
+  },
+  "terazije:1278": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-14T19:30:00+01:00",
+   "title": "FLASHDANCE",
+   "venue": "terazije"
+  },
+  "terazije:1279": {
+   "low": "2026-10-28T14:13:08+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-17T19:30:00+01:00",
+   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
+   "venue": "terazije"
+  },
+  "terazije:1280": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-19T19:30:00+01:00",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "venue": "terazije"
+  },
+  "terazije:1281": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-20T19:30:00+01:00",
+   "title": "ПРОДУЦЕНТИ",
+   "venue": "terazije"
+  },
+  "terazije:1282": {
+   "low": "2026-11-03T18:45:04+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-22T19:30:00+01:00",
+   "title": "FLASHDANCE",
+   "venue": "terazije"
+  },
+  "terazije:1283": {
+   "low": "2026-11-04T18:57:22+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-24T19:30:00+01:00",
+   "title": "BRODVEJSKE VRAGOLIJE",
+   "venue": "terazije"
+  },
+  "terazije:1284": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-25T19:30:00+01:00",
+   "title": "ЖЕНЕ НА ИВИЦИ НЕРВНОГ СЛОМА",
+   "venue": "terazije"
+  },
+  "terazije:1285": {
+   "low": "2026-10-31T15:43:53+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-27T19:30:00+01:00",
+   "title": "MAMMA MIA!",
+   "venue": "terazije"
+  },
+  "terazije:1286": {
+   "low": "2026-11-06T15:57:04+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-28T19:30:00+01:00",
+   "title": "ЗОНА ЗАМФИРОВА",
+   "venue": "terazije"
+  },
+  "terazije:1287": {
+   "low": "2026-11-01T16:02:13+01:00",
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-11-29T19:30:00+01:00",
+   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
+   "venue": "terazije"
+  },
+  "terazije:1288": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-12-03T19:30:00+01:00",
+   "title": "МИСТЕР ДОЛАР",
+   "venue": "terazije"
+  },
+  "terazije:1289": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-12-04T19:30:00+01:00",
+   "title": "MAMMA MIA!",
+   "venue": "terazije"
+  },
+  "terazije:1290": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-12-05T20:00:00+01:00",
+   "title": "А ЧИМЕ СЕ ТИ БАВИШ?",
+   "venue": "terazije"
+  },
+  "terazije:1291": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-12-06T19:30:00+01:00",
+   "title": "БАЛКАН ЕКСПРЕС",
+   "venue": "terazije"
+  },
+  "terazije:1292": {
+   "on_sale": "2026-10-23T01:12:55+02:00",
+   "start": "2026-12-05T17:00:00+01:00",
+   "title": "THE ATELIER OF WONDER",
+   "venue": "terazije"
+  },
+  "terazije:1293": {
+   "on_sale": "2026-11-09T21:38:59+01:00",
+   "start": "2026-11-30T19:30:00+01:00",
+   "title": "Фестивал фолклора - ДЕВЕТ ВЕЛИЧАНСТВЕНИХ",
+   "venue": "terazije"
+  },
+  "terazije:1294": {
+   "on_sale": "2026-11-09T21:38:59+01:00",
+   "start": "2026-12-07T19:30:00+01:00",
+   "title": "Фестивал фолклора - ДЕВЕТ ВЕЛИЧАНСТВЕНИХ",
+   "venue": "terazije"
+  },
+  "terazije:1295": {
+   "on_sale": "2026-11-09T21:38:59+01:00",
+   "start": "2026-12-14T19:30:00+01:00",
+   "title": "Фестивал фолклора - ДЕВЕТ ВЕЛИЧАНСТВЕНИХ",
+   "venue": "terazije"
+  }
+ },
+ "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-09T21:38:59+01:00",
-  "jdp": "2026-11-09T21:38:59+01:00",
-  "kolarac": "2026-11-09T21:38:59+01:00",
-  "madlenianum": "2026-11-09T21:38:59+01:00",
-  "madlenianum_tickets": "2026-11-09T21:38:59+01:00",
-  "narodno": "2026-11-09T21:38:59+01:00",
-  "sava_centar": "2026-11-09T21:38:59+01:00",
-  "terazije": "2026-11-09T21:38:59+01:00"
+  "bdp": "2026-11-09T23:13:37+01:00",
+  "jdp": "2026-11-09T23:13:37+01:00",
+  "kolarac": "2026-11-09T23:13:37+01:00",
+  "madlenianum": "2026-11-09T23:13:37+01:00",
+  "madlenianum_tickets": "2026-11-09T23:13:37+01:00",
+  "narodno": "2026-11-09T23:13:37+01:00",
+  "sava_centar": "2026-11-09T23:13:37+01:00",
+  "terazije": "2026-11-09T23:13:37+01:00"
  },
  "season": {
   "live": {
@@ -6494,7 +9015,7 @@
   "released": {},
   "reported": {}
  },
- "telegram_offset": 597987115,
+ "telegram_offset": 597987116,
  "watch_imported": [],
  "watchlist": []
 }
