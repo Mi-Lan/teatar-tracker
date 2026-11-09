@@ -20,7 +20,7 @@ in `data/state.json`, committed by the workflow.
 
 | Venue key | Site | Method | Availability |
 |---|---|---|---|
-| `narodno` | narodnopozoriste.rs | HTML scrape | **exact tickets left** |
+| `narodno` | narodnopozoriste.rs | HTML scrape | on sale / <10% left / sold out (exact counts only until Oct 2026; now behind a login) |
 | `bdp` | bdp.rs (Велика сцена only) | Webflow HTML + Sixtix API | on sale / not yet / sold out |
 | `jdp` | jdp.rs | WordPress AJAX API | on sale / <10% left / sold out |
 | `sava_centar`, `madlenianum_tickets`, `kolarac` | tickets.rs | JSON API | listed = on sale |
@@ -84,7 +84,7 @@ left" flapping from returned tickets is ignored), and keeps that for `selling.hi
 `selling.fast_hours` of going on sale (default 48 h), or was already sold out the first time it was seen, at least
 `selling.min_days_before` before the show. 🔴 marks plays that sell out more slowly.
 
-Where sell-outs can be seen: Narodno (ticket counts, "распродато"), JDP and Terazije (sold out / under 10% left),
+Where sell-outs can be seen: Narodno, JDP and Terazije (sold out / under 10% left),
 BDP (sold-out flag), and the tickets.rs venues ("rasprodato"). Madlenianum's own site shows no availability. Sales
 that close on the day of the show are not counted as sell-outs. Times are only as precise as the gap between checks.
 

@@ -25,8 +25,21 @@ def test_narodno_agenda_layout():
     assert bozji.subtitle == "по мотивима прозе Борисава Станковића"
     assert by_id["6343"].status == Status.SOLD_OUT  # explicit РАСПРОДАТО button
     counts = {s: sum(p.status == s for p in perfs) for s in Status}
-    assert counts[Status.ON_SALE] == 85 and counts[Status.SOLD_OUT] == 1 and counts[Status.NOT_ON_SALE] == 4
+    assert counts[Status.ON_SALE] == 85 and counts[Status.SOLD_OUT] == 1 and counts[Status.NOT_ON_SALE] == 3
     assert {p.start.year for p in perfs} == {2026, 2027}
+    nutcracker = by_id["6378"]  # cancelled: no title link, "ОТКАЗАНО" on the image
+    assert nutcracker.title == "Крцко Орашчић" and nutcracker.status == Status.CANCELLED
+
+
+def test_narodno_without_ticket_counts():
+    """Since 2026-10-15 the Buy button has no count; "under 10% free" marks a date running low."""
+    perfs = narodno.parse(read("narodno_repertoar_2026_11.html"), today=date(2026, 11, 9))
+    assert len(perfs) == 69 and all(p.title != "?" for p in perfs)
+    counts = {s: sum(p.status == s for p in perfs) for s in Status}
+    assert (counts[Status.ON_SALE], counts[Status.LOW], counts[Status.SOLD_OUT], counts[Status.CANCELLED], counts[Status.NOT_ON_SALE]) == (52, 7, 6, 1, 3)
+    low = [p for p in perfs if p.status == Status.LOW]
+    assert {p.title for p in low} == {"Власт", "Сумњиво лице", "Балкански шпијун", "Крцко Орашчић"}
+    assert all(p.buy_url and p.available is None for p in low)
 
 
 def test_narodno_legacy_layout():
