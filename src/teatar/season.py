@@ -7,7 +7,7 @@ self-contained status: per theatre, is next month out, and how many dates have t
 
 After every scan, `track` also looks for a *release*: a theatre whose next month just got its first
 tickets, or any theatre that put out a batch of new dates / opened sales for many dates at once
-(`release_season.batch_min`, default 5). Each release is messaged right away with *when* it
+(`release_season.batch_min`, default 1: any new date). Each release is messaged right away with *when* it
 happened, pinned down between the previous check that didn't see it and the one that did, and is
 kept in state.release_log. `recent` (the /new command) lists what came out in the last days.
 """
@@ -126,21 +126,22 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
     """Call after every scan: notices (and messages) the moment a theatre releases tickets.
 
     A release is next month's first tickets at a theatre, a batch of at least
-    `release_season.batch_min` new dates / sales openings in one check, or any new tickets at a
+    `release_season.batch_min` new dates / sales openings in one check (default 1), or any new tickets at a
     venue with a known release around now (/release, releases.yaml). The time is bracketed by this
     check and the previous one of that venue (state.scanned).
 
-    New dates (or sales opening) for a play that sells out fast are messaged too, even alone
-    (`selling.alert`), unless the release message or a watchlist alert already showed them.
+    With a `batch_min` above 1, smaller batches still get a message when they include a play you
+    /watch or one that sells out fast (`selling.alert`).
     """
     s = _season(ctx)
     target = s["month"]
     stamp = now().isoformat(timespec="seconds")
-    batch_min = int(ctx.cfg.get("release_season", "batch_min", 5))
+    batch_min = int(ctx.cfg.get("release_season", "batch_min", 1))
     hot = rel.hot_venues(ctx.state, ctx.cfg)
     batches, found = _batches(changes or [])
     fast = sales.fast_plays(ctx.state, ctx.cfg)
-    fast_alerts = ctx.cfg.get("selling", "alert", True) and ctx.cfg.get("alerts", "instant", "releases_and_watchlist") != "all"
+    send_all = ctx.cfg.get("alerts", "instant", "releases_and_watchlist") == "all"  # then process() sent every change
+    fast_alerts = ctx.cfg.get("selling", "alert", True)
     for venue in sorted(scanned_venues & set(ctx.cfg.venues)):
         after = ctx.state.scanned.get(venue)
         c = _counts(_month_perfs(ctx, venue, target))
@@ -168,15 +169,15 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
                 entries.append(entry)
                 if month == target and venue not in s["released"] and _is_out(mc):
                     s["released"][venue] = {"after": after, "by": stamp}
-            key = f"drop:{venue}:{stamp[:10]}"
-            if not ctx.state.was_notified(key):  # one message per theatre per day; later batches are only logged
-                ctx.state.mark_notified(key)
-                ctx.tg.send_all(release_message(ctx, venue, entries, [ch.perf for ch in found.get(venue, [])], fast))
-                continue
-        if fast_alerts:
-            hot_perfs = [ch.perf for ch in found.get(venue, []) if not ch.watched and sales.lookup(fast, ch.perf)]
-            if hot_perfs:
-                ctx.tg.send_all(fast_message(ctx, venue, hot_perfs, after, stamp, fast))
+            # one message per theatre per check, listing just what this check found (each date is only ever
+            # reported once, so a release that trickles in over several checks never repeats a date)
+            ctx.tg.send_all(release_message(ctx, venue, entries, found.get(venue, []), fast, first=transition))
+            continue
+        if send_all:
+            continue
+        follow = [ch for ch in found.get(venue, []) if ch.watched or (fast_alerts and sales.lookup(fast, ch.perf))]
+        if follow:
+            ctx.tg.send_all(fast_message(ctx, venue, follow, after, stamp, fast))
 
 
 def span(after: str | None, by: str) -> str:
@@ -223,15 +224,21 @@ def appeared(after: str | None, by: str) -> str:
     return f"Appeared {datetime.fromisoformat(by):%d.%m.} {span(after, by)}"
 
 
-def plays_list(perfs: list[Performance], fast: dict[str, sales.Play]) -> list[str]:
-    """One block per play (see fmt.play_block): plays that sell out fast first, then by first date."""
+def plays_list(perfs: list[Performance], fast: dict[str, sales.Play], watched: set[str] | None = None) -> list[str]:
+    """One block per play (see fmt.play_block): ⭐ plays you watch and 🔥 plays that sell out fast first,
+    then by first date."""
+    watched = watched or set()
     groups = sales.by_play(perfs)
     multi_stage = len({p.stage for p in perfs if p.stage}) > 1
-    order = sorted(groups.values(), key=lambda ps: (sales.lookup(fast, ps[0]) is None, ps[0].start))
+
+    def flagged(ps):
+        return any(p.uid in watched for p in ps) or sales.lookup(fast, ps[0]) is not None
+
     blocks = []
-    for ps in order:
+    for ps in sorted(groups.values(), key=lambda ps: (not flagged(ps), ps[0].start)):
         play = sales.lookup(fast, ps[0])
-        blocks.append(fmt.play_block(ps, play.mark if play else "", play.note if play else "", multi_stage))
+        mark = ("⭐" if any(p.uid in watched for p in ps) else "") + (play.mark if play else "")
+        blocks.append(fmt.play_block(ps, mark, play.note if play else "", multi_stage))
     return blocks
 
 
@@ -240,10 +247,15 @@ def _footer(ctx: Ctx, venue: str) -> str:
     return " · ".join(p for p in parts if p)
 
 
-def release_message(ctx: Ctx, venue: str, entries: list[dict], perfs: list[Performance] | None = None, fast: dict | None = None) -> list[str]:
-    """The release message: what came out (per month), when, every play with its dates (each linked to
-    its tickets), 🔥 on plays that sell out fast, and a link to the theatre's site."""
-    perfs = perfs or []
+def release_message(
+    ctx: Ctx, venue: str, entries: list[dict], found: list[Change] | None = None, fast: dict | None = None, first: bool = False,
+) -> list[str]:
+    """The release message: what came out (per month), when, every new play and date (each linked to
+    its tickets), ⭐ on plays you watch, 🔥 on plays that sell out fast, and a link to the theatre's site.
+    `first`: next month's first tickets at this theatre ("tickets for December are out")."""
+    found = found or []
+    perfs = [ch.perf for ch in found]
+    watched = {ch.perf.uid for ch in found if ch.watched}
     fast = fast if fast is not None else sales.fast_plays(ctx.state, ctx.cfg)
     name = escape(ctx.cfg.venue_name(venue))
     on_sale = sum(e["on_sale"] for e in entries)
@@ -253,7 +265,7 @@ def release_message(ctx: Ctx, venue: str, entries: list[dict], perfs: list[Perfo
             head = f"📋 <b>{name}</b> · new dates listed (check tickets on their site)"
         else:
             head = f"📋 <b>{name}</b> · new dates listed, tickets not on sale yet"
-    elif len(entries) == 1 and entries[0]["month"] == target:
+    elif first:
         head = f"🎟 <b>{name}</b> · tickets for <b>{month_name(target)}</b> are out"
     else:
         head = f"🎟 <b>{name}</b> · new tickets out"
@@ -262,23 +274,31 @@ def release_message(ctx: Ctx, venue: str, entries: list[dict], perfs: list[Perfo
     hot = sum(1 for ps in sales.by_play(perfs).values() if sales.lookup(fast, ps[0]))
     if hot:
         lines.append(f"🔥 {hot} of them sell{'s' if hot == 1 else ''} out fast: get tickets early")
-    blocks = plays_list(perfs, fast)
+    blocks = plays_list(perfs, fast, watched)
     if blocks:
         blocks[0] = "\n" + blocks[0]
     return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued")
 
 
-def fast_message(ctx: Ctx, venue: str, perfs: list[Performance], after: str | None, by: str, fast: dict) -> list[str]:
-    """New dates, or tickets going on sale, for plays that sell out fast (outside a release message)."""
+def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, by: str, fast: dict) -> list[str]:
+    """New dates, or tickets going on sale, for plays you watch or that sell out fast, when the check's
+    batch was too small for a release message (release_season.batch_min above 1)."""
+    perfs = [ch.perf for ch in found]
+    watched = {ch.perf.uid for ch in found if ch.watched}
     name = escape(ctx.cfg.venue_name(venue))
-    on_sale = sum(p.status.buyable for p in perfs)
-    what = "tickets on sale" if on_sale else "new dates (not on sale yet)"
+    what = "tickets on sale" if any(p.status.buyable for p in perfs) else "new dates (not on sale yet)"
+    plural = len(sales.by_play(perfs)) > 1
+    if all(p.uid in watched for p in perfs):
+        icon, whom = "⭐", "plays you watch" if plural else "a play you watch"
+    elif not watched:
+        icon, whom = "🔥", "plays that sell out fast" if plural else "a play that sells out fast"
+    else:
+        icon, whom = "⭐", "plays you follow"
     n = len(perfs)
-    head = f"🔥 <b>{name}</b> · {what} for a play that sells out fast" if len(sales.by_play(perfs)) == 1 else f"🔥 <b>{name}</b> · {what} for plays that sell out fast"
-    lines = [head, f"{n} date{'s' if n != 1 else ''} · {appeared(after, by)}"]
-    blocks = plays_list(perfs, fast)
+    lines = [f"{icon} <b>{name}</b> · {what} for {whom}", f"{n} date{'s' if n != 1 else ''} · {appeared(after, by)}"]
+    blocks = plays_list(perfs, fast, watched)
     blocks[0] = "\n" + blocks[0]
-    return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"🔥 <b>{name}</b> · continued")
+    return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued")
 
 
 # --- the 20th–27th status -------------------------------------------------------------------------------

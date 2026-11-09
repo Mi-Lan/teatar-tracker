@@ -10,10 +10,11 @@ digest:  # the scheduled overview: everything until the end of next month
 release_season:  # most theatres publish next month and open sales between these days
   days: [20, 27]  # on each of these days: a "tickets for next month" status per theatre…
   times: []  # …at these times, e.g. ["00:05", "08:00"]. Empty: no scheduled status; /tickets shows it on demand.
-  # A release is messaged the moment it is seen, any day of the month: next month's first tickets at a
-  # theatre, at least this many new dates / sales openings at one theatre in a single check, or any new
-  # tickets at a theatre with a known release around now (/release, releases.yaml).
-  batch_min: 5
+  # New tickets are messaged the moment they are seen, any day of the month: one message per theatre per
+  # check, listing just the dates that came out (or went on sale) since the previous check. batch_min: how many
+  # such dates one check needs before it is messaged (1 = every new date; next month's first tickets and
+  # anything around a known release time are always messaged).
+  batch_min: 1
 
 alerts:
   # What is messaged immediately, besides releases (always). "releases_and_watchlist": only plays on
