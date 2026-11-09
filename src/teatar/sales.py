@@ -9,7 +9,8 @@ A record: {"venue", "title", "start",
            "on_sale":  when it was first seen on sale (missing when that isn't known),
            "low":      when it was first seen running low,
            "sold_out": when it was first seen sold out (null: sold out, time unknown),
-           "instant":  true when it sold out before it was ever seen on sale}
+           "instant":  true when it sold out before it was ever seen on sale,
+           "counts":   [[when, seats free], …] from exact seat counts (Narodno, about daily), "seats": total}
 Times are the checks that saw the change, so they are as precise as the gap between checks.
 "on_sale" is unknown for dates that were already on sale in a theatre's first scan (or before this
 history existed). Statuses flap as tickets are returned (sold out ↔ few left); only the first
@@ -46,6 +47,11 @@ def observe(state: State, venue: str, perfs: list[Performance], old: dict[str, d
                 continue  # not on sale yet: nothing to record
             r = state.sales[p.uid] = _new_record(state, venue, p, old.get(p.uid), stamp, baseline)
         r["title"], r["start"] = p.title, p.start.isoformat()  # dates and spellings can change
+        if (counted := p.extra.get("counted_at")) and p.available is not None:  # an exact seat count (Narodno, daily)
+            counts = r.setdefault("counts", [])
+            if not counts or counts[-1][0] != counted:
+                counts.append([counted, p.available])
+                r["seats"] = p.extra.get("seats")
         if p.status == Status.LOW and "low" not in r:
             r["low"] = stamp
         if p.status == Status.SOLD_OUT and "sold_out" not in r:

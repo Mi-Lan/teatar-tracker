@@ -9,8 +9,13 @@ exact number of tickets left ("Купи [ 271 ]"), which is still read when pres
 
 Exact counts now: each date's ticket page (/ulaznice/odabir-ulaznica?p=<id>) is server-rendered with
 every seat as <button class="np-seat …">, sold ones carrying `prodato`. It needs a login, so with
-NARODNO_EMAIL / NARODNO_PASSWORD set (GitHub secrets) a full check logs in once and reads the ticket
-page of every on-sale date: GET only, nothing is selected or held. Burst polls (poll()) skip this.
+NARODNO_EMAIL / NARODNO_PASSWORD set (GitHub secrets) the tracker logs in only when a count is due
+(`seat_counts` in venues.yaml) and reads ticket pages with GET only: nothing is selected or held.
+  - once a day, at the first check after `daily_at` (09:00): every on-sale date;
+  - after a release: dates first seen at least `after_release_minutes` (90) ago and never counted,
+    i.e. at the next regular check (the release message itself goes out at once, from the listing).
+Other checks don't log in; the last counts are carried over (shown as ~N once they're a few hours old).
+Each count is also kept in the date's sell-out history (sales.py), so how fast seats go is on record.
 """
 
 from __future__ import annotations
@@ -18,12 +23,12 @@ from __future__ import annotations
 import logging
 import os
 import re
-from datetime import date
+from datetime import date, datetime, time, timedelta
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, Tag
 
-from ..models import Performance, Status
+from ..models import Performance, Status, now
 from ..registry import register
 from ..textnorm import month_number
 from .base import Adapter, at, infer_year, upcoming
@@ -117,9 +122,10 @@ def count_seats(html: str) -> tuple[int, int] | None:
     return len(seats), free
 
 
-def apply_seats(p: Performance, seats: int, free: int) -> None:
+def apply_seats(p: Performance, seats: int, free: int, counted_at: str) -> None:
     p.available = free
     p.extra["seats"] = seats
+    p.extra["counted_at"] = counted_at
     if free == 0:
         p.status = Status.SOLD_OUT
     elif p.status == Status.ON_SALE and free < seats / 10:
@@ -129,26 +135,49 @@ def apply_seats(p: Performance, seats: int, free: int) -> None:
 @register("narodno_html")
 class NarodnoAdapter(Adapter):
     method = "html"
+    uses_previous = True
     warning = ""  # set when seat counts couldn't be read; the runner reports it like a failing site
 
     def fetch(self) -> list[Performance]:
         perfs = self.poll()
         self.warning = ""
-        if os.environ.get("NARODNO_EMAIL") and os.environ.get("NARODNO_PASSWORD"):
+        due = self.counts_due(perfs)
+        if due and os.environ.get("NARODNO_EMAIL") and os.environ.get("NARODNO_PASSWORD"):
             try:
-                self._seat_counts(perfs)
-            except Exception as exc:  # the listing alone is still good
+                self._seat_counts(due)
+            except Exception as exc:  # the listing (and the carried-over counts) are still good
                 log.warning("narodno seat counts failed: %s", exc)
                 self.warning = f"seat counts: {type(exc).__name__}: {exc}"
         return perfs
 
     def poll(self) -> list[Performance]:
-        """The repertoire listing only (no seat pages): used for the 30-second polls around a release."""
+        """The repertoire listing, with the last seat counts carried over (no login): every regular check,
+        and the 30-second polls around a release."""
         html = self.http.get(f"{BASE}/repertoar").text
         perfs = parse(html, self.key)
         if not perfs:  # the repertoire is never empty: treat it as a layout change
             raise RuntimeError("no performances parsed from /repertoar (page layout changed?)")
-        return upcoming(perfs)
+        perfs = upcoming(perfs)
+        for p in perfs:
+            o = self.previous.get(p.uid)
+            if o and o.extra.get("counted_at") and o.available is not None and p.available is None and p.status.buyable:
+                apply_seats(p, o.extra["seats"], o.available, o.extra["counted_at"])
+        return perfs
+
+    def counts_due(self, perfs: list[Performance]) -> list[Performance]:
+        """On-sale dates to count now: all of them once a day, else new ones since the last release."""
+        opts = self.options.get("seat_counts") or {}
+        t = now()
+        daily = datetime.combine(t.date(), time.fromisoformat(str(opts.get("daily_at", "09:00"))), t.tzinfo)
+        after = timedelta(minutes=int(opts.get("after_release_minutes", 90)))
+        buyable = [p for p in perfs if p.status.buyable and p.buy_url]
+        last = max((o.extra.get("counted_at", "") for o in self.previous.values()), default="")
+        if t >= daily and last < daily.isoformat():
+            return buyable
+        return [
+            p for p in buyable
+            if "counted_at" not in p.extra and (seen := self.first_seen.get(p.uid)) and t - datetime.fromisoformat(seen) >= after
+        ]
 
     def _login(self) -> None:
         page = BeautifulSoup(self.http.get(LOGIN_PAGE).text, "lxml")
@@ -164,8 +193,6 @@ class NarodnoAdapter(Adapter):
     def _seat_counts(self, perfs: list[Performance]) -> None:
         self._login()
         for p in perfs:
-            if not (p.status.buyable and p.buy_url):
-                continue
             resp = self.http.get(p.buy_url)
             if "prijavi-se" in str(resp.url):  # session dropped: log in again, once
                 self._login()
@@ -173,4 +200,4 @@ class NarodnoAdapter(Adapter):
                 if "prijavi-se" in str(resp.url):
                     raise RuntimeError("still sent to the login page after logging in")
             if counted := count_seats(resp.text):
-                apply_seats(p, *counted)
+                apply_seats(p, *counted, now().isoformat(timespec="seconds"))
