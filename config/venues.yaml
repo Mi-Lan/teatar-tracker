@@ -1,7 +1,7 @@
 # Every source the tracker checks. Keys are the short venue ids used in commands and state.
 #
 # adapter: which lookup method to use (see src/teatar/adapters/*):
-#   narodno_html        HTML scrape, exact ticket counts
+#   narodno_html        HTML scrape: on sale / under 10% left / sold out
 #   bdp_webflow_sixtix  Webflow HTML catalog + Sixtix on-sale API
 #   jdp_wp_ajax         WordPress AJAX month feed
 #   tickets_rs          tickets.rs JSON API (any venue: just set its slug)

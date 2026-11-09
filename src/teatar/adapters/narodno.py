@@ -1,7 +1,12 @@
-"""Narodno pozorište u Beogradu: server-rendered HTML, exact ticket counts on the Buy button.
+"""Narodno pozorište u Beogradu: server-rendered HTML.
 
 Two layouts are understood: the agenda redesign (article.np-agenda-item, since 2026-09-23) and
 the older list (div.repertoarwide-entry). Whichever the page contains is parsed.
+
+Availability: a "Купи" button = on sale; "Мање од 10% слободних места" next to it = running low;
+"РАСПРОДАТО" = sold out; "ОТКАЗАНО" = cancelled. Until 2026-10-15 the Buy button also carried the
+exact number of tickets left ("Купи [ 271 ]"), which is still read when present; since then that
+number is only on the ticket page, which needs a login.
 """
 
 from __future__ import annotations
@@ -31,9 +36,11 @@ def _agenda_fields(e: Tag) -> dict:
     desc = _txt(e.select_one(".np-agenda-description")).strip("· ").strip()
     return {
         "day": day, "month": month, "time": _txt(e.select_one(".np-agenda-time")),
-        "stage": _txt(e.select_one(".np-agenda-stage")), "link": e.select_one("h2 a"),
+        "stage": _txt(e.select_one(".np-agenda-stage")), "link": e.select_one("h2 a"), "heading": e.select_one("h2"),
         "subtitle": " · ".join(x for x in [_txt(e.select_one(".np-writer")), desc] if x),
         "actions": e.select_one(".np-agenda-actions"),
+        # cancelled dates lose their links and get a label on the image, outside the actions
+        "cancelled": "is-cancelled" in (e.get("class") or []) or "отказан" in _txt(e.select_one(".np-agenda-status")).lower(),
     }
 
 
@@ -45,7 +52,8 @@ def _legacy_fields(e: Tag) -> dict:
     return {
         "day": day, "month": _txt(date_el.select_one(".mesec")) if date_el else "", "time": meta,
         "stage": meta.split("·", 1)[1].strip() if "·" in meta else "", "link": e.select_one(".entry-title h4 a"),
-        "subtitle": " · ".join(x for x in [_txt(em), _txt(note)] if x), "actions": e,
+        "heading": e.select_one(".entry-title h4"),
+        "subtitle": " · ".join(x for x in [_txt(em), _txt(note)] if x), "actions": e, "cancelled": False,
     }
 
 
@@ -65,7 +73,7 @@ def parse(html: str, venue: str = "narodno", today: date | None = None) -> list[
         perf = Performance(
             venue=venue,
             source_id=rep_id,
-            title=_txt(link) or "?",
+            title=_txt(link) or _txt(f["heading"]) or "?",
             subtitle=f["subtitle"],
             start=at(infer_year(month, int(day.group()), today), time_m.group() if time_m else None),
             stage=f["stage"],
@@ -80,10 +88,11 @@ def parse(html: str, venue: str = "narodno", today: date | None = None) -> list[
             count = re.search(r"\d+", buy.get("title", "") or buy.get_text())
             perf.buy_url = urljoin(BASE, buy["href"])
             perf.available = int(count.group()) if count else None
-            perf.status = Status.SOLD_OUT if perf.available == 0 else Status.ON_SALE
+            low = (actions.select_one(".np-ticket-low-stock") if actions else None) or "мање од" in blob
+            perf.status = Status.SOLD_OUT if perf.available == 0 else Status.LOW if low else Status.ON_SALE
         elif "распродат" in blob or "rasprodat" in blob or (actions and actions.select_one(".np-ticket-button--sold")):
             perf.status = Status.SOLD_OUT
-        if "отказан" in blob or "otkazan" in blob:
+        if f["cancelled"] or "отказан" in blob or "otkazan" in blob:
             perf.status = Status.CANCELLED
         perfs.append(perf)
     return perfs
