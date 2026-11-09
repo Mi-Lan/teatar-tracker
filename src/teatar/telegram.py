@@ -12,10 +12,24 @@ import httpx
 log = logging.getLogger(__name__)
 
 
+def chat_ids(*values: str | int | None) -> list[str]:
+    """Chat ids from one or more values, each a single id or a comma/space-separated list; in order, no repeats."""
+    out: list[str] = []
+    for v in values:
+        for part in re.split(r"[,\s]+", str(v or "").strip()):
+            if part and part not in out:
+                out.append(part)
+    return out
+
+
 class Telegram:
-    def __init__(self, token: str, chat_id: str | int):
+    """Every notification goes to all `recipients` (TELEGRAM_CHAT_ID plus TELEGRAM_EXTRA_CHAT_IDS);
+    any of them can send commands, and the reply goes to whoever asked."""
+
+    def __init__(self, token: str, chat_id: str | int, extra: str | list | None = None):
         self.base = f"https://api.telegram.org/bot{token}"
-        self.chat_id = str(chat_id)
+        self.recipients = chat_ids(chat_id, *(extra if isinstance(extra, list) else [extra]))
+        self.chat_id = self.recipients[0]  # the owner
         self.client = httpx.Client(timeout=40)
         self._last_send = 0.0
 
@@ -33,10 +47,21 @@ class Telegram:
         raise RuntimeError(f"Telegram {method}: too many retries")
 
     def send(self, text: str, chat_id: str | None = None) -> None:
+        """Send to `chat_id`, or to every recipient when it's None. A recipient who can't be reached
+        (e.g. blocked the bot) is logged and skipped; only a failure for the owner is an error."""
+        for chat in [str(chat_id)] if chat_id is not None else self.recipients:
+            try:
+                self._send_one(text, chat)
+            except (RuntimeError, httpx.HTTPError):
+                if chat == self.chat_id:
+                    raise
+                log.warning("could not message chat %s", chat, exc_info=True)
+
+    def _send_one(self, text: str, chat_id: str) -> None:
         wait = self._last_send + 1.1 - time.monotonic()  # stay under 1 msg/s per chat
         if wait > 0:
             time.sleep(wait)
-        params = {"chat_id": chat_id or self.chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
+        params = {"chat_id": chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
         try:
             self._call("sendMessage", **params)
         except RuntimeError as exc:
@@ -60,6 +85,7 @@ class DryRun:
     """Stand-in used when no bot token is configured: prints messages instead of sending."""
 
     chat_id = "dry-run"
+    recipients = ["dry-run"]
 
     def send(self, text: str, chat_id: str | None = None) -> None:
         plain = unescape(re.sub(r"<(?!/?(b|i|u)>)[^>]+>", "", text))

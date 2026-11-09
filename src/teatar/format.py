@@ -57,11 +57,16 @@ def link(p: Performance) -> str:
     return ""
 
 
+def domain(url: str) -> str:
+    """'https://www.jdp.rs/rs/…' -> 'jdp.rs'."""
+    return urlparse(url).netloc.removeprefix("www.") or url
+
+
 def site_link(url: str) -> str:
     """'🌐 jdp.rs' linked to the theatre's repertoire page."""
     if not url:
         return ""
-    return f"🌐 {a(url, escape(urlparse(url).netloc.removeprefix('www.') or url))}"
+    return f"🌐 {a(url, escape(domain(url)))}"
 
 
 def short_badge(p: Performance) -> str:

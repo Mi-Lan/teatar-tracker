@@ -52,6 +52,7 @@ Replies come on the next check (within the hour; faster during release bursts).
 | `/today` `/tomorrow` `/week` | shorter ranges |
 | `/overview` | everything announced |
 | `/theatre jdp` | one theatre |
+| `/theatres` | every theatre tracked, linked to its repertoire page |
 | `/search tramvaj`, or just type a title | find a play (Cyrillic/Latin/diacritics don't matter); shows 🔥/🔴 if it sells out |
 | `/hot` | plays that sell out fast: how many dates sold out, fastest and typical time, and their next dates (tap to buy); then plays that sell out more slowly |
 | `/soldout` | upcoming dates that are sold out now, and how long each took to sell out |
@@ -104,7 +105,13 @@ imports once. It needs the full history (`git fetch --unshallow` in a shallow cl
    ```
 3. **GitHub:** push this repo (public = unlimited free Actions minutes). Under *Settings → Secrets and variables → Actions*, add `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`. Then under *Actions → tracker → Run workflow*, start the first run. It saves a baseline and sends you the week ahead.
 
-The bot only answers the chat id in `TELEGRAM_CHAT_ID`.
+4. **More people (optional).** Each person opens the bot and presses **Start**; `teatar whoami` (or the bot's
+   `getUpdates`) shows their chat id. Add a secret `TELEGRAM_EXTRA_CHAT_IDS` with their ids, comma-separated.
+   They get every notification you get, and can use the commands (replies go to whoever asked). Check with
+   *Actions → tracker → Run workflow → test*: everyone gets a message listing the theatres with links.
+
+The bot only answers the chat ids in `TELEGRAM_CHAT_ID` and `TELEGRAM_EXTRA_CHAT_IDS`. Keep chat ids in secrets,
+not in the repo: it's public.
 
 ## Local use
 

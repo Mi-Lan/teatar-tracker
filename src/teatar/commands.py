@@ -32,6 +32,7 @@ Everything else is here on demand; replies arrive on the next check (faster arou
 /today · /tomorrow · /week — shorter ranges
 /overview — everything that's announced
 /theatre <i>name</i> — one theatre, e.g. <code>/theatre jdp</code>
+/theatres — every theatre I watch, with links
 /search <i>title</i> — or just type a title
 
 <b>Sell-outs</b> (🔥 = a play that sells out fast)
@@ -293,6 +294,19 @@ def cmd_soldout(ctx, arg):
     return fmt.pack(blocks, header=f"🔴 <b>Sold out</b> · {len(perfs)} upcoming dates · how fast each sold out after tickets went on sale (/hot for the plays)")
 
 
+def cmd_theatres(ctx, arg):
+    """Every theatre tracked, linked to its repertoire page, with how many dates are announced."""
+    catalog = _catalog(ctx)
+    lines = ["🎭 <b>Theatres I watch</b> · tap a name for its repertoire"]
+    for key in ctx.cfg.venues:
+        url = ctx.cfg.venue_website(key)
+        name = fmt.a(url, f"<b>{escape(ctx.cfg.venue_name(key))}</b>")
+        site = f" · {escape(fmt.domain(url))}" if url else ""
+        n = sum(p.venue == key for p in catalog)
+        lines.append(f"• {name}{site} · {n} upcoming date{'s' if n != 1 else ''} · /theatre {key}")
+    return ["\n".join(lines)]
+
+
 def cmd_status(ctx, arg):
     catalog = _catalog(ctx)
     lines = ["🩺 <b>Sources</b>"]
@@ -324,6 +338,7 @@ COMMANDS = {
     "/releases": cmd_releases,
     "/unrelease": cmd_unrelease,
     "/status": cmd_status,
+    "/theatres": cmd_theatres, "/theaters": cmd_theatres, "/pozorista": cmd_theatres,
     "/hot": cmd_hot, "/fast": cmd_hot, "/brzo": cmd_hot,
     "/soldout": cmd_soldout, "/rasprodato": cmd_soldout,
 }
@@ -340,7 +355,7 @@ def handle(ctx: Ctx, updates: list[dict], skip_start: bool = False) -> int:
         msg = u.get("message") or {}
         chat = str((msg.get("chat") or {}).get("id", ""))
         text = (msg.get("text") or "").strip()
-        if chat != str(ctx.tg.chat_id):
+        if chat not in {str(c) for c in getattr(ctx.tg, "recipients", [ctx.tg.chat_id])}:
             log.warning("ignoring message from unknown chat %s", chat)
             continue
         if not text or (skip_start and text.split("@")[0] == "/start"):

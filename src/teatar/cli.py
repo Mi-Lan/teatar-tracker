@@ -33,12 +33,13 @@ def load_dotenv(path: Path = config.ROOT / ".env") -> None:
 
 
 def make_tg(dry_run: bool):
+    """Telegram client for TELEGRAM_CHAT_ID (you) plus anyone in TELEGRAM_EXTRA_CHAT_IDS (comma-separated)."""
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if dry_run or not token or not chat:
         if not dry_run:
             logging.warning("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set: printing messages instead of sending")
         return DryRun()
-    return Telegram(token, chat)
+    return Telegram(token, chat, os.environ.get("TELEGRAM_EXTRA_CHAT_IDS", ""))
 
 
 def make_ctx(args, tg) -> Ctx:
@@ -92,11 +93,22 @@ def cmd_overview(args) -> None:
 
 
 def cmd_telegram_test(args) -> None:
-    tg = make_tg(False)
-    if isinstance(tg, DryRun):
+    """Send every recipient a test message: the theatres tracked, with links."""
+    from .commands import cmd_theatres
+
+    tg = make_tg(args.dry_run)
+    if isinstance(tg, DryRun) and not args.dry_run:
         sys.exit("Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID first (see README).")
-    tg.send("✅ <b>Theatre tracker</b> can reach you. Send /help to see what I can do.")
-    print("sent")
+    ctx = make_ctx(args, tg)
+    text = (
+        "✅ <b>Theatre tracker</b> test: notifications reach you.\n"
+        "You'll get a message the moment tickets come out, with every play and date (tap to buy) "
+        "and 🔥 on plays that sell out fast.\n\n"
+        + cmd_theatres(ctx, "")[0]
+        + "\n\n/help — everything I can do · /hot — plays that sell out fast"
+    )
+    tg.send(text)
+    print(f"sent to {len(tg.recipients)} chat(s)")
 
 
 def cmd_backfill_sales(args) -> None:
@@ -148,7 +160,9 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--send", action="store_true", help="send to Telegram instead of printing")
     p.set_defaults(fn=cmd_overview)
 
-    sub.add_parser("telegram-test", help="send a test message").set_defaults(fn=cmd_telegram_test)
+    p = sub.add_parser("telegram-test", help="send every recipient a test message listing the theatres")
+    p.add_argument("--dry-run", action="store_true", help="print it instead of sending")
+    p.set_defaults(fn=cmd_telegram_test)
     sub.add_parser("whoami", help="find your Telegram chat id").set_defaults(fn=cmd_whoami)
 
     p = sub.add_parser("backfill-sales", help="rebuild sell-out history from git (writes data/sales_seed.json)")
