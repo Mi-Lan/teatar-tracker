@@ -37,8 +37,8 @@ Configuration is in `config/`:
 - `settings.yaml` `selling:`: what counts as a fast seller (default: sold out within 48 h of going on sale, at
   least a day before the show), and whether fast sellers' new dates are messaged right away.
 - `settings.yaml`: what is sent on a schedule (`digest`, `release_season.times`: both off by default),
-  reminders and burst timing, and `release_season.batch_min`: how many new dates (or sales openings) in one
-  check count as a release worth a message (default 5; around a known release, any new ticket is)
+  reminders and burst timing, and `release_season.batch_min`: how many new dates (or sales openings) one check
+  needs before it is messaged (default 1: every new date)
 
 ## Telegram commands
 
@@ -62,13 +62,12 @@ Replies come on the next check (within the hour; faster during release bursts).
 | `/releases` · `/unrelease 1` · `/status` | |
 
 **What it sends you (and nothing else):**
-- **The moment tickets come out:** when a theatre's next month gets its first tickets, when any theatre puts out a
-  batch of new dates / opens sales for many dates in one check (`batch_min`, default 5), or when any new ticket
-  appears at a theatre with a known release around now. One message per theatre per day: how many dates per
-  month, how many on sale, when they appeared, bracketed by the previous check that didn't see them and the one
-  that did (e.g. "between 12:00 and 17:02"), then **every play with its dates** (title → the play's page, each date
-  → its tickets, with availability), plays that sell out fast first with 🔥, and a 🌐 link to the theatre's site.
-  Single new dates elsewhere are not messaged; they show up in `/new`.
+- **The moment new dates come out or go on sale**, at any theatre, even a single date (`batch_min`, default 1).
+  One message per theatre per check, listing **only what's new since the previous check**: how many dates per
+  month (and how many that month now has), when they appeared, bracketed by the previous check that didn't see
+  them and the one that did (e.g. "between 12:00 and 14:00"), then **every new play and date** (title → the play's
+  page, each date → its tickets, with availability), plays that sell out fast first with 🔥, and a 🌐 link to the
+  theatre's site. A date is only ever reported once. (Over Sep–Nov that was about 6 messages a week.)
 - **New dates for a play that sells out fast** (🔥), even a single one, as soon as they're seen (`selling.alert`).
 - Plays on your `/watch` list (back in stock, running low, sold out), and a warning if a site stops responding.
 

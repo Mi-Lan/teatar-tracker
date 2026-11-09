@@ -92,9 +92,24 @@ def fast_history(ctx, title="Edip", venue="jdp"):
                               "on_sale": (START - timedelta(days=30)).isoformat(), "sold_out": (START - timedelta(days=30, hours=-5)).isoformat()}
 
 
-def test_new_date_for_a_fast_seller_is_messaged_right_away(make_ctx, clock):
-    feed = [perf(venue="jdp", sid="1", title="Gubitnik", days=3), perf(venue="jdp", sid="oct", title="Sofka", days=15)]  # October already out
+def test_single_new_date_is_messaged_with_its_fast_seller_flag(make_ctx, clock):
+    feed = [perf(venue="jdp", sid="1", title="Gubitnik", days=3), perf(venue="jdp", sid="oct", title="Sofka", days=15)]
     ctx = make_ctx([FakeAdapter("jdp", fn=lambda: list(feed))], settings={"release_season": {"days": [1, 1]}})
+    run(ctx, allow_burst=False)
+    fast_history(ctx)
+    ctx.tg.sent.clear()
+    feed.append(perf(venue="jdp", sid="3", title="EDIP", days=12))
+    clock.sleep(900)
+    run(ctx, allow_burst=False)
+    (msg,) = ctx.tg.sent
+    assert msg.startswith("🎟 <b>JDP</b> · new tickets out\nOctober: +1 new date → 2 listed, 2 on sale\n")
+    assert "🔥 1 of them sells out fast" in msg and "🔥 <a" in msg and "Sofka" not in msg  # only what's new
+
+
+def test_with_bigger_batches_fast_sellers_still_get_a_message(make_ctx, clock):
+    """batch_min above 1: a lone new date isn't messaged, unless its play sells out fast."""
+    feed = [perf(venue="jdp", sid="1", title="Gubitnik", days=3), perf(venue="jdp", sid="oct", title="Sofka", days=15)]  # October already out
+    ctx = make_ctx([FakeAdapter("jdp", fn=lambda: list(feed))], settings={"release_season": {"days": [1, 1], "batch_min": 5}})
     ctx.cfg.venues["jdp"]["website"] = "https://www.jdp.rs/rs/repertoire-feed/"
     run(ctx, allow_burst=False)
     fast_history(ctx)
@@ -135,15 +150,20 @@ def test_release_message_puts_fast_sellers_first(make_ctx, clock):
 
 
 def test_watched_fast_seller_is_not_messaged_twice(make_ctx, clock):
-    feed = [perf(venue="jdp", sid="1", days=3), perf(venue="jdp", sid="oct", title="Sofka", days=15)]
-    ctx = make_ctx([FakeAdapter("jdp", fn=lambda: list(feed))], watchlist=[{"query": "edip"}], settings={"release_season": {"days": [1, 1]}})
-    run(ctx, allow_burst=False)
-    fast_history(ctx)
-    ctx.tg.sent.clear()
-    feed.append(perf(venue="jdp", sid="2", title="Edip", days=12))
-    clock.sleep(900)
-    run(ctx, allow_burst=False)
-    assert len(ctx.tg.sent) == 1 and "New shows" in ctx.tg.sent[0] and "⭐" in ctx.tg.sent[0]
+    for batch_min in (1, 5):
+        feed = [perf(venue="jdp", sid="1", days=3), perf(venue="jdp", sid="oct", title="Sofka", days=15)]
+        settings = {"release_season": {"days": [1, 1], "batch_min": batch_min}}
+        ctx = make_ctx([FakeAdapter("jdp", fn=lambda: list(feed))], watchlist=[{"query": "edip"}], settings=settings)
+        run(ctx, allow_burst=False)
+        fast_history(ctx)
+        ctx.tg.sent.clear()
+        feed.append(perf(venue="jdp", sid="2", title="Edip", days=12))
+        clock.sleep(900)
+        run(ctx, allow_burst=False)
+        (msg,) = ctx.tg.sent  # one message, no separate watchlist alert
+        assert "⭐🔥 <a" in msg and "New shows" not in msg, batch_min
+        if batch_min == 5:
+            assert msg.startswith("⭐ <b>JDP</b> · tickets on sale for a play you watch")
 
 
 def test_hot_soldout_and_flags_in_lists(make_ctx, clock):

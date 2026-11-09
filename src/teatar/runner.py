@@ -91,14 +91,16 @@ def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True) ->
 
 
 def process(ctx: Ctx, results: dict[str, list[Performance]], header: str = "🔔 <b>Theatre update</b>") -> list[diffmod.Change]:
-    """Detect changes. Watched plays are messaged right away (every change is, when alerts.instant is
-    "all"); releases are messaged by season.track; everything else just shows up in /new and the overview."""
+    """Detect changes. New dates and sales openings are messaged by season.track (watched plays get ⭐
+    there); other changes to watched plays (sold out, running low, back in stock, cancelled) are messaged
+    here right away, as is every change when alerts.instant is "all"."""
     low = ctx.cfg.get("alerts", "low_threshold", 20)
     changes = diffmod.compute(ctx.state, results, ctx.state.watchlist, low)
     diffmod.apply(ctx.state, results)
     fresh = [c for c in changes if c.reportable and not (c.kind in diffmod.ONCE and ctx.state.was_notified(c.key))]
     send_all = ctx.cfg.get("alerts", "instant", "releases_and_watchlist") == "all"
-    instant = [c for c in fresh if send_all or c.watched]
+    # season.track only covers real venues: new dates from custom lookups (venue "custom") are sent here
+    instant = [c for c in fresh if send_all or (c.watched and (c.kind not in diffmod.ONCE or c.perf.venue not in ctx.cfg.venues))]
     if instant:
         ctx.tg.send_all(fmt.alerts(instant, ctx.names(), header))
     for c in fresh:

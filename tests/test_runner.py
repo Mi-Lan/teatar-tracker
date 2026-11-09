@@ -26,10 +26,12 @@ def test_quiet_week_then_monday_report(make_ctx, clock):
     ctx.tg.sent.clear()
     a.perfs.append(perf(venue="jdp", sid="2", title="Gubitnik", days=6))
     a.perfs.append(perf(venue="jdp", sid="3", title="Gubitnik", days=7))
-    for _ in range(24 * 5):  # hourly checks through Sunday: a couple of new dates are found but not messaged
+    for _ in range(24 * 5):  # hourly checks through Sunday: the two new dates are messaged once, nothing else
         clock.sleep(3600)
         run(ctx, allow_burst=False)
-    assert ctx.tg.sent == []
+    (release,) = ctx.tg.sent
+    assert release.startswith("🎟 <b>JDP</b> · new tickets out\nSeptember: +2 new dates → 3 listed, 3 on sale") and "Gubitnik" in release
+    ctx.tg.sent.clear()
 
     while clock().weekday() != 0 or clock().hour < 9:  # Monday 09:xx
         clock.sleep(3600)
@@ -54,7 +56,8 @@ def test_watched_plays_are_messaged_immediately(make_ctx, clock):
     a.perfs = [perf(venue="jdp", status=Status.ON_SALE, available=40)]
     clock.sleep(3600)
     run(ctx, allow_burst=False)
-    assert len(ctx.tg.sent) == 1 and "Tickets now on sale" in ctx.tg.sent[0] and "⭐" in ctx.tg.sent[0]
+    (msg,) = ctx.tg.sent  # one message: the new-tickets message, with ⭐ on the watched play (no separate alert)
+    assert "September: 1 went on sale" in msg and '⭐ <a href="https://example.rs/buy"><b>Divlje meso</b></a> · Sun 27.09. 19:30 🟢 40' in msg
 
 
 def test_failing_venue_keeps_data_and_warns(make_ctx, clock):
@@ -312,19 +315,30 @@ def test_batch_release_is_messaged_once_with_its_time_window(make_ctx, clock):
     assert [(e["month"], e["new"], e["on_sale"]) for e in ctx.state.release_log] == [("2026-12", 6, 4), ("2027-01", 1, 1)]
 
     ctx.tg.sent.clear()
-    feed[1].status = feed[2].status = Status.ON_SALE  # the two remaining dates go on sale later that day: logged, not messaged again
-    feed.append(perf(venue="narodno", sid="one", title="Single", days=20))  # one more date alone is not a release
+    feed[1].status = feed[2].status = Status.ON_SALE  # the two remaining dates go on sale later that day…
+    feed.append(perf(venue="narodno", sid="one", title="Single", days=20))  # …and one more date appears
     clock.t = datetime(2026, 10, 5, 21, 15, tzinfo=TZ)
     run(ctx, allow_burst=False)
-    assert ctx.tg.sent == []
+    (later,) = ctx.tg.sent  # messaged too, with only what's new since the 17:02 check
+    assert later.startswith(
+        "🎟 <b>NARODNO</b> · new tickets out\n"
+        "October: +1 new date → 1 listed, 1 on sale\n"
+        "December: 2 went on sale → 6 listed, 6 on sale\n"
+        "Appeared 05.10. between 17:02 and 21:15\n\n"
+    )
+    assert "Play 2" not in later and "Play 0" in later and "Single" in later
     assert ctx.state.meta["narodno:dec0"]["on_sale_since"] == "2026-10-05T21:15:00+02:00"
+    ctx.tg.sent.clear()
+    clock.t = datetime(2026, 10, 5, 22, 0, tzinfo=TZ)
+    run(ctx, allow_burst=False)
+    assert ctx.tg.sent == []  # each date is reported once
 
     clock.t = datetime(2026, 10, 7, 9, 0, tzinfo=TZ)
     ctx.tg.say("/new")
     run(ctx, allow_burst=False)
     (reply,) = ctx.tg.sent
     assert reply.startswith("🆕 <b>New in the last 7 days</b>")
-    assert "📅 <b>Mon 05.10.</b>\n<i>NARODNO</i> · +8 dates (Oct 1, Dec 6, Jan 1), 8 on sale; 2 went on sale (Dec 2) · between 14:02 and 17:02\n  " in reply
+    assert "📅 <b>Mon 05.10.</b>\n<i>NARODNO</i> · +8 dates (Oct 1, Dec 6, Jan 1), 8 on sale; 2 went on sale (Dec 2) · between 14:02 and 21:15\n  " in reply  # both of that day's releases
     assert ", ".join(f"{buy}{t}</a>" for t in ["Single", "Play 0", "Play 1", "Play 2", "Play 3", "Play 4", "Play 5", "Play 9"]) in reply  # linked titles
     assert "SAVA" not in reply  # nothing new there
 

@@ -64,6 +64,8 @@ def compute(state: State, scanned: dict[str, list[Performance]], watchlist: list
             watched = w is not None
             old_d = state.performances.get(p.uid)
             if old_d is None:
+                if p.start < now():  # a date that's already over isn't news (e.g. one pruned from state, listed again)
+                    continue
                 changes.append(Change(Kind.NEW_SHOW if p.title_norm not in known else Kind.NEW_DATE, p, None, watched))
                 continue
             o = Performance.from_dict(old_d)
