@@ -20,7 +20,7 @@ in `data/state.json`, committed by the workflow.
 
 | Venue key | Site | Method | Availability |
 |---|---|---|---|
-| `narodno` | narodnopozoriste.rs | HTML scrape | on sale / <10% left / sold out (exact counts only until Oct 2026; now behind a login) |
+| `narodno` | narodnopozoriste.rs | HTML scrape (+ ticket pages with a login) | **exact seats left** with a Narodno account (`NARODNO_EMAIL` / `NARODNO_PASSWORD`), else on sale / <10% left / sold out |
 | `bdp` | bdp.rs (Велика сцена only) | Webflow HTML + Sixtix API | on sale / not yet / sold out |
 | `jdp` | jdp.rs | WordPress AJAX API | on sale / <10% left / sold out |
 | `sava_centar`, `madlenianum_tickets`, `kolarac` | tickets.rs | JSON API | listed = on sale |
@@ -108,6 +108,12 @@ imports once. It needs the full history (`git fetch --unshallow` in a shallow cl
    `getUpdates`) shows their chat id. Add a secret `TELEGRAM_EXTRA_CHAT_IDS` with their ids, comma-separated.
    They get every notification you get, and can use the commands (replies go to whoever asked). Check with
    *Actions → tracker → Run workflow → test*: everyone gets a message listing the theatres with links.
+
+5. **Narodno seat counts (optional).** Narodno shows how many seats are left only to logged-in users. Add secrets
+   `NARODNO_EMAIL` and `NARODNO_PASSWORD` for a narodnopozoriste.rs account: every check then logs in once and
+   reads the ticket page of each on-sale date (about 60 pages, GET only: no seat is ever selected or held). The
+   30-second polls around a release skip this. If the login stops working, you get the usual "failed 3 checks"
+   warning for "Narodno pozorište seat counts", and the listing (on sale / under 10% / sold out) keeps working.
 
 The bot only answers the chat ids in `TELEGRAM_CHAT_ID` and `TELEGRAM_EXTRA_CHAT_IDS`. Keep chat ids in secrets,
 not in the repo: it's public.

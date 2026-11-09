@@ -32,7 +32,8 @@ class Ctx:
     sleep: callable = _time.sleep  # swapped out in tests
 
     def names(self) -> dict[str, str]:
-        return {k: self.cfg.venue_name(k) for k in self.cfg.venues} | {lookups.VENUE: "Custom lookups"}
+        names = {k: self.cfg.venue_name(k) for k in self.cfg.venues} | {lookups.VENUE: "Custom lookups"}
+        return names | {f"{k}:seats": f"{v} seat counts" for k, v in names.items()}
 
     def save(self) -> bool:
         return self.state.save(self.cfg.state_path)
@@ -60,15 +61,16 @@ def _health_ok(ctx: Ctx, key: str) -> None:
         ctx.tg.send(f"✅ <b>{ctx.names().get(key, key)}</b> is working again.")
 
 
-def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True) -> dict[str, list[Performance]]:
-    """Fetch venues (all, or `keys`). A failing venue is left out, so its previous data is kept."""
+def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True, quick: bool = False) -> dict[str, list[Performance]]:
+    """Fetch venues (all, or `keys`). A failing venue is left out, so its previous data is kept.
+    `quick` uses each adapter's fast poll() (burst mode) instead of the full fetch()."""
     results = {}
     for key, adapter in ctx.adapters.items():
         if keys is not None and key not in keys:
             continue
         t0 = _time.monotonic()
         try:
-            perfs = adapter.fetch()
+            perfs = adapter.poll() if quick else adapter.fetch()
         except Exception as exc:  # one broken site must not stop the others
             log.exception("%s failed", key)
             _health_fail(ctx, key, f"{type(exc).__name__}: {exc}")
@@ -78,6 +80,11 @@ def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True) ->
             _health_fail(ctx, key, "returned 0 performances")
             continue
         _health_ok(ctx, key)
+        if not quick:  # an adapter can report a partial problem (e.g. Narodno's seat counts) without failing
+            if warning := getattr(adapter, "warning", ""):
+                _health_fail(ctx, f"{key}:seats", warning)
+            else:
+                _health_ok(ctx, f"{key}:seats")
         results[key] = perfs
         log.info("%-20s %4d performances (%.1fs)", key, len(perfs), _time.monotonic() - t0)
     if include_custom and keys is None and any(w.get("lookup") for w in ctx.state.watchlist):
@@ -215,7 +222,7 @@ def burst(ctx: Ctx, windows: list[rel.Window]) -> None:
             commands.handle(ctx, ctx.tg.updates(ctx.state.telegram_offset))
             continue
         venues = {w.release["venue"] for w in polling}
-        results = scan(ctx, keys=venues, include_custom=False)
+        results = scan(ctx, keys=venues, include_custom=False, quick=True)
         fresh = process(ctx, results, header="🚨 <b>Release watch</b>")
         season.track(ctx, set(results), fresh)
         if now() - last_full >= full_every:
