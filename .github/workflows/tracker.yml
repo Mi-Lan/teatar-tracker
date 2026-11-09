@@ -31,6 +31,8 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       TELEGRAM_EXTRA_CHAT_IDS: ${{ secrets.TELEGRAM_EXTRA_CHAT_IDS }}  # more people who get every notification (comma-separated)
+      NARODNO_EMAIL: ${{ secrets.NARODNO_EMAIL }}  # a narodnopozoriste.rs account: exact seat counts (optional)
+      NARODNO_PASSWORD: ${{ secrets.NARODNO_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
 

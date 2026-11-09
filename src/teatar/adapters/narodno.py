@@ -5,12 +5,18 @@ the older list (div.repertoarwide-entry). Whichever the page contains is parsed.
 
 Availability: a "Купи" button = on sale; "Мање од 10% слободних места" next to it = running low;
 "РАСПРОДАТО" = sold out; "ОТКАЗАНО" = cancelled. Until 2026-10-15 the Buy button also carried the
-exact number of tickets left ("Купи [ 271 ]"), which is still read when present; since then that
-number is only on the ticket page, which needs a login.
+exact number of tickets left ("Купи [ 271 ]"), which is still read when present.
+
+Exact counts now: each date's ticket page (/ulaznice/odabir-ulaznica?p=<id>) is server-rendered with
+every seat as <button class="np-seat …">, sold ones carrying `prodato`. It needs a login, so with
+NARODNO_EMAIL / NARODNO_PASSWORD set (GitHub secrets) a full check logs in once and reads the ticket
+page of every on-sale date: GET only, nothing is selected or held. Burst polls (poll()) skip this.
 """
 
 from __future__ import annotations
 
+import logging
+import os
 import re
 from datetime import date
 from urllib.parse import urljoin
@@ -23,6 +29,10 @@ from ..textnorm import month_number
 from .base import Adapter, at, infer_year, upcoming
 
 BASE = "https://www.narodnopozoriste.rs"
+LOGIN_PAGE = f"{BASE}/nalog/prijavi-se"
+API = f"{BASE}/api/ulaznice"
+
+log = logging.getLogger(__name__)
 
 
 def _txt(el: Tag | None) -> str:
@@ -98,13 +108,69 @@ def parse(html: str, venue: str = "narodno", today: date | None = None) -> list[
     return perfs
 
 
+def count_seats(html: str) -> tuple[int, int] | None:
+    """(seats, free) on a ticket page; None when it has no seat map (e.g. the login page)."""
+    seats = BeautifulSoup(html, "lxml").select("button.np-seat")
+    if not seats:
+        return None
+    free = sum(1 for b in seats if "prodato" not in (b.get("class") or []) and not b.has_attr("disabled"))
+    return len(seats), free
+
+
+def apply_seats(p: Performance, seats: int, free: int) -> None:
+    p.available = free
+    p.extra["seats"] = seats
+    if free == 0:
+        p.status = Status.SOLD_OUT
+    elif p.status == Status.ON_SALE and free < seats / 10:
+        p.status = Status.LOW
+
+
 @register("narodno_html")
 class NarodnoAdapter(Adapter):
     method = "html"
+    warning = ""  # set when seat counts couldn't be read; the runner reports it like a failing site
 
     def fetch(self) -> list[Performance]:
+        perfs = self.poll()
+        self.warning = ""
+        if os.environ.get("NARODNO_EMAIL") and os.environ.get("NARODNO_PASSWORD"):
+            try:
+                self._seat_counts(perfs)
+            except Exception as exc:  # the listing alone is still good
+                log.warning("narodno seat counts failed: %s", exc)
+                self.warning = f"seat counts: {type(exc).__name__}: {exc}"
+        return perfs
+
+    def poll(self) -> list[Performance]:
+        """The repertoire listing only (no seat pages): used for the 30-second polls around a release."""
         html = self.http.get(f"{BASE}/repertoar").text
         perfs = parse(html, self.key)
         if not perfs:  # the repertoire is never empty: treat it as a layout change
             raise RuntimeError("no performances parsed from /repertoar (page layout changed?)")
         return upcoming(perfs)
+
+    def _login(self) -> None:
+        page = BeautifulSoup(self.http.get(LOGIN_PAGE).text, "lxml")
+        form = page.select_one('form[data-account-form="login"]')
+        if form is None:
+            raise RuntimeError("login form not found")
+        data = {i["name"]: i.get("value", "") for i in form.select("input[type=hidden][name]")}
+        data |= {"email": os.environ["NARODNO_EMAIL"], "pass": os.environ["NARODNO_PASSWORD"]}
+        reply = self.http.post(API, json=data, headers={"Accept": "application/json"}).json()
+        if reply.get("error"):
+            raise RuntimeError(f"login failed: {reply.get('errorMessage') or reply.get('message') or reply.get('error')}")
+
+    def _seat_counts(self, perfs: list[Performance]) -> None:
+        self._login()
+        for p in perfs:
+            if not (p.status.buyable and p.buy_url):
+                continue
+            resp = self.http.get(p.buy_url)
+            if "prijavi-se" in str(resp.url):  # session dropped: log in again, once
+                self._login()
+                resp = self.http.get(p.buy_url)
+                if "prijavi-se" in str(resp.url):
+                    raise RuntimeError("still sent to the login page after logging in")
+            if counted := count_seats(resp.text):
+                apply_seats(p, *counted)
