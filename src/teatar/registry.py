@@ -32,6 +32,7 @@ def build_adapters(venues: dict[str, dict], http: Http, only: list[str] | None =
         if not cfg.pop("enabled", True):
             continue
         name = cfg.pop("adapter")
+        cfg.pop("website", None)  # used in messages (Config.venue_website), not by the adapter
         if name not in ADAPTERS:
             raise KeyError(f"venue {key!r}: unknown adapter {name!r} (known: {sorted(ADAPTERS)})")
         built.append(ADAPTERS[name](key=key, http=http, **cfg))

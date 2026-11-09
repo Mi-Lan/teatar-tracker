@@ -99,6 +99,15 @@ def cmd_telegram_test(args) -> None:
     print("sent")
 
 
+def cmd_backfill_sales(args) -> None:
+    """Rebuild sell-out history from the git history of data/state.json into data/sales_seed.json."""
+    from .backfill import write_seed
+
+    out = Path(args.out)
+    n, tag = write_seed(config.ROOT, out)
+    print(f"wrote {n} sell-out records to {out} (history up to {tag}); the next run imports them once")
+
+
 def cmd_whoami(args) -> None:
     """Print chats that recently messaged the bot, to find your TELEGRAM_CHAT_ID."""
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -141,6 +150,10 @@ def main(argv: list[str] | None = None) -> None:
 
     sub.add_parser("telegram-test", help="send a test message").set_defaults(fn=cmd_telegram_test)
     sub.add_parser("whoami", help="find your Telegram chat id").set_defaults(fn=cmd_whoami)
+
+    p = sub.add_parser("backfill-sales", help="rebuild sell-out history from git (writes data/sales_seed.json)")
+    p.add_argument("--out", default=str(config.ROOT / "data" / "sales_seed.json"))
+    p.set_defaults(fn=cmd_backfill_sales)
 
     args = parser.parse_args(argv)
     args.fn(args)

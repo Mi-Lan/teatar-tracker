@@ -8,7 +8,7 @@ import time as _time
 from dataclasses import dataclass, field
 from datetime import date, datetime, time, timedelta
 
-from . import commands, lookups, season
+from . import commands, lookups, sales, season
 from . import diff as diffmod
 from . import format as fmt
 from . import releases as rel
@@ -189,7 +189,7 @@ def send_overview(ctx: Ctx, until: date | None, title: str, note: str = "") -> N
     if until is not None:
         perfs = [p for p in perfs if p.start.date() <= until]
     watched = {p.uid for p in perfs if diffmod.watch_entry(p, ctx.state.watchlist)}
-    ctx.tg.send_all(fmt.overview(perfs, ctx.names(), title, watched, note))
+    ctx.tg.send_all(fmt.overview(perfs, ctx.names(), title, watched, note, commands.fast_uids(ctx, perfs)))
 
 
 # --- burst mode --------------------------------------------------------------------------------------
@@ -251,6 +251,8 @@ def burst(ctx: Ctx, windows: list[rel.Window]) -> None:
 def run(ctx: Ctx, allow_burst: bool = True) -> None:
     first = not ctx.state.initialized
     import_watchlist(ctx)
+    if n := sales.import_seed(ctx.state, ctx.cfg.state_path.parent / "sales_seed.json"):
+        log.info("imported %d sell-out records from sales_seed.json", n)
     updates = ctx.tg.updates(ctx.state.telegram_offset)
 
     results = scan(ctx)
@@ -275,9 +277,9 @@ def run(ctx: Ctx, allow_burst: bool = True) -> None:
     if not first and (slot := season.due(ctx)):
         ctx.tg.send_all(season.report(ctx, slot=slot))
 
-    ctx.state.prune()
+    ctx.state.prune(history_days=int(ctx.cfg.get("selling", "history_days", 180)))
     ctx.save()
     if allow_burst and (windows := rel.active_windows(ctx.state, ctx.cfg)):
         burst(ctx, windows)
-        ctx.state.prune()
+        ctx.state.prune(history_days=int(ctx.cfg.get("selling", "history_days", 180)))
         ctx.save()

@@ -9,8 +9,9 @@ from typing import TYPE_CHECKING
 
 from . import format as fmt
 from . import releases as rel
+from . import sales
 from .diff import watch_entry
-from .models import Performance, now
+from .models import Performance, Status, now
 from .textnorm import matches, normalize
 
 if TYPE_CHECKING:
@@ -20,7 +21,8 @@ log = logging.getLogger(__name__)
 
 HELP = """🎭 <b>Theatre tracker</b>
 I check all day and write only when tickets come out: the moment a theatre releases them,
-with the time they appeared and the titles (plus news about plays you /watch).
+with the time they appeared and every play and date (tap to buy), plus new dates for plays
+that sell out fast 🔥 and news about plays you /watch.
 Everything else is here on demand; replies arrive on the next check (faster around releases).
 
 <b>Browse</b>
@@ -31,6 +33,10 @@ Everything else is here on demand; replies arrive on the next check (faster arou
 /overview — everything that's announced
 /theatre <i>name</i> — one theatre, e.g. <code>/theatre jdp</code>
 /search <i>title</i> — or just type a title
+
+<b>Sell-outs</b> (🔥 = a play that sells out fast)
+/hot — plays that sell out fast, how fast, and their next dates
+/soldout — upcoming dates that are sold out, and how fast they went
 
 <b>Watchlist</b> (⭐ in lists, extra alerts)
 /watch <i>title</i> — e.g. <code>/watch divlje meso</code>
@@ -58,6 +64,17 @@ def _watched_uids(ctx: Ctx, perfs: list[Performance]) -> set[str]:
     return {p.uid for p in perfs if watch_entry(p, ctx.state.watchlist)}
 
 
+def fast_uids(ctx: Ctx, perfs: list[Performance]) -> set[str]:
+    """Performances of plays that sell out fast (🔥 in lists)."""
+    table = sales.fast_plays(ctx.state, ctx.cfg)
+    return {p.uid for p in perfs if sales.lookup(table, p)}
+
+
+def _play_notes(ctx: Ctx, perfs: list[Performance]) -> dict[str, str]:
+    table = sales.plays(ctx.state, ctx.cfg)
+    return {p.uid: play.flag() for p in perfs if (play := sales.lookup(table, p)) and play.sold_out}
+
+
 def resolve_venue(ctx: Ctx, text: str) -> list[str]:
     q = normalize(text)
     if q.replace(" ", "_") in ctx.cfg.venues:
@@ -69,7 +86,7 @@ def _days(ctx: Ctx, start_offset: int, days: int, title: str) -> list[str]:
     today = now().date()
     lo, hi = today + timedelta(days=start_offset), today + timedelta(days=start_offset + days)
     perfs = [p for p in _catalog(ctx) if lo <= p.start.date() < hi]
-    return fmt.overview(perfs, _names(ctx), title, _watched_uids(ctx, perfs))
+    return fmt.overview(perfs, _names(ctx), title, _watched_uids(ctx, perfs), fast=fast_uids(ctx, perfs))
 
 
 def cmd_help(ctx, arg):
@@ -120,14 +137,15 @@ def cmd_theatre(ctx, arg):
         options = ", ".join(f"<code>{k}</code>" for k in (keys or ctx.cfg.venues))
         return [f"Which theatre? {options}"]
     perfs = [p for p in _catalog(ctx) if p.venue == keys[0]]
-    return fmt.overview(perfs, _names(ctx), ctx.cfg.venue_name(keys[0]), _watched_uids(ctx, perfs))
+    site = fmt.site_link(ctx.cfg.venue_website(keys[0]))
+    return fmt.overview(perfs, _names(ctx), ctx.cfg.venue_name(keys[0]), _watched_uids(ctx, perfs), site, fast_uids(ctx, perfs))
 
 
 def cmd_search(ctx, arg):
     if not arg.strip():
         return ["Usage: /search <i>title</i>"]
     perfs = [p for p in _catalog(ctx) if matches(arg, p.title)]
-    return fmt.by_title(perfs, _names(ctx), f"“{arg.strip()}”")
+    return fmt.by_title(perfs, _names(ctx), f"“{arg.strip()}”", _play_notes(ctx, perfs))
 
 
 def cmd_watch(ctx, arg):
@@ -215,6 +233,66 @@ def cmd_unrelease(ctx, arg):
     return [f"Removed: {fmt.release_line(r, _names(ctx))}"]
 
 
+def cmd_hot(ctx, arg):
+    """Plays that sell out fast, with their record and next dates; then plays that sell out more slowly."""
+    fast_hours, _ = sales.settings(ctx.cfg)
+    table = sales.plays(ctx.state, ctx.cfg)
+    upcoming = sales.by_play(_catalog(ctx))
+    order = {v: i for i, v in enumerate(ctx.cfg.venues)}
+    fast = sorted((p for p in table.values() if p.is_fast), key=lambda p: (order.get(p.venue, 99), min(p.fast)))
+    slow = sorted((p for p in table.values() if p.sold_out and not p.is_fast), key=lambda p: (order.get(p.venue, 99), -p.sold_out))
+    head = (
+        f"🔥 <b>Plays that sell out fast</b>\n"
+        f"Sold out within {sales.duration(fast_hours)} of tickets going on sale · tap a date to buy"
+    )
+    if not fast and not slow:
+        return [f"{head}\n\nNo sell-outs recorded yet: the list fills in as the tracker sees dates sell out."]
+    blocks, venue = [], None
+    for p in fast:
+        lines = []
+        if p.venue != venue:
+            venue = p.venue
+            lines.append(f"<i>{escape(ctx.cfg.venue_name(venue))}</i>")
+        nxt = upcoming.get(sales.play_key(p.venue, p.title), [])
+        if nxt:
+            lines.append(fmt.play_block(nxt[:6], "🔥", p.summary()))
+        else:
+            lines.append(f"🔥 <b>{escape(p.title)}</b> · {escape(p.summary())}\n   no dates announced")
+        blocks.append("\n".join(lines))
+    if slow:
+        by_venue: dict[str, list[str]] = {}
+        for p in slow:
+            speed = f", ~{sales.duration(p.typical)}" if p.speeds else ""
+            by_venue.setdefault(p.venue, []).append(f"{escape(p.title)} ({p.sold_out}/{p.dates}{speed})")
+        lines = ["🔴 <b>Also sell out</b> (dates sold out / tracked, typical time to sell out where known)"]
+        lines += [f"<i>{escape(ctx.cfg.venue_name(v))}</i>: {', '.join(ts)}" for v, ts in by_venue.items()]
+        blocks.append("\n".join(lines))
+    return fmt.pack(blocks, header=head)
+
+
+def cmd_soldout(ctx, arg):
+    """Upcoming dates that are sold out now, and how fast they sold out."""
+    perfs = [p for p in _catalog(ctx) if p.status == Status.SOLD_OUT]
+    if not perfs:
+        return ["🔴 <b>Sold out</b>\n\nNothing upcoming is sold out right now."]
+    blocks, day = [], None
+    lines: list[str] = []
+    for p in perfs:
+        if p.start.date() != day:
+            if lines:
+                blocks.append("\n".join(lines))
+            day, lines = p.start.date(), [f"📅 <b>{fmt.day_label(p.start.date())}</b>"]
+        r = ctx.state.sales.get(p.uid, {})
+        h = sales.hours_to_sell_out(r)
+        how = (
+            " · sold out instantly" if h == 0 else f" · sold out in {sales.duration(h)}" if h is not None
+            else f" · sold out since {datetime.fromisoformat(r['sold_out']):%d.%m.}" if r.get("sold_out") else ""
+        )
+        lines.append(f"{p.start:%H:%M} {fmt.a(p.url, escape(p.title))} · <i>{escape(ctx.cfg.venue_name(p.venue))}</i>{how}")
+    blocks.append("\n".join(lines))
+    return fmt.pack(blocks, header=f"🔴 <b>Sold out</b> · {len(perfs)} upcoming dates · how fast each sold out after tickets went on sale (/hot for the plays)")
+
+
 def cmd_status(ctx, arg):
     catalog = _catalog(ctx)
     lines = ["🩺 <b>Sources</b>"]
@@ -246,6 +324,8 @@ COMMANDS = {
     "/releases": cmd_releases,
     "/unrelease": cmd_unrelease,
     "/status": cmd_status,
+    "/hot": cmd_hot, "/fast": cmd_hot, "/brzo": cmd_hot,
+    "/soldout": cmd_soldout, "/rasprodato": cmd_soldout,
 }
 
 

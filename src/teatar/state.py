@@ -26,6 +26,8 @@ class State:
     season: dict = field(default_factory=dict)  # next-month status for the 20th–27th checks (see season.py)
     release_log: list[dict] = field(default_factory=list)  # when each theatre released each month (see season.py)
     scanned: dict[str, str] = field(default_factory=dict)  # venue -> time of its last successful check
+    sales: dict[str, dict] = field(default_factory=dict)  # uid -> sell-out record, kept after the show (see sales.py)
+    sales_seed: str = ""  # which data/sales_seed.json was imported (see sales.import_seed)
 
     # --- persistence -------------------------------------------------------------------------
     @classmethod
@@ -58,7 +60,10 @@ class State:
     def mark_notified(self, key: str) -> None:
         self.notified[key] = now().isoformat(timespec="seconds")
 
-    def prune(self, keep_days: int = 2) -> None:
+    def prune(self, keep_days: int = 2, history_days: int = 180) -> None:
+        from . import sales
+
+        sales.prune(self, history_days)
         cutoff = now() - timedelta(days=keep_days)
         for uid, d in list(self.performances.items()):
             if datetime.fromisoformat(d["start"]) < cutoff:

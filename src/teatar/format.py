@@ -6,6 +6,7 @@ from collections import defaultdict
 from datetime import date, datetime, time, timedelta
 import re
 from html import escape, unescape
+from urllib.parse import urlparse
 
 from .diff import Change, Kind
 from .models import Performance, Status
@@ -38,12 +39,29 @@ def badge(p: Performance) -> str:
     return "❔ see site"
 
 
+def href(url: str) -> str:
+    """A URL ready for an href attribute (some sites put spaces in their links)."""
+    return escape(url.strip().replace(" ", "%20"), quote=True)
+
+
+def a(url: str, text: str) -> str:
+    """`text` (already escaped) linked to `url`, or plain when there is no URL."""
+    return f'<a href="{href(url)}">{text}</a>' if url else text
+
+
 def link(p: Performance) -> str:
     if p.status.buyable and p.buy_url:
-        return f' · <a href="{escape(p.buy_url, quote=True)}">buy</a>'
+        return f" · {a(p.buy_url, 'buy')}"
     if p.url:
-        return f' · <a href="{escape(p.url, quote=True)}">info</a>'
+        return f" · {a(p.url, 'info')}"
     return ""
+
+
+def site_link(url: str) -> str:
+    """'🌐 jdp.rs' linked to the theatre's repertoire page."""
+    if not url:
+        return ""
+    return f"🌐 {a(url, escape(urlparse(url).netloc.removeprefix('www.') or url))}"
 
 
 def short_badge(p: Performance) -> str:
@@ -59,16 +77,42 @@ def short_badge(p: Performance) -> str:
 
 def titled(p: Performance) -> str:
     """The title, linked to the ticket page when buyable (else the info page)."""
-    href = p.buy_url if (p.status.buyable and p.buy_url) else p.url or p.buy_url
+    url = p.buy_url if (p.status.buyable and p.buy_url) else p.url or p.buy_url
     t = escape(p.title)
-    return f'<a href="{escape(href, quote=True)}">{t}</a>' if href else f"<b>{t}</b>"
+    return a(url, t) if url else f"<b>{t}</b>"
 
 
-def perf_line(p: Performance, show_date: bool = False, star: bool = False, show_stage: bool = True) -> str:
-    """Compact line: '20:30 Божји људи · Раша Плаовић 🟢 271' (title links to tickets)."""
+def perf_line(p: Performance, show_date: bool = False, star: bool = False, show_stage: bool = True, fire: bool = False) -> str:
+    """Compact line: '20:30 Божји људи · Раша Плаовић 🟢 271' (title links to tickets).
+    ⭐ marks a watched play, 🔥 one that sells out fast."""
     head = when(p) if show_date else f"{p.start:%H:%M}"
     stage = f" · {escape(p.stage)}" if p.stage and show_stage else ""
-    return f"{'⭐' if star else ''}{head} {titled(p)}{stage} {short_badge(p)}"
+    return f"{'⭐' if star else ''}{'🔥' if fire else ''}{head} {titled(p)}{stage} {short_badge(p)}"
+
+
+def play_block(perfs: list[Performance], mark: str = "", note: str = "", show_stage: bool = False) -> str:
+    """One play and its dates, for release messages (one line when it has a single date):
+
+        🔥 Слика Доријана Греја · fast seller: sold out in 4h      (title → the play's page)
+           Mon 02.11. 20:30 🟢 · Fri 11.12. 20:30 🟡 few left      (each date → its tickets)
+    """
+    first = perfs[0]
+    title_url = first.url or first.buy_url
+    head = a(title_url, f"<b>{escape(first.title)}</b>")
+    stages = {p.stage for p in perfs if p.stage}
+    if show_stage and stages:
+        head += f" <i>({escape(' / '.join(sorted(stages)))})</i>"
+    if mark:
+        head = f"{mark} {head}"
+    if note:
+        head += f" · {escape(note)}"
+    dates = []
+    for p in perfs:
+        label = when(p)
+        if p.status.buyable and p.buy_url and p.buy_url != title_url:
+            label = a(p.buy_url, label)
+        dates.append(label if p.status == Status.UNKNOWN else f"{label} {short_badge(p)}")
+    return f"{head}{' · ' if len(dates) == 1 else chr(10) + '   '}" + " · ".join(dates)
 
 
 def visible_len(html: str) -> int:
@@ -79,8 +123,9 @@ def entities(html: str) -> int:
     return len(re.findall(r"<(?:a|b|i|u|code)\b", html))
 
 
-def pack(blocks: list[str], header: str = "") -> list[str]:
-    """Join blocks into as few messages as possible under Telegram's size and entity limits."""
+def pack(blocks: list[str], header: str = "", joiner: str = "\n\n", cont: str = "") -> list[str]:
+    """Join blocks into as few messages as possible under Telegram's size and entity limits.
+    Blocks are separated by `joiner`; a message after the first starts with `cont` (if given)."""
     messages, cur = [], header
 
     def fits(text: str) -> bool:
@@ -89,11 +134,11 @@ def pack(blocks: list[str], header: str = "") -> list[str]:
     for block in blocks:
         pieces = [block] if fits(block) else block.split("\n")
         for piece in pieces:
-            sep = "\n\n" if cur and piece is block else "\n"
+            sep = joiner if cur and piece is block else "\n"
             candidate = f"{cur}{sep}{piece}" if cur else piece
             if cur and not fits(candidate):
                 messages.append(cur)
-                cur = piece
+                cur = f"{cont}\n{piece.lstrip(chr(10))}" if cont else piece
             else:
                 cur = candidate
     if cur:
@@ -101,9 +146,12 @@ def pack(blocks: list[str], header: str = "") -> list[str]:
     return messages
 
 
-def overview(perfs: list[Performance], venue_names: dict[str, str], title: str, watched: set[str] | None = None, note: str = "") -> list[str]:
-    """Performances grouped by date, then theatre."""
-    watched = watched or set()
+def overview(
+    perfs: list[Performance], venue_names: dict[str, str], title: str, watched: set[str] | None = None, note: str = "",
+    fast: set[str] | None = None,
+) -> list[str]:
+    """Performances grouped by date, then theatre. ⭐ = `watched` uids, 🔥 = `fast` uids (plays that sell out fast)."""
+    watched, fast = watched or set(), fast or set()
     if not perfs:
         return [f"🎭 <b>{escape(title)}</b>\n\nNothing found."]
     by_day: dict[date, dict[str, list[Performance]]] = defaultdict(lambda: defaultdict(list))
@@ -117,22 +165,25 @@ def overview(perfs: list[Performance], venue_names: dict[str, str], title: str, 
         for v, ps in venues.items():
             lines.append(f"<i>{escape(venue_names.get(v, v))}</i>")
             # a venue that only uses one stage (e.g. BDP filtered to Velika scena) needn't repeat it
-            lines += [perf_line(p, star=p.uid in watched, show_stage=len(stages[v]) > 1) for p in ps]
+            lines += [perf_line(p, star=p.uid in watched, show_stage=len(stages[v]) > 1, fire=p.uid in fast) for p in ps]
         blocks.append("\n".join(lines))
-    head = f"🎭 <b>{escape(title)}</b> · {len(perfs)} performances\n🟢 N = tickets left · tap a title to buy"
+    head = f"🎭 <b>{escape(title)}</b> · {len(perfs)} performances\n🟢 N = tickets left · tap a title to buy" + (" · 🔥 sells out fast" if fast else "")
     if note:
         head += "\n" + note
     return pack(blocks, header=head)
 
 
-def by_title(perfs: list[Performance], venue_names: dict[str, str], title: str) -> list[str]:
-    """Performances grouped by play (used for search results and the watchlist)."""
+def by_title(perfs: list[Performance], venue_names: dict[str, str], title: str, notes: dict[str, str] | None = None) -> list[str]:
+    """Performances grouped by play (used for search results and the watchlist).
+    `notes`: uid of any of a play's dates -> a note for the play (e.g. its fast-seller flag)."""
+    notes = notes or {}
     groups: dict[tuple[str, str], list[Performance]] = defaultdict(list)
     for p in sorted(perfs, key=lambda p: p.start):
         groups[(p.venue, p.title_norm)].append(p)
     blocks = []
     for (venue, _), ps in groups.items():
-        lines = [f"<b>{escape(ps[0].title)}</b> — <u>{escape(venue_names.get(venue, venue))}</u>"]
+        note = next((notes[p.uid] for p in ps if p.uid in notes), "")
+        lines = [f"<b>{escape(ps[0].title)}</b> — <u>{escape(venue_names.get(venue, venue))}</u>" + (f" · {escape(note)}" if note else "")]
         lines += [f"  {when(p)}{f' <i>({escape(p.stage)})</i>' if p.stage else ''} — {badge(p)}{link(p)}" for p in ps]
         blocks.append("\n".join(lines))
     return pack(blocks, header=f"🔎 <b>{escape(title)}</b>") if blocks else [f"🔎 <b>{escape(title)}</b>\n\nNothing found."]

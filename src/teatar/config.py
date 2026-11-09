@@ -30,6 +30,15 @@ class Config:
     def venue_name(self, key: str) -> str:
         return (self.venues.get(key) or {}).get("name", key)
 
+    def venue_website(self, key: str) -> str:
+        """The theatre's own repertoire page: `website` in venues.yaml, else a tickets.rs venue page."""
+        v = self.venues.get(key) or {}
+        if v.get("website"):
+            return v["website"]
+        if v.get("adapter") == "tickets_rs" and v.get("slug"):
+            return f"https://tickets.rs/venue/{v['slug']}"
+        return v.get("site_url", "")
+
     def get(self, section: str, key: str, default=None):
         return (self.settings.get(section) or {}).get(key, default)
 

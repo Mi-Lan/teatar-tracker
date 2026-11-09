@@ -21,6 +21,7 @@ from typing import TYPE_CHECKING
 
 from . import format as fmt
 from . import releases as rel
+from . import sales
 from .diff import ONCE, Change, Kind
 from .models import Performance, Status, now
 
@@ -102,15 +103,15 @@ def _season(ctx: Ctx) -> dict:
 # --- release detection ------------------------------------------------------------------------------
 
 
-def _batches(changes: list[Change]) -> tuple[dict[str, dict[str, Counter]], dict[str, Counter]]:
+def _batches(changes: list[Change]) -> tuple[dict[str, dict[str, Counter]], dict[str, list[Change]]]:
     """From this scan's fresh new-show/new-date/sales-opened changes: venue -> month -> {new, opened, on_sale},
-    and venue -> title -> number of dates."""
+    and venue -> those changes."""
     out: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
-    titles: dict[str, Counter] = defaultdict(Counter)
+    found: dict[str, list[Change]] = defaultdict(list)
     for c in changes:
         if c.kind not in ONCE:
             continue
-        titles[c.perf.venue][c.perf.title] += 1
+        found[c.perf.venue].append(c)
         b = out[c.perf.venue][c.perf.start.strftime("%Y-%m")]
         if c.kind == Kind.SALES_OPENED:
             b["opened"] += 1
@@ -118,7 +119,7 @@ def _batches(changes: list[Change]) -> tuple[dict[str, dict[str, Counter]], dict
         else:
             b["new"] += 1
             b["on_sale"] += c.perf.status.buyable
-    return out, titles
+    return out, found
 
 
 def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = None) -> None:
@@ -128,13 +129,18 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
     `release_season.batch_min` new dates / sales openings in one check, or any new tickets at a
     venue with a known release around now (/release, releases.yaml). The time is bracketed by this
     check and the previous one of that venue (state.scanned).
+
+    New dates (or sales opening) for a play that sells out fast are messaged too, even alone
+    (`selling.alert`), unless the release message or a watchlist alert already showed them.
     """
     s = _season(ctx)
     target = s["month"]
     stamp = now().isoformat(timespec="seconds")
     batch_min = int(ctx.cfg.get("release_season", "batch_min", 5))
     hot = rel.hot_venues(ctx.state, ctx.cfg)
-    batches, titles = _batches(changes or [])
+    batches, found = _batches(changes or [])
+    fast = sales.fast_plays(ctx.state, ctx.cfg)
+    fast_alerts = ctx.cfg.get("selling", "alert", True) and ctx.cfg.get("alerts", "instant", "releases_and_watchlist") != "all"
     for venue in sorted(scanned_venues & set(ctx.cfg.venues)):
         after = ctx.state.scanned.get(venue)
         c = _counts(_month_perfs(ctx, venue, target))
@@ -148,25 +154,29 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
         size = sum(b["new"] + b["opened"] for b in months.values())
         if transition and target not in months:
             months[target] = Counter()
-        if not transition and size < (1 if venue in hot else batch_min):
-            continue
-        entries = []
-        for month in sorted(months):
-            b = months[month]
-            mc = _counts(_month_perfs(ctx, venue, month))
-            entry = {
-                "venue": venue, "month": month, "after": after, "by": stamp,
-                "new": b["new"], "opened": b["opened"], "on_sale": b["on_sale"],
-                "listed": mc["listed"], "buyable": mc["buyable"], "unknown": mc["unknown"],
-            }
-            ctx.state.release_log.append(entry)
-            entries.append(entry)
-            if month == target and venue not in s["released"] and _is_out(mc):
-                s["released"][venue] = {"after": after, "by": stamp}
-        key = f"drop:{venue}:{stamp[:10]}"
-        if not ctx.state.was_notified(key):  # one message per theatre per day; later batches are only logged
-            ctx.state.mark_notified(key)
-            ctx.tg.send(release_message(ctx, venue, entries, titles.get(venue)))
+        if transition or size >= (1 if venue in hot else batch_min):
+            entries = []
+            for month in sorted(months):
+                b = months[month]
+                mc = _counts(_month_perfs(ctx, venue, month))
+                entry = {
+                    "venue": venue, "month": month, "after": after, "by": stamp,
+                    "new": b["new"], "opened": b["opened"], "on_sale": b["on_sale"],
+                    "listed": mc["listed"], "buyable": mc["buyable"], "unknown": mc["unknown"],
+                }
+                ctx.state.release_log.append(entry)
+                entries.append(entry)
+                if month == target and venue not in s["released"] and _is_out(mc):
+                    s["released"][venue] = {"after": after, "by": stamp}
+            key = f"drop:{venue}:{stamp[:10]}"
+            if not ctx.state.was_notified(key):  # one message per theatre per day; later batches are only logged
+                ctx.state.mark_notified(key)
+                ctx.tg.send_all(release_message(ctx, venue, entries, [ch.perf for ch in found.get(venue, [])], fast))
+                continue
+        if fast_alerts:
+            hot_perfs = [ch.perf for ch in found.get(venue, []) if not ch.watched and sales.lookup(fast, ch.perf)]
+            if hot_perfs:
+                ctx.tg.send_all(fast_message(ctx, venue, hot_perfs, after, stamp, fast))
 
 
 def span(after: str | None, by: str) -> str:
@@ -188,18 +198,53 @@ def _month_line(e: dict, show_month: bool = True) -> str:
         parts.append(f"{e['opened']} went on sale")
     head = f"{month_name(e['month'])}: " if show_month else ""
     what = ", ".join(parts) or "tickets out"
-    status = f"{e['listed']} listed, {e['buyable']} on sale" if e.get("buyable") or e.get("on_sale") else f"{e['listed']} listed, none on sale yet"
+    if e.get("buyable") or e.get("on_sale"):
+        status = f"{e['listed']} listed, {e['buyable']} on sale"
+    elif e.get("listed") and e.get("unknown") == e["listed"]:
+        status = f"{e['listed']} listed"  # the source doesn't say whether tickets are on sale
+    else:
+        status = f"{e['listed']} listed, none on sale yet"
     return f"{head}{what} → {status}"
 
 
-def titles_line(titles: Counter, limit: int = 6) -> str:
+def titles_line(titles: Counter, limit: int = 6, links: dict[str, str] | None = None, marks: dict[str, str] | None = None) -> str:
+    """'Edip ×2, Gubitnik, +3 more', titles linked to `links[title]`, prefixed with `marks[title]` (🔥)."""
+    links, marks = links or {}, marks or {}
     top = titles.most_common(limit)
-    shown = ", ".join(f"{escape(t)}{f' ×{n}' if n > 1 else ''}" for t, n in top)
+    shown = ", ".join(f"{marks[t] + ' ' if t in marks else ''}{fmt.a(links.get(t, ''), escape(t))}{f' ×{n}' if n > 1 else ''}" for t, n in top)
     more = len(titles) - len(top)
     return f"{shown}{f', +{more} more' if more else ''}"
 
 
-def release_message(ctx: Ctx, venue: str, entries: list[dict], titles: Counter | None = None) -> str:
+def appeared(after: str | None, by: str) -> str:
+    """'Appeared 05.10. between 14:02 and 17:02' (or 'First seen 27.10. 17:44' with no earlier check)."""
+    if not after:
+        return f"First seen {datetime.fromisoformat(by):%d.%m. %H:%M}"
+    return f"Appeared {datetime.fromisoformat(by):%d.%m.} {span(after, by)}"
+
+
+def plays_list(perfs: list[Performance], fast: dict[str, sales.Play]) -> list[str]:
+    """One block per play (see fmt.play_block): plays that sell out fast first, then by first date."""
+    groups = sales.by_play(perfs)
+    multi_stage = len({p.stage for p in perfs if p.stage}) > 1
+    order = sorted(groups.values(), key=lambda ps: (sales.lookup(fast, ps[0]) is None, ps[0].start))
+    blocks = []
+    for ps in order:
+        play = sales.lookup(fast, ps[0])
+        blocks.append(fmt.play_block(ps, play.mark if play else "", play.note if play else "", multi_stage))
+    return blocks
+
+
+def _footer(ctx: Ctx, venue: str) -> str:
+    parts = [fmt.site_link(ctx.cfg.venue_website(venue)), f"/theatre {venue}", "/new"]
+    return " · ".join(p for p in parts if p)
+
+
+def release_message(ctx: Ctx, venue: str, entries: list[dict], perfs: list[Performance] | None = None, fast: dict | None = None) -> list[str]:
+    """The release message: what came out (per month), when, every play with its dates (each linked to
+    its tickets), 🔥 on plays that sell out fast, and a link to the theatre's site."""
+    perfs = perfs or []
+    fast = fast if fast is not None else sales.fast_plays(ctx.state, ctx.cfg)
     name = escape(ctx.cfg.venue_name(venue))
     on_sale = sum(e["on_sale"] for e in entries)
     target = _season(ctx)["month"]
@@ -212,12 +257,28 @@ def release_message(ctx: Ctx, venue: str, entries: list[dict], titles: Counter |
         head = f"🎟 <b>{name}</b> · tickets for <b>{month_name(target)}</b> are out"
     else:
         head = f"🎟 <b>{name}</b> · new tickets out"
-    lines = [head] + [_month_line(e) for e in entries]
-    if titles:
-        lines.append(titles_line(titles))
     e = entries[0]
-    lines.append(f"Appeared {datetime.fromisoformat(e['by']):%d.%m.} {span(e['after'], e['by'])} · /theatre {venue} · /new")
-    return "\n".join(lines)
+    lines = [head] + [_month_line(x) for x in entries] + [appeared(e["after"], e["by"])]
+    hot = sum(1 for ps in sales.by_play(perfs).values() if sales.lookup(fast, ps[0]))
+    if hot:
+        lines.append(f"🔥 {hot} of them sell{'s' if hot == 1 else ''} out fast: get tickets early")
+    blocks = plays_list(perfs, fast)
+    if blocks:
+        blocks[0] = "\n" + blocks[0]
+    return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued")
+
+
+def fast_message(ctx: Ctx, venue: str, perfs: list[Performance], after: str | None, by: str, fast: dict) -> list[str]:
+    """New dates, or tickets going on sale, for plays that sell out fast (outside a release message)."""
+    name = escape(ctx.cfg.venue_name(venue))
+    on_sale = sum(p.status.buyable for p in perfs)
+    what = "tickets on sale" if on_sale else "new dates (not on sale yet)"
+    n = len(perfs)
+    head = f"🔥 <b>{name}</b> · {what} for a play that sells out fast" if len(sales.by_play(perfs)) == 1 else f"🔥 <b>{name}</b> · {what} for plays that sell out fast"
+    lines = [head, f"{n} date{'s' if n != 1 else ''} · {appeared(after, by)}"]
+    blocks = plays_list(perfs, fast)
+    blocks[0] = "\n" + blocks[0]
+    return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"🔥 <b>{name}</b> · continued")
 
 
 # --- the 20th–27th status -------------------------------------------------------------------------------
@@ -281,7 +342,10 @@ def recent(ctx: Ctx, days: int = 7) -> list[str]:
     """What appeared in the last `days` days, newest day first: per theatre, how many dates (by month),
     how many went on sale, when (bracketed by checks where known), and the titles."""
     since = (now() - timedelta(days=days)).isoformat(timespec="seconds")
-    groups: dict[tuple[str, str], dict] = defaultdict(lambda: {"new": Counter(), "opened": Counter(), "on_sale": 0, "titles": Counter(), "uids": set(), "log": []})
+    fast = sales.fast_plays(ctx.state, ctx.cfg)
+    groups: dict[tuple[str, str], dict] = defaultdict(
+        lambda: {"new": Counter(), "opened": Counter(), "on_sale": 0, "titles": Counter(), "links": {}, "marks": {}, "uids": set(), "log": []}
+    )
     for p in ctx.state.perfs():
         if p.venue not in ctx.cfg.venues or p.start < now() - timedelta(hours=3):
             continue
@@ -298,6 +362,9 @@ def recent(ctx: Ctx, days: int = 7) -> list[str]:
             if p.uid not in g["uids"]:
                 g["uids"].add(p.uid)
                 g["titles"][p.title] += 1
+                g["links"].setdefault(p.title, p.url or p.buy_url)
+                if sales.lookup(fast, p):
+                    g["marks"][p.title] = "🔥"
             g["last"] = max(g.get("last", ""), stamp)
     for e in ctx.state.release_log:
         if e["by"] >= since:
@@ -332,9 +399,10 @@ def recent(ctx: Ctx, days: int = 7) -> list[str]:
                 when = f"at {datetime.fromisoformat(g['last']):%H:%M}" if g.get("last") else ""
             lines.append(f"{name} · {'; '.join(parts)}" + (f" · {when}" if when else ""))
             if g["titles"]:
-                lines.append(f"  {titles_line(g['titles'])}")
+                lines.append(f"  {titles_line(g['titles'], 8, g['links'], g['marks'])}")
         blocks.append("\n".join(lines))
     head = f"🆕 <b>New in the last {days} days</b>"
     if not blocks:
         return [f"{head}\n\nNothing new. Try /new 30 for a longer look back."]
-    return fmt.pack(blocks, header=f"{head}\n+N = dates that appeared · times are the checks that first saw them")
+    legend = "+N = dates that appeared · times are the checks that first saw them" + (" · 🔥 sells out fast (/hot)" if fast else "")
+    return fmt.pack(blocks, header=f"{head}\n{legend}")
