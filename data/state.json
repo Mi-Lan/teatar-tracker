@@ -3442,21 +3442,6 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
-  "madlenianum:gospodin-u-cizmama-od-dima-202611101930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "gospodin-u-cizmama-od-dima-202611101930",
-   "stage": "",
-   "start": "2026-11-10T19:30:00+01:00",
-   "status": "unknown",
-   "subtitle": "Fjodor Mihajlovič Dostojevski",
-   "title": "GOSPODIN U ČIZMAMA OD DIMA",
-   "url": "https://operatheatremadlenianum.com/gospodin-u-cizmama-od-dima",
-   "venue": "madlenianum"
-  },
   "madlenianum:kazanova-protiv-don-zuana-202611232000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3611,24 +3596,6 @@
    "subtitle": "",
    "title": "SNOVI POD MASKAMA",
    "url": "https://tickets.rs/event/snovi_pod_maskama_28665",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27220": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
-   "extra": {
-    "end_date": "2026-11-10",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1900 RSD",
-   "sales_start": null,
-   "source_id": "27220",
-   "stage": "",
-   "start": "2026-11-10T19:30:00+01:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "GOSPODIN U ČIZMAMA OD DIMA",
-   "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27825": {
@@ -4546,23 +4513,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
    "venue": "narodno"
   },
-  "narodno:6452": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6452"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6452",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-10T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Бранислава Нушића у адаптацији Милана Нешковића",
-   "title": "Власт",
-   "url": "https://www.narodnopozoriste.rs/predstave/vlast?m=xd1c9d90815379df17f792587a095614d",
-   "venue": "narodno"
-  },
   "narodno:6453": {
    "available": 129,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6453",
@@ -5338,24 +5288,6 @@
    "url": "https://tickets.rs/event/premijera_filma_bozicna_avantura_27332",
    "venue": "sava_centar"
   },
-  "sava_centar:25919": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/uriah_heep_27331",
-   "extra": {
-    "end_date": "2026-11-10",
-    "event_status": ""
-   },
-   "price": "od 4000 RSD",
-   "sales_start": null,
-   "source_id": "25919",
-   "stage": "",
-   "start": "2026-11-10T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "URIAH HEEP",
-   "url": "https://tickets.rs/event/uriah_heep_27331",
-   "venue": "sava_centar"
-  },
   "sava_centar:25927": {
    "available": null,
    "buy_url": "https://tickets.rs/event/haris_dzinovic_27343",
@@ -6021,24 +5953,6 @@
    "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
    "url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29689",
    "venue": "sava_centar"
-  },
-  "terazije:1275": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1275",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1275"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1275",
-   "stage": "Велика сцена",
-   "start": "2026-11-10T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
-   "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
-   "venue": "terazije"
   },
   "terazije:1276": {
    "available": null,
@@ -9847,14 +9761,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-10T22:07:43+01:00",
-  "jdp": "2026-11-10T22:07:43+01:00",
-  "kolarac": "2026-11-10T22:07:43+01:00",
-  "madlenianum": "2026-11-10T22:07:43+01:00",
-  "madlenianum_tickets": "2026-11-10T22:07:43+01:00",
-  "narodno": "2026-11-10T22:07:43+01:00",
-  "sava_centar": "2026-11-10T22:07:43+01:00",
-  "terazije": "2026-11-10T22:07:43+01:00"
+  "bdp": "2026-11-11T00:07:34+01:00",
+  "jdp": "2026-11-11T00:07:34+01:00",
+  "kolarac": "2026-11-11T00:07:34+01:00",
+  "madlenianum": "2026-11-11T00:07:34+01:00",
+  "madlenianum_tickets": "2026-11-11T00:07:34+01:00",
+  "narodno": "2026-11-11T00:07:34+01:00",
+  "sava_centar": "2026-11-11T00:07:34+01:00",
+  "terazije": "2026-11-11T00:07:34+01:00"
  },
  "season": {
   "live": {
