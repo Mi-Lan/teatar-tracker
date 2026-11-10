@@ -239,6 +239,7 @@
    "sarah brightman a winter symphony loze",
    "sarah brightman a winter symphony vip",
    "sergej cetkovic",
+   "sledeci put kada dotaknes dno",
    "slobodan trkulja balkanopolis put svile iii",
    "success day",
    "the nutcracker",
@@ -2019,6 +2020,18 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-09T21:38:59+01:00"
   },
+  "sava_centar:28234": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-10T16:07:41+01:00"
+  },
+  "sava_centar:28238": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-10T16:07:41+01:00"
+  },
+  "sava_centar:28239": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-10T16:07:41+01:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2305,6 +2318,7 @@
   "new_date:sava_centar:27306": "2026-09-30T15:35:23+02:00",
   "new_date:sava_centar:27415": "2026-10-09T18:05:23+02:00",
   "new_date:sava_centar:27853": "2026-10-29T17:02:02+01:00",
+  "new_date:sava_centar:28234": "2026-11-10T16:07:41+01:00",
   "new_date:terazije:1259": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1263": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1264": "2026-09-25T01:50:54+02:00",
@@ -2426,6 +2440,8 @@
   "new_show:sava_centar:28140": "2026-10-30T15:01:05+01:00",
   "new_show:sava_centar:28205": "2026-11-06T15:57:04+01:00",
   "new_show:sava_centar:28221": "2026-11-09T21:38:59+01:00",
+  "new_show:sava_centar:28238": "2026-11-10T16:07:41+01:00",
+  "new_show:sava_centar:28239": "2026-11-10T16:07:41+01:00",
   "new_show:terazije:1252": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1253": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1254": "2026-09-25T01:50:54+02:00",
@@ -3324,17 +3340,16 @@
   },
   "jdp:202611282000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1245",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1245"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-28T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3587,14 +3602,14 @@
    "buy_url": "https://tickets.rs/event/snovi_pod_maskama_28665",
    "extra": {
     "end_date": "2026-11-11",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 2000 RSD",
    "sales_start": null,
    "source_id": "27219",
    "stage": "",
    "start": "2026-11-11T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "SNOVI POD MASKAMA",
    "url": "https://tickets.rs/event/snovi_pod_maskama_28665",
@@ -3605,14 +3620,14 @@
    "buy_url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
    "extra": {
     "end_date": "2026-11-10",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 1900 RSD",
    "sales_start": null,
    "source_id": "27220",
    "stage": "",
    "start": "2026-11-10T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "url": "https://tickets.rs/event/gospodin_u_cizmama_od_dima_28666",
@@ -5974,6 +5989,60 @@
    "url": "https://tickets.rs/event/fmcg_masterclass_da_li_razumemo_svoj_brend_29671",
    "venue": "sava_centar"
   },
+  "sava_centar:28234": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/magla_bend_29684",
+   "extra": {
+    "end_date": "2026-12-10",
+    "event_status": ""
+   },
+   "price": "od 2300 RSD",
+   "sales_start": null,
+   "source_id": "28234",
+   "stage": "Plava dvorana",
+   "start": "2026-12-10T20:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Magla bend",
+   "url": "https://tickets.rs/event/magla_bend_29684",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28238": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29688",
+   "extra": {
+    "end_date": "2026-11-22",
+    "event_status": ""
+   },
+   "price": "od 2200 RSD",
+   "sales_start": null,
+   "source_id": "28238",
+   "stage": "Immersive sala",
+   "start": "2026-11-22T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
+   "url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29688",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28239": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29689",
+   "extra": {
+    "end_date": "2026-11-23",
+    "event_status": ""
+   },
+   "price": "od 2200 RSD",
+   "sales_start": null,
+   "source_id": "28239",
+   "stage": "Immersive sala",
+   "start": "2026-11-23T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
+   "url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29689",
+   "venue": "sava_centar"
+  },
   "terazije:1275": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1275",
@@ -6443,6 +6512,30 @@
    "opened": 0,
    "unknown": 13,
    "venue": "madlenianum"
+  },
+  {
+   "after": "2026-11-10T14:07:38+01:00",
+   "buyable": 15,
+   "by": "2026-11-10T16:07:41+01:00",
+   "listed": 17,
+   "month": "2026-11",
+   "new": 2,
+   "on_sale": 2,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-11-10T14:07:38+01:00",
+   "buyable": 26,
+   "by": "2026-11-10T16:07:41+01:00",
+   "listed": 26,
+   "month": "2026-12",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
   }
  ],
  "releases": [
@@ -7383,12 +7476,14 @@
   },
   "madlenianum_tickets:27219": {
    "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-11-10T16:07:41+01:00",
    "start": "2026-11-11T19:30:00+01:00",
    "title": "SNOVI POD MASKAMA",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27220": {
    "on_sale": "2026-09-24T13:37:37+02:00",
+   "sold_out": "2026-11-10T16:07:41+01:00",
    "start": "2026-11-10T19:30:00+01:00",
    "title": "GOSPODIN U ČIZMAMA OD DIMA",
    "venue": "madlenianum_tickets"
@@ -9435,6 +9530,24 @@
    "title": "FMCG MasterClass - Da li razumemo svoj brend",
    "venue": "sava_centar"
   },
+  "sava_centar:28234": {
+   "on_sale": "2026-11-10T16:07:41+01:00",
+   "start": "2026-12-10T20:30:00+01:00",
+   "title": "Magla bend",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28238": {
+   "on_sale": "2026-11-10T16:07:41+01:00",
+   "start": "2026-11-22T20:00:00+01:00",
+   "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
+   "venue": "sava_centar"
+  },
+  "sava_centar:28239": {
+   "on_sale": "2026-11-10T16:07:41+01:00",
+   "start": "2026-11-23T20:00:00+01:00",
+   "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
+   "venue": "sava_centar"
+  },
   "terazije:1246": {
    "low": "2026-09-23T19:49:06+02:00",
    "sold_out": null,
@@ -9753,14 +9866,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-10T14:07:38+01:00",
-  "jdp": "2026-11-10T14:07:38+01:00",
-  "kolarac": "2026-11-10T14:07:38+01:00",
-  "madlenianum": "2026-11-10T14:07:38+01:00",
-  "madlenianum_tickets": "2026-11-10T14:07:38+01:00",
-  "narodno": "2026-11-10T14:07:38+01:00",
-  "sava_centar": "2026-11-10T14:07:38+01:00",
-  "terazije": "2026-11-10T14:07:38+01:00"
+  "bdp": "2026-11-10T16:07:41+01:00",
+  "jdp": "2026-11-10T16:07:41+01:00",
+  "kolarac": "2026-11-10T16:07:41+01:00",
+  "madlenianum": "2026-11-10T16:07:41+01:00",
+  "madlenianum_tickets": "2026-11-10T16:07:41+01:00",
+  "narodno": "2026-11-10T16:07:41+01:00",
+  "sava_centar": "2026-11-10T16:07:41+01:00",
+  "terazije": "2026-11-10T16:07:41+01:00"
  },
  "season": {
   "live": {
@@ -9790,7 +9903,12 @@
    }
   },
   "month": "2026-12",
-  "released": {},
+  "released": {
+   "sava_centar": {
+    "after": "2026-11-10T14:07:38+01:00",
+    "by": "2026-11-10T16:07:41+01:00"
+   }
+  },
   "reported": {}
  },
  "telegram_offset": 597987120,
