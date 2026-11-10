@@ -3324,16 +3324,17 @@
   },
   "jdp:202611282000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1245",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1245"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-28T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4199,19 +4200,17 @@
    "venue": "narodno"
   },
   "narodno:6372": {
-   "available": 2,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6372",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-10T12:00:10+01:00",
-    "repid": "6372",
-    "seats": 224
+    "repid": "6372"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6372",
    "stage": "Велика сцена",
    "start": "2026-11-13T19:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "балет Петра Иљича Чајковског",
    "title": "Лабудово језеро",
    "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xfdceb120249b6675b2d44b7f0928b461",
@@ -4328,17 +4327,19 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": null,
-   "buy_url": "",
+   "available": 2,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
    "extra": {
-    "repid": "6379"
+    "counted_at": "2026-11-10T14:07:24+01:00",
+    "repid": "6379",
+    "seats": 224
    },
    "price": "",
    "sales_start": null,
    "source_id": "6379",
    "stage": "Велика сцена",
    "start": "2026-11-28T14:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x4e519ce8fcabe8cca556243cb4dccfb7",
@@ -5667,24 +5668,6 @@
    "url": "https://tickets.rs/event/crvena_jabuka_28679",
    "venue": "sava_centar"
   },
-  "sava_centar:27298": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/bcf_forum_28744",
-   "extra": {
-    "end_date": "2026-11-10",
-    "event_status": ""
-   },
-   "price": "od 3000 RSD",
-   "sales_start": null,
-   "source_id": "27298",
-   "stage": "sala M13",
-   "start": "2026-11-10T10:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "BCF Forum",
-   "url": "https://tickets.rs/event/bcf_forum_28744",
-   "venue": "sava_centar"
-  },
   "sava_centar:27301": {
    "available": null,
    "buy_url": "https://tickets.rs/event/magla_bend_28746",
@@ -6057,7 +6040,7 @@
    "source_id": "1278",
    "stage": "Велика сцена",
    "start": "2026-11-14T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
    "title": "FLASHDANCE",
    "url": "https://pozoristeterazije.com/predstave/fles-dens/",
@@ -7997,6 +7980,14 @@
    "venue": "narodno"
   },
   "narodno:6379": {
+   "counts": [
+    [
+     "2026-11-10T14:07:24+01:00",
+     2
+    ]
+   ],
+   "low": "2026-11-10T14:07:38+01:00",
+   "seats": 224,
    "sold_out": "2026-11-09T21:38:59+01:00",
    "start": "2026-11-28T14:00:00+01:00",
    "title": "Крцко Орашчић",
@@ -9645,6 +9636,7 @@
    "venue": "terazije"
   },
   "terazije:1278": {
+   "low": "2026-11-10T14:07:38+01:00",
    "on_sale": "2026-10-23T01:12:55+02:00",
    "start": "2026-11-14T19:30:00+01:00",
    "title": "FLASHDANCE",
@@ -9761,14 +9753,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-10T12:07:33+01:00",
-  "jdp": "2026-11-10T12:07:33+01:00",
-  "kolarac": "2026-11-10T12:07:33+01:00",
-  "madlenianum": "2026-11-10T12:07:33+01:00",
-  "madlenianum_tickets": "2026-11-10T12:07:33+01:00",
-  "narodno": "2026-11-10T12:07:33+01:00",
-  "sava_centar": "2026-11-10T12:07:33+01:00",
-  "terazije": "2026-11-10T12:07:33+01:00"
+  "bdp": "2026-11-10T14:07:38+01:00",
+  "jdp": "2026-11-10T14:07:38+01:00",
+  "kolarac": "2026-11-10T14:07:38+01:00",
+  "madlenianum": "2026-11-10T14:07:38+01:00",
+  "madlenianum_tickets": "2026-11-10T14:07:38+01:00",
+  "narodno": "2026-11-10T14:07:38+01:00",
+  "sava_centar": "2026-11-10T14:07:38+01:00",
+  "terazije": "2026-11-10T14:07:38+01:00"
  },
  "season": {
   "live": {
