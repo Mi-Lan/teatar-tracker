@@ -3502,21 +3502,6 @@
    "url": "https://operatheatremadlenianum.com/snezana-i-sedam-patuljaka",
    "venue": "madlenianum"
   },
-  "madlenianum:snovi-pod-maskama-202611111930": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "snovi-pod-maskama-202611111930",
-   "stage": "",
-   "start": "2026-11-11T19:30:00+01:00",
-   "status": "unknown",
-   "subtitle": "",
-   "title": "SNOVI POD MASKAMA",
-   "url": "https://operatheatremadlenianum.com/snovi-pod-maskama",
-   "venue": "madlenianum"
-  },
   "madlenianum:staklena-menazerija-202611242000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3578,24 +3563,6 @@
    "subtitle": "",
    "title": "THE SASSOON EXPERIENCE",
    "url": "https://tickets.rs/event/the_sassoon_experience_27733",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27219": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/snovi_pod_maskama_28665",
-   "extra": {
-    "end_date": "2026-11-11",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 2000 RSD",
-   "sales_start": null,
-   "source_id": "27219",
-   "stage": "",
-   "start": "2026-11-11T19:30:00+01:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "SNOVI POD MASKAMA",
-   "url": "https://tickets.rs/event/snovi_pod_maskama_28665",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27825": {
@@ -5590,24 +5557,6 @@
    "subtitle": "",
    "title": "Crvena jabuka",
    "url": "https://tickets.rs/event/crvena_jabuka_28679",
-   "venue": "sava_centar"
-  },
-  "sava_centar:27301": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/magla_bend_28746",
-   "extra": {
-    "end_date": "2026-11-11",
-    "event_status": ""
-   },
-   "price": "od 2300 RSD",
-   "sales_start": null,
-   "source_id": "27301",
-   "stage": "Plava dvorana",
-   "start": "2026-11-11T20:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Magla bend",
-   "url": "https://tickets.rs/event/magla_bend_28746",
    "venue": "sava_centar"
   },
   "sava_centar:27304": {
@@ -9996,14 +9945,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-11T22:07:48+01:00",
-  "jdp": "2026-11-11T22:07:48+01:00",
-  "kolarac": "2026-11-11T22:07:48+01:00",
-  "madlenianum": "2026-11-11T22:07:48+01:00",
-  "madlenianum_tickets": "2026-11-11T22:07:48+01:00",
-  "narodno": "2026-11-11T22:07:48+01:00",
-  "sava_centar": "2026-11-11T22:07:48+01:00",
-  "terazije": "2026-11-11T22:07:48+01:00"
+  "bdp": "2026-11-12T00:07:31+01:00",
+  "jdp": "2026-11-12T00:07:31+01:00",
+  "kolarac": "2026-11-12T00:07:31+01:00",
+  "madlenianum": "2026-11-12T00:07:31+01:00",
+  "madlenianum_tickets": "2026-11-12T00:07:31+01:00",
+  "narodno": "2026-11-12T00:07:31+01:00",
+  "sava_centar": "2026-11-12T00:07:31+01:00",
+  "terazije": "2026-11-12T00:07:31+01:00"
  },
  "season": {
   "live": {
