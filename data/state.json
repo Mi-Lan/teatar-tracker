@@ -3082,16 +3082,17 @@
   },
   "jdp:202611172000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1236",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1236"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611172000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-17T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -10219,14 +10220,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-12T12:07:37+01:00",
-  "jdp": "2026-11-12T12:07:37+01:00",
-  "kolarac": "2026-11-12T12:07:37+01:00",
-  "madlenianum": "2026-11-12T12:07:37+01:00",
-  "madlenianum_tickets": "2026-11-12T12:07:37+01:00",
-  "narodno": "2026-11-12T12:07:37+01:00",
-  "sava_centar": "2026-11-12T12:07:37+01:00",
-  "terazije": "2026-11-12T12:07:37+01:00"
+  "bdp": "2026-11-12T14:07:52+01:00",
+  "jdp": "2026-11-12T14:07:52+01:00",
+  "kolarac": "2026-11-12T14:07:52+01:00",
+  "madlenianum": "2026-11-12T14:07:52+01:00",
+  "madlenianum_tickets": "2026-11-12T14:07:52+01:00",
+  "narodno": "2026-11-12T14:07:52+01:00",
+  "sava_centar": "2026-11-12T14:07:52+01:00",
+  "terazije": "2026-11-12T14:07:52+01:00"
  },
  "season": {
   "live": {
