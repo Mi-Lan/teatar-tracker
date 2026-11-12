@@ -2998,23 +2998,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611122000-putujuce-pozoriste-sopalovic": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611122000-putujuce-pozoriste-sopalovic",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-12T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Ljubomir Simović",
-   "title": "Putujuće pozorište Šopalović",
-   "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
-   "venue": "jdp"
-  },
   "jdp:202611132000-edip": {
    "available": null,
    "buy_url": "",
@@ -4490,23 +4473,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
    "venue": "narodno"
   },
-  "narodno:6453": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6453"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6453",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-12T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Тадеуша Слобођанека",
-   "title": "Наш разред",
-   "url": "https://www.narodnopozoriste.rs/predstave/nas-razred?m=x1a7c6ed498f8d02530568a8d17e9ca9a",
-   "venue": "narodno"
-  },
   "narodno:6454": {
    "available": 128,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6454",
@@ -5315,24 +5281,6 @@
    "url": "https://tickets.rs/event/perpetuum_jazzile_27425",
    "venue": "sava_centar"
   },
-  "sava_centar:26024": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/halid_muslimovic_27437",
-   "extra": {
-    "end_date": "2026-11-12",
-    "event_status": ""
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "26024",
-   "stage": "",
-   "start": "2026-11-12T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Halid Muslimović",
-   "url": "https://tickets.rs/event/halid_muslimovic_27437",
-   "venue": "sava_centar"
-  },
   "sava_centar:26040": {
    "available": null,
    "buy_url": "https://tickets.rs/event/sergej_cetkovic_27456",
@@ -5944,24 +5892,6 @@
    "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
    "url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29689",
    "venue": "sava_centar"
-  },
-  "terazije:1276": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1276",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1276"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1276",
-   "stage": "Велика сцена",
-   "start": "2026-11-12T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Мјузикл у режији Даријана Михајловића",
-   "title": "БАЛКАН ЕКСПРЕС",
-   "url": "https://pozoristeterazije.com/repertoar/",
-   "venue": "terazije"
   },
   "terazije:1277": {
    "available": null,
@@ -10258,14 +10188,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-12T22:07:34+01:00",
-  "jdp": "2026-11-12T22:07:34+01:00",
-  "kolarac": "2026-11-12T22:07:34+01:00",
-  "madlenianum": "2026-11-12T22:07:34+01:00",
-  "madlenianum_tickets": "2026-11-12T22:07:34+01:00",
-  "narodno": "2026-11-12T22:07:34+01:00",
-  "sava_centar": "2026-11-12T22:07:34+01:00",
-  "terazije": "2026-11-12T22:07:34+01:00"
+  "bdp": "2026-11-12T23:41:17+01:00",
+  "jdp": "2026-11-12T23:41:17+01:00",
+  "kolarac": "2026-11-12T23:41:17+01:00",
+  "madlenianum": "2026-11-12T23:41:17+01:00",
+  "madlenianum_tickets": "2026-11-12T23:41:17+01:00",
+  "narodno": "2026-11-12T23:41:17+01:00",
+  "sava_centar": "2026-11-12T23:41:17+01:00",
+  "terazije": "2026-11-12T23:41:17+01:00"
  },
  "season": {
   "live": {
