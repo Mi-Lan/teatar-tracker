@@ -224,6 +224,7 @@
    "mira skoric",
    "musical moliere",
    "new year 2027 dzejla ramovic i dejan vrana",
+   "new year 2027 natasa bekvalac",
    "nikola rokvic",
    "notre dame de paris",
    "novi fosili",
@@ -1988,6 +1989,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-10-14T15:36:00+02:00"
   },
+  "sava_centar:27566": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-12T12:07:37+01:00"
+  },
   "sava_centar:27770": {
    "ever_on_sale": true,
    "first_seen": "2026-10-23T16:54:25+02:00"
@@ -2433,6 +2438,7 @@
   "new_show:sava_centar:27388": "2026-10-08T18:22:01+02:00",
   "new_show:sava_centar:27409": "2026-10-13T17:51:50+02:00",
   "new_show:sava_centar:27459": "2026-10-14T15:36:00+02:00",
+  "new_show:sava_centar:27566": "2026-11-12T12:07:37+01:00",
   "new_show:sava_centar:27770": "2026-10-23T16:54:25+02:00",
   "new_show:sava_centar:28135": "2026-10-30T15:01:05+01:00",
   "new_show:sava_centar:28138": "2026-10-30T15:01:05+01:00",
@@ -5703,6 +5709,24 @@
    "url": "https://tickets.rs/event/premijera_filma_ruka_pravde_28906",
    "venue": "sava_centar"
   },
+  "sava_centar:27566": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/new_year_2027_natasa_bekvalac_29017",
+   "extra": {
+    "end_date": "2026-12-31",
+    "event_status": ""
+   },
+   "price": "od 11800 RSD",
+   "sales_start": null,
+   "source_id": "27566",
+   "stage": "",
+   "start": "2026-12-31T21:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "New Year 2027 - Nataša Bekvalac",
+   "url": "https://tickets.rs/event/new_year_2027_natasa_bekvalac_29017",
+   "venue": "sava_centar"
+  },
   "sava_centar:27770": {
    "available": null,
    "buy_url": "https://tickets.rs/event/slobodan_trkulja_balkanopolis_put_svile_iii_29220",
@@ -5913,7 +5937,7 @@
    "source_id": "1276",
    "stage": "Велика сцена",
    "start": "2026-11-12T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Даријана Михајловића",
    "title": "БАЛКАН ЕКСПРЕС",
    "url": "https://pozoristeterazije.com/repertoar/",
@@ -6370,6 +6394,18 @@
    "buyable": 26,
    "by": "2026-11-10T16:07:41+01:00",
    "listed": 26,
+   "month": "2026-12",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-11-12T10:07:46+01:00",
+   "buyable": 27,
+   "by": "2026-11-12T12:07:37+01:00",
+   "listed": 27,
    "month": "2026-12",
    "new": 1,
    "on_sale": 1,
@@ -9791,6 +9827,12 @@
    "title": "Premijera filma \"Ruka pravde\"",
    "venue": "sava_centar"
   },
+  "sava_centar:27566": {
+   "on_sale": "2026-11-12T12:07:37+01:00",
+   "start": "2026-12-31T21:00:00+01:00",
+   "title": "New Year 2027 - Nataša Bekvalac",
+   "venue": "sava_centar"
+  },
   "sava_centar:27770": {
    "on_sale": "2026-10-23T16:54:25+02:00",
    "start": "2027-02-14T20:00:00+01:00",
@@ -10177,14 +10219,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-12T10:07:46+01:00",
-  "jdp": "2026-11-12T10:07:46+01:00",
-  "kolarac": "2026-11-12T10:07:46+01:00",
-  "madlenianum": "2026-11-12T10:07:46+01:00",
-  "madlenianum_tickets": "2026-11-12T10:07:46+01:00",
-  "narodno": "2026-11-12T10:07:46+01:00",
-  "sava_centar": "2026-11-12T10:07:46+01:00",
-  "terazije": "2026-11-12T10:07:46+01:00"
+  "bdp": "2026-11-12T12:07:37+01:00",
+  "jdp": "2026-11-12T12:07:37+01:00",
+  "kolarac": "2026-11-12T12:07:37+01:00",
+  "madlenianum": "2026-11-12T12:07:37+01:00",
+  "madlenianum_tickets": "2026-11-12T12:07:37+01:00",
+  "narodno": "2026-11-12T12:07:37+01:00",
+  "sava_centar": "2026-11-12T12:07:37+01:00",
+  "terazije": "2026-11-12T12:07:37+01:00"
  },
  "season": {
   "live": {
