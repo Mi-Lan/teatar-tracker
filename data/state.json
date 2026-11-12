@@ -3000,17 +3000,16 @@
   },
   "jdp:202611122000-putujuce-pozoriste-sopalovic": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1232",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1232"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611122000-putujuce-pozoriste-sopalovic",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-12T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ljubomir Simović",
    "title": "Putujuće pozorište Šopalović",
    "url": "https://www.jdp.rs/performance/putujuce-pozoriste-sopalovic/",
@@ -4492,19 +4491,17 @@
    "venue": "narodno"
   },
   "narodno:6453": {
-   "available": 110,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6453",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-12T09:14:42+01:00",
-    "repid": "6453",
-    "seats": 323
+    "repid": "6453"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6453",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-12T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драма Тадеуша Слобођанека",
    "title": "Наш разред",
    "url": "https://www.narodnopozoriste.rs/predstave/nas-razred?m=x1a7c6ed498f8d02530568a8d17e9ca9a",
@@ -10261,14 +10258,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-12T20:07:47+01:00",
-  "jdp": "2026-11-12T20:07:47+01:00",
-  "kolarac": "2026-11-12T20:07:47+01:00",
-  "madlenianum": "2026-11-12T20:07:47+01:00",
-  "madlenianum_tickets": "2026-11-12T20:07:47+01:00",
-  "narodno": "2026-11-12T20:07:47+01:00",
-  "sava_centar": "2026-11-12T20:07:47+01:00",
-  "terazije": "2026-11-12T20:07:47+01:00"
+  "bdp": "2026-11-12T22:07:34+01:00",
+  "jdp": "2026-11-12T22:07:34+01:00",
+  "kolarac": "2026-11-12T22:07:34+01:00",
+  "madlenianum": "2026-11-12T22:07:34+01:00",
+  "madlenianum_tickets": "2026-11-12T22:07:34+01:00",
+  "narodno": "2026-11-12T22:07:34+01:00",
+  "sava_centar": "2026-11-12T22:07:34+01:00",
+  "terazije": "2026-11-12T22:07:34+01:00"
  },
  "season": {
   "live": {
