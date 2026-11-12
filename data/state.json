@@ -2025,6 +2025,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-09T21:38:59+01:00"
   },
+  "sava_centar:28224": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-12T16:07:45+01:00"
+  },
   "sava_centar:28234": {
    "ever_on_sale": true,
    "first_seen": "2026-11-10T16:07:41+01:00"
@@ -2323,6 +2327,7 @@
   "new_date:sava_centar:27306": "2026-09-30T15:35:23+02:00",
   "new_date:sava_centar:27415": "2026-10-09T18:05:23+02:00",
   "new_date:sava_centar:27853": "2026-10-29T17:02:02+01:00",
+  "new_date:sava_centar:28224": "2026-11-12T16:07:45+01:00",
   "new_date:sava_centar:28234": "2026-11-10T16:07:41+01:00",
   "new_date:terazije:1259": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1263": "2026-09-25T01:50:54+02:00",
@@ -5872,6 +5877,24 @@
    "url": "https://tickets.rs/event/fmcg_masterclass_da_li_razumemo_svoj_brend_29671",
    "venue": "sava_centar"
   },
+  "sava_centar:28224": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/zeljko_vasic_29674",
+   "extra": {
+    "end_date": "2027-03-19",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "28224",
+   "stage": "Plava dvorana",
+   "start": "2027-03-19T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "ŽELJKO VASIĆ",
+   "url": "https://tickets.rs/event/zeljko_vasic_29674",
+   "venue": "sava_centar"
+  },
   "sava_centar:28234": {
    "available": null,
    "buy_url": "https://tickets.rs/event/magla_bend_29684",
@@ -6408,6 +6431,18 @@
    "by": "2026-11-12T12:07:37+01:00",
    "listed": 27,
    "month": "2026-12",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-11-12T14:07:52+01:00",
+   "buyable": 9,
+   "by": "2026-11-12T16:07:45+01:00",
+   "listed": 9,
+   "month": "2027-03",
    "new": 1,
    "on_sale": 1,
    "opened": 0,
@@ -9882,6 +9917,12 @@
    "title": "FMCG MasterClass - Da li razumemo svoj brend",
    "venue": "sava_centar"
   },
+  "sava_centar:28224": {
+   "on_sale": "2026-11-12T16:07:45+01:00",
+   "start": "2027-03-19T20:00:00+01:00",
+   "title": "ŽELJKO VASIĆ",
+   "venue": "sava_centar"
+  },
   "sava_centar:28234": {
    "on_sale": "2026-11-10T16:07:41+01:00",
    "start": "2026-12-10T20:30:00+01:00",
@@ -10220,14 +10261,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-12T14:07:52+01:00",
-  "jdp": "2026-11-12T14:07:52+01:00",
-  "kolarac": "2026-11-12T14:07:52+01:00",
-  "madlenianum": "2026-11-12T14:07:52+01:00",
-  "madlenianum_tickets": "2026-11-12T14:07:52+01:00",
-  "narodno": "2026-11-12T14:07:52+01:00",
-  "sava_centar": "2026-11-12T14:07:52+01:00",
-  "terazije": "2026-11-12T14:07:52+01:00"
+  "bdp": "2026-11-12T16:07:45+01:00",
+  "jdp": "2026-11-12T16:07:45+01:00",
+  "kolarac": "2026-11-12T16:07:45+01:00",
+  "madlenianum": "2026-11-12T16:07:45+01:00",
+  "madlenianum_tickets": "2026-11-12T16:07:45+01:00",
+  "narodno": "2026-11-12T16:07:45+01:00",
+  "sava_centar": "2026-11-12T16:07:45+01:00",
+  "terazije": "2026-11-12T16:07:45+01:00"
  },
  "season": {
   "live": {
