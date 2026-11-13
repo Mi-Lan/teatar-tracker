@@ -3106,16 +3106,17 @@
   },
   "jdp:202611182000-gospodjica": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1237",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1237"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611182000-gospodjica",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-18T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Ivo Andrić",
    "title": "Gospođica",
    "url": "https://www.jdp.rs/performance/gospodjica/",
@@ -10413,14 +10414,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-13T12:07:45+01:00",
-  "jdp": "2026-11-13T12:07:45+01:00",
-  "kolarac": "2026-11-13T12:07:45+01:00",
-  "madlenianum": "2026-11-13T12:07:45+01:00",
-  "madlenianum_tickets": "2026-11-13T12:07:45+01:00",
-  "narodno": "2026-11-13T12:07:45+01:00",
-  "sava_centar": "2026-11-13T12:07:45+01:00",
-  "terazije": "2026-11-13T12:07:45+01:00"
+  "bdp": "2026-11-13T14:07:46+01:00",
+  "jdp": "2026-11-13T14:07:46+01:00",
+  "kolarac": "2026-11-13T14:07:46+01:00",
+  "madlenianum": "2026-11-13T14:07:46+01:00",
+  "madlenianum_tickets": "2026-11-13T14:07:46+01:00",
+  "narodno": "2026-11-13T14:07:46+01:00",
+  "sava_centar": "2026-11-13T14:07:46+01:00",
+  "terazije": "2026-11-13T14:07:46+01:00"
  },
  "season": {
   "live": {
