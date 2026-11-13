@@ -2045,6 +2045,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-13T16:07:42+01:00"
   },
+  "sava_centar:28253": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-13T20:07:36+01:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2334,6 +2338,7 @@
   "new_date:sava_centar:28224": "2026-11-12T16:07:45+01:00",
   "new_date:sava_centar:28234": "2026-11-10T16:07:41+01:00",
   "new_date:sava_centar:28246": "2026-11-13T16:07:42+01:00",
+  "new_date:sava_centar:28253": "2026-11-13T20:07:36+01:00",
   "new_date:terazije:1259": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1263": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1264": "2026-09-25T01:50:54+02:00",
@@ -5897,6 +5902,24 @@
    "url": "https://tickets.rs/event/aleksandar_sofronijevic_i_majstori_za_dusu_29698",
    "venue": "sava_centar"
   },
+  "sava_centar:28253": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/nikola_rokvic_29704",
+   "extra": {
+    "end_date": "2027-03-26",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "28253",
+   "stage": "",
+   "start": "2027-03-26T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Nikola Rokvić",
+   "url": "https://tickets.rs/event/nikola_rokvic_29704",
+   "venue": "sava_centar"
+  },
   "terazije:1277": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1277",
@@ -6385,6 +6408,18 @@
    "by": "2026-11-13T16:07:42+01:00",
    "listed": 5,
    "month": "2027-02",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-11-13T19:29:12+01:00",
+   "buyable": 10,
+   "by": "2026-11-13T20:07:36+01:00",
+   "listed": 10,
+   "month": "2027-03",
    "new": 1,
    "on_sale": 1,
    "opened": 0,
@@ -10118,6 +10153,12 @@
    "title": "Aleksandar Sofronijević i Majstori za dušu",
    "venue": "sava_centar"
   },
+  "sava_centar:28253": {
+   "on_sale": "2026-11-13T20:07:36+01:00",
+   "start": "2027-03-26T20:00:00+01:00",
+   "title": "Nikola Rokvić",
+   "venue": "sava_centar"
+  },
   "terazije:1246": {
    "low": "2026-09-23T19:49:06+02:00",
    "sold_out": null,
@@ -10438,14 +10479,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-13T19:29:12+01:00",
-  "jdp": "2026-11-13T19:29:12+01:00",
-  "kolarac": "2026-11-13T19:29:12+01:00",
-  "madlenianum": "2026-11-13T19:29:12+01:00",
-  "madlenianum_tickets": "2026-11-13T19:29:12+01:00",
-  "narodno": "2026-11-13T19:29:12+01:00",
-  "sava_centar": "2026-11-13T19:29:12+01:00",
-  "terazije": "2026-11-13T19:29:12+01:00"
+  "bdp": "2026-11-13T20:07:36+01:00",
+  "jdp": "2026-11-13T20:07:36+01:00",
+  "kolarac": "2026-11-13T20:07:36+01:00",
+  "madlenianum": "2026-11-13T20:07:36+01:00",
+  "madlenianum_tickets": "2026-11-13T20:07:36+01:00",
+  "narodno": "2026-11-13T20:07:36+01:00",
+  "sava_centar": "2026-11-13T20:07:36+01:00",
+  "terazije": "2026-11-13T20:07:36+01:00"
  },
  "season": {
   "live": {
