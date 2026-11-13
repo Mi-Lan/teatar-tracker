@@ -2530,19 +2530,18 @@
  "performances": {
   "bdp:202611131930-kralj-ibi": {
    "available": null,
-   "buy_url": "https://app.sixtix.com/events/222de67acea2",
+   "buy_url": "",
    "extra": {
     "guest": false,
     "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "222de67acea2"
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611131930-kralj-ibi",
    "stage": "Velika scena \"Olivera i Rade\"",
    "start": "2026-11-13T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "",
    "title": "Краљ Иби",
    "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
@@ -4117,23 +4116,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x31dd84013e7a106698c690e0acde6bb2",
    "venue": "narodno"
   },
-  "narodno:6372": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6372"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6372",
-   "stage": "Велика сцена",
-   "start": "2026-11-13T19:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "балет Петра Иљича Чајковског",
-   "title": "Лабудово језеро",
-   "url": "https://www.narodnopozoriste.rs/predstave/labudovo-jezero-1?m=xfdceb120249b6675b2d44b7f0928b461",
-   "venue": "narodno"
-  },
   "narodno:6373": {
    "available": null,
    "buy_url": "",
@@ -4465,19 +4447,17 @@
    "venue": "narodno"
   },
   "narodno:6454": {
-   "available": 125,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6454",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-13T10:07:31+01:00",
-    "repid": "6454",
-    "seats": 323
+    "repid": "6454"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6454",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-13T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "по мотивима прозе Борисава Станковића",
    "title": "Божји људи",
    "url": "https://www.narodnopozoriste.rs/predstave/bozji-ljudi?m=x990b894cd82304f48104fb454e294c48",
@@ -10479,14 +10459,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-13T20:07:36+01:00",
-  "jdp": "2026-11-13T20:07:36+01:00",
-  "kolarac": "2026-11-13T20:07:36+01:00",
-  "madlenianum": "2026-11-13T20:07:36+01:00",
-  "madlenianum_tickets": "2026-11-13T20:07:36+01:00",
-  "narodno": "2026-11-13T20:07:36+01:00",
-  "sava_centar": "2026-11-13T20:07:36+01:00",
-  "terazije": "2026-11-13T20:07:36+01:00"
+  "bdp": "2026-11-13T22:07:39+01:00",
+  "jdp": "2026-11-13T22:07:39+01:00",
+  "kolarac": "2026-11-13T22:07:39+01:00",
+  "madlenianum": "2026-11-13T22:07:39+01:00",
+  "madlenianum_tickets": "2026-11-13T22:07:39+01:00",
+  "narodno": "2026-11-13T22:07:39+01:00",
+  "sava_centar": "2026-11-13T22:07:39+01:00",
+  "terazije": "2026-11-13T22:07:39+01:00"
  },
  "season": {
   "live": {
