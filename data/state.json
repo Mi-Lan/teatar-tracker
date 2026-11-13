@@ -2041,6 +2041,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-10T16:07:41+01:00"
   },
+  "sava_centar:28246": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-13T16:07:42+01:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2329,6 +2333,7 @@
   "new_date:sava_centar:27853": "2026-10-29T17:02:02+01:00",
   "new_date:sava_centar:28224": "2026-11-12T16:07:45+01:00",
   "new_date:sava_centar:28234": "2026-11-10T16:07:41+01:00",
+  "new_date:sava_centar:28246": "2026-11-13T16:07:42+01:00",
   "new_date:terazije:1259": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1263": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1264": "2026-09-25T01:50:54+02:00",
@@ -3106,17 +3111,16 @@
   },
   "jdp:202611182000-gospodjica": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1237",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1237"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611182000-gospodjica",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-18T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ivo Andrić",
    "title": "Gospođica",
    "url": "https://www.jdp.rs/performance/gospodjica/",
@@ -3584,14 +3588,14 @@
    "buy_url": "https://tickets.rs/event/pluca_29277",
    "extra": {
     "end_date": "2026-11-15",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 1700 RSD",
    "sales_start": null,
    "source_id": "27826",
    "stage": "",
    "start": "2026-11-15T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "PLUĆA",
    "url": "https://tickets.rs/event/pluca_29277",
@@ -3602,14 +3606,14 @@
    "buy_url": "https://tickets.rs/event/x_y_o_29278",
    "extra": {
     "end_date": "2026-11-16",
-    "event_status": ""
+    "event_status": "Rasprodat"
    },
    "price": "od 1700 RSD",
    "sales_start": null,
    "source_id": "27827",
    "stage": "",
    "start": "2026-11-16T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "sold_out",
    "subtitle": "",
    "title": "X + Y = O",
    "url": "https://tickets.rs/event/x_y_o_29278",
@@ -5894,6 +5898,24 @@
    "url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29689",
    "venue": "sava_centar"
   },
+  "sava_centar:28246": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/aleksandar_sofronijevic_i_majstori_za_dusu_29698",
+   "extra": {
+    "end_date": "2027-02-25",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "28246",
+   "stage": "Plava dvorana",
+   "start": "2027-02-25T00:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Aleksandar Sofronijević i Majstori za dušu",
+   "url": "https://tickets.rs/event/aleksandar_sofronijevic_i_majstori_za_dusu_29698",
+   "venue": "sava_centar"
+  },
   "terazije:1277": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1277",
@@ -6370,6 +6392,18 @@
    "by": "2026-11-12T16:07:45+01:00",
    "listed": 9,
    "month": "2027-03",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-11-13T14:07:46+01:00",
+   "buyable": 5,
+   "by": "2026-11-13T16:07:42+01:00",
+   "listed": 5,
+   "month": "2027-02",
    "new": 1,
    "on_sale": 1,
    "opened": 0,
@@ -7393,12 +7427,14 @@
   },
   "madlenianum_tickets:27826": {
    "on_sale": "2026-10-27T17:44:58+01:00",
+   "sold_out": "2026-11-13T16:07:42+01:00",
    "start": "2026-11-15T20:00:00+01:00",
    "title": "PLUĆA",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27827": {
    "on_sale": "2026-10-27T17:44:58+01:00",
+   "sold_out": "2026-11-13T16:07:42+01:00",
    "start": "2026-11-16T20:00:00+01:00",
    "title": "X + Y = O",
    "venue": "madlenianum_tickets"
@@ -10094,6 +10130,12 @@
    "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
    "venue": "sava_centar"
   },
+  "sava_centar:28246": {
+   "on_sale": "2026-11-13T16:07:42+01:00",
+   "start": "2027-02-25T00:00:00+01:00",
+   "title": "Aleksandar Sofronijević i Majstori za dušu",
+   "venue": "sava_centar"
+  },
   "terazije:1246": {
    "low": "2026-09-23T19:49:06+02:00",
    "sold_out": null,
@@ -10414,14 +10456,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-13T14:07:46+01:00",
-  "jdp": "2026-11-13T14:07:46+01:00",
-  "kolarac": "2026-11-13T14:07:46+01:00",
-  "madlenianum": "2026-11-13T14:07:46+01:00",
-  "madlenianum_tickets": "2026-11-13T14:07:46+01:00",
-  "narodno": "2026-11-13T14:07:46+01:00",
-  "sava_centar": "2026-11-13T14:07:46+01:00",
-  "terazije": "2026-11-13T14:07:46+01:00"
+  "bdp": "2026-11-13T16:07:42+01:00",
+  "jdp": "2026-11-13T16:07:42+01:00",
+  "kolarac": "2026-11-13T16:07:42+01:00",
+  "madlenianum": "2026-11-13T16:07:42+01:00",
+  "madlenianum_tickets": "2026-11-13T16:07:42+01:00",
+  "narodno": "2026-11-13T16:07:42+01:00",
+  "sava_centar": "2026-11-13T16:07:42+01:00",
+  "terazije": "2026-11-13T16:07:42+01:00"
  },
  "season": {
   "live": {
