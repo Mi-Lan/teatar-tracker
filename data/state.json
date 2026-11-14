@@ -2528,25 +2528,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202611141930-kralj-ibi": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611141930-kralj-ibi",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-11-14T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Краљ Иби",
-   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
-   "venue": "bdp"
-  },
   "bdp:202611151930-kralj-ibi": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/bdddf3f0f2a5",
@@ -2986,41 +2967,6 @@
    "title": "Црно злато",
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
-  },
-  "jdp:202611142000-narodni-poslanik": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611142000-narodni-poslanik",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-14T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Branislav Nušić",
-   "title": "Narodni poslanik",
-   "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
-   "venue": "jdp"
-  },
-  "jdp:202611142030-mama": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1253",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1253"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611142030-mama",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-11-14T20:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Maga Magazinović",
-   "title": "MaMa",
-   "url": "https://www.jdp.rs/performance/mama/",
-   "venue": "jdp"
   },
   "jdp:202611152000-vatre": {
    "available": null,
@@ -4408,23 +4354,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
    "venue": "narodno"
   },
-  "narodno:6455": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6455"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6455",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-14T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Бранислава Нушића",
-   "title": "Сумњиво лице",
-   "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=xffecda0f2a4a335303db22dab00b2d78",
-   "venue": "narodno"
-  },
   "narodno:6456": {
    "available": 173,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6456",
@@ -5031,24 +4960,6 @@
    "subtitle": "",
    "title": "LUCA MINNELLI",
    "url": "https://tickets.rs/event/luca_minnelli_26773",
-   "venue": "sava_centar"
-  },
-  "sava_centar:25388": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/aleksandra_radovic_26798",
-   "extra": {
-    "end_date": "2026-11-14",
-    "event_status": ""
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "25388",
-   "stage": "",
-   "start": "2026-11-14T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Aleksandra Radović",
-   "url": "https://tickets.rs/event/aleksandra_radovic_26798",
    "venue": "sava_centar"
   },
   "sava_centar:25483": {
@@ -5824,24 +5735,6 @@
    "title": "Nikola Rokvić",
    "url": "https://tickets.rs/event/nikola_rokvic_29704",
    "venue": "sava_centar"
-  },
-  "terazije:1278": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1278",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1278"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1278",
-   "stage": "Велика сцена",
-   "start": "2026-11-14T19:30:00+01:00",
-   "status": "low",
-   "subtitle": "Mjuzikl u režiji Vladana Đurkovića",
-   "title": "FLASHDANCE",
-   "url": "https://pozoristeterazije.com/predstave/fles-dens/",
-   "venue": "terazije"
   },
   "terazije:1279": {
    "available": null,
@@ -10580,14 +10473,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-14T22:22:19+01:00",
-  "jdp": "2026-11-14T22:22:19+01:00",
-  "kolarac": "2026-11-14T22:22:19+01:00",
-  "madlenianum": "2026-11-14T22:22:19+01:00",
-  "madlenianum_tickets": "2026-11-14T22:22:19+01:00",
-  "narodno": "2026-11-14T22:22:19+01:00",
-  "sava_centar": "2026-11-14T22:22:19+01:00",
-  "terazije": "2026-11-14T22:22:19+01:00"
+  "bdp": "2026-11-15T00:07:35+01:00",
+  "jdp": "2026-11-15T00:07:35+01:00",
+  "kolarac": "2026-11-15T00:07:35+01:00",
+  "madlenianum": "2026-11-15T00:07:35+01:00",
+  "madlenianum_tickets": "2026-11-15T00:07:35+01:00",
+  "narodno": "2026-11-15T00:07:35+01:00",
+  "sava_centar": "2026-11-15T00:07:35+01:00",
+  "terazije": "2026-11-15T00:07:35+01:00"
  },
  "season": {
   "live": {
