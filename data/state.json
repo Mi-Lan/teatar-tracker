@@ -1,5 +1,10 @@
 {
- "health": {},
+ "health": {
+  "jdp": {
+   "fails": 1,
+   "last_error": "returned 0 performances"
+  }
+ },
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -2528,25 +2533,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202611151930-kralj-ibi": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611151930-kralj-ibi",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-11-15T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Краљ Иби",
-   "url": "https://www.bdp.rs/cir/predstave-cir/kralj-ibi",
-   "venue": "bdp"
-  },
   "bdp:202611171930-laz": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/94cd7450a746",
@@ -3368,21 +3354,6 @@
    "url": "https://operatheatremadlenianum.com/kazanova-protiv-don-zuana",
    "venue": "madlenianum"
   },
-  "madlenianum:pluca-202611152000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "pluca-202611152000",
-   "stage": "",
-   "start": "2026-11-15T20:00:00+01:00",
-   "status": "unknown",
-   "subtitle": "Dankan Mekmilan",
-   "title": "PLUĆA",
-   "url": "https://operatheatremadlenianum.com/pluca",
-   "venue": "madlenianum"
-  },
   "madlenianum:snezana-i-sedam-patuljaka-202611301000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -3492,24 +3463,6 @@
    "subtitle": "",
    "title": "JA EMA",
    "url": "https://tickets.rs/event/ja_ema_29276",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27826": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/pluca_29277",
-   "extra": {
-    "end_date": "2026-11-15",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27826",
-   "stage": "",
-   "start": "2026-11-15T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "PLUĆA",
-   "url": "https://tickets.rs/event/pluca_29277",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27827": {
@@ -4203,23 +4156,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6441": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6441"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6441",
-   "stage": "Велика сцена",
-   "start": "2026-11-15T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "Борислав Михајловић Михиз / Егон Савин, по роману Меше Селимовића",
-   "title": "Дервиш и смрт",
-   "url": "https://www.narodnopozoriste.rs/predstave/dervis-i-smrt?m=x6468186d34eba89a026b694d469d7df9",
-   "venue": "narodno"
-  },
   "narodno:6442": {
    "available": 205,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6442",
@@ -4349,23 +4285,6 @@
    "subtitle": "драма Синише Ковачевића",
    "title": "Велика драма",
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
-   "venue": "narodno"
-  },
-  "narodno:6456": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6456"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6456",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-15T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Карла Голдонија",
-   "title": "Рибарске свађе",
-   "url": "https://www.narodnopozoriste.rs/predstave/ribarske-svadje-1?m=xefd4a5d4e613d9ad8ea9dda3fe0c71df",
    "venue": "narodno"
   },
   "narodno:6457": {
@@ -10684,14 +10603,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-15T22:08:00+01:00",
+  "bdp": "2026-11-16T00:07:45+01:00",
   "jdp": "2026-11-15T22:08:00+01:00",
-  "kolarac": "2026-11-15T22:08:00+01:00",
-  "madlenianum": "2026-11-15T22:08:00+01:00",
-  "madlenianum_tickets": "2026-11-15T22:08:00+01:00",
-  "narodno": "2026-11-15T22:08:00+01:00",
-  "sava_centar": "2026-11-15T22:08:00+01:00",
-  "terazije": "2026-11-15T22:08:00+01:00"
+  "kolarac": "2026-11-16T00:07:45+01:00",
+  "madlenianum": "2026-11-16T00:07:45+01:00",
+  "madlenianum_tickets": "2026-11-16T00:07:45+01:00",
+  "narodno": "2026-11-16T00:07:45+01:00",
+  "sava_centar": "2026-11-16T00:07:45+01:00",
+  "terazije": "2026-11-16T00:07:45+01:00"
  },
  "season": {
   "live": {
