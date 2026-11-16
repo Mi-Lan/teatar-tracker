@@ -215,6 +215,7 @@
    "goca trzan",
    "halid muslimovic",
    "haris dzinovic",
+   "heavy symphony",
    "k pop forever",
    "kengur se vraca kuci",
    "lexington",
@@ -2049,6 +2050,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-13T20:07:36+01:00"
   },
+  "sava_centar:28275": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-16T12:07:39+01:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2463,6 +2468,7 @@
   "new_show:sava_centar:28221": "2026-11-09T21:38:59+01:00",
   "new_show:sava_centar:28238": "2026-11-10T16:07:41+01:00",
   "new_show:sava_centar:28239": "2026-11-10T16:07:41+01:00",
+  "new_show:sava_centar:28275": "2026-11-16T12:07:39+01:00",
   "new_show:terazije:1252": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1253": "2026-09-25T01:50:54+02:00",
   "new_show:terazije:1254": "2026-09-25T01:50:54+02:00",
@@ -4098,17 +4104,19 @@
    "venue": "narodno"
   },
   "narodno:6396": {
-   "available": null,
-   "buy_url": "",
+   "available": 12,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6396",
    "extra": {
-    "repid": "6396"
+    "counted_at": "2026-11-16T12:07:25+01:00",
+    "repid": "6396",
+    "seats": 194
    },
    "price": "",
    "sales_start": null,
    "source_id": "6396",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-22T17:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "опера за децу Драгана Каролића,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Снежана и седам патуљака",
    "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=xa0efe677c83e1d2457e66e6d49063f5e",
@@ -5627,6 +5635,24 @@
    "url": "https://tickets.rs/event/nikola_rokvic_29704",
    "venue": "sava_centar"
   },
+  "sava_centar:28275": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/heavy_symphony_29703",
+   "extra": {
+    "end_date": "2027-02-27",
+    "event_status": ""
+   },
+   "price": "od 3500 RSD",
+   "sales_start": null,
+   "source_id": "28275",
+   "stage": "",
+   "start": "2027-02-27T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "HEAVY SYMPHONY",
+   "url": "https://tickets.rs/event/heavy_symphony_29703",
+   "venue": "sava_centar"
+  },
   "terazije:1279": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1279",
@@ -6091,6 +6117,18 @@
    "by": "2026-11-13T20:07:36+01:00",
    "listed": 10,
    "month": "2027-03",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-11-16T10:08:42+01:00",
+   "buyable": 6,
+   "by": "2026-11-16T12:07:39+01:00",
+   "listed": 6,
+   "month": "2027-02",
    "new": 1,
    "on_sale": 1,
    "opened": 0,
@@ -8447,6 +8485,14 @@
    "venue": "narodno"
   },
   "narodno:6396": {
+   "counts": [
+    [
+     "2026-11-16T12:07:25+01:00",
+     12
+    ]
+   ],
+   "low": "2026-11-16T12:07:39+01:00",
+   "seats": 194,
    "sold_out": "2026-09-30T08:35:30+02:00",
    "start": "2026-11-22T17:00:00+01:00",
    "title": "Снежана и седам патуљака",
@@ -10464,6 +10510,12 @@
    "title": "Nikola Rokvić",
    "venue": "sava_centar"
   },
+  "sava_centar:28275": {
+   "on_sale": "2026-11-16T12:07:39+01:00",
+   "start": "2027-02-27T20:00:00+01:00",
+   "title": "HEAVY SYMPHONY",
+   "venue": "sava_centar"
+  },
   "terazije:1246": {
    "low": "2026-09-23T19:49:06+02:00",
    "sold_out": null,
@@ -10784,14 +10836,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-16T10:08:42+01:00",
-  "jdp": "2026-11-16T10:08:42+01:00",
-  "kolarac": "2026-11-16T10:08:42+01:00",
-  "madlenianum": "2026-11-16T10:08:42+01:00",
-  "madlenianum_tickets": "2026-11-16T10:08:42+01:00",
-  "narodno": "2026-11-16T10:08:42+01:00",
-  "sava_centar": "2026-11-16T10:08:42+01:00",
-  "terazije": "2026-11-16T10:08:42+01:00"
+  "bdp": "2026-11-16T12:07:39+01:00",
+  "jdp": "2026-11-16T12:07:39+01:00",
+  "kolarac": "2026-11-16T12:07:39+01:00",
+  "madlenianum": "2026-11-16T12:07:39+01:00",
+  "madlenianum_tickets": "2026-11-16T12:07:39+01:00",
+  "narodno": "2026-11-16T12:07:39+01:00",
+  "sava_centar": "2026-11-16T12:07:39+01:00",
+  "terazije": "2026-11-16T12:07:39+01:00"
  },
  "season": {
   "live": {
