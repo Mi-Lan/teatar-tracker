@@ -9,8 +9,17 @@ from teatar.config import Config
 from teatar.models import TZ, Performance, Status
 from teatar.runner import Ctx
 from teatar.state import State
+from teatar.telegram import Messenger
 
 START = datetime(2026, 9, 22, 12, 0, tzinfo=TZ)
+
+# The shipped settings are quiet (no digest, no status, no reminders: config.DEFAULTS). Tests run with
+# everything switched on unless they say otherwise, so those features are exercised.
+LOUD = {
+    "digest": {"every": "weekly", "time": "09:00"},
+    "release_season": {"times": ["00:05", "08:00"]},
+    "releases": {"remind_before": ["24h", "1h"], "report_misses": True, "lookahead_minutes": 75},
+}
 
 
 class FakeClock:
@@ -24,18 +33,16 @@ class FakeClock:
         self.t += timedelta(seconds=seconds)
 
 
-class FakeTg:
+class FakeTg(Messenger):
     chat_id = "42"
 
     def __init__(self):
+        self.recipients = ["42"]
         self.sent: list[str] = []
         self.inbox: list[dict] = []
 
     def send(self, text, chat_id=None):
         self.sent.append(text)
-
-    def send_all(self, messages, chat_id=None):
-        self.sent.extend(messages)
 
     def updates(self, offset):
         pending = [u for u in self.inbox if u["update_id"] >= offset]
@@ -76,9 +83,10 @@ def clock():
 @pytest.fixture
 def make_ctx(tmp_path: Path, clock):
     def _make(adapters: list[Adapter], settings: dict | None = None, releases=None, watchlist=None) -> Ctx:
+        merged = {section: {**LOUD.get(section, {}), **(settings or {}).get(section, {})} for section in {*LOUD, *(settings or {})}}
         cfg = Config(
             venues={a.key: {"adapter": "fake", "name": a.key.upper()} for a in adapters},
-            settings=settings or {},
+            settings=merged,
             watchlist=watchlist or [],
             releases=releases or [],
             state_path=tmp_path / "state.json",

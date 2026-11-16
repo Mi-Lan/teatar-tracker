@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from enum import StrEnum
 
 from . import sales
-from .models import Performance, Status, now
+from .models import CUSTOM_VENUE, Performance, Status, now
 from .state import State
 from .textnorm import matches
 
@@ -90,8 +90,8 @@ def apply(state: State, scanned: dict[str, list[Performance]]) -> None:
     """Replace each scanned venue's performances in state and update bookkeeping."""
     stamp = now().isoformat(timespec="seconds")
     for venue, perfs in scanned.items():
-        old = {u: d for u, d in state.performances.items() if d["venue"] == venue}
-        if venue != "custom":  # custom lookups aren't real dates
+        old = state.venue_dicts(venue)
+        if venue != CUSTOM_VENUE:  # custom lookups aren't real dates
             sales.observe(state, venue, perfs, old, stamp, baseline=not state.known_titles.get(venue))
         for uid in old:
             del state.performances[uid]

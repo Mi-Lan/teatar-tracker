@@ -9,14 +9,17 @@ Recurring releases (config/releases.yaml `recurring:`) are materialised for this
 from __future__ import annotations
 
 import hashlib
+import logging
 import re
 from dataclasses import dataclass
-import calendar
 from datetime import date, datetime, time, timedelta
 
 from .config import Config, parse_duration
+from .dates import add_months, day_in_month, parse_time
 from .models import TZ, Performance, now
 from .state import State
+
+log = logging.getLogger(__name__)
 
 
 def release_id(venue: str, at: datetime, all_day: bool = False) -> str:
@@ -41,15 +44,13 @@ def recurring_instances(spec: dict, today: date, current: datetime | None = None
     """
     out = []
     for i in (0, 1):
-        y, m = divmod(today.month - 1 + i, 12)
-        year, month = today.year + y, m + 1
-        d = date(year, month, min(int(spec["day"]), calendar.monthrange(year, month)[1]))
-        at = datetime.combine(d, time.fromisoformat(spec.get("time", "00:00")), TZ)
+        d = day_in_month(*add_months(today, i), int(spec["day"]))
+        at = datetime.combine(d, parse_time(spec.get("time", "00:00")), TZ)
         if current and at <= current:  # this month's release already happened
             continue
         reminders = [
-            datetime.combine(d - timedelta(days=int(r.get("days_before", 1))), time.fromisoformat(r.get("at", "09:00")), TZ)
-            for r in spec.get("remind", [])
+            datetime.combine(d - timedelta(days=int(r.get("days_before", 1))), parse_time(r.get("at", "09:00")), TZ)
+            for r in spec.get("remind") or []
         ]
         note = spec.get("note", "")
         timed = make_release(spec["venue"], at, False, note, "recurring", reminders)
@@ -62,10 +63,11 @@ def recurring_instances(spec: dict, today: date, current: datetime | None = None
 
 
 def parse_when(text: str, today: date | None = None) -> tuple[datetime, bool]:
-    """Parse '2026-10-01 10:00', '01.10.2026 10:00', '1.10. 10:00' or a date alone (→ all-day)."""
+    """Parse '2026-10-01 10:00', '01.10.2026 10:00', '1.10. 10:00' or a date alone (→ all-day).
+    Seconds are accepted and ignored (YAML turns an unquoted '2026-10-01 10:00:00' into a timestamp)."""
     today = today or now().date()
     text = text.strip()
-    tm = re.search(r"(\d{1,2}):(\d{2})\s*$", text)
+    tm = re.search(r"(\d{1,2}):(\d{2})(?::\d{2})?\s*$", text)
     date_part = text[: tm.start()].strip() if tm else text
     if m := re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})", date_part):
         d = date(int(m[1]), int(m[2]), int(m[3]))
@@ -85,11 +87,19 @@ def sync(state: State, cfg: Config, perfs: list[Performance]) -> list[dict]:
     added = []
     existing = {r["id"] for r in state.releases}
     candidates = []
+    # A bad entry in releases.yaml is skipped (and logged), not fatal: by now this check's messages are out.
     for r in cfg.releases:
-        at, all_day = parse_when(str(r["at"]))
+        try:
+            at, all_day = parse_when(str(r["at"]))
+        except (KeyError, ValueError) as exc:
+            log.warning("releases.yaml: skipping release %r: %s", r, exc)
+            continue
         candidates.append(make_release(r["venue"], at, all_day, r.get("note", ""), "config"))
     for spec in cfg.recurring:
-        candidates += recurring_instances(spec, now().date(), now())
+        try:
+            candidates += recurring_instances(spec, now().date(), now())
+        except (KeyError, TypeError, ValueError) as exc:
+            log.warning("releases.yaml: skipping recurring release %r: %s", spec, exc)
     for p in perfs:
         if p.sales_start and p.sales_start > now():
             candidates.append(make_release(p.venue, p.sales_start, False, f"{p.title} {p.start:%d.%m.}", "auto"))
@@ -114,15 +124,15 @@ class Window:
 def window(release: dict, cfg: Config) -> Window:
     at = datetime.fromisoformat(release["at"])
     if release.get("all_day"):
-        start_s, end_s = cfg.get("releases", "all_day_window", ["08:00", "22:00"])
-        start = datetime.combine(at.date(), time.fromisoformat(start_s), TZ)
-        end = datetime.combine(at.date(), time.fromisoformat(end_s), TZ)
-        return Window(release, start, end, int(cfg.get("releases", "all_day_poll_seconds", 60)))
+        start_s, end_s = cfg.get("releases", "all_day_window")
+        start = datetime.combine(at.date(), parse_time(start_s), TZ)
+        end = datetime.combine(at.date(), parse_time(end_s), TZ)
+        return Window(release, start, end, max(1, int(cfg.get("releases", "all_day_poll_seconds"))))
     return Window(
         release,
-        at - timedelta(minutes=cfg.get("releases", "start_before_minutes", 10)),
-        at + timedelta(minutes=cfg.get("releases", "stop_after_minutes", 45)),
-        int(cfg.get("releases", "poll_seconds", 30)),
+        at - timedelta(minutes=cfg.get("releases", "start_before_minutes")),
+        at + timedelta(minutes=cfg.get("releases", "stop_after_minutes")),
+        max(1, int(cfg.get("releases", "poll_seconds"))),
     )
 
 
@@ -130,26 +140,30 @@ def released_key(r: dict) -> str:
     return f"released:{r['venue']}:{r['at'][:10]}"
 
 
+def _expected(release: dict, cfg: Config, at: datetime) -> bool:
+    """Is `at` around this release: from a day before its polling window opens until it closes?"""
+    w = window(release, cfg)
+    return w.start_poll - timedelta(days=1) <= at < w.end
+
+
 def hot_venues(state: State, cfg: Config, at: datetime | None = None) -> set[str]:
-    """Venues with a known release from a day before its window until the window closes.
-    Changes there are sent immediately instead of waiting for the weekly report."""
+    """Venues with a known release around now. Any new ticket there is messaged, whatever `batch_min` says."""
     at = at or now()
-    return {r["venue"] for r in state.releases if (w := window(r, cfg)).start_poll - timedelta(days=1) <= at < w.end}
+    return {r["venue"] for r in state.releases if _expected(r, cfg, at)}
 
 
 def mark_released(state: State, cfg: Config, venue: str, at: datetime | None = None) -> None:
     """Tickets appeared at `venue`: flag releases around now so all-day fallback windows stand down."""
     at = at or now()
     for r in state.releases:
-        w = window(r, cfg)
-        if r["venue"] == venue and w.start_poll - timedelta(days=1) <= at < w.end:
+        if r["venue"] == venue and _expected(r, cfg, at):
             state.mark_notified(released_key(r))
 
 
 def active_windows(state: State, cfg: Config, at: datetime | None = None) -> list[Window]:
     """Releases whose burst window is open now or opens within the lookahead."""
     at = at or now()
-    lookahead = timedelta(minutes=cfg.get("releases", "lookahead_minutes", 75))
+    lookahead = timedelta(minutes=cfg.get("releases", "lookahead_minutes"))
     out = []
     for r in state.releases:
         if r.get("all_day") and released_key(r) in state.notified:
@@ -167,7 +181,7 @@ def due_reminders(state: State, cfg: Config, at: datetime | None = None) -> list
     relative `remind_before` offsets; the label is then the reminder's own timestamp.
     """
     at = at or now()
-    labels = sorted(cfg.get("releases", "remind_before", ["24h", "1h"]), key=parse_duration)
+    labels = sorted(cfg.get("releases", "remind_before"), key=parse_duration)
     out = []
     for r in state.releases:
         t = window(r, cfg).start_poll if r.get("all_day") else datetime.fromisoformat(r["at"])

@@ -1,9 +1,9 @@
 """Monthly ticket-release season, and "when did the tickets come out".
 
 Most Belgrade theatres publish next month's programme and open ticket sales between the 20th and
-the 27th. At fixed times on each of those days (00:05 and 08:00 by default) the tracker sends one
-self-contained status: per theatre, is next month out, and how many dates have tickets.
-"🆕" marks what changed since the previous status.
+the 27th. At the times in `release_season.times` on each of those days (none by default; /tickets
+shows the same on demand) the tracker sends one self-contained status: per theatre, is next month
+out, and how many dates have tickets. "🆕" marks what changed since the previous status.
 
 After every scan, `track` also looks for a *release*: a theatre whose next month just got its first
 tickets, or any theatre that put out a batch of new dates / opened sales for many dates at once
@@ -22,33 +22,21 @@ from typing import TYPE_CHECKING
 from . import format as fmt
 from . import releases as rel
 from . import sales
+from .dates import add_months, month_key, parse_time
 from .diff import ONCE, Change, Kind
 from .models import Performance, Status, now
 
 if TYPE_CHECKING:
     from .runner import Ctx
 
-MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-
-
-def next_month(d: date) -> tuple[int, int]:
-    return (d.year + 1, 1) if d.month == 12 else (d.year, d.month + 1)
-
-
-def month_name(key: str, short: bool = False) -> str:
-    """'2026-11' -> 'November' (or 'Nov')."""
-    name = MONTHS[int(key[5:7]) - 1]
-    return name[:3] if short else name
-
 
 def season_days(ctx: Ctx) -> tuple[int, int]:
-    first, last = ctx.cfg.get("release_season", "days", [20, 27])
+    first, last = ctx.cfg.get("release_season", "days")
     return int(first), int(last)
 
 
 def slots(ctx: Ctx) -> list[time]:
-    return sorted(time.fromisoformat(t) for t in ctx.cfg.get("release_season", "times", ["00:05", "08:00"]))
+    return sorted(parse_time(t) for t in ctx.cfg.get("release_season", "times"))
 
 
 def due(ctx: Ctx) -> time | None:
@@ -80,7 +68,7 @@ def _counts(perfs: list[Performance]) -> dict:
 
 def _month_perfs(ctx: Ctx, venue: str, key: str) -> list[Performance]:
     """Performances at `venue` in the month `key` ('2026-11')."""
-    return [p for p in ctx.state.perfs() if p.venue == venue and p.start.strftime("%Y-%m") == key]
+    return [p for p in ctx.state.perfs() if p.venue == venue and month_key(p.start) == key]
 
 
 def _is_out(c: dict) -> bool:
@@ -90,8 +78,7 @@ def _is_out(c: dict) -> bool:
 
 def _season(ctx: Ctx) -> dict:
     """This month's season record, reset when the target month changes."""
-    year, month = next_month(now().date())
-    key = f"{year}-{month:02d}"
+    key = month_key(date(*add_months(now().date(), 1), 1))
     if ctx.state.season.get("month") != key:
         ctx.state.season = {"month": key}
     for field in ("reported", "live", "released"):
@@ -112,7 +99,7 @@ def _batches(changes: list[Change]) -> tuple[dict[str, dict[str, Counter]], dict
         if c.kind not in ONCE:
             continue
         found[c.perf.venue].append(c)
-        b = out[c.perf.venue][c.perf.start.strftime("%Y-%m")]
+        b = out[c.perf.venue][month_key(c.perf.start)]
         if c.kind == Kind.SALES_OPENED:
             b["opened"] += 1
             b["on_sale"] += 1
@@ -136,12 +123,12 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
     s = _season(ctx)
     target = s["month"]
     stamp = now().isoformat(timespec="seconds")
-    batch_min = int(ctx.cfg.get("release_season", "batch_min", 1))
+    batch_min = int(ctx.cfg.get("release_season", "batch_min"))
     hot = rel.hot_venues(ctx.state, ctx.cfg)
     batches, found = _batches(changes or [])
     fast = sales.fast_plays(ctx.state, ctx.cfg)
-    send_all = ctx.cfg.get("alerts", "instant", "releases_and_watchlist") == "all"  # then process() sent every change
-    fast_alerts = ctx.cfg.get("selling", "alert", True)
+    send_all = ctx.every_change  # then process() already sent every change
+    fast_alerts = ctx.cfg.get("selling", "alert")
     for venue in sorted(scanned_venues & set(ctx.cfg.venues)):
         after = ctx.state.scanned.get(venue)
         c = _counts(_month_perfs(ctx, venue, target))
@@ -194,10 +181,10 @@ def span(after: str | None, by: str) -> str:
 def _month_line(e: dict, show_month: bool = True) -> str:
     parts = []
     if e.get("new"):
-        parts.append(f"+{e['new']} new date{'s' if e['new'] != 1 else ''}")
+        parts.append(f"+{fmt.plural(e['new'], 'new date')}")
     if e.get("opened"):
         parts.append(f"{e['opened']} went on sale")
-    head = f"{month_name(e['month'])}: " if show_month else ""
+    head = f"{fmt.month_name(e['month'])}: " if show_month else ""
     what = ", ".join(parts) or "tickets out"
     if e.get("buyable") or e.get("on_sale"):
         status = f"{e['listed']} listed, {e['buyable']} on sale"
@@ -266,7 +253,7 @@ def release_message(
         else:
             head = f"📋 <b>{name}</b> · new dates listed, tickets not on sale yet"
     elif first:
-        head = f"🎟 <b>{name}</b> · tickets for <b>{month_name(target)}</b> are out"
+        head = f"🎟 <b>{name}</b> · tickets for <b>{fmt.month_name(target)}</b> are out"
     else:
         head = f"🎟 <b>{name}</b> · new tickets out"
     e = entries[0]
@@ -294,8 +281,7 @@ def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, b
         icon, whom = "🔥", "plays that sell out fast" if plural else "a play that sells out fast"
     else:
         icon, whom = "⭐", "plays you follow"
-    n = len(perfs)
-    lines = [f"{icon} <b>{name}</b> · {what} for {whom}", f"{n} date{'s' if n != 1 else ''} · {appeared(after, by)}"]
+    lines = [f"{icon} <b>{name}</b> · {what} for {whom}", f"{fmt.plural(len(perfs), 'date')} · {appeared(after, by)}"]
     blocks = plays_list(perfs, fast, watched)
     blocks[0] = "\n" + blocks[0]
     return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued")
@@ -317,12 +303,12 @@ def report(ctx: Ctx, remember: bool = True, slot: time | None = None) -> list[st
     """The status message. `remember` stores these numbers so the next status can mark what's new."""
     s = _season(ctx)
     today = now().date()
-    mname = month_name(s["month"])
+    mname = fmt.month_name(s["month"])
     prev = s.get("reported", {})
     current = {v: _counts(_month_perfs(ctx, v, s["month"])) for v in ctx.cfg.venues}
 
     when = f" · {slot:%H:%M} check" if slot else ""
-    lines = [f"🎟 <b>Tickets for {mname}</b> · {DAYS[today.weekday()]} {today:%d.%m.}{when}"]
+    lines = [f"🎟 <b>Tickets for {mname}</b> · {fmt.day_label(today)}{when}"]
     for venue, c in current.items():
         name = f"<b>{escape(ctx.cfg.venue_name(venue))}</b>"
         p = prev.get(venue)
@@ -366,11 +352,11 @@ def recent(ctx: Ctx, days: int = 7) -> list[str]:
     groups: dict[tuple[str, str], dict] = defaultdict(
         lambda: {"new": Counter(), "opened": Counter(), "on_sale": 0, "titles": Counter(), "links": {}, "marks": {}, "uids": set(), "log": []}
     )
-    for p in ctx.state.perfs():
-        if p.venue not in ctx.cfg.venues or p.start < now() - timedelta(hours=3):
+    for p in ctx.state.catalog():
+        if p.venue not in ctx.cfg.venues:
             continue
         m = ctx.state.meta.get(p.uid, {})
-        month = p.start.strftime("%Y-%m")
+        month = month_key(p.start)
         events = [("new", m.get("first_seen", "")), ("opened", m.get("on_sale_since", ""))]
         for kind, stamp in events:
             if not stamp or stamp < since:
@@ -401,18 +387,18 @@ def recent(ctx: Ctx, days: int = 7) -> list[str]:
             parts = []
             if g["new"]:
                 total = sum(g["new"].values())
-                by_month = ", ".join(f"{month_name(k, short=True)} {n}" for k, n in sorted(g["new"].items()))
-                parts.append(f"+{total} date{'s' if total != 1 else ''} ({by_month})" + (f", {g['on_sale']} on sale" if g["on_sale"] else ", not on sale yet"))
+                by_month = ", ".join(f"{fmt.month_name(k, short=True)} {n}" for k, n in sorted(g["new"].items()))
+                parts.append(f"+{fmt.plural(total, 'date')} ({by_month})" + (f", {g['on_sale']} on sale" if g["on_sale"] else ", not on sale yet"))
             if g["opened"]:
                 total = sum(g["opened"].values())
-                by_month = ", ".join(f"{month_name(k, short=True)} {n}" for k, n in sorted(g["opened"].items()))
+                by_month = ", ".join(f"{fmt.month_name(k, short=True)} {n}" for k, n in sorted(g["opened"].items()))
                 parts.append(f"{total} went on sale ({by_month})")
             if g["log"]:
                 after = min((e["after"] for e in g["log"] if e.get("after")), default=None)
                 when = span(after, max(e["by"] for e in g["log"]))
                 if not parts:  # the dates themselves are gone from state (e.g. an older month); the log remains
                     parts.append(", ".join(
-                        f"{month_name(e['month'])} out: {e['listed']} dates, {e['buyable']} on sale" if "listed" in e else f"{month_name(e['month'])} tickets out"
+                        f"{fmt.month_name(e['month'])} out: {e['listed']} dates, {e['buyable']} on sale" if "listed" in e else f"{fmt.month_name(e['month'])} tickets out"
                         for e in g["log"]
                     ))
             else:

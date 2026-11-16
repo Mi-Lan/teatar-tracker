@@ -14,10 +14,20 @@ from datetime import date
 
 from bs4 import BeautifulSoup
 
-from ..models import Performance, Status, now
+from ..dates import months_ahead
+from ..models import Performance, Status
 from ..registry import register
-from ..textnorm import month_number, normalize
-from .base import Adapter, at, upcoming
+from ..textnorm import month_number
+from .base import (
+    Adapter,
+    at,
+    dated_id,
+    find_time,
+    label_status,
+    text_of,
+    unique,
+    upcoming,
+)
 
 PAGE = "https://www.jdp.rs/rs/repertoire-feed/"
 AJAX = "https://www.jdp.rs/wp-admin/admin-ajax.php"
@@ -44,43 +54,28 @@ def parse(html: str, venue: str = "jdp") -> list[Performance]:
     perfs = []
     for block in soup.select("#repertoire-api-list > div"):
         h3 = block.find("h3")
-        day = _parse_day(h3.get_text(" ", strip=True)) if h3 else None
+        day = _parse_day(text_of(h3))
         if not day:
             continue
         for art in block.find_all("article"):
             link = art.select_one("h4 a")
-            title = (link or art.find("h4")).get_text(" ", strip=True)
-            right = art.select_one("div.items-end")
-            right_text = right.get_text(" ", strip=True) if right else ""
-            tm = re.search(r"\d{1,2}:\d{2}", right_text)
-            start = at(day, tm.group() if tm else None)
-            stage_el = art.select_one("span.font-semibold")
-            label_el = art.select_one("div.text-gray-500")
-            label = label_el.get_text(" ", strip=True) if label_el else ""
+            title = text_of(link or art.find("h4"))
+            if not title:
+                continue
+            start = at(day, find_time(text_of(art.select_one("div.items-end"))))
+            label = text_of(art.select_one("div.text-gray-500"))
             buy = art.select_one('a[href*="blagajna.jdp.rs"]')
-            author = art.select_one("div.text-gray-700 span.font-medium")
-
-            lab = normalize(label)
-            if "rasprodat" in lab:
-                status = Status.SOLD_OUT
-            elif "otkazan" in lab:
-                status = Status.CANCELLED
-            elif "manje od" in lab:
-                status = Status.LOW
-            elif buy:
-                status = Status.ON_SALE
-            else:
-                status = Status.NOT_ON_SALE
+            status = label_status(label) or (Status.ON_SALE if buy else Status.NOT_ON_SALE)
 
             termin = re.search(r"prostorterminid=(\d+)", buy["href"]) if buy else None
             perfs.append(
                 Performance(
                     venue=venue,
-                    source_id=f"{start:%Y%m%d%H%M}-{normalize(title).replace(' ', '-')[:40]}",
+                    source_id=dated_id(start, title),
                     title=title,
-                    subtitle=author.get_text(" ", strip=True) if author else "",
+                    subtitle=text_of(art.select_one("div.text-gray-700 span.font-medium")),
                     start=start,
-                    stage=stage_el.get_text(" ", strip=True).replace("`", "") if stage_el else "",
+                    stage=text_of(art.select_one("span.font-semibold")).replace("`", ""),
                     url=link["href"] if link else "",
                     buy_url=buy["href"] if buy else "",
                     status=status,
@@ -100,20 +95,18 @@ def parse_ajax(body: str, venue: str = "jdp") -> list[Performance]:
 @register("jdp_wp_ajax")
 class JdpAdapter(Adapter):
     method = "api"
+    known_options = frozenset({"months_ahead"})
 
     def fetch(self) -> list[Performance]:
         page = self.http.get(PAGE).text
         nonce = find_nonce(page)
         if not nonce:  # fall back to the server-rendered current listing
             return upcoming(parse(page, self.key))
-        today = now().date()
-        perfs: dict[str, Performance] = {}
-        for i in range(self.options.get("months_ahead", 2) + 1):
-            y, m = divmod(today.month - 1 + i, 12)
+        perfs: list[Performance] = []
+        for year, month in months_ahead(self.options.get("months_ahead", 2)):
             body = self.http.post(
                 AJAX,
-                data={"action": "jdp_repertoire", "_ajax_nonce": nonce, "year": today.year + y, "month": m + 1, "search_for": ""},
+                data={"action": "jdp_repertoire", "_ajax_nonce": nonce, "year": year, "month": month, "search_for": ""},
             ).text
-            for p in parse_ajax(body, self.key):
-                perfs[p.uid] = p
-        return upcoming(list(perfs.values()))
+            perfs += parse_ajax(body, self.key)
+        return upcoming(unique(perfs))

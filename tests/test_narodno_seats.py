@@ -128,6 +128,7 @@ def test_seat_count_problems_are_reported_like_a_failing_site(make_ctx, clock):
     from conftest import perf
 
     a = FakeAdapter("narodno", [perf(venue="narodno")])
+    a.warning_label = "seat counts"
     ctx = make_ctx([a])
     run(ctx, allow_burst=False)
     a.warning = "seat counts: RuntimeError: login failed: Pogrešna lozinka"

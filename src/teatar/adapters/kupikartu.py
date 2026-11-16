@@ -15,9 +15,10 @@ from __future__ import annotations
 import json
 from datetime import datetime
 
-from ..models import TZ, Performance, Status, now
+from ..dates import months_ahead
+from ..models import TZ, Performance, Status
 from ..registry import register
-from .base import Adapter, upcoming
+from .base import Adapter, unique, upcoming
 
 
 def parse_month(body: str, venue: str, base_url: str, site_url: str = "") -> list[Performance]:
@@ -56,6 +57,7 @@ def parse_month(body: str, venue: str, base_url: str, site_url: str = "") -> lis
 @register("kupikartu_pos")
 class KupiKartuAdapter(Adapter):
     method = "api"
+    known_options = frozenset({"months_ahead"})
 
     def __init__(self, key, http, base_url: str, site_url: str = "", **options):
         super().__init__(key, http, **options)
@@ -64,15 +66,12 @@ class KupiKartuAdapter(Adapter):
 
     def fetch(self) -> list[Performance]:
         self.http.get(f"{self.base_url}/repertoar.php")  # session cookie
-        today = now().date()
-        perfs: dict[str, Performance] = {}
-        for i in range(self.options.get("months_ahead", 2) + 1):
-            y, m = divmod(today.month - 1 + i, 12)
+        perfs: list[Performance] = []
+        for year, month in months_ahead(self.options.get("months_ahead", 2)):
             body = self.http.post(
                 f"{self.base_url}/qrydata.php",
-                data={"q": 1, "godina": today.year + y, "mesec": m + 1, "dan": 1, "sdsp": "", "trazi": "",
+                data={"q": 1, "godina": year, "mesec": month, "dan": 1, "sdsp": "", "trazi": "",
                       "user_tipid": "", "sap": "", "ss": "", "tip_prikaza": 0, "program": "0"},
             ).text
-            for p in parse_month(body, self.key, self.base_url, self.site_url):
-                perfs[p.uid] = p
-        return upcoming(list(perfs.values()))
+            perfs += parse_month(body, self.key, self.base_url, self.site_url)
+        return upcoming(unique(perfs))

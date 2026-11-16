@@ -40,6 +40,12 @@ Configuration is in `config/`:
   reminders and burst timing, and `release_season.batch_min`: how many new dates (or sales openings) one check
   needs before it is messaged (default 1: every new date)
 
+Every setting is optional and falls back to the value shipped in `settings.yaml` (one table, `DEFAULTS` in
+`src/teatar/config.py`). Mistakes in `config/` are caught when a run starts, before anything is scanned or sent:
+a venue without an adapter, a bad time or weekday, an entry missing its `query` or `venue` stop the run with a
+message naming the file and the field; a setting or venue option the tracker doesn't know (usually a typo) is
+reported in the run's log. Write times in quotes (`"08:00"`).
+
 ## Telegram commands
 
 Replies come on the next check (within the hour; faster during release bursts).
@@ -133,8 +139,22 @@ uv venv .venv && uv pip install -e ".[dev]"
 .venv/bin/pytest
 ```
 
+The tests also run on GitHub for every push that touches code or config (`.github/workflows/tests.yml`).
+
+## If something goes wrong
+
+- **A site changes or goes down:** its last data is kept, the other theatres carry on, and after 3 failed checks
+  you get a warning (and an all-clear when it works again).
+- **A run fails halfway** (Telegram unreachable, a timeout): state is saved after each stage that sends messages,
+  and written to a temporary file first, so the next run neither repeats what was already sent nor finds half a
+  file. A failed run shows up red under *Actions*, and GitHub emails you about it.
+- **A command the bot can't handle:** you get a "something went wrong" reply, and the check carries on.
+- **`data/state.json` is damaged:** the run stops rather than starting over (which would re-announce everything).
+  Restore the last good version: `git checkout <commit> -- data/state.json`.
+
 ## Adding sources
 
 - **Another tickets.rs venue:** copy a `tickets_rs` block in `venues.yaml` and set `slug` (the part after `tickets.rs/venue/`).
 - **A new site:** add `src/teatar/adapters/<name>.py` with a class decorated `@register("<name>")` that implements `fetch() -> list[Performance]`. Prefer the site's JSON API when it has one, and scrape HTML otherwise. Keep parsing in a pure function and add a fixture test. Then import it in `adapters/__init__.py` and add it to `venues.yaml`.
+  `adapters/base.py` has the pieces every adapter needs, so use them instead of writing them again: `upcoming` (drop past dates), `unique` (sources read month by month), `at` / `infer_year` / `find_time` (dates and times), `text_of` (an element's text), `label_status` (sold out / cancelled / running low from a site's label, Cyrillic or Latin), `dated_id` (a stable id for sources without one), and `dates.months_ahead` (which months to ask for). List the venue options your adapter reads in `known_options`. To report a partial problem without failing the venue, set `self.warning` (see Narodno's seat counts).
 - **A custom check for one play:** give a watchlist entry a `lookup`, e.g. `{sixtix: <event slug>}` (API) or `{page: <url>, pattern: "Kupi"}` (scrape). See `lookups.py`.
