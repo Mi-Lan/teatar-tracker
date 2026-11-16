@@ -3148,17 +3148,16 @@
   },
   "jdp:202611252000-garderober": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1242",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1242"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611252000-garderober",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-25T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Ronald Harvud",
    "title": "Garderober",
    "url": "https://www.jdp.rs/en/performance/the-dresser/",
@@ -3398,21 +3397,6 @@
    "url": "https://operatheatremadlenianum.com/tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita",
    "venue": "madlenianum"
   },
-  "madlenianum:x-y-0-0-202611162000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "x-y-0-0-202611162000",
-   "stage": "",
-   "start": "2026-11-16T20:00:00+01:00",
-   "status": "unknown",
-   "subtitle": "Borislav Pekić",
-   "title": "X + Y = 0",
-   "url": "https://operatheatremadlenianum.com/x-y-0-0",
-   "venue": "madlenianum"
-  },
   "madlenianum_tickets:26309": {
    "available": null,
    "buy_url": "https://tickets.rs/event/the_sassoon_experience_27733",
@@ -3447,24 +3431,6 @@
    "subtitle": "",
    "title": "JA EMA",
    "url": "https://tickets.rs/event/ja_ema_29276",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27827": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/x_y_o_29278",
-   "extra": {
-    "end_date": "2026-11-16",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27827",
-   "stage": "",
-   "start": "2026-11-16T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "X + Y = O",
-   "url": "https://tickets.rs/event/x_y_o_29278",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27828": {
@@ -4142,23 +4108,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6442": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6442"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6442",
-   "stage": "Велика сцена",
-   "start": "2026-11-16T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Душана Ковачевића",
-   "title": "Урнебесна трагедија",
-   "url": "https://www.narodnopozoriste.rs/predstave/urnebesna-tragedija?m=x2025b1a9451c8d40570762e1123f015e",
-   "venue": "narodno"
-  },
   "narodno:6443": {
    "available": 39,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6443",
@@ -4269,23 +4218,6 @@
    "subtitle": "драма Синише Ковачевића",
    "title": "Велика драма",
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
-   "venue": "narodno"
-  },
-  "narodno:6457": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6457"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6457",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-16T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Ђорђа Косића · енглески титл",
-   "title": "Успаванка за Алексију Рајчић",
-   "url": "https://www.narodnopozoriste.rs/predstave/uspavanka-za-aleksiju-rajcic?m=xe537f796f957ff901a5c98a09febb034",
    "venue": "narodno"
   },
   "narodno:6458": {
@@ -10834,14 +10766,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-16T22:07:53+01:00",
-  "jdp": "2026-11-16T22:07:53+01:00",
-  "kolarac": "2026-11-16T22:07:53+01:00",
-  "madlenianum": "2026-11-16T22:07:53+01:00",
-  "madlenianum_tickets": "2026-11-16T22:07:53+01:00",
-  "narodno": "2026-11-16T22:07:53+01:00",
-  "sava_centar": "2026-11-16T22:07:53+01:00",
-  "terazije": "2026-11-16T22:07:53+01:00"
+  "bdp": "2026-11-17T00:07:34+01:00",
+  "jdp": "2026-11-17T00:07:34+01:00",
+  "kolarac": "2026-11-17T00:07:34+01:00",
+  "madlenianum": "2026-11-17T00:07:34+01:00",
+  "madlenianum_tickets": "2026-11-17T00:07:34+01:00",
+  "narodno": "2026-11-17T00:07:34+01:00",
+  "sava_centar": "2026-11-17T00:07:34+01:00",
+  "terazije": "2026-11-17T00:07:34+01:00"
  },
  "season": {
   "live": {
