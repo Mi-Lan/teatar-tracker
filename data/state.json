@@ -2588,25 +2588,6 @@
   "season:2026-10-27:08:00": "2026-10-27T11:22:28+01:00"
  },
  "performances": {
-  "bdp:202611171930-laz": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "guest": false,
-    "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611171930-laz",
-   "stage": "Velika scena \"Olivera i Rade\"",
-   "start": "2026-11-17T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Лаж",
-   "url": "https://www.bdp.rs/cir/predstave-cir/laz",
-   "venue": "bdp"
-  },
   "bdp:202611181930-laz": {
    "available": null,
    "buy_url": "https://app.sixtix.com/events/bd99cf453067",
@@ -3007,42 +2988,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611172000-ricard-drugi": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1236",
-   "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1236"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611172000-ricard-drugi",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-17T20:00:00+01:00",
-   "status": "low",
-   "subtitle": "Vilijam Šekspir",
-   "title": "Ričard Drugi",
-   "url": "https://www.jdp.rs/performance/ricard-drugi/",
-   "venue": "jdp"
-  },
-  "jdp:202611172030-gubitnik": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1254",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1254"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611172030-gubitnik",
-   "stage": "STUDIO ĆIRILOV",
-   "start": "2026-11-17T20:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Tomas Bernhard / Aleksandar Sergejevič Puškin",
-   "title": "Gubitnik",
-   "url": "https://www.jdp.rs/performance/gubitnik/",
-   "venue": "jdp"
-  },
   "jdp:202611182000-gospodjica": {
    "available": null,
    "buy_url": "",
@@ -3380,7 +3325,7 @@
    "available": 31,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1169",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "MJUZIKL",
     "label": "PREMIJERA",
     "shop_id": "1169"
@@ -3397,10 +3342,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:evita-202612021930": {
-   "available": 160,
+   "available": 154,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "MJUZIKL",
     "label": "I REPRIZA",
     "shop_id": "1170",
@@ -3421,7 +3366,7 @@
    "available": 142,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1168",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "DRAMA",
     "shop_id": "1168"
    },
@@ -3440,7 +3385,7 @@
    "available": 26,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1160",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "DRAMA",
     "shop_id": "1160"
    },
@@ -3459,7 +3404,7 @@
    "available": 174,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1164",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "BALET",
     "shop_id": "1164"
    },
@@ -3478,7 +3423,7 @@
    "available": 151,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1165",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "BALET",
     "shop_id": "1165"
    },
@@ -3497,7 +3442,7 @@
    "available": 181,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1166",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "BALET",
     "shop_id": "1166"
    },
@@ -3516,7 +3461,7 @@
    "available": 186,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1167",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "BALET",
     "shop_id": "1167"
    },
@@ -3535,7 +3480,7 @@
    "available": 117,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1162",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1162"
    },
@@ -3554,7 +3499,7 @@
    "available": 79,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1163",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1163"
    },
@@ -3570,10 +3515,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:staklena-menazerija-202611242000": {
-   "available": 37,
+   "available": 35,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1161",
    "extra": {
-    "counted_at": "2026-11-17T22:07:41+01:00",
+    "counted_at": "2026-11-18T00:10:29+01:00",
     "genre": "DRAMA",
     "shop_id": "1161"
    },
@@ -4335,23 +4280,6 @@
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
-  "narodno:6443": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6443"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6443",
-   "stage": "Велика сцена",
-   "start": "2026-11-17T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драматизација Кате Ђармати по роману Михаила Булгакова",
-   "title": "Мајстор и Маргарита",
-   "url": "https://www.narodnopozoriste.rs/predstave/majstor-i-margarita?m=xb09aec0756ed34654da5b3aa26e5b743",
-   "venue": "narodno"
-  },
   "narodno:6445": {
    "available": 225,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6445",
@@ -4443,23 +4371,6 @@
    "subtitle": "драма Синише Ковачевића",
    "title": "Велика драма",
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
-   "venue": "narodno"
-  },
-  "narodno:6458": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6458"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6458",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-17T20:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "драма Ерика Емануела Шмита",
-   "title": "Мали брачни злочини",
-   "url": "https://www.narodnopozoriste.rs/predstave/mali-bracni-zlocini?m=xe2b7a9c45658113235d3ffec04e54b8b",
    "venue": "narodno"
   },
   "narodno:6459": {
@@ -5840,24 +5751,6 @@
    "title": "Plasido Domingo",
    "url": "https://tickets.rs/event/plasido_domingo_29740",
    "venue": "sava_centar"
-  },
-  "terazije:1279": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1279",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1279"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1279",
-   "stage": "Велика сцена",
-   "start": "2026-11-17T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Мјузикл у режији Владимира Лазића",
-   "title": "ЦИГАНИ ЛЕТЕ У НЕБО",
-   "url": "https://pozoristeterazije.com/predstave/cigani-lete-u-nebo/",
-   "venue": "terazije"
   },
   "terazije:1280": {
    "available": null,
@@ -7300,6 +7193,10 @@
     [
      "2026-11-17T22:07:41+01:00",
      31
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
+     31
     ]
    ],
    "start": "2026-11-28T19:30:00+01:00",
@@ -7311,6 +7208,10 @@
     [
      "2026-11-17T19:30:00+01:00",
      160
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
+     154
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7327,6 +7228,10 @@
     [
      "2026-11-17T20:07:55+01:00",
      142
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
+     142
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7339,6 +7244,10 @@
     [
      "2026-11-17T19:30:00+01:00",
      26
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
+     26
     ]
    ],
    "start": "2026-11-23T20:00:00+01:00",
@@ -7349,6 +7258,10 @@
    "counts": [
     [
      "2026-11-17T19:30:00+01:00",
+     174
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
      174
     ]
    ],
@@ -7361,6 +7274,10 @@
    "counts": [
     [
      "2026-11-17T19:30:00+01:00",
+     151
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
      151
     ]
    ],
@@ -7378,6 +7295,10 @@
     [
      "2026-11-17T20:07:55+01:00",
      181
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
+     181
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7389,6 +7310,10 @@
    "counts": [
     [
      "2026-11-17T19:30:00+01:00",
+     186
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
      186
     ]
    ],
@@ -7402,6 +7327,10 @@
     [
      "2026-11-17T19:30:00+01:00",
      117
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
+     117
     ]
    ],
    "start": "2026-11-30T10:00:00+01:00",
@@ -7412,6 +7341,10 @@
    "counts": [
     [
      "2026-11-17T19:30:00+01:00",
+     79
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
      79
     ]
    ],
@@ -7424,6 +7357,10 @@
     [
      "2026-11-17T19:30:00+01:00",
      37
+    ],
+    [
+     "2026-11-18T00:10:29+01:00",
+     35
     ]
    ],
    "start": "2026-11-24T20:00:00+01:00",
@@ -11452,14 +11389,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-17T22:07:41+01:00",
-  "jdp": "2026-11-17T22:07:41+01:00",
-  "kolarac": "2026-11-17T22:07:41+01:00",
-  "madlenianum": "2026-11-17T22:07:41+01:00",
-  "madlenianum_tickets": "2026-11-17T22:07:41+01:00",
-  "narodno": "2026-11-17T22:07:41+01:00",
-  "sava_centar": "2026-11-17T22:07:41+01:00",
-  "terazije": "2026-11-17T22:07:41+01:00"
+  "bdp": "2026-11-18T00:10:29+01:00",
+  "jdp": "2026-11-18T00:10:29+01:00",
+  "kolarac": "2026-11-18T00:10:29+01:00",
+  "madlenianum": "2026-11-18T00:10:29+01:00",
+  "madlenianum_tickets": "2026-11-18T00:10:29+01:00",
+  "narodno": "2026-11-18T00:10:29+01:00",
+  "sava_centar": "2026-11-18T00:10:29+01:00",
+  "terazije": "2026-11-18T00:10:29+01:00"
  },
  "season": {
   "live": {
