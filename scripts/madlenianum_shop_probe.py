@@ -149,3 +149,11 @@ for node in soup.find_all(string=re.compile("(?i)evita")):
             if box.parent is not None and box.parent.name not in ("body", "html", "[document]") and len(box.parent.get_text(" ", strip=True)) < 600:
                 box = box.parent
         print("  ", clean(box.get_text(" "), 400), "  @", chain(node.parent, 4))
+
+print("== 9. every card, whole (shows, dates, buttons: nothing from the account)")
+for card in soup.select("div.events_entry_new"):
+    html = re.sub(r">\s+<", "><", re.sub(r"\s+", " ", str(card)))
+    print("CARD", clean(html, 4000))
+print("cards:", len(soup.select("div.events_entry_new")), "| wrappers:", Counter(chain(c.parent, 2) for c in soup.select("div.events_entry_new")).most_common(3))
+pager = [clean(a.get("href", ""), 80) for a in soup.select(".pagination a, a[href*='page='], a[href*='strana']")]
+print("pagination links:", pager[:10])
