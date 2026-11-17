@@ -2,6 +2,9 @@ import json
 from datetime import date, datetime
 from pathlib import Path
 
+import httpx
+
+from teatar import models
 from teatar.adapters import bdp, jdp, kupikartu, madlenianum, narodno, tickets_rs
 from teatar.models import TZ, Status
 
@@ -125,3 +128,37 @@ def test_kupikartu_box_office():
     assert perfs[16].status == Status.UNKNOWN  # finished
     # an unpublished month is a placeholder row, not a performance
     assert kupikartu.parse_month(read("kupikartu_terazije_2026_10.json"), "terazije", base) == []
+
+
+class FakeHttp:
+    """Answers GET/POST from fixtures and records what was asked for."""
+
+    def __init__(self, get=None, post=None):
+        self._get, self._post, self.posts = get, post, []
+
+    def get(self, url, **kw):
+        return httpx.Response(200, text=self._get(url, **kw), request=httpx.Request("GET", url))
+
+    def post(self, url, **kw):
+        self.posts.append(kw.get("data") or kw.get("json"))
+        return httpx.Response(200, text=self._post(url, **kw), request=httpx.Request("POST", url))
+
+
+def test_month_by_month_sources_ask_for_each_month_once_across_new_year(monkeypatch):
+    """JDP and the box offices are read one month per call: this month and `months_ahead` more."""
+    models.set_clock(lambda: datetime(2026, 12, 20, 12, 0, tzinfo=TZ))
+    monkeypatch.setattr(jdp, "upcoming", lambda perfs: perfs)
+    monkeypatch.setattr(kupikartu, "upcoming", lambda perfs: perfs)
+    try:
+        http = FakeHttp(get=lambda url, **kw: read("jdp_repertoire_feed.html"), post=lambda url, **kw: read("jdp_ajax_2026_09.json"))
+        perfs = jdp.JdpAdapter("jdp", http, months_ahead=2).fetch()
+        assert [(d["year"], d["month"]) for d in http.posts] == [(2026, 12), (2027, 1), (2027, 2)]
+        assert all(d["_ajax_nonce"] == "840e4344fe" for d in http.posts)
+        assert len(perfs) == 10  # the same dates in every answer: counted once
+
+        http = FakeHttp(get=lambda url, **kw: "", post=lambda url, **kw: read("kupikartu_terazije_2026_09.json"))
+        perfs = kupikartu.KupiKartuAdapter("terazije", http, base_url="https://bilet.pozoristeterazije.com/", months_ahead=1).fetch()
+        assert [(d["godina"], d["mesec"]) for d in http.posts] == [(2026, 12), (2027, 1)]
+        assert len(perfs) == 6 and perfs[0].buy_url.startswith("https://bilet.pozoristeterazije.com/scena.php?")
+    finally:
+        models.set_clock(None)

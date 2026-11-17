@@ -23,15 +23,16 @@ from __future__ import annotations
 import logging
 import os
 import re
-from datetime import date, datetime, time, timedelta
+from datetime import date, datetime, timedelta
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, Tag
 
+from ..dates import parse_time
 from ..models import Performance, Status, now
 from ..registry import register
-from ..textnorm import month_number
-from .base import Adapter, at, infer_year, upcoming
+from ..textnorm import month_number, normalize
+from .base import Adapter, at, find_time, infer_year, text_of, upcoming
 
 BASE = "https://www.narodnopozoriste.rs"
 LOGIN_PAGE = f"{BASE}/nalog/prijavi-se"
@@ -40,35 +41,31 @@ API = f"{BASE}/api/ulaznice"
 log = logging.getLogger(__name__)
 
 
-def _txt(el: Tag | None) -> str:
-    return el.get_text(" ", strip=True) if el else ""
-
-
 def _agenda_fields(e: Tag) -> dict:
     date_el = e.select_one(".np-agenda-date")
-    day = _txt(date_el.find("strong")) if date_el else ""
-    month = _txt(date_el.find("span")).split("·")[0] if date_el else ""
-    desc = _txt(e.select_one(".np-agenda-description")).strip("· ").strip()
+    day = text_of(date_el.find("strong")) if date_el else ""
+    month = text_of(date_el.find("span")).split("·")[0] if date_el else ""
+    desc = text_of(e.select_one(".np-agenda-description")).strip("· ").strip()
     return {
-        "day": day, "month": month, "time": _txt(e.select_one(".np-agenda-time")),
-        "stage": _txt(e.select_one(".np-agenda-stage")), "link": e.select_one("h2 a"), "heading": e.select_one("h2"),
-        "subtitle": " · ".join(x for x in [_txt(e.select_one(".np-writer")), desc] if x),
+        "day": day, "month": month, "time": text_of(e.select_one(".np-agenda-time")),
+        "stage": text_of(e.select_one(".np-agenda-stage")), "link": e.select_one("h2 a"), "heading": e.select_one("h2"),
+        "subtitle": " · ".join(x for x in [text_of(e.select_one(".np-writer")), desc] if x),
         "actions": e.select_one(".np-agenda-actions"),
         # cancelled dates lose their links and get a label on the image, outside the actions
-        "cancelled": "is-cancelled" in (e.get("class") or []) or "отказан" in _txt(e.select_one(".np-agenda-status")).lower(),
+        "cancelled": "is-cancelled" in (e.get("class") or []) or "otkazan" in normalize(text_of(e.select_one(".np-agenda-status"))),
     }
 
 
 def _legacy_fields(e: Tag) -> dict:
     date_el = e.select_one(".repertoarwide-entry-date")
     day = "".join(date_el.find_all(string=True, recursive=False)) if date_el else ""
-    meta = _txt(e.select_one(".repertoarwide-meta"))
+    meta = text_of(e.select_one(".repertoarwide-meta"))
     em, note = e.select_one(".entry-title em"), e.select_one(".entry-title span.small")
     return {
-        "day": day, "month": _txt(date_el.select_one(".mesec")) if date_el else "", "time": meta,
+        "day": day, "month": text_of(date_el.select_one(".mesec")) if date_el else "", "time": meta,
         "stage": meta.split("·", 1)[1].strip() if "·" in meta else "", "link": e.select_one(".entry-title h4 a"),
         "heading": e.select_one(".entry-title h4"),
-        "subtitle": " · ".join(x for x in [_txt(em), _txt(note)] if x), "actions": e, "cancelled": False,
+        "subtitle": " · ".join(x for x in [text_of(em), text_of(note)] if x), "actions": e, "cancelled": False,
     }
 
 
@@ -83,14 +80,18 @@ def parse(html: str, venue: str = "narodno", today: date | None = None) -> list[
         if not (day and month):
             continue
         rep_id = entry["id"].removeprefix("repid")
-        time_m = re.search(r"\d{1,2}:\d{2}", f["time"])
+        try:
+            start = at(infer_year(month, int(day.group()), today), find_time(f["time"]))
+        except ValueError:  # a date that doesn't exist: skip the entry, keep the rest of the listing
+            log.warning("narodno: unreadable date %r %r for repid %s", f["day"], f["month"], rep_id)
+            continue
         link = f["link"]
         perf = Performance(
             venue=venue,
             source_id=rep_id,
-            title=_txt(link) or _txt(f["heading"]) or "?",
+            title=text_of(link) or text_of(f["heading"]) or "?",
             subtitle=f["subtitle"],
-            start=at(infer_year(month, int(day.group()), today), time_m.group() if time_m else None),
+            start=start,
             stage=f["stage"],
             url=urljoin(BASE, link["href"]) if link else "",
             status=Status.NOT_ON_SALE,
@@ -98,16 +99,16 @@ def parse(html: str, venue: str = "narodno", today: date | None = None) -> list[
         )
         actions = f["actions"]
         buy = actions.select_one('a[href*="odabir-ulaznica"]') if actions else None
-        blob = _txt(actions).lower()
+        blob = normalize(text_of(actions))  # Cyrillic or Latin, any case
         if buy:
             count = re.search(r"\d+", buy.get("title", "") or buy.get_text())
             perf.buy_url = urljoin(BASE, buy["href"])
             perf.available = int(count.group()) if count else None
-            low = (actions.select_one(".np-ticket-low-stock") if actions else None) or "мање од" in blob
+            low = actions.select_one(".np-ticket-low-stock") or "manje od" in blob
             perf.status = Status.SOLD_OUT if perf.available == 0 else Status.LOW if low else Status.ON_SALE
-        elif "распродат" in blob or "rasprodat" in blob or (actions and actions.select_one(".np-ticket-button--sold")):
+        elif "rasprodat" in blob or (actions and actions.select_one(".np-ticket-button--sold")):
             perf.status = Status.SOLD_OUT
-        if f["cancelled"] or "отказан" in blob or "otkazan" in blob:
+        if f["cancelled"] or "otkazan" in blob:
             perf.status = Status.CANCELLED
         perfs.append(perf)
     return perfs
@@ -135,8 +136,9 @@ def apply_seats(p: Performance, seats: int, free: int, counted_at: str) -> None:
 @register("narodno_html")
 class NarodnoAdapter(Adapter):
     method = "html"
+    known_options = frozenset({"seat_counts"})
     uses_previous = True
-    warning = ""  # set when seat counts couldn't be read; the runner reports it like a failing site
+    warning_label = "seat counts"  # `warning` is set when they couldn't be read; the listing is still good
 
     def fetch(self) -> list[Performance]:
         perfs = self.poll()
@@ -168,7 +170,7 @@ class NarodnoAdapter(Adapter):
         """On-sale dates to count now: all of them once a day, else new ones since the last release."""
         opts = self.options.get("seat_counts") or {}
         t = now()
-        daily = datetime.combine(t.date(), time.fromisoformat(str(opts.get("daily_at", "09:00"))), t.tzinfo)
+        daily = datetime.combine(t.date(), parse_time(opts.get("daily_at", "09:00")), t.tzinfo)
         after = timedelta(minutes=int(opts.get("after_release_minutes", 90)))
         buyable = [p for p in perfs if p.status.buyable and p.buy_url]
         last = max((o.extra.get("counted_at", "") for o in self.previous.values()), default="")
@@ -192,6 +194,7 @@ class NarodnoAdapter(Adapter):
 
     def _seat_counts(self, perfs: list[Performance]) -> None:
         self._login()
+        counted_any = False
         for p in perfs:
             resp = self.http.get(p.buy_url)
             if "prijavi-se" in str(resp.url):  # session dropped: log in again, once
@@ -201,3 +204,6 @@ class NarodnoAdapter(Adapter):
                     raise RuntimeError("still sent to the login page after logging in")
             if counted := count_seats(resp.text):
                 apply_seats(p, *counted, now().isoformat(timespec="seconds"))
+                counted_any = True
+        if perfs and not counted_any:  # otherwise every check would log in again and quietly count nothing
+            raise RuntimeError("no seat map found on any ticket page (page layout changed?)")

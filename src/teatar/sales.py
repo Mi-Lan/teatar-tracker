@@ -180,7 +180,7 @@ def duration(hours: float) -> str:
 
 
 def settings(cfg: Config) -> tuple[float, float]:
-    return float(cfg.get("selling", "fast_hours", 48)), float(cfg.get("selling", "min_days_before", 1))
+    return float(cfg.get("selling", "fast_hours")), float(cfg.get("selling", "min_days_before"))
 
 
 def plays(state: State, cfg: Config) -> dict[str, Play]:

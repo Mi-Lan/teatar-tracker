@@ -4,18 +4,25 @@ import argparse
 import logging
 import os
 import sys
+from datetime import timedelta
 from pathlib import Path
 
 from rich.console import Console
 from rich.table import Table
 
-from . import config, format as fmt
+from . import config
+from . import format as fmt
+from .commands import cmd_theatres
+from .dates import until_end_of_next_month
+from .diff import apply
 from .http import Http
-from .models import Status
+from .models import Status, now
 from .registry import build_adapters
-from .runner import Ctx, run, scan
+from .runner import Ctx, run, scan, send_overview
 from .state import State
-from .telegram import DryRun, Telegram
+from .telegram import DryRun, Messenger, Telegram
+
+log = logging.getLogger(__name__)
 
 STATUS_STYLE = {
     Status.ON_SALE: "green", Status.LOW: "yellow", Status.SOLD_OUT: "red",
@@ -32,12 +39,12 @@ def load_dotenv(path: Path = config.ROOT / ".env") -> None:
                 os.environ.setdefault(key.strip().removeprefix("export "), value.strip().strip("'\""))
 
 
-def make_tg(dry_run: bool):
+def make_tg(dry_run: bool) -> Messenger:
     """Telegram client for TELEGRAM_CHAT_ID (you) plus anyone in TELEGRAM_EXTRA_CHAT_IDS (comma-separated)."""
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if dry_run or not token or not chat:
         if not dry_run:
-            logging.warning("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set: printing messages instead of sending")
+            log.warning("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set: printing messages instead of sending")
         return DryRun()
     return Telegram(token, chat, os.environ.get("TELEGRAM_EXTRA_CHAT_IDS", ""))
 
@@ -74,28 +81,18 @@ def cmd_run(args) -> None:
 
 def cmd_overview(args) -> None:
     """Scan now and send (or print) the overview: to the end of next month, N days, or everything."""
-    from datetime import timedelta
-
-    from .diff import apply
-    from .models import now
-    from .runner import end_of_next_month, send_overview
-
     ctx = make_ctx(args, make_tg(not args.send))
     apply(ctx.state, scan(ctx))  # in-memory only, not saved
-    today = now().date()
     if args.all:
         send_overview(ctx, None, "Everything announced")
     elif args.days:
-        send_overview(ctx, today + timedelta(days=args.days - 1), f"Next {args.days} days")
+        send_overview(ctx, now().date() + timedelta(days=args.days - 1), f"Next {args.days} days")
     else:
-        end = end_of_next_month(today)
-        send_overview(ctx, end, f"Until {end:%d.%m.} (end of next month)")
+        send_overview(ctx, *until_end_of_next_month())
 
 
 def cmd_telegram_test(args) -> None:
     """Send every recipient a test message: the theatres tracked, with links."""
-    from .commands import cmd_theatres
-
     tg = make_tg(args.dry_run)
     if isinstance(tg, DryRun) and not args.dry_run:
         sys.exit("Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID first (see README).")
@@ -170,4 +167,7 @@ def main(argv: list[str] | None = None) -> None:
     p.set_defaults(fn=cmd_backfill_sales)
 
     args = parser.parse_args(argv)
-    args.fn(args)
+    try:
+        args.fn(args)
+    except config.ConfigError as exc:  # a mistake in config/*.yaml: say which, without a traceback
+        sys.exit(f"config error: {exc}")

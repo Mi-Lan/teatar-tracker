@@ -2,18 +2,31 @@
 
 from __future__ import annotations
 
+import re
 from collections import defaultdict
 from datetime import date, datetime, time, timedelta
-import re
-from html import escape, unescape
+from html import escape
 from urllib.parse import urlparse
 
 from .diff import Change, Kind
 from .models import Performance, Status, now
+from .telegram import plain
 
 LIMIT = 3900  # Telegram max is 4096 visible characters (after HTML parsing); leave room
 MAX_ENTITIES = 90  # keep well under Telegram's per-message formatting-entity limit
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+
+def plural(n: int, word: str) -> str:
+    """'1 date', '3 dates'."""
+    return f"{n} {word}{'' if n == 1 else 's'}"
+
+
+def month_name(key: str, short: bool = False) -> str:
+    """'2026-11' -> 'November' (or 'Nov')."""
+    name = MONTHS[int(key[5:7]) - 1]
+    return name[:3] if short else name
 
 
 def day_label(d: date) -> str:
@@ -135,7 +148,7 @@ def play_block(perfs: list[Performance], mark: str = "", note: str = "", show_st
 
 
 def visible_len(html: str) -> int:
-    return len(unescape(re.sub(r"<[^>]+>", "", html)))
+    return len(plain(html))
 
 
 def entities(html: str) -> int:
@@ -187,7 +200,7 @@ def overview(
             lines += [perf_line(p, star=p.uid in watched, show_stage=len(stages[v]) > 1, fire=p.uid in fast) for p in ps]
         blocks.append("\n".join(lines))
     head = (
-        f"🎭 <b>{escape(title)}</b> · {len(perfs)} performances\n🟢 N = tickets left"
+        f"🎭 <b>{escape(title)}</b> · {plural(len(perfs), 'performance')}\n🟢 N = tickets left"
         + (" (~N: at the last daily count)" if any(stale(p) and p.available is not None for p in perfs) else "")
         + " · tap a title to buy" + (" · 🔥 sells out fast" if fast else "")
     )

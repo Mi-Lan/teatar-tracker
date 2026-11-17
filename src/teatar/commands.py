@@ -9,7 +9,8 @@ from typing import TYPE_CHECKING
 
 from . import format as fmt
 from . import releases as rel
-from . import sales
+from . import sales, season
+from .dates import until_end_of_next_month
 from .diff import watch_entry
 from .models import Performance, Status, now
 from .textnorm import matches, normalize
@@ -53,12 +54,8 @@ Everything else is here on demand; replies arrive on the next check (faster arou
 /status — sources and last results"""
 
 
-def _catalog(ctx: Ctx) -> list[Performance]:
-    return [p for p in ctx.state.perfs() if p.venue != "custom" and p.start >= now() - timedelta(hours=3)]
-
-
-def _names(ctx: Ctx) -> dict[str, str]:
-    return {k: ctx.cfg.venue_name(k) for k in ctx.cfg.venues} | {"custom": "Custom lookups"}
+MAX_DAYS = 3650  # the furthest any list looks ahead ("everything announced")
+MAX_LOOKBACK = 90  # /new
 
 
 def _watched_uids(ctx: Ctx, perfs: list[Performance]) -> set[str]:
@@ -83,11 +80,21 @@ def resolve_venue(ctx: Ctx, text: str) -> list[str]:
     return [k for k in ctx.cfg.venues if q and (q in normalize(k) or q in normalize(ctx.cfg.venue_name(k)))]
 
 
+def overview(ctx: Ctx, perfs: list[Performance], title: str, note: str = "") -> list[str]:
+    """The by-date list of `perfs`, with ⭐ on plays you watch and 🔥 on plays that sell out fast."""
+    return fmt.overview(perfs, ctx.names(), title, _watched_uids(ctx, perfs), note, fast_uids(ctx, perfs))
+
+
+def _number(arg: str, default: int, most: int) -> int:
+    """A count typed after a command ('/new 30'): `default` when missing or not a positive number, at most `most`."""
+    arg = arg.strip()
+    return min(int(arg), most) if arg.isascii() and arg.isdigit() and int(arg) > 0 else default
+
+
 def _days(ctx: Ctx, start_offset: int, days: int, title: str) -> list[str]:
     today = now().date()
     lo, hi = today + timedelta(days=start_offset), today + timedelta(days=start_offset + days)
-    perfs = [p for p in _catalog(ctx) if lo <= p.start.date() < hi]
-    return fmt.overview(perfs, _names(ctx), title, _watched_uids(ctx, perfs), fast=fast_uids(ctx, perfs))
+    return overview(ctx, [p for p in ctx.state.catalog() if lo <= p.start.date() < hi], title)
 
 
 def cmd_help(ctx, arg):
@@ -107,29 +114,21 @@ def cmd_week(ctx, arg):
 
 
 def cmd_month(ctx, arg):
-    from .runner import end_of_next_month
-
-    today = now().date()
-    end = end_of_next_month(today)
-    return _days(ctx, 0, (end - today).days + 1, f"Until {end:%d.%m.} (end of next month)")
+    end, title = until_end_of_next_month()
+    return _days(ctx, 0, (end - now().date()).days + 1, title)
 
 
 def cmd_tickets(ctx, arg):
-    from . import season
-
     return season.report(ctx, remember=False)
 
 
 def cmd_new(ctx, arg):
-    from . import season
-
-    days = min(int(arg), 90) if arg.strip().isdigit() and int(arg) > 0 else 7
-    return season.recent(ctx, days)
+    return season.recent(ctx, _number(arg, 7, MAX_LOOKBACK))
 
 
 def cmd_overview(ctx, arg):
-    days = int(arg) if arg.strip().isdigit() else 3650
-    return _days(ctx, 0, days, "Everything announced" if days == 3650 else f"Next {days} days")
+    days = _number(arg, MAX_DAYS, MAX_DAYS)
+    return _days(ctx, 0, days, "Everything announced" if days == MAX_DAYS else f"Next {days} days")
 
 
 def cmd_theatre(ctx, arg):
@@ -137,16 +136,15 @@ def cmd_theatre(ctx, arg):
     if len(keys) != 1:
         options = ", ".join(f"<code>{k}</code>" for k in (keys or ctx.cfg.venues))
         return [f"Which theatre? {options}"]
-    perfs = [p for p in _catalog(ctx) if p.venue == keys[0]]
-    site = fmt.site_link(ctx.cfg.venue_website(keys[0]))
-    return fmt.overview(perfs, _names(ctx), ctx.cfg.venue_name(keys[0]), _watched_uids(ctx, perfs), site, fast_uids(ctx, perfs))
+    perfs = [p for p in ctx.state.catalog() if p.venue == keys[0]]
+    return overview(ctx, perfs, ctx.cfg.venue_name(keys[0]), fmt.site_link(ctx.cfg.venue_website(keys[0])))
 
 
 def cmd_search(ctx, arg):
     if not arg.strip():
         return ["Usage: /search <i>title</i>"]
-    perfs = [p for p in _catalog(ctx) if matches(arg, p.title)]
-    return fmt.by_title(perfs, _names(ctx), f"“{arg.strip()}”", _play_notes(ctx, perfs))
+    perfs = [p for p in ctx.state.catalog() if matches(arg, p.title)]
+    return fmt.by_title(perfs, ctx.names(), f"“{arg.strip()}”", _play_notes(ctx, perfs))
 
 
 def cmd_watch(ctx, arg):
@@ -163,14 +161,14 @@ def cmd_watch(ctx, arg):
     if any(normalize(w["query"]) == normalize(query) and w.get("venue") == entry.get("venue") for w in ctx.state.watchlist):
         return [f"Already watching “{escape(query)}”."]
     ctx.state.watchlist.append(entry)
-    hits = [p for p in _catalog(ctx) if watch_entry(p, [entry])]
+    hits = [p for p in ctx.state.catalog() if watch_entry(p, [entry])]
     msg = f"⭐ Watching “{escape(query)}”. {len(hits)} upcoming performance(s) match right now."
-    return [msg] + (fmt.by_title(hits, _names(ctx), "Current matches") if hits else [])
+    return [msg] + (fmt.by_title(hits, ctx.names(), "Current matches") if hits else [])
 
 
 def cmd_unwatch(ctx, arg):
     wl = ctx.state.watchlist
-    idx = int(arg) - 1 if arg.strip().isdigit() else next((i for i, w in enumerate(wl) if normalize(w["query"]) == normalize(arg)), -1)
+    idx = _number(arg, 0, len(wl) + 1) - 1 if arg.strip().isdigit() else next((i for i, w in enumerate(wl) if normalize(w["query"]) == normalize(arg)), -1)
     if not 0 <= idx < len(wl):
         return ["Not found. See /watchlist for numbers."]
     removed = wl.pop(idx)
@@ -181,7 +179,7 @@ def cmd_watchlist(ctx, arg):
     wl = ctx.state.watchlist
     if not wl:
         return ["Your watchlist is empty. Add plays with /watch <i>title</i>."]
-    catalog = _catalog(ctx)
+    catalog = ctx.state.catalog()
     lines = ["⭐ <b>Watchlist</b>"]
     for i, w in enumerate(wl, 1):
         hits = [p for p in catalog if watch_entry(p, [w])]
@@ -197,7 +195,7 @@ def cmd_release(ctx, arg):
         return ["Usage: <code>/release jdp 1.10. 10:00 note</code> (time optional)"]
     keys = resolve_venue(ctx, parts[0])
     if len(keys) != 1:
-        return [f"Which theatre? " + ", ".join(f"<code>{k}</code>" for k in (keys or ctx.cfg.venues))]
+        return ["Which theatre? " + ", ".join(f"<code>{k}</code>" for k in (keys or ctx.cfg.venues))]
     has_time = len(parts) > 2 and ":" in parts[2]
     when_text = " ".join(parts[1:3] if has_time else parts[1:2])
     note = " ".join(parts[3:] if has_time else parts[2:])
@@ -215,30 +213,32 @@ def cmd_release(ctx, arg):
     ctx.state.releases.sort(key=lambda x: x["at"])
     w = rel.window(r, ctx.cfg)
     plan = f"I'll check every {w.poll_seconds}s from {w.start_poll:%d.%m. %H:%M} to {w.end:%H:%M}"
-    return [f"🗓 Release added: {fmt.release_line(r, _names(ctx))}\n{plan}, with reminders before."]
+    reminders = ", with reminders before" if ctx.cfg.get("releases", "remind_before") else ""
+    return [f"🗓 Release added: {fmt.release_line(r, ctx.names())}\n{plan}{reminders}."]
 
 
 def cmd_releases(ctx, arg):
     if not ctx.state.releases:
         return ["No known ticket releases. Add one with /release."]
     lines = ["🗓 <b>Known ticket releases</b>"]
-    lines += [f"{i}. {fmt.release_line(r, _names(ctx))}{' (auto)' if r.get('source') == 'auto' else ' (monthly)' if r.get('source') == 'recurring' else ''}" for i, r in enumerate(ctx.state.releases, 1)]
+    lines += [f"{i}. {fmt.release_line(r, ctx.names())}{' (auto)' if r.get('source') == 'auto' else ' (monthly)' if r.get('source') == 'recurring' else ''}" for i, r in enumerate(ctx.state.releases, 1)]
     return ["\n".join(lines)]
 
 
 def cmd_unrelease(ctx, arg):
-    if not arg.strip().isdigit() or not 0 < int(arg) <= len(ctx.state.releases):
+    n = _number(arg, 0, len(ctx.state.releases) + 1)
+    if not 0 < n <= len(ctx.state.releases):
         return ["Usage: /unrelease <i>number</i> (see /releases)"]
-    r = ctx.state.releases.pop(int(arg) - 1)
+    r = ctx.state.releases.pop(n - 1)
     ctx.state.mark_notified(f"unrelease:{r['id']}")
-    return [f"Removed: {fmt.release_line(r, _names(ctx))}"]
+    return [f"Removed: {fmt.release_line(r, ctx.names())}"]
 
 
 def cmd_hot(ctx, arg):
     """Plays that sell out fast, with their record and next dates; then plays that sell out more slowly."""
     fast_hours, _ = sales.settings(ctx.cfg)
     table = sales.plays(ctx.state, ctx.cfg)
-    upcoming = sales.by_play(_catalog(ctx))
+    upcoming = sales.by_play(ctx.state.catalog())
     order = {v: i for i, v in enumerate(ctx.cfg.venues)}
     fast = sorted((p for p in table.values() if p.is_fast), key=lambda p: (order.get(p.venue, 99), min(p.fast)))
     slow = sorted((p for p in table.values() if p.sold_out and not p.is_fast), key=lambda p: (order.get(p.venue, 99), -p.sold_out))
@@ -273,7 +273,7 @@ def cmd_hot(ctx, arg):
 
 def cmd_soldout(ctx, arg):
     """Upcoming dates that are sold out now, and how fast they sold out."""
-    perfs = [p for p in _catalog(ctx) if p.status == Status.SOLD_OUT]
+    perfs = [p for p in ctx.state.catalog() if p.status == Status.SOLD_OUT]
     if not perfs:
         return ["🔴 <b>Sold out</b>\n\nNothing upcoming is sold out right now."]
     blocks, day = [], None
@@ -296,19 +296,19 @@ def cmd_soldout(ctx, arg):
 
 def cmd_theatres(ctx, arg):
     """Every theatre tracked, linked to its repertoire page, with how many dates are announced."""
-    catalog = _catalog(ctx)
+    catalog = ctx.state.catalog()
     lines = ["🎭 <b>Theatres I watch</b> · tap a name for its repertoire"]
     for key in ctx.cfg.venues:
         url = ctx.cfg.venue_website(key)
         name = fmt.a(url, f"<b>{escape(ctx.cfg.venue_name(key))}</b>")
         site = f" · {escape(fmt.domain(url))}" if url else ""
         n = sum(p.venue == key for p in catalog)
-        lines.append(f"• {name}{site} · {n} upcoming date{'s' if n != 1 else ''} · /theatre {key}")
+        lines.append(f"• {name}{site} · {fmt.plural(n, 'upcoming date')} · /theatre {key}")
     return ["\n".join(lines)]
 
 
 def cmd_status(ctx, arg):
-    catalog = _catalog(ctx)
+    catalog = ctx.state.catalog()
     lines = ["🩺 <b>Sources</b>"]
     for key in ctx.cfg.venues:
         n = sum(p.venue == key for p in catalog)
@@ -355,20 +355,31 @@ def handle(ctx: Ctx, updates: list[dict], skip_start: bool = False) -> int:
         msg = u.get("message") or {}
         chat = str((msg.get("chat") or {}).get("id", ""))
         text = (msg.get("text") or "").strip()
-        if chat not in {str(c) for c in getattr(ctx.tg, "recipients", [ctx.tg.chat_id])}:
+        if chat not in {str(c) for c in ctx.tg.recipients}:
             log.warning("ignoring message from unknown chat %s", chat)
             continue
         if not text or (skip_start and text.split("@")[0] == "/start"):
             continue
-        if text.startswith("/"):
-            cmd, _, arg = text.partition(" ")
-            fn = COMMANDS.get(cmd.split("@")[0].lower())
-            reply = fn(ctx, arg.strip()) if fn else [f"Unknown command {escape(cmd)}. Send /help."]
-        else:
-            reply = cmd_search(ctx, text)
+        reply = answer(ctx, text)
         age = now() - datetime.fromtimestamp(msg.get("date", now().timestamp()), tz=now().tzinfo)
         if age > timedelta(minutes=3):
             reply[0] = f"<i>(re: “{escape(text[:60])}”)</i>\n" + reply[0]
         ctx.tg.send_all(reply, chat)
         handled += 1
     return handled
+
+
+def answer(ctx: Ctx, text: str) -> list[str]:
+    """The reply to one message: a command, or a title to search for. Never raises: a message the code
+    trips over would otherwise stop this run and every later one, since Telegram keeps delivering it."""
+    cmd, _, arg = text.partition(" ")
+    try:
+        if not text.startswith("/"):
+            return cmd_search(ctx, text) or ["Nothing found."]
+        fn = COMMANDS.get(cmd.split("@")[0].lower())
+        if fn is None:
+            return [f"Unknown command {escape(cmd)}. Send /help."]
+        return fn(ctx, arg.strip()) or ["Nothing to show."]
+    except Exception:
+        log.exception("%s failed", cmd[:40] if text.startswith("/") else "a search")  # (not the text: logs can be public)
+        return [f"⚠️ Something went wrong answering “{escape(text[:60])}”. Send /help for what I understand."]

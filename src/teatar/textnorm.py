@@ -44,6 +44,11 @@ def normalize(text: str) -> str:
     return text.strip()
 
 
+def slug(text: str, limit: int = 40) -> str:
+    """'Дивље месо' → 'divlje-meso'. Used in ids kept in state: changing it would re-announce every date."""
+    return normalize(text).replace(" ", "-")[:limit]
+
+
 def month_number(name: str) -> int | None:
     """Map 'септембар', 'sep', 'Oktobra', 'окт' … to a month number."""
     key = normalize(name)[:3]

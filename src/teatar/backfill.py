@@ -15,7 +15,7 @@ from datetime import datetime
 from pathlib import Path
 
 from . import sales
-from .models import TZ, Performance
+from .models import CUSTOM_VENUE, TZ, Performance
 from .state import State
 
 
@@ -43,7 +43,7 @@ def replay(snaps: list[tuple[str, str, dict]]) -> dict[str, dict]:
         meta = data.get("meta", {})
         by_venue: dict[str, list[dict]] = {}
         for d in perfs.values():
-            if d["venue"] != "custom":
+            if d["venue"] != CUSTOM_VENUE:
                 by_venue.setdefault(d["venue"], []).append(d)
         for venue, ds in by_venue.items():
             old = {u: d for u, d in prev.items() if d["venue"] == venue}

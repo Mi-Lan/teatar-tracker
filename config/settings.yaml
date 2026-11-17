@@ -1,4 +1,6 @@
-# Timezone for everything below: Europe/Belgrade.
+# Timezone for everything below: Europe/Belgrade. Write times in quotes ("08:00").
+# Every setting is optional: a line you delete falls back to the value shown here (config.DEFAULTS in
+# src/teatar/config.py), and a name the tracker doesn't know is reported in the run's log.
 
 digest:  # the scheduled overview: everything until the end of next month
   every: off  # off | weekly | daily — off: nothing scheduled, /month shows the same on demand
@@ -37,6 +39,9 @@ releases:
   stop_after_minutes: 45  # ...and ends this long after it
   poll_seconds: 30  # how often the release venue is re-checked during a burst
   full_scan_minutes: 10  # full scan of all venues during a burst
+  all_day_window: ["08:00", "22:00"]  # a release with only its date known is polled between these times…
+  all_day_poll_seconds: 60  # …this often
+  max_run_minutes: 200  # a burst never keeps one run going longer than this (the workflow stops it at 225)
 
 health:
   failures_before_alert: 3  # consecutive failed/empty scans before warning that a site may have changed

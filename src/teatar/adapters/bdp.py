@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 from ..models import TZ, Performance, Status
 from ..registry import register
 from ..textnorm import normalize
-from .base import Adapter, at, upcoming
+from .base import Adapter, at, dated_id, text_of, upcoming
 
 BASE = "https://www.bdp.rs"
 SIXTIX_API = "https://api.sixtix.com/v1"
@@ -22,8 +22,7 @@ SIXTIX_EVENT_URL = "https://app.sixtix.com/events/{slug}"
 
 
 def _text(item, cls: str) -> str:
-    el = item.select_one(f".{cls}")
-    return el.get_text(" ", strip=True) if el else ""
+    return text_of(item.select_one(f".{cls}"))
 
 
 def parse_catalog(html: str, venue: str = "bdp") -> list[Performance]:
@@ -48,7 +47,7 @@ def parse_catalog(html: str, venue: str = "bdp") -> list[Performance]:
         perfs.append(
             Performance(
                 venue=venue,
-                source_id=f"{start:%Y%m%d%H%M}-{normalize(title).replace(' ', '-')[:40]}",
+                source_id=dated_id(start, title),
                 title=title,
                 subtitle="Премијера" if flags["prem"] else "",
                 start=start,
@@ -100,6 +99,7 @@ def stage_filter(perfs: list[Performance], stages: list[str] | None, include_gue
 @register("bdp_webflow_sixtix")
 class BdpAdapter(Adapter):
     method = "hybrid"
+    known_options = frozenset({"stages", "include_guest", "sixtix_iframe"})
 
     def fetch(self) -> list[Performance]:
         html = self.http.get(f"{BASE}/cir/repertoar").text

@@ -3,16 +3,18 @@ name = "teatar"
 version = "0.1.0"
 description = "Belgrade theatre repertoire, availability and ticket-release tracker with Telegram alerts"
 requires-python = ">=3.11"
+# Upper bounds: the tracker runs unattended and installs fresh on every run, so a new major version of
+# a dependency must not reach it untested. Raise a bound once the tests pass on the new version.
 dependencies = [
-    "httpx>=0.27",
-    "beautifulsoup4>=4.12",
-    "lxml>=5.0",
-    "pyyaml>=6.0",
-    "rich>=13.0",
+    "httpx>=0.27,<1",
+    "beautifulsoup4>=4.12,<5",
+    "lxml>=5.0,<7",
+    "pyyaml>=6.0,<7",
+    "rich>=13.0,<16",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "respx>=0.21"]
+dev = ["pytest>=8.0,<10", "respx>=0.21,<1"]
 
 [project.scripts]
 teatar = "teatar.cli:main"

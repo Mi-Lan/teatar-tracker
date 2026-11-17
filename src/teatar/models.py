@@ -8,6 +8,7 @@ from zoneinfo import ZoneInfo
 from .textnorm import normalize
 
 TZ = ZoneInfo("Europe/Belgrade")
+CUSTOM_VENUE = "custom"  # virtual venue for per-play lookups (lookups.py): not a theatre, never in lists
 
 
 _clock = None  # tests can install a fake clock with set_clock()
@@ -68,7 +69,7 @@ class Performance:
 
     @classmethod
     def from_dict(cls, d: dict) -> Performance:
-        d = dict(d)
+        d = {k: v for k, v in d.items() if k in cls.__dataclass_fields__}  # tolerate fields from other versions
         d["start"] = datetime.fromisoformat(d["start"])
         d["sales_start"] = datetime.fromisoformat(d["sales_start"]) if d.get("sales_start") else None
         d["status"] = Status(d.get("status", "unknown"))

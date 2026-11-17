@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 from ..models import TZ, Performance, Status, now
 from ..registry import register
-from .base import Adapter, upcoming
+from .base import Adapter, text_of, upcoming
 
 BASE = "https://operatheatremadlenianum.com"
 SHOP = "https://tickets.operatheatremadlenianum.com/sr"
@@ -33,8 +33,8 @@ def parse(html: str, venue: str = "madlenianum") -> list[Performance]:
                 Performance(
                     venue=venue,
                     source_id=f"{slug}-{start:%Y%m%d%H%M}",
-                    title=link.get_text(" ", strip=True),
-                    subtitle=over.get_text(" ", strip=True) if over else "",
+                    title=text_of(link),
+                    subtitle=text_of(over),
                     start=start,
                     url=urljoin(BASE, link["href"]),
                     buy_url=SHOP,
@@ -47,6 +47,7 @@ def parse(html: str, venue: str = "madlenianum") -> list[Performance]:
 @register("madlenianum_html")
 class MadlenianumAdapter(Adapter):
     method = "html"
+    known_options = frozenset({"max_pages"})
 
     def fetch(self) -> list[Performance]:
         perfs = []

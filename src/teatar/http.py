@@ -15,6 +15,15 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/128.0 Safari/537.36"
 )
 RETRY_STATUS = {429, 500, 502, 503, 504}
+MAX_RETRY_AFTER = 30.0  # the longest a server's Retry-After is honoured, in seconds
+
+
+def _retry_after(resp: httpx.Response) -> float:
+    """Seconds the server asked us to wait (Retry-After as a number), capped; 0 when it didn't say."""
+    try:
+        return min(max(float(resp.headers.get("Retry-After", 0)), 0.0), MAX_RETRY_AFTER)
+    except ValueError:  # an HTTP date: keep the usual backoff
+        return 0.0
 
 
 class Http:
@@ -38,6 +47,7 @@ class Http:
     def request(self, method: str, url: str, **kwargs) -> httpx.Response:
         for attempt in range(self.retries + 1):
             self._throttle(url)
+            wait = float(2**attempt)
             try:
                 resp = self.client.request(method, url, **kwargs)
             except httpx.TransportError as exc:
@@ -49,7 +59,8 @@ class Http:
                     resp.raise_for_status()
                     return resp
                 log.warning("%s %s -> HTTP %s, retrying", method, url, resp.status_code)
-            time.sleep(2**attempt)
+                wait = max(wait, _retry_after(resp))
+            time.sleep(wait)
         raise RuntimeError("unreachable")
 
     def get(self, url: str, **kwargs) -> httpx.Response:

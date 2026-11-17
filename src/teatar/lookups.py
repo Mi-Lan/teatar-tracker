@@ -7,16 +7,20 @@ To add a method, write a function taking (http, value, entry) and decorate it wi
 
 from __future__ import annotations
 
+import logging
 import re
+from collections.abc import Callable
 from datetime import datetime, timedelta
-from typing import Callable
 
 from .http import Http
-from .models import TZ, Performance, Status, now
+from .models import CUSTOM_VENUE, TZ, Performance, Status, now
 from .releases import parse_when
-from .textnorm import normalize
+from .textnorm import slug
 
-VENUE = "custom"
+log = logging.getLogger(__name__)
+
+VENUE = CUSTOM_VENUE
+OPTIONS = {"pattern"}  # keys of a `lookup:` that configure a method instead of naming one
 LOOKUPS: dict[str, Callable[[Http, str, dict], list[Performance]]] = {}
 
 
@@ -58,7 +62,7 @@ def page(http: Http, url: str, entry: dict) -> list[Performance]:
     return [
         Performance(
             venue=VENUE,
-            source_id=f"page-{normalize(entry.get('query', url)).replace(' ', '-')[:40]}",
+            source_id=f"page-{slug(entry.get('query', url))}",
             title=entry.get("query", url),
             start=start,
             url=url,
@@ -76,4 +80,6 @@ def run_all(http: Http, watchlist: list[dict]) -> list[Performance]:
         for name, value in spec.items():
             if name in LOOKUPS:
                 perfs += LOOKUPS[name](http, value, entry)
+            elif name not in OPTIONS:
+                log.warning("watchlist %r: unknown lookup method %r (known: %s)", entry.get("query"), name, ", ".join(LOOKUPS))
     return perfs

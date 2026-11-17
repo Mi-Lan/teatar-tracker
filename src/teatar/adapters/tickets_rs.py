@@ -6,13 +6,12 @@ Any tickets.rs venue can be tracked by adding its slug (the part after /venue/) 
 from __future__ import annotations
 
 import json
-import re
 from datetime import date
 
 from ..models import Performance, Status
 from ..registry import register
 from ..textnorm import normalize
-from .base import Adapter, at, upcoming
+from .base import Adapter, at, find_time, label_status, upcoming
 
 API = "https://tickets.rs/web/api/data/agnosticget"
 SITE = "https://tickets.rs"
@@ -31,23 +30,17 @@ def parse_events(events: list[dict], venue: str) -> list[Performance]:
     for ev in events:
         if ev.get("Type") != "event" or not ev.get("StartDate"):
             continue
-        tm = re.search(r"\d{1,2}:\d{2}", ev.get("DateTime", ""))
         status_text = normalize(ev.get("EventStatus") or "")
-        if "rasprod" in status_text:
-            status = Status.SOLD_OUT
-        elif "otkaz" in status_text:
-            status = Status.CANCELLED
-        elif "uskoro" in status_text or "najav" in status_text:
-            status = Status.NOT_ON_SALE
-        else:
-            status = Status.ON_SALE  # listed with a price on the ticket shop = sellable
+        status = label_status(status_text)
+        if status is None:  # listed with a price on the ticket shop = sellable, unless it says "soon"
+            status = Status.NOT_ON_SALE if "uskoro" in status_text or "najav" in status_text else Status.ON_SALE
         price = ev.get("Price")
         perfs.append(
             Performance(
                 venue=venue,
                 source_id=str(ev["Id"]),
                 title=ev.get("Title", "").strip(),
-                start=at(date.fromisoformat(ev["StartDate"]), tm.group() if tm else None),
+                start=at(date.fromisoformat(ev["StartDate"]), find_time(ev.get("DateTime"))),
                 stage=ev.get("Venue", "").partition(" - ")[2],  # "Sava Centar - Plava dvorana" → hall only
                 url=f"{SITE}/{ev['Slug']}",
                 buy_url=f"{SITE}/{ev['Slug']}",
