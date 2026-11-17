@@ -3982,7 +3982,7 @@
    "source_id": "6374",
    "stage": "Велика сцена",
    "start": "2026-11-18T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "балет на музику Војислава Вокија Костића",
    "title": "Ко то тамо пева",
    "url": "https://www.narodnopozoriste.rs/predstave/ko-to-tamo-peva?m=x722a56a4f7b6418926e7f8b6e5c149cc",
@@ -4201,11 +4201,11 @@
    "sales_start": null,
    "source_id": "6447",
    "stage": "Велика сцена",
-   "start": "2026-11-27T12:00:00+01:00",
+   "start": "2026-11-27T11:00:00+01:00",
    "status": "not_on_sale",
    "subtitle": "",
    "title": "EqualVoise summit - Ringier",
-   "url": "https://www.narodnopozoriste.rs/predstave/equalvoise-summit-ringier?m=x09e19b37340df4bd2cb9731434758910",
+   "url": "https://www.narodnopozoriste.rs/predstave/equalvoise-summit-ringier?m=x260a69ecce3352170470b5746ffd9323",
    "venue": "narodno"
   },
   "narodno:6448": {
@@ -8358,6 +8358,7 @@
      51
     ]
    ],
+   "low": "2026-11-17T14:07:44+01:00",
    "seats": 367,
    "start": "2026-11-18T19:00:00+01:00",
    "title": "Ко то тамо пева",
@@ -11042,14 +11043,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-17T12:07:53+01:00",
-  "jdp": "2026-11-17T12:07:53+01:00",
-  "kolarac": "2026-11-17T12:07:53+01:00",
-  "madlenianum": "2026-11-17T12:07:53+01:00",
-  "madlenianum_tickets": "2026-11-17T12:07:53+01:00",
-  "narodno": "2026-11-17T12:07:53+01:00",
-  "sava_centar": "2026-11-17T12:07:53+01:00",
-  "terazije": "2026-11-17T12:07:53+01:00"
+  "bdp": "2026-11-17T14:07:44+01:00",
+  "jdp": "2026-11-17T14:07:44+01:00",
+  "kolarac": "2026-11-17T14:07:44+01:00",
+  "madlenianum": "2026-11-17T14:07:44+01:00",
+  "madlenianum_tickets": "2026-11-17T14:07:44+01:00",
+  "narodno": "2026-11-17T14:07:44+01:00",
+  "sava_centar": "2026-11-17T14:07:44+01:00",
+  "terazije": "2026-11-17T14:07:44+01:00"
  },
  "season": {
   "live": {
