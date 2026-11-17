@@ -1,0 +1,27 @@
+name: shop-login-test
+
+# Temporary (this branch only): tries the Madlenianum ticket-shop sign-in with the account in the
+# MADLENIANUM_EMAIL / MADLENIANUM_PASSWORD secrets and prints what the page looks like afterwards,
+# so the tracker's reader can be written. Removed again before this work is merged.
+on:
+  push:
+    branches: ["claude/lucid-turing-364smz"]
+    paths: [".github/workflows/shop-login-test.yml", "scripts/madlenianum_shop_probe.py"]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      MADLENIANUM_EMAIL: ${{ secrets.MADLENIANUM_EMAIL }}
+      MADLENIANUM_PASSWORD: ${{ secrets.MADLENIANUM_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q "httpx<1" "beautifulsoup4<5" "lxml<7"
+      - run: python scripts/madlenianum_shop_probe.py
