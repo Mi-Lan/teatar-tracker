@@ -70,6 +70,7 @@
   "madlenianum": [
    "carmen suite bolero",
    "cvrcak i mrav",
+   "evita",
    "feliks i doris",
    "gospodin u cizmama od dima",
    "ivica i marica",
@@ -853,6 +854,10 @@
   "madlenianum:cvrcak-i-mrav-202610061200": {
    "ever_on_sale": false,
    "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:evita-202611281930": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-17T12:07:53+01:00"
   },
   "madlenianum:feliks-i-doris-202610142000": {
    "ever_on_sale": false,
@@ -2054,6 +2059,10 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-16T12:07:39+01:00"
   },
+  "sava_centar:28292": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-17T12:07:53+01:00"
+  },
   "terazije:1246": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T14:35:11+02:00"
@@ -2344,6 +2353,7 @@
   "new_date:sava_centar:28234": "2026-11-10T16:07:41+01:00",
   "new_date:sava_centar:28246": "2026-11-13T16:07:42+01:00",
   "new_date:sava_centar:28253": "2026-11-13T20:07:36+01:00",
+  "new_date:sava_centar:28292": "2026-11-17T12:07:53+01:00",
   "new_date:terazije:1259": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1263": "2026-09-25T01:50:54+02:00",
   "new_date:terazije:1264": "2026-09-25T01:50:54+02:00",
@@ -2412,6 +2422,7 @@
   "new_show:madlenianum:carmen-suite-bolero-202610131930": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:cvrcak-i-mrav-202610061000": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:cvrcak-i-mrav-202610061200": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:evita-202611281930": "2026-11-17T12:07:53+01:00",
   "new_show:madlenianum:feliks-i-doris-202610142000": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:gospodin-u-cizmama-od-dima-202609301930": "2026-09-25T17:47:32+02:00",
   "new_show:madlenianum:gospodin-u-cizmama-od-dima-202611101930": "2026-09-25T17:47:32+02:00",
@@ -3322,6 +3333,21 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
+  "madlenianum:evita-202611281930": {
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
+   "price": "",
+   "sales_start": null,
+   "source_id": "evita-202611281930",
+   "stage": "",
+   "start": "2026-11-28T19:30:00+01:00",
+   "status": "unknown",
+   "subtitle": "Endrju Lojd Veber",
+   "title": "EVITA",
+   "url": "https://operatheatremadlenianum.com/evita",
+   "venue": "madlenianum"
+  },
   "madlenianum:kazanova-protiv-don-zuana-202611232000": {
    "available": null,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
@@ -4175,11 +4201,11 @@
    "sales_start": null,
    "source_id": "6447",
    "stage": "Велика сцена",
-   "start": "2026-11-27T19:30:00+01:00",
+   "start": "2026-11-27T12:00:00+01:00",
    "status": "not_on_sale",
    "subtitle": "",
    "title": "EqualVoise summit - Ringier",
-   "url": "https://www.narodnopozoriste.rs/predstave/equalvoise-summit-ringier?m=x51f9d64b8360b6faf554e84d2e6c92e2",
+   "url": "https://www.narodnopozoriste.rs/predstave/equalvoise-summit-ringier?m=x09e19b37340df4bd2cb9731434758910",
    "venue": "narodno"
   },
   "narodno:6448": {
@@ -5582,6 +5608,24 @@
    "url": "https://tickets.rs/event/heavy_symphony_29703",
    "venue": "sava_centar"
   },
+  "sava_centar:28292": {
+   "available": null,
+   "buy_url": "https://tickets.rs/event/aleksandra_radovic_29743",
+   "extra": {
+    "end_date": "2027-04-09",
+    "event_status": ""
+   },
+   "price": "od 2500 RSD",
+   "sales_start": null,
+   "source_id": "28292",
+   "stage": "",
+   "start": "2027-04-09T20:00:00+02:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "Aleksandra Radović",
+   "url": "https://tickets.rs/event/aleksandra_radovic_29743",
+   "venue": "sava_centar"
+  },
   "terazije:1279": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1279",
@@ -6058,6 +6102,30 @@
    "by": "2026-11-16T12:07:39+01:00",
    "listed": 6,
    "month": "2027-02",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "sava_centar"
+  },
+  {
+   "after": "2026-11-17T10:07:36+01:00",
+   "buyable": 0,
+   "by": "2026-11-17T12:07:53+01:00",
+   "listed": 6,
+   "month": "2026-11",
+   "new": 1,
+   "on_sale": 0,
+   "opened": 0,
+   "unknown": 6,
+   "venue": "madlenianum"
+  },
+  {
+   "after": "2026-11-17T10:07:36+01:00",
+   "buyable": 1,
+   "by": "2026-11-17T12:07:53+01:00",
+   "listed": 1,
+   "month": "2027-04",
    "new": 1,
    "on_sale": 1,
    "opened": 0,
@@ -10647,6 +10715,12 @@
    "title": "HEAVY SYMPHONY",
    "venue": "sava_centar"
   },
+  "sava_centar:28292": {
+   "on_sale": "2026-11-17T12:07:53+01:00",
+   "start": "2027-04-09T20:00:00+02:00",
+   "title": "Aleksandra Radović",
+   "venue": "sava_centar"
+  },
   "terazije:1246": {
    "low": "2026-09-23T19:49:06+02:00",
    "sold_out": null,
@@ -10968,14 +11042,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-17T10:07:36+01:00",
-  "jdp": "2026-11-17T10:07:36+01:00",
-  "kolarac": "2026-11-17T10:07:36+01:00",
-  "madlenianum": "2026-11-17T10:07:36+01:00",
-  "madlenianum_tickets": "2026-11-17T10:07:36+01:00",
-  "narodno": "2026-11-17T10:07:36+01:00",
-  "sava_centar": "2026-11-17T10:07:36+01:00",
-  "terazije": "2026-11-17T10:07:36+01:00"
+  "bdp": "2026-11-17T12:07:53+01:00",
+  "jdp": "2026-11-17T12:07:53+01:00",
+  "kolarac": "2026-11-17T12:07:53+01:00",
+  "madlenianum": "2026-11-17T12:07:53+01:00",
+  "madlenianum_tickets": "2026-11-17T12:07:53+01:00",
+  "narodno": "2026-11-17T12:07:53+01:00",
+  "sava_centar": "2026-11-17T12:07:53+01:00",
+  "terazije": "2026-11-17T12:07:53+01:00"
  },
  "season": {
   "live": {
