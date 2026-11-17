@@ -70,6 +70,10 @@ def compute(state: State, scanned: dict[str, list[Performance]], watchlist: list
                 continue
             o = Performance.from_dict(old_d)
             ever = state.meta.get(p.uid, {}).get("ever_on_sale", False)
+            if o.status == Status.UNKNOWN and p.status != Status.CANCELLED:
+                # The source couldn't say before whether tickets were on sale, and now it can (a venue that
+                # gained a ticket-shop reader, say). That is news about the tracker, not about the tickets.
+                continue
             if p.status.buyable and not o.status.buyable:
                 kind = Kind.BACK_IN_STOCK if (o.status == Status.SOLD_OUT or ever) else Kind.SALES_OPENED
                 changes.append(Change(kind, p, o, watched))
@@ -103,7 +107,8 @@ def apply(state: State, scanned: dict[str, list[Performance]]) -> None:
                 meta = state.meta[p.uid] = {"first_seen": stamp, "ever_on_sale": p.status.buyable}
             elif p.status.buyable and not meta["ever_on_sale"]:
                 meta["ever_on_sale"] = True
-                meta["on_sale_since"] = stamp  # listed earlier, tickets came later
+                if old.get(p.uid, {}).get("status") != Status.UNKNOWN:  # (from unknown: on sale since who knows when)
+                    meta["on_sale_since"] = stamp  # listed earlier, tickets came later
             titles.add(p.title_norm)
         if titles:
             state.known_titles[venue] = sorted(titles)

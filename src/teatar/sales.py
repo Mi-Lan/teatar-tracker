@@ -10,7 +10,8 @@ A record: {"venue", "title", "start",
            "low":      when it was first seen running low,
            "sold_out": when it was first seen sold out (null: sold out, time unknown),
            "instant":  true when it sold out before it was ever seen on sale,
-           "counts":   [[when, seats free], …] from exact seat counts (Narodno, about daily), "seats": total}
+           "counts":   [[when, tickets left], …] where the source gives an exact number (Narodno about daily,
+                       Madlenianum's shop every check: kept once a day and whenever it changes), "seats": total}
 Times are the checks that saw the change, so they are as precise as the gap between checks.
 "on_sale" is unknown for dates that were already on sale in a theatre's first scan (or before this
 history existed). Statuses flap as tickets are returned (sold out ↔ few left); only the first
@@ -47,11 +48,14 @@ def observe(state: State, venue: str, perfs: list[Performance], old: dict[str, d
                 continue  # not on sale yet: nothing to record
             r = state.sales[p.uid] = _new_record(state, venue, p, old.get(p.uid), stamp, baseline)
         r["title"], r["start"] = p.title, p.start.isoformat()  # dates and spellings can change
-        if (counted := p.extra.get("counted_at")) and p.available is not None:  # an exact seat count (Narodno, daily)
+        if (counted := p.extra.get("counted_at")) and p.available is not None:  # an exact count of tickets left
             counts = r.setdefault("counts", [])
-            if not counts or counts[-1][0] != counted:
+            last = counts[-1] if counts else None
+            # one point a day is enough, plus one whenever the number moves (some sources are counted every check)
+            if last is None or (last[0] != counted and (last[1] != p.available or last[0][:10] != counted[:10])):
                 counts.append([counted, p.available])
-                r["seats"] = p.extra.get("seats")
+                if p.extra.get("seats") is not None:
+                    r["seats"] = p.extra["seats"]
         if p.status == Status.LOW and "low" not in r:
             r["low"] = stamp
         if p.status == Status.SOLD_OUT and "sold_out" not in r:
@@ -65,7 +69,8 @@ def _new_record(state: State, venue: str, p: Performance, prev: dict | None, sta
     # Is this the check where it first went on sale (or sold out)? Yes for a date listed just now,
     # or one seen last time without tickets that never had any.
     listed_now = prev is None and not baseline
-    opened_now = prev is not None and prev_status not in TRACKED and not meta.get("ever_on_sale")
+    # (a date whose status was unknown until now may have been on sale all along: that isn't "opened now")
+    opened_now = prev is not None and prev_status not in (*TRACKED, Status.UNKNOWN) and not meta.get("ever_on_sale")
     if listed_now or opened_now:
         if p.status.buyable:
             r["on_sale"] = stamp
