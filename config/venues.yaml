@@ -6,7 +6,7 @@
 #   jdp_wp_ajax         WordPress AJAX month feed
 #   tickets_rs          tickets.rs JSON API (any venue: just set its slug)
 #   kupikartu_pos       "Kupi kartu" box-office JSON API (bilet.*/blagajna.* sites): set base_url
-#   madlenianum_html    Madlenianum own site, catalog only
+#   madlenianum_html    Madlenianum own site (repertoire list + month calendar), dates only
 #
 # website: the theatre's own repertoire page, linked at the bottom of release messages
 #   (tickets.rs venues default to their tickets.rs venue page).
@@ -63,3 +63,4 @@ madlenianum:
   adapter: madlenianum_html
   name: Madlenianum
   website: https://operatheatremadlenianum.com/repertoar
+  months_ahead: 2  # their repertoire page stops at the end of this month; later months come from the site's calendar

@@ -162,3 +162,41 @@ def test_month_by_month_sources_ask_for_each_month_once_across_new_year(monkeypa
         assert len(perfs) == 6 and perfs[0].buy_url.startswith("https://bilet.pozoristeterazije.com/scena.php?")
     finally:
         models.set_clock(None)
+
+
+def test_madlenianum_calendar_has_next_months_dates():
+    """/repertoar stops at the end of the current month; December was only on the home page's calendar."""
+    dec = madlenianum.parse_calendar(read("madlenianum_calendar_2026_12.html"))
+    assert [(p.start.strftime("%d.%m. %H:%M"), p.title) for p in madlenianum.merge([], dec)] == [
+        ("01.12. 17:00", "KRCKO ORAŠČIĆ"), ("01.12. 19:30", "KRCKO ORAŠČIĆ"),
+        ("07.12. 17:00", "KRCKO ORAŠČIĆ"), ("07.12. 19:30", "KRCKO ORAŠČIĆ"),
+        ("15.12. 19:30", "JA, EMA"),  # listed twice on the site: one performance
+        ("30.12. 20:00", "SVET JE LEP KADA SANJAMO"),
+    ]
+    assert dec[0].source_id == "krcko-orascic-0-202612011700" and dec[0].url == "https://operatheatremadlenianum.com/krcko-orascic-0"
+    assert dec[0].status == Status.UNKNOWN and dec[0].start.tzinfo is TZ
+
+
+def test_madlenianum_reads_the_listing_and_the_calendar_as_one(monkeypatch):
+    models.set_clock(lambda: datetime(2026, 11, 17, 16, 0, tzinfo=TZ))
+    asked = []
+
+    def get(url, params=None, **kw):
+        asked.append((url.rsplit("/", 1)[1], params))
+        if url.endswith("/repertoar"):  # page 2 of the listing is all in the past: the adapter stops there
+            return "<html></html>" if params else read("madlenianum_repertoar_2026_11.html")
+        return {"2026-11": read("madlenianum_calendar_2026_11.html"), "2026-12": read("madlenianum_calendar_2026_12.html")}.get(params["mini"], "<html></html>")
+
+    try:
+        perfs = madlenianum.MadlenianumAdapter("madlenianum", FakeHttp(get=get), months_ahead=2).fetch()
+    finally:
+        models.set_clock(None)
+    assert asked == [("repertoar", None), ("repertoar", {"page": 1}), ("home", {"mini": "2026-11"}), ("home", {"mini": "2026-12"}), ("home", {"mini": "2027-01"})]
+    assert len(perfs) == len({p.uid for p in perfs}) == 12  # 6 left in November (on both pages: counted once) + 6 in December
+    by_month = {m: [p for p in perfs if p.start.month == m] for m in (11, 12)}
+    assert len(by_month[11]) == 6 and len(by_month[12]) == 6
+    evita = [p for p in perfs if p.title == "EVITA"]
+    assert evita[0].subtitle == "Endrju Lojd Veber"  # the listing's entry wins: only it has the author
+    assert [(p.source_id, p.start) for p in evita] == [("evita-202611281930", datetime(2026, 11, 28, 19, 30, tzinfo=TZ))]  # one date on the site
+    # the ids the tracker already knows are unchanged, so nothing is announced twice
+    assert {p.source_id for p in by_month[11]} >= {"staklena-menazerija-202611242000", "snezana-i-sedam-patuljaka-202611301000"}
