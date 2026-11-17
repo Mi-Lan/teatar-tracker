@@ -33,6 +33,10 @@ jobs:
       TELEGRAM_EXTRA_CHAT_IDS: ${{ secrets.TELEGRAM_EXTRA_CHAT_IDS }}  # more people who get every notification (comma-separated)
       NARODNO_EMAIL: ${{ secrets.NARODNO_EMAIL }}  # a narodnopozoriste.rs account: exact seat counts (optional)
       NARODNO_PASSWORD: ${{ secrets.NARODNO_PASSWORD }}
+      # a Madlenianum ticket-shop account: dates and tickets left that only show when signed in (optional).
+      # The email falls back to the Narodno one, for an account registered with the same address.
+      MADLENIANUM_EMAIL: ${{ secrets.MADLENIANUM_EMAIL || secrets.NARODNO_EMAIL }}
+      MADLENIANUM_PASSWORD: ${{ secrets.MADLENIANUM_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
 

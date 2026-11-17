@@ -24,7 +24,7 @@ in `data/state.json`, committed by the workflow.
 | `bdp` | bdp.rs (Велика сцена only) | Webflow HTML + Sixtix API | on sale / not yet / sold out |
 | `jdp` | jdp.rs | WordPress AJAX API | on sale / <10% left / sold out |
 | `sava_centar`, `madlenianum_tickets`, `kolarac` | tickets.rs | JSON API | listed = on sale |
-| `madlenianum` | operatheatremadlenianum.com | HTML scrape (repertoire list + month calendar, so next month's dates are seen as soon as they're in the calendar) | dates only (shop needs login) |
+| `madlenianum` | operatheatremadlenianum.com + its ticket shop | HTML scrape (repertoire list + month calendar; the shop's listing with a login) | **tickets left** and shop-only dates with a shop account (`MADLENIANUM_EMAIL` / `MADLENIANUM_PASSWORD`), else dates only |
 | `terazije` | pozoristeterazije.com box office | "Kupi kartu" JSON API | on sale / <10% left / sold out / not yet |
 
 Configuration is in `config/`:
@@ -90,8 +90,8 @@ left" flapping from returned tickets is ignored), and keeps that for `selling.hi
 `selling.fast_hours` of going on sale (default 48 h), or was already sold out the first time it was seen, at least
 `selling.min_days_before` before the show. 🔴 marks plays that sell out more slowly.
 
-Where sell-outs can be seen: Narodno, JDP and Terazije (sold out / under 10% left),
-BDP (sold-out flag), and the tickets.rs venues ("rasprodato"). Madlenianum's own site shows no availability. Sales
+Where sell-outs can be seen: Narodno, JDP and Terazije (sold out / under 10% left), Madlenianum with a shop account,
+BDP (sold-out flag), and the tickets.rs venues ("rasprodato"). Without a shop account, Madlenianum's own site shows no availability. Sales
 that close on the day of the show are not counted as sell-outs. Times are only as precise as the gap between checks.
 
 History before this feature was rebuilt from the git history of `data/state.json`:
@@ -123,6 +123,16 @@ imports once. It needs the full history (`git fetch --unshallow` in a shallow cl
    they're a few hours old; on sale / under 10% / sold out still update from the public listing every check. Each
    count is also kept in the date's sell-out history. If the login stops working, you get the usual "failed 3
    checks" warning for "Narodno pozorište seat counts", and everything else keeps working.
+
+6. **Madlenianum's ticket shop (optional).** Their shop lists performances only to signed-in visitors, and it can
+   have a date (and its tickets) days before the theatre's public site does. Add a secret `MADLENIANUM_PASSWORD`
+   for an account on tickets.operatheatremadlenianum.com, and `MADLENIANUM_EMAIL` unless the account uses the same
+   email as `NARODNO_EMAIL`. Every regular check then signs in once and reads the shop's listing page: dates only
+   the shop has are tracked like any other, and every date shows how many tickets are left. It opens no ticket or
+   reservation page, so nothing is ever selected or held. A date on the public site that the shop doesn't list yet
+   counts as "not on sale yet", so you hear when its sale opens. If the sign-in stops working you get the usual
+   "failed 3 checks" warning for "Madlenianum ticket shop"; the last dates and counts are kept (shown as `~142`
+   once they're a few hours old) and the public pages keep working.
 
 The bot only answers the chat ids in `TELEGRAM_CHAT_ID` and `TELEGRAM_EXTRA_CHAT_IDS`. Keep chat ids in secrets,
 not in the repo: it's public.
