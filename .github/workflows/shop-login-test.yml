@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      MADLENIANUM_EMAIL: ${{ secrets.MADLENIANUM_EMAIL }}
+      # the shop account uses the same email as the Narodno one, unless MADLENIANUM_EMAIL is set
+      MADLENIANUM_EMAIL: ${{ secrets.MADLENIANUM_EMAIL || secrets.NARODNO_EMAIL }}
       MADLENIANUM_PASSWORD: ${{ secrets.MADLENIANUM_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
