@@ -24,7 +24,7 @@ in `data/state.json`, committed by the workflow.
 | `bdp` | bdp.rs (Велика сцена only) | Webflow HTML + Sixtix API | on sale / not yet / sold out |
 | `jdp` | jdp.rs | WordPress AJAX API | on sale / <10% left / sold out |
 | `sava_centar`, `madlenianum_tickets`, `kolarac` | tickets.rs | JSON API | listed = on sale |
-| `madlenianum` | operatheatremadlenianum.com | HTML scrape | dates only (shop needs login) |
+| `madlenianum` | operatheatremadlenianum.com | HTML scrape (repertoire list + month calendar, so next month's dates are seen as soon as they're in the calendar) | dates only (shop needs login) |
 | `terazije` | pozoristeterazije.com box office | "Kupi kartu" JSON API | on sale / <10% left / sold out / not yet |
 
 Configuration is in `config/`:
