@@ -123,10 +123,13 @@ def perf_line(p: Performance, show_date: bool = False, star: bool = False, show_
 
 
 def play_block(perfs: list[Performance], mark: str = "", note: str = "", show_stage: bool = False) -> str:
-    """One play and its dates, for release messages (one line when it has a single date):
+    """One play and its dates, for release messages. One line when it has a single date; otherwise the
+    title, then one line per day, so a long run never wraps in the middle of a date:
 
         🔥 Слика Доријана Греја · fast seller: sold out in 4h      (title → the play's page)
-           Mon 02.11. 20:30 🟢 · Fri 11.12. 20:30 🟡 few left      (each date → its tickets)
+           Mon 02.11. 20:30 🟢 12                                  (each date → its tickets)
+           Tue 01.12. · 17:00 🟢 174 · 19:30 🟢 151                (two shows on one day)
+           Wed 16.12. · 17:00 · 19:30 ⏳ not on sale               (…with the same status: said once)
     """
     first = perfs[0]
     title_url = first.url or first.buy_url
@@ -138,13 +141,35 @@ def play_block(perfs: list[Performance], mark: str = "", note: str = "", show_st
         head = f"{mark} {head}"
     if note:
         head += f" · {escape(note)}"
-    dates = []
-    for p in perfs:
-        label = when(p)
-        if p.status.buyable and p.buy_url and p.buy_url != title_url:
-            label = a(p.buy_url, label)
-        dates.append(label if p.status == Status.UNKNOWN else f"{label} {short_badge(p)}")
-    return f"{head}{' · ' if len(dates) == 1 else chr(10) + '   '}" + " · ".join(dates)
+    def linked(p: Performance, label: str) -> str:
+        return a(p.buy_url, label) if p.status.buyable and p.buy_url and p.buy_url != title_url else label
+
+    def badge_of(p: Performance) -> str:
+        return "" if p.status == Status.UNKNOWN else short_badge(p)
+
+    by_day: dict[date, list[Performance]] = defaultdict(list)
+    for p in sorted(perfs, key=lambda p: p.start):
+        by_day[p.start.date()].append(p)
+    lines = []
+    for day, ps in by_day.items():
+        if len(ps) == 1:
+            lines.append(f"{linked(ps[0], when(ps[0]))} {badge_of(ps[0])}".rstrip())
+            continue
+        badges = [badge_of(p) for p in ps]
+        # the same status for every show that day is said once, unless it carries a number (each show has its own)
+        shared = badges[0] if len(set(badges)) == 1 and not any(p.status.buyable and p.available is not None for p in ps) else None
+        times = [linked(p, f"{p.start:%H:%M}") + (f" {b}" if shared is None and b else "") for p, b in zip(ps, badges, strict=True)]
+        lines.append(f"{day_label(day)} · " + " · ".join(times) + (f" {shared}" if shared else ""))
+    if len(perfs) == 1:
+        return f"{head} · {lines[0]}"
+    return "\n   ".join([head, *lines])
+
+
+def counts_note(perfs: list[Performance]) -> str:
+    """A one-line key for messages that show bare numbers after 🟢/🟡; '' when none does."""
+    if not any(p.status.buyable and p.available is not None for p in perfs):
+        return ""
+    return "🟢 number = tickets left" + (" (~: counted a few hours ago)" if any(stale(p) and p.available is not None for p in perfs) else "")
 
 
 def visible_len(html: str) -> int:
