@@ -26,9 +26,9 @@ def test_a_play_with_several_dates_gets_one_line_per_day():
         f'   Tue 01.12. · <a href="{SHOP}117">17:00</a> 🟢 174 · <a href="{SHOP}119">19:30</a> 🟢 151\n'
         f'   Mon 07.12. · <a href="{SHOP}717">17:00</a> 🟢 184 · <a href="{SHOP}719">19:30</a> 🟢 186'
     )
-    # one date: still a single line, the whole date linked to its tickets
+    # one date: the same shape, below the title
     assert fmt.play_block([show("EVITA", 2, "19:30", left=160)]) == (
-        f'<a href="https://site.example/evita"><b>EVITA</b></a> · <a href="{SHOP}219">Wed 02.12. 19:30</a> 🟢 160'
+        f'<a href="https://site.example/evita"><b>EVITA</b></a>\n   Wed 02.12. · <a href="{SHOP}219">19:30</a> 🟢 160'
     )
 
 
@@ -38,7 +38,7 @@ def test_the_same_status_for_every_show_that_day_is_said_once():
     same_count = [show("KRCKO", 7, "17:00", left=186), show("KRCKO", 7, "19:30", left=186)]
     assert "17:00</a> 🟢 186 · " in fmt.play_block(same_count)  # a number belongs to its own show, even when two are equal
     mixed = [show("KRCKO", 7, "17:00", Status.SOLD_OUT), show("KRCKO", 7, "19:30", left=12), show("KRCKO", 9, "20:00", Status.UNKNOWN)]
-    assert fmt.play_block(mixed).split("\n")[1:] == [f'   Mon 07.12. · 17:00 🔴 sold out · <a href="{SHOP}719">19:30</a> 🟢 12', "   Wed 09.12. 20:00"]
+    assert fmt.play_block(mixed).split("\n")[1:] == [f'   Mon 07.12. · 17:00 🔴 sold out · <a href="{SHOP}719">19:30</a> 🟢 12', "   Wed 09.12. · 20:00"]
 
 
 def test_new_dates_that_are_not_on_sale_are_not_called_new_tickets(make_ctx, clock):
@@ -70,3 +70,86 @@ def test_new_dates_that_are_not_on_sale_are_not_called_new_tickets(make_ctx, clo
     run(ctx, allow_burst=False)
     (msg,) = ctx.tg.sent
     assert msg.startswith("🎟 <b>MADL</b> · new tickets out\n") and msg.endswith("🟢 140\n\n🟢 number = tickets left\n/theatre madl · /new")
+
+
+# --- each theatre's own look ------------------------------------------------------------------------------
+
+
+def test_a_look_styles_titles_and_dates():
+    from teatar.config import Look
+
+    krcko = [show("Krcko", 1, "17:00", left=174), show("Krcko", 1, "19:30", left=146), show("Krcko", 7, "17:00", left=181)]
+    classic = fmt.play_block(krcko, look=Look(titles="italic", marker="✦", dates="quote"))
+    assert classic == (
+        '✦ <a href="https://site.example/krcko"><i>Krcko</i></a>\n'
+        f'<blockquote>Tue 01.12. · <a href="{SHOP}117">17:00</a> 🟢 174 · <a href="{SHOP}119">19:30</a> 🟢 146\n'
+        f'Mon 07.12. · <a href="{SHOP}717">17:00</a> 🟢 181</blockquote>'
+    )
+    modern = fmt.play_block([show("Evita", 2, "19:30", left=152)], mark="🔥", note="fast seller: sold out in 4h", look=Look(upper=True, marker="🟥"))
+    assert modern == f'🟥 🔥 <a href="https://site.example/evita"><b>EVITA</b></a> · fast seller: sold out in 4h\n   Wed 02.12. · <a href="{SHOP}219">19:30</a> 🟢 152'
+
+
+def test_release_message_uses_the_theatres_look_and_banner(make_ctx, clock):
+    clock.t = datetime(2026, 11, 18, 10, 7, tzinfo=TZ)
+    feed = [show("Krcko", 1, "17:00", left=174)]
+    ctx = make_ctx([FakeAdapter("madl", fn=lambda: list(feed))], settings={"release_season": {"days": [1, 1]}})
+    ctx.cfg.venues["madl"]["look"] = {"banner": "madlenianum", "titles": "italic", "marker": "✦", "dates": "quote", "rule": "· · · ✦ · · ·"}
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+    ctx.tg.banners.clear()
+
+    feed.append(show("Evita", 2, "19:30", left=152))
+    clock.sleep(7200)
+    run(ctx, allow_burst=False)
+    (msg,) = ctx.tg.sent
+    assert msg == (
+        "🎟 <b>MADL</b> · new tickets out\n"
+        "December: +1 new date → 2 listed, 2 on sale\n"
+        "Appeared 18.11. between 10:07 and 12:07\n"
+        "· · · ✦ · · ·\n"
+        '✦ <a href="https://site.example/evita"><i>Evita</i></a>\n'
+        f'<blockquote>Wed 02.12. · <a href="{SHOP}219">19:30</a> 🟢 152</blockquote>\n'
+        "\n"
+        "🟢 number = tickets left\n"
+        "/theatre madl · /new"
+    )
+    assert [b.split("/assets/")[1] for b in ctx.tg.banners] == ["banners/madlenianum.jpg"]  # the file in the repo
+
+    ctx.cfg.settings["messages"] = {"banners": False}  # switched off in settings.yaml: the same text, no picture
+    ctx.tg.banners.clear()
+    feed.append(show("Ja, Ema", 15, "19:30", left=140))
+    clock.sleep(7200)
+    run(ctx, allow_burst=False)
+    assert ctx.tg.banners == [] and "<i>Ja, Ema</i>" in ctx.tg.sent[-1]
+
+
+def test_a_long_release_is_split_without_breaking_a_quote_block(monkeypatch):
+    from teatar.config import Look
+
+    look = Look(titles="italic", dates="quote")
+    blocks = [fmt.play_block([show(f"Play {i}", 1 + d, "19:30", left=5) for d in range(20)], look=look) for i in range(12)]
+    messages = fmt.pack(blocks, header="🎟 <b>Narodno</b> · new tickets out", joiner="\n")
+    assert len(messages) > 1
+    for m in messages:  # every message is valid on its own: each quote block opens and closes inside it
+        assert m.count("<blockquote>") == m.count("</blockquote>") and fmt.entities(m) <= fmt.MAX_ENTITIES
+    monkeypatch.setattr(fmt, "MAX_ENTITIES", 12)  # a single play too big for one message: its lines go out plain
+    messages = fmt.pack(blocks[:1], header="head", joiner="\n")
+    assert len(messages) > 1 and not any("blockquote" in m for m in messages)
+
+
+def test_with_a_banner_the_first_message_fits_a_photo_caption(make_ctx, clock):
+    """A photo's caption is far shorter than a message: a long release continues in a second message."""
+    clock.t = datetime(2026, 11, 18, 10, 7, tzinfo=TZ)
+    feed = [show("Krcko", 1, "17:00", left=174)]
+    ctx = make_ctx([FakeAdapter("madl", fn=lambda: list(feed))], settings={"release_season": {"days": [1, 1]}})
+    ctx.cfg.venues["madl"]["look"] = {"banner": "madlenianum", "titles": "italic", "dates": "quote"}
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+    feed += [show(f"A rather long title number {i}", 2 + i % 20, "19:30", left=100 + i) for i in range(30)]
+    clock.sleep(7200)
+    run(ctx, allow_burst=False)
+    first, *rest = ctx.tg.sent
+    assert rest and fmt.visible_len(first) <= 1024 < fmt.visible_len(first) + fmt.visible_len(rest[0])
+    assert len(ctx.tg.banners) == 1  # the banner once, on the first message
+    assert all(m.count("<blockquote>") == m.count("</blockquote>") for m in ctx.tg.sent)
+    assert sum(m.count("A rather long title") for m in ctx.tg.sent) == 30  # nothing lost in the split

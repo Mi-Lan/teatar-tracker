@@ -12,6 +12,12 @@
 # website: the theatre's own repertoire page, linked at the bottom of release messages
 #   (tickets.rs venues default to their tickets.rs venue page).
 #
+# look: how the theatre's release messages are styled (all optional; without it: bold titles, no banner).
+#   banner   the picture at the top of the message: a file in assets/banners (without .jpg)
+#   titles   bold | italic        upper: true for capitals        marker: put before each title
+#   dates    lines (indented under the title) | quote (in a quote block)
+#   rule     an ornament line between the header and the plays
+#
 # To add another tickets.rs venue, copy a tickets_rs block and change slug + name.
 # To disable a source temporarily, add `enabled: false`.
 
@@ -22,6 +28,7 @@ narodno:
   seat_counts:  # exact seats left need a login (NARODNO_EMAIL / NARODNO_PASSWORD secrets); it logs in only for these:
     daily_at: "09:00"  # every on-sale date, once a day, at the first check after this time
     after_release_minutes: 90  # new dates, at the first check at least this long after they appeared
+  look: {banner: narodno, titles: italic, marker: "❦", dates: quote, rule: "— ❦ —"}
 
 bdp:
   adapter: bdp_webflow_sixtix
@@ -30,12 +37,14 @@ bdp:
   stages: ["Велика сцена"]  # only Velika scena "Olivera i Rade"; remove to track all stages
   include_guest: false  # skip guest performances in other cities
   sixtix_iframe: 22c6e158  # BDP "Main website" on-sale list on Sixtix
+  look: {banner: bdp, titles: bold, upper: true, marker: "🟥", dates: quote}
 
 jdp:
   adapter: jdp_wp_ajax
   name: JDP
   website: https://www.jdp.rs/rs/repertoire-feed/
   months_ahead: 2
+  look: {banner: jdp, titles: bold, upper: true, marker: "🔴", dates: quote}
 
 terazije:
   adapter: kupikartu_pos
@@ -44,21 +53,25 @@ terazije:
   base_url: https://bilet.pozoristeterazije.com
   site_url: https://pozoristeterazije.com/repertoar/
   months_ahead: 2
+  look: {banner: terazije, titles: italic, marker: "♦️", dates: quote}
 
 sava_centar:
   adapter: tickets_rs
   name: Sava Centar
   slug: sava_centar_3
+  look: {banner: sava_centar, titles: bold, marker: "🟧", dates: quote}
 
 madlenianum_tickets:
   adapter: tickets_rs
   name: Madlenianum (tickets.rs)
   slug: opera_i_teatar_madlenianum_53
+  look: {banner: madlenianum, titles: italic, marker: "✦", dates: quote, rule: "· · · ✦ · · ·"}
 
 kolarac:
   adapter: tickets_rs
   name: Kolarac
   slug: kolarceva_zaduzbina_55
+  look: {banner: kolarac, titles: bold, marker: "🎼", dates: quote}
 
 madlenianum:
   adapter: madlenianum_html
@@ -66,3 +79,4 @@ madlenianum:
   website: https://operatheatremadlenianum.com/repertoar
   months_ahead: 2  # their repertoire page stops at the end of this month; later months come from the site's calendar
   shop: true  # also read their ticket shop when the MADLENIANUM_EMAIL / MADLENIANUM_PASSWORD secrets are set
+  look: {banner: madlenianum, titles: italic, marker: "✦", dates: quote, rule: "· · · ✦ · · ·"}

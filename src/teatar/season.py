@@ -22,6 +22,7 @@ from typing import TYPE_CHECKING
 from . import format as fmt
 from . import releases as rel
 from . import sales
+from .config import PLAIN, Look
 from .dates import add_months, month_key, parse_time
 from .diff import ONCE, Change, Kind
 from .models import Performance, Status, now
@@ -158,13 +159,13 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
                     s["released"][venue] = {"after": after, "by": stamp}
             # one message per theatre per check, listing just what this check found (each date is only ever
             # reported once, so a release that trickles in over several checks never repeats a date)
-            ctx.tg.send_all(release_message(ctx, venue, entries, found.get(venue, []), fast, first=transition))
+            ctx.tg.send_all(release_message(ctx, venue, entries, found.get(venue, []), fast, first=transition), banner=ctx.cfg.banner_path(venue))
             continue
         if send_all:
             continue
         follow = [ch for ch in found.get(venue, []) if ch.watched or (fast_alerts and sales.lookup(fast, ch.perf))]
         if follow:
-            ctx.tg.send_all(fast_message(ctx, venue, follow, after, stamp, fast))
+            ctx.tg.send_all(fast_message(ctx, venue, follow, after, stamp, fast), banner=ctx.cfg.banner_path(venue))
 
 
 def span(after: str | None, by: str) -> str:
@@ -211,8 +212,8 @@ def appeared(after: str | None, by: str) -> str:
     return f"Appeared {datetime.fromisoformat(by):%d.%m.} {span(after, by)}"
 
 
-def plays_list(perfs: list[Performance], fast: dict[str, sales.Play], watched: set[str] | None = None) -> list[str]:
-    """One block per play (see fmt.play_block): ⭐ plays you watch and 🔥 plays that sell out fast first,
+def plays_list(perfs: list[Performance], fast: dict[str, sales.Play], watched: set[str] | None = None, look: Look = PLAIN) -> list[str]:
+    """One block per play (see fmt.play_block), in the theatre's look: ⭐ plays you watch and 🔥 plays that sell out fast first,
     then by first date."""
     watched = watched or set()
     groups = sales.by_play(perfs)
@@ -225,13 +226,29 @@ def plays_list(perfs: list[Performance], fast: dict[str, sales.Play], watched: s
     for ps in sorted(groups.values(), key=lambda ps: (not flagged(ps), ps[0].start)):
         play = sales.lookup(fast, ps[0])
         mark = ("⭐" if any(p.uid in watched for p in ps) else "") + (play.mark if play else "")
-        blocks.append(fmt.play_block(ps, mark, play.note if play else "", multi_stage))
+        blocks.append(fmt.play_block(ps, mark, play.note if play else "", multi_stage, look))
     return blocks
 
 
 def _footer(ctx: Ctx, venue: str) -> str:
     parts = [fmt.site_link(ctx.cfg.venue_website(venue)), f"/theatre {venue}", "/new"]
     return " · ".join(p for p in parts if p)
+
+
+def _plays(ctx: Ctx, venue: str, perfs: list[Performance], fast: dict, watched: set[str]) -> list[str]:
+    """The play blocks of a message for `venue`, set off from the header by the theatre's ornament line
+    (or a blank line when its look has none)."""
+    look = ctx.cfg.venue_look(venue)
+    blocks = plays_list(perfs, fast, watched, look)
+    if blocks:
+        blocks[0] = (look.rule or "") + "\n" + blocks[0]
+    return blocks
+
+
+def _first_limit(ctx: Ctx, venue: str) -> int | None:
+    """With a banner the first message is a photo's caption, which Telegram keeps much shorter than a
+    message: a longer release continues in the next message."""
+    return fmt.CAPTION_LIMIT if ctx.cfg.banner_path(venue) else None
 
 
 def _closing(ctx: Ctx, venue: str, perfs: list[Performance]) -> str:
@@ -270,10 +287,8 @@ def release_message(
     hot = sum(1 for ps in sales.by_play(perfs).values() if sales.lookup(fast, ps[0]))
     if hot:
         lines.append(f"🔥 {hot} of them sell{'s' if hot == 1 else ''} out fast: get tickets early")
-    blocks = plays_list(perfs, fast, watched)
-    if blocks:
-        blocks[0] = "\n" + blocks[0]
-    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued")
+    blocks = _plays(ctx, venue, perfs, fast, watched)
+    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued", first_limit=_first_limit(ctx, venue))
 
 
 def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, by: str, fast: dict) -> list[str]:
@@ -291,9 +306,8 @@ def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, b
     else:
         icon, whom = "⭐", "plays you follow"
     lines = [f"{icon} <b>{name}</b> · {what} for {whom}", f"{fmt.plural(len(perfs), 'date')} · {appeared(after, by)}"]
-    blocks = plays_list(perfs, fast, watched)
-    blocks[0] = "\n" + blocks[0]
-    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued")
+    blocks = _plays(ctx, venue, perfs, fast, watched)
+    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued", first_limit=_first_limit(ctx, venue))
 
 
 # --- the 20th–27th status -------------------------------------------------------------------------------

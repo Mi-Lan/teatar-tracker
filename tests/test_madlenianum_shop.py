@@ -184,7 +184,7 @@ def test_first_signed_in_check_announces_only_what_is_new(make_ctx, clock, no_cr
     run(ctx, allow_burst=False)
     (msg,) = ctx.tg.sent  # one message: the date only the shop has. The 12 known dates gaining counts is not news.
     assert msg.startswith("🎟 <b>Madlenianum</b> · new tickets out\nDecember: +1 new date → 7 listed, 7 on sale\n")
-    assert '<a href="https://operatheatremadlenianum.com/evita"><b>EVITA</b></a> · <a href="https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170">Wed 02.12. 19:30</a> 🟢 162' in msg
+    assert '<a href="https://operatheatremadlenianum.com/evita"><b>EVITA</b></a>\n   Wed 02.12. · <a href="https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170">19:30</a> 🟢 162' in msg
     assert "KRCKO" not in msg and "went on sale" not in msg
 
     st = ctx.state

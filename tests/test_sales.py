@@ -125,7 +125,7 @@ def test_with_bigger_batches_fast_sellers_still_get_a_message(make_ctx, clock):
     run(ctx, allow_burst=False)
     (msg,) = ctx.tg.sent
     assert msg.startswith("🔥 <b>JDP</b> · tickets on sale for a play that sells out fast\n1 date · Appeared 22.09. between 12:15 and 12:30\n\n")
-    assert '🔥 <a href="https://example.rs/buy"><b>EDIP</b></a> · fast seller: sold out in 5h · Sun 04.10. 19:30 🟢' in msg
+    assert '🔥 <a href="https://example.rs/buy"><b>EDIP</b></a> · fast seller: sold out in 5h\n   Sun 04.10. · 19:30 🟢' in msg
     assert msg.endswith('🌐 <a href="https://www.jdp.rs/rs/repertoire-feed/">jdp.rs</a> · /theatre jdp · /new')
 
     ctx.tg.sent.clear()
@@ -178,7 +178,7 @@ def test_hot_soldout_and_flags_in_lists(make_ctx, clock):
 
     hot = "\n".join(commands.cmd_hot(ctx, ""))
     assert "🔥 <b>Plays that sell out fast</b>\nSold out within 2 days of tickets going on sale" in hot
-    assert '<i>JDP</i>\n🔥 <a href="https://example.rs/buy"><b>Edip</b></a> · sold out 2 of 2 dates · fastest: 5h · Fri 25.09. 19:30 🔴 sold out' in hot
+    assert '<i>JDP</i>\n🔥 <a href="https://example.rs/buy"><b>Edip</b></a> · sold out 2 of 2 dates · fastest: 5h\n   Fri 25.09. · 19:30 🔴 sold out' in hot
     soldout = commands.cmd_soldout(ctx, "")[0]
     assert "🔴 <b>Sold out</b> · 1 upcoming dates" in soldout and "19:30 Edip · <i>JDP</i>" in soldout
     week = "\n".join(commands.cmd_week(ctx, ""))

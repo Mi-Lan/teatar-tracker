@@ -39,10 +39,13 @@ class FakeTg(Messenger):
     def __init__(self):
         self.recipients = ["42"]
         self.sent: list[str] = []
+        self.banners: list[str] = []
         self.inbox: list[dict] = []
 
-    def send(self, text, chat_id=None):
+    def send(self, text, chat_id=None, banner=""):
         self.sent.append(text)
+        if banner:
+            self.banners.append(banner)
 
     def updates(self, offset):
         pending = [u for u in self.inbox if u["update_id"] >= offset]
