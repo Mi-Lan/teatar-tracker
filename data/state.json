@@ -3322,10 +3322,10 @@
    "venue": "kolarac"
   },
   "madlenianum:evita-202611281930": {
-   "available": 28,
+   "available": 25,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1169",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "MJUZIKL",
     "label": "PREMIJERA",
     "shop_id": "1169"
@@ -3342,10 +3342,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:evita-202612021930": {
-   "available": 154,
+   "available": 152,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "MJUZIKL",
     "label": "I REPRIZA",
     "shop_id": "1170",
@@ -3366,7 +3366,7 @@
    "available": 142,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1168",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "DRAMA",
     "shop_id": "1168"
    },
@@ -3385,7 +3385,7 @@
    "available": 26,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1160",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "DRAMA",
     "shop_id": "1160"
    },
@@ -3404,7 +3404,7 @@
    "available": 174,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1164",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "BALET",
     "shop_id": "1164"
    },
@@ -3423,7 +3423,7 @@
    "available": 151,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1165",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "BALET",
     "shop_id": "1165"
    },
@@ -3442,7 +3442,7 @@
    "available": 181,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1166",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "BALET",
     "shop_id": "1166"
    },
@@ -3461,7 +3461,7 @@
    "available": 186,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1167",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "BALET",
     "shop_id": "1167"
    },
@@ -3480,7 +3480,7 @@
    "available": 117,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1162",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1162"
    },
@@ -3499,7 +3499,7 @@
    "available": 79,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1163",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1163"
    },
@@ -3518,7 +3518,7 @@
    "available": 37,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1161",
    "extra": {
-    "counted_at": "2026-11-18T08:07:58+01:00",
+    "counted_at": "2026-11-18T09:38:29+01:00",
     "genre": "DRAMA",
     "shop_id": "1161"
    },
@@ -3660,10 +3660,10 @@
    "venue": "madlenianum_tickets"
   },
   "narodno:6344": {
-   "available": 118,
+   "available": 114,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6344",
    "extra": {
-    "counted_at": "2026-11-17T10:04:28+01:00",
+    "counted_at": "2026-11-18T09:38:06+01:00",
     "repid": "6344",
     "seats": 691
    },
@@ -3679,10 +3679,10 @@
    "venue": "narodno"
   },
   "narodno:6345": {
-   "available": 316,
+   "available": 314,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6345",
    "extra": {
-    "counted_at": "2026-11-17T10:04:29+01:00",
+    "counted_at": "2026-11-18T09:38:06+01:00",
     "repid": "6345",
     "seats": 691
    },
@@ -3698,10 +3698,10 @@
    "venue": "narodno"
   },
   "narodno:6346": {
-   "available": 173,
+   "available": 171,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6346",
    "extra": {
-    "counted_at": "2026-11-17T10:04:29+01:00",
+    "counted_at": "2026-11-18T09:38:07+01:00",
     "repid": "6346",
     "seats": 691
    },
@@ -3717,10 +3717,10 @@
    "venue": "narodno"
   },
   "narodno:6347": {
-   "available": 244,
+   "available": 232,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6347",
    "extra": {
-    "counted_at": "2026-11-17T10:04:30+01:00",
+    "counted_at": "2026-11-18T09:38:07+01:00",
     "repid": "6347",
     "seats": 691
    },
@@ -3739,7 +3739,7 @@
    "available": 324,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6348",
    "extra": {
-    "counted_at": "2026-11-17T10:04:30+01:00",
+    "counted_at": "2026-11-18T09:38:08+01:00",
     "repid": "6348",
     "seats": 691
    },
@@ -3755,10 +3755,10 @@
    "venue": "narodno"
   },
   "narodno:6349": {
-   "available": 49,
+   "available": 41,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6349",
    "extra": {
-    "counted_at": "2026-11-17T10:04:16+01:00",
+    "counted_at": "2026-11-18T09:37:53+01:00",
     "repid": "6349",
     "seats": 578
    },
@@ -3777,7 +3777,7 @@
    "available": 25,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6350",
    "extra": {
-    "counted_at": "2026-11-17T10:04:17+01:00",
+    "counted_at": "2026-11-18T09:37:54+01:00",
     "repid": "6350",
     "seats": 437
    },
@@ -3793,10 +3793,10 @@
    "venue": "narodno"
   },
   "narodno:6351": {
-   "available": 60,
+   "available": 52,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6351",
    "extra": {
-    "counted_at": "2026-11-17T10:04:18+01:00",
+    "counted_at": "2026-11-18T09:37:55+01:00",
     "repid": "6351",
     "seats": 691
    },
@@ -3812,10 +3812,10 @@
    "venue": "narodno"
   },
   "narodno:6352": {
-   "available": 188,
+   "available": 178,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6352",
    "extra": {
-    "counted_at": "2026-11-17T10:04:20+01:00",
+    "counted_at": "2026-11-18T09:37:57+01:00",
     "repid": "6352",
     "seats": 691
    },
@@ -3834,7 +3834,7 @@
    "available": 235,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6353",
    "extra": {
-    "counted_at": "2026-11-17T10:04:21+01:00",
+    "counted_at": "2026-11-18T09:37:58+01:00",
     "repid": "6353",
     "seats": 691
    },
@@ -3850,29 +3850,29 @@
    "venue": "narodno"
   },
   "narodno:6354": {
-   "available": 73,
+   "available": 50,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6354",
    "extra": {
-    "counted_at": "2026-11-17T10:04:21+01:00",
+    "counted_at": "2026-11-18T09:37:59+01:00",
     "repid": "6354",
-    "seats": 691
+    "seats": 578
    },
    "price": "",
    "sales_start": null,
    "source_id": "6354",
    "stage": "Велика сцена",
    "start": "2026-12-09T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=xe8ba92000d1c58b60429c48266f13a4c",
    "venue": "narodno"
   },
   "narodno:6355": {
-   "available": 26,
+   "available": 22,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6355",
    "extra": {
-    "counted_at": "2026-11-17T10:04:22+01:00",
+    "counted_at": "2026-11-18T09:37:59+01:00",
     "repid": "6355",
     "seats": 337
    },
@@ -3888,10 +3888,10 @@
    "venue": "narodno"
   },
   "narodno:6356": {
-   "available": 223,
+   "available": 220,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6356",
    "extra": {
-    "counted_at": "2026-11-17T10:04:23+01:00",
+    "counted_at": "2026-11-18T09:38:00+01:00",
     "repid": "6356",
     "seats": 691
    },
@@ -3907,10 +3907,10 @@
    "venue": "narodno"
   },
   "narodno:6357": {
-   "available": 312,
+   "available": 309,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6357",
    "extra": {
-    "counted_at": "2026-11-17T10:04:23+01:00",
+    "counted_at": "2026-11-18T09:38:00+01:00",
     "repid": "6357",
     "seats": 691
    },
@@ -3929,7 +3929,7 @@
    "available": 320,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6358",
    "extra": {
-    "counted_at": "2026-11-17T10:04:24+01:00",
+    "counted_at": "2026-11-18T09:38:01+01:00",
     "repid": "6358",
     "seats": 691
    },
@@ -3945,10 +3945,10 @@
    "venue": "narodno"
   },
   "narodno:6359": {
-   "available": 10,
+   "available": 8,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6359",
    "extra": {
-    "counted_at": "2026-11-17T10:04:24+01:00",
+    "counted_at": "2026-11-18T09:38:01+01:00",
     "repid": "6359",
     "seats": 437
    },
@@ -3967,7 +3967,7 @@
    "available": 358,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6360",
    "extra": {
-    "counted_at": "2026-11-17T10:04:25+01:00",
+    "counted_at": "2026-11-18T09:38:02+01:00",
     "repid": "6360",
     "seats": 691
    },
@@ -3986,7 +3986,7 @@
    "available": 32,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6361",
    "extra": {
-    "counted_at": "2026-11-17T10:04:25+01:00",
+    "counted_at": "2026-11-18T09:38:02+01:00",
     "repid": "6361",
     "seats": 691
    },
@@ -4005,7 +4005,7 @@
    "available": 24,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6362",
    "extra": {
-    "counted_at": "2026-11-17T10:04:26+01:00",
+    "counted_at": "2026-11-18T09:38:03+01:00",
     "repid": "6362",
     "seats": 691
    },
@@ -4024,7 +4024,7 @@
    "available": 10,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6363",
    "extra": {
-    "counted_at": "2026-11-17T10:04:26+01:00",
+    "counted_at": "2026-11-18T09:38:03+01:00",
     "repid": "6363",
     "seats": 691
    },
@@ -4040,10 +4040,10 @@
    "venue": "narodno"
   },
   "narodno:6364": {
-   "available": 232,
+   "available": 227,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6364",
    "extra": {
-    "counted_at": "2026-11-17T10:04:26+01:00",
+    "counted_at": "2026-11-18T09:38:04+01:00",
     "repid": "6364",
     "seats": 691
    },
@@ -4059,12 +4059,12 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 10,
+   "available": 9,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
    "extra": {
-    "counted_at": "2026-11-17T10:04:27+01:00",
+    "counted_at": "2026-11-18T09:38:04+01:00",
     "repid": "6365",
-    "seats": 578
+    "seats": 478
    },
    "price": "",
    "sales_start": null,
@@ -4081,7 +4081,7 @@
    "available": 21,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
    "extra": {
-    "counted_at": "2026-11-17T10:04:28+01:00",
+    "counted_at": "2026-11-18T09:38:05+01:00",
     "repid": "6366",
     "seats": 591
    },
@@ -4097,12 +4097,12 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": 11,
+   "available": 10,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
-    "counted_at": "2026-11-17T10:04:28+01:00",
+    "counted_at": "2026-11-18T09:38:05+01:00",
     "repid": "6367",
-    "seats": 591
+    "seats": 367
    },
    "price": "",
    "sales_start": null,
@@ -4116,10 +4116,10 @@
    "venue": "narodno"
   },
   "narodno:6374": {
-   "available": 51,
+   "available": 35,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6374",
    "extra": {
-    "counted_at": "2026-11-17T10:04:07+01:00",
+    "counted_at": "2026-11-18T09:37:44+01:00",
     "repid": "6374",
     "seats": 367
    },
@@ -4152,10 +4152,10 @@
    "venue": "narodno"
   },
   "narodno:6376": {
-   "available": 77,
+   "available": 76,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6376",
    "extra": {
-    "counted_at": "2026-11-17T10:04:09+01:00",
+    "counted_at": "2026-11-18T09:37:46+01:00",
     "repid": "6376",
     "seats": 367
    },
@@ -4171,10 +4171,10 @@
    "venue": "narodno"
   },
   "narodno:6377": {
-   "available": 307,
+   "available": 303,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6377",
    "extra": {
-    "counted_at": "2026-11-17T10:04:11+01:00",
+    "counted_at": "2026-11-18T09:37:48+01:00",
     "repid": "6377",
     "seats": 691
    },
@@ -4224,10 +4224,10 @@
    "venue": "narodno"
   },
   "narodno:6380": {
-   "available": 50,
+   "available": 46,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6380",
    "extra": {
-    "counted_at": "2026-11-17T10:04:14+01:00",
+    "counted_at": "2026-11-18T09:37:51+01:00",
     "repid": "6380",
     "seats": 578
    },
@@ -4243,10 +4243,10 @@
    "venue": "narodno"
   },
   "narodno:6396": {
-   "available": 7,
+   "available": 3,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6396",
    "extra": {
-    "counted_at": "2026-11-17T10:04:08+01:00",
+    "counted_at": "2026-11-18T09:37:46+01:00",
     "repid": "6396",
     "seats": 194
    },
@@ -4265,7 +4265,7 @@
    "available": 2,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
-    "counted_at": "2026-11-17T10:04:14+01:00",
+    "counted_at": "2026-11-18T09:37:52+01:00",
     "repid": "6398",
     "seats": 354
    },
@@ -4281,10 +4281,10 @@
    "venue": "narodno"
   },
   "narodno:6445": {
-   "available": 225,
+   "available": 212,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6445",
    "extra": {
-    "counted_at": "2026-11-17T10:04:10+01:00",
+    "counted_at": "2026-11-18T09:37:47+01:00",
     "repid": "6445",
     "seats": 691
    },
@@ -4300,10 +4300,10 @@
    "venue": "narodno"
   },
   "narodno:6446": {
-   "available": 85,
+   "available": 78,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6446",
    "extra": {
-    "counted_at": "2026-11-17T10:04:11+01:00",
+    "counted_at": "2026-11-18T09:37:48+01:00",
     "repid": "6446",
     "seats": 467
    },
@@ -4336,10 +4336,10 @@
    "venue": "narodno"
   },
   "narodno:6448": {
-   "available": 92,
+   "available": 89,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6448",
    "extra": {
-    "counted_at": "2026-11-17T10:04:18+01:00",
+    "counted_at": "2026-11-18T09:37:56+01:00",
     "repid": "6448",
     "seats": 367
    },
@@ -4355,12 +4355,12 @@
    "venue": "narodno"
   },
   "narodno:6449": {
-   "available": 87,
+   "available": 82,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6449",
    "extra": {
-    "counted_at": "2026-11-17T10:04:20+01:00",
+    "counted_at": "2026-11-18T09:37:57+01:00",
     "repid": "6449",
-    "seats": 367
+    "seats": 591
    },
    "price": "",
    "sales_start": null,
@@ -4374,10 +4374,10 @@
    "venue": "narodno"
   },
   "narodno:6459": {
-   "available": 100,
+   "available": 98,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6459",
    "extra": {
-    "counted_at": "2026-11-17T10:04:07+01:00",
+    "counted_at": "2026-11-18T09:37:45+01:00",
     "repid": "6459",
     "seats": 323
    },
@@ -4393,10 +4393,10 @@
    "venue": "narodno"
   },
   "narodno:6460": {
-   "available": 120,
+   "available": 116,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6460",
    "extra": {
-    "counted_at": "2026-11-17T10:04:08+01:00",
+    "counted_at": "2026-11-18T09:37:45+01:00",
     "repid": "6460",
     "seats": 323
    },
@@ -4432,7 +4432,7 @@
    "available": 5,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6462",
    "extra": {
-    "counted_at": "2026-11-17T10:04:10+01:00",
+    "counted_at": "2026-11-18T09:37:47+01:00",
     "repid": "6462",
     "seats": 323
    },
@@ -4465,10 +4465,10 @@
    "venue": "narodno"
   },
   "narodno:6464": {
-   "available": 190,
+   "available": 185,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6464",
    "extra": {
-    "counted_at": "2026-11-17T10:04:11+01:00",
+    "counted_at": "2026-11-18T09:37:49+01:00",
     "repid": "6464",
     "seats": 323
    },
@@ -4484,10 +4484,10 @@
    "venue": "narodno"
   },
   "narodno:6465": {
-   "available": 126,
+   "available": 120,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6465",
    "extra": {
-    "counted_at": "2026-11-17T10:04:12+01:00",
+    "counted_at": "2026-11-18T09:37:49+01:00",
     "repid": "6465",
     "seats": 323
    },
@@ -4503,10 +4503,10 @@
    "venue": "narodno"
   },
   "narodno:6466": {
-   "available": 198,
+   "available": 196,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6466",
    "extra": {
-    "counted_at": "2026-11-17T10:04:12+01:00",
+    "counted_at": "2026-11-18T09:37:50+01:00",
     "repid": "6466",
     "seats": 323
    },
@@ -4525,7 +4525,7 @@
    "available": 242,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6467",
    "extra": {
-    "counted_at": "2026-11-17T10:04:13+01:00",
+    "counted_at": "2026-11-18T09:37:50+01:00",
     "repid": "6467",
     "seats": 323
    },
@@ -4541,10 +4541,10 @@
    "venue": "narodno"
   },
   "narodno:6468": {
-   "available": 88,
+   "available": 83,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6468",
    "extra": {
-    "counted_at": "2026-11-17T10:04:14+01:00",
+    "counted_at": "2026-11-18T09:37:51+01:00",
     "repid": "6468",
     "seats": 323
    },
@@ -4560,10 +4560,10 @@
    "venue": "narodno"
   },
   "narodno:6469": {
-   "available": 110,
+   "available": 104,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6469",
    "extra": {
-    "counted_at": "2026-11-17T10:04:15+01:00",
+    "counted_at": "2026-11-18T09:37:52+01:00",
     "repid": "6469",
     "seats": 323
    },
@@ -4579,10 +4579,10 @@
    "venue": "narodno"
   },
   "narodno:6470": {
-   "available": 92,
+   "available": 86,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6470",
    "extra": {
-    "counted_at": "2026-11-17T10:04:16+01:00",
+    "counted_at": "2026-11-18T09:37:53+01:00",
     "repid": "6470",
     "seats": 323
    },
@@ -4598,10 +4598,10 @@
    "venue": "narodno"
   },
   "narodno:6471": {
-   "available": 246,
+   "available": 244,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6471",
    "extra": {
-    "counted_at": "2026-11-17T10:04:17+01:00",
+    "counted_at": "2026-11-18T09:37:54+01:00",
     "repid": "6471",
     "seats": 323
    },
@@ -4620,7 +4620,7 @@
    "available": 148,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6472",
    "extra": {
-    "counted_at": "2026-11-17T10:04:18+01:00",
+    "counted_at": "2026-11-18T09:37:55+01:00",
     "repid": "6472",
     "seats": 323
    },
@@ -4639,7 +4639,7 @@
    "available": 223,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6473",
    "extra": {
-    "counted_at": "2026-11-17T10:04:19+01:00",
+    "counted_at": "2026-11-18T09:37:56+01:00",
     "repid": "6473",
     "seats": 323
    },
@@ -4655,10 +4655,10 @@
    "venue": "narodno"
   },
   "narodno:6474": {
-   "available": 64,
+   "available": 60,
    "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6474",
    "extra": {
-    "counted_at": "2026-11-17T10:04:20+01:00",
+    "counted_at": "2026-11-18T09:37:58+01:00",
     "repid": "6474",
     "seats": 323
    },
@@ -7201,6 +7201,10 @@
     [
      "2026-11-18T08:07:58+01:00",
      28
+    ],
+    [
+     "2026-11-18T09:38:29+01:00",
+     25
     ]
    ],
    "start": "2026-11-28T19:30:00+01:00",
@@ -7216,6 +7220,10 @@
     [
      "2026-11-18T00:10:29+01:00",
      154
+    ],
+    [
+     "2026-11-18T09:38:29+01:00",
+     152
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7562,6 +7570,10 @@
     [
      "2026-11-17T10:04:28+01:00",
      118
+    ],
+    [
+     "2026-11-18T09:38:06+01:00",
+     114
     ]
    ],
    "seats": 691,
@@ -7606,6 +7618,10 @@
     [
      "2026-11-17T10:04:29+01:00",
      316
+    ],
+    [
+     "2026-11-18T09:38:06+01:00",
+     314
     ]
    ],
    "seats": 691,
@@ -7650,6 +7666,10 @@
     [
      "2026-11-17T10:04:29+01:00",
      173
+    ],
+    [
+     "2026-11-18T09:38:07+01:00",
+     171
     ]
    ],
    "seats": 691,
@@ -7694,6 +7714,10 @@
     [
      "2026-11-17T10:04:30+01:00",
      244
+    ],
+    [
+     "2026-11-18T09:38:07+01:00",
+     232
     ]
    ],
    "seats": 691,
@@ -7737,6 +7761,10 @@
     ],
     [
      "2026-11-17T10:04:30+01:00",
+     324
+    ],
+    [
+     "2026-11-18T09:38:08+01:00",
      324
     ]
    ],
@@ -7782,6 +7810,10 @@
     [
      "2026-11-17T10:04:16+01:00",
      49
+    ],
+    [
+     "2026-11-18T09:37:53+01:00",
+     41
     ]
    ],
    "low": "2026-11-14T10:08:13+01:00",
@@ -7826,6 +7858,10 @@
     ],
     [
      "2026-11-17T10:04:17+01:00",
+     25
+    ],
+    [
+     "2026-11-18T09:37:54+01:00",
      25
     ]
    ],
@@ -7872,6 +7908,10 @@
     [
      "2026-11-17T10:04:18+01:00",
      60
+    ],
+    [
+     "2026-11-18T09:37:55+01:00",
+     52
     ]
    ],
    "low": "2026-11-17T10:04:49+01:00",
@@ -7917,6 +7957,10 @@
     [
      "2026-11-17T10:04:20+01:00",
      188
+    ],
+    [
+     "2026-11-18T09:37:57+01:00",
+     178
     ]
    ],
    "seats": 691,
@@ -7960,6 +8004,10 @@
     ],
     [
      "2026-11-17T10:04:21+01:00",
+     235
+    ],
+    [
+     "2026-11-18T09:37:58+01:00",
      235
     ]
    ],
@@ -8005,9 +8053,14 @@
     [
      "2026-11-17T10:04:21+01:00",
      73
+    ],
+    [
+     "2026-11-18T09:37:59+01:00",
+     50
     ]
    ],
-   "seats": 691,
+   "low": "2026-11-18T09:38:29+01:00",
+   "seats": 578,
    "start": "2026-12-09T19:00:00+01:00",
    "title": "Крцко Орашчић",
    "venue": "narodno"
@@ -8049,6 +8102,10 @@
     [
      "2026-11-17T10:04:22+01:00",
      26
+    ],
+    [
+     "2026-11-18T09:37:59+01:00",
+     22
     ]
    ],
    "low": "2026-11-16T16:08:08+01:00",
@@ -8094,6 +8151,10 @@
     [
      "2026-11-17T10:04:23+01:00",
      223
+    ],
+    [
+     "2026-11-18T09:38:00+01:00",
+     220
     ]
    ],
    "seats": 691,
@@ -8138,6 +8199,10 @@
     [
      "2026-11-17T10:04:23+01:00",
      312
+    ],
+    [
+     "2026-11-18T09:38:00+01:00",
+     309
     ]
    ],
    "seats": 691,
@@ -8181,6 +8246,10 @@
     ],
     [
      "2026-11-17T10:04:24+01:00",
+     320
+    ],
+    [
+     "2026-11-18T09:38:01+01:00",
      320
     ]
    ],
@@ -8226,6 +8295,10 @@
     [
      "2026-11-17T10:04:24+01:00",
      10
+    ],
+    [
+     "2026-11-18T09:38:01+01:00",
+     8
     ]
    ],
    "low": "2026-11-10T00:08:09+01:00",
@@ -8271,6 +8344,10 @@
     [
      "2026-11-17T10:04:25+01:00",
      358
+    ],
+    [
+     "2026-11-18T09:38:02+01:00",
+     358
     ]
    ],
    "seats": 691,
@@ -8314,6 +8391,10 @@
     ],
     [
      "2026-11-17T10:04:25+01:00",
+     32
+    ],
+    [
+     "2026-11-18T09:38:02+01:00",
      32
     ]
    ],
@@ -8360,6 +8441,10 @@
     [
      "2026-11-17T10:04:26+01:00",
      24
+    ],
+    [
+     "2026-11-18T09:38:03+01:00",
+     24
     ]
    ],
    "low": "2026-11-13T10:08:13+01:00",
@@ -8404,6 +8489,10 @@
     ],
     [
      "2026-11-17T10:04:26+01:00",
+     10
+    ],
+    [
+     "2026-11-18T09:38:03+01:00",
      10
     ]
    ],
@@ -8450,6 +8539,10 @@
     [
      "2026-11-17T10:04:26+01:00",
      232
+    ],
+    [
+     "2026-11-18T09:38:04+01:00",
+     227
     ]
    ],
    "seats": 691,
@@ -8494,10 +8587,14 @@
     [
      "2026-11-17T10:04:27+01:00",
      10
+    ],
+    [
+     "2026-11-18T09:38:04+01:00",
+     9
     ]
    ],
    "low": "2026-11-11T10:08:14+01:00",
-   "seats": 578,
+   "seats": 478,
    "start": "2026-12-28T19:00:00+01:00",
    "title": "Крцко Орашчић",
    "venue": "narodno"
@@ -8538,6 +8635,10 @@
     ],
     [
      "2026-11-17T10:04:28+01:00",
+     21
+    ],
+    [
+     "2026-11-18T09:38:05+01:00",
      21
     ]
    ],
@@ -8584,10 +8685,14 @@
     [
      "2026-11-17T10:04:28+01:00",
      11
+    ],
+    [
+     "2026-11-18T09:38:05+01:00",
+     10
     ]
    ],
    "low": "2026-11-10T00:08:09+01:00",
-   "seats": 591,
+   "seats": 367,
    "start": "2026-12-30T19:00:00+01:00",
    "title": "Крцко Орашчић",
    "venue": "narodno"
@@ -8696,6 +8801,10 @@
     [
      "2026-11-17T10:04:07+01:00",
      51
+    ],
+    [
+     "2026-11-18T09:37:44+01:00",
+     35
     ]
    ],
    "low": "2026-11-17T14:07:44+01:00",
@@ -8741,6 +8850,10 @@
     [
      "2026-11-17T10:04:09+01:00",
      77
+    ],
+    [
+     "2026-11-18T09:37:46+01:00",
+     76
     ]
    ],
    "seats": 367,
@@ -8785,6 +8898,10 @@
     [
      "2026-11-17T10:04:11+01:00",
      307
+    ],
+    [
+     "2026-11-18T09:37:48+01:00",
+     303
     ]
    ],
    "seats": 691,
@@ -8843,6 +8960,10 @@
     [
      "2026-11-17T10:04:14+01:00",
      50
+    ],
+    [
+     "2026-11-18T09:37:51+01:00",
+     46
     ]
    ],
    "low": "2026-11-15T10:08:11+01:00",
@@ -8945,6 +9066,10 @@
     [
      "2026-11-17T10:04:08+01:00",
      7
+    ],
+    [
+     "2026-11-18T09:37:46+01:00",
+     3
     ]
    ],
    "low": "2026-11-16T12:07:39+01:00",
@@ -8996,6 +9121,10 @@
     ],
     [
      "2026-11-17T10:04:14+01:00",
+     2
+    ],
+    [
+     "2026-11-18T09:37:52+01:00",
      2
     ]
    ],
@@ -9344,6 +9473,10 @@
     [
      "2026-11-17T10:04:10+01:00",
      225
+    ],
+    [
+     "2026-11-18T09:37:47+01:00",
+     212
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -9389,6 +9522,10 @@
     [
      "2026-11-17T10:04:11+01:00",
      85
+    ],
+    [
+     "2026-11-18T09:37:48+01:00",
+     78
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -9434,6 +9571,10 @@
     [
      "2026-11-17T10:04:18+01:00",
      92
+    ],
+    [
+     "2026-11-18T09:37:56+01:00",
+     89
     ]
    ],
    "on_sale": "2026-10-21T21:15:04+02:00",
@@ -9479,10 +9620,14 @@
     [
      "2026-11-17T10:04:20+01:00",
      87
+    ],
+    [
+     "2026-11-18T09:37:57+01:00",
+     82
     ]
    ],
    "on_sale": "2026-10-21T21:15:04+02:00",
-   "seats": 367,
+   "seats": 591,
    "start": "2026-12-06T19:30:00+01:00",
    "title": "Велика драма",
    "venue": "narodno"
@@ -9732,6 +9877,10 @@
     [
      "2026-11-17T10:04:07+01:00",
      100
+    ],
+    [
+     "2026-11-18T09:37:45+01:00",
+     98
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -9777,6 +9926,10 @@
     [
      "2026-11-17T10:04:08+01:00",
      120
+    ],
+    [
+     "2026-11-18T09:37:45+01:00",
+     116
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -9836,6 +9989,10 @@
     ],
     [
      "2026-11-17T10:04:10+01:00",
+     5
+    ],
+    [
+     "2026-11-18T09:37:47+01:00",
      5
     ]
    ],
@@ -9914,6 +10071,10 @@
     [
      "2026-11-17T10:04:11+01:00",
      190
+    ],
+    [
+     "2026-11-18T09:37:49+01:00",
+     185
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -9959,6 +10120,10 @@
     [
      "2026-11-17T10:04:12+01:00",
      126
+    ],
+    [
+     "2026-11-18T09:37:49+01:00",
+     120
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -10004,6 +10169,10 @@
     [
      "2026-11-17T10:04:12+01:00",
      198
+    ],
+    [
+     "2026-11-18T09:37:50+01:00",
+     196
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -10048,6 +10217,10 @@
     ],
     [
      "2026-11-17T10:04:13+01:00",
+     242
+    ],
+    [
+     "2026-11-18T09:37:50+01:00",
      242
     ]
    ],
@@ -10094,6 +10267,10 @@
     [
      "2026-11-17T10:04:14+01:00",
      88
+    ],
+    [
+     "2026-11-18T09:37:51+01:00",
+     83
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -10139,6 +10316,10 @@
     [
      "2026-11-17T10:04:15+01:00",
      110
+    ],
+    [
+     "2026-11-18T09:37:52+01:00",
+     104
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -10184,6 +10365,10 @@
     [
      "2026-11-17T10:04:16+01:00",
      92
+    ],
+    [
+     "2026-11-18T09:37:53+01:00",
+     86
     ]
    ],
    "on_sale": "2026-10-21T17:02:42+02:00",
@@ -10229,6 +10414,10 @@
     [
      "2026-11-17T10:04:17+01:00",
      246
+    ],
+    [
+     "2026-11-18T09:37:54+01:00",
+     244
     ]
    ],
    "on_sale": "2026-10-21T21:15:04+02:00",
@@ -10273,6 +10462,10 @@
     ],
     [
      "2026-11-17T10:04:18+01:00",
+     148
+    ],
+    [
+     "2026-11-18T09:37:55+01:00",
      148
     ]
    ],
@@ -10319,6 +10512,10 @@
     [
      "2026-11-17T10:04:19+01:00",
      223
+    ],
+    [
+     "2026-11-18T09:37:56+01:00",
+     223
     ]
    ],
    "on_sale": "2026-10-21T21:15:04+02:00",
@@ -10364,6 +10561,10 @@
     [
      "2026-11-17T10:04:20+01:00",
      64
+    ],
+    [
+     "2026-11-18T09:37:58+01:00",
+     60
     ]
    ],
    "on_sale": "2026-10-21T21:15:04+02:00",
@@ -11398,14 +11599,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-18T08:07:58+01:00",
-  "jdp": "2026-11-18T08:07:58+01:00",
-  "kolarac": "2026-11-18T08:07:58+01:00",
-  "madlenianum": "2026-11-18T08:07:58+01:00",
-  "madlenianum_tickets": "2026-11-18T08:07:58+01:00",
-  "narodno": "2026-11-18T08:07:58+01:00",
-  "sava_centar": "2026-11-18T08:07:58+01:00",
-  "terazije": "2026-11-18T08:07:58+01:00"
+  "bdp": "2026-11-18T09:38:29+01:00",
+  "jdp": "2026-11-18T09:38:29+01:00",
+  "kolarac": "2026-11-18T09:38:29+01:00",
+  "madlenianum": "2026-11-18T09:38:29+01:00",
+  "madlenianum_tickets": "2026-11-18T09:38:29+01:00",
+  "narodno": "2026-11-18T09:38:29+01:00",
+  "sava_centar": "2026-11-18T09:38:29+01:00",
+  "terazije": "2026-11-18T09:38:29+01:00"
  },
  "season": {
   "live": {
