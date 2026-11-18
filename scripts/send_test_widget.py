@@ -41,6 +41,15 @@ tests = [
 
 failed = False
 with httpx.Client(timeout=40) as client:
+    # Widgets are only allowed in some kinds of chat: say which kind this one is (nothing else about it).
+    try:
+        chat = client.post(f"https://api.telegram.org/bot{token}/getChat", json={"chat_id": owner}).json()
+        kind = chat.get("result", {}).get("type") if chat.get("ok") else f"unknown ({chat.get('description')})"
+    except Exception as exc:
+        kind = f"unknown ({type(exc).__name__})"
+    print("the owner's chat is a:", kind, "| id is negative (a group or channel):", owner.startswith("-"))
+    me = client.post(f"https://api.telegram.org/bot{token}/getMe").json().get("result", {})
+    print("bot:", {k: me.get(k) for k in ("is_bot", "can_join_groups", "supports_inline_queries", "has_main_web_app")})
     for headline, note, perfs, caption in tests:
         if not perfs:
             print(f"skip: no dates for {headline!r}")
