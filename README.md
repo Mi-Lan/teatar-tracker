@@ -34,6 +34,10 @@ Configuration is in `config/`:
   month's tickets on sale at midnight between the 22nd and 23rd: checks every 30 s from 23:50 to 00:45, and
   every minute on the 23rd if nothing appeared at midnight (reminders beforehand can be added with `remind`).
 - `venues.yaml` `website:`: the theatre's page linked under each release message.
+- `venues.yaml` `look:`: how each theatre's release messages look. Every theatre has its own banner picture at
+  the top of the message (its logo in its own colours, from `assets/banners/`) and its own text style: italic or
+  bold titles, capitals, a marker in the theatre's colour, an ornament line. A play's dates sit in a quote block
+  under its title. `settings.yaml` `messages.banners: false` turns the pictures off.
 - `settings.yaml` `selling:`: what counts as a fast seller (default: sold out within 48 h of going on sale, at
   least a day before the show), and whether fast sellers' new dates are messaged right away.
 - `settings.yaml`: what is sent on a schedule (`digest`, `release_season.times`: both off by default),
@@ -76,6 +80,10 @@ Replies come on the next check (within the hour; faster during release bursts).
   theatre's site. A date is only ever reported once. (Over Sep–Nov that was about 6 messages a week.)
 - **New dates for a play that sells out fast** (🔥), even a single one, as soon as they're seen (`selling.alert`).
 - Plays on your `/watch` list (back in stock, running low, sold out), and a warning if a site stops responding.
+
+The banner goes out as a photo with the message as its caption. Telegram keeps a caption to 1,024 characters, so a
+long release shows the banner with the first plays and continues in a second message. If a picture can't be sent,
+the text goes out on its own.
 
 Optional, off by default in `config/settings.yaml`: a weekly or daily overview (`digest.every`), a "tickets for
 next month?" status per theatre on the 20th–27th (`release_season.times`), reminders before known releases
@@ -167,4 +175,7 @@ The tests also run on GitHub for every push that touches code or config (`.githu
 - **Another tickets.rs venue:** copy a `tickets_rs` block in `venues.yaml` and set `slug` (the part after `tickets.rs/venue/`).
 - **A new site:** add `src/teatar/adapters/<name>.py` with a class decorated `@register("<name>")` that implements `fetch() -> list[Performance]`. Prefer the site's JSON API when it has one, and scrape HTML otherwise. Keep parsing in a pure function and add a fixture test. Then import it in `adapters/__init__.py` and add it to `venues.yaml`.
   `adapters/base.py` has the pieces every adapter needs, so use them instead of writing them again: `upcoming` (drop past dates), `unique` (sources read month by month), `at` / `infer_year` / `find_time` (dates and times), `text_of` (an element's text), `label_status` (sold out / cancelled / running low from a site's label, Cyrillic or Latin), `dated_id` (a stable id for sources without one), and `dates.months_ahead` (which months to ask for). List the venue options your adapter reads in `known_options`. To report a partial problem without failing the venue, set `self.warning` (see Narodno's seat counts).
+- **A banner for a new theatre:** add its design to `assets/banners/src/build.py` (and its logo to `logos/` there),
+  run `python3 assets/banners/src/build.py && node assets/banners/src/render.js` (needs Playwright), and name the
+  new file in the venue's `look: {banner: …}`. Without a `look`, a theatre's messages are plain: bold titles, no picture.
 - **A custom check for one play:** give a watchlist entry a `lookup`, e.g. `{sixtix: <event slug>}` (API) or `{page: <url>, pattern: "Kupi"}` (scrape). See `lookups.py`.
