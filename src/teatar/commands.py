@@ -256,7 +256,7 @@ def cmd_hot(ctx, arg):
             lines.append(f"<i>{escape(ctx.cfg.venue_name(venue))}</i>")
         nxt = upcoming.get(sales.play_key(p.venue, p.title), [])
         if nxt:
-            lines.append(fmt.play_block(nxt[:6], "🔥", p.summary()))
+            lines.append(fmt.play_block(nxt[:6], "🔥", p.summary(), look=ctx.cfg.venue_look(p.venue)))
         else:
             lines.append(f"🔥 <b>{escape(p.title)}</b> · {escape(p.summary())}\n   no dates announced")
         blocks.append("\n".join(lines))

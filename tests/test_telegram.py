@@ -64,3 +64,23 @@ def test_theatres_lists_links(make_ctx, clock):
     (text,) = commands.cmd_theatres(ctx, "")
     assert '• <a href="https://www.jdp.rs/rs/repertoire-feed/"><b>JDP</b></a> · jdp.rs · 1 upcoming date · /theatre jdp' in text
     assert '<a href="https://tickets.rs/venue/sava_centar_3"><b>SAVA</b></a> · tickets.rs · 0 upcoming dates' in text
+
+
+def test_a_banner_is_sent_as_a_large_preview_above_the_first_message(monkeypatch):
+    monkeypatch.setattr("teatar.telegram.time.sleep", lambda s: None)
+
+    class Params(Telegram):
+        def __init__(self):
+            super().__init__("token", "111")
+            self.seen, self._last_send = [], -10.0
+
+        def _call(self, method, **params):
+            self.seen.append(params)
+            return {}
+
+    tg = Params()
+    tg.send_all(["first", "second"], banner="https://example.org/b.jpg")
+    assert tg.seen[0]["link_preview_options"] == {"url": "https://example.org/b.jpg", "prefer_large_media": True, "show_above_text": True}
+    assert tg.seen[1]["link_preview_options"] == {"is_disabled": True}  # only the first message carries the picture
+    tg.send("plain")
+    assert tg.seen[2]["link_preview_options"] == {"is_disabled": True}  # and links in ordinary messages never unfold

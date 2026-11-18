@@ -12,8 +12,8 @@ if TYPE_CHECKING:
 
 ADAPTERS: dict[str, type[Adapter]] = {}
 # venues.yaml keys that aren't passed to the adapter: `enabled` switches the venue off, `website` is the
-# link shown in messages (Config.venue_website).
-NOT_FOR_ADAPTER = ("enabled", "website")
+# link shown in messages (Config.venue_website), `look` how its messages are styled (Config.venue_look).
+NOT_FOR_ADAPTER = ("enabled", "website", "look")
 
 
 def register(name: str):

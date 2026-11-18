@@ -109,3 +109,18 @@ def test_broken_yaml_is_a_config_error(tmp_path):
     (tmp_path / "config" / "watchlist.yaml").write_text("watch:\n  - venue: jdp\n")
     with pytest.raises(ConfigError, match="needs a `query:`"):
         config.load(tmp_path)
+
+
+def test_every_shipped_look_is_valid_and_has_its_banner():
+    cfg = config.load()
+    looks = {key: cfg.venue_look(key) for key in cfg.venues}
+    assert all(look.banner for look in looks.values())  # every theatre has a banner
+    for key, look in looks.items():
+        assert (config.ROOT / "assets" / "banners" / f"{look.banner}.jpg").is_file(), key
+        assert cfg.banner_url(key).endswith(f"/assets/banners/{look.banner}.jpg")
+    assert looks["madlenianum"] == looks["madlenianum_tickets"]  # one theatre, two sources, one look
+    assert looks["narodno"].dates == "quote" and looks["bdp"].upper and looks["bdp"].dates == "lines"
+    with pytest.raises(ConfigError, match="look"):
+        config.check_venues({"x": {"adapter": "jdp_wp_ajax", "look": {"baner": "x"}}})
+    with pytest.raises(ConfigError, match="titles is bold or italic"):
+        config.check_venues({"x": {"adapter": "jdp_wp_ajax", "look": {"titles": "gothic"}}})

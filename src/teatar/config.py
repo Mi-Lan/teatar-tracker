@@ -35,7 +35,27 @@ DEFAULTS: dict[str, dict] = {
         "max_run_minutes": 200,
     },
     "health": {"failures_before_alert": 3},
+    "messages": {
+        "banners": True,
+        "banner_url": "https://raw.githubusercontent.com/Mi-Lan/teatar-tracker/main/assets/banners/{name}.jpg",
+    },
 }
+
+
+@dataclass(frozen=True)
+class Look:
+    """How one theatre's release messages look (`look:` in venues.yaml). Telegram text has no colours or
+    fonts of its own, so a look is made of what it does offer."""
+
+    banner: str = ""  # image shown above the message: a file name in assets/banners, without ".jpg"
+    titles: str = "bold"  # play titles: bold | italic
+    upper: bool = False  # titles in capitals
+    marker: str = ""  # before each title, e.g. "✦" or "🟥"
+    dates: str = "lines"  # a play's dates: indented lines | in a quote block ("quote")
+    rule: str = ""  # an ornament line between the header and the plays, e.g. "— ❦ —"
+
+
+PLAIN = Look()
 
 
 class ConfigError(ValueError):
@@ -70,6 +90,14 @@ class Config:
         if v.get("adapter") == "tickets_rs" and v.get("slug"):
             return f"https://tickets.rs/venue/{v['slug']}"
         return v.get("site_url", "")
+
+    def venue_look(self, key: str) -> Look:
+        return Look(**((self.venues.get(key) or {}).get("look") or {}))
+
+    def banner_url(self, key: str) -> str:
+        """Where Telegram fetches the venue's banner from; "" when it has none or banners are off."""
+        name = self.venue_look(key).banner
+        return str(self.get("messages", "banner_url")).format(name=name) if name and self.get("messages", "banners") else ""
 
     def get(self, section: str, key: str):
         """A setting from settings.yaml, or its default from DEFAULTS (a key in neither is a bug)."""
@@ -123,6 +151,11 @@ def check_venues(venues: dict) -> None:
     for key, v in venues.items():
         if not isinstance(v, dict) or not v.get("adapter"):
             raise ConfigError(f"venues.yaml: venue {key!r} needs an `adapter:` (see the list at the top of the file)")
+        look = v.get("look") or {}
+        if not isinstance(look, dict) or set(look) - set(Look.__dataclass_fields__):
+            raise ConfigError(f"venues.yaml: venue {key!r} `look:` may only have {', '.join(Look.__dataclass_fields__)}")
+        if look.get("titles", "bold") not in ("bold", "italic") or look.get("dates", "lines") not in ("lines", "quote"):
+            raise ConfigError(f"venues.yaml: venue {key!r} `look:` titles is bold or italic, dates is lines or quote")
 
 
 def check_entries(cfg: Config) -> None:

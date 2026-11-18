@@ -8,6 +8,7 @@ from datetime import date, datetime, time, timedelta
 from html import escape
 from urllib.parse import urlparse
 
+from .config import PLAIN, Look
 from .diff import Change, Kind
 from .models import Performance, Status, now
 from .telegram import plain
@@ -122,25 +123,30 @@ def perf_line(p: Performance, show_date: bool = False, star: bool = False, show_
     return f"{'⭐' if star else ''}{'🔥' if fire else ''}{head} {titled(p)}{stage} {short_badge(p)}"
 
 
-def play_block(perfs: list[Performance], mark: str = "", note: str = "", show_stage: bool = False) -> str:
-    """One play and its dates, for release messages. One line when it has a single date; otherwise the
-    title, then one line per day, so a long run never wraps in the middle of a date:
+def play_block(perfs: list[Performance], mark: str = "", note: str = "", show_stage: bool = False, look: Look = PLAIN) -> str:
+    """One play and its dates, for release messages: the title, then one line per day below it (also when
+    there is only one date, so every play reads the same way), in the theatre's look:
 
         🔥 Слика Доријана Греја · fast seller: sold out in 4h      (title → the play's page)
-           Mon 02.11. 20:30 🟢 12                                  (each date → its tickets)
+           Mon 02.11. · 20:30 🟢 12                                (each time → its tickets)
            Tue 01.12. · 17:00 🟢 174 · 19:30 🟢 151                (two shows on one day)
            Wed 16.12. · 17:00 · 19:30 ⏳ not on sale               (…with the same status: said once)
+
+    `look` sets the title (bold or italic, capitals, a marker before it) and whether the day lines are
+    indented or sit in a quote block.
     """
     first = perfs[0]
     title_url = first.url or first.buy_url
-    head = a(title_url, f"<b>{escape(first.title)}</b>")
+    name = escape(first.title.upper() if look.upper else first.title)
+    head = a(title_url, f"<i>{name}</i>" if look.titles == "italic" else f"<b>{name}</b>")
     stages = {p.stage for p in perfs if p.stage}
     if show_stage and stages:
         head += f" <i>({escape(' / '.join(sorted(stages)))})</i>"
-    if mark:
-        head = f"{mark} {head}"
+    if before := " ".join(x for x in (look.marker, mark) if x):
+        head = f"{before} {head}"
     if note:
         head += f" · {escape(note)}"
+
     def linked(p: Performance, label: str) -> str:
         return a(p.buy_url, label) if p.status.buyable and p.buy_url and p.buy_url != title_url else label
 
@@ -152,16 +158,13 @@ def play_block(perfs: list[Performance], mark: str = "", note: str = "", show_st
         by_day[p.start.date()].append(p)
     lines = []
     for day, ps in by_day.items():
-        if len(ps) == 1:
-            lines.append(f"{linked(ps[0], when(ps[0]))} {badge_of(ps[0])}".rstrip())
-            continue
         badges = [badge_of(p) for p in ps]
         # the same status for every show that day is said once, unless it carries a number (each show has its own)
-        shared = badges[0] if len(set(badges)) == 1 and not any(p.status.buyable and p.available is not None for p in ps) else None
-        times = [linked(p, f"{p.start:%H:%M}") + (f" {b}" if shared is None and b else "") for p, b in zip(ps, badges, strict=True)]
-        lines.append(f"{day_label(day)} · " + " · ".join(times) + (f" {shared}" if shared else ""))
-    if len(perfs) == 1:
-        return f"{head} · {lines[0]}"
+        shared = len(ps) > 1 and len(set(badges)) == 1 and not any(p.status.buyable and p.available is not None for p in ps)
+        times = [linked(p, f"{p.start:%H:%M}") + ("" if shared or not b else f" {b}") for p, b in zip(ps, badges, strict=True)]
+        lines.append(f"{day_label(day)} · " + " · ".join(times) + (f" {badges[0]}" if shared and badges[0] else ""))
+    if look.dates == "quote":
+        return f"{head}\n<blockquote>" + "\n".join(lines) + "</blockquote>"
     return "\n   ".join([head, *lines])
 
 
@@ -177,7 +180,7 @@ def visible_len(html: str) -> int:
 
 
 def entities(html: str) -> int:
-    return len(re.findall(r"<(?:a|b|i|u|code)\b", html))
+    return len(re.findall(r"<(?:a|b|i|u|code|blockquote)\b", html))
 
 
 def pack(blocks: list[str], header: str = "", joiner: str = "\n\n", cont: str = "") -> list[str]:
@@ -189,6 +192,8 @@ def pack(blocks: list[str], header: str = "", joiner: str = "\n\n", cont: str = 
         return visible_len(text) <= LIMIT and entities(text) <= MAX_ENTITIES
 
     for block in blocks:
+        if not fits(block):  # split line by line: a quote block can't span two messages, so its lines go out plain
+            block = block.replace("<blockquote>", "").replace("</blockquote>", "")
         pieces = [block] if fits(block) else block.split("\n")
         for piece in pieces:
             sep = joiner if cur and piece is block else "\n"

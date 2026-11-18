@@ -45,3 +45,8 @@ releases:
 
 health:
   failures_before_alert: 3  # consecutive failed/empty scans before warning that a site may have changed
+
+messages:  # how release messages look (each theatre's own style is under `look:` in venues.yaml)
+  banners: true  # show the theatre's banner image above its release messages
+  # where Telegram fetches a banner from: {name} is the theatre's `look.banner` (a file in assets/banners)
+  banner_url: "https://raw.githubusercontent.com/Mi-Lan/teatar-tracker/main/assets/banners/{name}.jpg"

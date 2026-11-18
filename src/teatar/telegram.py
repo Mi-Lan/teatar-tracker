@@ -51,12 +51,14 @@ class Messenger:
     chat_id: str = ""
     recipients: tuple[str, ...] | list[str] = ()
 
-    def send(self, text: str, chat_id: str | None = None) -> None:
+    def send(self, text: str, chat_id: str | None = None, banner: str = "") -> None:
+        """`banner`: the address of an image to show above the text (as a large link preview)."""
         raise NotImplementedError
 
-    def send_all(self, messages: list[str], chat_id: str | None = None) -> None:
-        for m in messages:
-            self.send(m, chat_id)
+    def send_all(self, messages: list[str], chat_id: str | None = None, banner: str = "") -> None:
+        """Send the messages in order; the banner goes on the first one only."""
+        for i, m in enumerate(messages):
+            self.send(m, chat_id, banner if i == 0 else "")
 
     def updates(self, offset: int) -> list[dict]:
         return []
@@ -104,22 +106,25 @@ class Telegram(Messenger):
                 time.sleep(wait)
         raise TelegramError(f"Telegram {method}: too many retries")
 
-    def send(self, text: str, chat_id: str | None = None) -> None:
+    def send(self, text: str, chat_id: str | None = None, banner: str = "") -> None:
         """Send to `chat_id`, or to every recipient when it's None. A recipient who can't be reached
         (e.g. blocked the bot) is logged and skipped; only a failure for the owner is an error."""
         for chat in [str(chat_id)] if chat_id is not None else self.recipients:
             try:
-                self._send_one(text, chat)
+                self._send_one(text, chat, banner)
             except (RuntimeError, httpx.HTTPError):
                 if chat == self.chat_id:
                     raise
                 log.warning("could not message chat %s", chat, exc_info=True)
 
-    def _send_one(self, text: str, chat_id: str) -> None:
+    def _send_one(self, text: str, chat_id: str, banner: str = "") -> None:
         wait = self._last_send + 1.1 - time.monotonic()  # stay under 1 msg/s per chat
         if wait > 0:
             time.sleep(wait)
-        params = {"chat_id": chat_id, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}
+        # A banner is an image address shown as a large link preview above the text; the address needn't be
+        # in the text. If Telegram can't fetch it, the message simply arrives without a picture.
+        preview = {"url": banner, "prefer_large_media": True, "show_above_text": True} if banner else {"is_disabled": True}
+        params = {"chat_id": chat_id, "text": text, "parse_mode": "HTML", "link_preview_options": preview}
         try:
             self._call("sendMessage", **params)
         except TelegramError as exc:
@@ -144,6 +149,6 @@ class DryRun(Messenger):
     chat_id = "dry-run"
     recipients = ("dry-run",)
 
-    def send(self, text: str, chat_id: str | None = None) -> None:
+    def send(self, text: str, chat_id: str | None = None, banner: str = "") -> None:
         shown = unescape(re.sub(r"<(?!/?(b|i|u)>)[^>]+>", "", text))
-        print(f"\n──── telegram message ({len(text)} chars) ────\n{shown}")
+        print(f"\n──── telegram message ({len(text)} chars){' · banner ' + banner.rsplit('/', 1)[-1] if banner else ''} ────\n{shown}")

@@ -57,7 +57,7 @@ def test_watched_plays_are_messaged_immediately(make_ctx, clock):
     clock.sleep(3600)
     run(ctx, allow_burst=False)
     (msg,) = ctx.tg.sent  # one message: the new-tickets message, with ⭐ on the watched play (no separate alert)
-    assert "September: 1 went on sale" in msg and '⭐ <a href="https://example.rs/buy"><b>Divlje meso</b></a> · Sun 27.09. 19:30 🟢 40' in msg
+    assert "September: 1 went on sale" in msg and '⭐ <a href="https://example.rs/buy"><b>Divlje meso</b></a>\n   Sun 27.09. · 19:30 🟢 40' in msg
 
 
 def test_failing_venue_keeps_data_and_warns(make_ctx, clock):
@@ -102,7 +102,7 @@ def test_release_burst_catches_tickets_within_a_minute(make_ctx, clock):
     assert not any("Ticket release in" in m for m in ctx.tg.sent)  # reminder not repeated
     alert = next(m for m in ctx.tg.sent if m.startswith("🎟 <b>JDP</b>"))  # one date is a release at a venue with a known release
     assert "October: +1 new date → 1 listed, 1 on sale\nAppeared 22.09. between 12:40 and 12:40\n" in alert  # 30-s polls
-    assert '<a href="https://example.rs/buy"><b>Ričard Drugi</b></a> · Wed 07.10. 19:30 🟢' in alert  # the play, linked
+    assert '<a href="https://example.rs/buy"><b>Ričard Drugi</b></a>\n   Wed 07.10. · 19:30 🟢' in alert  # the play, linked
     assert not any("Release watch" in m for m in ctx.tg.sent)  # no separate list of dates
     # alert went out on the first poll after publication (poll every 30 s)
     assert ctx.state.notified[f"new_show:jdp:oct1"] <= (release_at + timedelta(seconds=60)).isoformat()
@@ -302,13 +302,13 @@ def test_batch_release_is_messaged_once_with_its_time_window(make_ctx, clock):
         "January: +1 new date → 1 listed, 1 on sale\n"
         "Appeared 05.10. between 14:02 and 17:02\n"
         "\n"  # every play, with its dates; titles link to the play
-        f"{buy}<b>Play 0</b></a> · Tue 01.12. 19:30 ⏳ not on sale\n"
-        f"{buy}<b>Play 1</b></a> · Wed 02.12. 19:30 ⏳ not on sale\n"
-        f"{buy}<b>Play 2</b></a> · Thu 03.12. 19:30 🟢\n"
-        f"{buy}<b>Play 3</b></a> · Fri 04.12. 19:30 🟢\n"
-        f"{buy}<b>Play 4</b></a> · Sat 05.12. 19:30 🟢\n"
-        f"{buy}<b>Play 5</b></a> · Sun 06.12. 19:30 🟢\n"
-        f"{buy}<b>Play 9</b></a> · Sun 03.01. 19:30 🟢\n"
+        f"{buy}<b>Play 0</b></a>\n   Tue 01.12. · 19:30 ⏳ not on sale\n"
+        f"{buy}<b>Play 1</b></a>\n   Wed 02.12. · 19:30 ⏳ not on sale\n"
+        f"{buy}<b>Play 2</b></a>\n   Thu 03.12. · 19:30 🟢\n"
+        f"{buy}<b>Play 3</b></a>\n   Fri 04.12. · 19:30 🟢\n"
+        f"{buy}<b>Play 4</b></a>\n   Sat 05.12. · 19:30 🟢\n"
+        f"{buy}<b>Play 5</b></a>\n   Sun 06.12. · 19:30 🟢\n"
+        f"{buy}<b>Play 9</b></a>\n   Sun 03.01. · 19:30 🟢\n"
         "\n"
         "/theatre narodno · /new"  # (no website configured for this test venue)
     ]
