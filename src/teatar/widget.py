@@ -1,6 +1,11 @@
 """A release message as a Telegram HTML widget (Bot API 10.4, sendWidget): a playbill in a wooden frame.
 
-Experimental. A widget is one small self-contained HTML document drawn inside the chat bubble. What it
+Parked: nothing calls this yet. Telegram launched widgets on 9 November 2026 and, after a security
+report, closed them to ordinary bots a few days later: on 18 November `sendWidget` to the owner's
+private chat answered 400 INPUT_MEDIA_WIDGET_NOT_ALLOWED. The builder below is ready for when that
+changes (send with `sendWidget`: `chat_id`, `html`, `caption`; fall back to the text message).
+
+A widget is one small self-contained HTML document drawn inside the chat bubble. What it
 may contain is fixed by Telegram's widget profile 1 (github.com/TelegramMessenger/widget-sandbox,
 docs/widget-runtime-profile.md); the parts that shape this file:
   - at most 4096 bytes after zlib level 9 (and 32 KB before), or the send is refused;
