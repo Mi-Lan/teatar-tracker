@@ -234,6 +234,11 @@ def _footer(ctx: Ctx, venue: str) -> str:
     return " · ".join(p for p in parts if p)
 
 
+def _closing(ctx: Ctx, venue: str, perfs: list[Performance]) -> str:
+    """The last block of a release message: what the numbers mean (when there are any), then the links."""
+    return "\n" + "\n".join(x for x in [fmt.counts_note(perfs), _footer(ctx, venue)] if x)
+
+
 def release_message(
     ctx: Ctx, venue: str, entries: list[dict], found: list[Change] | None = None, fast: dict | None = None, first: bool = False,
 ) -> list[str]:
@@ -247,11 +252,15 @@ def release_message(
     name = escape(ctx.cfg.venue_name(venue))
     on_sale = sum(e["on_sale"] for e in entries)
     target = _season(ctx)["month"]
-    if on_sale == 0 and all(e["buyable"] == 0 for e in entries):
-        if all(e.get("unknown") == e["listed"] for e in entries):
+    # Nothing that just appeared can be bought: say "listed", even if the month's older dates are on sale.
+    if on_sale == 0 and (all(e["buyable"] == 0 for e in entries) or (perfs and not first)):
+        statuses = {p.status for p in perfs}
+        if statuses == {Status.UNKNOWN} or (not perfs and all(e.get("unknown") == e["listed"] for e in entries)):
             head = f"📋 <b>{name}</b> · new dates listed (check tickets on their site)"
-        else:
+        elif statuses <= {Status.NOT_ON_SALE}:
             head = f"📋 <b>{name}</b> · new dates listed, tickets not on sale yet"
+        else:
+            head = f"📋 <b>{name}</b> · new dates listed"
     elif first:
         head = f"🎟 <b>{name}</b> · tickets for <b>{fmt.month_name(target)}</b> are out"
     else:
@@ -264,7 +273,7 @@ def release_message(
     blocks = plays_list(perfs, fast, watched)
     if blocks:
         blocks[0] = "\n" + blocks[0]
-    return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued")
+    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued")
 
 
 def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, by: str, fast: dict) -> list[str]:
@@ -284,7 +293,7 @@ def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, b
     lines = [f"{icon} <b>{name}</b> · {what} for {whom}", f"{fmt.plural(len(perfs), 'date')} · {appeared(after, by)}"]
     blocks = plays_list(perfs, fast, watched)
     blocks[0] = "\n" + blocks[0]
-    return fmt.pack(blocks + ["\n" + _footer(ctx, venue)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued")
+    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued")
 
 
 # --- the 20th–27th status -------------------------------------------------------------------------------
