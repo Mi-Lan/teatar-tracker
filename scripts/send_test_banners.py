@@ -8,10 +8,13 @@ The log of a public repo is public: nothing but counts and Telegram's ok/error a
 
 from __future__ import annotations
 
+import logging
 import os
 import sys
 from pathlib import Path
 
+logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")  # shows if a banner had to be dropped
+logging.getLogger("httpx").setLevel(logging.WARNING)  # (its request lines carry the bot's address)
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
@@ -29,10 +32,6 @@ if not token or not owner:
     sys.exit("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID are not set")
 
 cfg = config.load(ROOT)
-# the banners of this very commit (they are not on main yet)
-cfg.settings.setdefault("messages", {})["banner_url"] = (
-    f"https://raw.githubusercontent.com/{os.environ['GITHUB_REPOSITORY']}/{os.environ['GITHUB_SHA']}/assets/banners/{{name}}.jpg"
-)
 state = State.load(cfg.state_path)
 tg = Telegram(token, owner)  # no extra recipients
 ctx = Ctx(cfg=cfg, state=state, http=None, tg=tg, adapters={})
@@ -55,9 +54,9 @@ for i, venue in enumerate(venues, 1):
                         "on_sale": sum(p.status.buyable for p in perfs if month_key(p.start) == month),
                         "listed": counts["listed"], "buyable": counts["buyable"], "unknown": counts["unknown"]})
     messages = season.release_message(ctx, venue, entries, [Change(Kind.NEW_DATE, p) for p in perfs], fast)
-    messages[0] = f"🧪 <b>Test {i}/{len(venues)}</b>: sample of the new look, not a real release\n" + messages[0]
+    messages[0] = f"🧪 Test {i}/{len(venues)}\n" + messages[0]
     try:
-        tg.send_all(messages, banner=cfg.banner_url(venue))
+        tg.send_all(messages, banner=cfg.banner_path(venue))
         print(f"{venue}: sent {len(messages)} message(s), {len(perfs)} dates, banner {cfg.venue_look(venue).banner}")
     except Exception as exc:  # (only the kind and Telegram's own description: no addresses)
         failed += 1

@@ -113,7 +113,7 @@ def test_release_message_uses_the_theatres_look_and_banner(make_ctx, clock):
         "🟢 number = tickets left\n"
         "/theatre madl · /new"
     )
-    assert ctx.tg.banners == ["https://raw.githubusercontent.com/Mi-Lan/teatar-tracker/main/assets/banners/madlenianum.jpg"]
+    assert [b.split("/assets/")[1] for b in ctx.tg.banners] == ["banners/madlenianum.jpg"]  # the file in the repo
 
     ctx.cfg.settings["messages"] = {"banners": False}  # switched off in settings.yaml: the same text, no picture
     ctx.tg.banners.clear()
@@ -135,3 +135,21 @@ def test_a_long_release_is_split_without_breaking_a_quote_block(monkeypatch):
     monkeypatch.setattr(fmt, "MAX_ENTITIES", 12)  # a single play too big for one message: its lines go out plain
     messages = fmt.pack(blocks[:1], header="head", joiner="\n")
     assert len(messages) > 1 and not any("blockquote" in m for m in messages)
+
+
+def test_with_a_banner_the_first_message_fits_a_photo_caption(make_ctx, clock):
+    """A photo's caption is far shorter than a message: a long release continues in a second message."""
+    clock.t = datetime(2026, 11, 18, 10, 7, tzinfo=TZ)
+    feed = [show("Krcko", 1, "17:00", left=174)]
+    ctx = make_ctx([FakeAdapter("madl", fn=lambda: list(feed))], settings={"release_season": {"days": [1, 1]}})
+    ctx.cfg.venues["madl"]["look"] = {"banner": "madlenianum", "titles": "italic", "dates": "quote"}
+    run(ctx, allow_burst=False)
+    ctx.tg.sent.clear()
+    feed += [show(f"A rather long title number {i}", 2 + i % 20, "19:30", left=100 + i) for i in range(30)]
+    clock.sleep(7200)
+    run(ctx, allow_burst=False)
+    first, *rest = ctx.tg.sent
+    assert rest and fmt.visible_len(first) <= 1024 < fmt.visible_len(first) + fmt.visible_len(rest[0])
+    assert len(ctx.tg.banners) == 1  # the banner once, on the first message
+    assert all(m.count("<blockquote>") == m.count("</blockquote>") for m in ctx.tg.sent)
+    assert sum(m.count("A rather long title") for m in ctx.tg.sent) == 30  # nothing lost in the split

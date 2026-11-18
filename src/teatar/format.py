@@ -14,6 +14,7 @@ from .models import Performance, Status, now
 from .telegram import plain
 
 LIMIT = 3900  # Telegram max is 4096 visible characters (after HTML parsing); leave room
+CAPTION_LIMIT = 1000  # …and 1024 for the text under a photo (a message that starts with a banner)
 MAX_ENTITIES = 90  # keep well under Telegram's per-message formatting-entity limit
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -183,18 +184,23 @@ def entities(html: str) -> int:
     return len(re.findall(r"<(?:a|b|i|u|code|blockquote)\b", html))
 
 
-def pack(blocks: list[str], header: str = "", joiner: str = "\n\n", cont: str = "") -> list[str]:
+def pack(blocks: list[str], header: str = "", joiner: str = "\n\n", cont: str = "", first_limit: int | None = None) -> list[str]:
     """Join blocks into as few messages as possible under Telegram's size and entity limits.
-    Blocks are separated by `joiner`; a message after the first starts with `cont` (if given)."""
+    Blocks are separated by `joiner`; a message after the first starts with `cont` (if given).
+    `first_limit`: a tighter size limit for the first message (when it goes out as a photo's caption)."""
     messages, cur = [], header
 
     def fits(text: str) -> bool:
-        return visible_len(text) <= LIMIT and entities(text) <= MAX_ENTITIES
+        limit = first_limit if first_limit and not messages else LIMIT
+        return visible_len(text) <= limit and entities(text) <= MAX_ENTITIES
+
+    def too_big(text: str) -> bool:  # for any message, not just the first
+        return visible_len(text) > LIMIT or entities(text) > MAX_ENTITIES
 
     for block in blocks:
-        if not fits(block):  # split line by line: a quote block can't span two messages, so its lines go out plain
+        if too_big(block):  # split line by line: a quote block can't span two messages, so its lines go out plain
             block = block.replace("<blockquote>", "").replace("</blockquote>", "")
-        pieces = [block] if fits(block) else block.split("\n")
+        pieces = block.split("\n") if too_big(block) else [block]
         for piece in pieces:
             sep = joiner if cur and piece is block else "\n"
             candidate = f"{cur}{sep}{piece}" if cur else piece

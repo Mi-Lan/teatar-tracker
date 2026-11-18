@@ -1,7 +1,7 @@
 from conftest import FakeAdapter, perf
 
 from teatar import commands, models
-from teatar.telegram import Telegram, chat_ids
+from teatar.telegram import Telegram, TelegramError, chat_ids
 
 
 class Recorder(Telegram):
@@ -66,21 +66,31 @@ def test_theatres_lists_links(make_ctx, clock):
     assert '<a href="https://tickets.rs/venue/sava_centar_3"><b>SAVA</b></a> · tickets.rs · 0 upcoming dates' in text
 
 
-def test_a_banner_is_sent_as_a_large_preview_above_the_first_message(monkeypatch):
+def test_a_banner_goes_out_as_a_photo_with_the_message_as_its_caption(monkeypatch, tmp_path):
     monkeypatch.setattr("teatar.telegram.time.sleep", lambda s: None)
+    banner = tmp_path / "madlenianum.jpg"
+    banner.write_bytes(b"\xff\xd8 a picture")
 
-    class Params(Telegram):
-        def __init__(self):
+    class Calls(Telegram):
+        def __init__(self, refuse_photos=False):
             super().__init__("token", "111")
-            self.seen, self._last_send = [], -10.0
+            self.seen, self._last_send, self.refuse_photos = [], -10.0, refuse_photos
 
-        def _call(self, method, **params):
-            self.seen.append(params)
+        def _call(self, method, _files=None, **params):
+            if method == "sendPhoto" and self.refuse_photos:
+                raise TelegramError("Telegram sendPhoto failed: Bad Request: wrong file", 400)
+            self.seen.append((method, _files, params))
             return {}
 
-    tg = Params()
-    tg.send_all(["first", "second"], banner="https://example.org/b.jpg")
-    assert tg.seen[0]["link_preview_options"] == {"url": "https://example.org/b.jpg", "prefer_large_media": True, "show_above_text": True}
-    assert tg.seen[1]["link_preview_options"] == {"is_disabled": True}  # only the first message carries the picture
-    tg.send("plain")
-    assert tg.seen[2]["link_preview_options"] == {"is_disabled": True}  # and links in ordinary messages never unfold
+    tg = Calls()
+    tg.send_all(["<b>first</b>", "second"], banner=str(banner))
+    (method, files, params), (method2, files2, params2) = tg.seen
+    assert method == "sendPhoto" and files["photo"] == ("madlenianum.jpg", b"\xff\xd8 a picture", "image/jpeg")
+    assert params == {"chat_id": "111", "caption": "<b>first</b>", "parse_mode": "HTML"}
+    assert method2 == "sendMessage" and files2 is None and params2["text"] == "second"  # only the first message carries the picture
+    assert params2["link_preview_options"] == {"is_disabled": True}
+
+    # a picture never costs you the message: too long for a caption, a missing file or a refusal -> the text alone
+    for tg, text, path in [(Calls(), "x" * 1025, str(banner)), (Calls(), "short", str(tmp_path / "gone.jpg")), (Calls(refuse_photos=True), "short", str(banner))]:
+        tg.send(text, banner=path)
+        assert [(m, p["text"]) for m, _, p in tg.seen] == [("sendMessage", text)]

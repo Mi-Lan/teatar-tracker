@@ -35,10 +35,7 @@ DEFAULTS: dict[str, dict] = {
         "max_run_minutes": 200,
     },
     "health": {"failures_before_alert": 3},
-    "messages": {
-        "banners": True,
-        "banner_url": "https://raw.githubusercontent.com/Mi-Lan/teatar-tracker/main/assets/banners/{name}.jpg",
-    },
+    "messages": {"banners": True},
 }
 
 
@@ -47,7 +44,7 @@ class Look:
     """How one theatre's release messages look (`look:` in venues.yaml). Telegram text has no colours or
     fonts of its own, so a look is made of what it does offer."""
 
-    banner: str = ""  # image shown above the message: a file name in assets/banners, without ".jpg"
+    banner: str = ""  # picture at the top of the message: a file name in assets/banners, without ".jpg"
     titles: str = "bold"  # play titles: bold | italic
     upper: bool = False  # titles in capitals
     marker: str = ""  # before each title, e.g. "✦" or "🟥"
@@ -78,6 +75,7 @@ class Config:
     releases: list[dict]
     state_path: Path
     recurring: list[dict] = field(default_factory=list)
+    root: Path = ROOT  # the repository: config/, data/, assets/
 
     def venue_name(self, key: str) -> str:
         return (self.venues.get(key) or {}).get("name", key)
@@ -94,10 +92,11 @@ class Config:
     def venue_look(self, key: str) -> Look:
         return Look(**((self.venues.get(key) or {}).get("look") or {}))
 
-    def banner_url(self, key: str) -> str:
-        """Where Telegram fetches the venue's banner from; "" when it has none or banners are off."""
+    def banner_path(self, key: str) -> str:
+        """The venue's banner image (assets/banners/<look.banner>.jpg); "" when it has none or banners are off."""
         name = self.venue_look(key).banner
-        return str(self.get("messages", "banner_url")).format(name=name) if name and self.get("messages", "banners") else ""
+        path = self.root / "assets" / "banners" / f"{name}.jpg"
+        return str(path) if name and self.get("messages", "banners") and path.is_file() else ""
 
     def get(self, section: str, key: str):
         """A setting from settings.yaml, or its default from DEFAULTS (a key in neither is a bug)."""
@@ -198,6 +197,7 @@ def load(root: Path = ROOT) -> Config:
         releases=_list(releases, "releases", "releases.yaml"),
         state_path=root / "data" / "state.json",
         recurring=_list(releases, "recurring", "releases.yaml"),
+        root=root,
     )
     check_venues(cfg.venues)
     check_entries(cfg)

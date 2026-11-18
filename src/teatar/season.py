@@ -159,13 +159,13 @@ def track(ctx: Ctx, scanned_venues: set[str], changes: list[Change] | None = Non
                     s["released"][venue] = {"after": after, "by": stamp}
             # one message per theatre per check, listing just what this check found (each date is only ever
             # reported once, so a release that trickles in over several checks never repeats a date)
-            ctx.tg.send_all(release_message(ctx, venue, entries, found.get(venue, []), fast, first=transition), banner=ctx.cfg.banner_url(venue))
+            ctx.tg.send_all(release_message(ctx, venue, entries, found.get(venue, []), fast, first=transition), banner=ctx.cfg.banner_path(venue))
             continue
         if send_all:
             continue
         follow = [ch for ch in found.get(venue, []) if ch.watched or (fast_alerts and sales.lookup(fast, ch.perf))]
         if follow:
-            ctx.tg.send_all(fast_message(ctx, venue, follow, after, stamp, fast), banner=ctx.cfg.banner_url(venue))
+            ctx.tg.send_all(fast_message(ctx, venue, follow, after, stamp, fast), banner=ctx.cfg.banner_path(venue))
 
 
 def span(after: str | None, by: str) -> str:
@@ -245,6 +245,12 @@ def _plays(ctx: Ctx, venue: str, perfs: list[Performance], fast: dict, watched: 
     return blocks
 
 
+def _first_limit(ctx: Ctx, venue: str) -> int | None:
+    """With a banner the first message is a photo's caption, which Telegram keeps much shorter than a
+    message: a longer release continues in the next message."""
+    return fmt.CAPTION_LIMIT if ctx.cfg.banner_path(venue) else None
+
+
 def _closing(ctx: Ctx, venue: str, perfs: list[Performance]) -> str:
     """The last block of a release message: what the numbers mean (when there are any), then the links."""
     return "\n" + "\n".join(x for x in [fmt.counts_note(perfs), _footer(ctx, venue)] if x)
@@ -282,7 +288,7 @@ def release_message(
     if hot:
         lines.append(f"🔥 {hot} of them sell{'s' if hot == 1 else ''} out fast: get tickets early")
     blocks = _plays(ctx, venue, perfs, fast, watched)
-    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued")
+    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{head.split(' · ')[0]} · continued", first_limit=_first_limit(ctx, venue))
 
 
 def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, by: str, fast: dict) -> list[str]:
@@ -301,7 +307,7 @@ def fast_message(ctx: Ctx, venue: str, found: list[Change], after: str | None, b
         icon, whom = "⭐", "plays you follow"
     lines = [f"{icon} <b>{name}</b> · {what} for {whom}", f"{fmt.plural(len(perfs), 'date')} · {appeared(after, by)}"]
     blocks = _plays(ctx, venue, perfs, fast, watched)
-    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued")
+    return fmt.pack(blocks + [_closing(ctx, venue, perfs)], header="\n".join(lines), joiner="\n", cont=f"{icon} <b>{name}</b> · continued", first_limit=_first_limit(ctx, venue))
 
 
 # --- the 20th–27th status -------------------------------------------------------------------------------
