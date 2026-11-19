@@ -107,6 +107,7 @@
   ],
   "narodno": [
    "",
+   "andric i jelena",
    "balkanski spijun",
    "bele noci",
    "boemi",
@@ -116,6 +117,8 @@
    "centrala za humor",
    "dan narodnog pozorista",
    "dervis i smrt",
+   "dodela nagrade fondacije braca karic",
+   "dodela nagrade vitez poziva",
    "dostojevski moj zivot",
    "eho dve obale 70 godina uspostavljanja diplomatskih odnosa tunisa i srbije",
    "equalvoise summit ringier",
@@ -155,6 +158,7 @@
    "svecana akademija povodom medjunarodnog dana borbe protiv fasizma i antisemitizma",
    "toska",
    "travijata",
+   "ucveljeni",
    "uobrazeni bolesnik",
    "urnebesna tragedija",
    "uspavanka za aleksiju rajcic",
@@ -1635,6 +1639,90 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-19T14:07:35+01:00"
   },
+  "narodno:6478": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6479": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6480": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6481": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6482": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6483": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6484": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6485": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6486": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6487": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6488": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6489": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6490": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6491": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6492": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6493": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6494": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6495": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6496": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6497": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
+  "narodno:6498": {
+   "ever_on_sale": false,
+   "first_seen": "2026-11-19T22:07:42+01:00"
+  },
   "sava_centar:22502": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -2437,6 +2525,22 @@
   "new_date:narodno:6473": "2026-10-21T17:02:42+02:00",
   "new_date:narodno:6474": "2026-10-21T17:02:42+02:00",
   "new_date:narodno:6475": "2026-10-21T17:02:42+02:00",
+  "new_date:narodno:6480": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6481": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6482": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6483": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6485": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6486": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6487": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6488": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6489": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6490": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6491": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6492": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6495": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6496": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6497": "2026-11-19T22:07:42+01:00",
+  "new_date:narodno:6498": "2026-11-19T22:07:42+01:00",
   "new_date:sava_centar:26745": "2026-09-25T21:58:56+02:00",
   "new_date:sava_centar:27109": "2026-09-23T11:31:07+02:00",
   "new_date:sava_centar:27189": "2026-10-08T18:22:01+02:00",
@@ -2563,6 +2667,11 @@
   "new_show:narodno:6467": "2026-10-21T17:02:42+02:00",
   "new_show:narodno:6471": "2026-10-21T17:02:42+02:00",
   "new_show:narodno:6476": "2026-11-19T14:07:35+01:00",
+  "new_show:narodno:6478": "2026-11-19T22:07:42+01:00",
+  "new_show:narodno:6479": "2026-11-19T22:07:42+01:00",
+  "new_show:narodno:6484": "2026-11-19T22:07:42+01:00",
+  "new_show:narodno:6493": "2026-11-19T22:07:42+01:00",
+  "new_show:narodno:6494": "2026-11-19T22:07:42+01:00",
   "new_show:sava_centar:27234": "2026-09-25T12:08:05+02:00",
   "new_show:sava_centar:27298": "2026-10-05T17:52:14+02:00",
   "new_show:sava_centar:27304": "2026-10-30T15:01:05+01:00",
@@ -2652,19 +2761,18 @@
  "performances": {
   "bdp:202611191930-laz": {
    "available": null,
-   "buy_url": "https://app.sixtix.com/events/41d94edd06dd",
+   "buy_url": "",
    "extra": {
     "guest": false,
     "guest_place": "",
-    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158",
-    "sixtix": "41d94edd06dd"
+    "site_ticket_link": "https://app.sixtix.rs/iframes/22c6e158"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611191930-laz",
    "stage": "Velika scena \"Olivera i Rade\"",
    "start": "2026-11-19T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "",
    "title": "Лаж",
    "url": "https://www.bdp.rs/cir/predstave-cir/laz",
@@ -3175,17 +3283,16 @@
   },
   "jdp:202611262000-vrat-od-stakla": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1243",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1243"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611262000-vrat-od-stakla",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-26T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Biljana Srbljanovic",
    "title": "Vrat od stakla",
    "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
@@ -3335,10 +3442,10 @@
    "venue": "kolarac"
   },
   "madlenianum:evita-202611281930": {
-   "available": 39,
+   "available": 37,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1169",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "MJUZIKL",
     "label": "PREMIJERA",
     "shop_id": "1169"
@@ -3358,7 +3465,7 @@
    "available": 122,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "MJUZIKL",
     "label": "I REPRIZA",
     "shop_id": "1170"
@@ -3378,7 +3485,7 @@
    "available": 138,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1168",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "DRAMA",
     "shop_id": "1168"
    },
@@ -3397,7 +3504,7 @@
    "available": 26,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1160",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "DRAMA",
     "shop_id": "1160"
    },
@@ -3416,7 +3523,7 @@
    "available": 174,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1164",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1164"
    },
@@ -3435,7 +3542,7 @@
    "available": 122,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1165",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1165"
    },
@@ -3454,7 +3561,7 @@
    "available": 156,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1166",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1166"
    },
@@ -3473,7 +3580,7 @@
    "available": 184,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1167",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1167"
    },
@@ -3492,7 +3599,7 @@
    "available": 182,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1173",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1173"
    },
@@ -3511,7 +3618,7 @@
    "available": 185,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1174",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1174"
    },
@@ -3530,7 +3637,7 @@
    "available": 179,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1175",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1175"
    },
@@ -3549,7 +3656,7 @@
    "available": 181,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1176",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1176"
    },
@@ -3568,7 +3675,7 @@
    "available": 184,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1177",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1177"
    },
@@ -3587,7 +3694,7 @@
    "available": 184,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1178",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1178"
    },
@@ -3606,7 +3713,7 @@
    "available": 184,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1179",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1179"
    },
@@ -3625,7 +3732,7 @@
    "available": 184,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1180",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "BALET",
     "shop_id": "1180"
    },
@@ -3644,7 +3751,7 @@
    "available": 117,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1162",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1162"
    },
@@ -3663,7 +3770,7 @@
    "available": 79,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1163",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1163"
    },
@@ -3682,7 +3789,7 @@
    "available": 37,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1161",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "DRAMA",
     "shop_id": "1161"
    },
@@ -3719,7 +3826,7 @@
    "available": 1,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1159",
    "extra": {
-    "counted_at": "2026-11-19T20:07:56+01:00",
+    "counted_at": "2026-11-19T22:07:42+01:00",
     "genre": "KOMEDIJA",
     "shop_id": "1159"
    },
@@ -3970,7 +4077,7 @@
    "source_id": "6351",
    "stage": "Велика сцена",
    "start": "2026-12-03T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=xa7efb97bd33ee30178c6717a46cfacd7",
@@ -4518,19 +4625,17 @@
    "venue": "narodno"
   },
   "narodno:6460": {
-   "available": 105,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6460",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-19T10:07:15+01:00",
-    "repid": "6460",
-    "seats": 323
+    "repid": "6460"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6460",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-19T20:30:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "драма Биљане Србљановић · енглески титл",
    "title": "Није смрт бицикло (да ти га украду)",
    "url": "https://www.narodnopozoriste.rs/predstave/nije-smrt-biciklo-da-ti-ga-ukradu?m=x534375d1071cedaf47818867c79c6001",
@@ -4832,6 +4937,363 @@
    "subtitle": "по тексту Сање Савић Милосављевић, у режији Николе Бундала · гостује Народно позориште Републике Српске, Бања Лука",
    "title": "Мартин удио",
    "url": "https://www.narodnopozoriste.rs/predstave/martin-udio?m=xdcd9a02a5bdd85fd5de4c2df4cee54b3",
+   "venue": "narodno"
+  },
+  "narodno:6478": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6478"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6478",
+   "stage": "Велика сцена",
+   "start": "2026-12-07T19:00:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "Додела награде Фондације „Браћа Карић“",
+   "url": "https://www.narodnopozoriste.rs/predstave/dodela-nagrade-fondacije-braca-karic?m=x7e3d84434818fc55a88998d81221e1be",
+   "venue": "narodno"
+  },
+  "narodno:6479": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6479"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6479",
+   "stage": "Велика сцена",
+   "start": "2026-12-10T18:00:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "",
+   "title": "Додела награде „Витез позива“",
+   "url": "https://www.narodnopozoriste.rs/predstave/dodela-nagrade-vitez-poziva?m=x0c9072bf89eea01aa52afbe5e6d654d8",
+   "venue": "narodno"
+  },
+  "narodno:6480": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6480"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6480",
+   "stage": "Велика сцена",
+   "start": "2026-12-11T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драма Хенрика Ибзена",
+   "title": "Нора - луткина кућа",
+   "url": "https://www.narodnopozoriste.rs/predstave/nora-lutkina-kuca?m=x52cde28eefbb581be0ee8bacce719c22",
+   "venue": "narodno"
+  },
+  "narodno:6481": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6481"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6481",
+   "stage": "Велика сцена",
+   "start": "2026-12-20T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "комедија Душана Ковачевића",
+   "title": "Урнебесна трагедија",
+   "url": "https://www.narodnopozoriste.rs/predstave/urnebesna-tragedija?m=x9e3c0de51d2324a237ee4650d26bfb76",
+   "venue": "narodno"
+  },
+  "narodno:6482": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6482"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6482",
+   "stage": "Велика сцена",
+   "start": "2026-12-21T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "комедија Бранислава Нушића",
+   "title": "Ожалошћена породица",
+   "url": "https://www.narodnopozoriste.rs/predstave/ozaloscena-porodica?m=xc74102706ea450bca7cf1ecc336d4219",
+   "venue": "narodno"
+  },
+  "narodno:6483": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6483"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6483",
+   "stage": "Велика сцена",
+   "start": "2026-12-27T19:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драматизација Федора Шилија по роману Л. Н. Толстоја · руски титл",
+   "title": "Рат и мир",
+   "url": "https://www.narodnopozoriste.rs/predstave/rat-i-mir?m=xa023ac8e3b73d1cfdda019b71a2c0454",
+   "venue": "narodno"
+  },
+  "narodno:6484": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6484"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6484",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-08T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "по „Ожалошћеној породици“ Бранислав Нушић / Ненад Тодоровић · гостује Народно позориште Приштина",
+   "title": "Уцвељени",
+   "url": "https://www.narodnopozoriste.rs/predstave/ucveljeni?m=xd47eb777ff7b128b23d46cb8d92e2e41",
+   "venue": "narodno"
+  },
+  "narodno:6485": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6485"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6485",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-09T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драма Тадеуша Слобођанека",
+   "title": "Наш разред",
+   "url": "https://www.narodnopozoriste.rs/predstave/nas-razred?m=xa5226ec9c178b7aa46637171749616ac",
+   "venue": "narodno"
+  },
+  "narodno:6486": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6486"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6486",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-10T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "комедија Карла Голдонија",
+   "title": "Рибарске свађе",
+   "url": "https://www.narodnopozoriste.rs/predstave/ribarske-svadje-1?m=x6d73aa6f02ad570636f231fd6900ff87",
+   "venue": "narodno"
+  },
+  "narodno:6487": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6487"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6487",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-12T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драма Лава Николајевича Толстоја",
+   "title": "Царство мрака",
+   "url": "https://www.narodnopozoriste.rs/predstave/carstvo-mraka?m=x20990e62ee6ac776bb2bb18cf2fc12e0",
+   "venue": "narodno"
+  },
+  "narodno:6488": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6488"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6488",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-13T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "дуодрама према мотивима мемоара „Сећања“ Ане Г. Достојевски · руски титл",
+   "title": "Достојевски - мој живот",
+   "url": "https://www.narodnopozoriste.rs/predstave/dostojevski-moj-zivot?m=xf7711b41c4eb4546ce7212b2bd66fd70",
+   "venue": "narodno"
+  },
+  "narodno:6489": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6489"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6489",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-14T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "комедија Бранислава Нушића",
+   "title": "Сумњиво лице",
+   "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=xa418dd303fad2b1d53598f401eb5eb05",
+   "venue": "narodno"
+  },
+  "narodno:6490": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6490"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6490",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-15T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "комедија Жана Ануја",
+   "title": "Женски оркестар",
+   "url": "https://www.narodnopozoriste.rs/predstave/zenski-orkestar?m=xe9bb0f2f3abae38b0ca02e3b1fef7efd",
+   "venue": "narodno"
+  },
+  "narodno:6491": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6491"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6491",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-16T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драма Љубомира Симовића · 25 година од премијере и последње извођење",
+   "title": "Хасанагиница",
+   "url": "https://www.narodnopozoriste.rs/predstave/hasanaginica?m=xb145d98898e3ed4dc62d153cad4ac06d",
+   "venue": "narodno"
+  },
+  "narodno:6492": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6492"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6492",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-17T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "комедија Бранислава Нушића",
+   "title": "Сумњиво лице",
+   "url": "https://www.narodnopozoriste.rs/predstave/sumnjivo-lice-4?m=x9b66afe7feef6bd39b4a0bc85242b129",
+   "venue": "narodno"
+  },
+  "narodno:6493": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6493"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6493",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-26T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драма Иване Жигон · Премијера",
+   "title": "Андрић и Јелена",
+   "url": "https://www.narodnopozoriste.rs/predstave/andric-i-jelena?m=x1030fd4da47cda7070412987c3436ed1",
+   "venue": "narodno"
+  },
+  "narodno:6494": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6494"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6494",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-27T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драма Иване Жигон",
+   "title": "Андрић и Јелена",
+   "url": "https://www.narodnopozoriste.rs/predstave/andric-i-jelena?m=x63507fcf398f762863839de626edc91c",
+   "venue": "narodno"
+  },
+  "narodno:6495": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6495"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6495",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-28T11:00:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "опера за децу Драгана Каролића,  у извођењу Оперског студија „Борислав Поповић“",
+   "title": "Снежана и седам патуљака",
+   "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=x97c5dd21f4b6c5f6602b31c46db3c4e1",
+   "venue": "narodno"
+  },
+  "narodno:6496": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6496"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6496",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-28T13:00:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "опера за децу Драгана Каролића,  у извођењу Оперског студија „Борислав Поповић“",
+   "title": "Снежана и седам патуљака",
+   "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=x7e84218b54d6b9e7b7bd70a203622c63",
+   "venue": "narodno"
+  },
+  "narodno:6497": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6497"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6497",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-29T11:00:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "опера за децу Драгана Каролића,  у извођењу Оперског студија „Борислав Поповић“",
+   "title": "Снежана и седам патуљака",
+   "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=xf61b188e92a75734d4f882f9f3ae411b",
+   "venue": "narodno"
+  },
+  "narodno:6498": {
+   "available": null,
+   "buy_url": "",
+   "extra": {
+    "repid": "6498"
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "6498",
+   "stage": "Сцена „Раша Плаовић”",
+   "start": "2026-12-29T20:30:00+01:00",
+   "status": "not_on_sale",
+   "subtitle": "драма Ђорђа Косића",
+   "title": "Централа за хумор",
+   "url": "https://www.narodnopozoriste.rs/predstave/centrala-za-humor?m=xeef92405734a83cb72a0b65a8550224f",
    "venue": "narodno"
   },
   "sava_centar:22502": {
@@ -6437,6 +6899,18 @@
    "opened": 0,
    "unknown": 0,
    "venue": "narodno"
+  },
+  {
+   "after": "2026-11-19T20:07:56+01:00",
+   "buyable": 27,
+   "by": "2026-11-19T22:07:42+01:00",
+   "listed": 49,
+   "month": "2026-12",
+   "new": 21,
+   "on_sale": 0,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "narodno"
   }
  ],
  "releases": [
@@ -7432,6 +7906,10 @@
     [
      "2026-11-19T20:07:56+01:00",
      39
+    ],
+    [
+     "2026-11-19T22:07:42+01:00",
+     37
     ]
    ],
    "start": "2026-11-28T19:30:00+01:00",
@@ -12326,14 +12804,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-19T20:07:56+01:00",
-  "jdp": "2026-11-19T20:07:56+01:00",
-  "kolarac": "2026-11-19T20:07:56+01:00",
-  "madlenianum": "2026-11-19T20:07:56+01:00",
-  "madlenianum_tickets": "2026-11-19T20:07:56+01:00",
-  "narodno": "2026-11-19T20:07:56+01:00",
-  "sava_centar": "2026-11-19T20:07:56+01:00",
-  "terazije": "2026-11-19T20:07:56+01:00"
+  "bdp": "2026-11-19T22:07:42+01:00",
+  "jdp": "2026-11-19T22:07:42+01:00",
+  "kolarac": "2026-11-19T22:07:42+01:00",
+  "madlenianum": "2026-11-19T22:07:42+01:00",
+  "madlenianum_tickets": "2026-11-19T22:07:42+01:00",
+  "narodno": "2026-11-19T22:07:42+01:00",
+  "sava_centar": "2026-11-19T22:07:42+01:00",
+  "terazije": "2026-11-19T22:07:42+01:00"
  },
  "season": {
   "live": {
