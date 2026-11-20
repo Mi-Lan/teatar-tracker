@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 8,
+   "fails": 9,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -3159,24 +3159,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611202000-sofka": {
-   "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1263",
-   "extra": {
-    "label": "",
-    "prostorterminid": "1263"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611202000-sofka",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-20T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Borisav Stanković",
-   "title": "Sofka",
-   "url": "https://www.narodnopozoristenis.rs/sofka/Mina%20Zotović12:18%20(пре%200%20минута)коме%20јаhttps://www.jdp.rs/performance/sofka/",
-   "venue": "jdp"
-  },
   "jdp:202611222000-ricard-drugi": {
    "available": null,
    "buy_url": "",
@@ -4367,17 +4349,19 @@
    "venue": "narodno"
   },
   "narodno:6367": {
-   "available": null,
-   "buy_url": "",
+   "available": 1,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6367",
    "extra": {
-    "repid": "6367"
+    "counted_at": "2026-11-20T23:07:28+01:00",
+    "repid": "6367",
+    "seats": 254
    },
    "price": "",
    "sales_start": null,
    "source_id": "6367",
    "stage": "Велика сцена",
    "start": "2026-12-30T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x31dd84013e7a106698c690e0acde6bb2",
@@ -6337,24 +6321,6 @@
    "url": "https://tickets.rs/event/plasido_domingo_29740",
    "venue": "sava_centar"
   },
-  "terazije:1281": {
-   "available": null,
-   "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1281",
-   "extra": {
-    "box_office_only": false,
-    "prostorterminid": "1281"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "1281",
-   "stage": "Велика сцена",
-   "start": "2026-11-20T19:30:00+01:00",
-   "status": "on_sale",
-   "subtitle": "Мјузикл у режији Југа Радивојевића",
-   "title": "ПРОДУЦЕНТИ",
-   "url": "https://pozoristeterazije.com/predstave/producenti/\n",
-   "venue": "terazije"
-  },
   "terazije:1282": {
    "available": null,
    "buy_url": "https://bilet.pozoristeterazije.com/scena.php?prostorterminid=1282",
@@ -6601,7 +6567,7 @@
    "source_id": "1295",
    "stage": "Велика сцена",
    "start": "2026-12-14T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "",
    "title": "Фестивал фолклора - ДЕВЕТ ВЕЛИЧАНСТВЕНИХ",
    "url": "https://pozoristeterazije.com/repertoar/",
@@ -13487,6 +13453,7 @@
    "venue": "terazije"
   },
   "terazije:1295": {
+   "low": "2026-11-20T23:07:51+01:00",
    "on_sale": "2026-11-09T21:38:59+01:00",
    "start": "2026-12-14T19:30:00+01:00",
    "title": "Фестивал фолклора - ДЕВЕТ ВЕЛИЧАНСТВЕНИХ",
@@ -13495,14 +13462,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-20T22:07:55+01:00",
-  "jdp": "2026-11-20T22:07:55+01:00",
-  "kolarac": "2026-11-20T22:07:55+01:00",
+  "bdp": "2026-11-20T23:07:51+01:00",
+  "jdp": "2026-11-20T23:07:51+01:00",
+  "kolarac": "2026-11-20T23:07:51+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-20T22:07:55+01:00",
-  "narodno": "2026-11-20T22:07:55+01:00",
-  "sava_centar": "2026-11-20T22:07:55+01:00",
-  "terazije": "2026-11-20T22:07:55+01:00"
+  "madlenianum_tickets": "2026-11-20T23:07:51+01:00",
+  "narodno": "2026-11-20T23:07:51+01:00",
+  "sava_centar": "2026-11-20T23:07:51+01:00",
+  "terazije": "2026-11-20T23:07:51+01:00"
  },
  "season": {
   "live": {
