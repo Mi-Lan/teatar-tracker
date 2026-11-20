@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 9,
+   "fails": 10,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -4440,19 +4440,17 @@
    "venue": "narodno"
   },
   "narodno:6379": {
-   "available": 5,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6379",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-20T15:07:40+01:00",
-    "repid": "6379",
-    "seats": 224
+    "repid": "6379"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6379",
    "stage": "Велика сцена",
    "start": "2026-11-28T14:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x4e519ce8fcabe8cca556243cb4dccfb7",
@@ -13462,14 +13460,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-20T23:07:51+01:00",
-  "jdp": "2026-11-20T23:07:51+01:00",
-  "kolarac": "2026-11-20T23:07:51+01:00",
+  "bdp": "2026-11-21T00:07:49+01:00",
+  "jdp": "2026-11-21T00:07:49+01:00",
+  "kolarac": "2026-11-21T00:07:49+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-20T23:07:51+01:00",
-  "narodno": "2026-11-20T23:07:51+01:00",
-  "sava_centar": "2026-11-20T23:07:51+01:00",
-  "terazije": "2026-11-20T23:07:51+01:00"
+  "madlenianum_tickets": "2026-11-21T00:07:49+01:00",
+  "narodno": "2026-11-21T00:07:49+01:00",
+  "sava_centar": "2026-11-21T00:07:49+01:00",
+  "terazije": "2026-11-21T00:07:49+01:00"
  },
  "season": {
   "live": {
