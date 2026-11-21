@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 35,
+   "fails": 36,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -4312,19 +4312,17 @@
    "venue": "narodno"
   },
   "narodno:6365": {
-   "available": 1,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6365",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-21T09:07:53+01:00",
-    "repid": "6365",
-    "seats": 224
+    "repid": "6365"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6365",
    "stage": "Велика сцена",
    "start": "2026-12-28T19:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=xa3883daf83e82f5a905d35a8f9176f6f",
@@ -10111,6 +10109,7 @@
    ],
    "low": "2026-11-11T10:08:14+01:00",
    "seats": 224,
+   "sold_out": "2026-11-21T22:56:57+01:00",
    "start": "2026-12-28T19:00:00+01:00",
    "title": "Крцко Орашчић",
    "venue": "narodno"
@@ -13715,14 +13714,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-21T22:07:42+01:00",
-  "jdp": "2026-11-21T22:07:42+01:00",
-  "kolarac": "2026-11-21T22:07:42+01:00",
+  "bdp": "2026-11-21T22:56:57+01:00",
+  "jdp": "2026-11-21T22:56:57+01:00",
+  "kolarac": "2026-11-21T22:56:57+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-21T22:07:42+01:00",
-  "narodno": "2026-11-21T22:07:42+01:00",
-  "sava_centar": "2026-11-21T22:07:42+01:00",
-  "terazije": "2026-11-21T22:07:42+01:00"
+  "madlenianum_tickets": "2026-11-21T22:56:57+01:00",
+  "narodno": "2026-11-21T22:56:57+01:00",
+  "sava_centar": "2026-11-21T22:56:57+01:00",
+  "terazije": "2026-11-21T22:56:57+01:00"
  },
  "season": {
   "live": {
