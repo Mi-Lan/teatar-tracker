@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 33,
+   "fails": 34,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -4615,7 +4615,7 @@
    "source_id": "6461",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-21T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "not_on_sale",
    "subtitle": "трагикомедија Душана Ковачевића",
    "title": "Балкански шпијун",
    "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x108c14b36ce30434e1b4cb0c283eadfa",
@@ -13715,14 +13715,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-21T20:07:48+01:00",
-  "jdp": "2026-11-21T20:07:48+01:00",
-  "kolarac": "2026-11-21T20:07:48+01:00",
+  "bdp": "2026-11-21T21:08:13+01:00",
+  "jdp": "2026-11-21T21:08:13+01:00",
+  "kolarac": "2026-11-21T21:08:13+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-21T20:07:48+01:00",
-  "narodno": "2026-11-21T20:07:48+01:00",
-  "sava_centar": "2026-11-21T20:07:48+01:00",
-  "terazije": "2026-11-21T20:07:48+01:00"
+  "madlenianum_tickets": "2026-11-21T21:08:13+01:00",
+  "narodno": "2026-11-21T21:08:13+01:00",
+  "sava_centar": "2026-11-21T21:08:13+01:00",
+  "terazije": "2026-11-21T21:08:13+01:00"
  },
  "season": {
   "live": {
