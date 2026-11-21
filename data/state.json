@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 12,
+   "fails": 13,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -13460,14 +13460,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-21T02:07:53+01:00",
-  "jdp": "2026-11-21T02:07:53+01:00",
-  "kolarac": "2026-11-21T02:07:53+01:00",
+  "bdp": "2026-11-21T02:43:31+01:00",
+  "jdp": "2026-11-21T02:43:31+01:00",
+  "kolarac": "2026-11-21T02:43:31+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-21T02:07:53+01:00",
-  "narodno": "2026-11-21T02:07:53+01:00",
-  "sava_centar": "2026-11-21T02:07:53+01:00",
-  "terazije": "2026-11-21T02:07:53+01:00"
+  "madlenianum_tickets": "2026-11-21T02:43:31+01:00",
+  "narodno": "2026-11-21T02:43:31+01:00",
+  "sava_centar": "2026-11-21T02:43:31+01:00",
+  "terazije": "2026-11-21T02:43:31+01:00"
  },
  "season": {
   "live": {
