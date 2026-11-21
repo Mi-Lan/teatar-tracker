@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 26,
+   "fails": 27,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -3197,16 +3197,17 @@
   },
   "jdp:202611232000-pucina": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1240",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1240"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611232000-pucina",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-23T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Branislav Nušić",
    "title": "Pučina",
    "url": "https://www.jdp.rs/rs/performance/%d0%bf%d1%83%d1%87%d0%b8%d0%bd%d0%b0/",
@@ -3319,17 +3320,16 @@
   },
   "jdp:202611282000-ricard-drugi": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1245",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1245"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-28T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -4607,17 +4607,19 @@
    "venue": "narodno"
   },
   "narodno:6461": {
-   "available": null,
-   "buy_url": "",
+   "available": 3,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6461",
    "extra": {
-    "repid": "6461"
+    "counted_at": "2026-11-21T15:07:37+01:00",
+    "repid": "6461",
+    "seats": 194
    },
    "price": "",
    "sales_start": null,
    "source_id": "6461",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-21T20:30:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "трагикомедија Душана Ковачевића",
    "title": "Балкански шпијун",
    "url": "https://www.narodnopozoriste.rs/predstave/balkanski-spijun?m=x108c14b36ce30434e1b4cb0c283eadfa",
@@ -11600,6 +11602,10 @@
     [
      "2026-11-20T11:07:28+01:00",
      4
+    ],
+    [
+     "2026-11-21T15:07:37+01:00",
+     3
     ]
    ],
    "low": "2026-11-17T19:30:00+01:00",
@@ -13713,14 +13719,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-21T14:07:50+01:00",
-  "jdp": "2026-11-21T14:07:50+01:00",
-  "kolarac": "2026-11-21T14:07:50+01:00",
+  "bdp": "2026-11-21T15:08:02+01:00",
+  "jdp": "2026-11-21T15:08:02+01:00",
+  "kolarac": "2026-11-21T15:08:02+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-21T14:07:50+01:00",
-  "narodno": "2026-11-21T14:07:50+01:00",
-  "sava_centar": "2026-11-21T14:07:50+01:00",
-  "terazije": "2026-11-21T14:07:50+01:00"
+  "madlenianum_tickets": "2026-11-21T15:08:02+01:00",
+  "narodno": "2026-11-21T15:08:02+01:00",
+  "sava_centar": "2026-11-21T15:08:02+01:00",
+  "terazije": "2026-11-21T15:08:02+01:00"
  },
  "season": {
   "live": {
