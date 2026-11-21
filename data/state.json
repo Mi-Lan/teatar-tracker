@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 18,
+   "fails": 19,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -2735,6 +2735,7 @@
   "new_show:terazije:1294": "2026-11-09T21:38:59+01:00",
   "new_show:terazije:1295": "2026-11-09T21:38:59+01:00",
   "released:narodno:2026-10-23": "2026-10-22T12:00:55+02:00",
+  "remind:356771dc:2026-11-21T08:00:00+01:00": "2026-11-21T08:07:45+01:00",
   "remind:dde60b3d:2026-10-21T09:00:00+02:00": "2026-10-22T12:00:55+02:00",
   "remind:dde60b3d:2026-10-22T09:00:00+02:00": "2026-10-22T12:00:55+02:00",
   "sales_opened:bdp:202612011930-kus-petlic": "2026-10-16T19:19:35+02:00",
@@ -13460,14 +13461,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-21T07:07:47+01:00",
-  "jdp": "2026-11-21T07:07:47+01:00",
-  "kolarac": "2026-11-21T07:07:47+01:00",
+  "bdp": "2026-11-21T08:07:45+01:00",
+  "jdp": "2026-11-21T08:07:45+01:00",
+  "kolarac": "2026-11-21T08:07:45+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-21T07:07:47+01:00",
-  "narodno": "2026-11-21T07:07:47+01:00",
-  "sava_centar": "2026-11-21T07:07:47+01:00",
-  "terazije": "2026-11-21T07:07:47+01:00"
+  "madlenianum_tickets": "2026-11-21T08:07:45+01:00",
+  "narodno": "2026-11-21T08:07:45+01:00",
+  "sava_centar": "2026-11-21T08:07:45+01:00",
+  "terazije": "2026-11-21T08:07:45+01:00"
  },
  "season": {
   "live": {
