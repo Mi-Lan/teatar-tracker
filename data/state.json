@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 25,
+   "fails": 26,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -3319,16 +3319,17 @@
   },
   "jdp:202611282000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1245",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1245"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611282000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-28T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -6422,7 +6423,7 @@
    "source_id": "1287",
    "stage": "Велика сцена",
    "start": "2026-11-29T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Мјузикл у режији Југа Радивојевића",
    "title": "СА ДРУГЕ СТРАНЕ ЈАСТУКА",
    "url": "https://pozoristeterazije.com/predstave/Sa druge strane jastuka",
@@ -13712,14 +13713,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-21T13:08:05+01:00",
-  "jdp": "2026-11-21T13:08:05+01:00",
-  "kolarac": "2026-11-21T13:08:05+01:00",
+  "bdp": "2026-11-21T14:07:50+01:00",
+  "jdp": "2026-11-21T14:07:50+01:00",
+  "kolarac": "2026-11-21T14:07:50+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-21T13:08:05+01:00",
-  "narodno": "2026-11-21T13:08:05+01:00",
-  "sava_centar": "2026-11-21T13:08:05+01:00",
-  "terazije": "2026-11-21T13:08:05+01:00"
+  "madlenianum_tickets": "2026-11-21T14:07:50+01:00",
+  "narodno": "2026-11-21T14:07:50+01:00",
+  "sava_centar": "2026-11-21T14:07:50+01:00",
+  "terazije": "2026-11-21T14:07:50+01:00"
  },
  "season": {
   "live": {
