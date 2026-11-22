@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 56,
+   "fails": 57,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -3772,7 +3772,7 @@
    "source_id": "6396",
    "stage": "Сцена „Раша Плаовић”",
    "start": "2026-11-22T17:00:00+01:00",
-   "status": "sold_out",
+   "status": "not_on_sale",
    "subtitle": "опера за децу Драгана Каролића,  у извођењу Оперског студија „Борислав Поповић“",
    "title": "Снежана и седам патуљака",
    "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=xa0efe677c83e1d2457e66e6d49063f5e",
@@ -13222,14 +13222,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-22T16:07:52+01:00",
-  "jdp": "2026-11-22T16:07:52+01:00",
-  "kolarac": "2026-11-22T16:07:52+01:00",
+  "bdp": "2026-11-22T17:07:53+01:00",
+  "jdp": "2026-11-22T17:07:53+01:00",
+  "kolarac": "2026-11-22T17:07:53+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-22T16:07:52+01:00",
-  "narodno": "2026-11-22T16:07:52+01:00",
-  "sava_centar": "2026-11-22T16:07:52+01:00",
-  "terazije": "2026-11-22T16:07:52+01:00"
+  "madlenianum_tickets": "2026-11-22T17:07:53+01:00",
+  "narodno": "2026-11-22T17:07:53+01:00",
+  "sava_centar": "2026-11-22T17:07:53+01:00",
+  "terazije": "2026-11-22T17:07:53+01:00"
  },
  "season": {
   "live": {
