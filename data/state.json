@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 59,
+   "fails": 60,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -3671,19 +3671,17 @@
    "venue": "narodno"
   },
   "narodno:6376": {
-   "available": 59,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6376",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-22T09:07:31+01:00",
-    "repid": "6376",
-    "seats": 367
+    "repid": "6376"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6376",
    "stage": "Велика сцена",
    "start": "2026-11-22T19:00:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "опера Станислава Биничког · Премијера",
    "title": "На уранку",
    "url": "https://www.narodnopozoriste.rs/predstave/na-uranku-2?m=x6876ba5d97dc285ed3de6a80dc96b399",
@@ -13222,14 +13220,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-22T18:45:37+01:00",
-  "jdp": "2026-11-22T18:45:37+01:00",
-  "kolarac": "2026-11-22T18:45:37+01:00",
+  "bdp": "2026-11-22T19:07:58+01:00",
+  "jdp": "2026-11-22T19:07:58+01:00",
+  "kolarac": "2026-11-22T19:07:58+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-22T18:45:37+01:00",
-  "narodno": "2026-11-22T18:45:37+01:00",
-  "sava_centar": "2026-11-22T18:45:37+01:00",
-  "terazije": "2026-11-22T18:45:37+01:00"
+  "madlenianum_tickets": "2026-11-22T19:07:58+01:00",
+  "narodno": "2026-11-22T19:07:58+01:00",
+  "sava_centar": "2026-11-22T19:07:58+01:00",
+  "terazije": "2026-11-22T19:07:58+01:00"
  },
  "season": {
   "live": {
