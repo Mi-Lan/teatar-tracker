@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 57,
+   "fails": 58,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -2471,16 +2471,17 @@
   },
   "jdp:202611222000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1239",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1239"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611222000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-22T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -3882,7 +3883,7 @@
    "source_id": "6449",
    "stage": "Велика сцена",
    "start": "2026-12-06T19:30:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "драма Синише Ковачевића",
    "title": "Велика драма",
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xab307e33933a01cd57a2494769b63a79",
@@ -10660,6 +10661,7 @@
      55
     ]
    ],
+   "low": "2026-11-22T18:07:50+01:00",
    "on_sale": "2026-10-21T21:15:04+02:00",
    "seats": 254,
    "start": "2026-12-06T19:30:00+01:00",
@@ -13222,14 +13224,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-22T17:07:53+01:00",
-  "jdp": "2026-11-22T17:07:53+01:00",
-  "kolarac": "2026-11-22T17:07:53+01:00",
+  "bdp": "2026-11-22T18:07:50+01:00",
+  "jdp": "2026-11-22T18:07:50+01:00",
+  "kolarac": "2026-11-22T18:07:50+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-22T17:07:53+01:00",
-  "narodno": "2026-11-22T17:07:53+01:00",
-  "sava_centar": "2026-11-22T17:07:53+01:00",
-  "terazije": "2026-11-22T17:07:53+01:00"
+  "madlenianum_tickets": "2026-11-22T18:07:50+01:00",
+  "narodno": "2026-11-22T18:07:50+01:00",
+  "sava_centar": "2026-11-22T18:07:50+01:00",
+  "terazije": "2026-11-22T18:07:50+01:00"
  },
  "season": {
   "live": {
