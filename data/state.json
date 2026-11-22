@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 51,
+   "fails": 52,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -296,114 +296,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T19:49:06+02:00"
   },
-  "bdp:202609261930-divlje-meso": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202609271930-divlje-meso": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610011930-sarlota-kasteli": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610021930-svaka-ptica-svome-jatu": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610031930-vise-od-igre-1-2-3-deo": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610041930-1984": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610051930-pra-faust": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610061930-kralj-ibi": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610071930-kralj-ibi": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610121930-crno-zlato": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610131930-crno-zlato": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610151930-bogojavljenska-noc": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610161930-bogojavljenska-noc": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610181800-bozanstvena-komedija": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610291930-laz": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610301930-laz": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202610311930-laz": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611011930-bogojavljenska-noc": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611021930-bogojavljenska-noc": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611031930-crno-zlato": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611041930-crno-zlato": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611131930-kralj-ibi": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611141930-kralj-ibi": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611151930-kralj-ibi": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611171930-laz": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611181930-laz": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202611191930-laz": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "bdp:202611301930-kus-petlic": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -412,16 +304,8 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "bdp:202612021930-prljave-ruke-czk-tivat": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "bdp:202612031930-besi-mgl": {
    "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "bdp:202612041930-na-cijoj-strani-ulysses": {
-   "ever_on_sale": false,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
   "bdp:202612051930-buha-u-uhu-dramski-teatar-skoplje": {
@@ -481,38 +365,6 @@
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
   "bdp:202612221930-crno-zlato": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609232000-heda-gabler": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609242000-sveti-georgije-ubiva-azdahu": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609252030-moj-muz": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609262000-mihael-kolhas": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609262030-preobrazaj": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609272000-ricard-drugi": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609292000-edip": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "jdp:202609302000-sirano": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
@@ -802,10 +654,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-10-21T17:02:42+02:00"
   },
-  "kolarac:24462": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "kolarac:26836": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -893,18 +741,6 @@
   "madlenianum:ivica-i-marica-202610041100": {
    "ever_on_sale": false,
    "first_seen": "2026-10-01T00:58:47+02:00"
-  },
-  "madlenianum:ja-ema-202609291930": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "madlenianum:ja-ema-202610021930": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "madlenianum:ja-ema-202610101930": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:27:59+02:00"
   },
   "madlenianum:ja-ema-202612151930": {
    "ever_on_sale": true,
@@ -1053,10 +889,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "madlenianum_tickets:26870": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "madlenianum_tickets:27217": {
    "ever_on_sale": true,
    "first_seen": "2026-09-24T13:37:37+02:00"
@@ -1128,10 +960,6 @@
   "madlenianum_tickets:27830": {
    "ever_on_sale": true,
    "first_seen": "2026-10-27T17:44:58+01:00"
-  },
-  "narodno:6343": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:31:07+02:00"
   },
   "narodno:6344": {
    "ever_on_sale": true,
@@ -1229,34 +1057,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
-  "narodno:6368": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6369": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6370": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6371": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6372": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6373": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6374": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
   "narodno:6375": {
    "ever_on_sale": false,
    "first_seen": "2026-09-23T11:31:07+02:00"
@@ -1281,211 +1081,11 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
-  "narodno:6381": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6382": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6383": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6384": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6385": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6386": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6387": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6388": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6389": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6390": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6391": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6392": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6393": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6394": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6395": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
   "narodno:6396": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
-  "narodno:6397": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
   "narodno:6398": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6400": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6401": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6402": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6403": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6404": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6405": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6406": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6407": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6408": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6411": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6412": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6413": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6414": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6415": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6416": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6417": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6418": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6419": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6420": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6421": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6422": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6423": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6424": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6425": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6426": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6427": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6428": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6429": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6430": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6431": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6432": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6433": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6434": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6435": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
@@ -1766,34 +1366,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "sava_centar:22769": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:23110": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:23197": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:23230": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:23965": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:23972": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:24288": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "sava_centar:24367": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -1810,27 +1382,11 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "sava_centar:24782": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "sava_centar:24874": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
   "sava_centar:25049": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:25363": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:25388": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:25395": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
@@ -1850,14 +1406,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "sava_centar:25919": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:25921": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "sava_centar:25927": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -1866,23 +1414,11 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "sava_centar:26002": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "sava_centar:26011": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "sava_centar:26024": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "sava_centar:26040": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26045": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
@@ -1902,23 +1438,7 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
-  "sava_centar:26241": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26303": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26323": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "sava_centar:26325": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26326": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
   },
@@ -1934,201 +1454,9 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-25T21:58:56+02:00"
   },
-  "sava_centar:26837": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26957": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26958": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26959": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26960": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26961": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26962": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26963": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26964": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26965": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26966": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26967": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26968": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26969": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26970": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26971": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26972": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26973": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26974": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26975": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26976": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26977": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26978": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26979": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26980": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26981": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26982": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26983": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26984": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26985": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26986": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26987": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26988": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26989": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26990": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26991": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26992": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26993": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26994": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26995": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26996": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26997": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26998": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:26999": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:27033": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:27034": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
   "sava_centar:27074": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:27077": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:27:59+02:00"
-  },
-  "sava_centar:27109": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
   },
   "sava_centar:27136": {
    "ever_on_sale": true,
@@ -2565,7 +1893,6 @@
   "new_date:narodno:6497": "2026-11-19T22:07:42+01:00",
   "new_date:narodno:6498": "2026-11-19T22:07:42+01:00",
   "new_date:sava_centar:26745": "2026-09-25T21:58:56+02:00",
-  "new_date:sava_centar:27109": "2026-09-23T11:31:07+02:00",
   "new_date:sava_centar:27189": "2026-10-08T18:22:01+02:00",
   "new_date:sava_centar:27273": "2026-09-28T17:17:29+02:00",
   "new_date:sava_centar:27301": "2026-09-29T17:39:49+02:00",
@@ -13931,14 +13258,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-22T11:07:48+01:00",
-  "jdp": "2026-11-22T11:07:48+01:00",
-  "kolarac": "2026-11-22T11:07:48+01:00",
+  "bdp": "2026-11-22T12:07:54+01:00",
+  "jdp": "2026-11-22T12:07:54+01:00",
+  "kolarac": "2026-11-22T12:07:54+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-22T11:07:48+01:00",
-  "narodno": "2026-11-22T11:07:48+01:00",
-  "sava_centar": "2026-11-22T11:07:48+01:00",
-  "terazije": "2026-11-22T11:07:48+01:00"
+  "madlenianum_tickets": "2026-11-22T12:07:54+01:00",
+  "narodno": "2026-11-22T12:07:54+01:00",
+  "sava_centar": "2026-11-22T12:07:54+01:00",
+  "terazije": "2026-11-22T12:07:54+01:00"
  },
  "season": {
   "live": {
