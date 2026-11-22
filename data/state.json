@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 60,
+   "fails": 61,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -292,10 +292,6 @@
  },
  "last_digest": "2026-10-26",
  "meta": {
-  "bdp:202609231930-filomena-maturano-czk-tivat": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T19:49:06+02:00"
-  },
   "bdp:202611301930-kus-petlic": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:27:59+02:00"
@@ -1074,10 +1070,6 @@
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
   "narodno:6380": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
-  "narodno:6396": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
@@ -1913,7 +1905,6 @@
   "new_date:terazije:1288": "2026-10-23T01:12:55+02:00",
   "new_date:terazije:1289": "2026-10-23T01:12:55+02:00",
   "new_date:terazije:1291": "2026-10-23T01:12:55+02:00",
-  "new_show:bdp:202609231930-filomena-maturano-czk-tivat": "2026-09-23T19:49:06+02:00",
   "new_show:jdp:202610012030-gubitnik": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610042000-gospodjica": "2026-09-25T17:47:32+02:00",
   "new_show:jdp:202610042030-audijencija": "2026-09-25T17:47:32+02:00",
@@ -3635,19 +3626,17 @@
    "venue": "narodno"
   },
   "narodno:6366": {
-   "available": 4,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6366",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-22T09:07:57+01:00",
-    "repid": "6366",
-    "seats": 478
+    "repid": "6366"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6366",
    "stage": "Велика сцена",
    "start": "2026-12-29T19:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x9ceb0670793d7281ddec0231ee218cd5",
@@ -3757,23 +3746,6 @@
    "subtitle": "опера Ђузепа Вердија",
    "title": "Травијата",
    "url": "https://www.narodnopozoriste.rs/predstave/travijata?m=x39f5a49ba8bfb520a4371bf5e547c7d4",
-   "venue": "narodno"
-  },
-  "narodno:6396": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6396"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6396",
-   "stage": "Сцена „Раша Плаовић”",
-   "start": "2026-11-22T17:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "опера за децу Драгана Каролића,  у извођењу Оперског студија „Борислав Поповић“",
-   "title": "Снежана и седам патуљака",
-   "url": "https://www.narodnopozoriste.rs/predstave/snezana-i-sedam-patuljaka?m=xa0efe677c83e1d2457e66e6d49063f5e",
    "venue": "narodno"
   },
   "narodno:6398": {
@@ -9526,6 +9498,7 @@
    ],
    "low": "2026-11-11T10:08:14+01:00",
    "seats": 478,
+   "sold_out": "2026-11-22T20:07:58+01:00",
    "start": "2026-12-29T19:00:00+01:00",
    "title": "Крцко Орашчић",
    "venue": "narodno"
@@ -13220,14 +13193,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-22T19:07:58+01:00",
-  "jdp": "2026-11-22T19:07:58+01:00",
-  "kolarac": "2026-11-22T19:07:58+01:00",
+  "bdp": "2026-11-22T20:07:58+01:00",
+  "jdp": "2026-11-22T20:07:58+01:00",
+  "kolarac": "2026-11-22T20:07:58+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-22T19:07:58+01:00",
-  "narodno": "2026-11-22T19:07:58+01:00",
-  "sava_centar": "2026-11-22T19:07:58+01:00",
-  "terazije": "2026-11-22T19:07:58+01:00"
+  "madlenianum_tickets": "2026-11-22T20:07:58+01:00",
+  "narodno": "2026-11-22T20:07:58+01:00",
+  "sava_centar": "2026-11-22T20:07:58+01:00",
+  "terazije": "2026-11-22T20:07:58+01:00"
  },
  "season": {
   "live": {
