@@ -2,7 +2,7 @@
  "health": {
   "madlenianum": {
    "alerted": true,
-   "fails": 54,
+   "fails": 55,
    "last_error": "HTTPStatusError: Server error '500 Service unavailable (with message)' for url 'https://operatheatremadlenianum.com/home?mini=2026-11'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   }
  },
@@ -1057,10 +1057,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
   },
-  "narodno:6375": {
-   "ever_on_sale": false,
-   "first_seen": "2026-09-23T11:31:07+02:00"
-  },
   "narodno:6376": {
    "ever_on_sale": true,
    "first_seen": "2026-09-23T11:31:07+02:00"
@@ -1586,18 +1582,6 @@
    "ever_on_sale": true,
    "first_seen": "2026-11-17T16:07:40+01:00"
   },
-  "terazije:1246": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T14:35:11+02:00"
-  },
-  "terazije:1247": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T14:35:11+02:00"
-  },
-  "terazije:1248": {
-   "ever_on_sale": true,
-   "first_seen": "2026-09-23T14:35:11+02:00"
-  },
   "terazije:1252": {
    "ever_on_sale": true,
    "first_seen": "2026-09-25T01:50:54+02:00"
@@ -2099,9 +2083,6 @@
   "sales_opened:narodno:6496": "2026-11-20T11:07:52+01:00",
   "sales_opened:narodno:6497": "2026-11-20T11:07:52+01:00",
   "sales_opened:narodno:6498": "2026-11-20T11:07:52+01:00",
-  "season:2026-09-23": "2026-09-23T14:35:11+02:00",
-  "season:2026-09-23:00:05": "2026-09-23T14:40:37+02:00",
-  "season:2026-09-23:08:00": "2026-09-23T14:40:37+02:00",
   "season:2026-09-24:00:05": "2026-09-24T08:03:52+02:00",
   "season:2026-09-24:08:00": "2026-09-24T08:03:52+02:00",
   "season:2026-09-25:00:05": "2026-09-25T12:08:05+02:00",
@@ -3687,23 +3668,6 @@
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x31dd84013e7a106698c690e0acde6bb2",
-   "venue": "narodno"
-  },
-  "narodno:6375": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6375"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6375",
-   "stage": "Велика сцена",
-   "start": "2026-11-22T12:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "",
-   "title": "Дан Народног позоришта",
-   "url": "https://www.narodnopozoriste.rs/predstave/dan-narodnog-pozorista?m=x70e8e390d629ecc3b5c3ed368425805a",
    "venue": "narodno"
   },
   "narodno:6376": {
@@ -13257,14 +13221,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-22T14:07:47+01:00",
-  "jdp": "2026-11-22T14:07:47+01:00",
-  "kolarac": "2026-11-22T14:07:47+01:00",
+  "bdp": "2026-11-22T15:07:54+01:00",
+  "jdp": "2026-11-22T15:07:54+01:00",
+  "kolarac": "2026-11-22T15:07:54+01:00",
   "madlenianum": "2026-11-20T15:07:56+01:00",
-  "madlenianum_tickets": "2026-11-22T14:07:47+01:00",
-  "narodno": "2026-11-22T14:07:47+01:00",
-  "sava_centar": "2026-11-22T14:07:47+01:00",
-  "terazije": "2026-11-22T14:07:47+01:00"
+  "madlenianum_tickets": "2026-11-22T15:07:54+01:00",
+  "narodno": "2026-11-22T15:07:54+01:00",
+  "sava_centar": "2026-11-22T15:07:54+01:00",
+  "terazije": "2026-11-22T15:07:54+01:00"
  },
  "season": {
   "live": {
