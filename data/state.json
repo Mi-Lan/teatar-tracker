@@ -2402,23 +2402,6 @@
    "url": "https://www.bdp.rs/cir/predstave-cir/crno-zlato-2",
    "venue": "bdp"
   },
-  "jdp:202611232000-pucina": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "label": "Rasprodato"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "202611232000-pucina",
-   "stage": "SCENA LJUBA TADIĆ",
-   "start": "2026-11-23T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "Branislav Nušić",
-   "title": "Pučina",
-   "url": "https://www.jdp.rs/rs/performance/%d0%bf%d1%83%d1%87%d0%b8%d0%bd%d0%b0/",
-   "venue": "jdp"
-  },
   "jdp:202611242000-hotel-slobodan-promet": {
    "available": null,
    "buy_url": "",
@@ -2632,10 +2615,10 @@
    "venue": "kolarac"
   },
   "madlenianum:evita-202611281930": {
-   "available": 30,
+   "available": 29,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1169",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "MJUZIKL",
     "label": "PREMIJERA",
     "shop_id": "1169"
@@ -2652,10 +2635,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:evita-202612021930": {
-   "available": 109,
+   "available": 110,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "MJUZIKL",
     "label": "I REPRIZA",
     "shop_id": "1170"
@@ -2672,10 +2655,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:ja-ema-202612151930": {
-   "available": 127,
+   "available": 129,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1168",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "DRAMA",
     "shop_id": "1168"
    },
@@ -2690,26 +2673,11 @@
    "url": "https://operatheatremadlenianum.com/ja-ema",
    "venue": "madlenianum"
   },
-  "madlenianum:kazanova-protiv-don-zuana-202611232000": {
-   "available": null,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
-   "extra": {},
-   "price": "",
-   "sales_start": null,
-   "source_id": "kazanova-protiv-don-zuana-202611232000",
-   "stage": "",
-   "start": "2026-11-23T20:00:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "Miodrag Ilić",
-   "title": "KAZANOVA PROTIV DON ŽUANA",
-   "url": "https://operatheatremadlenianum.com/kazanova-protiv-don-zuana",
-   "venue": "madlenianum"
-  },
   "madlenianum:krcko-orascic-0-202612011700": {
-   "available": 123,
+   "available": 124,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1164",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1164"
    },
@@ -2728,7 +2696,7 @@
    "available": 103,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1165",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1165"
    },
@@ -2747,7 +2715,7 @@
    "available": 138,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1166",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1166"
    },
@@ -2763,10 +2731,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:krcko-orascic-0-202612071930": {
-   "available": 168,
+   "available": 165,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1167",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1167"
    },
@@ -2785,7 +2753,7 @@
    "available": 176,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1173",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1173"
    },
@@ -2804,7 +2772,7 @@
    "available": 175,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1174",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1174"
    },
@@ -2823,7 +2791,7 @@
    "available": 174,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1175",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1175"
    },
@@ -2842,7 +2810,7 @@
    "available": 164,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1176",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1176"
    },
@@ -2861,7 +2829,7 @@
    "available": 175,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1177",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1177"
    },
@@ -2880,7 +2848,7 @@
    "available": 180,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1178",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1178"
    },
@@ -2899,7 +2867,7 @@
    "available": 182,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1179",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1179"
    },
@@ -2918,7 +2886,7 @@
    "available": 184,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1180",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "BALET",
     "shop_id": "1180"
    },
@@ -2937,7 +2905,7 @@
    "available": 117,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1162",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1162"
    },
@@ -2956,7 +2924,7 @@
    "available": 77,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1163",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1163"
    },
@@ -2975,7 +2943,7 @@
    "available": 32,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1161",
    "extra": {
-    "counted_at": "2026-11-23T22:07:36+01:00",
+    "counted_at": "2026-11-23T23:07:49+01:00",
     "genre": "DRAMA",
     "shop_id": "1161"
    },
@@ -3042,24 +3010,6 @@
    "subtitle": "",
    "title": "JA EMA",
    "url": "https://tickets.rs/event/ja_ema_29276",
-   "venue": "madlenianum_tickets"
-  },
-  "madlenianum_tickets:27829": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/kazanova_protiv_don_zuana_29280",
-   "extra": {
-    "end_date": "2026-11-23",
-    "event_status": "Rasprodat"
-   },
-   "price": "od 1700 RSD",
-   "sales_start": null,
-   "source_id": "27829",
-   "stage": "",
-   "start": "2026-11-23T20:00:00+01:00",
-   "status": "sold_out",
-   "subtitle": "",
-   "title": "KAZANOVA PROTIV DON ŽUANA",
-   "url": "https://tickets.rs/event/kazanova_protiv_don_zuana_29280",
    "venue": "madlenianum_tickets"
   },
   "madlenianum_tickets:27830": {
@@ -3613,23 +3563,6 @@
    "subtitle": "балет П. И. Чајковског · на музички снимак Оркестра Народног позоришта у Беораду",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
-   "venue": "narodno"
-  },
-  "narodno:6445": {
-   "available": null,
-   "buy_url": "",
-   "extra": {
-    "repid": "6445"
-   },
-   "price": "",
-   "sales_start": null,
-   "source_id": "6445",
-   "stage": "Велика сцена",
-   "start": "2026-11-23T19:30:00+01:00",
-   "status": "not_on_sale",
-   "subtitle": "комедија Бранислава Нушића",
-   "title": "Ожалошћена породица",
-   "url": "https://www.narodnopozoriste.rs/predstave/ozaloscena-porodica?m=xf6153a70a28272e17b5782274c865b86",
    "venue": "narodno"
   },
   "narodno:6446": {
@@ -4826,24 +4759,6 @@
    "url": "https://tickets.rs/event/lexington_28148",
    "venue": "sava_centar"
   },
-  "sava_centar:26745": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/emina_jahovic_28188",
-   "extra": {
-    "end_date": "2026-11-23",
-    "event_status": ""
-   },
-   "price": "od 2500 RSD",
-   "sales_start": null,
-   "source_id": "26745",
-   "stage": "",
-   "start": "2026-11-23T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "Emina Jahović",
-   "url": "https://tickets.rs/event/emina_jahovic_28188",
-   "venue": "sava_centar"
-  },
   "sava_centar:27074": {
    "available": null,
    "buy_url": "https://tickets.rs/event/magla_bend_28520",
@@ -5274,24 +5189,6 @@
    "subtitle": "",
    "title": "Magla bend",
    "url": "https://tickets.rs/event/magla_bend_29684",
-   "venue": "sava_centar"
-  },
-  "sava_centar:28239": {
-   "available": null,
-   "buy_url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29689",
-   "extra": {
-    "end_date": "2026-11-23",
-    "event_status": ""
-   },
-   "price": "od 2200 RSD",
-   "sales_start": null,
-   "source_id": "28239",
-   "stage": "Immersive sala",
-   "start": "2026-11-23T20:00:00+01:00",
-   "status": "on_sale",
-   "subtitle": "",
-   "title": "SLEDEĆI PUT KADA DOTAKNEŠ DNO",
-   "url": "https://tickets.rs/event/sledeci_put_kada_dotaknes_dno_29689",
    "venue": "sava_centar"
   },
   "sava_centar:28246": {
@@ -6966,6 +6863,10 @@
     [
      "2026-11-23T21:51:57+01:00",
      30
+    ],
+    [
+     "2026-11-23T23:07:49+01:00",
+     29
     ]
    ],
    "start": "2026-11-28T19:30:00+01:00",
@@ -7101,6 +7002,10 @@
     [
      "2026-11-23T21:51:57+01:00",
      109
+    ],
+    [
+     "2026-11-23T23:07:49+01:00",
+     110
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7157,6 +7062,10 @@
     [
      "2026-11-23T22:07:36+01:00",
      127
+    ],
+    [
+     "2026-11-23T23:07:49+01:00",
+     129
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7268,6 +7177,10 @@
     [
      "2026-11-23T21:51:57+01:00",
      123
+    ],
+    [
+     "2026-11-23T23:07:49+01:00",
+     124
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7456,6 +7369,10 @@
     [
      "2026-11-23T21:08:46+01:00",
      168
+    ],
+    [
+     "2026-11-23T23:07:49+01:00",
+     165
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -13398,14 +13315,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-23T22:07:36+01:00",
-  "jdp": "2026-11-23T22:07:36+01:00",
-  "kolarac": "2026-11-23T22:07:36+01:00",
-  "madlenianum": "2026-11-23T22:07:36+01:00",
-  "madlenianum_tickets": "2026-11-23T22:07:36+01:00",
-  "narodno": "2026-11-23T22:07:36+01:00",
-  "sava_centar": "2026-11-23T22:07:36+01:00",
-  "terazije": "2026-11-23T22:07:36+01:00"
+  "bdp": "2026-11-23T23:07:49+01:00",
+  "jdp": "2026-11-23T23:07:49+01:00",
+  "kolarac": "2026-11-23T23:07:49+01:00",
+  "madlenianum": "2026-11-23T23:07:49+01:00",
+  "madlenianum_tickets": "2026-11-23T23:07:49+01:00",
+  "narodno": "2026-11-23T23:07:49+01:00",
+  "sava_centar": "2026-11-23T23:07:49+01:00",
+  "terazije": "2026-11-23T23:07:49+01:00"
  },
  "season": {
   "live": {
