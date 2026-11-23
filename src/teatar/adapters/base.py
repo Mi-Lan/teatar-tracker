@@ -43,6 +43,7 @@ class Adapter(ABC):
         self.previous: dict[str, Performance] = {}
         self.first_seen: dict[str, str] = {}
         self.warning = ""
+        self.notes: dict = {}  # kept in the state between runs, per venue (filled in for uses_previous adapters)
         if unknown := sorted(set(options) - self.known_options):
             log.warning("venues.yaml: %s has unknown option(s) %s for adapter %s (typo?)", key, ", ".join(unknown), self.adapter_name or type(self).__name__)
 

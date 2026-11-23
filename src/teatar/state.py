@@ -34,6 +34,7 @@ class State:
     scanned: dict[str, str] = field(default_factory=dict)  # venue -> time of its last successful check
     sales: dict[str, dict] = field(default_factory=dict)  # uid -> sell-out record, kept after the show (see sales.py)
     sales_seed: str = ""  # which data/sales_seed.json was imported (see sales.import_seed)
+    adapters: dict[str, dict] = field(default_factory=dict)  # venue -> what its adapter keeps between runs (e.g. Narodno's last login)
 
     # --- persistence -------------------------------------------------------------------------
     @classmethod

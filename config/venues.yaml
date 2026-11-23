@@ -28,6 +28,10 @@ narodno:
   seat_counts:  # exact seats left need a login (NARODNO_EMAIL / NARODNO_PASSWORD secrets); it logs in only for these:
     daily_at: "09:00"  # every on-sale date, once a day, at the first check after this time
     after_release_minutes: 90  # new dates, at the first check at least this long after they appeared
+    # going easy on the site, so the account isn't blocked:
+    page_seconds: 3  # wait between ticket pages
+    min_gap_minutes: 60  # at most one login per this long (release-day polling scans every 10 min)
+    retry_hours: 3  # after a failed count, don't log in again for this long
   look: {banner: narodno, titles: italic, marker: "❦", dates: quote, rule: "— ❦ —"}
 
 bdp:

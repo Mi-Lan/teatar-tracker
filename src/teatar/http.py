@@ -56,7 +56,8 @@ class Http:
                 log.warning("%s %s failed (%s), retrying", method, url, exc)
             else:
                 if resp.status_code not in RETRY_STATUS or attempt == self.retries:
-                    resp.raise_for_status()
+                    if not resp.is_redirect:  # only returned when the caller asked not to follow redirects
+                        resp.raise_for_status()
                     return resp
                 log.warning("%s %s -> HTTP %s, retrying", method, url, resp.status_code)
                 wait = max(wait, _retry_after(resp))

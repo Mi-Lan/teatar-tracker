@@ -131,6 +131,10 @@ imports once. It needs the full history (`git fetch --unshallow` in a shallow cl
    they're a few hours old; on sale / under 10% / sold out still update from the public listing every check. Each
    count is also kept in the date's sell-out history. If the login stops working, you get the usual "failed 3
    checks" warning for "Narodno pozorište seat counts", and everything else keeps working.
+   It goes easy on the site so it isn't taken for an attack: one ticket page every 3 s, at most one login an hour
+   (even during the all-day polling on release day), no new attempt for 3 hours after a failed one, and redirects
+   followed one at a time, at most 3 per page (a page that keeps redirecting is skipped; three in a row stop the
+   count). All four are `seat_counts` options in `venues.yaml`.
 
 6. **Madlenianum's ticket shop (optional).** Their shop lists performances only to signed-in visitors, and it can
    have a date (and its tickets) days before the theatre's public site does. Add a secret `MADLENIANUM_PASSWORD`

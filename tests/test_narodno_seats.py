@@ -1,9 +1,8 @@
 """Narodno exact seat counts from the logged-in ticket pages (no network: a fake site)."""
 
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
-import httpx
 import pytest
 from conftest import FakeAdapter
 
@@ -19,8 +18,10 @@ LOGIN = '<form data-account-form="login"><input type="hidden" name="fn" value="l
 
 
 class Resp:
-    def __init__(self, url, text="", data=None):
+    def __init__(self, url, text="", data=None, location=None):
         self.url, self.text, self._data = url, text, data
+        self.headers = {"location": location} if location else {}
+        self.is_redirect = bool(location)
 
     def json(self):
         return self._data
@@ -46,19 +47,20 @@ class FakeSite:
         soup.select_one(f"#repid{rep_id}").decompose()
         self.listing = str(soup)
 
-    def get(self, url, **kw):
+    def get(self, url, follow_redirects=True, **kw):
+        assert not ("odabir" in url and follow_redirects), "ticket page redirects must be followed one at a time"
         self.requests.append(url)
         if url.endswith("/repertoar"):
             return Resp(url, self.listing)
         if url.endswith("/nalog/prijavi-se"):
             return Resp(url, LOGIN)
         if "odabir-ulaznica" in url:
-            if "all" in self.looping or url.rsplit("=", 1)[-1] in self.looping:
-                raise httpx.TooManyRedirects("Exceeded maximum allowed redirects.")
+            if "all" in self.looping or url.split("p=")[1].split("&")[0] in self.looping:
+                return Resp(url, location=url + "&again=1")  # round and round
             if self.drop_session_after is not None and sum("odabir" in u for u in self.requests) > self.drop_session_after:
                 self.logged_in, self.drop_session_after = False, None
             if not self.logged_in:
-                return Resp(narodno.LOGIN_PAGE + "?redirect=x", LOGIN)
+                return Resp(url, location="/nalog/prijavi-se?redirect=x")
             return Resp(url, SEATS)
         raise AssertionError(url)
 
@@ -120,23 +122,68 @@ def test_session_dropped_midway_logs_in_again(today, creds):
     assert all(p.available == 145 for p in perfs if p.buy_url and p.status.buyable)
 
 
-def test_a_ticket_page_stuck_in_redirects_is_skipped(today, creds):
+def ticket_ids(site):
+    return [p.buy_url.split("p=")[1] for p in adapter(site).poll() if p.buy_url and p.status.buyable]
+
+
+def test_a_ticket_page_that_keeps_redirecting_is_skipped(today, creds):
     site = FakeSite()
-    buyable = [p for p in adapter(site).poll() if p.buy_url and p.status.buyable]
-    stuck = buyable[3].buy_url.rsplit("=", 1)[-1]
+    stuck = ticket_ids(site)[3]
     site.looping = {stuck}
     a = adapter(site)
     perfs = a.fetch()
-    assert a.warning == "" and len(site.posts) == 2  # one more login for the stuck page, then it's skipped
+    assert a.warning == "" and len(site.posts) == 1
+    assert sum(f"p={stuck}" in u for u in site.requests) == 1 + narodno.NarodnoAdapter.MAX_HOPS  # never more
     counted = {p.uid: p.available for p in perfs if p.buy_url and p.status.buyable}
     assert counted.pop(f"narodno:{stuck}") is None and set(counted.values()) == {145}
 
 
-def test_every_ticket_page_stuck_in_redirects_warns(today, creds):
-    a = adapter(FakeSite(looping={"all"}))
+def test_pages_that_all_keep_redirecting_stop_the_count_early(today, creds):
+    site = FakeSite(looping={"all"})
+    a = adapter(site)
     perfs = a.fetch()
-    assert a.warning == "seat counts: RuntimeError: every ticket page is stuck in redirects (login not kept?)"
+    assert "ticket pages keep redirecting" in a.warning and "stopped counting" in a.warning
+    assert sum("odabir" in u for u in site.requests) == 3 * (1 + narodno.NarodnoAdapter.MAX_HOPS)
     assert len(perfs) == 69 and all(p.available is None for p in perfs)
+
+
+def test_ticket_pages_are_paced(today, creds, monkeypatch):
+    waits = []
+    monkeypatch.setattr(narodno.NarodnoAdapter, "sleep", staticmethod(waits.append))
+    adapter(FakeSite()).fetch()
+    assert len(waits) == 58 and set(waits) == {3.0}  # 59 pages, 3 s apart
+
+
+def test_no_new_login_soon_after_one_or_for_hours_after_a_failure(today, creds):
+    start = models.datetime(2026, 11, 9, 10, 0, tzinfo=TZ)  # after daily_at: every on-sale date is due
+    models.set_clock(lambda: start)
+    site = FakeSite()
+    a = adapter(site)
+    a.fetch()
+    assert len(site.posts) == 1 and "seats_tried" in a.notes and "seats_error" not in a.notes
+
+    def check(minutes_later, site):
+        models.set_clock(lambda: start + timedelta(minutes=minutes_later))
+        b = adapter(site)
+        b.notes = dict(a.notes)
+        b.fetch()
+        a.notes = b.notes
+        return b
+
+    fresh = FakeSite()
+    check(30, fresh)  # all dates due (no counts carried over), but it logged in half an hour ago
+    assert fresh.posts == [] and not any("odabir" in u for u in fresh.requests)
+
+    broken = FakeSite(password="changed")
+    b = check(61, broken)
+    assert len(broken.posts) == 1 and "login failed" in b.warning and "seats_error" in a.notes
+    for later in (61 + 60, 61 + 170):  # still failing as far as we know: no login, same warning
+        again = FakeSite()
+        b = check(later, again)
+        assert again.posts == [] and "login failed" in b.warning
+    healed = FakeSite()
+    b = check(61 + 181, healed)
+    assert len(healed.posts) == 1 and b.warning == "" and "seats_error" not in a.notes
 
 
 def test_wrong_password_keeps_the_listing_and_warns(today, creds):
@@ -266,3 +313,18 @@ def test_counts_are_kept_in_the_sell_out_history(make_ctx, clock, creds):
     r = next(r for r in ctx.state.sales.values() if r["title"] == "Власт")
     assert [c[1] for c in r["counts"]] == [145, 145] and r["seats"] == 323
     assert [c[0][:13] for c in r["counts"]] == ["2026-11-09T09", "2026-11-10T09"]
+
+
+def test_login_times_are_kept_in_the_state_between_runs(make_ctx, clock, creds):
+    from teatar.state import State
+
+    clock.t = models.datetime(2026, 11, 9, 10, 0, tzinfo=TZ)
+    ctx = make_ctx([adapter(FakeSite(password="changed"))])
+    run(ctx, allow_burst=False)
+    saved = State.load(ctx.cfg.state_path).adapters["narodno"]  # what the next run starts from
+    assert saved["seats_tried"].startswith("2026-11-09T10:00") and "login failed" in saved["seats_error"]
+    later = adapter(site := FakeSite())
+    ctx.adapters["narodno"] = later
+    clock.sleep(1800)
+    run(ctx, allow_burst=False)
+    assert site.posts == [] and "login failed" in later.warning  # waits, and still reports the problem

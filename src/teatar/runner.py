@@ -90,12 +90,16 @@ def scan(ctx: Ctx, keys: set[str] | None = None, include_custom: bool = True, qu
         if adapter.uses_previous:
             adapter.previous = {u: Performance.from_dict(d) for u, d in stored.items()}
             adapter.first_seen = {u: ctx.state.meta.get(u, {}).get("first_seen", "") for u in stored}
+            adapter.notes = dict(ctx.state.adapters.get(key, {}))
         try:
             perfs = adapter.poll() if quick else adapter.fetch()
         except Exception as exc:  # one broken site must not stop the others
             log.exception("%s failed", key)
             _health_fail(ctx, key, f"{type(exc).__name__}: {exc}")
             continue
+        finally:
+            if adapter.uses_previous and adapter.notes:
+                ctx.state.adapters[key] = adapter.notes
         tomorrow = (now() + timedelta(days=1)).isoformat()
         if not perfs and any(d["start"] > tomorrow for d in stored.values()):  # it had dates ahead: not a quiet week
             _health_fail(ctx, key, "returned 0 performances")

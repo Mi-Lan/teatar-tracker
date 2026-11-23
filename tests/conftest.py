@@ -97,3 +97,10 @@ def make_ctx(tmp_path: Path, clock):
         return Ctx(cfg=cfg, state=State(), http=None, tg=FakeTg(), adapters={a.key: a for a in adapters}, started=clock(), sleep=clock.sleep)
 
     return _make
+
+
+@pytest.fixture(autouse=True)
+def _no_waiting_between_ticket_pages(monkeypatch):
+    from teatar.adapters import narodno
+
+    monkeypatch.setattr(narodno.NarodnoAdapter, "sleep", staticmethod(lambda s: None))

@@ -15,6 +15,9 @@ NARODNO_EMAIL / NARODNO_PASSWORD set (GitHub secrets) the tracker logs in only w
   - after a release: dates first seen at least `after_release_minutes` (90) ago and never counted,
     i.e. at the next regular check (the release message itself goes out at once, from the listing).
 Other checks don't log in; the last counts are carried over (shown as ~N once they're a few hours old).
+Gently, so the site doesn't take it for an attack: one ticket page every `page_seconds` (3), at most one
+login per `min_gap_minutes` (60), and after a failed count none for `retry_hours` (3). Redirects on
+ticket pages are followed one at a time (at most 3), never in a loop.
 Each count is also kept in the date's sell-out history (sales.py), so how fast seats go is on record.
 """
 
@@ -23,10 +26,10 @@ from __future__ import annotations
 import logging
 import os
 import re
+import time
 from datetime import date, datetime, timedelta
 from urllib.parse import urljoin
 
-import httpx
 from bs4 import BeautifulSoup, Tag
 
 from ..dates import parse_time
@@ -40,6 +43,10 @@ LOGIN_PAGE = f"{BASE}/nalog/prijavi-se"
 API = f"{BASE}/api/ulaznice"
 
 log = logging.getLogger(__name__)
+
+
+class RedirectLoop(Exception):
+    """A ticket page that keeps redirecting (not to the login page)."""
 
 
 def _agenda_fields(e: Tag) -> dict:
@@ -141,17 +148,42 @@ class NarodnoAdapter(Adapter):
     uses_previous = True
     warning_label = "seat counts"  # `warning` is set when they couldn't be read; the listing is still good
 
+    sleep = staticmethod(time.sleep)  # between ticket pages (tests replace it)
+
     def fetch(self) -> list[Performance]:
         perfs = self.poll()
-        self.warning = ""
+        creds = os.environ.get("NARODNO_EMAIL") and os.environ.get("NARODNO_PASSWORD")
+        self.warning = self.notes.get("seats_error", "") if creds else ""  # until a count works again
         due = self.counts_due(perfs)
-        if due and os.environ.get("NARODNO_EMAIL") and os.environ.get("NARODNO_PASSWORD"):
+        if due and creds:
+            if paused := self._paused():
+                log.info("narodno seat counts: %s", paused)
+                return perfs
+            self.notes["seats_tried"] = now().isoformat(timespec="seconds")
             try:
                 self._seat_counts(due)
             except Exception as exc:  # the listing (and the carried-over counts) are still good
                 log.warning("narodno seat counts failed: %s", exc)
                 self.warning = f"seat counts: {type(exc).__name__}: {exc}"
+                self.notes["seats_error"] = self.warning
+            else:
+                self.warning = ""
+                self.notes.pop("seats_error", None)
         return perfs
+
+    def _paused(self) -> str:
+        """Why seat counts wait this time ("" when they don't): not long after the last login, and for
+        a few hours after a failed count."""
+        opts = self.options.get("seat_counts") or {}
+        tried = self.notes.get("seats_tried")
+        if not tried:
+            return ""
+        since = now() - datetime.fromisoformat(tried)
+        if self.notes.get("seats_error") and since < timedelta(hours=float(opts.get("retry_hours", 3))):
+            return f"last attempt failed {int(since.total_seconds() // 60)} min ago, waiting before logging in again"
+        if since < timedelta(minutes=float(opts.get("min_gap_minutes", 60))):
+            return f"logged in {int(since.total_seconds() // 60)} min ago, waiting before logging in again"
+        return ""
 
     def poll(self) -> list[Performance]:
         """The repertoire listing, with the last seat counts carried over (no login): every regular check,
@@ -193,33 +225,48 @@ class NarodnoAdapter(Adapter):
         if reply.get("error"):
             raise RuntimeError(f"login failed: {reply.get('errorMessage') or reply.get('message') or reply.get('error')}")
 
-    def _ticket_page(self, url: str) -> httpx.Response | None:
-        """A ticket page, or None when the site sends it round in redirects (one date's page can loop
-        between the ticket page and the login page while the rest are fine)."""
-        try:
-            return self.http.get(url)
-        except httpx.TooManyRedirects:
-            return None
+    MAX_HOPS = 3
+
+    def _ticket_page(self, url: str):
+        """A ticket page's response, or None when it sends us to the login page. Redirects are followed
+        one at a time, at most MAX_HOPS: a page that keeps redirecting raises instead of looping."""
+        for _ in range(self.MAX_HOPS + 1):
+            resp = self.http.get(url, follow_redirects=False)
+            if not resp.is_redirect:
+                return None if "prijavi-se" in str(resp.url) else resp
+            url = urljoin(str(resp.url), resp.headers["location"])
+            if "prijavi-se" in url:
+                return None
+        raise RedirectLoop(url)
 
     def _seat_counts(self, perfs: list[Performance]) -> None:
         self._login()
-        counted_any, looping = False, []
-        for p in perfs:
-            resp = self._ticket_page(p.buy_url)
-            if resp is None or "prijavi-se" in str(resp.url):  # session dropped: log in again, once
-                self._login()
+        relogged, counted_any, skipped, in_a_row = False, False, [], 0
+        page_seconds = float((self.options.get("seat_counts") or {}).get("page_seconds", 3))
+        for i, p in enumerate(perfs):
+            if i:
+                self.sleep(page_seconds)
+            try:
                 resp = self._ticket_page(p.buy_url)
-                if resp is None:  # skip this date: the others can still be counted
-                    looping.append(p.uid)
-                    continue
-                if "prijavi-se" in str(resp.url):
-                    raise RuntimeError("still sent to the login page after logging in")
+                if resp is None:  # session dropped: log in again, once per count
+                    if relogged:
+                        raise RuntimeError("still sent to the login page after logging in")
+                    self._login()
+                    relogged = True
+                    resp = self._ticket_page(p.buy_url)
+                    if resp is None:
+                        raise RuntimeError("still sent to the login page after logging in")
+            except RedirectLoop:  # this date's page: skip it, but stop if they all do (blocked?)
+                skipped.append(p.uid)
+                in_a_row += 1
+                if in_a_row >= 3:
+                    raise RuntimeError(f"ticket pages keep redirecting ({', '.join(skipped)}); stopped counting") from None
+                continue
+            in_a_row = 0
             if counted := count_seats(resp.text):
                 apply_seats(p, *counted, now().isoformat(timespec="seconds"))
                 counted_any = True
-        if looping:
-            log.info("narodno: ticket pages stuck in redirects, not counted: %s", ", ".join(looping))
+        if skipped:
+            log.info("narodno: ticket pages that keep redirecting, not counted: %s", ", ".join(skipped))
         if perfs and not counted_any:  # otherwise every check would log in again and quietly count nothing
-            if looping and len(looping) == len(perfs):
-                raise RuntimeError("every ticket page is stuck in redirects (login not kept?)")
             raise RuntimeError("no seat map found on any ticket page (page layout changed?)")
