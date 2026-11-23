@@ -26,6 +26,7 @@ import re
 from datetime import date, datetime, timedelta
 from urllib.parse import urljoin
 
+import httpx
 from bs4 import BeautifulSoup, Tag
 
 from ..dates import parse_time
@@ -192,18 +193,33 @@ class NarodnoAdapter(Adapter):
         if reply.get("error"):
             raise RuntimeError(f"login failed: {reply.get('errorMessage') or reply.get('message') or reply.get('error')}")
 
+    def _ticket_page(self, url: str) -> httpx.Response | None:
+        """A ticket page, or None when the site sends it round in redirects (one date's page can loop
+        between the ticket page and the login page while the rest are fine)."""
+        try:
+            return self.http.get(url)
+        except httpx.TooManyRedirects:
+            return None
+
     def _seat_counts(self, perfs: list[Performance]) -> None:
         self._login()
-        counted_any = False
+        counted_any, looping = False, []
         for p in perfs:
-            resp = self.http.get(p.buy_url)
-            if "prijavi-se" in str(resp.url):  # session dropped: log in again, once
+            resp = self._ticket_page(p.buy_url)
+            if resp is None or "prijavi-se" in str(resp.url):  # session dropped: log in again, once
                 self._login()
-                resp = self.http.get(p.buy_url)
+                resp = self._ticket_page(p.buy_url)
+                if resp is None:  # skip this date: the others can still be counted
+                    looping.append(p.uid)
+                    continue
                 if "prijavi-se" in str(resp.url):
                     raise RuntimeError("still sent to the login page after logging in")
             if counted := count_seats(resp.text):
                 apply_seats(p, *counted, now().isoformat(timespec="seconds"))
                 counted_any = True
+        if looping:
+            log.info("narodno: ticket pages stuck in redirects, not counted: %s", ", ".join(looping))
         if perfs and not counted_any:  # otherwise every check would log in again and quietly count nothing
+            if looping and len(looping) == len(perfs):
+                raise RuntimeError("every ticket page is stuck in redirects (login not kept?)")
             raise RuntimeError("no seat map found on any ticket page (page layout changed?)")

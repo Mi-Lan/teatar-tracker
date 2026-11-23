@@ -38,7 +38,12 @@ jobs:
       MADLENIANUM_EMAIL: ${{ secrets.MADLENIANUM_EMAIL || secrets.NARODNO_EMAIL }}
       MADLENIANUM_PASSWORD: ${{ secrets.MADLENIANUM_PASSWORD }}
     steps:
+      # The branch's latest commit, not the one the run was queued at: a run that waited behind a
+      # long release burst would otherwise start from the state.json before that burst (its new
+      # dates would look new again) and then fail to push over it.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - uses: actions/setup-python@v5
         with:
@@ -62,11 +67,18 @@ jobs:
         run: |
           git config user.name "theatre-tracker[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/state.json 2>/dev/null || exit 0
-          git diff --cached --quiet && { echo "state unchanged"; exit 0; }
-          git commit -q -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
+          [ -f data/state.json ] || exit 0
+          # Runs never overlap (concurrency), so this run's state.json is the newest there is: put it
+          # on top of whatever else reached the branch meanwhile (code, config) instead of rebasing
+          # it, which conflicts whenever the file changed on both sides.
+          cp data/state.json "$RUNNER_TEMP/state.json"
           for i in 1 2 3; do
-            git pull -q --rebase && git push -q && exit 0
+            git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard FETCH_HEAD
+            cp "$RUNNER_TEMP/state.json" data/state.json
+            git add data/state.json
+            git diff --cached --quiet && { echo "state unchanged"; exit 0; }
+            git commit -q -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
             sleep 5
           done
           exit 1

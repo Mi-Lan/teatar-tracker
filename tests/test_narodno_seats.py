@@ -3,6 +3,7 @@
 from datetime import date
 from pathlib import Path
 
+import httpx
 import pytest
 from conftest import FakeAdapter
 
@@ -28,9 +29,10 @@ class Resp:
 class FakeSite:
     """narodnopozoriste.rs: the repertoire, a login, and ticket pages that need the login."""
 
-    def __init__(self, password="secret", drop_session_after=None):
+    def __init__(self, password="secret", drop_session_after=None, looping=()):
         self.password, self.logged_in, self.requests, self.posts = password, False, [], []
         self.drop_session_after = drop_session_after
+        self.looping = set(looping)  # ticket pages that redirect round and round ("all" for every one)
         self.listing = LISTING
 
     def unpublish(self, rep_id: str | None) -> None:
@@ -51,6 +53,8 @@ class FakeSite:
         if url.endswith("/nalog/prijavi-se"):
             return Resp(url, LOGIN)
         if "odabir-ulaznica" in url:
+            if "all" in self.looping or url.rsplit("=", 1)[-1] in self.looping:
+                raise httpx.TooManyRedirects("Exceeded maximum allowed redirects.")
             if self.drop_session_after is not None and sum("odabir" in u for u in self.requests) > self.drop_session_after:
                 self.logged_in, self.drop_session_after = False, None
             if not self.logged_in:
@@ -114,6 +118,25 @@ def test_session_dropped_midway_logs_in_again(today, creds):
     perfs = a.fetch()
     assert len(site.posts) == 2 and a.warning == ""
     assert all(p.available == 145 for p in perfs if p.buy_url and p.status.buyable)
+
+
+def test_a_ticket_page_stuck_in_redirects_is_skipped(today, creds):
+    site = FakeSite()
+    buyable = [p for p in adapter(site).poll() if p.buy_url and p.status.buyable]
+    stuck = buyable[3].buy_url.rsplit("=", 1)[-1]
+    site.looping = {stuck}
+    a = adapter(site)
+    perfs = a.fetch()
+    assert a.warning == "" and len(site.posts) == 2  # one more login for the stuck page, then it's skipped
+    counted = {p.uid: p.available for p in perfs if p.buy_url and p.status.buyable}
+    assert counted.pop(f"narodno:{stuck}") is None and set(counted.values()) == {145}
+
+
+def test_every_ticket_page_stuck_in_redirects_warns(today, creds):
+    a = adapter(FakeSite(looping={"all"}))
+    perfs = a.fetch()
+    assert a.warning == "seat counts: RuntimeError: every ticket page is stuck in redirects (login not kept?)"
+    assert len(perfs) == 69 and all(p.available is None for p in perfs)
 
 
 def test_wrong_password_keeps_the_listing_and_warns(today, creds):
