@@ -70,6 +70,7 @@
   ],
   "madlenianum": [
    "carmen suite bolero",
+   "crvenkapa vuk i deda mraz",
    "cvrcak i mrav",
    "evita",
    "feliks i doris",
@@ -661,6 +662,22 @@
    "ever_on_sale": false,
    "first_seen": "2026-10-01T04:00:45+02:00"
   },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612231000": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612231200": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612281000": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612281200": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
+  },
   "madlenianum:cvrcak-i-mrav-202610061000": {
    "ever_on_sale": false,
    "first_seen": "2026-10-01T04:00:45+02:00"
@@ -680,6 +697,10 @@
   "madlenianum:feliks-i-doris-202610142000": {
    "ever_on_sale": false,
    "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:feliks-i-doris-202612102000": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
   },
   "madlenianum:gospodin-u-cizmama-od-dima-202612171930": {
    "ever_on_sale": true,
@@ -767,6 +788,10 @@
    "ever_on_sale": false,
    "first_seen": "2026-11-01T09:04:29+01:00"
   },
+  "madlenianum:pluca-202612082000": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
+  },
   "madlenianum:posle-pada-202610311930": {
    "ever_on_sale": false,
    "first_seen": "2026-10-01T04:00:45+02:00"
@@ -778,6 +803,10 @@
   "madlenianum:posle-pada-202611031930": {
    "ever_on_sale": false,
    "first_seen": "2026-10-01T04:00:45+02:00"
+  },
+  "madlenianum:posle-pada-202701131930": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
   },
   "madlenianum:snezana-i-sedam-patuljaka-202611301000": {
    "ever_on_sale": true,
@@ -827,6 +856,10 @@
   "madlenianum:x-y-0-0-202611162000": {
    "ever_on_sale": false,
    "first_seen": "2026-11-01T09:04:29+01:00"
+  },
+  "madlenianum:x-y-0-0-202612112000": {
+   "ever_on_sale": true,
+   "first_seen": "2026-11-24T20:07:38+01:00"
   },
   "madlenianum_tickets:26309": {
    "ever_on_sale": true,
@@ -1634,6 +1667,7 @@
   "new_date:jdp:202612282000-narodni-poslanik": "2026-11-24T14:07:41+01:00",
   "new_date:jdp:202612292000-narodni-poslanik": "2026-11-24T14:07:41+01:00",
   "new_date:madlenianum:evita-202612021930": "2026-11-17T19:30:00+01:00",
+  "new_date:madlenianum:feliks-i-doris-202612102000": "2026-11-24T20:07:38+01:00",
   "new_date:madlenianum:gospodin-u-cizmama-od-dima-202612171930": "2026-11-24T19:07:31+01:00",
   "new_date:madlenianum:ja-ema-202612151930": "2026-11-17T19:30:00+01:00",
   "new_date:madlenianum:kazanova-protiv-don-zuana-202611232000": "2026-11-01T09:04:29+01:00",
@@ -1648,10 +1682,13 @@
   "new_date:madlenianum:krcko-orascic-0-202701241630": "2026-11-19T10:07:55+01:00",
   "new_date:madlenianum:krcko-orascic-0-202701241930": "2026-11-19T10:07:55+01:00",
   "new_date:madlenianum:pluca-202611152000": "2026-11-01T09:04:29+01:00",
+  "new_date:madlenianum:pluca-202612082000": "2026-11-24T20:07:38+01:00",
+  "new_date:madlenianum:posle-pada-202701131930": "2026-11-24T20:07:38+01:00",
   "new_date:madlenianum:staklena-menazerija-202611242000": "2026-11-01T09:04:29+01:00",
   "new_date:madlenianum:tvoje-tajno-oruzje-u-borbi-protiv-neukrotivog-celulita-202611222000": "2026-11-01T09:04:29+01:00",
   "new_date:madlenianum:vesela-udovica-202611091930": "2026-11-01T09:04:29+01:00",
   "new_date:madlenianum:x-y-0-0-202611162000": "2026-11-01T09:04:29+01:00",
+  "new_date:madlenianum:x-y-0-0-202612112000": "2026-11-24T20:07:38+01:00",
   "new_date:madlenianum_tickets:27822": "2026-10-27T17:44:58+01:00",
   "new_date:madlenianum_tickets:27825": "2026-10-27T17:44:58+01:00",
   "new_date:madlenianum_tickets:27826": "2026-10-27T17:44:58+01:00",
@@ -1754,6 +1791,10 @@
   "new_show:kolarac:27397": "2026-10-07T18:19:44+02:00",
   "new_show:madlenianum:belgrade-dixieland-orchestra-202610012000": "2026-10-01T00:58:47+02:00",
   "new_show:madlenianum:carmen-suite-bolero-202610131930": "2026-10-01T04:00:45+02:00",
+  "new_show:madlenianum:crvenkapa-vuk-i-deda-mraz-202612231000": "2026-11-24T20:07:38+01:00",
+  "new_show:madlenianum:crvenkapa-vuk-i-deda-mraz-202612231200": "2026-11-24T20:07:38+01:00",
+  "new_show:madlenianum:crvenkapa-vuk-i-deda-mraz-202612281000": "2026-11-24T20:07:38+01:00",
+  "new_show:madlenianum:crvenkapa-vuk-i-deda-mraz-202612281200": "2026-11-24T20:07:38+01:00",
   "new_show:madlenianum:cvrcak-i-mrav-202610061000": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:cvrcak-i-mrav-202610061200": "2026-10-01T04:00:45+02:00",
   "new_show:madlenianum:evita-202611281930": "2026-11-17T12:07:53+01:00",
@@ -2524,7 +2565,7 @@
    "available": null,
    "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1268",
    "extra": {
-    "label": "",
+    "label": "Manje od 10% slobodnih mesta",
     "prostorterminid": "1268"
    },
    "price": "",
@@ -2532,7 +2573,7 @@
    "source_id": "202612082000-gospodjica",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-12-08T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "low",
    "subtitle": "Ivo Andrić",
    "title": "Gospođica",
    "url": "https://www.jdp.rs/performance/gospodjica/",
@@ -2733,17 +2774,16 @@
   },
   "jdp:202612252000-edip": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1275",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1275"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202612252000-edip",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-12-25T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Sofokle",
    "title": "Edip",
    "url": "https://www.jdp.rs/performance/edip/",
@@ -2889,11 +2929,91 @@
    "url": "https://tickets.rs/event/nikolaj_kuznjecov_28486",
    "venue": "kolarac"
   },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612231000": {
+   "available": 142,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1188",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "OPERA ZA DECU",
+    "shop_id": "1188",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "crvenkapa-vuk-i-deda-mraz-202612231000",
+   "stage": "Velika scena",
+   "start": "2026-12-23T10:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "url": "https://operatheatremadlenianum.com/crvenkapa-vuk-i-deda-mraz",
+   "venue": "madlenianum"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612231200": {
+   "available": 142,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1189",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "OPERA ZA DECU",
+    "shop_id": "1189",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "crvenkapa-vuk-i-deda-mraz-202612231200",
+   "stage": "Velika scena",
+   "start": "2026-12-23T12:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "url": "https://operatheatremadlenianum.com/crvenkapa-vuk-i-deda-mraz",
+   "venue": "madlenianum"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612281000": {
+   "available": 142,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1190",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "OPERA ZA DECU",
+    "shop_id": "1190",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "crvenkapa-vuk-i-deda-mraz-202612281000",
+   "stage": "Velika scena",
+   "start": "2026-12-28T10:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "url": "https://operatheatremadlenianum.com/crvenkapa-vuk-i-deda-mraz",
+   "venue": "madlenianum"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612281200": {
+   "available": 142,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1191",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "OPERA ZA DECU",
+    "shop_id": "1191",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "crvenkapa-vuk-i-deda-mraz-202612281200",
+   "stage": "Velika scena",
+   "start": "2026-12-28T12:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "url": "https://operatheatremadlenianum.com/crvenkapa-vuk-i-deda-mraz",
+   "venue": "madlenianum"
+  },
   "madlenianum:evita-202611281930": {
-   "available": 4,
+   "available": 2,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1169",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "MJUZIKL",
     "label": "PREMIJERA",
     "shop_id": "1169"
@@ -2913,7 +3033,7 @@
    "available": 101,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "MJUZIKL",
     "label": "I REPRIZA",
     "shop_id": "1170"
@@ -2929,11 +3049,31 @@
    "url": "https://operatheatremadlenianum.com/evita",
    "venue": "madlenianum"
   },
+  "madlenianum:feliks-i-doris-202612102000": {
+   "available": 32,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1186",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "KOMEDIJA",
+    "shop_id": "1186",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "feliks-i-doris-202612102000",
+   "stage": "Mala scena",
+   "start": "2026-12-10T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "FELIKS I DORIS",
+   "url": "https://operatheatremadlenianum.com/feliks-i-doris",
+   "venue": "madlenianum"
+  },
   "madlenianum:gospodin-u-cizmama-od-dima-202612171930": {
    "available": 142,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1183",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "KOMEDIJA",
     "shop_id": "1183",
     "shop_only": true
@@ -2953,7 +3093,7 @@
    "available": 108,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1168",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "DRAMA",
     "shop_id": "1168"
    },
@@ -2972,7 +3112,7 @@
    "available": 122,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1164",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1164"
    },
@@ -2988,10 +3128,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:krcko-orascic-0-202612011930": {
-   "available": 98,
+   "available": 101,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1165",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1165"
    },
@@ -3007,10 +3147,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:krcko-orascic-0-202612071700": {
-   "available": 135,
+   "available": 138,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1166",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1166"
    },
@@ -3029,7 +3169,7 @@
    "available": 163,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1167",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1167"
    },
@@ -3048,7 +3188,7 @@
    "available": 171,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1173",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1173"
    },
@@ -3067,7 +3207,7 @@
    "available": 168,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1174",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1174"
    },
@@ -3086,7 +3226,7 @@
    "available": 162,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1175",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1175"
    },
@@ -3105,7 +3245,7 @@
    "available": 162,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1176",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1176"
    },
@@ -3124,7 +3264,7 @@
    "available": 175,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1177",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1177"
    },
@@ -3143,7 +3283,7 @@
    "available": 180,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1178",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1178"
    },
@@ -3162,7 +3302,7 @@
    "available": 182,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1179",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1179"
    },
@@ -3181,7 +3321,7 @@
    "available": 184,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1180",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "BALET",
     "shop_id": "1180"
    },
@@ -3196,11 +3336,51 @@
    "url": "https://operatheatremadlenianum.com/krcko-orascic-0",
    "venue": "madlenianum"
   },
+  "madlenianum:pluca-202612082000": {
+   "available": 32,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1185",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "DRAMA",
+    "shop_id": "1185",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "pluca-202612082000",
+   "stage": "Mala scena",
+   "start": "2026-12-08T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "PLUĆA",
+   "url": "https://operatheatremadlenianum.com/pluca",
+   "venue": "madlenianum"
+  },
+  "madlenianum:posle-pada-202701131930": {
+   "available": 142,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1184",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "DRAMA",
+    "shop_id": "1184",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "posle-pada-202701131930",
+   "stage": "Velika scena",
+   "start": "2027-01-13T19:30:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "POSLE PADA",
+   "url": "https://operatheatremadlenianum.com/posle-pada",
+   "venue": "madlenianum"
+  },
   "madlenianum:snezana-i-sedam-patuljaka-202611301000": {
    "available": 117,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1162",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1162"
    },
@@ -3219,7 +3399,7 @@
    "available": 74,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1163",
    "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
+    "counted_at": "2026-11-24T20:07:38+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1163"
    },
@@ -3235,19 +3415,15 @@
    "venue": "madlenianum"
   },
   "madlenianum:staklena-menazerija-202611242000": {
-   "available": 30,
-   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1161",
-   "extra": {
-    "counted_at": "2026-11-24T19:07:31+01:00",
-    "genre": "DRAMA",
-    "shop_id": "1161"
-   },
+   "available": null,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr",
+   "extra": {},
    "price": "",
    "sales_start": null,
    "source_id": "staklena-menazerija-202611242000",
-   "stage": "Mala scena",
+   "stage": "",
    "start": "2026-11-24T20:00:00+01:00",
-   "status": "on_sale",
+   "status": "not_on_sale",
    "subtitle": "Tenesi Vilijams",
    "title": "STAKLENA MENAŽERIJA",
    "url": "https://operatheatremadlenianum.com/staklena-menazerija",
@@ -3269,6 +3445,26 @@
    "subtitle": "",
    "title": "SVET JE LEP KADA SANJAMO",
    "url": "https://operatheatremadlenianum.com/svet-je-lep-kada-sanjamo",
+   "venue": "madlenianum"
+  },
+  "madlenianum:x-y-0-0-202612112000": {
+   "available": 32,
+   "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1187",
+   "extra": {
+    "counted_at": "2026-11-24T20:07:38+01:00",
+    "genre": "KOMEDIJA",
+    "shop_id": "1187",
+    "shop_only": true
+   },
+   "price": "",
+   "sales_start": null,
+   "source_id": "x-y-0-0-202612112000",
+   "stage": "Mala scena",
+   "start": "2026-12-11T20:00:00+01:00",
+   "status": "on_sale",
+   "subtitle": "",
+   "title": "X + Y = 0",
+   "url": "https://operatheatremadlenianum.com/x-y-0-0",
    "venue": "madlenianum"
   },
   "madlenianum_tickets:26309": {
@@ -3395,7 +3591,7 @@
    "source_id": "6347",
    "stage": "Велика сцена",
    "start": "2027-01-14T19:00:00+01:00",
-   "status": "low",
+   "status": "on_sale",
    "subtitle": "балет П. И. Чајковског",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x562508d6ba40ce74f4abd5691cb088c1",
@@ -3827,36 +4023,36 @@
    "venue": "narodno"
   },
   "narodno:6398": {
-   "available": null,
-   "buy_url": "",
+   "available": 4,
+   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6398",
    "extra": {
-    "repid": "6398"
+    "counted_at": "2026-11-24T20:07:21+01:00",
+    "repid": "6398",
+    "seats": 224
    },
    "price": "",
    "sales_start": null,
    "source_id": "6398",
    "stage": "Велика сцена",
    "start": "2026-11-30T19:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "балет П. И. Чајковског · на музички снимак Оркестра Народног позоришта у Беораду",
    "title": "Крцко Орашчић",
    "url": "https://www.narodnopozoriste.rs/predstave/krcko-orascic?m=x3f6df8a6b6dc7c04ca65a31fcb173035",
    "venue": "narodno"
   },
   "narodno:6446": {
-   "available": 23,
-   "buy_url": "https://www.narodnopozoriste.rs/ulaznice/odabir-ulaznica?p=6446",
+   "available": null,
+   "buy_url": "",
    "extra": {
-    "counted_at": "2026-11-24T09:07:18+01:00",
-    "repid": "6446",
-    "seats": 254
+    "repid": "6446"
    },
    "price": "",
    "sales_start": null,
    "source_id": "6446",
    "stage": "Велика сцена",
    "start": "2026-11-24T19:30:00+01:00",
-   "status": "low",
+   "status": "not_on_sale",
    "subtitle": "драма Синише Ковачевића",
    "title": "Велика драма",
    "url": "https://www.narodnopozoriste.rs/predstave/velika-drama?m=xfaf1b7c48139f33a3cbe0fd576672abc",
@@ -6109,6 +6305,30 @@
    "opened": 0,
    "unknown": 0,
    "venue": "madlenianum"
+  },
+  {
+   "after": "2026-11-24T19:07:31+01:00",
+   "buyable": 18,
+   "by": "2026-11-24T20:07:38+01:00",
+   "listed": 19,
+   "month": "2026-12",
+   "new": 7,
+   "on_sale": 7,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "madlenianum"
+  },
+  {
+   "after": "2026-11-24T19:07:31+01:00",
+   "buyable": 5,
+   "by": "2026-11-24T20:07:38+01:00",
+   "listed": 5,
+   "month": "2027-01",
+   "new": 1,
+   "on_sale": 1,
+   "opened": 0,
+   "unknown": 0,
+   "venue": "madlenianum"
   }
  ],
  "releases": [
@@ -6997,6 +7217,7 @@
    "venue": "jdp"
   },
   "jdp:202612082000-gospodjica": {
+   "low": "2026-11-24T20:07:38+01:00",
    "on_sale": "2026-11-24T14:07:41+01:00",
    "start": "2026-12-08T20:00:00+01:00",
    "title": "Gospođica",
@@ -7203,6 +7424,54 @@
    "title": "58. BEMUS - Beogradska filharmonija",
    "venue": "kolarac"
   },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612231000": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     142
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2026-12-23T10:00:00+01:00",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "venue": "madlenianum"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612231200": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     142
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2026-12-23T12:00:00+01:00",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "venue": "madlenianum"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612281000": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     142
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2026-12-28T10:00:00+01:00",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "venue": "madlenianum"
+  },
+  "madlenianum:crvenkapa-vuk-i-deda-mraz-202612281200": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     142
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2026-12-28T12:00:00+01:00",
+   "title": "CRVENKAPA, VUK I DEDA MRAZ",
+   "venue": "madlenianum"
+  },
   "madlenianum:evita-202611281930": {
    "counts": [
     [
@@ -7356,6 +7625,10 @@
     [
      "2026-11-24T19:07:31+01:00",
      4
+    ],
+    [
+     "2026-11-24T20:07:38+01:00",
+     2
     ]
    ],
    "sold_out": "2026-11-24T18:07:41+01:00",
@@ -7541,6 +7814,18 @@
    "on_sale": "2026-11-17T19:30:00+01:00",
    "start": "2026-12-02T19:30:00+01:00",
    "title": "EVITA",
+   "venue": "madlenianum"
+  },
+  "madlenianum:feliks-i-doris-202612102000": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     32
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2026-12-10T20:00:00+01:00",
+   "title": "FELIKS I DORIS",
    "venue": "madlenianum"
   },
   "madlenianum:gospodin-u-cizmama-od-dima-202612171930": {
@@ -7843,6 +8128,10 @@
     [
      "2026-11-24T19:07:31+01:00",
      98
+    ],
+    [
+     "2026-11-24T20:07:38+01:00",
+     101
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -7927,6 +8216,10 @@
     [
      "2026-11-24T19:07:31+01:00",
      135
+    ],
+    [
+     "2026-11-24T20:07:38+01:00",
+     138
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -8302,6 +8595,30 @@
    "title": "KRCKO ORAŠČIĆ",
    "venue": "madlenianum"
   },
+  "madlenianum:pluca-202612082000": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     32
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2026-12-08T20:00:00+01:00",
+   "title": "PLUĆA",
+   "venue": "madlenianum"
+  },
+  "madlenianum:posle-pada-202701131930": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     142
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2027-01-13T19:30:00+01:00",
+   "title": "POSLE PADA",
+   "venue": "madlenianum"
+  },
   "madlenianum:snezana-i-sedam-patuljaka-202611301000": {
    "counts": [
     [
@@ -8482,6 +8799,18 @@
    "sold_out": "2026-11-17T19:30:00+01:00",
    "start": "2026-11-22T20:00:00+01:00",
    "title": "TVOJE TAJNO ORUŽJE U BORBI PROTIV NEUKROTIVOG CELULITA",
+   "venue": "madlenianum"
+  },
+  "madlenianum:x-y-0-0-202612112000": {
+   "counts": [
+    [
+     "2026-11-24T20:07:38+01:00",
+     32
+    ]
+   ],
+   "on_sale": "2026-11-24T20:07:38+01:00",
+   "start": "2026-12-11T20:00:00+01:00",
+   "title": "X + Y = 0",
    "venue": "madlenianum"
   },
   "madlenianum_tickets:26309": {
@@ -10853,10 +11182,14 @@
     [
      "2026-11-18T09:37:52+01:00",
      2
+    ],
+    [
+     "2026-11-24T20:07:21+01:00",
+     4
     ]
    ],
    "low": "2026-11-10T00:08:09+01:00",
-   "seats": 354,
+   "seats": 224,
    "sold_out": "2026-11-18T18:07:47+01:00",
    "start": "2026-11-30T19:00:00+01:00",
    "title": "Крцко Орашчић",
@@ -14260,14 +14593,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-24T19:07:31+01:00",
-  "jdp": "2026-11-24T19:07:31+01:00",
-  "kolarac": "2026-11-24T19:07:31+01:00",
-  "madlenianum": "2026-11-24T19:07:31+01:00",
-  "madlenianum_tickets": "2026-11-24T19:07:31+01:00",
-  "narodno": "2026-11-24T19:07:31+01:00",
-  "sava_centar": "2026-11-24T19:07:31+01:00",
-  "terazije": "2026-11-24T19:07:31+01:00"
+  "bdp": "2026-11-24T20:07:38+01:00",
+  "jdp": "2026-11-24T20:07:38+01:00",
+  "kolarac": "2026-11-24T20:07:38+01:00",
+  "madlenianum": "2026-11-24T20:07:38+01:00",
+  "madlenianum_tickets": "2026-11-24T20:07:38+01:00",
+  "narodno": "2026-11-24T20:07:38+01:00",
+  "sava_centar": "2026-11-24T20:07:38+01:00",
+  "terazije": "2026-11-24T20:07:38+01:00"
  },
  "season": {
   "live": {
