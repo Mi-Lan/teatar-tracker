@@ -31,6 +31,7 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       TELEGRAM_EXTRA_CHAT_IDS: ${{ secrets.TELEGRAM_EXTRA_CHAT_IDS }}  # more people who get every notification (comma-separated)
+      TELEGRAM_EXTRA_CHAT_IDS_2: ${{ secrets.TELEGRAM_EXTRA_CHAT_IDS_2 }}  # same, for people added later (optional)
       NARODNO_EMAIL: ${{ secrets.NARODNO_EMAIL }}  # a narodnopozoriste.rs account: exact seat counts (optional)
       NARODNO_PASSWORD: ${{ secrets.NARODNO_PASSWORD }}
       # a Madlenianum ticket-shop account: dates and tickets left that only show when signed in (optional).

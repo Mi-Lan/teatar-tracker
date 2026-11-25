@@ -40,13 +40,15 @@ def load_dotenv(path: Path = config.ROOT / ".env") -> None:
 
 
 def make_tg(dry_run: bool) -> Messenger:
-    """Telegram client for TELEGRAM_CHAT_ID (you) plus anyone in TELEGRAM_EXTRA_CHAT_IDS (comma-separated)."""
+    """Telegram client for TELEGRAM_CHAT_ID (you) plus anyone in TELEGRAM_EXTRA_CHAT_IDS or
+    TELEGRAM_EXTRA_CHAT_IDS_2 (each comma-separated; the second one lets you add people without retyping the first)."""
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if dry_run or not token or not chat:
         if not dry_run:
             log.warning("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set: printing messages instead of sending")
         return DryRun()
-    return Telegram(token, chat, os.environ.get("TELEGRAM_EXTRA_CHAT_IDS", ""))
+    extra = [os.environ.get(k, "") for k in ("TELEGRAM_EXTRA_CHAT_IDS", "TELEGRAM_EXTRA_CHAT_IDS_2")]
+    return Telegram(token, chat, extra)
 
 
 def make_ctx(args, tg) -> Ctx:

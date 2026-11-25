@@ -120,6 +120,8 @@ imports once. It needs the full history (`git fetch --unshallow` in a shallow cl
 
 4. **More people (optional).** Each person opens the bot and presses **Start**; `teatar whoami` (or the bot's
    `getUpdates`) shows their chat id. Add a secret `TELEGRAM_EXTRA_CHAT_IDS` with their ids, comma-separated.
+   GitHub doesn't show a secret's value, so to add someone later without retyping the existing ids, put the new
+   ids in a second secret, `TELEGRAM_EXTRA_CHAT_IDS_2` (also comma-separated); both are used.
    They get every notification you get, and can use the commands (replies go to whoever asked). Check with
    *Actions → tracker → Run workflow → test*: everyone gets a message listing the theatres with links.
 
@@ -142,7 +144,7 @@ imports once. It needs the full history (`git fetch --unshallow` in a shallow cl
    "failed 3 checks" warning for "Madlenianum ticket shop"; the last dates and counts are kept (shown as `~142`
    once they're a few hours old) and the public pages keep working.
 
-The bot only answers the chat ids in `TELEGRAM_CHAT_ID` and `TELEGRAM_EXTRA_CHAT_IDS`. Keep chat ids in secrets,
+The bot only answers the chat ids in `TELEGRAM_CHAT_ID`, `TELEGRAM_EXTRA_CHAT_IDS` and `TELEGRAM_EXTRA_CHAT_IDS_2`. Keep chat ids in secrets,
 not in the repo: it's public.
 
 ## Local use

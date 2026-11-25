@@ -33,6 +33,20 @@ def test_every_notification_goes_to_every_recipient(monkeypatch):
     assert tg.calls == [("222", "just you")]
 
 
+def test_both_extra_chat_id_secrets_are_recipients(monkeypatch):
+    from teatar.cli import make_tg
+
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "token")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "111")
+    monkeypatch.setenv("TELEGRAM_EXTRA_CHAT_IDS", "222,333")
+    monkeypatch.setenv("TELEGRAM_EXTRA_CHAT_IDS_2", "444, 222")
+    assert make_tg(dry_run=False).recipients == ["111", "222", "333", "444"]
+    monkeypatch.delenv("TELEGRAM_EXTRA_CHAT_IDS")
+    assert make_tg(dry_run=False).recipients == ["111", "444", "222"]
+    monkeypatch.delenv("TELEGRAM_EXTRA_CHAT_IDS_2")
+    assert make_tg(dry_run=False).recipients == ["111"]
+
+
 def test_owner_failure_still_raises(monkeypatch):
     monkeypatch.setattr("teatar.telegram.time.sleep", lambda s: None)
     tg = Recorder("111", "222", blocked={"111"})

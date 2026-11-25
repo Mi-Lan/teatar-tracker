@@ -67,7 +67,7 @@ class Messenger:
 
 
 class Telegram(Messenger):
-    """Every notification goes to all `recipients` (TELEGRAM_CHAT_ID plus TELEGRAM_EXTRA_CHAT_IDS);
+    """Every notification goes to all `recipients` (TELEGRAM_CHAT_ID plus TELEGRAM_EXTRA_CHAT_IDS[_2]);
     any of them can send commands, and the reply goes to whoever asked."""
 
     def __init__(self, token: str, chat_id: str | int, extra: str | list | None = None):
