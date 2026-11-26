@@ -1,10 +1,5 @@
 {
- "health": {
-  "jdp": {
-   "fails": 2,
-   "last_error": "returned 0 performances"
-  }
- },
+ "health": {},
  "initialized": true,
  "known_titles": {
   "bdp": [
@@ -2281,16 +2276,17 @@
   },
   "jdp:202611262000-vrat-od-stakla": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1243",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1243"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202611262000-vrat-od-stakla",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-11-26T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Biljana Srbljanovic",
    "title": "Vrat od stakla",
    "url": "https://www.jdp.rs/performance/vrat-od-stakla/",
@@ -2438,16 +2434,17 @@
   },
   "jdp:202612052000-ricard-drugi": {
    "available": null,
-   "buy_url": "",
+   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1266",
    "extra": {
-    "label": "Rasprodato"
+    "label": "Manje od 10% slobodnih mesta",
+    "prostorterminid": "1266"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202612052000-ricard-drugi",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-12-05T20:00:00+01:00",
-   "status": "sold_out",
+   "status": "low",
    "subtitle": "Vilijam Šekspir",
    "title": "Ričard Drugi",
    "url": "https://www.jdp.rs/performance/ricard-drugi/",
@@ -2806,17 +2803,16 @@
   },
   "jdp:202612292000-narodni-poslanik": {
    "available": null,
-   "buy_url": "https://blagajna.jdp.rs/scena.php?prostorterminid=1278",
+   "buy_url": "",
    "extra": {
-    "label": "Manje od 10% slobodnih mesta",
-    "prostorterminid": "1278"
+    "label": "Rasprodato"
    },
    "price": "",
    "sales_start": null,
    "source_id": "202612292000-narodni-poslanik",
    "stage": "SCENA LJUBA TADIĆ",
    "start": "2026-12-29T20:00:00+01:00",
-   "status": "low",
+   "status": "sold_out",
    "subtitle": "Branislav Nušić",
    "title": "Narodni poslanik",
    "url": "https://www.jdp.rs/performance/narodni-poslanik/%20%20%20",
@@ -2880,7 +2876,7 @@
    "available": 142,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1188",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1188"
    },
@@ -2944,7 +2940,7 @@
    "available": 1,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1169",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "MJUZIKL",
     "label": "PREMIJERA",
     "shop_id": "1169"
@@ -2961,10 +2957,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:evita-202612021930": {
-   "available": 58,
+   "available": 54,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1170",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "MJUZIKL",
     "label": "I REPRIZA",
     "shop_id": "1170"
@@ -2984,7 +2980,7 @@
    "available": 30,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1186",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "KOMEDIJA",
     "shop_id": "1186",
     "shop_only": true
@@ -3004,7 +3000,7 @@
    "available": 138,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1183",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "KOMEDIJA",
     "shop_id": "1183",
     "shop_only": true
@@ -3024,7 +3020,7 @@
    "available": 103,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1168",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "DRAMA",
     "shop_id": "1168"
    },
@@ -3040,10 +3036,10 @@
    "venue": "madlenianum"
   },
   "madlenianum:krcko-orascic-0-202612011700": {
-   "available": 122,
+   "available": 120,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1164",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1164"
    },
@@ -3062,7 +3058,7 @@
    "available": 154,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1165",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1165"
    },
@@ -3081,7 +3077,7 @@
    "available": 144,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1166",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1166"
    },
@@ -3100,7 +3096,7 @@
    "available": 165,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1167",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1167"
    },
@@ -3119,7 +3115,7 @@
    "available": 168,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1173",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1173"
    },
@@ -3138,7 +3134,7 @@
    "available": 166,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1174",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1174"
    },
@@ -3157,7 +3153,7 @@
    "available": 157,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1175",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1175"
    },
@@ -3176,7 +3172,7 @@
    "available": 152,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1176",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1176"
    },
@@ -3195,7 +3191,7 @@
    "available": 175,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1177",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1177"
    },
@@ -3214,7 +3210,7 @@
    "available": 180,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1178",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1178"
    },
@@ -3233,7 +3229,7 @@
    "available": 182,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1179",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1179"
    },
@@ -3252,7 +3248,7 @@
    "available": 182,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1180",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "BALET",
     "shop_id": "1180"
    },
@@ -3271,7 +3267,7 @@
    "available": 30,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1185",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "DRAMA",
     "shop_id": "1185",
     "shop_only": true
@@ -3291,7 +3287,7 @@
    "available": 138,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1184",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "DRAMA",
     "shop_id": "1184",
     "shop_only": true
@@ -3311,7 +3307,7 @@
    "available": 117,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1162",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1162"
    },
@@ -3330,7 +3326,7 @@
    "available": 72,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1163",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "OPERA ZA DECU",
     "shop_id": "1163"
    },
@@ -3367,7 +3363,7 @@
    "available": 32,
    "buy_url": "https://tickets.operatheatremadlenianum.com/sr/odabir-ulaznica?id=1187",
    "extra": {
-    "counted_at": "2026-11-26T19:07:37+01:00",
+    "counted_at": "2026-11-26T20:07:32+01:00",
     "genre": "KOMEDIJA",
     "shop_id": "1187",
     "shop_only": true
@@ -7805,6 +7801,10 @@
     [
      "2026-11-26T19:07:37+01:00",
      58
+    ],
+    [
+     "2026-11-26T20:07:32+01:00",
+     54
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -8176,6 +8176,10 @@
     [
      "2026-11-26T17:07:35+01:00",
      122
+    ],
+    [
+     "2026-11-26T20:07:32+01:00",
+     120
     ]
    ],
    "on_sale": "2026-11-17T19:30:00+01:00",
@@ -15523,14 +15527,14 @@
  },
  "sales_seed": "2026-11-09T21:39:00+01:00 de21ea17bf",
  "scanned": {
-  "bdp": "2026-11-26T19:07:37+01:00",
-  "jdp": "2026-11-26T17:07:35+01:00",
-  "kolarac": "2026-11-26T19:07:37+01:00",
-  "madlenianum": "2026-11-26T19:07:37+01:00",
-  "madlenianum_tickets": "2026-11-26T19:07:37+01:00",
-  "narodno": "2026-11-26T19:07:37+01:00",
-  "sava_centar": "2026-11-26T19:07:37+01:00",
-  "terazije": "2026-11-26T19:07:37+01:00"
+  "bdp": "2026-11-26T20:07:32+01:00",
+  "jdp": "2026-11-26T20:07:32+01:00",
+  "kolarac": "2026-11-26T20:07:32+01:00",
+  "madlenianum": "2026-11-26T20:07:32+01:00",
+  "madlenianum_tickets": "2026-11-26T20:07:32+01:00",
+  "narodno": "2026-11-26T20:07:32+01:00",
+  "sava_centar": "2026-11-26T20:07:32+01:00",
+  "terazije": "2026-11-26T20:07:32+01:00"
  },
  "season": {
   "live": {
